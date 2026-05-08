@@ -17,9 +17,11 @@ sources:
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/AI로_만든_제품이_안_팔리는_이유.md
+  - raw/opencode-masterclass-summary.md
   - https://github.com/google-labs-code/design.md
+  - https://opencode.ai/docs/config/
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-08
 ---
 
 # AI 코딩 에이전트 검증 전략
@@ -42,6 +44,8 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 구현뿐 아니라 �
 
 UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다. 출처: https://github.com/google-labs-code/design.md, `raw/AI로_만든_제품이_안_팔리는_이유.md`
 
+[[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/config/
+
 ## 예시
 
 - 기능 구현: "사용자 편집 기능을 구현하고, 권한 없는 사용자 케이스를 포함한 테스트를 작성한 뒤 테스트를 실행해서 결과를 보고해."
@@ -61,6 +65,7 @@ UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위
 - [[Vibe Coding과 Agentic Engineering]]
 - [[DESIGN.md 운영 원칙]]
 - [[AI 시대 디자인 시스템]]
+- [[OpenCode]]
 
 ## 출처
 
@@ -70,4 +75,6 @@ UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위
 - `raw/안드레_카파시_인터뷰_정리.md`
 - `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
 - `raw/AI로_만든_제품이_안_팔리는_이유.md`
+- `raw/opencode-masterclass-summary.md`
 - https://github.com/google-labs-code/design.md
+- https://opencode.ai/docs/config/

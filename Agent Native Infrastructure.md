@@ -13,9 +13,13 @@ sources:
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/API_Key_관리_및_Infisical_도입_가이드.md
+  - raw/Quartz-Deploy-Guide.md
+  - raw/opencode-masterclass-summary.md
   - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+  - https://quartz.jzhao.xyz/hosting
+  - https://opencode.ai/docs/rules/
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-08
 ---
 
 # Agent Native Infrastructure
@@ -38,6 +42,10 @@ MenuGen 배포 사례에서는 코드 작성보다 Vercel 배포, 서비스 연�
 
 Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략]]처럼 CLI, SDK, Kubernetes Operator, CI/CD integration을 제공하는 도구를 쓰면 에이전트가 콘솔 클릭 대신 명령과 권한 범위에 맞춰 배포 workflow를 조립할 수 있다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`, https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 
+[[Quartz로 Obsidian Wiki 배포하기]]도 같은 관점으로 볼 수 있다. Quartz 공식 hosting workflow는 GitHub Actions에서 Node `22`, `npm ci`, `npx quartz build`, Pages artifact 업로드를 명령으로 표현한다. 이런 배포 절차는 콘솔 스크린샷보다 agent가 검토하고 수정하기 쉽다. 출처: `raw/Quartz-Deploy-Guide.md`, https://quartz.jzhao.xyz/hosting
+
+[[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/rules/
+
 ## 예시
 
 - 나쁜 문서: 콘솔 스크린샷을 보며 버튼을 순서대로 누르게 한다.
@@ -55,10 +63,16 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 - [[Claude Code 오케스트레이션]]
 - [[Infisical 도입 전략]]
 - [[API Key 관리 원칙]]
+- [[Quartz로 Obsidian Wiki 배포하기]]
+- [[OpenCode]]
 
 ## 출처
 
 - `raw/안드레_카파시_인터뷰_정리.md`
 - `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
 - `raw/API_Key_관리_및_Infisical_도입_가이드.md`
+- `raw/Quartz-Deploy-Guide.md`
+- `raw/opencode-masterclass-summary.md`
 - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+- https://quartz.jzhao.xyz/hosting
+- https://opencode.ai/docs/rules/

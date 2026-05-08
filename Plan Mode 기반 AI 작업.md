@@ -9,14 +9,17 @@ tags:
 aliases:
   - Plan Mode
   - 플랜 모드
+  - OpenCode Plan agent
 sources:
   - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
   - raw/보리스_클로드코드_실무_사용법.md
   - raw/Claude-Code-실무활용법-보리스-관점-정리.md
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/opencode-masterclass-summary.md
+  - https://opencode.ai/docs/agents/
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-08
 ---
 
 # Plan Mode 기반 AI 작업
@@ -37,6 +40,8 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 
 카파시 자료의 [[Thinking과 Understanding 분리]]와도 맞닿아 있다. 에이전트는 thinking, 즉 처리와 세부 구현을 잘할 수 있지만 무엇을 만들지, 어떤 품질 기준으로 검증할지, 어떤 시스템 모델을 유지할지는 사람이 이해 위에서 정해야 한다.
 
+[[OpenCode]]도 같은 분리를 도구 모델로 제공한다. 공식 문서의 Plan agent는 분석과 제안에 적합하도록 기본 file edit와 bash 권한이 `ask`로 제한되고, Build agent는 실제 개발 작업에 쓰인다. 따라서 "먼저 Plan으로 질문과 구현 계획을 만들고, 합의된 계획만 Build/subagent에 넘긴다"는 절차를 권한 설계로 고정할 수 있다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/agents/
+
 ## 예시
 
 1. 요구사항을 한 문단으로 설명한다.
@@ -53,6 +58,7 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Thinking과 Understanding 분리]]
 - [[Vibe Coding과 Agentic Engineering]]
+- [[OpenCode]]
 
 ## 출처
 
@@ -61,3 +67,5 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 - `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
 - `raw/안드레_카파시_인터뷰_정리.md`
 - `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
+- `raw/opencode-masterclass-summary.md`
+- https://opencode.ai/docs/agents/
