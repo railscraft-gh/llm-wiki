@@ -14,10 +14,14 @@ sources:
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/API_Key_관리_및_Infisical_도입_가이드.md
   - raw/Quartz-Deploy-Guide.md
+  - raw/Quartz-GitHub-Pages-Complete-Guide.md
   - raw/opencode-masterclass-summary.md
+  - raw/pi-coding-agent-overview.md
   - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
   - https://quartz.jzhao.xyz/hosting
   - https://opencode.ai/docs/rules/
+  - https://pi.dev/docs/latest/usage
+  - https://pi.dev/docs/latest/packages
 created: 2026-05-06
 updated: 2026-05-08
 ---
@@ -46,11 +50,14 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 
 [[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/rules/
 
+[[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage, https://pi.dev/docs/latest/packages
+
 ## 예시
 
 - 나쁜 문서: 콘솔 스크린샷을 보며 버튼을 순서대로 누르게 한다.
 - 좋은 문서: 필요한 CLI 명령, 환경 변수 목록, 권한 범위, 검증 명령을 한 블록으로 제공한다.
 - Secret 관리: `.env`를 직접 복사하게 하지 않고 `infisical run --env=dev -- npm run dev`처럼 실행 가능한 명령으로 제공한다.
+- Agent harness: `pi --mode rpc`나 `pi --mode json`처럼 외부 프로세스가 읽을 수 있는 프로토콜로 에이전트 실행을 연결한다.
 
 ## 충돌
 
@@ -65,4 +72,5 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 - [[API Key 관리 원칙]]
 - [[Quartz로 Obsidian Wiki 배포하기]]
 - [[OpenCode]]
+- [[Pi Coding Agent]]
 

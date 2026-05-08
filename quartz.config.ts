@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "ko-KR",
-    baseUrl: "railscraft-gh.github.io/llm-wiki",
+    baseUrl: "wiki.railscraft.dev",
     ignorePatterns: ["private", "templates", ".obsidian", "_archive", ".github"],
     defaultDateType: "created",
     theme: {

@@ -17,7 +17,9 @@ sources:
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/opencode-masterclass-summary.md
+  - raw/pi-coding-agent-overview.md
   - https://opencode.ai/docs/agents/
+  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
 updated: 2026-05-08
 ---
@@ -42,6 +44,8 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 
 [[OpenCode]]도 같은 분리를 도구 모델로 제공한다. 공식 문서의 Plan agent는 분석과 제안에 적합하도록 기본 file edit와 bash 권한이 `ask`로 제한되고, Build agent는 실제 개발 작업에 쓰인다. 따라서 "먼저 Plan으로 질문과 구현 계획을 만들고, 합의된 계획만 Build/subagent에 넘긴다"는 절차를 권한 설계로 고정할 수 있다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/agents/
 
+반대로 [[Pi Coding Agent]]는 built-in plan mode를 제공하지 않는다고 설명한다. Pi에서는 계획을 별도 파일에 쓰게 하거나 prompt template, skill, extension으로 팀의 계획 절차를 만드는 방식이 더 자연스럽다. 즉 Plan Mode는 특정 버튼이 아니라 "구현 전 질문, 파일 범위, 검증 기준을 먼저 고정하는 절차"로 이해하는 편이 도구 간 이식성이 높다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage
+
 ## 예시
 
 1. 요구사항을 한 문단으로 설명한다.
@@ -59,4 +63,5 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 - [[Thinking과 Understanding 분리]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[OpenCode]]
+- [[Pi Coding Agent]]
 

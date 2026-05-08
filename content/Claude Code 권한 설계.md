@@ -15,8 +15,10 @@ sources:
   - raw/보리스_클로드코드_실무_사용법.md
   - raw/Claude-Code-실무활용법-보리스-관점-정리.md
   - raw/API_Key_관리_및_Infisical_도입_가이드.md
+  - raw/pi-coding-agent-overview.md
+  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-08
 ---
 
 # Claude Code 권한 설계
@@ -39,6 +41,8 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 
 비밀값은 별도 권한 범위로 다룬다. [[API Key 관리 원칙]]에 따르면 Key는 코드, 로그, 클라이언트 번들에 남기지 않아야 하므로, 에이전트에게도 secret 조회, 출력, 커밋, production Key 사용을 금지하거나 확인 요청으로 묶어야 한다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`
 
+[[Pi Coding Agent]]는 built-in permission popup을 제공하지 않는 대신 도구 허용 목록과 실행 환경으로 권한을 나누는 방향을 제시한다. 예를 들어 `--tools read,grep,find,ls`는 읽기 전용 리뷰에 적합하고, `--no-tools`는 도구 호출 자체를 막는다. 쓰기나 shell 권한이 필요한 작업은 container, extension, project rule로 별도 가드레일을 둔다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage
+
 ## 예시
 
 | 구분 | 예시 |
@@ -46,6 +50,7 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 | 허용 | 테스트 실행, 린트 실행, 타입 체크 |
 | 확인 요청 | 패키지 설치, 커밋, 마이그레이션 생성 |
 | 금지 | 프로덕션 DB 변경, 위험한 삭제 명령, 비밀값 출력 |
+| 읽기 전용 | `read`, `grep`, `find`, `ls` 같은 조사 도구만 허용 |
 
 ## 충돌
 
@@ -58,4 +63,5 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 - [[LLM을 동물 지능처럼 다루지 않기]]
 - [[API Key 관리 원칙]]
 - [[클라이언트 Secret 노출 방지]]
+- [[Pi Coding Agent]]
 

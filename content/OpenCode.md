@@ -58,4 +58,5 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 - [[병렬 에이전트 세션 운영]]
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[Pi Coding Agent]]
 

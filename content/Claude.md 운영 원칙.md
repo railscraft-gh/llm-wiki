@@ -16,7 +16,9 @@ sources:
   - raw/Claude-Code-실무활용법-보리스-관점-정리.md
   - raw/AI로_만든_제품이_안_팔리는_이유.md
   - raw/opencode-masterclass-summary.md
+  - raw/pi-coding-agent-overview.md
   - https://opencode.ai/docs/rules/
+  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
 updated: 2026-05-08
 ---
@@ -44,6 +46,8 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 
 [[OpenCode]] 공식 문서는 project root의 `AGENTS.md`를 custom instructions 파일로 설명한다. `/init`은 repo의 build, lint, test command, architecture, convention, operational gotcha를 요약해 `AGENTS.md`를 만들거나 갱신한다. 따라서 도구 이름은 달라도 원칙은 같다. agent memory file에는 "계속 참조해야 하는 운영 제약"만 넣고, 긴 배경 자료는 skill, docs, command로 분리한다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/rules/
 
+[[Pi Coding Agent]]도 시작 시 `AGENTS.md` 또는 `CLAUDE.md`를 읽는다. 공식 문서 기준으로 전역 `~/.pi/agent/AGENTS.md`, 현재 작업 디렉터리와 상위 디렉터리의 context file을 로드하며, 깨끗한 실행이 필요할 때는 `--no-context-files` 또는 `-nc`로 끈다. 이는 agent memory file이 편의 기능이 아니라 실행 환경의 일부라는 점을 보여준다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage
+
 ## 예시
 
 ```markdown
@@ -67,4 +71,5 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 - [[Plan Mode 기반 AI 작업]]
 - [[DESIGN.md 운영 원칙]]
 - [[OpenCode]]
+- [[Pi Coding Agent]]
 

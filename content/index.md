@@ -14,6 +14,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-08 | `raw/pi-coding-agent-overview.md`, `raw/Quartz-GitHub-Pages-Complete-Guide.md` | [[Pi Coding Agent]], [[Quartz로 Obsidian Wiki 배포하기]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]], [[Plan Mode 기반 AI 작업]], [[병렬 에이전트 세션 운영]], [[Claude Code 권한 설계]], [[OpenCode]] | done | [[log#2026-05-08]] |
 | 2026-05-08 | `raw/Quartz-Deploy-Guide.md`, `raw/opencode-masterclass-summary.md`, `raw/Infisical_SSH_헤드리스_인증_가이드.md` | [[Quartz로 Obsidian Wiki 배포하기]], [[OpenCode]], [[Infisical 헤드리스 인증]], [[Plan Mode 기반 AI 작업]], [[병렬 에이전트 세션 운영]], [[Claude.md 운영 원칙]], [[AI 코딩 에이전트 검증 전략]], [[Infisical 도입 전략]], [[Agent Native Infrastructure]] | done | [[log#2026-05-08]] |
 | 2026-05-07 | `raw/API_Key_관리_및_Infisical_도입_가이드.md`, `raw/AI로_만든_제품이_안_팔리는_이유.md` | [[API Key 관리 원칙]], [[클라이언트 Secret 노출 방지]], [[Infisical 도입 전략]], [[AI Slop]], [[DESIGN.md 운영 원칙]], [[AI 시대 디자인 시스템]], [[AI 코딩 에이전트 검증 전략]], [[Vibe Coding과 Agentic Engineering]], [[Claude.md 운영 원칙]], [[Agent Native Infrastructure]], [[Claude Code 권한 설계]] | done | [[log#2026-05-07]] |
 | 2026-05-06 | `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`, `raw/보리스_클로드코드_실무_사용법.md`, `raw/Claude-Code-실무활용법-보리스-관점-정리.md`, `raw/안드레_카파시_인터뷰_정리.md`, `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md` | [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]], [[Claude Code 권한 설계]], [[Plan Mode 기반 AI 작업]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[강한 모델로 덜 헤매기]], [[Software 3.0]], [[Neural Computer]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[AI 네이티브 사용자]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]] | done | [[log#2026-05-06]] |
@@ -39,4 +40,5 @@
 | [[DESIGN.md 운영 원칙]] | Google Labs spec이 alpha라 문법과 CLI가 바뀔 수 있다. | spec 업데이트 시 재검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
+| [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |
 | [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
