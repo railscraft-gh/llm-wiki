@@ -24,7 +24,14 @@ cp -rL "$WIKI_DIR" content
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] wiki 동기화 완료"
 
-# 2. git 변경사항 확인 후 커밋/푸시
+# 2. 출처 섹션 제거 (배포용)
+find content -name "*.md" -type f | while read -r file; do
+    sed -i '' '/^## 출처/,$d' "$file"
+done
+
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] 출처 섹션 제거 완료"
+
+# 3. git 변경사항 확인 후 커밋/푸시
 git add -A
 
 if git diff --cached --quiet; then
@@ -35,7 +42,7 @@ else
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] 배포 완룝: https://railscraft-gh.github.io/llm-wiki"
 fi
 
-# 3. 로컬 개발 환경을 위해 symlink로 복원
+# 4. 로컬 개발 환경을 위해 symlink로 복원
 rm -rf content
 ln -s "$WIKI_DIR" content
 

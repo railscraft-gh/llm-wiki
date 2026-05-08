@@ -48,7 +48,3 @@ MenuGen 사례는 더 극단적이다. 원래는 메뉴판 사진에서 OCR로 �
 - [[Thinking과 Understanding 분리]]
 - [[Jagged Intelligence]]
 
-## 출처
-
-- `raw/안드레_카파시_인터뷰_정리.md`
-- `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`

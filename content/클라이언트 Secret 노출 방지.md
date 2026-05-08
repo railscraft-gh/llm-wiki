@@ -51,6 +51,3 @@ raw 문서는 서버 사이드 API Key를 React, Vue 같은 클라이언트 코�
 - [[Claude Code 권한 설계]]
 - [[Agent Native Infrastructure]]
 
-## 출처
-
-- `raw/API_Key_관리_및_Infisical_도입_가이드.md`

@@ -52,8 +52,3 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 - [[병렬 에이전트 세션 운영]]
 - [[Agent Native Infrastructure]]
 
-## 출처
-
-- `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`
-- `raw/보리스_클로드코드_실무_사용법.md`
-- `raw/Claude-Code-실무활용법-보리스-관점-정리.md`

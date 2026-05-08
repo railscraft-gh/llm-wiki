@@ -48,7 +48,3 @@ Neural Computer는 CPU 위에서 신경망을 호출하는 현재 구조를 넘�
 - [[Agent Native Infrastructure]]
 - [[Jagged Intelligence]]
 
-## 출처
-
-- `raw/안드레_카파시_인터뷰_정리.md`
-- `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`

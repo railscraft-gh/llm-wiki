@@ -55,8 +55,3 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 네이티브 사용자]]
 
-## 출처
-
-- `raw/AI로_만든_제품이_안_팔리는_이유.md`
-- https://github.com/google-labs-code/design.md
-- https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/

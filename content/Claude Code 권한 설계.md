@@ -59,9 +59,3 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 - [[API Key 관리 원칙]]
 - [[클라이언트 Secret 노출 방지]]
 
-## 출처
-
-- `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`
-- `raw/보리스_클로드코드_실무_사용법.md`
-- `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
-- `raw/API_Key_관리_및_Infisical_도입_가이드.md`

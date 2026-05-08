@@ -61,11 +61,3 @@ Service Token은 environment/path scope와 만료를 지정할 수 있지만, 20
 - [[클라이언트 Secret 노출 방지]]
 - [[Agent Native Infrastructure]]
 
-## 출처
-
-- `raw/Infisical_SSH_헤드리스_인증_가이드.md`
-- `raw/API_Key_관리_및_Infisical_도입_가이드.md`
-- https://infisical.com/docs/documentation/platform/identities/machine-identities
-- https://infisical.com/docs/documentation/platform/identities/universal-auth
-- https://infisical.com/docs/cli/commands
-- https://infisical.com/docs/cli/commands/service-token

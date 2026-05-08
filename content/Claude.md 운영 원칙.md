@@ -68,11 +68,3 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 - [[DESIGN.md 운영 원칙]]
 - [[OpenCode]]
 
-## 출처
-
-- `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`
-- `raw/보리스_클로드코드_실무_사용법.md`
-- `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
-- `raw/AI로_만든_제품이_안_팔리는_이유.md`
-- `raw/opencode-masterclass-summary.md`
-- https://opencode.ai/docs/rules/

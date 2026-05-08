@@ -58,11 +58,3 @@ Obsidian compatibility는 이 vault의 wikilink 구조를 웹에서 유지하는
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Software 3.0]]
 
-## 출처
-
-- `raw/Quartz-Deploy-Guide.md`
-- https://quartz.jzhao.xyz/
-- https://quartz.jzhao.xyz/build
-- https://quartz.jzhao.xyz/hosting
-- https://quartz.jzhao.xyz/configuration
-- https://quartz.jzhao.xyz/features/Obsidian-compatibility

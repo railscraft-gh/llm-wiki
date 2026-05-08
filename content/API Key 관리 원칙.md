@@ -54,8 +54,3 @@ OWASP Secrets Management Cheat Sheet는 secret을 중앙화하고 표준화하�
 - [[Claude Code 권한 설계]]
 - [[AI 코딩 에이전트 검증 전략]]
 
-## 출처
-
-- `raw/API_Key_관리_및_Infisical_도입_가이드.md`
-- https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
-- https://www.12factor.net/config

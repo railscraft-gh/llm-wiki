@@ -69,8 +69,3 @@ Primary는 주요 action에만 사용한다.
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 
-## 출처
-
-- `raw/AI로_만든_제품이_안_팔리는_이유.md`
-- https://github.com/google-labs-code/design.md
-- https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/

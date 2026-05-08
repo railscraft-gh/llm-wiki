@@ -63,12 +63,3 @@ raw 문서의 실무 로드맵은 1주차 POC, 2주차 로컬 개발 전환, 3�
 - [[Agent Native Infrastructure]]
 - [[Claude Code 오케스트레이션]]
 
-## 출처
-
-- `raw/API_Key_관리_및_Infisical_도입_가이드.md`
-- `raw/Infisical_SSH_헤드리스_인증_가이드.md`
-- https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
-- https://infisical.com/docs/documentation/platform/identities/machine-identities
-- https://infisical.com/docs/documentation/platform/identities/universal-auth
-- https://github.com/Infisical/infisical
-- https://infisical.com/pricing

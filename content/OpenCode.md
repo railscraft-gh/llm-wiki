@@ -59,11 +59,3 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 
-## 출처
-
-- `raw/opencode-masterclass-summary.md`
-- https://opencode.ai/docs/agents/
-- https://opencode.ai/docs/rules/
-- https://opencode.ai/docs/skills/
-- https://opencode.ai/docs/models/
-- https://opencode.ai/docs/config/

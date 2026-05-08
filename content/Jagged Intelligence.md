@@ -49,7 +49,3 @@ Jagged Intelligence는 LLM이 어떤 영역에서는 천재처럼 보이지만 �
 - [[LLM을 동물 지능처럼 다루지 않기]]
 - [[Vibe Coding과 Agentic Engineering]]
 
-## 출처
-
-- `raw/안드레_카파시_인터뷰_정리.md`
-- `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`

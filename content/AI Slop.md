@@ -52,6 +52,3 @@ AI Slop은 [[Vibe Coding과 Agentic Engineering]]의 제품 디자인 버전으�
 - [[Vibe Coding과 Agentic Engineering]]
 - [[AI 네이티브 사용자]]
 
-## 출처
-
-- `raw/AI로_만든_제품이_안_팔리는_이유.md`
