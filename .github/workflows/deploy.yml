@@ -38,6 +38,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Resolve content symlink
+        run: |
+          if [ -L content ]; then
+            cp -rL content content-real
+            rm content
+            mv content-real content
+          fi
+
       - name: Build Quartz
         run: npx quartz build
 
