@@ -4,6 +4,14 @@
 
 ### Ingest
 
+- 입력: `raw/vibe_sunsang_정리.md`
+- 생성: [[바선생]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 바선생은 Claude Code 플러그인으로 설치 방식과 명령어 인터페이스가 빠르게 바뀔 수 있어 실사용 전 공식 GitHub README 확인 필요. 6축 분석과 레벨 판정 기준은 저장소 기준임.
+
+### Ingest
+
 - 입력: `raw/graphify_정리.md`
 - 생성: [[Graphify]]
 - 수정: 없음
