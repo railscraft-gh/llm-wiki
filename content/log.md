@@ -18,29 +18,16 @@
 - index 업데이트: 완료
 - 남은 검토: Matt Pocock의 주장은 단일 발표자료 기준이며 추가 출처 검증 필요. Grill Me 스킬의 GitHub star 수와 Ubiquitous Language 도입 효과는 개인 경험 기반임.
 
-### Ingest
+### Lint
 
-- 입력: `raw/vibe_sunsang_정리.md`
-- 생성: [[바선생]]
-- 수정: 없음
-- index 업데이트: 완료
-- 남은 검토: 바선생은 Claude Code 플러그인으로 설치 방식과 명령어 인터페이스가 빠르게 바뀔 수 있어 실사용 전 공식 GitHub README 확인 필요. 6축 분석과 레벨 판정 기준은 저장소 기준임.
-
-### Ingest
-
-- 입력: `raw/graphify_정리.md`
-- 생성: [[Graphify]]
-- 수정: 없음
-- index 업데이트: 완료
-- 남은 검토: Graphify는 15개 이상 플랫폼 지원과 빠르게 바뀌는 CLI 옵션을 다루므로 실사용 전 공식 GitHub/README 확인 필요. 71.5배 토큰 절감 수치는 저장소 내 `worked/karpathy-repos/` 실측 데이터 기준임.
-
-### Ingest
-
-- 입력: `raw/context-mode-README-정리.md`
-- 생성: [[Context Mode]]
-- 수정: 없음
-- index 업데이트: 완료
-- 남은 검토: Context Mode는 14개 플랫폼 지원과 빠르게 바뀌는 API(Hook 메커니즘, 플랫폼별 설정)를 다루므로 실사용 전 공식 GitHub/docs 확인 필요. HN #1, Microsoft/Google/Meta/Amazon/NVIDIA 사용 여부는 GitHub README 기준임.
+- 실행 방식: 자동 스크립트 (wiki/ 29개 노트 파일 대상)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 수정 필요 없음. 모든 항목 PASS.
 
 ## 2026-05-08
 
