@@ -42,6 +42,57 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 - 콘텐츠 운영: Obsidian 아이디어 DB 조회 -> 후보 주제 선정 -> 제목/훅/구성안 생성
 - 개발 반복: `/test`, `/review`, `/deploy-check` 같은 slash command로 반복 프롬프트를 줄인다.
 
+## CC101 보강: Headless 모드와 CI/CD 연동
+
+### Headless 모드 (`-p` 옵션)
+
+터미널에서 Claude Code를 대화형이 아닌 명령형으로 실행한다. 자동화와 파이프라인에 필수적이다. (출처: CC101)
+
+```bash
+# 답변만 출력하고 종료
+claude -p "이 함수 설명해줘"
+
+# 파일 분석 후 보고서 생성
+claude -p "src/ 폴터 코드 품질 분석하고 보고서 작성"
+
+# 예산 한도 설정
+claude -p --max-budget-usd 1.00 "질문"
+```
+
+### GitHub Actions 연동
+
+PR이 올라올 때마다 자동으로 코드 리뷰를 수행한다:
+
+```yaml
+# .github/workflows/claude-review.yml
+name: Claude Code Review
+on: [pull_request]
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Claude Code Review
+        run: |
+          claude -p "이 PR의 변경사항을 리뷰해줘. 보안 취약점과 코드 품질 문제를 중점적으로 확인해줘."
+```
+
+### GitLab CI/CD 연동
+
+GitLab에서도 유사하게 파이프라인에 Claude Code를 통합할 수 있다:
+
+```yaml
+# .gitlab-ci.yml
+claude_review:
+  stage: test
+  script:
+    - claude -p "변경된 파일들을 분석하고 잠재적 버그를 찾아줘"
+  only:
+    - merge_requests
+```
+
+이러한 연동은 [[Claude Code 권한 설계]]를 통해 `--dangerously-skip-permissions` 사용을 제한하고 안전하게 실행해야 한다. (출처: CC101)
+
 ## 충돌
 
 현재 확인된 충돌 없음.
