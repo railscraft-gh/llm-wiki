@@ -16,9 +16,10 @@ sources:
   - raw/Claude-Code-실무활용법-보리스-관점-정리.md
   - raw/API_Key_관리_및_Infisical_도입_가이드.md
   - raw/pi-coding-agent-overview.md
+  - raw/cc101_axwith_ko.md
   - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-09
 ---
 
 # Claude Code 권한 설계
