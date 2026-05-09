@@ -4,6 +4,14 @@
 
 ### Ingest
 
+- 입력: `raw/cc101_axwith_ko.md`
+- 생성: 없음 (기존 노트 보강)
+- 수정: [[Claude Code 권한 설계]], [[Claude.md 운영 원칙]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[Plan Mode 기반 AI 작업]], [[AI 코딩 에이전트 검증 전략]]
+- index 업데이트: 완료
+- 남은 검토: CC101은 기존 wiki 노트들과 중복되는 내용이 많아 보강만 진행함. 권한 모드 3가지, CLAUDE.md 템플릿 3종, pipe scripting, Headless 모드, Plan Mode 사용법, 디버깅 3단계, slopsquatting 경고 등이 추가됨.
+
+### Ingest
+
 - 입력: `raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md`
 - 생성: [[AI 시대 소프트웨어 펀더멘탈]]
 - 수정: 없음
