@@ -4,6 +4,14 @@
 
 ### Ingest
 
+- 입력: `raw/graphify_정리.md`
+- 생성: [[Graphify]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: Graphify는 15개 이상 플랫폼 지원과 빠르게 바뀌는 CLI 옵션을 다루므로 실사용 전 공식 GitHub/README 확인 필요. 71.5배 토큰 절감 수치는 저장소 내 `worked/karpathy-repos/` 실측 데이터 기준임.
+
+### Ingest
+
 - 입력: `raw/context-mode-README-정리.md`
 - 생성: [[Context Mode]]
 - 수정: 없음
