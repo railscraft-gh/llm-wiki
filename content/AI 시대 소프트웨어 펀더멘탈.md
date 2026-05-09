@@ -107,7 +107,6 @@ Deep Module을 회색 상자로 취급한다. 인터페이스는 사람이 직�
 
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Vibe Coding과 Agentic Engineering]]
-- [[TDD의 실전 적용]]
-- [[Domain-Driven Design]]
+- [[Claude.md 운영 원칙]]
 - [[AI Slop]]
 
