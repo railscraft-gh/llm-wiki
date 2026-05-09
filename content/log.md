@@ -4,6 +4,14 @@
 
 ### Ingest
 
+- 입력: `raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md`
+- 생성: [[AI 시대 소프트웨어 펀더멘탈]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: Matt Pocock의 주장은 단일 발표자료 기준이며 추가 출처 검증 필요. Grill Me 스킬의 GitHub star 수와 Ubiquitous Language 도입 효과는 개인 경험 기반임.
+
+### Ingest
+
 - 입력: `raw/vibe_sunsang_정리.md`
 - 생성: [[바선생]]
 - 수정: 없음
