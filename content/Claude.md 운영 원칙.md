@@ -17,10 +17,11 @@ sources:
   - raw/AI로_만든_제품이_안_팔리는_이유.md
   - raw/opencode-masterclass-summary.md
   - raw/pi-coding-agent-overview.md
+  - raw/cc101_axwith_ko.md
   - https://opencode.ai/docs/rules/
   - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-09
 ---
 
 # Claude.md 운영 원칙
