@@ -14,6 +14,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-09 | `raw/vibe_sunsang_정리.md` | [[바선생]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/graphify_정리.md` | [[Graphify]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/context-mode-README-정리.md` | [[Context Mode]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md` | [[AI 시대 소프트웨어 펀더멘탈]] | done | [[log#2026-05-09]] |
