@@ -14,6 +14,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-09 | `raw/cc101_axwith_ko.md` | [[Claude Code 권한 설계]], [[Claude.md 운영 원칙]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[Plan Mode 기반 AI 작업]], [[AI 코딩 에이전트 검증 전략]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/vibe_sunsang_정리.md` | [[바선생]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/graphify_정리.md` | [[Graphify]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/context-mode-README-정리.md` | [[Context Mode]] | done | [[log#2026-05-09]] |
