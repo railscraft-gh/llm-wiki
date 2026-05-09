@@ -18,10 +18,11 @@ sources:
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/AI로_만든_제품이_안_팔리는_이유.md
   - raw/opencode-masterclass-summary.md
+  - raw/cc101_axwith_ko.md
   - https://github.com/google-labs-code/design.md
   - https://opencode.ai/docs/config/
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-09
 ---
 
 # AI 코딩 에이전트 검증 전략
