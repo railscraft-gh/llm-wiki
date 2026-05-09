@@ -4,17 +4,11 @@
 
 ### Ingest
 
-- 입력: `raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md`
-- 생성: [[AI 시대 소프트웨어 펀더멘탈]]
+- 입력: `raw/context-mode-README-정리.md`
+- 생성: [[Context Mode]]
 - 수정: 없음
 - index 업데이트: 완료
-- 남은 검토: Grill Me, Ubiquitous Language, Deep Module 같은 개별 개념은 현재 raw의 설명만으로는 너무 짧아 별도 노트 분리하지 않음. 추후 다른 자료에서 같은 개념이 반복되면 분할 검토.
-
-### 결정 기록
-
-- 결정: 통합
-- 대상: `raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md`
-- 근거: 6가지 함정과 처방이 하나의 주장(펀더멘탈의 중요성)으로 연결되며, 개별 개념(Grill Me, Ubiquitous Language, Deep Module 등)은 각각의 raw 설명이 짧아 별도 노트보다 통합 노트의 섹션으로 다루는 것이 적절함.
+- 남은 검토: Context Mode는 14개 플랫폼 지원과 빠르게 바뀌는 API(Hook 메커니즘, 플랫폼별 설정)를 다루므로 실사용 전 공식 GitHub/docs 확인 필요. HN #1, Microsoft/Google/Meta/Amazon/NVIDIA 사용 여부는 GitHub README 기준임.
 
 ## 2026-05-08
 
