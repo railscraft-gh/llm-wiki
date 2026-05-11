@@ -42,6 +42,35 @@
 - index 업데이트: 완료
 - 남은 검토: RL 초보자 가이드는 직관과 큰 흐름에 집중한 자료로 수학적 세부사항은 생략됨. 심화 학습을 위해서는 OpenAI Spinning Up이나 Sutton & Barto 교재 권장. GRPO는 DeepSeek-R1 논문 기준이며 이후 변화 가능.
 
+### Lint
+
+- 실행 방식: 수동
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개로 판단. PPO 클리핑 범위 ε=0.2, Nginx 2004년 출시, Docker 2013년 출시, Let's Encrypt 2015년 출시 등 수치 문장에는 raw 출처를 붙임.
+- 관련 노트 2개 미만 문서: 0개. 새 노트 6개 모두 2개 이상 관련 노트 링크 보유.
+- 고아 페이지: 0개. 생성 노트는 index와 관련 노트에서 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개. Software 3.0, Jagged Intelligence, Vibe Coding과 Agentic Engineering 등 핵심 노트는 2026-05-11로 갱신됨.
+- 조치: 생성 노트의 frontmatter 필수 키(type, status, core, tags, sources, created, updated) 모두 확인 완료. Sequoia Ascent raw에서 추가된 내용은 기존 노트의 상세 섹션에 보강하고 출처를 명시함.
+
+### 결정 기록
+
+- 결정: 분할
+- 대상: `raw/매퍼코-3스킬-조합-워크플로우-해강.md`
+- 근거: 도메인 맵핑(맥퍼커), 스펙 브레인스토밍(G스텍), 서브 에이전트 구현(슈퍼파워즈)이 하나의 워크플로우로 연결되므로 [[매퍼코 3스킬 워크플로우]]로 통합함. 단일 스킬 노트로 쪼개지 않고 실무 적용 관점에서 통합 workflow note로 정리함.
+
+- 결정: 분할
+- 대상: `raw/강화학습-RL-초보자-가이드.md`
+- 근거: RL 기초 개념(MDP, Policy, Value Function), 알고리즘 상세(PPO, DQN 등), LLM 정렬 기법(RLHF, DPO, GRPO)의 유지보수 주기와 독자층이 달라 [[강화학습 기초]], [[PPO와 정책 최적화]], [[LLM 정렬 기법]]으로 분할함.
+
+- 결정: 병합 및 보강
+- 대상: `raw/sequoia-ascent-2026-karpathy-ko.md`
+- 근거: 기존 카파시 인터뷰 raw와 중복되는 개념(Software 3.0, Jagged Intelligence, Agentic Engineering 등)이 많아 기존 노트 보강만 진행함. 새로운 내용(MenuGen 소멸, LLM Wiki 패턴, 센서/액추에이터, 채용 변화 등)은 해당 노트의 상세 섹션에 추가하고 출처를 명시함.
+
+- 결정: 분할
+- 대상: `raw/뿌리강의-4-웹-서버와-배포.md`
+- 근거: 웹 서버 역사, 배포 기술, DNS/HTTPS, 스케일링 등이 하나의 연속된 흐름으로 재사용 가능해 [[웹 서버와 배포 기초]]로 통합함. 에이전트 네이티브 관점에서 headless 환경, 컨테이너화, CLI 기반 Secret 주입을 강조함.
+
 ## 2026-05-09
 
 ### Ingest
