@@ -53,6 +53,8 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 
 [[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage, https://pi.dev/docs/latest/packages
 
+Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다. 출처: `raw/sequoia-ascent-2026-karpathy-ko.md`
+
 ## 예시
 
 - 나쁜 문서: 콘솔 스크린샷을 보며 버튼을 순서대로 누르게 한다.
