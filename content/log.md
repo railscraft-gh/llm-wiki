@@ -1,5 +1,15 @@
 # LLM Wiki Log
 
+## 2026-05-11
+
+### Ingest
+
+- 입력: `raw/oh-my-openagent-team-mode.md`
+- 생성: [[OpenAgent Team Mode]]
+- 수정: [[병렬 에이전트 세션 운영]] (관련 노트 추가)
+- index 업데이트: 완료
+- 남은 검토: Team Mode는 활성화 후 opencode 재시작이 필요하며, tmux_visualization 설정은 선택 사항임. 내장 스킬(hyperplan, security-research)은 별도 설정 없이 사용 가능하나 실제 검증 필요.
+
 ## 2026-05-09
 
 ### Ingest
