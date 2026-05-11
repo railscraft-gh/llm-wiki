@@ -12,6 +12,7 @@ aliases:
 sources:
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/sequoia-ascent-2026-karpathy-ko.md
   - raw/API_Key_관리_및_Infisical_도입_가이드.md
   - raw/Quartz-Deploy-Guide.md
   - raw/Quartz-GitHub-Pages-Complete-Guide.md
@@ -23,7 +24,7 @@ sources:
   - https://pi.dev/docs/latest/usage
   - https://pi.dev/docs/latest/packages
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-11
 ---
 
 # Agent Native Infrastructure
