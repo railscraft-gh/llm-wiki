@@ -10,6 +10,38 @@
 - index 업데이트: 완료
 - 남은 검토: Team Mode는 활성화 후 opencode 재시작이 필요하며, tmux_visualization 설정은 선택 사항임. 내장 스킬(hyperplan, security-research)은 별도 설정 없이 사용 가능하나 실제 검증 필요.
 
+### Ingest
+
+- 입력: `raw/sequoia-ascent-2026-karpathy-ko.md`
+- 생성: 없음 (기존 노트 보강)
+- 수정: [[Software 3.0]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]], [[AI 네이티브 사용자]]
+- index 업데이트: 완료
+- 남은 검토: Sequoia Ascent 2026은 기존 카파시 인터뷰 raw와 중복되는 개념이 많아 보강만 진행함. 새로 추가된 내용: MenuGen 소프트웨어 소멸 예시, LLM Wiki 패턴, 검증 가능성×훈련 집중도 공식, 에이전틱 엔지니어링 채용 기준 변화, 센서/액추에이터 프레이밍, "유령이지 동물이 아니다" mental model.
+
+### Ingest
+
+- 입력: `raw/매퍼코-3스킬-조합-워크플로우-해강.md`
+- 생성: [[매퍼코 3스킬 워크플로우]]
+- 수정: [[AI 코딩 에이전트 검증 전략]], [[Plan Mode 기반 AI 작업]] (관련 노트 추가)
+- index 업데이트: 완료
+- 남은 검토: 맥퍼커/G스텍/슈퍼파워즈의 정확한 영문 명칭은 추가 검증 필요. 해강의 워크플로우는 2~3시간 소요되며 실제 적용 시 단축/조정 가능.
+
+### Ingest
+
+- 입력: `raw/뿌리강의-4-웹-서버와-배포.md`
+- 생성: [[웹 서버와 배포 기초]]
+- 수정: [[Agent Native Infrastructure]] (관련 노트 추가)
+- index 업데이트: 완료
+- 남은 검토: 뿌리강의는 바이브 코딩 입문자 대상이므로 기술적 깊이는 얕음. Nginx 설정, Docker 최적화, CI/CD 고급 패턴은 별도 자료 필요.
+
+### Ingest
+
+- 입력: `raw/강화학습-RL-초보자-가이드.md`
+- 생성: [[강화학습 기초]], [[PPO와 정책 최적화]], [[LLM 정렬 기법]]
+- 수정: [[Software 3.0]], [[Jagged Intelligence]] (관련 노트 추가)
+- index 업데이트: 완료
+- 남은 검토: RL 초보자 가이드는 직관과 큰 흐름에 집중한 자료로 수학적 세부사항은 생략됨. 심화 학습을 위해서는 OpenAI Spinning Up이나 Sutton & Barto 교재 권장. GRPO는 DeepSeek-R1 논문 기준이며 이후 변화 가능.
+
 ## 2026-05-09
 
 ### Ingest
