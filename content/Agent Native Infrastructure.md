@@ -73,4 +73,5 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 - [[Quartz로 Obsidian Wiki 배포하기]]
 - [[OpenCode]]
 - [[Pi Coding Agent]]
+- [[웹 서버와 배포 기초]]
 
