@@ -15,6 +15,10 @@
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
 | 2026-05-11 | `raw/oh-my-openagent-team-mode.md` | [[OpenAgent Team Mode]] | done | [[log#2026-05-11]] |
+| 2026-05-11 | `raw/sequoia-ascent-2026-karpathy-ko.md` | [[Software 3.0]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]], [[AI 네이티브 사용자]] | done | [[log#2026-05-11]] |
+| 2026-05-11 | `raw/매퍼코-3스킬-조합-워크플로우-해강.md` | [[매퍼코 3스킬 워크플로우]] | done | [[log#2026-05-11]] |
+| 2026-05-11 | `raw/뿌리강의-4-웹-서버와-배포.md` | [[웹 서버와 배포 기초]] | done | [[log#2026-05-11]] |
+| 2026-05-11 | `raw/강화학습-RL-초보자-가이드.md` | [[강화학습 기초]], [[PPO와 정책 최적화]], [[LLM 정렬 기법]] | done | [[log#2026-05-11]] |
 | 2026-05-09 | `raw/cc101_axwith_ko.md` | [[Claude Code 권한 설계]], [[Claude.md 운영 원칙]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[Plan Mode 기반 AI 작업]], [[AI 코딩 에이전트 검증 전략]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/vibe_sunsang_정리.md` | [[바선생]] | done | [[log#2026-05-09]] |
 | 2026-05-09 | `raw/graphify_정리.md` | [[Graphify]] | done | [[log#2026-05-09]] |
