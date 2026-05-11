@@ -49,4 +49,6 @@ Jagged Intelligence는 LLM이 어떤 영역에서는 천재처럼 보이지만 �
 - [[Software 3.0]]
 - [[LLM을 동물 지능처럼 다루지 않기]]
 - [[Vibe Coding과 Agentic Engineering]]
+- [[PPO와 정책 최적화]]
+- [[강화학습 기초]]
 
