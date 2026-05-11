@@ -48,4 +48,6 @@ MenuGen 사례는 더 극단적이다. 원래는 메뉴판 사진에서 OCR로 �
 - [[Agent Native Infrastructure]]
 - [[Thinking과 Understanding 분리]]
 - [[Jagged Intelligence]]
+- [[강화학습 기초]]
+- [[LLM 정렬 기법]]
 
