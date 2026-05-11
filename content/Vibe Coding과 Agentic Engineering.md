@@ -14,8 +14,9 @@ sources:
   - raw/안드레_카파시_인터뷰_정리.md
   - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
   - raw/AI로_만든_제품이_안_팔리는_이유.md
+  - raw/sequoia-ascent-2026-karpathy-ko.md
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 # Vibe Coding과 Agentic Engineering
