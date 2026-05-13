@@ -47,7 +47,7 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 
 ### Headless 모드 (`-p` 옵션)
 
-터미널에서 Claude Code를 대화형이 아닌 명령형으로 실행한다. 자동화와 파이프라인에 필수적이다. (출처: CC101)
+터미널에서 Claude Code를 대화형이 아닌 명령형으로 실행한다. 자동화와 파이프라인에 필수적이다.
 
 ```bash
 # 답변만 출력하고 종료
@@ -92,7 +92,7 @@ claude_review:
     - merge_requests
 ```
 
-이러한 연동은 [[Claude Code 권한 설계]]를 통해 `--dangerously-skip-permissions` 사용을 제한하고 안전하게 실행해야 한다. (출처: CC101)
+이러한 연동은 [[Claude Code 권한 설계]]를 통해 `--dangerously-skip-permissions` 사용을 제한하고 안전하게 실행해야 한다.
 
 ## 충돌
 
