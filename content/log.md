@@ -1,5 +1,44 @@
 # LLM Wiki Log
 
+## 2026-05-13
+
+### Ingest
+
+- 입력: `raw/arxiv-2603.28052-meta-harness.md`, `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`, `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`, `raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md`
+- 생성: [[Meta-Harness]], [[Harness Engineering]], [[RuboCop]]
+- 수정: [[강한 모델로 덜 헤매기]] (GLM 5.1 vs Kimi K2.6 비교표 및 선택 가이드 추가), [[Claude.md 운영 원칙]] (Harness Engineering 연결 및 Karpathy 원칙 보강), [[Agent Native Infrastructure]] (Meta-Harness 관련 링크 추가), [[AI 코딩 에이전트 검증 전략]] (RuboCop 검증 도구 링크 추가)
+- index 업데이트: 완료
+- 남은 검토: [[Meta-Harness]]는 Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준이므로 추가 실험 검증 필요. [[Harness Engineering]]은 개념 노트로 정립되었으나 core 승격은 추가 raw 반복 확인 후 검토. [[RuboCop]]은 Ruby 특화 도구로 범용성은 제한적. [[강한 모델로 덜 헤매기]]의 GLM/Kimi 가격과 벤치마크는 변동성이 높음.
+
+### Lint
+
+- 실행 방식: 수동
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개로 판단. GLM 5.1/Kimi K2.6 벤치마크 점수와 가격, RuboCop 버전/스타 수, Meta-Harness 실험 결과에는 raw 출처를 붙임.
+- 관련 노트 2개 미만 문서: 0개. 새 노트 3개 모두 2개 이상 관련 노트 링크 보유.
+- 고아 페이지: 0개. 생성 노트는 index와 관련 노트에서 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개.
+- 조치: 생성 노트의 frontmatter 필수 키(type, status, core, tags, sources, created, updated) 모두 확인 완료.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: `raw/arxiv-2603.28052-meta-harness.md`
+- 근거: Meta-Harness는 하네스 엔지니어링의 자동화 접근법으로, 파일시스템 기반 전체 이력 접근이라는 독특한 메커니즘을 가진다. 3가지 도메인에서 검증된 결과를 포함해 별도 개념 노트로 정리함.
+
+- 결정: 신규 생성
+- 대상: `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`
+- 근거: 하네스 엔지니어링은 기존 [[Claude.md 운영 원칙]]의 상위 개념 프레임으로, 패러다임 변화와 개발자 역할 변화를 설명한다. Claude.md는 실행 팁 중심, Harness Engineering은 개념/패러다임 중심으로 분리함.
+
+- 결정: 신규 생성
+- 대상: `raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md`
+- 근거: Ruby 생태계의 표준 검증 도구로, [[AI 코딩 에이전트 검증 전략]]에서 참조할 수 있는具體적인 tool note가 필요함.
+
+- 결정: 보강
+- 대상: `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`
+- 근거: 모델 비교 정보는 변동성이 높아 별도 노트 생성보다 기존 [[강한 모델로 덜 헤매기]]에 비교표와 선택 가이드를 추가하는 방식으로 처리함.
+
 ## 2026-05-11
 
 ### Ingest
