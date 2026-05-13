@@ -18,10 +18,11 @@ sources:
   - raw/opencode-masterclass-summary.md
   - raw/pi-coding-agent-overview.md
   - raw/cc101_axwith_ko.md
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
   - https://opencode.ai/docs/rules/
   - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-09
+updated: 2026-05-13
 ---
 
 # Claude.md 운영 원칙
