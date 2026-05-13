@@ -50,6 +50,8 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 
 [[Pi Coding Agent]]도 시작 시 `AGENTS.md` 또는 `CLAUDE.md`를 읽는다. 공식 문서 기준으로 전역 `~/.pi/agent/AGENTS.md`, 현재 작업 디렉터리와 상위 디렉터리의 context file을 로드하며, 깨끗한 실행이 필요할 때는 `--no-context-files` 또는 `-nc`로 끈다. 이는 agent memory file이 편의 기능이 아니라 실행 환경의 일부라는 점을 보여준다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage
 
+[[Harness Engineering]] 관점에서 CLAUDE.md는 하네스의 5가지 레버 중 **시스템 프롬프트**에 해당한다. Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 예방하는 가장 기본적이고 강력한 구성 요소다. Anthropic 공식 문서에 따를 200줄을 넘으면 에이전트 준수율이 눈에 띄게 떨어지므로, **60줄 이하로 유지**하고 범용 지침만 포함하는 것이 권장된다. 출처: `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`
+
 ## 예시
 
 ```markdown
