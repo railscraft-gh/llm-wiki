@@ -2,6 +2,14 @@
 
 ## 2026-05-13
 
+### Cleanup
+
+- 작업: 본문 inline 출처 제거
+- 대상: wiki/ 전체 노트 (28개 파일)
+- 제거 수: 108개 inline citation (18개 괄호 형식 + 90개 출처: 형식)
+- 근거: raw/ 파일 경로는 접속 불가능한 로컬 경로이므로 본문 내 inline citation은 가독성만 해침. 출처 정보는 frontmatter `sources`와 `## 출처` 섹션으로 충분히 관리됨.
+- 남은 검토: 향후 ingest 시 inline 출처 패턴 자동 제거 규칙 필요
+
 ### Ingest
 
 - 입력: `raw/arxiv-2603.28052-meta-harness.md`, `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`, `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`, `raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md`
