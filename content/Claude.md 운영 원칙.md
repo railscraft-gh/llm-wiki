@@ -103,4 +103,5 @@ CC101 가이드는 목적별 CLAUDE.md 템플릿 3종을 제공한다. (출처: 
 - [[DESIGN.md 운영 원칙]]
 - [[OpenCode]]
 - [[Pi Coding Agent]]
+- [[Harness Engineering]]
 
