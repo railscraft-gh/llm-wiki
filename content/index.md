@@ -14,6 +14,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-13 | `raw/arxiv-2603.28052-meta-harness.md`, `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`, `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`, `raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md` | [[Meta-Harness]], [[Harness Engineering]], [[RuboCop]], [[강한 모델로 덜 헤매기]] (보강), [[Claude.md 운영 원칙]] (보강), [[Agent Native Infrastructure]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강) | done | [[log#2026-05-13]] |
 | 2026-05-11 | `raw/oh-my-openagent-team-mode.md` | [[OpenAgent Team Mode]] | done | [[log#2026-05-11]] |
 | 2026-05-11 | `raw/sequoia-ascent-2026-karpathy-ko.md` | [[Software 3.0]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]], [[AI 네이티브 사용자]] | done | [[log#2026-05-11]] |
 | 2026-05-11 | `raw/매퍼코-3스킬-조합-워크플로우-해강.md` | [[매퍼코 3스킬 워크플로우]] | done | [[log#2026-05-11]] |
