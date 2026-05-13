@@ -18,13 +18,10 @@ sources:
   - raw/Quartz-GitHub-Pages-Complete-Guide.md
   - raw/opencode-masterclass-summary.md
   - raw/pi-coding-agent-overview.md
+  - raw/arxiv-2603.28052-meta-harness.md
   - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
-  - https://quartz.jzhao.xyz/hosting
-  - https://opencode.ai/docs/rules/
-  - https://pi.dev/docs/latest/usage
-  - https://pi.dev/docs/latest/packages
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-13
 ---
 
 # Agent Native Infrastructure
