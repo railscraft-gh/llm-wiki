@@ -73,5 +73,6 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[Quartz로 Obsidian Wiki 배포하기]]
 - [[OpenCode]]
 - [[Pi Coding Agent]]
-- [[웹 서버와 배포 기초]]
+- [[웹 서버와 배포 기소]]
+- [[Meta-Harness]]
 
