@@ -3,18 +3,18 @@ type: workflow
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - claude-code
-  - orchestration
+ - llm
+ - agent
+ - claude-code
+ - orchestration
 aliases:
-  - Claude Code Orchestration
-  - 에이전트 오케스트레이션
+ - Claude Code Orchestration
+ - 에이전트 오케스트레이션
 sources:
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-  - raw/보리스_클로드코드_실무_사용법.md
-  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
-  - raw/cc101_axwith_ko.md
+ - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+ - raw/보리스_클로드코드_실무_사용법.md
+ - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+ - raw/cc101_axwith_ko.md
 created: 2026-05-06
 updated: 2026-05-09
 ---
@@ -33,7 +33,7 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 
 ## 상세
 
-보리스 자료는 Claude Code를 다양한 workflow를 통제하는 오케스트레이터로 설명한다. 예를 들어 Sentry에서 최근 에러를 확인하고, 관련 로그로 원인을 추정하고, GitHub 이슈를 만들고, 수정 PR을 준비하는 흐름은 여러 도구를 넘나드는 업무다. 출처: `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`, `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
+보리스 자료는 Claude Code를 다양한 workflow를 통제하는 오케스트레이터로 설명한다. 예를 들어 Sentry에서 최근 에러를 확인하고, 관련 로그로 원인을 추정하고, GitHub 이슈를 만들고, 수정 PR을 준비하는 흐름은 여러 도구를 넘나드는 업무다.
 
 이 관점은 [[Agent Native Infrastructure]]와 이어진다. 사람이 클릭해서 서비스 연결, 설정, 배포를 처리하는 대신 에이전트가 텍스트 지시와 CLI/API를 통해 실행할 수 있는 환경일수록 오케스트레이션이 쉬워진다.
 
@@ -69,13 +69,13 @@ PR이 올라올 때마다 자동으로 코드 리뷰를 수행한다:
 name: Claude Code Review
 on: [pull_request]
 jobs:
-  review:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run Claude Code Review
-        run: |
-          claude -p "이 PR의 변경사항을 리뷰해줘. 보안 취약점과 코드 품질 문제를 중점적으로 확인해줘."
+ review:
+ runs-on: ubuntu-latest
+ steps:
+ - uses: actions/checkout@v3
+ - name: Run Claude Code Review
+ run: |
+ claude -p "이 PR의 변경사항을 리뷰해줘. 보안 취약점과 코드 품질 문제를 중점적으로 확인해줘."
 ```
 
 ### GitLab CI/CD 연동
@@ -85,11 +85,11 @@ GitLab에서도 유사하게 파이프라인에 Claude Code를 통합할 수 있
 ```yaml
 # .gitlab-ci.yml
 claude_review:
-  stage: test
-  script:
-    - claude -p "변경된 파일들을 분석하고 잠재적 버그를 찾아줘"
-  only:
-    - merge_requests
+ stage: test
+ script:
+ - claude -p "변경된 파일들을 분석하고 잠재적 버그를 찾아줘"
+ only:
+ - merge_requests
 ```
 
 이러한 연동은 [[Claude Code 권한 설계]]를 통해 `--dangerously-skip-permissions` 사용을 제한하고 안전하게 실행해야 한다.

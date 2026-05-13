@@ -3,20 +3,20 @@ type: workflow
 status: needs-review
 core: false
 tags:
-  - security
-  - secret-management
-  - infrastructure
+ - security
+ - secret-management
+ - infrastructure
 aliases:
-  - Infisical SSH 인증
-  - Infisical Universal Auth
-  - Machine Identity 인증
+ - Infisical SSH 인증
+ - Infisical Universal Auth
+ - Machine Identity 인증
 sources:
-  - raw/Infisical_SSH_헤드리스_인증_가이드.md
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
-  - https://infisical.com/docs/documentation/platform/identities/machine-identities
-  - https://infisical.com/docs/documentation/platform/identities/universal-auth
-  - https://infisical.com/docs/cli/commands
-  - https://infisical.com/docs/cli/commands/service-token
+ - raw/Infisical_SSH_헤드리스_인증_가이드.md
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - https://infisical.com/docs/documentation/platform/identities/machine-identities
+ - https://infisical.com/docs/documentation/platform/identities/universal-auth
+ - https://infisical.com/docs/cli/commands
+ - https://infisical.com/docs/cli/commands/service-token
 created: 2026-05-08
 updated: 2026-05-08
 ---
@@ -36,11 +36,11 @@ Infisical 헤드리스 인증은 브라우저 OAuth가 어려운 SSH 서버, CI/
 
 ## 상세
 
-Machine Identity는 workload나 application을 대표하는 Infisical identity다. 공식 문서는 Universal Auth, Kubernetes Auth, AWS Auth, Azure Auth, GCP Auth 등 여러 authentication method를 설명하며, Universal Auth는 Client ID와 Client Secret을 access token으로 교환하는 방식이다. 출처: https://infisical.com/docs/documentation/platform/identities/machine-identities, https://infisical.com/docs/documentation/platform/identities/universal-auth
+Machine Identity는 workload나 application을 대표하는 Infisical identity다. 공식 문서는 Universal Auth, Kubernetes Auth, AWS Auth, Azure Auth, GCP Auth 등 여러 authentication method를 설명하며, Universal Auth는 Client ID와 Client Secret을 access token으로 교환하는 방식이다.
 
-CLI에서는 `infisical login --method=universal-auth --client-id=<client-id> --client-secret=<client-secret>`처럼 login할 수 있고, `INFISICAL_UNIVERSAL_AUTH_CLIENT_ID`, `INFISICAL_UNIVERSAL_AUTH_CLIENT_SECRET` 환경 변수로 flag를 대체할 수 있다. raw 문서는 SSH 서버에서 이 값을 `/etc/infisical/auth.env` 같은 root 소유 파일에 저장하고 `chmod 600`으로 제한한 뒤 systemd `EnvironmentFile`로 주입하는 예시를 든다. 출처: `raw/Infisical_SSH_헤드리스_인증_가이드.md`, https://infisical.com/docs/cli/commands
+CLI에서는 `infisical login --method=universal-auth --client-id=<client-id> --client-secret=<client-secret>`처럼 login할 수 있고, `INFISICAL_UNIVERSAL_AUTH_CLIENT_ID`, `INFISICAL_UNIVERSAL_AUTH_CLIENT_SECRET` 환경 변수로 flag를 대체할 수 있다. raw 문서는 SSH 서버에서 이 값을 `/etc/infisical/auth.env` 같은 root 소유 파일에 저장하고 `chmod 600`으로 제한한 뒤 systemd `EnvironmentFile`로 주입하는 예시를 든다.
 
-Service Token은 environment/path scope와 만료를 지정할 수 있지만, 2026-05-08 확인 기준 Infisical CLI의 `service-token` command 문서는 deprecated이며 machine identity로 전환하라고 안내한다. 따라서 staging 임시 작업에는 쓸 수 있어도, production server와 CI/CD의 기본 패턴은 Universal Auth로 두는 편이 낫다. 출처: https://infisical.com/docs/cli/commands/service-token
+Service Token은 environment/path scope와 만료를 지정할 수 있지만, 2026-05-08 확인 기준 Infisical CLI의 `service-token` command 문서는 deprecated이며 machine identity로 전환하라고 안내한다. 따라서 staging 임시 작업에는 쓸 수 있어도, production server와 CI/CD의 기본 패턴은 Universal Auth로 두는 편이 낫다.
 
 ## 예시
 
@@ -52,7 +52,7 @@ Service Token은 environment/path scope와 만료를 지정할 수 있지만, 20
 
 ## 충돌
 
-- 2026-05-08 확인: raw 문서는 Service Token을 "레거시지만 여전히 유효"라고 표현하지만, Infisical CLI의 `service-token` command 문서는 deprecated 및 향후 제거 예정으로 표시한다. 현재 노트는 운영 기본값을 Universal Auth로 둔다. 출처: `raw/Infisical_SSH_헤드리스_인증_가이드.md`, https://infisical.com/docs/cli/commands/service-token
+- 2026-05-08 확인: raw 문서는 Service Token을 "레거시지만 여전히 유효"라고 표현하지만, Infisical CLI의 `service-token` command 문서는 deprecated 및 향후 제거 예정으로 표시한다. 현재 노트는 운영 기본값을 Universal Auth로 둔다.
 
 ## 관련 노트
 

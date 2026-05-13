@@ -3,14 +3,14 @@ type: workflow
 status: draft
 core: false
 tags:
-  - security
-  - frontend
-  - api-key
+ - security
+ - frontend
+ - api-key
 aliases:
-  - 브라우저 Secret 노출 방지
-  - Client-side API Key
+ - 브라우저 Secret 노출 방지
+ - Client-side API Key
 sources:
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
 created: 2026-05-07
 updated: 2026-05-07
 ---
@@ -30,7 +30,7 @@ updated: 2026-05-07
 
 ## 상세
 
-raw 문서는 서버 사이드 API Key를 React, Vue 같은 클라이언트 코드에 직접 넣지 말라고 경고한다. 해결책은 클라이언트가 자체 Key로 외부 API를 호출하는 구조가 아니라, `client -> backend proxy -> external API` 구조로 바꾸는 것이다. 이때 클라이언트는 사용자별 JWT나 세션만 들고 있고, 서버는 rate limiting, 권한 확인, 사용량 기록을 붙인다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`
+raw 문서는 서버 사이드 API Key를 React, Vue 같은 클라이언트 코드에 직접 넣지 말라고 경고한다. 해결책은 클라이언트가 자체 Key로 외부 API를 호출하는 구조가 아니라, `client -> backend proxy -> external API` 구조로 바꾸는 것이다. 이때 클라이언트는 사용자별 JWT나 세션만 들고 있고, 서버는 rate limiting, 권한 확인, 사용량 기록을 붙인다.
 
 지도 API처럼 노출이 불가피한 Key는 secret이 아니라 제한된 공개 credential로 취급한다. 도메인 제한, 사용량 알림, 쿼타, 정기 교체를 붙여야 하며, 비용이 큰 권한을 같은 Key에 섞지 않는다.
 

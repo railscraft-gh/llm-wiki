@@ -3,21 +3,21 @@ type: workflow
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - claude-code
-  - safety
+ - llm
+ - agent
+ - claude-code
+ - safety
 aliases:
-  - AI 에이전트 권한 설계
-  - Permission Design
+ - AI 에이전트 권한 설계
+ - Permission Design
 sources:
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-  - raw/보리스_클로드코드_실무_사용법.md
-  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
-  - raw/pi-coding-agent-overview.md
-  - raw/cc101_axwith_ko.md
-  - https://pi.dev/docs/latest/usage
+ - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+ - raw/보리스_클로드코드_실무_사용법.md
+ - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - raw/pi-coding-agent-overview.md
+ - raw/cc101_axwith_ko.md
+ - https://pi.dev/docs/latest/usage
 created: 2026-05-06
 updated: 2026-05-09
 ---
@@ -40,9 +40,9 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 
 이 원칙은 에이전트를 덜 쓰자는 뜻이 아니다. 오히려 [[AI 코딩 에이전트 검증 전략]]을 안정적으로 돌리기 위해 필요한 가드레일이다. 에이전트가 똑똑할수록 더 넓은 범위를 만질 수 있으므로, 허용 범위도 명시적으로 좁혀야 한다.
 
-비밀값은 별도 권한 범위로 다룬다. [[API Key 관리 원칙]]에 따르면 Key는 코드, 로그, 클라이언트 번들에 남기지 않아야 하므로, 에이전트에게도 secret 조회, 출력, 커밋, production Key 사용을 금지하거나 확인 요청으로 묶어야 한다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`
+비밀값은 별도 권한 범위로 다룬다. [[API Key 관리 원칙]]에 따르면 Key는 코드, 로그, 클라이언트 번들에 남기지 않아야 하므로, 에이전트에게도 secret 조회, 출력, 커밋, production Key 사용을 금지하거나 확인 요청으로 묶어야 한다.
 
-[[Pi Coding Agent]]는 built-in permission popup을 제공하지 않는 대신 도구 허용 목록과 실행 환경으로 권한을 나누는 방향을 제시한다. 예를 들어 `--tools read,grep,find,ls`는 읽기 전용 리뷰에 적합하고, `--no-tools`는 도구 호출 자체를 막는다. 쓰기나 shell 권한이 필요한 작업은 container, extension, project rule로 별도 가드레일을 둔다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage
+[[Pi Coding Agent]]는 built-in permission popup을 제공하지 않는 대신 도구 허용 목록과 실행 환경으로 권한을 나누는 방향을 제시한다. 예를 들어 `--tools read,grep,find,ls`는 읽기 전용 리뷰에 적합하고, `--no-tools`는 도구 호출 자체를 막는다. 쓰기나 shell 권한이 필요한 작업은 container, extension, project rule로 별도 가드레일을 둔다.
 
 ## 예시
 

@@ -3,19 +3,19 @@ type: tool
 status: needs-review
 core: false
 tags:
-  - llm
-  - agent
-  - ai-coding
+ - llm
+ - agent
+ - ai-coding
 aliases:
-  - opencode
-  - OpenCode CLI
+ - opencode
+ - OpenCode CLI
 sources:
-  - raw/opencode-masterclass-summary.md
-  - https://opencode.ai/docs/agents/
-  - https://opencode.ai/docs/rules/
-  - https://opencode.ai/docs/skills/
-  - https://opencode.ai/docs/models/
-  - https://opencode.ai/docs/config/
+ - raw/opencode-masterclass-summary.md
+ - https://opencode.ai/docs/agents/
+ - https://opencode.ai/docs/rules/
+ - https://opencode.ai/docs/skills/
+ - https://opencode.ai/docs/models/
+ - https://opencode.ai/docs/config/
 created: 2026-05-08
 updated: 2026-05-08
 ---
@@ -35,11 +35,11 @@ OpenCode는 터미널에서 provider, model, agent, skill, MCP 설정을 조합�
 
 ## 상세
 
-OpenCode 공식 문서는 built-in primary agent로 Build와 Plan을 설명한다. Build는 개발 작업을 위한 기본 agent이고, Plan은 기본적으로 file edit와 bash 실행이 `ask`로 제한되어 분석과 계획에 적합하다. Subagent는 특정 작업을 위임받는 보조 agent이며 `@` mention이나 primary agent의 자동 호출로 사용할 수 있다. 출처: https://opencode.ai/docs/agents/
+OpenCode 공식 문서는 built-in primary agent로 Build와 Plan을 설명한다. Build는 개발 작업을 위한 기본 agent이고, Plan은 기본적으로 file edit와 bash 실행이 `ask`로 제한되어 분석과 계획에 적합하다. Subagent는 특정 작업을 위임받는 보조 agent이며 `@` mention이나 primary agent의 자동 호출로 사용할 수 있다.
 
-프로젝트 지시는 `AGENTS.md`에 둔다. OpenCode의 `/init`은 repo를 스캔해 build, lint, test command, 구조, convention, 운영상 주의점을 담은 `AGENTS.md`를 만들거나 갱신한다. Claude Code에서 넘어온 팀을 위해 프로젝트 `CLAUDE.md`도 fallback으로 읽을 수 있다. 출처: https://opencode.ai/docs/rules/
+프로젝트 지시는 `AGENTS.md`에 둔다. OpenCode의 `/init`은 repo를 스캔해 build, lint, test command, 구조, convention, 운영상 주의점을 담은 `AGENTS.md`를 만들거나 갱신한다. Claude Code에서 넘어온 팀을 위해 프로젝트 `CLAUDE.md`도 fallback으로 읽을 수 있다.
 
-Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`뿐 아니라 `.agents/skills/<name>/SKILL.md`, `.claude/skills/<name>/SKILL.md`도 탐색 위치로 설명한다. 따라서 raw 영상의 `.agents/skills/` 방식은 호환 경로로 볼 수 있지만, 새 프로젝트에서는 `.opencode/` 구조와 함께 검토하는 편이 안전하다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/skills/
+Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`뿐 아니라 `.agents/skills/<name>/SKILL.md`, `.claude/skills/<name>/SKILL.md`도 탐색 위치로 설명한다. 따라서 raw 영상의 `.agents/skills/` 방식은 호환 경로로 볼 수 있지만, 새 프로젝트에서는 `.opencode/` 구조와 함께 검토하는 편이 안전하다.
 
 ## 예시
 
@@ -50,7 +50,7 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 
 ## 충돌
 
-- 2026-05-08 확인: raw 문서는 OpenCode skill 탐색 위치를 `.agents/skills/` 중심으로 설명하지만, 공식 문서는 `.opencode/skills/`, `~/.config/opencode/skills/`, `.claude/skills/`, `.agents/skills/`를 함께 지원한다고 설명한다. 현재 노트는 공식 문서 기준으로 기록한다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/skills/
+- 2026-05-08 확인: raw 문서는 OpenCode skill 탐색 위치를 `.agents/skills/` 중심으로 설명하지만, 공식 문서는 `.opencode/skills/`, `~/.config/opencode/skills/`, `.claude/skills/`, `.agents/skills/`를 함께 지원한다고 설명한다. 현재 노트는 공식 문서 기준으로 기록한다.
 
 ## 관련 노트
 

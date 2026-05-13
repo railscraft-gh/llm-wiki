@@ -3,17 +3,17 @@ type: concept
 status: evergreen
 core: true
 tags:
-  - llm
-  - design-system
-  - product
+ - llm
+ - design-system
+ - product
 aliases:
-  - AI-native design system
-  - AI 디자인 시스템
-  - 에이전트용 디자인 시스템
+ - AI-native design system
+ - AI 디자인 시스템
+ - 에이전트용 디자인 시스템
 sources:
-  - raw/AI로_만든_제품이_안_팔리는_이유.md
-  - https://github.com/google-labs-code/design.md
-  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
+ - raw/AI로_만든_제품이_안_팔리는_이유.md
+ - https://github.com/google-labs-code/design.md
+ - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
 updated: 2026-05-07
 ---
@@ -33,9 +33,9 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
 
 ## 상세
 
-raw 문서는 AI가 평균적인 UI를 빠르게 만들수록 디자인 시스템이 더 중요해진다고 주장한다. "코드는 흔해졌지만 시스템은 흔해지지 않았다"는 관점이다. 초기에 필요한 값은 거대하지 않다. raw의 권장 출발점은 색상 5-6개, font size 6단계, spacing 8단계, 일관된 icon set, 그리고 이 규칙을 DESIGN.md로 옮기는 것이다. 출처: `raw/AI로_만든_제품이_안_팔리는_이유.md`
+raw 문서는 AI가 평균적인 UI를 빠르게 만들수록 디자인 시스템이 더 중요해진다고 주장한다. "코드는 흔해졌지만 시스템은 흔해지지 않았다"는 관점이다. 초기에 필요한 값은 거대하지 않다. raw의 권장 출발점은 색상 5-6개, font size 6단계, spacing 8단계, 일관된 icon set, 그리고 이 규칙을 DESIGN.md로 옮기는 것이다.
 
-Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export/import하는 agent-friendly markdown file로 소개했다. Google Labs의 `design.md` repository도 YAML token과 Markdown rationale을 결합해 coding agent에게 visual identity를 제공하는 형식으로 설명한다. 출처: https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/, https://github.com/google-labs-code/design.md
+Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export/import하는 agent-friendly markdown file로 소개했다. Google Labs의 `design.md` repository도 YAML token과 Markdown rationale을 결합해 coding agent에게 visual identity를 제공하는 형식으로 설명한다.
 
 ## 예시
 

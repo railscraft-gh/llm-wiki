@@ -3,25 +3,25 @@ type: workflow
 status: evergreen
 core: true
 tags:
-  - llm
-  - agent
-  - ai-coding
-  - verification
+ - llm
+ - agent
+ - ai-coding
+ - verification
 aliases:
-  - Verification Loop
-  - 검증 루프
+ - Verification Loop
+ - 검증 루프
 sources:
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-  - raw/보리스_클로드코드_실무_사용법.md
-  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
-  - raw/안드레_카파시_인터뷰_정리.md
-  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-  - raw/AI로_만든_제품이_안_팔리는_이유.md
-  - raw/opencode-masterclass-summary.md
-  - raw/cc101_axwith_ko.md
-  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
-  - https://github.com/google-labs-code/design.md
-  - https://opencode.ai/docs/config/
+ - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+ - raw/보리스_클로드코드_실무_사용법.md
+ - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+ - raw/안드레_카파시_인터뷰_정리.md
+ - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+ - raw/AI로_만든_제품이_안_팔리는_이유.md
+ - raw/opencode-masterclass-summary.md
+ - raw/cc101_axwith_ko.md
+ - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+ - https://github.com/google-labs-code/design.md
+ - https://opencode.ai/docs/config/
 created: 2026-05-06
 updated: 2026-05-13
 ---
@@ -40,13 +40,13 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 구현뿐 아니라 �
 
 ## 상세
 
-보리스 관점의 핵심은 Claude Code, Codex, Gemini CLI 같은 도구를 코드 생성기가 아니라 "자기 작업을 확인하고 실패하면 다시 고치는 에이전트"로 쓰는 것이다. 이때 검증 수단은 프로젝트에 이미 있는 `npm test`, `ruff check`, `pytest`, 빌드 명령, CI, 브라우저 자동화 같은 실행 가능한 기준이어야 한다. 출처: `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`, `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
+보리스 관점의 핵심은 Claude Code, Codex, Gemini CLI 같은 도구를 코드 생성기가 아니라 "자기 작업을 확인하고 실패하면 다시 고치는 에이전트"로 쓰는 것이다. 이때 검증 수단은 프로젝트에 이미 있는 `npm test`, `ruff check`, `pytest`, 빌드 명령, CI, 브라우저 자동화 같은 실행 가능한 기준이어야 한다.
 
 카파시의 [[Jagged Intelligence]] 관점에서도 같은 결론이 나온다. LLM은 검증 가능한 영역에서는 빠르게 강해지지만, 검증 기준이 없으면 사람 눈에는 그럴듯한 결과를 내고도 시스템 결정을 틀릴 수 있다. 따라서 [[Vibe Coding과 Agentic Engineering]]을 구분하는 핵심은 속도가 아니라 검증 책임을 유지하는가다.
 
-UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다. 출처: https://github.com/google-labs-code/design.md, `raw/AI로_만든_제품이_안_팔리는_이유.md`
+UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다.
 
-[[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/config/
+[[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다.
 
 ## 예시
 
@@ -115,7 +115,7 @@ git add -p
 
 # 각 변경 덩어리에서:
 # y → 이 변경 포함
-# n → 이 변경 제외  
+# n → 이 변경 제외
 # s → 더 작게 분리해서 보기
 # d → 이 파일 나머지 전부 제외
 # q → 종료

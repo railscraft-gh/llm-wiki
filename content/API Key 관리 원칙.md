@@ -3,16 +3,16 @@ type: workflow
 status: evergreen
 core: false
 tags:
-  - security
-  - api-key
-  - secret-management
+ - security
+ - api-key
+ - secret-management
 aliases:
-  - API Key 보안
-  - Secret 관리 원칙
+ - API Key 보안
+ - Secret 관리 원칙
 sources:
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
-  - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
-  - https://www.12factor.net/config
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+ - https://www.12factor.net/config
 created: 2026-05-07
 updated: 2026-05-07
 ---
@@ -32,9 +32,9 @@ API Key 관리 원칙은 비밀값을 코드에서 분리하고, 최소 권한, 
 
 ## 상세
 
-raw 문서는 API Key를 코드에 하드코딩하지 말고 환경 변수나 Secret Manager로 분리하라고 정리한다. 12-Factor App도 배포마다 달라지는 credentials를 코드 상수로 두는 것은 config와 code 분리 원칙에 어긋난다고 본다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`, https://www.12factor.net/config
+raw 문서는 API Key를 코드에 하드코딩하지 말고 환경 변수나 Secret Manager로 분리하라고 정리한다. 12-Factor App도 배포마다 달라지는 credentials를 코드 상수로 두는 것은 config와 code 분리 원칙에 어긋난다고 본다.
 
-OWASP Secrets Management Cheat Sheet는 secret을 중앙화하고 표준화하되, 세밀한 접근 제어와 최소 권한을 적용해야 한다고 설명한다. 또한 secret은 생성, 로테이션, 폐기, 만료의 생명주기를 가지며, 사고 대응에는 revoke, rotation, 삭제, logging 절차가 필요하다. 출처: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+OWASP Secrets Management Cheat Sheet는 secret을 중앙화하고 표준화하되, 세밀한 접근 제어와 최소 권한을 적용해야 한다고 설명한다. 또한 secret은 생성, 로테이션, 폐기, 만료의 생명주기를 가지며, 사고 대응에는 revoke, rotation, 삭제, logging 절차가 필요하다.
 
 ## 예시
 

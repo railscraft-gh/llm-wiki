@@ -3,23 +3,23 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - infrastructure
+ - llm
+ - agent
+ - infrastructure
 aliases:
-  - 에이전트 네이티브 인프라
-  - Agent-native docs
+ - 에이전트 네이티브 인프라
+ - Agent-native docs
 sources:
-  - raw/안드레_카파시_인터뷰_정리.md
-  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-  - raw/sequoia-ascent-2026-karpathy-ko.md
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
-  - raw/Quartz-Deploy-Guide.md
-  - raw/Quartz-GitHub-Pages-Complete-Guide.md
-  - raw/opencode-masterclass-summary.md
-  - raw/pi-coding-agent-overview.md
-  - raw/arxiv-2603.28052-meta-harness.md
-  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+ - raw/안드레_카파시_인터뷰_정리.md
+ - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+ - raw/sequoia-ascent-2026-karpathy-ko.md
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - raw/Quartz-Deploy-Guide.md
+ - raw/Quartz-GitHub-Pages-Complete-Guide.md
+ - raw/opencode-masterclass-summary.md
+ - raw/pi-coding-agent-overview.md
+ - raw/arxiv-2603.28052-meta-harness.md
+ - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
 updated: 2026-05-13
 ---
@@ -40,17 +40,17 @@ Agent Native Infrastructure는 사람이 콘솔을 클릭해 따라 하는 대�
 
 카파시는 프레임워크 문서가 아직도 사람에게 "이걸 설치하고, 저걸 클릭하고, 환경 변수를 넣으라"고 지시하는 점을 문제로 본다. 이상적인 문서는 에이전트에게 붙여 넣을 수 있는 명령과 맥락을 제공해야 한다.
 
-MenuGen 배포 사례에서는 코드 작성보다 Vercel 배포, 서비스 연결, 설정, DNS 구성, 환경 변수 세팅이 더 번거로운 병목으로 나온다. 이상적인 상태는 "MenuGen을 빌드해서 배포해"라는 한 줄 지시로 인터넷에 올라가는 것이다. 출처: `raw/안드레_카파시_인터뷰_정리.md`, `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
+MenuGen 배포 사례에서는 코드 작성보다 Vercel 배포, 서비스 연결, 설정, DNS 구성, 환경 변수 세팅이 더 번거로운 병목으로 나온다. 이상적인 상태는 "MenuGen을 빌드해서 배포해"라는 한 줄 지시로 인터넷에 올라가는 것이다.
 
-Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략]]처럼 CLI, SDK, Kubernetes Operator, CI/CD integration을 제공하는 도구를 쓰면 에이전트가 콘솔 클릭 대신 명령과 권한 범위에 맞춰 배포 workflow를 조립할 수 있다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`, https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략]]처럼 CLI, SDK, Kubernetes Operator, CI/CD integration을 제공하는 도구를 쓰면 에이전트가 콘솔 클릭 대신 명령과 권한 범위에 맞춰 배포 workflow를 조립할 수 있다.
 
-[[Quartz로 Obsidian Wiki 배포하기]]도 같은 관점으로 볼 수 있다. Quartz 공식 hosting workflow는 GitHub Actions에서 Node `22`, `npm ci`, `npx quartz build`, Pages artifact 업로드를 명령으로 표현한다. 이런 배포 절차는 콘솔 스크린샷보다 agent가 검토하고 수정하기 쉽다. 출처: `raw/Quartz-Deploy-Guide.md`, https://quartz.jzhao.xyz/hosting
+[[Quartz로 Obsidian Wiki 배포하기]]도 같은 관점으로 볼 수 있다. Quartz 공식 hosting workflow는 GitHub Actions에서 Node `22`, `npm ci`, `npx quartz build`, Pages artifact 업로드를 명령으로 표현한다. 이런 배포 절차는 콘솔 스크린샷보다 agent가 검토하고 수정하기 쉽다.
 
-[[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다. 출처: `raw/opencode-masterclass-summary.md`, https://opencode.ai/docs/rules/
+[[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다.
 
-[[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다. 출처: `raw/pi-coding-agent-overview.md`, https://pi.dev/docs/latest/usage, https://pi.dev/docs/latest/packages
+[[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다.
 
-Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다. 출처: `raw/sequoia-ascent-2026-karpathy-ko.md`
+Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다.
 
 ## 예시
 

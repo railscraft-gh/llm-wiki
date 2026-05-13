@@ -3,21 +3,21 @@ type: tool
 status: needs-review
 core: false
 tags:
-  - security
-  - secret-management
-  - tool
+ - security
+ - secret-management
+ - tool
 aliases:
-  - Infisical
-  - 인피지컬
-  - Infisical Secret Manager
+ - Infisical
+ - 인피지컬
+ - Infisical Secret Manager
 sources:
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
-  - raw/Infisical_SSH_헤드리스_인증_가이드.md
-  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
-  - https://infisical.com/docs/documentation/platform/identities/machine-identities
-  - https://infisical.com/docs/documentation/platform/identities/universal-auth
-  - https://github.com/Infisical/infisical
-  - https://infisical.com/pricing
+ - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - raw/Infisical_SSH_헤드리스_인증_가이드.md
+ - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+ - https://infisical.com/docs/documentation/platform/identities/machine-identities
+ - https://infisical.com/docs/documentation/platform/identities/universal-auth
+ - https://github.com/Infisical/infisical
+ - https://infisical.com/pricing
 created: 2026-05-07
 updated: 2026-05-08
 ---
@@ -37,11 +37,11 @@ Infisical 도입 전략은 `.env`와 분산된 CI Secret을 프로젝트, 환경
 
 ## 상세
 
-Infisical 공식 문서는 Secret Stores, 접근 제어, CLI/SDK/API/Kubernetes Operator를 통한 secret delivery, secret rotation과 dynamic secrets, GitHub/Vercel/AWS 같은 외부 서비스 sync를 핵심 기능으로 설명한다. 출처: https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+Infisical 공식 문서는 Secret Stores, 접근 제어, CLI/SDK/API/Kubernetes Operator를 통한 secret delivery, secret rotation과 dynamic secrets, GitHub/Vercel/AWS 같은 외부 서비스 sync를 핵심 기능으로 설명한다.
 
-Universal Auth는 machine identity가 Client ID와 Client Secret으로 로그인해 짧은 수명의 access token을 받는 방식이다. workload가 개인 계정으로 secret을 읽지 않게 하고, token TTL과 trusted IP를 관리할 수 있다는 점에서 CI/CD와 서버 런타임에 적합하다. SSH 서버나 systemd처럼 브라우저 OAuth를 쓸 수 없는 환경은 [[Infisical 헤드리스 인증]]으로 분리해 관리한다. 출처: `raw/Infisical_SSH_헤드리스_인증_가이드.md`, https://infisical.com/docs/documentation/platform/identities/machine-identities, https://infisical.com/docs/documentation/platform/identities/universal-auth
+Universal Auth는 machine identity가 Client ID와 Client Secret으로 로그인해 짧은 수명의 access token을 받는 방식이다. workload가 개인 계정으로 secret을 읽지 않게 하고, token TTL과 trusted IP를 관리할 수 있다는 점에서 CI/CD와 서버 런타임에 적합하다. SSH 서버나 systemd처럼 브라우저 OAuth를 쓸 수 없는 환경은 [[Infisical 헤드리스 인증]]으로 분리해 관리한다.
 
-raw 문서의 실무 로드맵은 1주차 POC, 2주차 로컬 개발 전환, 3주차 staging/production 연동, 4주차 RBAC와 audit/rotation 강화로 잡는다. 이 순서는 [[API Key 관리 원칙]]을 팀 workflow로 옮기는 실행 계획으로 쓸 수 있다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`
+raw 문서의 실무 로드맵은 1주차 POC, 2주차 로컬 개발 전환, 3주차 staging/production 연동, 4주차 RBAC와 audit/rotation 강화로 잡는다. 이 순서는 [[API Key 관리 원칙]]을 팀 workflow로 옮기는 실행 계획으로 쓸 수 있다.
 
 ## 예시
 
@@ -52,8 +52,8 @@ raw 문서의 실무 로드맵은 1주차 POC, 2주차 로컬 개발 전환, 3�
 
 ## 충돌
 
-- 2026-05-07 확인: raw 문서는 Infisical을 "MIT, 완전 오픈소스"라고 설명하지만, 공식 GitHub README는 repository가 MIT expat license를 쓰되 `ee` directory의 premium enterprise 기능은 Infisical license가 필요하다고 설명한다. 현재 노트는 공식 GitHub 기준으로 기록한다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`, https://github.com/Infisical/infisical
-- 2026-05-07 확인: raw 문서는 Cloud Pro를 팀당 `$5/인/월`로 적지만, 공식 pricing page는 Secrets Manager Pro를 `1 identity` 기준 `$18/mo`로 표시한다. 가격 정보는 변동 정보라 배포 판단 전에 공식 pricing page를 다시 확인해야 한다. 출처: `raw/API_Key_관리_및_Infisical_도입_가이드.md`, https://infisical.com/pricing
+- 2026-05-07 확인: raw 문서는 Infisical을 "MIT, 완전 오픈소스"라고 설명하지만, 공식 GitHub README는 repository가 MIT expat license를 쓰되 `ee` directory의 premium enterprise 기능은 Infisical license가 필요하다고 설명한다. 현재 노트는 공식 GitHub 기준으로 기록한다.
+- 2026-05-07 확인: raw 문서는 Cloud Pro를 팀당 `$5/인/월`로 적지만, 공식 pricing page는 Secrets Manager Pro를 `1 identity` 기준 `$18/mo`로 표시한다. 가격 정보는 변동 정보라 배포 판단 전에 공식 pricing page를 다시 확인해야 한다.
 
 ## 관련 노트
 
