@@ -19,10 +19,11 @@ sources:
   - raw/AI로_만든_제품이_안_팔리는_이유.md
   - raw/opencode-masterclass-summary.md
   - raw/cc101_axwith_ko.md
+  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
   - https://github.com/google-labs-code/design.md
   - https://opencode.ai/docs/config/
 created: 2026-05-06
-updated: 2026-05-09
+updated: 2026-05-13
 ---
 
 # AI 코딩 에이전트 검증 전략
