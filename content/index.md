@@ -38,6 +38,7 @@
 | [[Plan Mode 기반 AI 작업]] | 보리스와 카파시 자료 모두에서 사람의 스펙/계획 역할과 연결된다. | 사례 보강 후 evergreen 검토 |
 | [[AI 네이티브 사용자]] | agent 시대의 역량 격차와 채용 기준으로 확장 가능하다. | 채용/평가 자료 추가 ingest |
 | [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
+| [[Harness Engineering]] | 하네스 엔지니어링은 여러 Claude Code/OpenCode 자료에서 반복되며 실무 재사용성이 높다. | 추가 raw에서 반복 확인 후 core 검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 
