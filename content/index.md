@@ -14,6 +14,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-14 | `raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md`, `raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md`, `raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md` | [[AI 네이티브 엔지니어링 조직]], [[GStack]], [[Ralph Loop]], [[AI 네이티브 사용자]] (보강), [[Plan Mode 기반 AI 작업]] (보강), [[병렬 에이전트 세션 운영]] (보강), [[Claude Code 오케스트레이션]] (보강), [[매퍼코 3스킬 워크플로우]] (보강) | done | [[log#2026-05-14]] |
 | 2026-05-13 | `raw/arxiv-2603.28052-meta-harness.md`, `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`, `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`, `raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md` | [[Meta-Harness]], [[Harness Engineering]], [[RuboCop]], [[강한 모델로 덜 헤매기]] (보강), [[Claude.md 운영 원칙]] (보강), [[Agent Native Infrastructure]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강) | done | [[log#2026-05-13]] |
 | 2026-05-11 | `raw/oh-my-openagent-team-mode.md` | [[OpenAgent Team Mode]] | done | [[log#2026-05-11]] |
 | 2026-05-11 | `raw/sequoia-ascent-2026-karpathy-ko.md` | [[Software 3.0]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]], [[AI 네이티브 사용자]] | done | [[log#2026-05-11]] |
@@ -41,6 +42,7 @@
 | [[Harness Engineering]] | 하네스 엔지니어링은 여러 Claude Code/OpenCode 자료에서 반복되며 실무 재사용성이 높다. | 추가 raw에서 반복 확인 후 core 검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
+| [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
 
 ## 점검 대기
 
@@ -55,3 +57,5 @@
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
 | [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |
 | [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
+| [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
+| [[Ralph Loop]] | context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이다. | 실제 repo 적용 시 실패율, 충돌률, review 비용 검증 |
