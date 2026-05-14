@@ -1,5 +1,44 @@
 # LLM Wiki Log
 
+## 2026-05-14
+
+### Ingest
+
+- 입력: `raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md`, `raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md`, `raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md`
+- 생성: [[AI 네이티브 엔지니어링 조직]], [[GStack]], [[Ralph Loop]]
+- 수정: [[AI 네이티브 사용자]] (조직 운영 관점 보강), [[Plan Mode 기반 AI 작업]] (Spectrum Development 연결), [[병렬 에이전트 세션 운영]] (Ralph Loop 연결), [[Claude Code 오케스트레이션]] (headless phase queue 연결), [[매퍼코 3스킬 워크플로우]] (GStack/Ralph Loop 관련 노트 추가)
+- index 업데이트: 완료
+- 남은 검토: [[GStack]]의 command 목록, host 지원, 설치 방식은 빠르게 변하므로 공식 GitHub 저장소 확인 필요. [[Ralph Loop]]의 context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이라 실제 repo 적용 전 검증 필요. [[AI 네이티브 엔지니어링 조직]]은 Code w/ Claude 발표 단일 사례이므로 추가 조직 사례 ingest 후 core 승격 검토.
+
+### Lint
+
+- 실행 방식: `python3` 간이 스크립트로 frontmatter key, 허용 값, wikilink, 관련 노트, 출처 섹션, orphan, core index 등록, 중복 H1 점검. 결과: `PASS wiki files=43 notes=41 links_checked=510`
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개로 판단. 새 노트의 23개 specialist, 8개 power tool, 50% context 기준, 10개 이상 phase, 50명 미팅 사례는 raw 또는 공식 GitHub 출처와 점검 대기 항목을 함께 둠.
+- 관련 노트 2개 미만 문서: 0개. 새 노트 3개 모두 2개 이상 관련 노트 링크 보유.
+- 고아 페이지: 0개. 생성 노트는 index와 관련 노트에서 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개.
+- 조치: 전체 lint 중 발견된 기존 문서의 frontmatter `sources`와 `## 출처` 불일치 17건을 정리하고, 해당 문서의 `updated`와 핵심 노트 index 날짜를 2026-05-14로 갱신함.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: `raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md`
+- 근거: 개인의 AI-native 사용법을 넘어 팀 규범, 프로세스 폐기, 코드 리뷰, 조직 구조를 다루는 운영 프레임이라 [[AI 네이티브 엔지니어링 조직]]으로 분리함.
+
+- 결정: 신규 생성
+- 대상: `raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md`
+- 근거: 기존 [[매퍼코 3스킬 워크플로우]]에서 보조적으로 언급되던 GStack이 독립 tool note로 관리할 만큼 command, 역할, 검증 workflow가 구체화되어 [[GStack]]으로 분리함.
+
+- 결정: 신규 생성
+- 대상: `raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md`
+- 근거: GStack, GSD, SuperPower를 phase queue와 headless 세션으로 연결하는 오케스트레이션 패턴이므로 기존 병렬 세션 노트에 흡수하지 않고 [[Ralph Loop]]로 분리함.
+
+- 결정: 메타데이터 정리
+- 대상: wiki/ 전체
+- 근거: lint에서 일부 기존 문서의 frontmatter `sources`가 `## 출처`에 누락된 것을 발견해 출처 목록을 맞춤. 본문 주장 변경은 하지 않고 출처 정합성만 보정함.
+
 ## 2026-05-13
 
 ### Cleanup
