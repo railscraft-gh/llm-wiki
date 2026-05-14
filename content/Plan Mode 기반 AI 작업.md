@@ -19,10 +19,11 @@ sources:
  - raw/opencode-masterclass-summary.md
  - raw/pi-coding-agent-overview.md
  - raw/cc101_axwith_ko.md
+ - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
  - https://opencode.ai/docs/agents/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-09
+updated: 2026-05-14
 ---
 
 # Plan Mode 기반 AI 작업
@@ -46,6 +47,8 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 [[OpenCode]]도 같은 분리를 도구 모델로 제공한다. 공식 문서의 Plan agent는 분석과 제안에 적합하도록 기본 file edit와 bash 권한이 `ask`로 제한되고, Build agent는 실제 개발 작업에 쓰인다. 따라서 "먼저 Plan으로 질문과 구현 계획을 만들고, 합의된 계획만 Build/subagent에 넘긴다"는 절차를 권한 설계로 고정할 수 있다.
 
 반대로 [[Pi Coding Agent]]는 built-in plan mode를 제공하지 않는다고 설명한다. Pi에서는 계획을 별도 파일에 쓰게 하거나 prompt template, skill, extension으로 팀의 계획 절차를 만드는 방식이 더 자연스럽다. 즉 Plan Mode는 특정 버튼이 아니라 "구현 전 질문, 파일 범위, 검증 기준을 먼저 고정하는 절차"로 이해하는 편이 도구 간 이식성이 높다.
+
+[[Ralph Loop]]의 Spectrum Development도 같은 원칙을 더 강하게 밀어붙인다. 브레인스토밍, phase 분할, 실행, 검증을 분리하고 각 phase를 별도 headless 세션에 넘기기 전에 입력 스펙과 완료 기준을 고정한다. 이때 계획은 자동화를 위한 대기열이므로, 각 phase가 독립적인 검증 명령과 산출물을 가져야 한다.
 
 ## 예시
 
@@ -110,4 +113,6 @@ Plan Mode는 [[Claude Code 권한 설계]]의 3가지 권한 모드 중 하나�
 - [[OpenCode]]
 - [[Pi Coding Agent]]
 - [[매퍼코 3스킬 워크플로우]]
+- [[GStack]]
+- [[Ralph Loop]]
 

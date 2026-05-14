@@ -15,8 +15,9 @@ sources:
  - raw/보리스_클로드코드_실무_사용법.md
  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
  - raw/cc101_axwith_ko.md
+ - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
 created: 2026-05-06
-updated: 2026-05-09
+updated: 2026-05-14
 ---
 
 # Claude Code 오케스트레이션
@@ -36,6 +37,8 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 보리스 자료는 Claude Code를 다양한 workflow를 통제하는 오케스트레이터로 설명한다. 예를 들어 Sentry에서 최근 에러를 확인하고, 관련 로그로 원인을 추정하고, GitHub 이슈를 만들고, 수정 PR을 준비하는 흐름은 여러 도구를 넘나드는 업무다.
 
 이 관점은 [[Agent Native Infrastructure]]와 이어진다. 사람이 클릭해서 서비스 연결, 설정, 배포를 처리하는 대신 에이전트가 텍스트 지시와 CLI/API를 통해 실행할 수 있는 환경일수록 오케스트레이션이 쉬워진다.
+
+[[Ralph Loop]]는 Claude Code 오케스트레이션을 phase queue와 headless 세션 실행으로 확장한 패턴이다. 메인 세션은 전체 구현 context를 모두 품지 않고 phase 상태를 추적하며, 각 phase는 별도 `claude -p` 실행처럼 신선한 context에서 구현과 검증을 수행한다.
 
 ## 예시
 
@@ -103,4 +106,5 @@ claude_review:
 - [[Claude Code 권한 설계]]
 - [[병렬 에이전트 세션 운영]]
 - [[Agent Native Infrastructure]]
+- [[Ralph Loop]]
 
