@@ -12,7 +12,7 @@ aliases: []
 sources:
   - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-14
 ---
 
 # AI 시대 소프트웨어 펀더멘탈

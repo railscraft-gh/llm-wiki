@@ -22,7 +22,7 @@ sources:
  - https://opencode.ai/docs/rules/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 # Claude.md 운영 원칙

@@ -17,7 +17,7 @@ sources:
  - raw/보리스_클로드코드_실무_사용법.md
  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-14
 ---
 
 # LLM을 동물 지능처럼 다루지 않기

@@ -16,7 +16,7 @@ sources:
  - raw/AI로_만든_제품이_안_팔리는_이유.md
  - raw/sequoia-ascent-2026-karpathy-ko.md
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-14
 ---
 
 # Vibe Coding과 Agentic Engineering

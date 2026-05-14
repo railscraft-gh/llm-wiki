@@ -21,7 +21,7 @@ sources:
  - raw/arxiv-2603.28052-meta-harness.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 # Agent Native Infrastructure

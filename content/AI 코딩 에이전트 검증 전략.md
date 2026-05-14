@@ -23,7 +23,7 @@ sources:
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 # AI 코딩 에이전트 검증 전략
