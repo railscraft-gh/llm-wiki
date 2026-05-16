@@ -60,4 +60,7 @@ Sequoia Ascent 2026에서 카파시는 MenuGen 결제 버그를 예시로 들었
 - [[Jagged Intelligence]]
 - [[AI 시대 디자인 시스템]]
 - [[AI Slop]]
+- [[Agentic 패턴 진화]]
+- [[AI 시대 소프트웨어 펀더멘탈]]
+- [[제품 오버행]]
 
