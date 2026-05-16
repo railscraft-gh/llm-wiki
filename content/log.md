@@ -1,5 +1,52 @@
 # LLM Wiki Log
 
+## 2026-05-16
+
+### Ingest
+
+- 입력: `raw/anthropic-boris-cherny-interview.md`, `raw/evolution-of-ai-agentic-patterns.md`
+- 생성: [[Lethal Trifecta]], [[Agentic 패턴 진화]] (core: true), [[Loop와 Routines]], [[Andrew Ng 4 에이전틱 디자인 패턴]], [[제품 오버행]]
+- 수정: [[Harness Engineering]] (rippable 원칙, Lethal Trifecta 연결, evolution 출처 추가), [[병렬 에이전트 세션 운영]] (보리스 모바일 + Loop 운영 섹션 추가), [[AI 네이티브 엔지니어링 조직]] (Anthropic 내부 사례 섹션 추가), [[AI 네이티브 사용자]] (보리스 모바일 운영과 소프트웨어 민주화 인쇄기 패러럴 추가)
+- index 업데이트: 완료. [[Agentic 패턴 진화]]를 핵심 노트에 추가. 승격 후보에 [[Lethal Trifecta]], [[Loop와 Routines]] 추가. 점검 대기에 보리스 영상 수치와 evolution 자료 변동 항목 등록.
+- 남은 검토: 보리스 인터뷰의 "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 1인 영상 발언으로 외부 검증 부족. evolution 자료의 Copilot 사용자/점유율, KV-cache 비용 1/10은 2025-2026 시점 자료로 변동성 있음.
+
+### Lint
+
+- 실행 방식: 수동 점검 + 신규 노트 frontmatter/관련 노트/출처 셀프 체크
+- 깨진 wikilink: 0개. 새 노트가 참조하는 [[Claude Code 권한 설계]], [[Harness Engineering]], [[Ralph Loop]], [[Software 3.0]] 등은 모두 기존 노트.
+- 중복 제목: 0개. [[Loop와 Routines]]는 [[Ralph Loop]]와 개념적으로 다름 — Ralph Loop는 self-referential 단일 작업 완료 루프, Loop와 Routines는 cron 기반 반복 예약 작업.
+- 출처 없는 수치 문장: 0개로 판단. 보리스의 "100% 코드 자동 작성, 하루 150 PR, 5~10 세션 × 수백~수천 에이전트"는 raw 출처와 점검 대기 항목으로 함께 표시. evolution의 "Copilot 88% 생산성, 2,000만 사용자, 점유율 42%, KV-cache 비용 1/10"은 raw 및 외부 링크(Manus, Honeycomb, deeplearning.ai)와 함께 표기.
+- 관련 노트 2개 미만 문서: 0개. 새 노트 5개 모두 4~6개의 관련 노트 링크 보유.
+- 고아 페이지: 0개. 5개 신규 노트는 index의 핵심/승격 후보/점검 대기 또는 보강 노트의 관련 노트에서 모두 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개. 핵심 노트 [[AI 시대 디자인 시스템]] updated 2026-05-07은 다음 주기 점검 대상으로 유지.
+- 조치: 보강 4개 노트의 frontmatter `updated`를 2026-05-16으로 갱신, `sources` 목록에 새 raw 파일 경로를 추가함. [[Agentic 패턴 진화]] core: true 설정 후 index `## 핵심 노트` 섹션에 등록.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: `raw/evolution-of-ai-agentic-patterns.md`에서 [[Lethal Trifecta]] 분리
+- 근거: Simon Willison의 위험 모델 + Meta의 Rule of Two는 [[Claude Code 권한 설계]], [[Harness Engineering]] 모두에서 참조될 수 있는 독립 보안 프레임이라 별도 노트로 분리.
+
+- 결정: 신규 생성 + core 승격
+- 대상: `raw/evolution-of-ai-agentic-patterns.md`에서 [[Agentic 패턴 진화]] 분리
+- 근거: 핵심 노트 기준 2개 이상 충족 — (1) 여러 raw(evolution, harness, sequoia, vibe coding)에서 반복되는 메타 프레임, (2) [[Harness Engineering]], [[Software 3.0]], [[Vibe Coding과 Agentic Engineering]], [[Andrew Ng 4 에이전틱 디자인 패턴]]의 상위 허브 역할, (3) 실무 의사결정 기준(엄밀함이 어디에 있는지) 제공.
+
+- 결정: 신규 생성
+- 대상: `raw/anthropic-boris-cherny-interview.md`에서 [[Loop와 Routines]] 분리
+- 근거: [[Ralph Loop]]와 개념이 다른 cron 기반 반복 예약 작업으로, 보리스가 "미래"라고 강조한 일급 객체. [[병렬 에이전트 세션 운영]]에 흡수하지 않고 분리하되 양쪽에서 상호 링크.
+
+- 결정: 신규 생성
+- 대상: `raw/evolution-of-ai-agentic-patterns.md`에서 [[Andrew Ng 4 에이전틱 디자인 패턴]] 분리
+- 근거: Reflection/Tool Use/Planning/Multi-Agent는 [[Harness Engineering]] 이전 시대를 정의한 명확한 프레임. [[병렬 에이전트 세션 운영]], [[Plan Mode 기반 AI 작업]] 등과 출처 추적이 필요해 독립 노트로 둠.
+
+- 결정: 신규 생성
+- 대상: `raw/anthropic-boris-cherny-interview.md`에서 [[제품 오버행]] 분리
+- 근거: 짧지만 명확히 정의된 개념(product overhang)으로, [[AI 네이티브 사용자]], [[Vibe Coding과 Agentic Engineering]], [[Harness Engineering]]을 잇는 판단 기준이 됨.
+
+- 결정: 보강
+- 대상: [[Harness Engineering]], [[병렬 에이전트 세션 운영]], [[AI 네이티브 엔지니어링 조직]], [[AI 네이티브 사용자]]
+- 근거: 보리스 인터뷰와 evolution 자료가 기존 노트의 결론을 강화하면서 새 사례(rippable 원칙, 모바일 운영, Anthropic 내부 사례, 소프트웨어 민주화)를 추가하므로 보강이 적합. 결론 충돌이나 폐기 요소 없음.
+
 ## 2026-05-14
 
 ### Ingest
