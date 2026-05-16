@@ -115,4 +115,6 @@ Plan Mode는 [[Claude Code 권한 설계]]의 3가지 권한 모드 중 하나�
 - [[매퍼코 3스킬 워크플로우]]
 - [[GStack]]
 - [[Ralph Loop]]
+- [[강한 모델로 덜 헤매기]]
+- [[Andrew Ng 4 에이전틱 디자인 패턴]]
 
