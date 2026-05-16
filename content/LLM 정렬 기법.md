@@ -50,4 +50,6 @@ ChatGPT, Claude는 RLHF로 정렬되었다. Zephyr, Neural Chat 등 오픈소스
 - [[PPO와 정책 최적화]]
 - [[Software 3.0]]
 - [[Jagged Intelligence]]
+- [[검증 가능한 도메인]]
+- [[Reasoning Models]]
 
