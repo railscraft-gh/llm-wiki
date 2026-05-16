@@ -71,4 +71,6 @@ Graphify는 [[Vibe Coding과 Agentic Engineering|바이브 코딩]]을 체계화
 - [[Vibe Coding과 Agentic Engineering]]: 바이브 코딩 개념 및 실무 적용
 - [[Claude Code 오케스트레이션]]: Claude Code 도구 체인 관리
 - [[AI 코딩 에이전트 검증 전략]]: AI 코딩 도구 검증 및 도입 결정 기준
+- [[Context Mode]]: 컨텍스트 윈도우 절감 도구와 연계
+- [[OpenCode]]: Graphify가 지원하는 플랫폼 중 하나
 
