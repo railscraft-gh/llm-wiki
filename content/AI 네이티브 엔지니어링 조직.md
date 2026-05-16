@@ -12,8 +12,9 @@ aliases:
   - AI 네이티브 조직 운영
 sources:
   - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+  - raw/anthropic-boris-cherny-interview.md
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-16
 ---
 
 # AI 네이티브 엔지니어링 조직
