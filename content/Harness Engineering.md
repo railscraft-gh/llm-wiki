@@ -15,7 +15,7 @@ sources:
   - raw/evolution-of-ai-agentic-patterns.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-16
+updated: 2026-05-17
 ---
 
 # Harness Engineering
