@@ -9,6 +9,7 @@
 | [[Jagged Intelligence]] | LLM이 검증 가능한 영역에서 강하고 그 외 영역에서 들쭉날쭉한 이유를 설명한다. | evergreen | 2026-05-14 |
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-05-07 |
+| [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
 
 ## Ingest 현황
 
