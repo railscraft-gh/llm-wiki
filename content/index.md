@@ -69,3 +69,11 @@
 | [[Loop와 Routines]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 보리스 1인 영상 발언으로 외부 검증 부족. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 needs-review |
 | [[제품 오버행]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR"은 보리스 1인 영상 발언이다. | 동일 |
 | [[Agentic 패턴 진화]] | KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 팀 사례는 2025-2026 시점 자료. | 모델/벤치마크/가격 변동 시 needs-review |
+| [[AI 시대 소프트웨어 펀더멘탈]] | Matt Pocock 단일 발표자료 기준. Grill Me 스킬과 Ubiquitous Language 효과는 개인 경험 기반. | 추가 fundamentals 자료 ingest 시 evergreen 재검토 |
+| [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스/검색/sandbox 명세가 빠르게 변동. | 실사용 전 공식 docs 확인 |
+| [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동. | 실사용 전 공식 README 확인 |
+| [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준. 3개 도메인 실험은 후속 재현 자료 필요. | 후속 실험 자료 ingest 시 evergreen 검토 |
+| [[OpenAgent Team Mode]] | opencode 재시작 요구와 tmux_visualization 옵션이 버전 영향 받음. | 실사용 후 evergreen 검토 |
+| [[RuboCop]] | Ruby 생태계 표준 도구이지만 cop 이름/플래그가 메이저 버전마다 변동. | 메이저 RuboCop 릴리스 시 needs-review |
+| [[바선생]] | Claude Code 대화 분석 도구. 6대 차원 가중치와 게이트 조건은 raw 시점 기준. | 공식 README 업데이트 시 재검토 |
+| [[매퍼코 3스킬 워크플로우]] | 맥퍼커/G스텍/슈퍼파워즈의 정확한 영문 명칭과 워크플로우 단계 시간은 검증 대기. | 실제 적용 사례 ingest 시 evergreen 검토 |
