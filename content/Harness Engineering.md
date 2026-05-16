@@ -12,8 +12,10 @@ aliases:
   - 하네스 엔지니어링
 sources:
   - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - raw/evolution-of-ai-agentic-patterns.md
+  - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-16
 ---
 
 # Harness Engineering
