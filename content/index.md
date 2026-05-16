@@ -63,3 +63,6 @@
 | [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
 | [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
 | [[Ralph Loop]] | context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이다. | 실제 repo 적용 시 실패율, 충돌률, review 비용 검증 |
+| [[Loop와 Routines]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 보리스 1인 영상 발언으로 외부 검증 부족. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 needs-review |
+| [[제품 오버행]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR"은 보리스 1인 영상 발언이다. | 동일 |
+| [[Agentic 패턴 진화]] | KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 팀 사례는 2025-2026 시점 자료. | 모델/벤치마크/가격 변동 시 needs-review |
