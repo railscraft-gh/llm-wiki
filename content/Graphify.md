@@ -43,7 +43,7 @@ Graphify는 프로젝트 평더를 입력받아 지식 그래프를 생성한다
 - `/graphify ./docs --watch`: 파일 변경 감시 및 자동 재빌드
 - `/graphify add <url>`: 외부 자원(YouTube, arXiv 등) 추가
 
-15개 이상 플랫폼 지원: Claude Code, Codex, OpenCode, Cursor, GitHub Copilot, Aider 등.
+15개 이상 플랫폼 지원: Claude Code, Codex, [[OpenCode]], Cursor, GitHub Copilot, Aider 등.
 
 ## 예시
 
