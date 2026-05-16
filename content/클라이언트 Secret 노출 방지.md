@@ -1,6 +1,6 @@
 ---
 type: workflow
-status: draft
+status: evergreen
 core: false
 tags:
  - security
