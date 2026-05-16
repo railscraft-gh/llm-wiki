@@ -66,4 +66,6 @@ Fiona Fung의 Code w/ Claude 발표 정리는 Claude Code 팀의 경험을 "과�
 - [[AI 네이티브 사용자]]
 - [[Claude Code 오케스트레이션]]
 - [[Plan Mode 기반 AI 작업]]
+- [[Loop와 Routines]]
+- [[제품 오버행]]
 
