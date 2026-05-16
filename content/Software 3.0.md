@@ -54,6 +54,8 @@ Sequoia Ascent 2026에서 카파시는 이를 "기존의 소프트웨어 스택�
 - [[Jagged Intelligence]]
 - [[강화학습 기초]]
 - [[LLM 정렬 기법]]
+- [[Reasoning Models]]
 - [[Agentic 패턴 진화]]
 - [[Harness Engineering]]
+- [[소프트웨어 민주화]]
 
