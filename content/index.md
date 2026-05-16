@@ -41,7 +41,9 @@
 | [[Plan Mode 기반 AI 작업]] | 보리스와 카파시 자료 모두에서 사람의 스펙/계획 역할과 연결된다. | 사례 보강 후 evergreen 검토 |
 | [[AI 네이티브 사용자]] | agent 시대의 역량 격차와 채용 기준으로 확장 가능하다. | 채용/평가 자료 추가 ingest |
 | [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
-| [[Harness Engineering]] | 하네스 엔지니어링은 여러 Claude Code/OpenCode 자료에서 반복되며 실무 재사용성이 높다. | 추가 raw에서 반복 확인 후 core 검토 |
+| [[Harness Engineering]] | 하네스 엔지니어링은 여러 Claude Code/OpenCode 자료에서 반복되며, evolution 자료에서 시대 명칭으로 정착되었다. | 다음 ingest에서도 반복 확인되면 core 승격 |
+| [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
+| [[Loop와 Routines]] | 보리스의 cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 | [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
