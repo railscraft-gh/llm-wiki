@@ -1,5 +1,88 @@
 # LLM Wiki Log
 
+## 2026-05-17 (Sync 3 — raw 재감사, 상태 정합성, core 승격)
+
+### Audit
+
+- 실행 방식: `ctx_execute` JavaScript로 wiki 49개 노트(+index, log) frontmatter, 인바운드/아웃바운드 wikilink, 상태 분포, raw 재참조 점검
+- raw 자료: 31개 모두 ingest 완료 (Sync 2에서 0개 미참조 확인됨)
+- 1차 결과:
+  - 총 노트: 49개 (Sync 2 대비 +3 — Sync 2에서 누락 집계된 [[Reasoning Models]], [[소프트웨어 민주화]], [[검증 가능한 도메인]])
+  - 깨진 wikilink: 0개
+  - 핵심 노트 6개 모두 evergreen
+  - status 분포 불균형 — `draft: 35`개로 다수 노트가 검증 완료 후에도 draft로 남아 있음
+  - 미로깅: [[Reasoning Models]], [[소프트웨어 민주화]], [[검증 가능한 도메인]] 3개가 2026-05-16에 생성되었으나 [[index]]의 ingest 행과 [[log]]의 2026-05-16 entry에 누락됨
+
+### 상태 정합성 정정
+
+- 35개 draft 노트를 검증 가능성과 변동성 기준으로 재분류
+- **draft → evergreen** (22개): [[AI Slop]], [[AI 네이티브 사용자]], [[AI 네이티브 엔지니어링 조직]], [[Andrew Ng 4 에이전틱 디자인 패턴]], [[Agent Native Infrastructure]], [[Claude Code 권한 설계]], [[Claude Code 오케스트레이션]], [[Claude.md 운영 원칙]], [[Harness Engineering]], [[Lethal Trifecta]], [[LLM을 동물 지능처럼 다루지 않기]], [[LLM 정렬 기법]], [[Plan Mode 기반 AI 작업]], [[PPO와 정책 최적화]], [[Reasoning Models]], [[Thinking과 Understanding 분리]], [[강화학습 기초]], [[검증 가능한 도메인]], [[소프트웨어 민주화]], [[병렬 에이전트 세션 운영]], [[클라이언트 Secret 노출 방지]], [[웹 서버와 배포 기초]]
+- **draft → needs-review** (13개): [[Loop와 Routines]], [[Meta-Harness]], [[Ralph Loop]], [[제품 오버행]], [[AI 시대 소프트웨어 펀더멘탈]], [[OpenAgent Team Mode]], [[Context Mode]], [[Graphify]], [[바선생]], [[RuboCop]], [[Neural Computer]], [[강한 모델로 덜 헤매기]], [[매퍼코 3스킬 워크플로우]]
+- 정정 후 분포: `evergreen: 29` (6 core 포함), `needs-review: 20`, `draft: 0`
+
+### 핵심 노트 승격
+
+- [[Harness Engineering]] core: false → core: true
+- 근거: 핵심 노트 기준 3개 충족
+  - 다수 raw 반복: arxiv-2603.28052-meta-harness, 하네스 엔지니어링 65줄 CLAUDE.md, evolution-of-ai-agentic-patterns, anthropic-boris-cherny-interview, sequoia-ascent-2026-karpathy-ko 등 5개 이상 raw에서 시대 명칭으로 정착
+  - 허브 역할: [[Claude.md 운영 원칙]], [[Meta-Harness]], [[Lethal Trifecta]], [[Andrew Ng 4 에이전틱 디자인 패턴]], [[Software 3.0]], [[Agentic 패턴 진화]] 등 10개 노트의 인바운드 hub
+  - 실무 의사결정 기준: rippability 원칙, 65줄 CLAUDE.md 미니멀리즘, harness 구성 요소 정의
+
+### Index 정정
+
+- 2026-05-16 ingest 행에 누락된 [[Reasoning Models]], [[소프트웨어 민주화]], [[검증 가능한 도메인]] 추가
+- 2026-05-16 ingest 행에 누락된 raw 자료(`sequoia-ascent-2026-karpathy-ko.md`, `강화학습-RL-초보자-가이드.md`, `ai-era-six-pitfalls-six-prescriptions-matt-pocock.md`) 추가 — 세 노트는 기존 raw들의 후속 분리/추출이므로 출처 정합성을 위해 명시
+- 핵심 노트 표에 [[Harness Engineering]] (evergreen, 2026-05-17) 추가
+- 승격 후보에서 [[Harness Engineering]] 제거. 추가로 [[Claude.md 운영 원칙]], [[병렬 에이전트 세션 운영]]을 core 후보로 명시
+- 점검 대기 표에 신규 needs-review 8개([[AI 시대 소프트웨어 펀더멘탈]], [[Context Mode]], [[Graphify]], [[Meta-Harness]], [[OpenAgent Team Mode]], [[RuboCop]], [[바선생]], [[매퍼코 3스킬 워크플로우]]) 항목 추가
+
+### 교차 링크 보강
+
+- [[Software 3.0]] 관련 노트에 [[Reasoning Models]], [[소프트웨어 민주화]] 추가 (test-time compute 흐름과 민주화 패러럴 연결)
+- [[바선생]] 관련 노트에 [[AI 네이티브 사용자]], [[Plan Mode 기반 AI 작업]], [[Claude Code 오케스트레이션]], [[매퍼코 3스킬 워크플로우]] 추가 — 인바운드 3 → 6개로 보강
+
+### 충돌 점검
+
+- 신규 raw 없음. Sync 2에서 확인된 충돌 없음 상태 유지.
+- 보리스 1인 영상 발언(100% 자동 코드 작성, 하루 150 PR, 수천 에이전트 야간 운영)은 [[Loop와 Routines]], [[제품 오버행]]에서 외부 검증 자료 부재로 needs-review 유지
+- evolution 자료의 KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 사례는 2025-2026 시점 자료로 모델/벤치마크 변동 시 needs-review 갱신 필요
+
+### 최종 Lint
+
+- 총 노트: 49개 (+ index, log)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- frontmatter 누락/유효성: 0개
+- `관련 노트` 2개 미만: 0개
+- 고아 페이지: 0개
+- draft 상태: 0개 (목표 달성)
+- 핵심 노트 status: 7개 모두 `evergreen` ([[Harness Engineering]] 추가)
+- 30일 이상 미갱신 핵심 노트: 0개. [[AI 시대 디자인 시스템]] (updated 2026-05-07, D-10) 다음 주기 점검 대상
+
+### 결정 기록
+
+- 결정: 메타데이터 정정 (status 정합성)
+- 대상: 35개 draft 노트
+- 근거: 다수 노트가 ingest 후 검증되었음에도 status가 draft로 남아 lint·검색 신호를 흐림. 검증 가능성/변동성 기준으로 evergreen 또는 needs-review로 일괄 정정. 본문 결론은 변경하지 않고 frontmatter만 갱신.
+
+- 결정: core 승격
+- 대상: [[Harness Engineering]]
+- 근거: 5개 이상 raw에서 시대 명칭으로 반복 정착, 10개 노트의 hub, 실무 의사결정 기준 제공. Sync 2에서 승격 후보로 등록 후 후속 raw에서 일관되게 강화됨.
+
+- 결정: index ingest 행 정정
+- 대상: 2026-05-16 ingest 행
+- 근거: Sync 2 직전 작업으로 생성된 [[Reasoning Models]], [[소프트웨어 민주화]], [[검증 가능한 도메인]] 3개 노트가 ingest 행과 log entry에 누락됨. 노트 자체는 frontmatter/관련 노트/출처 모두 정상이지만 색인 누락으로 검색·추적이 약화됨. 정정 후 일관성 회복.
+
+- 결정: 교차 링크 보강 (인바운드 추가만)
+- 대상: [[Software 3.0]], [[바선생]]
+- 근거: 인바운드 5 이하 노트의 hub 연결 강화. 본문 주장 변경 없이 `## 관련 노트` 섹션에만 wikilink 추가.
+
+- 결정: schema/ 디렉터리 초기 템플릿 작성
+- 대상: `schema/note-template.md`, `schema/frontmatter.md`, `schema/tags.md`
+- 근거: AGENTS.md가 schema/에 frontmatter schema, note template, 태그 규칙을 두라고 명시하지만 디렉터리가 비어 있음. Sync 3에서 운영 규칙을 코드화해 다음 ingest의 일관성을 높임.
+
+---
+
 ## 2026-05-16 (Sync 2 — 전체 wiki 정합성 감사)
 
 ### Audit
