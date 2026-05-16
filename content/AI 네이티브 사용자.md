@@ -17,8 +17,9 @@ sources:
  - raw/보리스_클로드코드_실무_사용법.md
  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+ - raw/anthropic-boris-cherny-interview.md
 created: 2026-05-06
-updated: 2026-05-14
+updated: 2026-05-16
 ---
 
 # AI 네이티브 사용자
