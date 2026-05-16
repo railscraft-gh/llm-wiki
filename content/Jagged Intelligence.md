@@ -59,4 +59,6 @@ Sequoia Ascent 2026에서 카파시는 이 현상의 원인을 단순화했다. 
 - [[Vibe Coding과 Agentic Engineering]]
 - [[PPO와 정책 최적화]]
 - [[강화학습 기초]]
+- [[검증 가능한 도메인]]
+- [[Reasoning Models]]
 
