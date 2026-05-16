@@ -1,6 +1,6 @@
 ---
 type: pattern
-status: draft
+status: evergreen
 core: false
 tags:
   - llm
