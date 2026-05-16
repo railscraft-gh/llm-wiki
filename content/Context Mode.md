@@ -97,4 +97,6 @@ Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다
 - [[병렬 에이전트 세션 운영]]
 - [[OpenCode]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[Graphify]]
+- [[Agentic 패턴 진화]]
 
