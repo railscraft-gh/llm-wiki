@@ -1,5 +1,65 @@
 # LLM Wiki Log
 
+## 2026-05-16 (Sync 2 — 전체 wiki 정합성 감사)
+
+### Audit
+
+- 실행 방식: `ctx_execute` 기반 javascript 스크립트로 wiki 전체 46개 노트 frontmatter, wikilink, 고아 페이지, 30일 미갱신 핵심 노트, raw 미참조 점검
+- 점검 결과 (1차):
+  - 총 노트: 46개
+  - 깨진 wikilink: 0개
+  - frontmatter 누락: 0개
+  - `관련 노트` 2개 미만: 0개
+  - 미참조 raw 파일: 0개
+  - 고아 페이지: 4개 — [[AI 시대 소프트웨어 펀더멘탈]], [[Graphify]], [[강한 모델로 덜 헤매기]], [[바선생]]
+  - 잠재 누락 교차 링크: [[Graphify]] 본문의 "OpenCode" 평문 언급이 wikilink가 아님
+  - frontmatter 불일치: [[Agentic 패턴 진화]]가 `core: true`이지만 `status: draft` (규칙상 evergreen 또는 needs-review여야 함)
+
+### 교차 링크 보강
+
+- [[AI 시대 소프트웨어 펀더멘탈]] ← [[Harness Engineering]] (Karpathy 펀더멘탈 원칙과 연결)
+- [[Graphify]] ← [[Context Mode]] (둘 다 컨텍스트 윈도우 절감 도구)
+- [[강한 모델로 덜 헤매기]] ← [[Plan Mode 기반 AI 작업]] (강한 모델은 plan 단계 가치 큼)
+- [[바선생]] ← [[AI 네이티브 사용자]] (6대 기술 차원 진단이 AI 네이티브 역량 측정)
+- [[Agentic 패턴 진화]] ← [[Software 3.0]], [[Vibe Coding과 Agentic Engineering]], [[Context Mode]]에 추가 (3개 시대 진화의 메타 허브)
+- [[AI 시대 소프트웨어 펀더멘탈]] ← [[Vibe Coding과 Agentic Engineering]], [[AI Slop]]에 추가 (펀더멘탈 실패 시 AI Slop 양산)
+- [[제품 오버행]] ← [[Vibe Coding과 Agentic Engineering]]
+- [[Andrew Ng 4 에이전틱 디자인 패턴]] ← [[Plan Mode 기반 AI 작업]]
+- [[Graphify]] 본문의 평문 "OpenCode" → `[[OpenCode]]` 위키링크로 변환
+
+### 충돌 점검
+
+- 실행 방식: javascript 스크립트로 wiki 본문 전체에서 모델 버전(Opus/Sonnet/Haiku/Claude/GPT/GLM/Kimi/DeepSeek), 연도, 날짜 패턴을 추출하고 노트 간 일관성 비교
+- 결과: **확인된 사실 충돌 없음**. Cloud Code 런칭/Anthropic Labs 합류 시점, Opus 4 출시일(2025-05), 보리스의 "10월~11월부터 100% 자동 작성"은 [[제품 오버행]], [[AI 네이티브 엔지니어링 조직]]에서 일관됨. Claude 5.0 언급은 [[Harness Engineering]]과 [[Agentic 패턴 진화]] 모두 가상 미래 모델(rippable 원칙 예시)로 동일하게 사용. GLM 5.1/Kimi K2.6/GPT-5.4는 [[강한 모델로 덜 헤매기]]에서만 다루며 다른 노트와 비교 불가.
+- 미확정 영역: 보리스 영상 수치(100% 자동 작성, 하루 150 PR, 수천 에이전트 야간 운영)는 외부 검증 자료 없이 1인 발언이므로 [[index#점검 대기]]에 needs-review 항목으로 유지.
+
+### frontmatter 정정
+
+- [[Agentic 패턴 진화]]: `status: draft` → `status: evergreen` (core 노트 규칙 준수)
+
+### 최종 Lint (2차)
+
+- 총 노트: 46개, 링크 검증: 252개
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- frontmatter 누락/유효성: 0개
+- `관련 노트` 2개 미만: 0개
+- 고아 페이지: **0개** (4 → 0 해소)
+- 30일 이상 미갱신 핵심 노트: 0개. [[AI 시대 디자인 시스템]] updated 2026-05-07은 D-9로 다음 주기 점검.
+- 핵심 노트 status: 6개 모두 `evergreen`
+
+### 결정 기록
+
+- 결정: 보강 (인바운드 링크만 추가, 본문 결론 변경 없음)
+- 대상: [[Harness Engineering]], [[Context Mode]], [[Plan Mode 기반 AI 작업]], [[AI 네이티브 사용자]], [[Software 3.0]], [[Vibe Coding과 Agentic Engineering]], [[AI Slop]], [[Graphify]]
+- 근거: 고아 페이지 해소와 허브 노트 간 교차 링크 강화가 목적. 본문 주장은 그대로 두고 `## 관련 노트` 섹션과 필요 시 본문 평문을 wikilink로만 변경. raw 결론과 충돌 없음.
+
+- 결정: frontmatter 정정
+- 대상: [[Agentic 패턴 진화]]
+- 근거: core: true인 노트는 status를 `evergreen` 또는 `needs-review`로 두는 규칙. 직전 생성 시점에 draft였으나 검증 후 evergreen으로 승급.
+
+---
+
 ## 2026-05-16
 
 ### Ingest
