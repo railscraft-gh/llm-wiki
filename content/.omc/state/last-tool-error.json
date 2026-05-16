@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"rtk grep -l \\\"Agentic 패턴 진화\\\\|Agentic Patterns Evolution\\\" /Users/railscraft/Obsidian/wiki/*.md | head -20; echo \\\"---\\\"; rtk grep -L \\\"Agentic 패턴 진화\\\" /Users/railscraft/Obsidian/wiki/{Sof...",
-  "error": "Exit code 1\n/Users/railscraft/Obsidian/wiki/Agentic 패턴 진화.md\n/Users/railscraft/Obsidian/wiki/Andrew Ng 4 에이전틱 디자인 패턴.md\n/Users/railscraft/Obsidian/wiki/Context Mode.md\n/Users/railscraft/Obsidian/wiki/Harness Engineering.md\n/Users/railscraft/Obsidian/wiki/index.md\n/Users/railscraft/Obsidian/wiki/log.md\n/Users/railscraft/Obsidian/wiki/제품 오버행.md\n---\n/Users/railscraft/Obsidian/wiki/Software 3.0.md\n/Users/railscraft/Obsidian/wiki/Vibe Coding과 Agentic Engineering.md\n/Users/railscraft/Obsidian/wiki/AI ...",
-  "timestamp": "2026-05-16T13:47:52.120Z",
-  "retry_count": 1
-}
