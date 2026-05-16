@@ -10,6 +10,7 @@
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-05-07 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
+| [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-05-17 |
 
 ## Ingest 현황
 
