@@ -80,4 +80,6 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Agent Native Infrastructure]]
 - [[Vibe Coding과 Agentic Engineering]]
+- [[Agentic 패턴 진화]]
+- [[Lethal Trifecta]]
 
