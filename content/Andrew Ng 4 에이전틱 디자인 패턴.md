@@ -1,5 +1,5 @@
 ---
-type: pattern
+type: concept
 status: evergreen
 core: false
 tags:
@@ -13,7 +13,7 @@ sources:
   - raw/evolution-of-ai-agentic-patterns.md
   - https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-24
 ---
 
 # Andrew Ng 4 에이전틱 디자인 패턴

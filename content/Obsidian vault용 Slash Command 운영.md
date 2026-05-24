@@ -31,7 +31,7 @@ Obsidian vault용 Slash Command 운영은 Claude Code를 vault 루트에서 실�
 
 ## 상세
 
-이 raw의 핵심 주장은 Claude Code가 코드 저장소 전용 도구가 아니라, markdown 파일이 모여 있는 임의의 디렉터리에서도 작동하는 범용 agent라는 점이다. Obsidian vault를 루트에서 열고 `CLAUDE.md`에 폴더 구조, Tasks query 문법, `[[wikilinks]]` 같은 Obsidian 문법을 설명하면, 그다음부터는 `.claude/commands/*.md`가 반복 작업을 담당한다.
+이 raw의 핵심 주장은 Claude Code가 코드 저장소 전용 도구가 아니라, markdown 파일이 모여 있는 임의의 디렉터리에서도 작동하는 범용 agent라는 점이다. Obsidian vault를 루트에서 열고 `CLAUDE.md`에 폴더 구조, Tasks query 문법, ``[[wikilinks]]`` 같은 Obsidian 문법을 설명하면, 그다음부터는 `.claude/commands/*.md`가 반복 작업을 담당한다.
 
 글에서 제시한 명령어 묶음은 `/sync`, `/trace`, `/connect`, `/inbox`, `/graduate`, `/ghost`, `/challenge`, `/ideas`다. 이 조합은 크게 세 범주로 나뉜다. 첫째, `/sync`와 `/inbox`는 현재 상태 파악과 유입 처리다. 둘째, `/trace`, `/connect`, `/graduate`는 노트 간 관계를 발굴하고 아이디어를 독립 노트로 승격하는 지식 구조화다. 셋째, `/ghost`, `/challenge`, `/ideas`는 축적된 노트를 바탕으로 응답 스타일 모사, 반대 논증, 새 아이디어 생성까지 수행하는 사고 보조다.
 

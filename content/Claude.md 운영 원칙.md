@@ -53,7 +53,7 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 
 Karpathy가 제안한 [[LLM Wiki 운영 패턴]]은 이 원칙을 지식 베이스 운영으로 확장한 사례다. instruction 파일은 에이전트가 raw를 어떻게 읽고 wiki를 어떻게 갱신할지 규정하며, index/log 갱신 규칙까지 포함할 때 비로소 "문서를 읽는 모델"이 아니라 "위키를 유지하는 agent"가 된다.
 
-`raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`는 더 개인적인 예시를 준다. PARA 기반 vault라면 `CLAUDE.md`에 폴더 구조, Tasks query 문법, `[[wikilinks]]`, 주간 노트 위치를 적어 두고, 그 위에 [[Obsidian vault용 Slash Command 운영]]처럼 slash command를 얹어 inbox 정리, 연결 탐색, 아이디어 승격을 수행할 수 있다.
+`raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`는 더 개인적인 예시를 준다. PARA 기반 vault라면 `CLAUDE.md`에 폴더 구조, Tasks query 문법, ``[[wikilinks]]``, 주간 노트 위치를 적어 두고, 그 위에 [[Obsidian vault용 Slash Command 운영]]처럼 slash command를 얹어 inbox 정리, 연결 탐색, 아이디어 승격을 수행할 수 있다.
 
 [[Harness Engineering]] 관점에서 CLAUDE.md는 하네스의 5가지 레버 중 **시스템 프롬프트**에 해당한다. Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 예방하는 가장 기본적이고 강력한 구성 요소다. Anthropic 공식 문서에 따를 200줄을 넘으면 에이전트 준수율이 눈에 띄게 떨어지므로, **60줄 이하로 유지**하고 범용 지침만 포함하는 것이 권장된다.
 
