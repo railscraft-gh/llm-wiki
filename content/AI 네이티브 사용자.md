@@ -19,6 +19,7 @@ sources:
  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
  - raw/anthropic-boris-cherny-interview.md
  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+ - raw/아무도 AI를 배우고 싶어 하지 않는다.md
 created: 2026-05-06
 updated: 2026-05-24
 ---
@@ -42,6 +43,8 @@ AI 네이티브 사용자는 같은 LLM 도구를 쓰더라도 context, command,
 Sequoia Ascent 2026에서 카파시는 채용 방식의 변화를 제시했다. 전통적인 코딩 퍼즐 대신, 후보자에게 에이전트를 사용해 실질적 프로젝트를 구축·배포·보안하고, 적대적 에이전트들이 그것을 깨려고 시도하게 하는 것이 진짜 스킬을 테스트한다. 테스트 항목으로는 작업 분해, 스펙 작성, 품질 보존, 리뷰, 보안, 에이전트 활용 능력이 포함된다. 예전의 "10배 엔지니어" 개념은 에이전틱 워크플로우를 마스터한 사람들에 의해 훨씬 더 극단적으로 재편될 수 있다.
 
 보리스 자료의 실무 세팅은 AI 네이티브 사용자의 구체 예다. [[Claude.md 운영 원칙]]으로 프로젝트 규칙을 고정하고, [[AI 코딩 에이전트 검증 전략]]으로 결과를 확인하며, 반복 업무는 slash command로 줄이고, 외부 도구는 [[Claude Code 오케스트레이션]]으로 연결한다. `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`는 이를 개발 저장소 밖의 개인 vault에 적용한 사례다. `/sync`, `/connect`, `/graduate`, `/challenge` 같은 command로 지식 정리와 사고 보조를 고정하면, 같은 Claude Code라도 훨씬 더 높은 leverage를 얻는다.
+
+하지만 `AI 네이티브`를 최신 도구를 많이 배운 상태와 혼동하면 [[Competence Debt]]가 생긴다. 진짜 차이는 새 agent framework 이름을 아는가가 아니라, durable skill 위에 도구를 얹어 더 큰 시스템을 안전하게 다룰 수 있는가에 있다.
 
 [[AI 네이티브 엔지니어링 조직]] 관점에서는 개인의 도구 숙련이 팀 규범으로 확장된다. 모든 팀원이 같은 agent workflow를 dogfooding하고, 오래된 회의나 리뷰 절차를 자동화 대상으로 보며, 검증과 제품 판단을 중심으로 책임을 다시 나눈다.
 
@@ -71,4 +74,5 @@ Sequoia Ascent 2026에서 카파시는 채용 방식의 변화를 제시했다. 
 - [[바선생]]
 - [[소프트웨어 민주화]]
 - [[Obsidian vault용 Slash Command 운영]]
+- [[Competence Debt]]
 

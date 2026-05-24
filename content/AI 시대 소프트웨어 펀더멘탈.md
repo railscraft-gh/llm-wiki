@@ -11,8 +11,9 @@ tags:
 aliases: []
 sources:
   - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
 created: 2026-05-09
-updated: 2026-05-14
+updated: 2026-05-24
 ---
 
 # AI 시대 소프트웨어 펀더멘탈
@@ -32,6 +33,8 @@ AI 엔지니어링 업계에서는 "AI가 코드를 다 짜주니 코드는 더 
 Pocock의 핵심 명제는 다음과 같다:
 
 > AI 시대일수록 펀더멘탈(fundamentals)이 더 중요해진다.
+
+`raw/아무도 AI를 배우고 싶어 하지 않는다.md`는 이 주장을 커리어 경제의 언어로 다시 말한다. 업계가 반복적으로 파는 것은 빠르게 감가상각되는 perishable skill이지만, 실제로 가치가 오래가는 것은 시스템 이해, 아키텍처 판단, 디버깅 감각 같은 durable skill이다. 이런 대비는 [[Competence Debt]] 개념으로 연결된다.
 
 ## 상세
 
@@ -109,4 +112,5 @@ Deep Module을 회색 상자로 취급한다. 인터페이스는 사람이 직�
 - [[Vibe Coding과 Agentic Engineering]]
 - [[Claude.md 운영 원칙]]
 - [[AI Slop]]
+- [[Competence Debt]]
 
