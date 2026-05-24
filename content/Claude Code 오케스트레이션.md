@@ -17,6 +17,7 @@ sources:
  - raw/cc101_axwith_ko.md
  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+ - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
 created: 2026-05-06
 updated: 2026-05-24
 ---
@@ -42,6 +43,8 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 [[Ralph Loop]]는 Claude Code 오케스트레이션을 phase queue와 headless 세션 실행으로 확장한 패턴이다. 메인 세션은 전체 구현 context를 모두 품지 않고 phase 상태를 추적하며, 각 phase는 별도 `claude -p` 실행처럼 신선한 context에서 구현과 검증을 수행한다.
 
 개인 지식 관리에서도 같은 원리가 적용된다. [[Obsidian vault용 Slash Command 운영]]처럼 vault 루트에 `CLAUDE.md`와 `.claude/commands/`를 두면, `/sync`, `/connect`, `/inbox` 같은 명령어가 반복적인 지식 정리 루프를 오케스트레이션한다.
+
+`raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 이 층위의 기본기를 보여 준다. [[Claude Code 세션 운영 명령어]]처럼 `/init`, `/compact`, `!`, `/review`, `/doctor`를 세션 상태 관리 명령으로 이해하면, Claude Code는 단순 채팅창이 아니라 작업 환경 전체를 조율하는 인터페이스가 된다.
 
 ## 예시
 
@@ -111,4 +114,5 @@ claude_review:
 - [[Agent Native Infrastructure]]
 - [[Ralph Loop]]
 - [[Obsidian vault용 Slash Command 운영]]
+- [[Claude Code 세션 운영 명령어]]
 

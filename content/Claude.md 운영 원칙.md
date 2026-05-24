@@ -21,6 +21,7 @@ sources:
  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
  - raw/andrej-karpathy-skills-CLAUDE-번역.md
+ - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - https://opencode.ai/docs/rules/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
@@ -59,6 +60,8 @@ Karpathy가 제안한 [[LLM Wiki 운영 패턴]]은 이 원칙을 지식 베이�
 [[Harness Engineering]] 관점에서 CLAUDE.md는 하네스의 5가지 레버 중 **시스템 프롬프트**에 해당한다. Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 예방하는 가장 기본적이고 강력한 구성 요소다. Anthropic 공식 문서에 따를 200줄을 넘으면 에이전트 준수율이 눈에 띄게 떨어지므로, **60줄 이하로 유지**하고 범용 지침만 포함하는 것이 권장된다.
 
 `raw/andrej-karpathy-skills-CLAUDE-번역.md`는 그 범용 지침의 최소 버전을 보여 준다. 핵심은 [[에이전트 코딩 4원칙]]이다. 구현 전에 가정과 불확실성을 드러내고, 최소한의 코드만 쓰고, 변경 범위를 요청과 직접 연결된 부분으로 제한하고, 작업을 검증 가능한 목표로 다시 쓰는 방식이다.
+
+`raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 이 문서를 둘러싼 운영 명령어를 보강한다. `/init`은 프로젝트용 `CLAUDE.md`를 자동 생성하고, `/memory`는 프로젝트를 넘는 전역 규칙을 저장한다. 따라서 [[Claude Code 세션 운영 명령어]]는 `CLAUDE.md`를 실제 세션 루프 속에 배치하는 사용법으로 읽을 수 있다.
 
 ## 예시
 
@@ -117,4 +120,5 @@ CC101 가이드는 목적별 CLAUDE.md 템플릿 3종을 제공한다.
 - [[LLM Wiki 운영 패턴]]
 - [[Obsidian vault용 Slash Command 운영]]
 - [[에이전트 코딩 4원칙]]
+- [[Claude Code 세션 운영 명령어]]
 

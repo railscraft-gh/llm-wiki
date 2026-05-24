@@ -21,6 +21,7 @@ sources:
  - raw/cc101_axwith_ko.md
  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
  - raw/andrej-karpathy-skills-CLAUDE-번역.md
+ - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06
@@ -46,6 +47,8 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 구현뿐 아니라 �
 카파시의 [[Jagged Intelligence]] 관점에서도 같은 결론이 나온다. LLM은 검증 가능한 영역에서는 빠르게 강해지지만, 검증 기준이 없으면 사람 눈에는 그럴듯한 결과를 내고도 시스템 결정을 틀릴 수 있다. 따라서 [[Vibe Coding과 Agentic Engineering]]을 구분하는 핵심은 속도가 아니라 검증 책임을 유지하는가다.
 
 `raw/andrej-karpathy-skills-CLAUDE-번역.md`는 이 검증 책임을 더 짧은 규칙으로 압축한다. [[에이전트 코딩 4원칙]]의 Goal-Driven Execution은 "버그 수정"이나 "검증 로직 추가"를 막연한 작업으로 두지 않고, 실패 가능한 테스트와 확인 방법으로 다시 쓰라고 요구한다.
+
+또한 `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 세션 운영 차원의 보조 장치를 제공한다. [[Claude Code 세션 운영 명령어]]의 `/review`는 구현 뒤 결함 탐색을 구조화하고, `/compact`는 긴 검증 세션이 context 한계에 부딪히기 전에 흐름을 유지하게 한다.
 
 UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다.
 
@@ -151,4 +154,5 @@ git add -p
 - [[매퍼코 3스킬 워크플로우]]
 - [[RuboCop]]
 - [[에이전트 코딩 4원칙]]
+- [[Claude Code 세션 운영 명령어]]
 
