@@ -21,7 +21,7 @@ sources:
  - raw/arxiv-2603.28052-meta-harness.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
-updated: 2026-05-14
+updated: 2026-05-24
 ---
 
 # Agent Native Infrastructure
@@ -47,6 +47,8 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 [[Quartz로 Obsidian Wiki 배포하기]]도 같은 관점으로 볼 수 있다. Quartz 공식 hosting workflow는 GitHub Actions에서 Node `22`, `npm ci`, `npx quartz build`, Pages artifact 업로드를 명령으로 표현한다. 이런 배포 절차는 콘솔 스크린샷보다 agent가 검토하고 수정하기 쉽다.
 
 [[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다.
+
+Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를 분리하고 index와 log를 유지하면, 지식 정리 작업 자체가 사람이 폴더를 뒤지며 기억을 더듬는 과정이 아니라 에이전트가 읽고 갱신할 수 있는 텍스트 기반 인프라가 된다.
 
 [[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다.
 
@@ -75,4 +77,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[Pi Coding Agent]]
 - [[웹 서버와 배포 기초]]
 - [[Meta-Harness]]
+- [[LLM Wiki 운영 패턴]]
 

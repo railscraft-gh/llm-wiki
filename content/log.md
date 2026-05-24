@@ -1,5 +1,36 @@
 # LLM Wiki Log
 
+## 2026-05-24
+
+### Ingest
+
+- 입력: `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md`
+- 생성: [[LLM Wiki 운영 패턴]]
+- 수정: [[Software 3.0]], [[Thinking과 Understanding 분리]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
+- index 업데이트: 완료
+- 남은 검토: `AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`는 동일 주제의 중복 raw이므로 별도 ingest하지 않고 후속 중복 정리 기준만 검토. 원문에 나온 Cursor/Obsidian 자동 설정 예시는 도구 시점 정보라 본문에서는 운영 패턴 위주로 추출함.
+
+### Lint
+
+- 실행 방식: 수동 점검
+- 깨진 wikilink: 0개 예상. 신규 노트의 관련 링크와 기존 노트의 역링크를 함께 추가함.
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개. 신규 노트에는 수치 문장을 두지 않음.
+- 관련 노트 2개 미만 문서: 0개. 신규 노트는 5개 관련 노트를 연결함.
+- 고아 페이지: 0개 예상. 신규 노트는 index와 4개 기존 노트에서 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 노트를 workflow로 분리하고, `[[Software 3.0]]`의 예시 문단은 개념 설명 수준으로 유지함.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[LLM Wiki 운영 패턴]]
+- 근거: 기존 [[Software 3.0]]에는 LLM Wiki가 예시 한 문단으로만 있어 재사용성이 낮았음. ingest/query/lint와 raw/wiki/schema 분리를 독립 workflow 노트로 분리하는 편이 vault 운영 규칙과 더 잘 맞음.
+
+- 결정: 보강
+- 대상: [[Software 3.0]], [[Thinking과 Understanding 분리]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
+- 근거: Karpathy의 LLM Wiki 글은 새 제품이나 도구 자체보다 기존 결론을 구체 사례로 강화하는 성격이 강함. 충돌 없이 cross-link와 설명 문단만 보강함.
+
 ## 2026-05-17 (Sync 3 — raw 재감사, 상태 정합성, core 승격)
 
 ### Audit

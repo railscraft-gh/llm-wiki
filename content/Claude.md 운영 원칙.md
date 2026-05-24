@@ -22,7 +22,7 @@ sources:
  - https://opencode.ai/docs/rules/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-14
+updated: 2026-05-24
 ---
 
 # Claude.md 운영 원칙
@@ -49,6 +49,8 @@ UI 작업에서는 Claude.md에 모든 색상과 spacing을 넣기보다 [[DESIG
 [[OpenCode]] 공식 문서는 project root의 `AGENTS.md`를 custom instructions 파일로 설명한다. `/init`은 repo의 build, lint, test command, architecture, convention, operational gotcha를 요약해 `AGENTS.md`를 만들거나 갱신한다. 따라서 도구 이름은 달라도 원칙은 같다. agent memory file에는 "계속 참조해야 하는 운영 제약"만 넣고, 긴 배경 자료는 skill, docs, command로 분리한다.
 
 [[Pi Coding Agent]]도 시작 시 `AGENTS.md` 또는 `CLAUDE.md`를 읽는다. 공식 문서 기준으로 전역 `~/.pi/agent/AGENTS.md`, 현재 작업 디렉터리와 상위 디렉터리의 context file을 로드하며, 깨끗한 실행이 필요할 때는 `--no-context-files` 또는 `-nc`로 끈다. 이는 agent memory file이 편의 기능이 아니라 실행 환경의 일부라는 점을 보여준다.
+
+Karpathy가 제안한 [[LLM Wiki 운영 패턴]]은 이 원칙을 지식 베이스 운영으로 확장한 사례다. instruction 파일은 에이전트가 raw를 어떻게 읽고 wiki를 어떻게 갱신할지 규정하며, index/log 갱신 규칙까지 포함할 때 비로소 "문서를 읽는 모델"이 아니라 "위키를 유지하는 agent"가 된다.
 
 [[Harness Engineering]] 관점에서 CLAUDE.md는 하네스의 5가지 레버 중 **시스템 프롬프트**에 해당한다. Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 예방하는 가장 기본적이고 강력한 구성 요소다. Anthropic 공식 문서에 따를 200줄을 넘으면 에이전트 준수율이 눈에 띄게 떨어지므로, **60줄 이하로 유지**하고 범용 지침만 포함하는 것이 권장된다.
 
@@ -106,4 +108,5 @@ CC101 가이드는 목적별 CLAUDE.md 템플릿 3종을 제공한다.
 - [[OpenCode]]
 - [[Pi Coding Agent]]
 - [[Harness Engineering]]
+- [[LLM Wiki 운영 패턴]]
 
