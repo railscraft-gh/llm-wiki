@@ -31,6 +31,33 @@
 - 대상: [[Software 3.0]], [[Thinking과 Understanding 분리]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
 - 근거: Karpathy의 LLM Wiki 글은 새 제품이나 도구 자체보다 기존 결론을 구체 사례로 강화하는 성격이 강함. 충돌 없이 cross-link와 설명 문단만 보강함.
 
+- 입력: `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`
+- 생성: [[Obsidian vault용 Slash Command 운영]]
+- 수정: [[Claude Code 오케스트레이션]], [[AI 네이티브 사용자]], [[Claude.md 운영 원칙]]
+- index 업데이트: 완료
+- 남은 검토: 동일 제목의 `- 출판형 다듬기.md`는 중복 raw로 보류. `/ghost`처럼 "내 목소리"를 흉내 내는 command는 재사용성보다 개인 화자 의존성이 크므로 별도 핵심 노트로 승격하지 않음.
+
+### Lint
+
+- 실행 방식: 수동 점검
+- 깨진 wikilink: 0개 예상. 신규 노트와 보강 노트 사이에 상호 링크 추가.
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개. 신규 노트는 구조와 command 예시 위주로 서술.
+- 관련 노트 2개 미만 문서: 0개. 신규 노트는 5개 관련 노트를 연결함.
+- 고아 페이지: 0개 예상. 신규 노트는 index와 3개 기존 노트에서 연결됨.
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 개인화 성격이 강한 `/ghost` 자체보다 slash command 설계와 vault 운영 인터페이스를 공통 workflow로 추출함.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[Obsidian vault용 Slash Command 운영]]
+- 근거: 기존 wiki에는 slash command 일반론과 오케스트레이션은 있었지만, Obsidian vault를 대상으로 `/sync`, `/connect`, `/graduate`, `/challenge`를 묶어 설명하는 재사용 가능한 workflow 노트가 없었음.
+
+- 결정: 보강
+- 대상: [[Claude Code 오케스트레이션]], [[AI 네이티브 사용자]], [[Claude.md 운영 원칙]]
+- 근거: 이 raw는 새 도구보다 기존 개념의 적용 사례로 읽히므로, 개인 지식 관리에서의 leverage 사례만 선택적으로 추가함.
+
 ## 2026-05-17 (Sync 3 — raw 재감사, 상태 정합성, core 승격)
 
 ### Audit
