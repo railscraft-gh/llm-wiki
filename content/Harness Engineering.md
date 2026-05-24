@@ -13,9 +13,10 @@ aliases:
 sources:
   - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
   - raw/evolution-of-ai-agentic-patterns.md
+  - raw/andrej-karpathy-skills-CLAUDE-번역.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-17
+updated: 2026-05-24
 ---
 
 # Harness Engineering
@@ -39,7 +40,7 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - 컨텍스트 엔지니어링(2025): "무엇을 보여줄 것인가?"
 - 하네스 엔지니어링(2026): "전체 환경을 어떻게 설계할 것인가?"
 
-**CLAUDE.md의 4가지 행동 원칙**은 하네스 엔지니어링의 가장 기본적이고 강력한 구성 요소다. Andrej Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 원칙으로 매핑했다.
+**CLAUDE.md의 4가지 행동 원칙**은 하네스 엔지니어링의 가장 기본적이고 강력한 구성 요소다. Andrej Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 원칙으로 매핑했다. 이 행동 지침 자체는 [[에이전트 코딩 4원칙]]으로 분리해 재사용할 수 있다.
 
 | 원칙 | 핵심 | 하네스 관점 |
 |------|------|------------|
@@ -83,4 +84,5 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[Agentic 패턴 진화]]
 - [[Lethal Trifecta]]
 - [[AI 시대 소프트웨어 펀더멘탈]]
+- [[에이전트 코딩 4원칙]]
 
