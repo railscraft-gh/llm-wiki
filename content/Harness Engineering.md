@@ -16,7 +16,7 @@ sources:
   - raw/andrej-karpathy-skills-CLAUDE-번역.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # Harness Engineering
@@ -58,6 +58,8 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 
 **보안 가드레일은 [[Lethal Trifecta]]로 정리한다.** 신뢰 불가 입력 + 민감 시스템 접근 + 상태 변경 세 능력 중 최대 두 개만 동시에 허용한다는 Meta AI의 Rule of Two가 실천 가능한 규칙이다.
 
+[[Context Engineering]]은 하네스의 하위 층으로 볼 수 있다. 하네스가 규칙·도구·검증 전체를 설계한다면, context engineering은 노드 사이 handoff와 routing을 다뤄 "무엇을 보여줄 것인가"를 구체화한다.
+
 **수치 증거:**
 - LangChain: 동일 모델에서 하네스만 변경 시 Terminal Bench 2.0 52.8% → 66.5%
 - OpenAI Codex 팀: 5개월간 하네스에 코드 제로, 에이전트가 100만 줄+ 생성
@@ -85,4 +87,5 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[Lethal Trifecta]]
 - [[AI 시대 소프트웨어 펀더멘탈]]
 - [[에이전트 코딩 4원칙]]
+- [[Context Engineering]]
 

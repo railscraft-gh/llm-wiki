@@ -17,6 +17,7 @@
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
 | 2026-05-17 | (Sync 3 — raw 재감사, 상태 정합성 갱신) | [[Harness Engineering]] (core 승격), [[Software 3.0]] (Reasoning Models 링크), [[바선생]] (cross-link 보강), 35개 draft 노트 → 22 evergreen / 13 needs-review로 상태 정정 | done | [[log#2026-05-17 (Sync 3 — raw 재감사, 상태 정합성)]] |
+| 2026-05-26 | `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md` | [[Context Engineering]], [[에이전트 확장 3계층]], [[Harness Engineering]] (보강), [[Context Mode]] (보강), [[OpenCode]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-24 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md` | [[LLM Wiki 운영 패턴]], [[Software 3.0]] (보강), [[Thinking과 Understanding 분리]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-24 | `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md` | [[Obsidian vault용 Slash Command 운영]], [[Claude Code 오케스트레이션]] (보강), [[AI 네이티브 사용자]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-24 | `raw/andrej-karpathy-skills-CLAUDE-번역.md` | [[에이전트 코딩 4원칙]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강) | done | [[log#2026-05-24]] |
@@ -56,6 +57,7 @@
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 | [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
+| [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
 
 ## 점검 대기
 

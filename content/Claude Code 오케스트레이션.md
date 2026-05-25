@@ -19,7 +19,7 @@ sources:
  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
 created: 2026-05-06
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # Claude Code 오케스트레이션
@@ -38,7 +38,7 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 
 보리스 자료는 Claude Code를 다양한 workflow를 통제하는 오케스트레이터로 설명한다. 예를 들어 Sentry에서 최근 에러를 확인하고, 관련 로그로 원인을 추정하고, GitHub 이슈를 만들고, 수정 PR을 준비하는 흐름은 여러 도구를 넘나드는 업무다.
 
-이 관점은 [[Agent Native Infrastructure]]와 이어진다. 사람이 클릭해서 서비스 연결, 설정, 배포를 처리하는 대신 에이전트가 텍스트 지시와 CLI/API를 통해 실행할 수 있는 환경일수록 오케스트레이션이 쉬워진다.
+이 관점은 [[Agent Native Infrastructure]]와 이어진다. 사람이 클릭해서 서비스 연결, 설정, 배포를 처리하는 대신 에이전트가 텍스트 지시와 CLI/API를 통해 실행할 수 있는 환경일수록 오케스트레이션이 쉬워진다. 실무에서는 [[에이전트 확장 3계층]]처럼 Skill·MCP·tool의 역할을 분리할수록 오케스트레이션 경계도 선명해진다.
 
 [[Ralph Loop]]는 Claude Code 오케스트레이션을 phase queue와 headless 세션 실행으로 확장한 패턴이다. 메인 세션은 전체 구현 context를 모두 품지 않고 phase 상태를 추적하며, 각 phase는 별도 `claude -p` 실행처럼 신선한 context에서 구현과 검증을 수행한다.
 
@@ -115,4 +115,5 @@ claude_review:
 - [[Ralph Loop]]
 - [[Obsidian vault용 Slash Command 운영]]
 - [[Claude Code 세션 운영 명령어]]
+- [[에이전트 확장 3계층]]
 

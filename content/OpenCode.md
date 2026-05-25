@@ -17,7 +17,7 @@ sources:
  - https://opencode.ai/docs/models/
  - https://opencode.ai/docs/config/
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-26
 ---
 
 # OpenCode
@@ -40,6 +40,7 @@ OpenCode 공식 문서는 built-in primary agent로 Build와 Plan을 설명한�
 프로젝트 지시는 `AGENTS.md`에 둔다. OpenCode의 `/init`은 repo를 스캔해 build, lint, test command, 구조, convention, 운영상 주의점을 담은 `AGENTS.md`를 만들거나 갱신한다. Claude Code에서 넘어온 팀을 위해 프로젝트 `CLAUDE.md`도 fallback으로 읽을 수 있다.
 
 Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`뿐 아니라 `.agents/skills/<name>/SKILL.md`, `.claude/skills/<name>/SKILL.md`도 탐색 위치로 설명한다. 따라서 raw 영상의 `.agents/skills/` 방식은 호환 경로로 볼 수 있지만, 새 프로젝트에서는 `.opencode/` 구조와 함께 검토하는 편이 안전하다.
+이 구조는 [[에이전트 확장 3계층]]으로 요약할 수 있다. OpenCode는 Skill로 절차를, MCP로 외부 접근을, built-in tool로 로컬 실행을 조합하는 쪽에 가깝다.
 
 ## 예시
 
@@ -59,4 +60,5 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Pi Coding Agent]]
+- [[에이전트 확장 3계층]]
 

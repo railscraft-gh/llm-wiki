@@ -1,5 +1,29 @@
 # LLM Wiki Log
 
+## 2026-05-26
+
+### Ingest
+
+- 입력: `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md`
+- 생성: [[Context Engineering]], [[에이전트 확장 3계층]]
+- 수정: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
+- index 업데이트: 완료
+- 남은 검토: `[[에이전트 확장 3계층]]`은 제품별 Skill/MCP/tool 경계와 token 비용이 빠르게 바뀌는 영역이라 `needs-review`로 시작. `[[Context Engineering]]`은 raw 한 편 기준의 개념 정리이므로 추가 사례 raw가 쌓이면 [[Harness Engineering]]과의 경계 설명을 더 보강할 수 있음.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[Context Engineering]]
+- 근거: 기존 wiki에는 하네스 전체나 context window 절약 도구는 있었지만, 단계 사이 handoff 실패를 독립 개념으로 설명하는 노트가 없었음. prompt 최적화와 상태 계약 설계를 구분하는 허브 노트가 필요했음.
+
+- 결정: 신규 생성
+- 대상: [[에이전트 확장 3계층]]
+- 근거: 기존 노트들에 Skill, MCP, built-in tool 사례는 흩어져 있었지만 "어떤 층을 언제 써야 하는가"를 판단하는 공통 프레임이 없었음. OpenCode, Claude Code 오케스트레이션, Context Mode를 읽을 때의 분류 기준으로 재사용 가치가 높음.
+
+- 결정: 보강
+- 대상: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
+- 근거: 두 raw는 완전히 새로운 도구보다 기존 허브 노트의 경계를 또렷하게 만드는 역할이 큼. 새 주장 추가보다 cross-link와 한 문단 보강이 적절했음.
+
 ## 2026-05-24
 
 ### Ingest

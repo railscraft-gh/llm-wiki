@@ -11,7 +11,7 @@ aliases: []
 sources:
   - raw/context-mode-README-정리.md
 created: 2026-05-09
-updated: 2026-05-14
+updated: 2026-05-26
 ---
 
 # Context Mode
@@ -31,7 +31,7 @@ AI 코딩 에이전트의 컨텍스트 윈도우를 최적화하는 MCP 서버. 
 
 ### Context Saving
 
-MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문제를 해결한다. Playwright snapshot 56KB, GitHub issues 20개 59KB처럼 큰 출력을 샌드박스 도구가 컨텍스트 밖으로 격리한다. 결과만 컨텍스트로 반환한다.
+MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문제를 해결한다. Playwright snapshot 56KB, GitHub issues 20개 59KB처럼 큰 출력을 샌드박스 도구가 컨텍스트 밖으로 격리한다. 결과만 컨텍스트로 반환한다. 이 점에서 Context Mode는 [[Context Engineering]]의 실행 도구로 읽을 수 있다. 어떤 정보를 오래 남기고 어떤 출력을 요약해 다음 단계로 넘길지 설계하는 데 직접 쓰이기 때문이다.
 
 ### Session Continuity
 
@@ -99,4 +99,6 @@ Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Graphify]]
 - [[Agentic 패턴 진화]]
+- [[Context Engineering]]
+- [[에이전트 확장 3계층]]
 
