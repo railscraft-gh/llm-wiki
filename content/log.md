@@ -88,6 +88,22 @@
 - 대상: [[AI 네이티브 사용자]], [[Competence Debt]], [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]]
 - 근거: 채용·학습·생태계 raw가 기존 허브의 빈칸을 메웠음. 특히 AI 네이티브 숙련의 채용 표면, durable skill을 만드는 노트 방식, agent-native 생태계의 공개 구현체를 연결할 수 있게 됨.
 
+- 입력: `raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md`, `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`, `raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md`
+- 생성: [[LLM Wiki 구현 선택지]]
+- 수정: [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
+- index 업데이트: 완료
+- 남은 검토: 세 raw는 같은 LLM Wiki 계열의 구현 변주라 기존 허브 보강 중심으로 처리함. `AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`는 이미 ingest된 원문의 중복 표현본으로 별도 노트 생성 없이 보류.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[LLM Wiki 구현 선택지]]
+- 근거: 기존 [[LLM Wiki 운영 패턴]]은 운영 철학과 루프를 설명했지만, app/package/skill/단일 instruction file 사이 구현 수준 trade-off를 설명하진 않았음. 후속 raw가 이 차이를 반복적으로 보여 줘 별도 노트 분리 가치가 생김.
+
+- 결정: 보강
+- 대상: [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
+- 근거: purpose.md, 2단계 ingest, review item, skill vs app 구분은 기존 위키 운영 철학을 더 실무적으로 만든다. 새 제품 소개보다 유지 습관을 추출하는 편이 vault 규칙에 맞음.
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 62개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

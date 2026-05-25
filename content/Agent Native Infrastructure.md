@@ -20,6 +20,7 @@ sources:
  - raw/pi-coding-agent-overview.md
  - raw/arxiv-2603.28052-meta-harness.md
  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+ - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
 updated: 2026-05-26
@@ -48,6 +49,7 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 [[Quartz로 Obsidian Wiki 배포하기]]도 같은 관점으로 볼 수 있다. Quartz 공식 hosting workflow는 GitHub Actions에서 Node `22`, `npm ci`, `npx quartz build`, Pages artifact 업로드를 명령으로 표현한다. 이런 배포 절차는 콘솔 스크린샷보다 agent가 검토하고 수정하기 쉽다.
 
 [[OpenCode]]의 `AGENTS.md`, skill, `opencode.json`도 agent-native 문서 구조다. 프로젝트의 build/test command, permission, MCP 연결을 파일로 남기면 다음 agent session이 사람의 기억 대신 repo의 실행 가능한 맥락을 읽고 시작할 수 있다.
+후속 LLM Wiki 구현 raw는 여기서 더 나아가, 같은 패턴을 `AGENTS.md` 하나로 둘지, project skill로 둘지, typed package로 둘지, full app으로 둘지 선택할 수 있음을 보여 준다. 즉 agent-native 인프라는 단일 포맷이 아니라 단계적 구현 스펙트럼이다.
 
 Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를 분리하고 index와 log를 유지하면, 지식 정리 작업 자체가 사람이 폴더를 뒤지며 기억을 더듬는 과정이 아니라 에이전트가 읽고 갱신할 수 있는 텍스트 기반 인프라가 된다.
 
@@ -87,4 +89,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[에이전트 확장 3계층]]
 - [[AI 산출물 포맷 결정 트리]]
 - [[AI 오픈소스 작업대]]
+- [[LLM Wiki 구현 선택지]]
 

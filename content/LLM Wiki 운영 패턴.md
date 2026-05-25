@@ -13,6 +13,9 @@ sources:
  - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
  - raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
+ - raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+ - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+ - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
 created: 2026-05-24
 updated: 2026-05-26
 ---
@@ -65,4 +68,5 @@ workflow도 세 갈래다. ingest는 새 raw를 읽고 기존 노트를 보강�
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 산출물 포맷 결정 트리]]
 - [[학습용 노트 외부화 원칙]]
+- [[LLM Wiki 구현 선택지]]
 
