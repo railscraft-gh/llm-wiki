@@ -154,6 +154,18 @@
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: core 승격 2건과 index 승격 후보 정리 이후에도 구조 정합성을 재확인함
 
+### 결정 기록
+
+- 결정: core 승격
+- 대상: [[병렬 에이전트 세션 운영]], [[Agent Harness]]
+- 근거: [[병렬 에이전트 세션 운영]]은 Boris/OpenCode/Pi/Ralph Loop/CC101 자료를 가로지르며 역할 분리, write scope, 검증 경계라는 공통 운영 원칙으로 반복된다. [[Agent Harness]]는 production harness raw와 후속 harness raw를 묶어 loop, memory, tool, parsing, verification을 설명하는 실행 인프라 허브이며, [[Harness Engineering]], [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]]을 잇는 중간 층 역할을 수행한다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status/core`, broken wikilink, 관련 노트 수, 고아 페이지, core 노트 index 등록 여부를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: core 승격 2건과 후보 표 정리 이후에도 구조 정합성을 재확인함
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

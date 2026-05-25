@@ -15,6 +15,8 @@
 | [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
 | [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
 | [[LLM Wiki 운영 패턴]] | raw 보존, wiki 승격, index/log/lint 분리로 지식 베이스를 지속 운영하는 workflow를 정리한다. | evergreen | 2026-05-26 |
+| [[병렬 에이전트 세션 운영]] | 역할 분리, 파일 범위, 검증 경계를 기준으로 multi-agent 세션을 안전하게 병렬화하는 절차를 정리한다. | evergreen | 2026-05-26 |
+| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-05-26 |
 
 ## Ingest 현황
 
@@ -60,13 +62,11 @@
 | --- | --- | --- |
 | [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
-| [[병렬 에이전트 세션 운영]] | Boris 인터뷰와 organization 자료에서 반복, agent-native 사용자/조직 표준 패턴. | 검증 사례 보강 후 core 검토 |
 | [[Loop와 Routines]] | 보리스의 cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 | [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
 | [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
-| [[Agent Harness]] | loop, memory, tool, verification을 한 묶음으로 설명하는 실행 인프라 허브다. | 후속 harness 사례 raw에서 반복 확인 후 core 검토 |
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
 
