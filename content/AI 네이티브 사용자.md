@@ -21,8 +21,9 @@ sources:
  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+ - raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
 created: 2026-05-06
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # AI 네이티브 사용자
@@ -42,6 +43,8 @@ AI 네이티브 사용자는 같은 LLM 도구를 쓰더라도 context, command,
 카파시 자료는 같은 ChatGPT나 Claude Code를 써도 사용법에 따라 결과가 크게 갈린다고 설명한다. 예전의 Vim 고수와 메모장 사용자, VS Code 확장과 단축키를 쓰는 사람의 차이가 이제 agent 도구에서도 반복된다는 관점이다.
 
 Sequoia Ascent 2026에서 카파시는 채용 방식의 변화를 제시했다. 전통적인 코딩 퍼즐 대신, 후보자에게 에이전트를 사용해 실질적 프로젝트를 구축·배포·보안하고, 적대적 에이전트들이 그것을 깨려고 시도하게 하는 것이 진짜 스킬을 테스트한다. 테스트 항목으로는 작업 분해, 스펙 작성, 품질 보존, 리뷰, 보안, 에이전트 활용 능력이 포함된다. 예전의 "10배 엔지니어" 개념은 에이전틱 워크플로우를 마스터한 사람들에 의해 훨씬 더 극단적으로 재편될 수 있다.
+
+후속 면접 raw는 이 변화가 실제 질문 표면에서 어떻게 나타나는지도 보여 준다. 면접은 attention 정의보다 RAG 평가, reranker, multi-agent 종료 조건, observability, guardrail, NL-to-SQL 실패 모드 같은 운영 trade-off를 더 자주 본다. 즉 [[생성형 AI 면접 평가 축]]은 AI 네이티브 사용자의 채용 버전이라고 볼 수 있다.
 
 보리스 자료의 실무 세팅은 AI 네이티브 사용자의 구체 예다. [[Claude.md 운영 원칙]]으로 프로젝트 규칙을 고정하고, [[AI 코딩 에이전트 검증 전략]]으로 결과를 확인하며, 반복 업무는 slash command로 줄이고, 외부 도구는 [[Claude Code 오케스트레이션]]으로 연결한다. `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`는 이를 개발 저장소 밖의 개인 vault에 적용한 사례다. `/sync`, `/connect`, `/graduate`, `/challenge` 같은 command로 지식 정리와 사고 보조를 고정하면, 같은 Claude Code라도 훨씬 더 높은 leverage를 얻는다.
 
@@ -79,4 +82,7 @@ Sequoia Ascent 2026에서 카파시는 채용 방식의 변화를 제시했다. 
 - [[Obsidian vault용 Slash Command 운영]]
 - [[Competence Debt]]
 - [[Claude Code 세션 운영 명령어]]
+- [[생성형 AI 면접 평가 축]]
+- [[AI 오픈소스 작업대]]
+- [[학습용 노트 외부화 원칙]]
 

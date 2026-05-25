@@ -1,6 +1,6 @@
 ---
 type: claim
-status: draft
+status: evergreen
 core: false
 tags:
  - llm
@@ -13,7 +13,7 @@ aliases:
 sources:
  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # Competence Debt
@@ -36,6 +36,9 @@ Competence Debt는 빨리 상하는 최신 도구 지식을 쫓느라 오래 가
 
 또한 competence debt는 [[AI 네이티브 사용자]]를 오해하는 방식에 대한 경고이기도 하다. AI 네이티브 사용자는 명령어를 많이 아는 사람이 아니라, 도구를 자신의 durable skill 위에 얹어 leverage를 만드는 사람이다. 이해 없는 최신성은 체크리스트를 채우는 데는 도움이 될 수 있어도, 시스템이 깨질 때 책임을 지는 능력으로 이어지지 않는다.
 
+
+학습 방식도 이 부채를 키우거나 줄일 수 있다. 빠른 타이핑으로 자료를 쌓기만 하면 저장은 늘어도 understanding은 약해질 수 있다. 반대로 [[학습용 노트 외부화 원칙]]처럼 재구성, 요약, 자기 테스트를 먼저 거치면 perishable update와 durable understanding을 더 잘 구분할 수 있다.
+
 이 주장은 [[AI 시대 소프트웨어 펀더멘탈]]과도 맞물린다. AI가 코드를 더 빨리 만들수록, 설계 개념, 공통 언어, 검증 기준, deep module 같은 펀더멘탈은 더 중요해진다. 업스킬링 산업이 팔기 쉬운 것은 perishable skill이지만, 실제로 대체 불가능성을 만드는 것은 durable skill 쪽이다.
 
 ## 예시
@@ -55,4 +58,6 @@ Competence Debt는 빨리 상하는 최신 도구 지식을 쫓느라 오래 가
 - [[AI 시대 소프트웨어 펀더멘탈]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[소프트웨어 민주화]]
+- [[학습용 노트 외부화 원칙]]
+- [[생성형 AI 면접 평가 축]]
 

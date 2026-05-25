@@ -19,6 +19,7 @@ sources:
  - raw/opencode-masterclass-summary.md
  - raw/pi-coding-agent-overview.md
  - raw/arxiv-2603.28052-meta-harness.md
+ - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
 updated: 2026-05-26
@@ -55,6 +56,9 @@ Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를
 
 Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다.
 
+
+후속 GitHub raw는 이 인프라가 어떤 공개 작업 표면으로 구현되는지도 보여 준다. local model runtime, self-hosted UI, RAG platform, workflow builder, terminal assistant가 각각 agent-native 인프라의 다른 면을 담당한다. 이를 묶은 허브가 [[AI 오픈소스 작업대]]다.
+
 ## 예시
 
 - 나쁜 문서: 콘솔 스크린샷을 보며 버튼을 순서대로 누르게 한다.
@@ -82,4 +86,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[Context Engineering]]
 - [[에이전트 확장 3계층]]
 - [[AI 산출물 포맷 결정 트리]]
+- [[AI 오픈소스 작업대]]
 
