@@ -1,7 +1,7 @@
 ---
 type: concept
 status: evergreen
-core: false
+core: true
 tags:
  - llm
  - agent

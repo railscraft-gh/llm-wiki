@@ -11,6 +11,8 @@
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-05-07 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
 | [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-05-26 |
+| [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-05-26 |
+| [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
 
 ## Ingest 현황
 
@@ -24,6 +26,7 @@
 | 2026-05-26 | `raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md`, `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`, `raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md` | [[LLM Wiki 구현 선택지]], [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md` | [[Harness Engineering]] (보강), [[Agent Harness]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md` | [[온디바이스 TTS]], [[AI 오픈소스 작업대]] (보강), [[Agent Native Infrastructure]] (관련 링크 보강) | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md` | 기존 [[LLM Wiki 운영 패턴]] ingest 결과 재사용, 중복 raw로 분류 | done | [[log#2026-05-26]] |
 | 2026-05-24 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md` | [[LLM Wiki 운영 패턴]], [[Software 3.0]] (보강), [[Thinking과 Understanding 분리]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-17 | (Sync 3 — raw 재감사, 상태 정합성 갱신) | [[Harness Engineering]] (core 승격), [[Software 3.0]] (Reasoning Models 링크), [[바선생]] (cross-link 보강), 35개 draft 노트 → 22 evergreen / 13 needs-review로 상태 정정 | done | [[log#2026-05-17 (Sync 3 — raw 재감사, 상태 정합성)]] |
 | 2026-05-24 | `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md` | [[Obsidian vault용 Slash Command 운영]], [[Claude Code 오케스트레이션]] (보강), [[AI 네이티브 사용자]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
@@ -53,12 +56,9 @@
 
 | 후보 | 근거 | 다음 작업 |
 | --- | --- | --- |
-| [[Claude.md 운영 원칙]] | 여러 Claude Code 자료에서 반복되며 실무 재사용성이 높다. | 추가 raw에서 반복 확인 후 core 검토 |
 | [[Plan Mode 기반 AI 작업]] | 보리스와 카파시 자료 모두에서 사람의 스펙/계획 역할과 연결된다. | 사례 보강 후 evergreen 검토 |
-| [[AI 네이티브 사용자]] | agent 시대의 역량 격차와 채용 기준으로 확장 가능하다. | 채용/평가 자료 추가 ingest |
 | [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
-| [[Claude.md 운영 원칙]] | Harness Engineering의 실행 단위로 다수 raw에서 반복, Sync 3에서 evergreen 확정. | 다음 ingest 사이클에서 core 검토 |
 | [[병렬 에이전트 세션 운영]] | Boris 인터뷰와 organization 자료에서 반복, agent-native 사용자/조직 표준 패턴. | 검증 사례 보강 후 core 검토 |
 | [[Loop와 Routines]] | 보리스의 cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |

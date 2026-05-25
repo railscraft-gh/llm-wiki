@@ -120,6 +120,28 @@
 - 대상: [[Harness Engineering]], [[Agent Harness]], [[AI 오픈소스 작업대]], [[Agent Native Infrastructure]]
 - 근거: harness raw는 "반복 실수를 영구 수정으로 바꾸는 습관"과 sensor 개념을 명료하게 보여 줬다. 기존 허브의 운영 감각을 더 선명하게 만드는 쪽이 적절했음.
 
+- 입력: `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`
+- 생성: 없음
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 2026-05-24에 ingest한 원문의 출판형 중복본으로 확인했다. raw는 보존하고, 별도 노트 생성 없이 기존 [[LLM Wiki 운영 패턴]] 계열 결과를 재사용했다.
+
+### 결정 기록
+
+- 결정: 중복 raw로 분류
+- 대상: `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`
+- 근거: 같은 주제의 원문 `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md`가 이미 ingest되어 있고, 출판형 다듬기본은 표현과 구성만 다듬은 변주라 새 노트를 만들면 같은 개념을 반복 생성하게 된다.
+
+- 결정: core 승격
+- 대상: [[Claude.md 운영 원칙]], [[AI 네이티브 사용자]]
+- 근거: 두 노트 모두 서로 다른 raw 다수에서 반복 확인되었고, 각각 coding agent 운영 규칙 허브와 agent 시대 역량 모델 허브 역할을 수행한다. [[Claude.md 운영 원칙]]은 여러 도구 노트와 검증/권한/하네스를 묶는 공통 인터페이스이고, [[AI 네이티브 사용자]]는 개인 숙련·면접·조직 운영 노트를 연결하는 상위 개념이라 핵심 노트 기준을 충족한다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status/core`, broken wikilink, 관련 노트 수, 고아 페이지, core 노트 index 등록 여부를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: 중복 raw 색인 반영과 core 승격 2건 이후에도 구조 정합성을 재확인함
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검
