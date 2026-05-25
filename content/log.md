@@ -104,6 +104,22 @@
 - 대상: [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]], [[Claude.md 운영 원칙]]
 - 근거: purpose.md, 2단계 ingest, review item, skill vs app 구분은 기존 위키 운영 철학을 더 실무적으로 만든다. 새 제품 소개보다 유지 습관을 추출하는 편이 vault 규칙에 맞음.
 
+- 입력: `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md`, `raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md`
+- 생성: [[온디바이스 TTS]]
+- 수정: [[Harness Engineering]], [[Agent Harness]], [[AI 오픈소스 작업대]], [[Agent Native Infrastructure]]
+- index 업데이트: 완료
+- 남은 검토: `[[온디바이스 TTS]]`는 모델 스펙·benchmark·라이선스가 변동성이 큰 영역이므로 `needs-review`로 시작. harness raw는 기존 허브를 더 생활형·운영형 언어로 보강하는 성격이 강해 신규 노트 대신 허브 보강으로 흡수함.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[온디바이스 TTS]]
+- 근거: speech/TTS는 기존 wiki에서 비어 있던 축이지만, raw의 핵심은 개별 모델 리뷰보다 로컬 실행·비용·지연·프라이버시 trade-off였음. open-weight local AI 흐름과 연결되는 tool note로 승격 가치가 있었음.
+
+- 결정: 보강
+- 대상: [[Harness Engineering]], [[Agent Harness]], [[AI 오픈소스 작업대]], [[Agent Native Infrastructure]]
+- 근거: harness raw는 "반복 실수를 영구 수정으로 바꾸는 습관"과 sensor 개념을 명료하게 보여 줬다. 기존 허브의 운영 감각을 더 선명하게 만드는 쪽이 적절했음.
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 63개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

@@ -16,6 +16,7 @@ sources:
   - raw/andrej-karpathy-skills-CLAUDE-번역.md
   - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
   - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-05-26
@@ -36,6 +37,7 @@ Harness Engineering은 AI 코딩 에이전트를 감싸는 규칙, 도구, 스�
 ## 상세
 
 Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지니어링은 "에이전트가 실수할 때마다 그 실수가 다시는 발생하지 않도록 시스템을 엔지니어링하는 것"이다. 모델 가중치를 바꾸는 대신 에이전트가 보는 컨텍스트, 사용하는 도구, 검증 기준, 권한 범위를 설계한다.
+후속 raw는 이 정의를 더 생활감 있게 풀어낸다. 핵심 전환은 반복되는 에이전트 실수를 짜증이 아니라 신호로 보는 것이다. 채팅창에서 한 번 고쳐 주고 끝내지 않고, instructions, hook, test, diff, 자동 검증 같은 바깥 환경을 바꿔 같은 실수가 다시 나오기 어렵게 만든다. 즉 하네스는 거대한 프레임워크가 아니라, "같은 실수를 두 번 보지 않게 만드는 영구 수정의 축적"으로도 이해할 수 있다.
 
 **패러다임의 변화:**
 - 프롬프트 엔지니어링(2023-2024): "무엇을 물어볼 것인가?"
@@ -77,6 +79,7 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - 검증 루프: pre-commit 훅에 린터 + 테스트 연결
 - 스킬 파일: 반복 패턴을 재사용 가능한 에이전트 스킬로 분리
 - 권한 설계: 프로덕션 DB 명령 자동 실행 금지, 마이그레이션 파일 수정 금지
+- 영구 수정: pandas 대신 polars, snake_case 컬럼명, inner join 금지 조건 같은 규칙을 instructions에 추가
 
 ## 충돌
 

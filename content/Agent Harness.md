@@ -12,6 +12,7 @@ aliases:
 sources:
   - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
   - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
 created: 2026-05-26
 updated: 2026-05-26
 ---
@@ -38,6 +39,7 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 
 
 실무적으로는 `CLAUDE.md`나 `AGENTS.md`만으로는 충분하지 않다는 점도 중요하다. 문서 규칙은 요청서에 가깝고, harness는 그 규칙을 hooks, memory, progress file, verification loop로 강제 가능한 실행 절차로 바꾼다. 즉 좋은 하네스는 좋은 문서를 포함하지만, 문서로 환원되지는 않는다.
+여기에 센서(sensor) 층을 따로 두는 관점도 유용하다. 규칙 파일이 실수를 예방하려는 장치라면, 테스트·diff·자동 검증은 실수가 새어 나왔을 때 빨리 surface하는 센서다. 좋은 하네스는 고삐만이 아니라, 새는 문제를 빨리 감지하는 계기도 함께 가진다.
 
 ## 예시
 
