@@ -24,6 +24,12 @@
 - 대상: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
 - 근거: 두 raw는 완전히 새로운 도구보다 기존 허브 노트의 경계를 또렷하게 만드는 역할이 큼. 새 주장 추가보다 cross-link와 한 문단 보강이 적절했음.
 
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 56개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: 신규 노트 2개와 보강 노트 5개 모두 index/log/역링크까지 확인함
+
 ## 2026-05-24
 
 ### Ingest
