@@ -23,6 +23,8 @@ sources:
  - raw/andrej-karpathy-skills-CLAUDE-번역.md
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+ - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+ - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
  - https://opencode.ai/docs/rules/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
@@ -63,6 +65,8 @@ Karpathy가 제안한 [[LLM Wiki 운영 패턴]]은 이 원칙을 지식 베이�
 `raw/andrej-karpathy-skills-CLAUDE-번역.md`는 그 범용 지침의 최소 버전을 보여 준다. 핵심은 [[에이전트 코딩 4원칙]]이다. 구현 전에 가정과 불확실성을 드러내고, 최소한의 코드만 쓰고, 변경 범위를 요청과 직접 연결된 부분으로 제한하고, 작업을 검증 가능한 목표로 다시 쓰는 방식이다.
 
 후속 raw는 왜 이런 파일 하나가 그렇게 큰 효과를 내는지도 설명한다. 핵심은 model의 성향을 바꾸는 것이 아니라, 세션 시작마다 반복 주입되는 행동 제약을 두는 것이다. 또한 전역 행동 원칙을 위에 두고, 프로젝트 고유 규칙을 그 아래에 두는 layered instruction 방식이 실무적으로 잘 맞는다. 이는 [[Agent Harness]]의 prompt construction 계층과도 맞물린다.
+
+추가 raw는 이 파일이 왜 바이럴했는지까지 설명한다. 핵심은 새 기능이 아니라 행동 계약을 저장소 루트에 고정했다는 점이다. 즉 `CLAUDE.md`는 단순 설정이 아니라, 조용한 가정·과잉 엔지니어링·범위 확장을 줄이기 위한 **behavioral contract**다. 다만 프로젝트가 커지면 `CLAUDE.md`만으로는 세션 기억, skill 순서, 검증 강제를 해결하기 어렵기 때문에, 결국 hooks·memory·verification을 포함한 [[Harness Engineering]]으로 확장된다.
 
 `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 이 문서를 둘러싼 운영 명령어를 보강한다. `/init`은 프로젝트용 `CLAUDE.md`를 자동 생성하고, `/memory`는 프로젝트를 넘는 전역 규칙을 저장한다. 따라서 [[Claude Code 세션 운영 명령어]]는 `CLAUDE.md`를 실제 세션 루프 속에 배치하는 사용법으로 읽을 수 있다.
 
@@ -125,4 +129,5 @@ CC101 가이드는 목적별 CLAUDE.md 템플릿 3종을 제공한다.
 - [[에이전트 코딩 4원칙]]
 - [[Claude Code 세션 운영 명령어]]
 - [[Agent Harness]]
+- [[AI 산출물 포맷 결정 트리]]
 

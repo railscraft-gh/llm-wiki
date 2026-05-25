@@ -81,4 +81,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[LLM Wiki 운영 패턴]]
 - [[Context Engineering]]
 - [[에이전트 확장 3계층]]
+- [[AI 산출물 포맷 결정 트리]]
 

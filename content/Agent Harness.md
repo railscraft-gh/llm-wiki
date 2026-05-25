@@ -11,6 +11,7 @@ aliases:
   - 에이전트 하네스
 sources:
   - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
 created: 2026-05-26
 updated: 2026-05-26
 ---
@@ -35,6 +36,9 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 
 이 구조는 [[Harness Engineering]]의 구현 표면이다. [[Context Engineering]]이 "무엇을 보여줄 것인가"에 초점을 맞춘다면, Agent Harness는 그 결정을 실제 loop와 memory, tool, parser 수준에서 집행하는 런타임에 가깝다. 또한 [[AI 코딩 에이전트 검증 전략]]과 연결되는 이유도 분명하다. 검증은 prompt의 부록이 아니라 harness의 한 부품이기 때문이다.
 
+
+실무적으로는 `CLAUDE.md`나 `AGENTS.md`만으로는 충분하지 않다는 점도 중요하다. 문서 규칙은 요청서에 가깝고, harness는 그 규칙을 hooks, memory, progress file, verification loop로 강제 가능한 실행 절차로 바꾼다. 즉 좋은 하네스는 좋은 문서를 포함하지만, 문서로 환원되지는 않는다.
+
 ## 예시
 
 - coding agent: `AGENTS.md`를 읽고, 필요한 파일만 찾고, 테스트를 돌리고, 실패 시 다시 수정하는 loop 전체가 harness다.
@@ -52,4 +56,5 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Meta-Harness]]
 - [[Claude.md 운영 원칙]]
+- [[AI 산출물 포맷 결정 트리]]
 

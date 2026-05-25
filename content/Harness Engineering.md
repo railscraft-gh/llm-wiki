@@ -15,6 +15,7 @@ sources:
   - raw/evolution-of-ai-agentic-patterns.md
   - raw/andrej-karpathy-skills-CLAUDE-번역.md
   - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-05-26
@@ -40,6 +41,8 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - 프롬프트 엔지니어링(2023-2024): "무엇을 물어볼 것인가?"
 - 컨텍스트 엔지니어링(2025): "무엇을 보여줄 것인가?"
 - 하네스 엔지니어링(2026): "전체 환경을 어떻게 설계할 것인가?"
+
+후속 raw는 이 진화를 `CLAUDE.md → AGENTS.md → Harness`의 실무 단계로 다시 설명한다. 처음에는 규칙 파일 하나로 품질을 끌어올릴 수 있지만, 프로젝트가 커지면 규칙 위반 감지, 세션 기억, skill 실행 순서, 검증 강제까지 필요해지고, 그때부터 하네스는 문서가 아니라 실행 구조가 된다.
 
 **CLAUDE.md의 4가지 행동 원칙**은 하네스 엔지니어링의 가장 기본적이고 강력한 구성 요소다. Andrej Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 원칙으로 매핑했다. 이 행동 지침 자체는 [[에이전트 코딩 4원칙]]으로 분리해 재사용할 수 있다.
 
@@ -92,4 +95,5 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[에이전트 코딩 4원칙]]
 - [[Context Engineering]]
 - [[Agent Harness]]
+- [[AI 산출물 포맷 결정 트리]]
 

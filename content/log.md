@@ -40,6 +40,22 @@
 - 대상: [[Harness Engineering]], [[Claude.md 운영 원칙]], [[AI 코딩 에이전트 검증 전략]], [[Meta-Harness]], [[에이전트 코딩 4원칙]]
 - 근거: 두 raw는 새 도구 소개보다 기존 허브 노트의 경계를 구체화하는 성격이 강함. 특히 CLAUDE.md를 행동 제약 레이어로, verification을 harness 부품으로, meta-harness를 상위 최적화 루프로 읽는 연결이 명확해졌음.
 
+- 입력: `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md`
+- 생성: [[AI 산출물 포맷 결정 트리]]
+- 수정: [[Claude.md 운영 원칙]], [[Harness Engineering]], [[Agent Harness]], [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]]
+- index 업데이트: 완료
+- 남은 검토: `[[AI 산출물 포맷 결정 트리]]`의 기본 원칙은 안정적이지만, HTML token 비용과 보안 trade-off는 도구·모델·배포 방식에 따라 달라질 수 있다. 실제 artifact 생성 사례 raw가 더 들어오면 보강 필요.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[AI 산출물 포맷 결정 트리]]
+- 근거: HTML vs Markdown 논쟁을 취향이나 진영 싸움이 아니라 독자 기준 결정 트리로 바꾸는 프레임이 재사용 가치가 높았음. 기존 wiki에는 output format을 이런 방식으로 고르는 실무 규칙이 없었음.
+
+- 결정: 보강
+- 대상: [[Claude.md 운영 원칙]], [[Harness Engineering]], [[Agent Harness]], [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]]
+- 근거: 세 raw는 각각 행동 계약, 문서→하네스 진화, 산출물 포맷 선택을 다루지만 모두 "에이전트가 일하는 환경을 어떻게 설계할 것인가"라는 동일 허브로 수렴함. 새 도구 노트보다 기존 허브 보강이 더 적합했음.
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 57개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

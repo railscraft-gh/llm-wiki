@@ -11,8 +11,9 @@ aliases:
  - LLM Wiki
 sources:
  - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+ - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # LLM Wiki 운영 패턴
@@ -40,6 +41,9 @@ workflow도 세 갈래다. ingest는 새 raw를 읽고 기존 노트를 보강�
 
 또한 instruction 파일은 단순한 프롬프트가 아니라 wiki maintainer를 만드는 운영 매뉴얼이다. 이 점에서 [[Claude.md 운영 원칙]]은 coding agent용 메모리 파일 일반론이고, LLM Wiki는 그 원칙을 지식 베이스 운영 도메인에 적용한 구체 사례다.
 
+
+포맷 관점에서도 이 패턴은 여전히 유효하다. wiki의 source of truth는 수정·diff·wikilink 관리가 쉬운 Markdown이 적합하다. 다만 사람이 읽는 최종 브리프, 시각화된 요약, 배포용 지식 카드까지 같은 포맷으로 고집할 필요는 없다. 이때는 [[AI 산출물 포맷 결정 트리]]처럼 Markdown source 위에 HTML artifact를 얹는 분리가 더 현실적이다.
+
 ## 예시
 
 이 vault의 기준으로 보면 `raw/안드레_카파시_인터뷰_정리.md`를 넣고 "ingest"를 실행했을 때 결과가 `[[Software 3.0]]`, `[[Jagged Intelligence]]`, `[[Neural Computer]]`처럼 개념 노트로 분해되는 흐름이 LLM Wiki 운영 패턴이다. 이후 사용자가 "AI 코딩 에이전트 결과를 언제 신뢰할 수 있나"를 물으면 raw 인터뷰를 다시 훑기보다 `[[AI 코딩 에이전트 검증 전략]]` 같은 wiki 노트를 읽어 답하고, 그 답변이 재사용 가치가 크면 새 노트나 기존 노트 보강으로 승격한다.
@@ -55,4 +59,5 @@ workflow도 세 갈래다. ingest는 새 raw를 읽고 기존 노트를 보강�
 - [[Agent Native Infrastructure]]
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[AI 산출물 포맷 결정 트리]]
 
