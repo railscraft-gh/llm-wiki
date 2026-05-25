@@ -13,6 +13,8 @@
 | [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-05-26 |
 | [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-05-26 |
 | [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
+| [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
+| [[LLM Wiki 운영 패턴]] | raw 보존, wiki 승격, index/log/lint 분리로 지식 베이스를 지속 운영하는 workflow를 정리한다. | evergreen | 2026-05-26 |
 
 ## Ingest 현황
 
@@ -56,7 +58,6 @@
 
 | 후보 | 근거 | 다음 작업 |
 | --- | --- | --- |
-| [[Plan Mode 기반 AI 작업]] | 보리스와 카파시 자료 모두에서 사람의 스펙/계획 역할과 연결된다. | 사례 보강 후 evergreen 검토 |
 | [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
 | [[병렬 에이전트 세션 운영]] | Boris 인터뷰와 organization 자료에서 반복, agent-native 사용자/조직 표준 패턴. | 검증 사례 보강 후 core 검토 |

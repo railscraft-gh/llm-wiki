@@ -142,6 +142,18 @@
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: 중복 raw 색인 반영과 core 승격 2건 이후에도 구조 정합성을 재확인함
 
+### 결정 기록
+
+- 결정: core 승격
+- 대상: [[Plan Mode 기반 AI 작업]], [[LLM Wiki 운영 패턴]]
+- 근거: [[Plan Mode 기반 AI 작업]]은 보리스·카파시·OpenCode·Pi·Ralph Loop 자료를 가로지르며 구현 전 스펙/파일/테스트/권한 경계를 고정하는 공통 절차로 반복된다. [[LLM Wiki 운영 패턴]]은 여러 LLM Wiki raw를 묶고 이 vault의 ingest/query/lint 구조를 설명하는 운영 허브라 다른 노트 다수의 상위 워크플로 역할을 수행한다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status/core`, broken wikilink, 관련 노트 수, 고아 페이지, core 노트 index 등록 여부를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: core 승격 2건과 index 승격 후보 정리 이후에도 구조 정합성을 재확인함
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 64개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

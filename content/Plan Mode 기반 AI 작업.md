@@ -1,7 +1,7 @@
 ---
 type: workflow
 status: evergreen
-core: false
+core: true
 tags:
  - llm
  - agent
@@ -23,7 +23,7 @@ sources:
  - https://opencode.ai/docs/agents/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-14
+updated: 2026-05-26
 ---
 
 # Plan Mode 기반 AI 작업
