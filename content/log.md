@@ -56,6 +56,22 @@
 - 대상: [[Claude.md 운영 원칙]], [[Harness Engineering]], [[Agent Harness]], [[LLM Wiki 운영 패턴]], [[Agent Native Infrastructure]]
 - 근거: 세 raw는 각각 행동 계약, 문서→하네스 진화, 산출물 포맷 선택을 다루지만 모두 "에이전트가 일하는 환경을 어떻게 설계할 것인가"라는 동일 허브로 수렴함. 새 도구 노트보다 기존 허브 보강이 더 적합했음.
 
+- 입력: `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md`
+- 생성: [[디자인 에이전트 5종]]
+- 수정: [[DESIGN.md 운영 원칙]], [[AI 시대 디자인 시스템]], [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]]
+- index 업데이트: 완료
+- 남은 검토: `[[디자인 에이전트 5종]]`은 예시 agent 구성이 범용 템플릿에 가깝다. 실제 조직별 tool stack, artifact 형식, 승인 절차 사례가 더 쌓이면 세분화 가능.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[디자인 에이전트 5종]]
+- 근거: 원문이 단순 디자인 자동화 일반론이 아니라 연구 정리, 경쟁 인텔리전스, 문제 정의, 아이디어 발산, flow 설계의 다섯 agent를 구조적으로 제시했기 때문. `DESIGN.md`와 역할이 다른 workflow 노트로 분리하는 편이 재사용 가치가 높았음.
+
+- 결정: 보강
+- 대상: [[DESIGN.md 운영 원칙]], [[AI 시대 디자인 시스템]], [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]]
+- 근거: 첫 raw는 DESIGN.md의 9개 섹션을 실무 체크리스트로 구체화했고, 둘째 raw는 visual consistency 파일과 별개로 upstream design task agent의 필요를 보여 줌. 둘을 분리해 연결하는 편이 허브 구조를 더 선명하게 만듦.
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 58개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

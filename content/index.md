@@ -19,6 +19,7 @@
 | 2026-05-26 | `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md` | [[Context Engineering]], [[에이전트 확장 3계층]], [[Harness Engineering]] (보강), [[Context Mode]] (보강), [[OpenCode]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md` | [[Agent Harness]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Meta-Harness]] (보강), [[에이전트 코딩 4원칙]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md` | [[AI 산출물 포맷 결정 트리]], [[Claude.md 운영 원칙]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md` | [[디자인 에이전트 5종]], [[DESIGN.md 운영 원칙]] (보강), [[AI 시대 디자인 시스템]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
 | 2026-05-24 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md` | [[LLM Wiki 운영 패턴]], [[Software 3.0]] (보강), [[Thinking과 Understanding 분리]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-17 | (Sync 3 — raw 재감사, 상태 정합성 갱신) | [[Harness Engineering]] (core 승격), [[Software 3.0]] (Reasoning Models 링크), [[바선생]] (cross-link 보강), 35개 draft 노트 → 22 evergreen / 13 needs-review로 상태 정정 | done | [[log#2026-05-17 (Sync 3 — raw 재감사, 상태 정합성)]] |
 | 2026-05-24 | `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md` | [[Obsidian vault용 Slash Command 운영]], [[Claude Code 오케스트레이션]] (보강), [[AI 네이티브 사용자]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
@@ -62,6 +63,7 @@
 | [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
 | [[Agent Harness]] | loop, memory, tool, verification을 한 묶음으로 설명하는 실행 인프라 허브다. | 후속 harness 사례 raw에서 반복 확인 후 core 검토 |
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
+| [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
 
 ## 점검 대기
 

@@ -12,10 +12,12 @@ aliases:
  - 에이전트용 디자인 시스템
 sources:
  - raw/AI로_만든_제품이_안_팔리는_이유.md
+ - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+ - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-26
 ---
 
 # AI 시대 디자인 시스템
@@ -37,6 +39,11 @@ raw 문서는 AI가 평균적인 UI를 빠르게 만들수록 디자인 시스�
 
 Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export/import하는 agent-friendly markdown file로 소개했다. Google Labs의 `design.md` repository도 YAML token과 Markdown rationale을 결합해 coding agent에게 visual identity를 제공하는 형식으로 설명한다.
 
+
+후속 raw는 왜 이 파일이 필요한지 더 명확하게 설명한다. agent는 디자인을 "못하는" 것이 아니라, 세션을 넘는 디자인 기억을 유지하지 못한다. 그래서 Bootstrap Default, Color Roulette, Style Drift가 반복된다. DESIGN.md의 9개 섹션은 바로 이 세 failure mode를 막기 위한 지속 제약 조건으로 읽을 수 있다.
+
+또한 디자인 automation은 visual token만으로 끝나지 않는다. [[디자인 에이전트 5종]]처럼 리서치 정리, 문제 정의, 아이디어 발산, flow 설계도 agent화할 수 있지만, 그 산출물이 일관된 시각 언어로 내려오게 하려면 결국 DESIGN.md 같은 지속 맥락 파일이 필요하다.
+
 ## 예시
 
 - SaaS dashboard: 표, 필터, toast, modal의 spacing과 density를 먼저 정하고, AI에게 새 화면을 만들 때 같은 token을 쓰게 한다.
@@ -54,4 +61,5 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 - [[Vibe Coding과 Agentic Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 네이티브 사용자]]
+- [[디자인 에이전트 5종]]
 

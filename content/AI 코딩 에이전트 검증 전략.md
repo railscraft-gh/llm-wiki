@@ -23,6 +23,7 @@ sources:
  - raw/andrej-karpathy-skills-CLAUDE-번역.md
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+ - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06
@@ -52,6 +53,8 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 구현뿐 아니라 �
 또한 `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 세션 운영 차원의 보조 장치를 제공한다. [[Claude Code 세션 운영 명령어]]의 `/review`는 구현 뒤 결함 탐색을 구조화하고, `/compact`는 긴 검증 세션이 context 한계에 부딪히기 전에 흐름을 유지하게 한다.
 
 UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다.
+
+후속 raw는 여기에 responsive behavior, do's and don'ts, component state 같은 더 구체적인 검사 기준을 붙인다. 즉 디자인 검증은 단순히 "예뻐 보이는가"가 아니라, role이 정의된 color, typography hierarchy, spacing scale, component state, mobile behavior가 spec을 벗어났는지 확인하는 일이다.
 
 [[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다.
 
@@ -160,4 +163,5 @@ git add -p
 - [[에이전트 코딩 4원칙]]
 - [[Claude Code 세션 운영 명령어]]
 - [[Agent Harness]]
+- [[디자인 에이전트 5종]]
 
