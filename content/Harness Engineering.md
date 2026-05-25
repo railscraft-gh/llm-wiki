@@ -14,6 +14,7 @@ sources:
   - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
   - raw/evolution-of-ai-agentic-patterns.md
   - raw/andrej-karpathy-skills-CLAUDE-번역.md
+  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-05-26
@@ -54,6 +55,8 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - 코드 디버깅 → 에이전트 행동 디버깅
 - 코드 리뷰 → 에이전트 출력 + 하네스 효과성 리뷰
 
+`raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 이 환경 설계를 더 운영체제 비유로 풀어낸다. context window는 RAM, external database는 disk, tools는 device driver, harness는 operating system처럼 작동한다. 실무적으로는 [[Agent Harness]]라는 실행 표면에서 orchestration loop, tool layer, memory, context compaction, prompt builder, output parsing이 함께 묶여 돌아간다.
+
 **하네스는 rippable해야 한다.** Fowler/Böckeler가 강조한 원칙으로, 모델이 한 세대 좋아지면 하네스의 "smart" 로직 중 일부는 불필요해진다. Claude 5.0이 나오면 4.5용으로 만든 에러 복구 로직 다수가 부채가 될 수 있다. 하네스 설계의 기술은 "무엇을 만들 것인가"만큼 "무엇을 쉽게 제거할 수 있게 만들 것인가"에 있다. [[Agentic 패턴 진화]] 관점에서 하네스는 컨텍스트와 프롬프트를 포함(subsume)하므로, 좋은 하네스는 여전히 좋은 컨텍스트를 요구한다.
 
 **보안 가드레일은 [[Lethal Trifecta]]로 정리한다.** 신뢰 불가 입력 + 민감 시스템 접근 + 상태 변경 세 능력 중 최대 두 개만 동시에 허용한다는 Meta AI의 Rule of Two가 실천 가능한 규칙이다.
@@ -88,4 +91,5 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[AI 시대 소프트웨어 펀더멘탈]]
 - [[에이전트 코딩 4원칙]]
 - [[Context Engineering]]
+- [[Agent Harness]]
 

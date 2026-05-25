@@ -24,6 +24,22 @@
 - 대상: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
 - 근거: 두 raw는 완전히 새로운 도구보다 기존 허브 노트의 경계를 또렷하게 만드는 역할이 큼. 새 주장 추가보다 cross-link와 한 문단 보강이 적절했음.
 
+- 입력: `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`
+- 생성: [[Agent Harness]]
+- 수정: [[Harness Engineering]], [[Claude.md 운영 원칙]], [[AI 코딩 에이전트 검증 전략]], [[Meta-Harness]], [[에이전트 코딩 4원칙]]
+- index 업데이트: 완료
+- 남은 검토: `[[Agent Harness]]`는 구성 요소 프레임 자체는 안정적이지만, 벤치마크 수치와 특정 제품 사례는 시점 의존적이다. 후속 raw에서 state management·guardrails·subagent orchestration 쪽을 더 보강할 수 있음.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[Agent Harness]]
+- 근거: 기존 wiki에 harness engineering 일반론과 meta-harness 연구는 있었지만, loop·tool·memory·context·prompt·parser를 한 장에 묶는 실행 인프라 노트가 없었음. framework와 harness의 차이를 정리하는 허브가 필요했음.
+
+- 결정: 보강
+- 대상: [[Harness Engineering]], [[Claude.md 운영 원칙]], [[AI 코딩 에이전트 검증 전략]], [[Meta-Harness]], [[에이전트 코딩 4원칙]]
+- 근거: 두 raw는 새 도구 소개보다 기존 허브 노트의 경계를 구체화하는 성격이 강함. 특히 CLAUDE.md를 행동 제약 레이어로, verification을 harness 부품으로, meta-harness를 상위 최적화 루프로 읽는 연결이 명확해졌음.
+
 ### Lint
 
 - 실행 방식: Python 일회성 스크립트로 `wiki/*.md` 56개 노트의 frontmatter 필수값, 허용된 `type/status`, broken wikilink, 관련 노트 수, 고아 페이지를 수동 점검

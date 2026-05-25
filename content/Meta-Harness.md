@@ -11,8 +11,9 @@ aliases:
   - 메타 하네스
 sources:
   - raw/arxiv-2603.28052-meta-harness.md
+  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-26
 ---
 
 # Meta-Harness
@@ -30,6 +31,8 @@ Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end
 ## 상세
 
 하네스 엔지니어링은 모델 가중치를 바꾸지 않고 모델이 보는 정보를 결정하는 코드(프롬프트 구성, 검색, 메모리, 오케스트레이션)를 개선하는 작업이다. 기존에는 인간 엔지니어가 실패를 검사하고 휴리스틱을 조정하는 수작업이었으나, Meta-Harness는 이 과정을 코딩 에이전트 제안자에게 위임한다.
+
+후속 raw 기준으로 보면 Meta-Harness는 [[Agent Harness]] 자체를 다시 탐색하는 상위 루프다. 즉 개별 agent의 orchestration loop, memory, context management, verification 구조를 사람이 직접 손보는 대신, 다른 agent가 하네스 후보를 생성하고 평가하는 셈이다.
 
 제안자(Claude Code 기반)는 파일시스템을 통해 이전 하네스의 소스 코드, 평가 점수, 실행 추적(프롬프트, 도구 호출, 모델 출력, 상태 업데이트)을 선택적으로 검사한다. 반복당 중간값 82개 파일을 읽으며, 하네스 소스 코드(41%)와 실행 추적(40%)에 거의 균등하게 접근한다. 이 비마코비안(non-Markovian) 접근이 압축된 피드백 최적화기와의 핵심 차이다.
 
@@ -68,4 +71,5 @@ Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end
 - [[Software 3.0]]
 - [[Jagged Intelligence]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[Agent Harness]]
 
