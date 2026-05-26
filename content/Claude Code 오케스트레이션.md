@@ -116,4 +116,5 @@ claude_review:
 - [[Obsidian vault용 Slash Command 운영]]
 - [[Claude Code 세션 운영 명령어]]
 - [[에이전트 확장 3계층]]
+- [[AI 에이전트 런타임 역할 맵]]
 

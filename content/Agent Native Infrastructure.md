@@ -1,7 +1,7 @@
 ---
 type: concept
 status: evergreen
-core: false
+core: true
 tags:
  - llm
  - agent
@@ -91,4 +91,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[AI 오픈소스 작업대]]
 - [[LLM Wiki 구현 선택지]]
 - [[온디바이스 TTS]]
+- [[AI 에이전트 런타임 역할 맵]]
 
