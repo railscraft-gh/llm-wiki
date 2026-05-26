@@ -23,7 +23,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
-| 2026-05-26 | `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md` | [[AI Experience Architect]], [[디자인 시스템 기본값]], [[OpenClaw]], [[shadcn-ui]], [[AI 디자인 역할 맵]], [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 시대 디자인 시스템]] (보강), [[에이전트 확장 3계층]] (보강), [[AI 오픈소스 작업대]] (보강), [[디자인 에이전트 5종]] (보강) | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md` | [[AI Experience Architect]], [[디자인 시스템 기본값]], [[OpenClaw]], [[shadcn-ui]], [[AI 디자인 역할 맵]], [[AI 기본값 구현체]], [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 시대 디자인 시스템]] (보강), [[에이전트 확장 3계층]] (보강), [[AI 오픈소스 작업대]] (보강), [[디자인 에이전트 5종]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md` | [[Context Engineering]], [[에이전트 확장 3계층]], [[Harness Engineering]] (보강), [[Context Mode]] (보강), [[OpenCode]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md` | [[Agent Harness]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Meta-Harness]] (보강), [[에이전트 코딩 4원칙]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md` | [[AI 산출물 포맷 결정 트리]], [[Claude.md 운영 원칙]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
@@ -72,7 +72,7 @@
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
-| [[AI 디자인 역할 맵]] | 디자인 시스템, DESIGN.md, task agent, 조직 아키텍처를 한 장의 운영 계층으로 묶는 허브다. | 추가 디자인 조직 사례 raw 누적 후 core 검토 |
+| [[AI 기본값 구현체]] | AI가 먼저 학습하고 통합한 foundation이 왜 사실상 표준처럼 굳는지 설명하는 비교 허브다. | 추가 사례 raw 누적 후 evergreen 검토 |
 
 ## 점검 대기
 
