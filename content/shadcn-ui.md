@@ -53,6 +53,16 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 - [[디자인 시스템 기본값]]이 spacing·token·component behavior 같은 원칙을 다룬다면, 이 노트는 그런 원칙이 업계 기본 구현체로 굳어지는 사례를 다룬다.
 - [[DESIGN.md 운영 원칙]]이 팀 내부 규칙 파일이라면, shadcn-ui는 외부 생태계에서 이미 주어지는 baseline이다.
 
+
+## 채택 전에 볼 질문
+
+- 이 foundation을 쓰면 우리 제품의 brand tone과 density가 어디까지 자동으로 결정되는가.
+- 팀이 직접 소유해야 할 token, copy tone, component variant는 무엇인가.
+- 생성형 UI 도구가 만드는 평균적인 결과와 우리 제품의 차별점은 어디서 갈라지는가.
+- code copy 방식이 장점인 구간과, 중앙 업데이트가 어려워지는 구간은 어디인가.
+
+이 질문이 정리되면 shadcn-ui는 "AI가 자주 내놓는 기본 출력"에서 "의식적으로 수용한 foundation"으로 바뀐다.
+
 ## 충돌
 
 - 2026-05-26 확인: GitHub star 수, MCP 지원 범위, AI 도구별 기본 출력 경향은 변동될 수 있다. 실제 도입 전 공식 docs와 각 도구의 최신 scaffold 정책을 다시 확인해야 한다.
@@ -64,4 +74,5 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 - [[DESIGN.md 운영 원칙]]
 - [[AI Slop]]
 - [[AI 기본값 구현체]]
+- [[AI 기본값 수용과 오버라이드 전략]]
 
