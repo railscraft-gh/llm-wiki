@@ -76,4 +76,5 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 - [[shadcn-ui]]
 - [[AI Experience Architect]]
 - [[AI 디자인 역할 맵]]
+- [[AI 기본값 구현체]]
 

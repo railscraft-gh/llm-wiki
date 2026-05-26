@@ -57,4 +57,5 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [[AI 네이티브 사용자]]
 - [[온디바이스 TTS]]
 - [[OpenClaw]]
+- [[AI 기본값 구현체]]
 

@@ -63,4 +63,5 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 - [[디자인 시스템 기본값]]
 - [[DESIGN.md 운영 원칙]]
 - [[AI Slop]]
+- [[AI 기본값 구현체]]
 

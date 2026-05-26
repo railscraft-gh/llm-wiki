@@ -1,7 +1,7 @@
 ---
 type: workflow
 status: evergreen
-core: false
+core: true
 tags:
   - design
   - ai

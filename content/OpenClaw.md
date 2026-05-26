@@ -62,4 +62,5 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 - [[에이전트 확장 3계층]]
 - [[Agent Native Infrastructure]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[AI 기본값 구현체]]
 
