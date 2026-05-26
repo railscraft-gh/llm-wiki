@@ -76,7 +76,6 @@
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
 | [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 실무 프레임이다. | 디자인/runtime 사례 raw 누적 후 core 검토 |
-| [[AI Experience Architect]] | 디자인 역할이 화면 제작에서 workflow·권한·조직 설계로 이동하는 변화를 설명한다. | 추가 조직 사례 raw 누적 후 evergreen 검토 |
 
 ## 점검 대기
 
@@ -99,7 +98,6 @@
 | [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
 | [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
-| [[AI Experience Architect]] | 역할 정의가 2026년 시점의 시장 해석에 가깝고, 조직 구조별 차이가 크다. | 추가 디자인 조직 사례 raw 누적 후 evergreen 검토 |
 | [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스/검색/sandbox 명세가 빠르게 변동. | 실사용 전 공식 docs 확인 |
 | [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동. | 실사용 전 공식 README 확인 |
 | [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준. 3개 도메인 실험은 후속 재현 자료 필요. | 후속 실험 자료 ingest 시 evergreen 검토 |

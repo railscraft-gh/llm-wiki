@@ -1,6 +1,6 @@
 ---
 type: concept
-status: needs-review
+status: evergreen
 core: false
 tags:
   - design
@@ -47,15 +47,27 @@ AI Experience Architect는 화면을 더 빨리 만드는 사람이 아니라, A
 
 이 질문이 화면 구성보다 더 중요해지는 조직이라면, 이미 단순 UI designer보다 AI Experience Architect에 가까운 역할이 필요해진 상태다.
 
+
+## 조직에서 보이는 신호
+
+아래 신호가 반복되면, 이미 이 역할을 누군가가 비공식적으로 수행하고 있을 가능성이 높다.
+
+- 디자이너가 화면보다 prompt, approval flow, handoff 문서, review gate를 더 오래 다듬는다.
+- PM, 법무, 보안, 운영팀과 함께 "AI가 어디까지 결정해도 되는가"를 자주 협의한다.
+- 같은 화면 품질 문제보다, 잘못된 자동화 경계나 사람 승인 누락이 더 큰 사고로 이어진다.
+- DESIGN.md나 flow spec만으로는 부족해서 escalation rule, fallback, audit trail까지 별도 문서화한다.
+
 ## 예시
 
 - 프로토타이핑 자동화에서 끝나지 않고, 리서치 요약 → 문제 정의 → flow 초안 → human review 순서를 설계한다.
 - 고객지원 workflow에서 AI가 답변 초안을 만들고, 사람이 승인하며, 민감 요청은 escalation하도록 경계를 정한다.
 - GDPR, 감사 로그, 권한 정책을 반영해 "AI가 할 수 있는 일"과 "사람이 반드시 확인할 일"을 분리한다.
+- B2B SaaS 팀에서는 디자이너가 단순 화면 시안보다, 어떤 admin action을 AI가 제안만 하고 어떤 action은 절대 실행하지 못하게 할지 정한다.
+- 리서치 조직에서는 인터뷰 요약 agent를 쓰더라도, 어떤 claim이 insight로 승격되고 어떤 것은 raw evidence로만 남는지 검토 경계를 설계한다.
 
 ## 충돌
 
-현재 확인된 충돌 없음.
+- 2026-05-26 확인: 직함 이름과 조직 배치는 회사마다 달라질 수 있다. 다만 "화면 제작"보다 "위임 경계·검토 지점·책임 구조 설계"로 이동한다는 역할 변화 자체는 여러 디자인/agent raw와 안정적으로 연결된다.
 
 ## 관련 노트
 
@@ -65,4 +77,5 @@ AI Experience Architect는 화면을 더 빨리 만드는 사람이 아니라, A
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 디자인 역할 맵]]
 - [[AI 기본값 수용과 오버라이드 전략]]
+- [[AI 네이티브 작업 시스템]]
 

@@ -1043,3 +1043,23 @@
 - 실행 방식: Python 일회성 스크립트로 신규 노트 1개와 수정 노트 4개, `wiki/index.md` 반영 후 전체 frontmatter, broken wikilink, 관련 노트 수, 고아 페이지를 재점검
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: 변동성 높은 tool note를 직접 승격하지 않고, 상위 비교 프레임을 추가해 구조 안정성을 높임
+
+### Ingest
+
+- 입력: `raw/From faster pencil to AI Experience Architect. a designer’s path.md`의 후속 구조화 보강
+- 생성: 없음
+- 수정: [[AI Experience Architect]], `wiki/index.md`, `wiki/log.md`
+- index 업데이트: 완료
+- 남은 검토: 직함 명칭과 조직 배치는 계속 달라질 수 있으나, 노트의 핵심을 직함 유행이 아니라 위임 경계·review gate·책임 구조 설계 프레임으로 고정해 변동성을 낮춤.
+
+### 결정 기록
+
+- 결정: 상태 승격
+- 대상: [[AI Experience Architect]]
+- 근거: 이 노트는 더 이상 특정 2026년 역할 트렌드 소개에 머물지 않고, 디자인 조직이 AI를 도입할 때 반복해서 마주치는 승인 경계·권한 정책·fallback·audit trail 설계 문제를 묶는 개념 노트로 안정화됐다. 조직 이름은 달라도 질문 구조는 [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[AI 네이티브 작업 시스템]]과 함께 지속 재사용 가능하다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 상태 변경 노트와 `wiki/index.md` 수정 후 전체 frontmatter, broken wikilink, 관련 노트 수, 점검 대기 정합성을 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: [[AI Experience Architect]]를 승격 후보/점검 대기에서 제거하고 evergreen 노트로 유지함
