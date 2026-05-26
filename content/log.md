@@ -172,6 +172,8 @@
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: 신규 노트 2개와 보강 노트 5개 모두 index/log/역링크까지 확인함
 
+### Ingest
+
 - 입력: `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md`
 - 생성: [[AI Experience Architect]], [[디자인 시스템 기본값]], [[OpenClaw]], [[shadcn-ui]]
 - 수정: [[AI 시대 소프트웨어 펀더멘탈]], [[AI 시대 디자인 시스템]], [[에이전트 확장 3계층]], [[AI 오픈소스 작업대]]
