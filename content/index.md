@@ -85,7 +85,6 @@
 | [[강한 모델로 덜 헤매기]] | 특정 모델명과 비용 판단은 변동성이 있다. | 최신 모델/가격 자료 ingest 시 needs-review 검토 |
 | [[강한 모델로 덜 헤매기]] | GLM 5.1 vs Kimi K2.6 비교 정보 추가. 모델명, 벤치마크 점수, 가격은 변동성이 높다. | 최신 모델/가격 자료 ingest 시 needs-review 검토 |
 | [[Infisical 도입 전략]] | 가격과 enterprise 기능 범위가 변동되며 raw와 공식 출처 간 충돌이 있다. | 도입 전 공식 pricing/license 재확인 |
-| [[DESIGN.md 운영 원칙]] | Google Labs spec이 alpha라 문법과 CLI가 바뀔 수 있다. | spec 업데이트 시 재검토 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
 | [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |

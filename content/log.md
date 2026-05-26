@@ -1063,3 +1063,23 @@
 - 실행 방식: Python 일회성 스크립트로 상태 변경 노트와 `wiki/index.md` 수정 후 전체 frontmatter, broken wikilink, 관련 노트 수, 점검 대기 정합성을 재점검
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: [[AI Experience Architect]]를 승격 후보/점검 대기에서 제거하고 evergreen 노트로 유지함
+
+### Ingest
+
+- 입력: `raw/AI로_만든_제품이_안_팔리는_이유.md`, `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md`의 후속 구조화 보강
+- 생성: 없음
+- 수정: [[DESIGN.md 운영 원칙]], [[AI 오픈소스 작업대]], `wiki/index.md`, `wiki/log.md`
+- index 업데이트: 완료
+- 남은 검토: [[OpenClaw]], [[shadcn-ui]]처럼 개별 제품/spec가 빠르게 변하는 노트는 계속 `needs-review` 유지. 대신 상위 허브는 안정 프레임 중심으로 재정리해 승격함.
+
+### 결정 기록
+
+- 결정: 상태 승격
+- 대상: [[DESIGN.md 운영 원칙]], [[AI 오픈소스 작업대]]
+- 근거: 두 노트 모두 원래는 spec/저장소 변동성 때문에 `needs-review`였지만, 이번 보강으로 핵심을 개별 CLI·스타 수가 아니라 안정적인 운영 프레임에 두었다. DESIGN.md는 "token + rationale를 agent-readable하게 유지한다"는 원칙, AI 오픈소스 작업대는 "어떤 작업 표면이 공개 구현체로 표준화되는가"라는 생태계 허브로 읽을 수 있어 evergreen 유지가 가능하다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 상태 변경 노트 2개와 `wiki/index.md` 수정 후 전체 frontmatter, broken wikilink, 관련 노트 수, 고아 페이지를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: [[DESIGN.md 운영 원칙]]을 점검 대기에서 제거하고, 개별 제품 변동성과 상위 프레임을 분리해 정리함

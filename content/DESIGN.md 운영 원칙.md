@@ -1,6 +1,6 @@
 ---
 type: workflow
-status: needs-review
+status: evergreen
 core: false
 tags:
  - llm
@@ -31,7 +31,7 @@ DESIGN.md 운영 원칙은 AI coding agent가 UI를 만들 때 따를 색상, �
 - DESIGN.md는 디자인 맥락을 repo에 남기는 파일이며, [[Claude.md 운영 원칙]]이 코드 관습을 주는 것과 비슷한 역할을 한다.
 - 상단 YAML front matter에는 machine-readable design token을, 본문 Markdown에는 human-readable design rationale을 둔다.
 - UI 작업마다 에이전트에게 먼저 읽히고, 결과물에는 token 밖의 색, font size, spacing이 들어갔는지 확인한다.
-- Google Labs의 `design.md` specification은 alpha 상태라, 문법과 tooling 변화 가능성을 두고 `needs-review`로 관리한다.
+- 개별 spec과 CLI는 바뀔 수 있지만, design token과 rationale를 agent-readable 파일로 분리해 유지한다는 운영 원칙 자체는 안정적이다.
 
 ## 상세
 
@@ -43,6 +43,22 @@ raw 문서는 Design.md를 AI에게 반복해서 던지는 매뉴얼로 다룬�
 
 
 후속 raw는 DESIGN.md에 특히 중요한 9개 섹션을 더 구체화한다. Visual Theme & Atmosphere, Color Palette & Roles, Typography Rules, Component Stylings, Layout Principles, Depth & Elevation, Do's and Don'ts, Responsive Behavior, Agent Prompt Guide가 그것이다. 이 목록은 token과 rationale을 함께 남겨 style drift를 줄이는 실무 체크리스트로 쓸 수 있다. 또한 [[디자인 에이전트 5종]]처럼 research·problem definition·flow design을 맡는 task agent와 달리, DESIGN.md는 시각 언어를 지속적으로 고정하는 기준 파일이라는 점을 구분해야 한다.
+
+
+## 안정적인 운영 규칙
+
+DESIGN.md를 어떤 spec으로 구현하든, 아래 원칙은 비교적 안정적이다.
+
+1. **token과 rationale를 분리한다**
+   - 색, 타이포그래피, spacing 같은 값은 machine-readable하게 두고, 왜 그렇게 정했는지는 prose로 남긴다.
+2. **agent가 작업 전에 먼저 읽게 한다**
+   - 화면을 만든 뒤 맞추는 것이 아니라, 생성 전에 기본값을 주입한다.
+3. **검증 규칙을 같이 둔다**
+   - token 밖 색상, 임의 radius, 잘못된 density 같은 위반 항목을 확인한다.
+4. **시각 언어와 task workflow를 구분한다**
+   - DESIGN.md는 visual consistency 파일이고, [[디자인 에이전트 5종]]은 research/flow task workflow다.
+5. **브랜드 차별점은 기본값으로 못 박는다**
+   - AI가 평균적인 UI로 수렴하지 않게 하려면, 제품 tone과 interaction rule을 문서로 고정해야 한다.
 
 ## 예시
 
@@ -65,7 +81,7 @@ Primary는 주요 action에만 사용한다.
 
 ## 충돌
 
-현재 확인된 충돌 없음.
+- 2026-05-26 확인: Google Labs `design.md`의 정확한 문법, lint CLI, export/import 흐름은 변할 수 있다. 하지만 디자인 기본값을 agent-readable 파일로 외부화한다는 운영 원칙은 특정 spec 변화와 별개로 유지된다.
 
 ## 관련 노트
 
@@ -74,4 +90,6 @@ Primary는 주요 action에만 사용한다.
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[디자인 에이전트 5종]]
+- [[디자인 시스템 기본값]]
+- [[AI 디자인 역할 맵]]
 
