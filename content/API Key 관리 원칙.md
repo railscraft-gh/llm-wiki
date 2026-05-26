@@ -1,7 +1,7 @@
 ---
 type: workflow
 status: evergreen
-core: false
+core: true
 tags:
  - security
  - api-key
@@ -29,6 +29,7 @@ API Key 관리 원칙은 비밀값을 코드에서 분리하고, 최소 권한, 
 - 로컬 `.env`는 개발 편의 장치일 뿐이며, 프로덕션에서는 Secret Manager, Vault, [[Infisical 도입 전략]] 같은 중앙 관리 도구를 사용한다.
 - Key는 서비스, 환경, 권한 범위별로 나누고, 생성, 로테이션, 폐기, 만료, 감사 기록을 남긴다.
 - 유출이 의심되면 먼저 revoke하고, 사용 로그와 영향 범위를 확인한 뒤 새 Key를 배포한다.
+- 이 노트는 특정 비밀관리 도구보다 secret lifecycle 전체를 묶는 상위 보안 체크리스트로 읽는 편이 맞다.
 
 ## 상세
 
@@ -53,4 +54,6 @@ OWASP Secrets Management Cheat Sheet는 secret을 중앙화하고 표준화하�
 - [[클라이언트 Secret 노출 방지]]
 - [[Claude Code 권한 설계]]
 - [[AI 코딩 에이전트 검증 전략]]
+- [[Lethal Trifecta]]
+- [[Agent Native Infrastructure]]
 

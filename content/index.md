@@ -21,6 +21,8 @@
 | [[AI 에이전트 런타임 역할 맵]] | 확장 층, 하네스, 인프라, 오픈소스 작업대, 제품 구현체를 한 장의 런타임 계층으로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 네이티브 작업 시스템]] | 사용자 숙련, 디자인 계층, 런타임 계층, 검증 루프를 하나의 작업 체계로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 디자인 역할 맵]] | 기본값, DESIGN.md, task agent, AI Experience Architect를 한 장의 디자인 운영 계층으로 묶는다. | evergreen | 2026-05-26 |
+| [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
+| [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
 
 ## Ingest 현황
 
@@ -70,10 +72,8 @@
 | --- | --- | --- |
 | [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
 | [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
-| [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
-| [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 실무 프레임이다. | 디자인/runtime 사례 raw 누적 후 core 검토 |
 
 ### 구조 보강 후보
 

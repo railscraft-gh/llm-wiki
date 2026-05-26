@@ -1,7 +1,7 @@
 ---
 type: concept
 status: evergreen
-core: false
+core: true
 tags:
   - ai
   - tooling
@@ -31,6 +31,7 @@ AI 기본값 수용과 오버라이드 전략은 AI가 먼저 밀어 넣는 foun
 - 문제는 채택 자체보다, 어디를 기본값으로 받고 어디를 override할지 명시하지 않는 데서 생긴다.
 - `shadcn-ui`는 UI foundation 쪽 사례이고, `OpenClaw`는 personal agent runtime 쪽 사례다.
 - 두 사례 모두 속도를 주지만, 그대로 쓰면 각각 시각 언어 drift와 권한·보안 리스크를 함께 끌고 들어온다.
+- 이 프레임은 디자인 계층과 런타임 계층을 함께 읽게 해 주는 상위 의사결정 기준으로 쓸 수 있다.
 
 ## 상세
 
@@ -56,4 +57,6 @@ AI 기본값 수용과 오버라이드 전략은 AI가 먼저 밀어 넣는 foun
 - [[디자인 시스템 기본값]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Agent Native Infrastructure]]
+- [[AI 디자인 역할 맵]]
+- [[AI 에이전트 런타임 역할 맵]]
 
