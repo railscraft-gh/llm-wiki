@@ -61,46 +61,73 @@
 | 2026-05-07 | `raw/API_Key_관리_및_Infisical_도입_가이드.md`, `raw/AI로_만든_제품이_안_팔리는_이유.md` | [[API Key 관리 원칙]], [[클라이언트 Secret 노출 방지]], [[Infisical 도입 전략]], [[AI Slop]], [[DESIGN.md 운영 원칙]], [[AI 시대 디자인 시스템]], [[AI 코딩 에이전트 검증 전략]], [[Vibe Coding과 Agentic Engineering]], [[Claude.md 운영 원칙]], [[Agent Native Infrastructure]], [[Claude Code 권한 설계]] | done | [[log#2026-05-07]] |
 | 2026-05-06 | `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`, `raw/보리스_클로드코드_실무_사용법.md`, `raw/Claude-Code-실무활용법-보리스-관점-정리.md`, `raw/안드레_카파시_인터뷰_정리.md`, `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md` | [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]], [[Claude Code 권한 설계]], [[Plan Mode 기반 AI 작업]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[강한 모델로 덜 헤매기]], [[Software 3.0]], [[Neural Computer]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[AI 네이티브 사용자]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]] | done | [[log#2026-05-06]] |
 
+
 ## 승격 후보
+
+### core 우선 후보
 
 | 후보 | 근거 | 다음 작업 |
 | --- | --- | --- |
-| [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
-| [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
-| [[Loop와 Routines]] | 보리스의 cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
-| [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
-| [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 | [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
 | [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
-| [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
+| [[API Key 관리 원칙]] | AI 앱 실무에서 반복적으로 필요한 보안 checklist다. | 추가 보안 raw가 들어오면 core 검토 |
+| [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
-| [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
 | [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 실무 프레임이다. | 디자인/runtime 사례 raw 누적 후 core 검토 |
+
+### 구조 보강 후보
+
+| 후보 | 근거 | 다음 작업 |
+| --- | --- | --- |
+| [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 core 검토 여부 재판단 |
+| [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
+| [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
+| [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
+| [[Loop와 Routines]] | cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
+
 
 ## 점검 대기
 
+### 도구·spec 변동성
+
 | 항목 | 사유 | 처리 방향 |
 | --- | --- | --- |
-| [[Neural Computer]] | 전망 성격이 강해 추가 출처가 필요하다. | 관련 카파시 원문 또는 후속 자료 검증 |
-| [[강한 모델로 덜 헤매기]] | 특정 모델명과 비용 판단은 변동성이 있다. | 최신 모델/가격 자료 ingest 시 needs-review 검토 |
-| [[강한 모델로 덜 헤매기]] | GLM 5.1 vs Kimi K2.6 비교 정보 추가. 모델명, 벤치마크 점수, 가격은 변동성이 높다. | 최신 모델/가격 자료 ingest 시 needs-review 검토 |
+| [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스·검색·sandbox 명세가 빠르게 변동한다. | 실사용 전 공식 docs 확인 |
+| [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
+| [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동한다. | 실사용 전 공식 README 확인 |
 | [[Infisical 도입 전략]] | 가격과 enterprise 기능 범위가 변동되며 raw와 공식 출처 간 충돌이 있다. | 도입 전 공식 pricing/license 재확인 |
-| [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
+| [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
+| [[OpenAgent Team Mode]] | opencode 재시작 요구와 tmux_visualization 옵션이 버전 영향 받는다. | 실사용 후 evergreen 검토 |
+| [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
 | [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |
-| [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
-| [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
-| [[Ralph Loop]] | context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이다. | 실제 repo 적용 시 실패율, 충돌률, review 비용 검증 |
-| [[Loop와 Routines]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 보리스 1인 영상 발언으로 외부 검증 부족. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 needs-review |
-| [[제품 오버행]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR"은 보리스 1인 영상 발언이다. | 동일 |
-| [[Agentic 패턴 진화]] | KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 팀 사례는 2025-2026 시점 자료. | 모델/벤치마크/가격 변동 시 needs-review |
-| [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
-| [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
+| [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
+| [[RuboCop]] | Ruby 생태계 표준 도구이지만 cop 이름/플래그가 메이저 버전마다 변동된다. | 메이저 RuboCop 릴리스 시 needs-review |
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
-| [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스/검색/sandbox 명세가 빠르게 변동. | 실사용 전 공식 docs 확인 |
-| [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동. | 실사용 전 공식 README 확인 |
-| [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준. 3개 도메인 실험은 후속 재현 자료 필요. | 후속 실험 자료 ingest 시 evergreen 검토 |
-| [[OpenAgent Team Mode]] | opencode 재시작 요구와 tmux_visualization 옵션이 버전 영향 받음. | 실사용 후 evergreen 검토 |
-| [[RuboCop]] | Ruby 생태계 표준 도구이지만 cop 이름/플래그가 메이저 버전마다 변동. | 메이저 RuboCop 릴리스 시 needs-review |
-| [[바선생]] | Claude Code 대화 분석 도구. 6대 차원 가중치와 게이트 조건은 raw 시점 기준. | 공식 README 업데이트 시 재검토 |
-| [[매퍼코 3스킬 워크플로우]] | 맥퍼커/G스텍/슈퍼파워즈의 정확한 영문 명칭과 워크플로우 단계 시간은 검증 대기. | 실제 적용 사례 ingest 시 evergreen 검토 |
+| [[바선생]] | Claude Code 대화 분석 도구의 6대 차원 가중치와 게이트 조건은 raw 시점 기준이다. | 공식 README 업데이트 시 재검토 |
+| [[온디바이스 TTS]] | 모델 스펙, benchmark, 라이선스와 배포 가이드는 빠르게 변동한다. | 도입 전 공식 모델 카드/README 재확인 |
+
+### 단일 출처·외부 검증 부족
+
+| 항목 | 사유 | 처리 방향 |
+| --- | --- | --- |
+| [[Loop와 Routines]] | "코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 1인 영상 발언으로 외부 검증이 부족하다. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 재검토 |
+| [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준이며 3개 도메인 실험은 후속 재현 자료가 더 필요하다. | 후속 실험 자료 ingest 시 evergreen 검토 |
+| [[Neural Computer]] | 전망 성격이 강해 추가 출처가 필요하다. | 관련 카파시 원문 또는 후속 자료 검증 |
+| [[Ralph Loop]] | context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이다. | 실제 repo 적용 시 실패율, 충돌률, review 비용 검증 |
+| [[매퍼코 3스킬 워크플로우]] | 정확한 영문 명칭과 워크플로우 단계 시간은 검증 대기다. | 실제 적용 사례 ingest 시 evergreen 검토 |
+| [[생성형 AI 면접 평가 축]] | 2026년 시점 질문 분포와 평가 축 정리라 채용 시장 변화 영향을 크게 받는다. | 후속 채용 자료 ingest 시 재검토 |
+| [[제품 오버행]] | 일부 핵심 예시가 영상 발언 중심이라 외부 검증이 더 필요하다. | 동일 주제의 추가 원문 확보 후 재판단 |
+
+### 모델·가격·시장 변동성
+
+| 항목 | 사유 | 처리 방향 |
+| --- | --- | --- |
+| [[강한 모델로 덜 헤매기]] | 특정 모델명, 벤치마크 점수, 가격 비교는 빠르게 변동한다. | 최신 모델/가격 자료 ingest 시 재검토 |
+
+### evergreen 유지 중인 시점 주의 노트
+
+| 항목 | 사유 | 처리 방향 |
+| --- | --- | --- |
+| [[Agentic 패턴 진화]] | KV-cache 비용, Copilot 점유율, Manus 사례 등 일부 숫자는 시점 의존적이다. | 모델/벤치마크/가격 변동 시 보강 |
+| [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
