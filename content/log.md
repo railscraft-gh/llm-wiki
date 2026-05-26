@@ -172,6 +172,42 @@
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: 신규 노트 2개와 보강 노트 5개 모두 index/log/역링크까지 확인함
 
+- 입력: `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md`
+- 생성: [[AI Experience Architect]], [[디자인 시스템 기본값]], [[OpenClaw]], [[shadcn-ui]]
+- 수정: [[AI 시대 소프트웨어 펀더멘탈]], [[AI 시대 디자인 시스템]], [[에이전트 확장 3계층]], [[AI 오픈소스 작업대]]
+- index 업데이트: 완료
+- 남은 검토: [[OpenClaw]], [[shadcn-ui]]는 수치·생태계 변화가 빠른 tool note라 `needs-review` 유지가 적절함. [[AI Experience Architect]]는 역할 정의가 조직 구조에 따라 달라질 수 있어 후속 사례 축적이 필요함.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[AI Experience Architect]]
+- 근거: 기존 wiki에는 디자인 시스템과 디자인 agent는 있었지만, 디자이너 역할이 화면 제작자에서 workflow·권한·조직 경계 설계자로 이동하는 변화를 독립 개념으로 설명하는 노트가 없었음.
+
+- 결정: 신규 생성
+- 대상: [[디자인 시스템 기본값]]
+- 근거: [[AI 시대 디자인 시스템]]은 agent-readable design context를 다루지만, spacing·typography·token·component behavior를 왜 기본값으로 못 박아야 하는지를 설명하는 미시 개념 노트가 없었음.
+
+- 결정: 신규 생성
+- 대상: [[OpenClaw]], [[shadcn-ui]]
+- 근거: 두 raw는 단순 제품 소개보다 2026년 agent runtime과 AI 생성 UI의 사실상 기본 foundation을 설명하는 반복 참조 가능한 tool note 성격이 강했음. 각각 self-hosted personal agent runtime과 code-first default design system 축을 대표함.
+
+- 결정: 보강
+- 대상: [[AI 시대 소프트웨어 펀더멘탈]], [[AI 시대 디자인 시스템]], [[에이전트 확장 3계층]], [[AI 오픈소스 작업대]]
+- 근거: 새 raw들은 완전히 별개 주제라기보다 기존 허브에 더 정확한 사례와 경계를 추가하는 성격이 강했음. fundamentals에는 배수기 비유와 최신 사례를, design system 허브에는 기본값·shadcn·역할 이동을, 확장 3계층에는 tiered isolation과 centralized MCP를, 오픈소스 허브에는 OpenClaw를 보강하는 편이 구조적으로 적절했음.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 신규/수정 8개 노트의 frontmatter, sources, 관련 노트 수, wikilink 존재 여부를 점검하고 `wiki/index.md`/`wiki/log.md` 반영 후 전체 링크 정합성을 재확인
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 노트 4개를 기존 핵심 허브와 상호 연결하고, 변동성이 큰 tool note는 `needs-review`로 표시함
+
+
 ## 2026-05-24
 
 ### Ingest

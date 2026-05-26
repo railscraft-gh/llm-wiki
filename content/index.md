@@ -22,6 +22,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-26 | `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md` | [[AI Experience Architect]], [[디자인 시스템 기본값]], [[OpenClaw]], [[shadcn-ui]], [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 시대 디자인 시스템]] (보강), [[에이전트 확장 3계층]] (보강), [[AI 오픈소스 작업대]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md` | [[Context Engineering]], [[에이전트 확장 3계층]], [[Harness Engineering]] (보강), [[Context Mode]] (보강), [[OpenCode]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md` | [[Agent Harness]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Meta-Harness]] (보강), [[에이전트 코딩 4원칙]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md` | [[AI 산출물 포맷 결정 트리]], [[Claude.md 운영 원칙]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
@@ -89,6 +90,9 @@
 | [[제품 오버행]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR"은 보리스 1인 영상 발언이다. | 동일 |
 | [[Agentic 패턴 진화]] | KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 팀 사례는 2025-2026 시점 자료. | 모델/벤치마크/가격 변동 시 needs-review |
 | [[AI 시대 소프트웨어 펀더멘탈]] | Matt Pocock 단일 발표자료 기준. Grill Me 스킬과 Ubiquitous Language 효과는 개인 경험 기반. | 추가 fundamentals 자료 ingest 시 evergreen 재검토 |
+| [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
+| [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
+| [[AI Experience Architect]] | 역할 정의가 2026년 시점의 시장 해석에 가깝고, 조직 구조별 차이가 크다. | 추가 디자인 조직 사례 raw 누적 후 evergreen 검토 |
 | [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스/검색/sandbox 명세가 빠르게 변동. | 실사용 전 공식 docs 확인 |
 | [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동. | 실사용 전 공식 README 확인 |
 | [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준. 3개 도메인 실험은 후속 재현 자료 필요. | 후속 실험 자료 ingest 시 evergreen 검토 |
