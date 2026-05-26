@@ -31,7 +31,8 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
 - AI가 코드를 빠르게 만들수록 제품 차별점은 구현 속도보다 시각 언어, 사용자 흐름, 판단 기준으로 이동한다.
 - 디자인 시스템은 색상, 타이포그래피, spacing, icon style, component state를 정해 [[AI Slop]]을 줄인다.
 - [[DESIGN.md 운영 원칙]]처럼 agent-readable 형식으로 저장하면 AI가 디자인 의도를 매번 새로 추측하지 않아도 된다.
-- 디자이너의 역할은 픽셀 생산자에서 시스템 설계자와 품질 판단자로 이동한다.
+- 디자이너의 역할은 픽셀 생산자에서 시스템 설계자, workflow 설계자, 품질 판단자로 이동한다.
+- AI가 많이 쓰는 기본 컴포넌트 층(shadcn/ui 같은 code-first foundation)을 이해하지 못하면, 디자인 시스템 논의가 Figma 안에만 갇히기 쉽다.
 
 ## 상세
 
@@ -43,6 +44,12 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 후속 raw는 왜 이 파일이 필요한지 더 명확하게 설명한다. agent는 디자인을 "못하는" 것이 아니라, 세션을 넘는 디자인 기억을 유지하지 못한다. 그래서 Bootstrap Default, Color Roulette, Style Drift가 반복된다. DESIGN.md의 9개 섹션은 바로 이 세 failure mode를 막기 위한 지속 제약 조건으로 읽을 수 있다.
 
 또한 디자인 automation은 visual token만으로 끝나지 않는다. [[디자인 에이전트 5종]]처럼 리서치 정리, 문제 정의, 아이디어 발산, flow 설계도 agent화할 수 있지만, 그 산출물이 일관된 시각 언어로 내려오게 하려면 결국 DESIGN.md 같은 지속 맥락 파일이 필요하다.
+
+`raw/Good Design Doesn’t Happen By Default.md`는 이 논리를 더 미시적으로 설명한다. 좋은 제품 감각은 취향보다도 spacing, typography, interaction pattern, component behavior의 기본값을 명시해 둔 결과라는 것이다. 즉 디자인 시스템은 component gallery 이전에 [[디자인 시스템 기본값]]을 고정하는 보이지 않는 아키텍처다.
+
+`raw/The most important Design System in 2026 that designers missed was built by a developer..md`는 한 걸음 더 나아가, 많은 AI 생성 UI가 이미 [[shadcn-ui]] 형태로 수렴하고 있다고 본다. 이제 질문은 디자인 시스템이 필요한가가 아니라, AI가 가져오는 기본 foundation을 어디까지 받아들이고 어디를 override할 것인가에 가깝다.
+
+역할 면에서도 변화가 있다. `raw/From faster pencil to AI Experience Architect. a designer’s path.md`는 디자이너가 더 빠른 Figma 작업자에 머무르지 않고 [[AI Experience Architect]]처럼 workflow, 권한, fallback, review gate까지 설계하는 방향으로 이동한다고 설명한다.
 
 ## 예시
 
@@ -62,4 +69,7 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 네이티브 사용자]]
 - [[디자인 에이전트 5종]]
+- [[디자인 시스템 기본값]]
+- [[shadcn-ui]]
+- [[AI Experience Architect]]
 

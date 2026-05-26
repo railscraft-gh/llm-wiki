@@ -12,8 +12,9 @@ aliases: []
 sources:
   - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
   - raw/아무도 AI를 배우고 싶어 하지 않는다.md
+  - raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
 created: 2026-05-09
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 # AI 시대 소프트웨어 펀더멘탈
@@ -49,7 +50,7 @@ Interview me relentlessly about every aspect of this plan until we reach a share
 Walk down each branch of the design tree, resolving dependencies between decisions one by one.
 ```
 
-이 스킬을 사용하면 AI가 40개에서 100개까지 질문을 던진다. 공동 이해(shared understanding)에 도달하는 것이 먼저다. GitHub에서 13,000 이상의 별을 받았다.
+이 스킬을 사용하면 AI가 40개에서 100개까지 질문을 던진다. 공동 이해(shared understanding)에 도달하는 것이 먼저다. 새 raw는 이 skill이 GitHub에서 97,000+ stars를 받았다고 서술한다. 수치는 시점 의존적이므로 적용 전 최신 저장소 기준으로 다시 확인하는 편이 안전하다.
 
 ### 2. AI가 너무 장황해진다
 
@@ -90,7 +91,11 @@ Deep Module을 회색 상자로 취급한다. 인터페이스는 사람이 직�
 
 > 인터페이스를 설계필라. 구현은 위임핼라.
 
-### 6. 관통하는 한 줄
+### 6. AI는 마법봉이 아니라 배수기다
+
+새 raw는 이 다섯 원칙을 하나의 명제로 다시 묶는다. AI는 좋은 아키텍처 앞에서는 가치를 복리로 늘리지만, 나쁜 구조 앞에서는 기술 부채를 더 빠르게 증폭한다. 그래서 펀더멘탈은 AI 이전보다 덜 중요해진 것이 아니라 오히려 더 비싸진다.
+
+### 7. 관통하는 한 줄
 
 > 매일 시스템 설계에 투자핼라. (Kent Beck)
 
@@ -113,4 +118,5 @@ Deep Module을 회색 상자로 취급한다. 인터페이스는 사람이 직�
 - [[Claude.md 운영 원칙]]
 - [[AI Slop]]
 - [[Competence Debt]]
+- [[에이전트 코딩 4원칙]]
 
