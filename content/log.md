@@ -209,6 +209,35 @@
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 신규 노트 4개를 기존 핵심 허브와 상호 연결하고, 변동성이 큰 tool note는 `needs-review`로 표시함
 
+### Ingest
+
+- 입력: 동일 6개 raw에 대한 후속 구조화 보강
+- 생성: [[AI 디자인 역할 맵]]
+- 수정: [[AI 시대 디자인 시스템]], [[AI Experience Architect]], [[디자인 에이전트 5종]], [[OpenClaw]], [[shadcn-ui]], `wiki/index.md`
+- index 업데이트: 완료
+- 남은 검토: [[AI 디자인 역할 맵]]은 반복 raw가 더 쌓이면 core 승격 후보가 될 수 있음. [[OpenClaw]], [[shadcn-ui]]는 여전히 변동성이 높아 `needs-review` 유지.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[AI 디자인 역할 맵]]
+- 근거: 디자인 시스템, DESIGN.md, task agent, AI Experience Architect가 각각 따로 존재해 관계를 한눈에 보기 어려웠음. 네 층을 한 장의 운영 계층으로 묶는 허브가 필요했음.
+
+- 결정: 보강
+- 대상: [[AI 시대 디자인 시스템]], [[AI Experience Architect]], [[디자인 에이전트 5종]], [[OpenClaw]], [[shadcn-ui]]
+- 근거: 디자인 쪽 노트는 상하위 관계를 명시해 검색성과 재사용성을 높였고, tool note는 “언제 읽어야 하는가”와 인접 노트와의 차이를 적어 참조 비용을 줄였음.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 전체 wiki frontmatter, status/type, related notes, wikilink, orphan 여부를 재점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 허브 1개와 보강 노트 5개를 index/log까지 연결하고 상태 정합성을 재확인함
+
 ### 결정 기록
 
 - 결정: 상태 조정
