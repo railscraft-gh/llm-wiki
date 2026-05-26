@@ -75,7 +75,6 @@
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
-| [[AI 기본값 구현체]] | AI가 먼저 학습하고 통합한 foundation이 왜 사실상 표준처럼 굳는지 설명하는 비교 허브다. | 추가 사례 raw 누적 후 evergreen 검토 |
 | [[AI Experience Architect]] | 디자인 역할이 화면 제작에서 workflow·권한·조직 설계로 이동하는 변화를 설명한다. | 추가 조직 사례 raw 누적 후 evergreen 검토 |
 
 ## 점검 대기
@@ -96,7 +95,7 @@
 | [[Loop와 Routines]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 보리스 1인 영상 발언으로 외부 검증 부족. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 needs-review |
 | [[제품 오버행]] | "Cloud Code 코드베이스 100% 자동 작성", "하루 150개 PR"은 보리스 1인 영상 발언이다. | 동일 |
 | [[Agentic 패턴 진화]] | KV-cache 비용 1/10, Copilot 사용자/점유율, Manus 팀 사례는 2025-2026 시점 자료. | 모델/벤치마크/가격 변동 시 needs-review |
-| [[AI 시대 소프트웨어 펀더멘탈]] | Matt Pocock 단일 발표자료 기준. Grill Me 스킬과 Ubiquitous Language 효과는 개인 경험 기반. | 추가 fundamentals 자료 ingest 시 evergreen 재검토 |
+| [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
 | [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
 | [[AI Experience Architect]] | 역할 정의가 2026년 시점의 시장 해석에 가깝고, 조직 구조별 차이가 크다. | 추가 디자인 조직 사례 raw 누적 후 evergreen 검토 |

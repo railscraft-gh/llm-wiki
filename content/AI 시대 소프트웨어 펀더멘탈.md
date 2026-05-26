@@ -1,6 +1,6 @@
 ---
 type: concept
-status: needs-review
+status: evergreen
 core: false
 tags:
   - ai-coding
@@ -109,7 +109,7 @@ Deep Module을 회색 상자로 취급한다. 인터페이스는 사람이 직�
 
 ## 충돌
 
-(없음)
+- 2026-05-26 확인: Grill Me 스타 수 같은 시점 정보는 변동될 수 있다. 다만 이 노트의 핵심은 수치가 아니라 shared understanding, Ubiquitous Language, TDD, Deep Module, Grey-box라는 판단 프레임이다.
 
 ## 관련 노트
 

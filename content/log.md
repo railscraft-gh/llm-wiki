@@ -995,3 +995,27 @@
 - 결정: 병합
 - 대상: 카파시 인터뷰 raw 2개
 - 근거: 같은 인터뷰의 요약과 전사 묶음으로 중복이 커서 [[Software 3.0]], [[Jagged Intelligence]], [[Thinking과 Understanding 분리]] 등 개념 단위로 분리함.
+
+### Ingest
+
+- 입력: 동일 6개 raw 및 기존 fundamentals raw에 대한 후속 상태 조정
+- 생성: 없음
+- 수정: [[AI 기본값 구현체]], [[AI 시대 소프트웨어 펀더멘탈]], [[AI Experience Architect]], `wiki/index.md`
+- index 업데이트: 완료
+- 남은 검토: [[AI Experience Architect]]는 역할 정의가 조직 구조와 규제 맥락에 따라 달라져 `needs-review` 유지. [[OpenClaw]], [[shadcn-ui]]도 변동성 높은 tool note로 계속 점검 대상 유지.
+
+### 결정 기록
+
+- 결정: 상태 승격
+- 대상: [[AI 기본값 구현체]], [[AI 시대 소프트웨어 펀더멘탈]]
+- 근거: 두 노트 모두 특정 제품 추천보다 반복되는 판단 프레임을 설명하는 개념 노트로 굳어졌다. 예시는 시점 의존적일 수 있지만, "기본값 구현체를 어떻게 읽을 것인가"와 "AI 시대에 왜 fundamentals가 더 중요해지는가"라는 핵심 구조는 여러 raw와 기존 허브에 안정적으로 연결된다.
+
+- 결정: 보강
+- 대상: [[AI Experience Architect]]
+- 근거: 즉시 승격보다는 역할 필요성을 판별하는 질문을 추가해 재사용성을 높이는 편이 적절했다. 아직은 조직·규제 사례가 더 쌓여야 evergreen 승격 판단이 쉬워진다.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 상태 변경 노트와 `wiki/index.md`를 수정한 뒤 전체 frontmatter, broken wikilink, 관련 노트 수, core index 등록 여부를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: 승격 후보 표에서 [[AI 기본값 구현체]]를 제거하고, 점검 대기 사유를 수치/사례와 개념 프레임으로 분리해 정리함
