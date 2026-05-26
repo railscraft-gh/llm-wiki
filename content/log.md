@@ -1107,3 +1107,15 @@
 - 실행 방식: core 승격 2건과 `wiki/index.md` 갱신 후 Python 일회성 스크립트로 전체 frontmatter, core 노트 index 등록 여부, broken wikilink, 관련 노트 수, 고아 페이지를 재점검
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: 승격 후보 표에서 두 노트를 제거하고 핵심 노트 표에 추가함
+
+### 결정 기록
+
+- 결정: core 승격
+- 대상: [[Context Engineering]], [[디자인 에이전트 5종]]
+- 근거: [[Context Engineering]]은 [[Harness Engineering]], [[Agent Harness]], [[Context Mode]], [[AI 에이전트 런타임 역할 맵]]을 잇는 공통 handoff 원칙으로 자리 잡았고, agent workflow를 읽는 데 필요한 상위 개념 역할이 분명하다. [[디자인 에이전트 5종]]은 [[AI 디자인 역할 맵]]의 task layer를 대표하며, upstream design work를 어떤 단위로 agent화할지 정하는 반복 질문에 답하는 허브가 되었다.
+
+### Lint
+
+- 실행 방식: core 승격 2건과 `wiki/index.md` 갱신 후 Python 일회성 스크립트로 전체 frontmatter, core 노트 index 등록 여부, broken wikilink, 관련 노트 수, 고아 페이지를 재점검
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: 승격 후보 표에서 두 노트를 제거하고 핵심 노트 표에 추가함

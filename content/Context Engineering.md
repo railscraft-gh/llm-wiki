@@ -1,7 +1,7 @@
 ---
 type: concept
 status: evergreen
-core: false
+core: true
 tags:
   - llm
   - agent
@@ -26,6 +26,7 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 - 문제는 prompt 한 문장이 아니라 단계 사이에서 어떤 정보가 전달되고 사라지는가에 있다.
 - 좋은 agent는 모든 문맥을 다 주지 않고, 역할별로 필요한 context만 라우팅한다.
 - persistent, time-sensitive, transient context를 구분하면 환각, stale state, 토큰 낭비를 줄이기 쉽다.
+- 이 개념은 [[Harness Engineering]]의 하위 규율이면서도, 여러 agent workflow가 공유하는 상위 handoff 원칙으로 읽을 수 있다.
 
 ## 상세
 
@@ -34,6 +35,13 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 실무에서는 보통 세 층으로 나눈다. **persistent context**는 사용자 목표, 제약, 세션 결정처럼 계속 유지해야 하는 정보다. **time-sensitive context**는 검색 결과, 최근 tool output, 현재 schema처럼 곧 낡을 수 있는 정보다. **transient context**는 raw payload, 긴 중간 추론처럼 현재 단계가 끝나면 버려야 하는 정보다. 이 셋을 섞어 쌓아 두면 stale context와 attention 경쟁이 동시에 발생한다.
 
 그래서 context engineering의 질문은 단순하다. "무엇을 더 넣을까"가 아니라 "누가 무엇을 알아야 하며, 무엇은 지금 버려야 하는가"다. 이 점에서 [[Harness Engineering]]이 전체 환경 설계라면, Context Engineering은 그중에서도 **context handoff와 routing**을 다루는 하위 규율이다.
+
+## 판단 기준
+
+- 이 단계의 정보가 다음 단계에도 계속 필요한가, 아니면 지금만 필요한가.
+- 다음 agent가 raw payload 전체를 알아야 하는가, 아니면 압축된 계약만 알면 되는가.
+- 최근성에 민감한 값과 오래 유지될 세션 규칙이 섞여 있지 않은가.
+- 실패 원인이 모델 추론 부족이 아니라 context handoff 실패는 아닌가.
 
 ## 예시
 
@@ -52,4 +60,6 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 - [[Context Mode]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Claude.md 운영 원칙]]
+- [[Agent Harness]]
+- [[AI 에이전트 런타임 역할 맵]]
 
