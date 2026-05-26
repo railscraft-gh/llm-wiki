@@ -41,6 +41,18 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 - 개발자는 라이브러리 설치보다 컴포넌트 코드를 복사해 자기 codebase 안에서 수정한다.
 - MCP server를 통해 "로그인 폼 찾아줘" 같은 요청이 shadcn registry 탐색과 설치로 바로 이어진다.
 
+
+## 이 노트를 읽어야 하는 상황
+
+- AI가 만든 UI가 왜 비슷해 보이는지 설명할 공통 기준이 필요할 때
+- Figma 중심 디자인 시스템 논의와 code-first foundation 사이의 간극을 이해해야 할 때
+- [[AI 시대 디자인 시스템]]에서 말하는 default foundation이 실제로 무엇인지 짚고 싶을 때
+
+## 비슷한 노트와의 차이
+
+- [[디자인 시스템 기본값]]이 spacing·token·component behavior 같은 원칙을 다룬다면, 이 노트는 그런 원칙이 업계 기본 구현체로 굳어지는 사례를 다룬다.
+- [[DESIGN.md 운영 원칙]]이 팀 내부 규칙 파일이라면, shadcn-ui는 외부 생태계에서 이미 주어지는 baseline이다.
+
 ## 충돌
 
 - 2026-05-26 확인: GitHub star 수, MCP 지원 범위, AI 도구별 기본 출력 경향은 변동될 수 있다. 실제 도입 전 공식 docs와 각 도구의 최신 scaffold 정책을 다시 확인해야 한다.

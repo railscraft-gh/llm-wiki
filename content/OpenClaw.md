@@ -40,6 +40,18 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 - WhatsApp으로 보낸 요청이 내 Mac Mini의 shell command 실행이나 브라우저 작업으로 이어진다.
 - `SOUL.md`에 "~/projects/ 밖 system file 수정 금지" 같은 행동 경계를 넣어 실행 범위를 제한한다.
 
+
+## 이 노트를 읽어야 하는 상황
+
+- terminal/CLI agent보다 더 넓게, 메시징 채널과 background automation까지 붙은 personal agent runtime을 찾을 때
+- [[에이전트 확장 3계층]]을 실제 제품 수준 구현체로 보고 싶을 때
+- self-hosted agent의 capability와 security trade-off를 함께 이해해야 할 때
+
+## 비슷한 노트와의 차이
+
+- [[AI 오픈소스 작업대]]가 생태계 지도라면, 이 노트는 OpenClaw 하나의 구조와 위험 표면에 집중한다.
+- [[에이전트 확장 3계층]]이 개념 프레임이라면, 이 노트는 tool·skill·runtime이 한 제품에서 어떻게 결합되는지 보여주는 사례다.
+
 ## 충돌
 
 - 2026-05-26 확인: 스타 수, 활성 사용자 수, 보안 advisories, 배포 비율은 변동성이 큰 시점 정보다. 실제 도입 전 공식 docs와 최신 보안 공지를 다시 확인해야 한다.

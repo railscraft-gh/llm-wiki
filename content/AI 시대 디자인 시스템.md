@@ -52,7 +52,7 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 
 `raw/The most important Design System in 2026 that designers missed was built by a developer..md`는 한 걸음 더 나아가, 많은 AI 생성 UI가 이미 [[shadcn-ui]] 형태로 수렴하고 있다고 본다. 이제 질문은 디자인 시스템이 필요한가가 아니라, AI가 가져오는 기본 foundation을 어디까지 받아들이고 어디를 override할 것인가에 가깝다.
 
-역할 면에서도 변화가 있다. `raw/From faster pencil to AI Experience Architect. a designer’s path.md`는 디자이너가 더 빠른 Figma 작업자에 머무르지 않고 [[AI Experience Architect]]처럼 workflow, 권한, fallback, review gate까지 설계하는 방향으로 이동한다고 설명한다.
+역할 면에서도 변화가 있다. `raw/From faster pencil to AI Experience Architect. a designer’s path.md`는 디자이너가 더 빠른 Figma 작업자에 머무르지 않고 [[AI Experience Architect]]처럼 workflow, 권한, fallback, review gate까지 설계하는 방향으로 이동한다고 설명한다. 이를 한 장으로 정리한 운영 프레임이 [[AI 디자인 역할 맵]]이다.
 
 ## 예시
 
@@ -75,4 +75,5 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 - [[디자인 시스템 기본값]]
 - [[shadcn-ui]]
 - [[AI Experience Architect]]
+- [[AI 디자인 역할 맵]]
 
