@@ -267,6 +267,35 @@
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: core 승격 1건과 비교 허브 1건 추가 후 구조 정합성을 재확인함
 
+### Ingest
+
+- 입력: 동일 6개 raw와 후속 runtime 구조화 작업
+- 생성: [[AI 에이전트 런타임 역할 맵]]
+- 수정: [[Agent Native Infrastructure]] (core 승격), [[에이전트 확장 3계층]], [[Agent Harness]], [[AI 오픈소스 작업대]], [[OpenClaw]], [[Claude Code 오케스트레이션]], `wiki/index.md`
+- index 업데이트: 완료
+- 남은 검토: [[에이전트 확장 3계층]]은 개념 허브로서 강하지만 제품 경계 변화가 빨라 추가 runtime raw 축적 후 core 검토가 적절함.
+
+### 결정 기록
+
+- 결정: core 승격
+- 대상: [[Agent Native Infrastructure]]
+- 근거: 여러 raw에서 반복 확인됐고, CLI·API·schema·문서·권한을 agent가 직접 실행 가능한 형태로 바꾸는 상위 개념으로 다수 노트를 연결한다. 인바운드 링크와 허브 역할 모두 core 기준을 충족함.
+
+- 결정: 신규 생성
+- 대상: [[AI 에이전트 런타임 역할 맵]]
+- 근거: [[에이전트 확장 3계층]], [[Agent Harness]], [[Agent Native Infrastructure]], [[AI 오픈소스 작업대]], [[OpenClaw]], [[Claude Code 오케스트레이션]]가 모두 중요하지만 각각 다른 층을 설명해 한눈에 관계를 보기 어려웠음. 런타임 전체를 계층으로 묶는 운영 허브가 필요했음.
+
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 전체 wiki frontmatter, related notes, wikilink, core note index 등록 여부를 재점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: runtime 허브 1개와 core 승격 1건 반영 후 전체 정합성을 재확인함
+
 ### 결정 기록
 
 - 결정: 상태 조정
