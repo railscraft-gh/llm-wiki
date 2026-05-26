@@ -25,6 +25,7 @@
 | [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
 | [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
 | [[디자인 에이전트 5종]] | upstream design work를 research·define·ideate·flow 단계의 agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
+| [[Lethal Trifecta]] | 신뢰 불가 입력·민감 시스템 접근·상태 변경의 동시 보유를 금지하는 에이전트 보안 위험 모델을 정리한다. | evergreen | 2026-05-16 |
 
 ## Ingest 현황
 
@@ -72,8 +73,7 @@
 
 | 후보 | 근거 | 다음 작업 |
 | --- | --- | --- |
-| [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례 ingest 후 core 검토 |
-| [[Lethal Trifecta]] | 신뢰 불가 입력 + 민감 시스템 + 상태 변경 세 능력의 동시 보유를 막는 보안 프레임으로, [[Claude Code 권한 설계]]와 결합 가치 높음. | 추가 보안 raw에서 반복 확인 후 core 검토 |
+| [[AI 네이티브 엔지니어링 조직]] | 개인 agent 숙련을 팀 규범, 프로세스 폐기, 검증 책임으로 확장하는 운영 프레임이다. | 추가 조직 사례와 외부 검증 누적 후 core 재검토 |
 
 ### 구조 보강 후보
 
