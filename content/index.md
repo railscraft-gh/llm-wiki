@@ -70,6 +70,7 @@
 | [[Context Engineering]] | prompt보다 handoff 설계가 중요하다는 관점을 [[Harness Engineering]], [[Context Mode]]와 연결하는 허브 후보다. | 추가 raw에서 반복 확인 후 core 검토 |
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 evergreen 유지 검토 |
 | [[디자인 에이전트 5종]] | upstream design work를 agent workflow로 쪼개는 재사용 템플릿이다. | 조직별 design process 사례 raw 추가 후 core 검토 |
+| [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
 
 ## 점검 대기
 

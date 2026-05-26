@@ -209,6 +209,12 @@
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 신규 노트 4개를 기존 핵심 허브와 상호 연결하고, 변동성이 큰 tool note는 `needs-review`로 표시함
 
+### 결정 기록
+
+- 결정: 상태 조정
+- 대상: [[디자인 시스템 기본값]], [[AI Experience Architect]], [[OpenClaw]], [[shadcn-ui]]
+- 근거: [[디자인 시스템 기본값]]은 특정 제품 버전보다 오래가는 설계 원칙을 다뤄 `evergreen`으로 올릴 수 있었다. 반면 [[AI Experience Architect]]는 조직 구조와 채용 해석이 섞인 개념이라 `needs-review`가 적절했고, [[OpenClaw]], [[shadcn-ui]]는 제품·생태계 변화가 빨라 계속 `needs-review`로 두는 편이 안전했다.
+
 
 ## 2026-05-24
 
