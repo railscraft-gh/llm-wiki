@@ -12,6 +12,7 @@ aliases:
  - generic AI output
 sources:
  - raw/AI로_만든_제품이_안_팔리는_이유.md
+ - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
 created: 2026-05-07
 updated: 2026-05-07
 ---
@@ -33,7 +34,7 @@ AI Slop은 AI가 빠르게 만들었지만 제품 고유의 판단, 시각 언�
 
 raw 문서는 Claude Code나 Codex 같은 도구로 앱을 빠르게 만들 수 있어도, 결과물이 "어디서 본 듯한" 평균적 화면으로 끝나면 제품은 팔리기 어렵다고 주장한다. 여기서 차이를 만드는 요소는 추상적인 감각이 아니라 색상, 폰트, 간격, 아이콘, 컴포넌트 상태를 일관되게 정한 디자인 시스템이다.
 
-AI Slop은 [[Vibe Coding과 Agentic Engineering]]의 제품 디자인 버전으로 볼 수 있다. Vibe Coding은 빠른 데모를 만들 수 있지만, Agentic Engineering은 품질 기준과 검증 루프를 요구한다. UI에서도 빠른 생성만으로는 충분하지 않고, [[DESIGN.md 운영 원칙]]처럼 에이전트가 따를 수 있는 제약과 검증 기준이 필요하다.
+AI Slop은 [[Vibe Coding과 Agentic Engineering]]의 제품 디자인 버전으로 볼 수 있다. Vibe Coding은 빠른 데모를 만들 수 있지만, Agentic Engineering은 품질 기준과 검증 루프를 요구한다. UI에서도 빠른 생성만으로는 충분하지 않고, [[DESIGN.md 운영 원칙]]처럼 에이전트가 따를 수 있는 제약과 검증 기준이 필요하다. 같은 맥락에서 harness 자체가 비대해져도 실제로는 일부 workflow만 쓰게 되면 그 운영층도 또 다른 AI Slop이 될 수 있다. [[AI 하네스 최소화]]는 이런 하네스 비대화의 반대편에 있는 운영 원칙이다.
 
 ## 예시
 
