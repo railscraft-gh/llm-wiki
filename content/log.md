@@ -1192,3 +1192,11 @@
 - 실행 방식: raw/의 66개 파일명과 wiki/ 전체 노트 본문을 다시 대조하고, broken wikilink / orphan page / raw 미반영 여부를 재점검
 - 결과: raw 미반영 0개, broken wikilink 0개, orphan page 0개
 - 조치: 현재 raw ↔ wiki 매핑은 clean 상태로 확인됨
+
+## 2026-05-28 (Sync 6 — needs-review triage)
+
+### Audit
+
+- 실행 방식: `status: needs-review` 노트 24개를 다시 훑어 `## 충돌` 유무를 점검하고, 빠져 있던 `[[매퍼코 3스킬 워크플로우]]`에 충돌 섹션을 보강
+- 결과: needs-review 노트의 충돌 섹션 누락 0개
+- 조치: 변동성/단일 출처/도구 의존 노트를 다음 검토 전에 스코프·가정·치환 가능성까지 명시하도록 정리함
