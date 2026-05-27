@@ -18,6 +18,7 @@ sources:
   - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
   - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
   - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-05-28
