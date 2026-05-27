@@ -1184,3 +1184,11 @@
 - 실행 방식: `wiki/index.md`, [[AI 네이티브 엔지니어링 조직]], `wiki/log.md` 갱신 후 Python 일회성 스크립트로 전체 frontmatter, broken wikilink, 관련 노트 수, 고아 페이지, core 노트 index 등록 여부를 재점검
 - 결과: 오류 0개, 경고 0개, 고아 페이지 0개
 - 조치: `AI 네이티브 엔지니어링 조직`의 core 승격 조건을 명시적 증거 목록으로 바꾸고, 후속 ingest 우선순위를 index에 구조화했다.
+
+## 2026-05-28 (Sync 5 — raw/wiki 정합성 재확인)
+
+### Audit
+
+- 실행 방식: raw/의 66개 파일명과 wiki/ 전체 노트 본문을 다시 대조하고, broken wikilink / orphan page / raw 미반영 여부를 재점검
+- 결과: raw 미반영 0개, broken wikilink 0개, orphan page 0개
+- 조치: 현재 raw ↔ wiki 매핑은 clean 상태로 확인됨
