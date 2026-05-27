@@ -14,7 +14,7 @@ sources:
  - raw/AI로_만든_제품이_안_팔리는_이유.md
  - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-28
 ---
 
 # AI Slop

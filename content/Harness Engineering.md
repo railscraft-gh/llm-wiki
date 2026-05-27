@@ -20,7 +20,7 @@ sources:
   - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-26
+updated: 2026-05-28
 ---
 
 # Harness Engineering
