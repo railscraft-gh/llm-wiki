@@ -47,6 +47,8 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
 
 `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 이 층위의 기본기를 보여 준다. [[Claude Code 세션 운영 명령어]]처럼 `/init`, `/compact`, `!`, `/review`, `/doctor`를 세션 상태 관리 명령으로 이해하면, Claude Code는 단순 채팅창이 아니라 작업 환경 전체를 조율하는 인터페이스가 된다.
 
+메시징 서버 스트레스 테스트 노하우도 같은 패턴이다. `/deploy-target`, `/deploy-stress`, `/run-stress`, `/render-dashboard`, `/make-report`처럼 반복 작업을 명령 단위로 묶고, subagent와 background task로 분리하면 Claude Code가 배포·측정·리포트 흐름을 오케스트레이션하는 역할을 할 수 있다.
+
 ## 예시
 
 - 장애 대응: Sentry 에러 확인 -> 로그 분석 -> GitHub 이슈 생성 -> 수정 브랜치 작성 -> 테스트 실행
