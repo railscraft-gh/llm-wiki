@@ -526,7 +526,7 @@
 - 1차 결과: 오류 3개
 - 오류 1: [[Andrew Ng 4 에이전틱 디자인 패턴]]의 `type: pattern`이 허용값 밖이어서 `type: concept`으로 정정
 - 오류 2: [[Claude.md 운영 원칙]]의 예시 문자열 `wikilinks`가 broken wikilink로 잡혀 plain text 설명으로 수정
-- 오류 3: [[Obsidian vault용 Slash Command 운영]]의 예시 문자열 `[[wikilinks]]`가 broken wikilink로 잡혀 plain text 설명으로 수정
+- 오류 3: [[Obsidian vault용 Slash Command 운영]]의 예시 문자열 `wikilinks`가 broken wikilink로 잡혀 plain text 설명으로 수정
 - 재실행 결과: 오류 0개, 경고 0개, 고아 페이지 0개, 30일 이상 미갱신 핵심 노트 0개
 - 조치: lint 중 수정된 노트의 내용과 메타데이터를 즉시 보정하고 재검증까지 완료함
 
