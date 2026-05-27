@@ -31,6 +31,10 @@
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 신규 note 1개를 생성하고 허브 2개를 보강했음
 
+## 2026-05-26
+
+### Ingest
+
 - 입력: `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`
 - 생성: [[Agent Harness]]
 - 수정: [[Harness Engineering]], [[Claude.md 운영 원칙]], [[AI 코딩 에이전트 검증 전략]], [[Meta-Harness]], [[에이전트 코딩 4원칙]]
