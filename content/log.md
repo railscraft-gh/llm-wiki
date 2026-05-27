@@ -1,28 +1,35 @@
 # LLM Wiki Log
 
-## 2026-05-26
+## 2026-05-28
 
 ### Ingest
 
-- 입력: `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md`
-- 생성: [[Context Engineering]], [[에이전트 확장 3계층]]
-- 수정: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
+- 입력: `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md`
+- 생성: [[AI 하네스 최소화]]
+- 수정: [[Harness Engineering]], [[AI Slop]]
 - index 업데이트: 완료
-- 남은 검토: `[[에이전트 확장 3계층]]`은 제품별 Skill/MCP/tool 경계와 token 비용이 빠르게 바뀌는 영역이라 `needs-review`로 시작. `[[Context Engineering]]`은 raw 한 편 기준의 개념 정리이므로 추가 사례 raw가 쌓이면 [[Harness Engineering]]과의 경계 설명을 더 보강할 수 있음.
+- 남은 검토: `[[AI 하네스 최소화]]`는 단일 X thread 기반 주장이라 하네스 설계 원칙으로는 유효하지만, 숫자(4 skills, 4 agents)와 구체 조합은 추가 사례가 더 필요함.
 
 ### 결정 기록
 
 - 결정: 신규 생성
-- 대상: [[Context Engineering]]
-- 근거: 기존 wiki에는 하네스 전체나 context window 절약 도구는 있었지만, 단계 사이 handoff 실패를 독립 개념으로 설명하는 노트가 없었음. prompt 최적화와 상태 계약 설계를 구분하는 허브 노트가 필요했음.
-
-- 결정: 신규 생성
-- 대상: [[에이전트 확장 3계층]]
-- 근거: 기존 노트들에 Skill, MCP, built-in tool 사례는 흩어져 있었지만 "어떤 층을 언제 써야 하는가"를 판단하는 공통 프레임이 없었음. OpenCode, Claude Code 오케스트레이션, Context Mode를 읽을 때의 분류 기준으로 재사용 가치가 높음.
+- 대상: [[AI 하네스 최소화]]
+- 근거: 원문은 "비대한 harness를 줄이고 실제로 쓰는 4개 workflow만 남긴다"는 재사용 가능한 운영 원칙을 제시했다. 기존 [[Harness Engineering]]의 상위 개념을 실제 workflow 단위로 축약한 note가 필요했음.
 
 - 결정: 보강
-- 대상: [[Harness Engineering]], [[Context Mode]], [[OpenCode]], [[Claude Code 오케스트레이션]], [[Agent Native Infrastructure]]
-- 근거: 두 raw는 완전히 새로운 도구보다 기존 허브 노트의 경계를 또렷하게 만드는 역할이 큼. 새 주장 추가보다 cross-link와 한 문단 보강이 적절했음.
+- 대상: [[Harness Engineering]], [[AI Slop]]
+- 근거: 새 raw는 하네스 설계의 핵심을 "더 많은 스킬"이 아니라 "더 적은 수의 반복 가능한 루프"로 요약한다. [[Harness Engineering]]과 [[AI Slop]]에 이 관점을 연결해 허브를 더 선명하게 만들었음.
+
+### Lint
+
+- 실행 방식: 수동 점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 note 1개를 생성하고 허브 2개를 보강했음
 
 - 입력: `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`
 - 생성: [[Agent Harness]]
