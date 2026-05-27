@@ -113,6 +113,7 @@
 | [[Loop와 Routines]] | "코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 1인 영상 발언으로 외부 검증이 부족하다. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 재검토 |
 | [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준이며 3개 도메인 실험은 후속 재현 자료가 더 필요하다. | 후속 실험 자료 ingest 시 evergreen 검토 |
 | [[Neural Computer]] | 전망 성격이 강해 추가 출처가 필요하다. | 관련 카파시 원문 또는 후속 자료 검증 |
+| [[AI 하네스 최소화]] | 단일 X thread에서 나온 4 skills / 4 agents 주장이라 범용화 전 추가 사례 검증이 필요하다. | 후속 harness workflow 사례 ingest 시 재검토 |
 | [[Ralph Loop]] | context 50% 기준, 100개 이상 headless 세션, 사람 개입 0%는 영상 데모 주장이다. | 실제 repo 적용 시 실패율, 충돌률, review 비용 검증 |
 | [[매퍼코 3스킬 워크플로우]] | 정확한 영문 명칭과 워크플로우 단계 시간은 검증 대기다. | 실제 적용 사례 ingest 시 evergreen 검토 |
 | [[생성형 AI 면접 평가 축]] | 2026년 시점 질문 분포와 평가 축 정리라 채용 시장 변화 영향을 크게 받는다. | 후속 채용 자료 ingest 시 재검토 |
