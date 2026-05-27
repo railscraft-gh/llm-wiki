@@ -133,6 +133,12 @@
 | [[Agentic 패턴 진화]] | KV-cache 비용, Copilot 점유율, Manus 사례 등 일부 숫자는 시점 의존적이다. | 모델/벤치마크/가격 변동 시 보강 |
 | [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
 
+## 현재 점검 상태
+
+- raw/ 66개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 현재 상태 분포는 evergreen 52개, needs-review 24개, draft 0개다.
+- broken wikilink와 orphan page는 0개로 확인됐다.
+
 ## 후속 ingest 대기 묶음
 
 | 묶음 | 대상 노트 | 필요한 raw 유형 | 목표 |
