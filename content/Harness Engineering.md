@@ -64,7 +64,7 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 
 `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 이 환경 설계를 더 운영체제 비유로 풀어낸다. context window는 RAM, external database는 disk, tools는 device driver, harness는 operating system처럼 작동한다. 실무적으로는 [[Agent Harness]]라는 실행 표면에서 orchestration loop, tool layer, memory, context compaction, prompt builder, output parsing이 함께 묶여 돌아간다.
 
-`raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md`는 이 하네스 관점을 더 날카롭게 축약한다. 기능을 무작정 늘리기보다, deep interview / pre-mortem / parallel implementation / verification loop처럼 실제로 자주 쓰는 workflow만 남기고 나머지는 줄여야 한다는 주장이다. 즉 하네스 엔지니어링의 목표는 "더 많은 스킬"이 아니라 "더 적은 수의 반복 가능한 루프"로 수렴할 수 있다.
+`raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md`는 이 하네스 관점을 도메인 운영에 적용한 사례다. 반복적인 배포, 대시보드 캡처, 리포트 생성, subagent 병렬 수집을 명령 단위로 묶고, 성공/실패/검증 기준을 명시해야 AI가 그럴듯하지만 틀린 리포트를 만들지 않는다.
 
 **하네스는 rippable해야 한다.** Fowler/Böckeler가 강조한 원칙으로, 모델이 한 세대 좋아지면 하네스의 "smart" 로직 중 일부는 불필요해진다. Claude 5.0이 나오면 4.5용으로 만든 에러 복구 로직 다수가 부채가 될 수 있다. 하네스 설계의 기술은 "무엇을 만들 것인가"만큼 "무엇을 쉽게 제거할 수 있게 만들 것인가"에 있다. [[Agentic 패턴 진화]] 관점에서 하네스는 컨텍스트와 프롬프트를 포함(subsume)하므로, 좋은 하네스는 여전히 좋은 컨텍스트를 요구한다.
 
@@ -103,5 +103,6 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[Context Engineering]]
 - [[Agent Harness]]
 - [[AI 하네스 최소화]]
+- [[메시징 서버 스트레스 테스트 운영 원칙]]
 - [[AI 산출물 포맷 결정 트리]]
 
