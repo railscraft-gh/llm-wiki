@@ -20,7 +20,7 @@ sources:
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
 created: 2026-05-06
-updated: 2026-05-26
+updated: 2026-05-28
 ---
 
 # Claude Code 오케스트레이션

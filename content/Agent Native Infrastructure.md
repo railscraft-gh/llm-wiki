@@ -23,7 +23,7 @@ sources:
  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
-updated: 2026-05-26
+updated: 2026-05-28
 ---
 
 # Agent Native Infrastructure
