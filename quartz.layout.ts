@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/railscraft-gh/quartz",
-	RSS: "https://railscraft-gh.github.io/llm-wiki/index.html",
+      RSS: "https://railscraft-gh.github.io/llm-wiki/index.html",
       "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
