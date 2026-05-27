@@ -35,7 +35,7 @@
 
 - 입력: `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`, `raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md`
 - 생성: [[Hermes Agent Google Workspace 연결]], [[메시징 서버 스트레스 테스트 운영 원칙]]
-- 수정: `없음`
+- 수정: [[Agent Native Infrastructure]], [[Claude Code 오케스트레이션]], [[Harness Engineering]]
 - index 업데이트: 완료
 - 남은 검토: [[Hermes Agent Google Workspace 연결]]은 Hermes setup script와 Google OAuth scope에 종속되는 실무 절차라 경로/스코프 변경 시 재검토 필요. [[메시징 서버 스트레스 테스트 운영 원칙]]은 메시징 도메인 예시와 수치가 포함된 운영 노트라 후속 도메인 사례가 더 쌓이면 evergreen 유지 여부를 다시 판단할 수 있음.
 
