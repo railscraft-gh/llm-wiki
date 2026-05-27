@@ -7051,3 +7051,26 @@ After doing this, you may fix the identity used for this commit with:
 [2026-05-28 08:05:59] 배포 시작
 [2026-05-28 08:05:59] wiki 동기화 완료
 [2026-05-28 08:05:59] 출처 섹션 제거 완료
+[v4 0b71778] Auto-deploy: sync wiki content 2026-05-28 08:05
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 147 insertions(+)
+ create mode 100644 "content/Hermes Agent Google Workspace \354\227\260\352\262\260.md"
+ create mode 100644 "content/\353\251\224\354\213\234\354\247\225 \354\204\234\353\262\204 \354\212\244\355\212\270\353\240\210\354\212\244 \355\205\214\354\212\244\355\212\270 \354\232\264\354\230\201 \354\233\220\354\271\231.md"
+[2026-05-28 08:06:02] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-05-28 08:06:02] symlink 복원 완료
+---
+[2026-05-28 08:06:20] 배포 시작
+[2026-05-28 08:06:20] wiki 동기화 완료
+[2026-05-28 08:06:20] 출처 섹션 제거 완료

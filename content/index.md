@@ -32,6 +32,7 @@
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
 | 2026-05-28 | `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md` | [[AI 하네스 최소화]] (신규), [[Harness Engineering]] (보강), [[AI Slop]] (보강) | done | [[log#2026-05-28]] |
+| 2026-05-28 | `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`, `raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md` | [[Hermes Agent Google Workspace 연결]] (신규), [[메시징 서버 스트레스 테스트 운영 원칙]] (신규), [[Agent Native Infrastructure]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Harness Engineering]] (보강) | done | [[log#2026-05-28]] |
 | 2026-05-26 | `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md` | [[Agent Harness]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Meta-Harness]] (보강), [[에이전트 코딩 4원칙]] (보강) | done | [[log#2026-05-26]] |
 
 | 2026-05-26 | `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md` | [[디자인 에이전트 5종]], [[DESIGN.md 운영 원칙]] (보강), [[AI 시대 디자인 시스템]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
