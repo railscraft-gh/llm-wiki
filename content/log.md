@@ -1,5 +1,38 @@
 # LLM Wiki Log
 
+## 2026-05-29
+
+### Ingest
+
+- 입력: `raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md`, `raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md`, `raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md`, `raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md`, `raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md`
+- 생성: [[AI를 UX에 쓰는 법]], [[RAG 아키텍처 선택]], [[전략적 사고]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: [[AI를 UX에 쓰는 법]]은 UX workflow note로 안정적이지만, 후속 UX 사례가 더 쌓이면 `AI Experience Architect`와의 경계가 더 선명해질 수 있음. [[RAG 아키텍처 선택]]은 retrieval architecture 용어가 빨리 변하므로 실제 제품 선택 시 최신 구현을 다시 확인해야 함. [[전략적 사고]]는 일반 leadership note라 AI/agent 맥락이 더 쌓이면 역할 정의를 좁힐 수 있음.
+
+### Ingest
+
+- 입력: `raw/AI와 디자인 시스템 - 출판형 다듬기.md`, `raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md`, `raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md`, `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`, `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/cc101_axwith_ko.html`
+- 생성: 없음
+- 수정: [[AI 시대 디자인 시스템]], [[Harness Engineering]], [[Agent Harness]], [[AI 오픈소스 작업대]]
+- 기존 반영: [[Context Engineering]], [[에이전트 확장 3계층]], [[AI 에이전트 런타임 역할 맵]]
+- index 업데이트: 완료
+- 남은 검토: `raw/cc101_axwith_ko.html`은 `raw/cc101_axwith_ko.md`의 HTML mirror라 새 노트 없이 중복 원문으로 처리했다. `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`는 [[Context Engineering]]으로 흡수되어 새 노트가 필요하지 않았다.
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[AI를 UX에 쓰는 법]], [[RAG 아키텍처 선택]], [[전략적 사고]]
+- 근거: 세 raw 묶음은 각각 UX workflow, retrieval architecture, leadership judgment라는 서로 다른 중심 질문에 답한다. 기존 허브에 억지로 밀어 넣기보다 별도 evergreen note로 분리하는 편이 재사용성이 높았음.
+
+- 결정: 보강
+- 대상: [[AI 시대 디자인 시스템]], [[Harness Engineering]], [[Agent Harness]], [[AI 오픈소스 작업대]]
+- 근거: 새 raw들은 기존 허브의 빈칸을 메우는 보강 자료였다. 디자인 시스템은 AI-friendly foundation, harness는 memory/compaction ownership, open-source 작업대는 반복되는 작업 표면이라는 관점을 더 명확히 했다.
+
+- 결정: 중복 raw
+- 대상: `raw/cc101_axwith_ko.html`
+- 근거: 기존 `raw/cc101_axwith_ko.md`의 HTML mirror라 새로운 지식이 아니라 같은 CC101 guide의 렌더링 변주로 처리했다.
+
 ## 2026-05-28
 
 ### Ingest
