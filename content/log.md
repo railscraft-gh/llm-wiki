@@ -19,10 +19,18 @@
 - index 업데이트: 완료
 - 남은 검토: `raw/cc101_axwith_ko.html`은 `raw/cc101_axwith_ko.md`의 HTML mirror라 새 노트 없이 중복 원문으로 처리했다. `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`는 [[Context Engineering]]으로 흡수되어 새 노트가 필요하지 않았다.
 
+### Ingest
+
+- 입력: `raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md`, `raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md`
+- 생성: [[주의력 회복]], [[AI 디자인 팀 운영]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: [[주의력 회복]]은 개인 회복과 환경 설계의 교훈으로 안정적이지만, 후속 생산성/주의력 자료가 쌓이면 AI 작업 맥락과의 연결을 더 좁힐 수 있음. [[AI 디자인 팀 운영]]은 [[AI 시대 디자인 시스템]]과 [[AI 디자인 역할 맵]]의 중간층으로 유지하되, 실제 디자인 조직 사례가 늘면 workflow note로 더 세분화할 수 있음.
+
 ### 결정 기록
 
 - 결정: 신규 생성
-- 대상: [[AI를 UX에 쓰는 법]], [[RAG 아키텍처 선택]], [[전략적 사고]]
+- 대상: [[AI를 UX에 쓰는 법]], [[RAG 아키텍처 선택]], [[전략적 사고]], [[주의력 회복]], [[AI 디자인 팀 운영]]
 - 근거: 세 raw 묶음은 각각 UX workflow, retrieval architecture, leadership judgment라는 서로 다른 중심 질문에 답한다. 기존 허브에 억지로 밀어 넣기보다 별도 evergreen note로 분리하는 편이 재사용성이 높았음.
 
 - 결정: 보강
