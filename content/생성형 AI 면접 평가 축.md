@@ -49,6 +49,7 @@ updated: 2026-05-26
 - [[AI 네이티브 사용자]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Context Engineering]]
+- [[RAG 아키텍처 선택]]
 - [[Agent Harness]]
 - [[Competence Debt]]
 

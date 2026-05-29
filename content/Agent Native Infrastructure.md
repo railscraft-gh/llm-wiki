@@ -94,4 +94,5 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 - [[LLM Wiki 구현 선택지]]
 - [[온디바이스 TTS]]
 - [[AI 에이전트 런타임 역할 맵]]
+- [[Hermes Agent Google Workspace 연결]]
 
