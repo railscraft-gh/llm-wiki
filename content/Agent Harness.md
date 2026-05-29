@@ -15,7 +15,7 @@ sources:
   - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
   - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 # Agent Harness

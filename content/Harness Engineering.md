@@ -22,7 +22,7 @@ sources:
   - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 # Harness Engineering

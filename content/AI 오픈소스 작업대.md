@@ -16,7 +16,7 @@ sources:
   - raw/The Complete (Honest) Guide to OpenClaw.md
   - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 # AI 오픈소스 작업대
