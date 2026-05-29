@@ -41,6 +41,16 @@
 - 대상: `raw/cc101_axwith_ko.html`
 - 근거: 기존 `raw/cc101_axwith_ko.md`의 HTML mirror라 새로운 지식이 아니라 같은 CC101 guide의 렌더링 변주로 처리했다.
 
+### Lint
+
+- 실행 방식: Python 일회성 스크립트로 `raw/` 78개 파일이 `wiki/index.md`/`wiki/log.md`에 모두 반영됐는지 재검증하고, `wiki/*.md`의 broken wikilink, related note 수, source 누락, orphan page를 점검
+- 깨진 wikilink: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 출처 누락: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 core 노트: 0개
+- 조치: 2026-05-29 ingest 분량을 index/log에 반영하고, 새 note와 hub 보강을 함께 완료했음
+
 ## 2026-05-28
 
 ### Ingest
