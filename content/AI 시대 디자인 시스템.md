@@ -21,7 +21,7 @@ sources:
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 # AI 시대 디자인 시스템
