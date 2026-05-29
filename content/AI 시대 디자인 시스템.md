@@ -17,6 +17,7 @@ sources:
  - raw/Good Design Doesn’t Happen By Default.md
  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
+  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
@@ -51,6 +52,8 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 `raw/Good Design Doesn’t Happen By Default.md`는 이 논리를 더 미시적으로 설명한다. 좋은 제품 감각은 취향보다도 spacing, typography, interaction pattern, component behavior의 기본값을 명시해 둔 결과라는 것이다. 즉 디자인 시스템은 component gallery 이전에 [[디자인 시스템 기본값]]을 고정하는 보이지 않는 아키텍처다.
 
 `raw/The most important Design System in 2026 that designers missed was built by a developer..md`는 한 걸음 더 나아가, 많은 AI 생성 UI가 이미 [[shadcn-ui]] 형태로 수렴하고 있다고 본다. 이제 질문은 디자인 시스템이 필요한가가 아니라, AI가 가져오는 기본 foundation을 어디까지 받아들이고 어디를 override할 것인가에 가깝다.
+
+`raw/AI와 디자인 시스템 - 출판형 다듬기.md`는 이 논리를 Claude Code와 Figma의 접점으로 옮겨 놓는다. 새 시스템을 처음부터 만들기보다, 기존 design system을 AI가 읽기 쉬운 형태로 정리하고, limited component control보다 프로덕션용 foundation을 유지하는 쪽이 낫다는 점을 다시 확인시킨다.
 
 역할 면에서도 변화가 있다. `raw/From faster pencil to AI Experience Architect. a designer’s path.md`는 디자이너가 더 빠른 Figma 작업자에 머무르지 않고 [[AI Experience Architect]]처럼 workflow, 권한, fallback, review gate까지 설계하는 방향으로 이동한다고 설명한다. 이를 한 장으로 정리한 운영 프레임이 [[AI 디자인 역할 맵]]이다.
 
