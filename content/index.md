@@ -31,6 +31,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-05-29 | `raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md`, `raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md` | [[주의력 회복]] (신규), [[AI 디자인 팀 운영]] (신규) | done | [[log#2026-05-29]] |
 | 2026-05-29 | `raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md`, `raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md`, `raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md`, `raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md`, `raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md` | [[AI를 UX에 쓰는 법]] (신규), [[RAG 아키텍처 선택]] (신규), [[전략적 사고]] (신규) | done | [[log#2026-05-29]] |
 | 2026-05-29 | `raw/AI와 디자인 시스템 - 출판형 다듬기.md`, `raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md`, `raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md`, `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`, `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`, `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md`, `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`, `raw/cc101_axwith_ko.html` | [[AI 시대 디자인 시스템]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[AI 오픈소스 작업대]] (보강), [[Context Engineering]] (보강), [[에이전트 확장 3계층]] (보강), [[AI 에이전트 런타임 역할 맵]] (보강), `raw/cc101_axwith_ko.html`은 `raw/cc101_axwith_ko.md`의 HTML 중복본 | done | [[log#2026-05-29]] |
 | 2026-05-28 | `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md` | [[AI 하네스 최소화]] (신규), [[Harness Engineering]] (보강), [[AI Slop]] (보강) | done | [[log#2026-05-28]] |
@@ -138,7 +139,7 @@
 ## 현재 점검 상태
 
 - raw/ 78개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 55개, needs-review 24개, draft 0개다.
+- 현재 상태 분포는 evergreen 57개, needs-review 24개, draft 0개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
 - `status: needs-review` 노트 24개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
