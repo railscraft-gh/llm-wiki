@@ -19,6 +19,7 @@ sources:
   - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
   - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
   - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-05-28
@@ -65,6 +66,8 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 이 환경 설계를 더 운영체제 비유로 풀어낸다. context window는 RAM, external database는 disk, tools는 device driver, harness는 operating system처럼 작동한다. 실무적으로는 [[Agent Harness]]라는 실행 표면에서 orchestration loop, tool layer, memory, context compaction, prompt builder, output parsing이 함께 묶여 돌아간다.
 
 `raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md`는 이 하네스 관점을 도메인 운영에 적용한 사례다. 반복적인 배포, 대시보드 캡처, 리포트 생성, subagent 병렬 수집을 명령 단위로 묶고, 성공/실패/검증 기준을 명시해야 AI가 그럴듯하지만 틀린 리포트를 만들지 않는다.
+
+`raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md`는 하네스 소유권을 "한 번 세팅한 규칙"이 아니라 compaction과 memory ownership의 문제로 끌고 온다. 세션이 길어질수록 무엇을 기억에 남기고 무엇을 버릴지 통제해야 하며, 이 선택이 곧 agent infrastructure의 품질이 된다.
 
 `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md`는 이 하네스 관점을 더 날카롭게 축약한다. 기능을 무작정 늘리기보다, deep interview / pre-mortem / parallel implementation / verification loop처럼 실제로 자주 쓰는 workflow만 남기고 나머지는 줄여야 한다는 주장이다. 즉 하네스 엔지니어링의 목표는 "더 많은 스킬"이 아니라 "더 적은 수의 반복 가능한 루프"로 수렴할 수 있다.
 
