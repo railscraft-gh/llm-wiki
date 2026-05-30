@@ -50,6 +50,11 @@
 - 대상: `wiki/index.md`의 `## 점검 대기`
 - 조치: [[RuboCop]]를 도구·spec 업데이트 표에서 제거해 현재 `needs-review` 집합과 인덱스 표를 일치시킴
 
+### 상태 승격
+
+- 대상: [[Quartz로 Obsidian Wiki 배포하기]]
+- 근거: Quartz의 Node 버전과 hosting 세부는 변하지만, 이 노트의 핵심은 `wiki/`를 정적 사이트로 배포하는 절차와 Obsidian 호환성 유지라는 안정적인 workflow다. 버전 주의 사항은 충돌 섹션에 남기고 status를 evergreen으로 승격했다.
+
 ## 2026-05-29
 
 ### Ingest
