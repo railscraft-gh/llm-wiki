@@ -148,7 +148,7 @@
 | 묶음 | 대상 노트 | 필요한 raw 유형 | 목표 |
 | --- | --- | --- | --- |
 | 조직 운영 검증 | [[AI 네이티브 엔지니어링 조직]], [[Loop와 Routines]], [[Ralph Loop]], [[제품 오버행]] | 비 Anthropic 조직 사례, 실패 사례, 운영 지표, 검증/승인 구조 자료 | 조직/자동화 주장 검증 및 core 재판단 |
-| 도구·spec 업데이트 | [[Context Mode]], [[GStack]], [[Graphify]], [[OpenAgent Team Mode]], [[OpenCode]], [[Pi Coding Agent]], [[RuboCop]], [[shadcn-ui]], [[OpenClaw]], [[Quartz로 Obsidian Wiki 배포하기]], [[온디바이스 TTS]] | 공식 docs, release note, README, 설치/배포 가이드 | 버전 변동 흡수 및 needs-review 유지/해제 판단 |
+| 도구·spec 업데이트 | [[Context Mode]], [[GStack]], [[Graphify]], [[OpenAgent Team Mode]], [[OpenCode]], [[Pi Coding Agent]], [[shadcn-ui]], [[OpenClaw]], [[Quartz로 Obsidian Wiki 배포하기]], [[온디바이스 TTS]] | 공식 docs, release note, README, 설치/배포 가이드 | 버전 변동 흡수 및 needs-review 유지/해제 판단 |
 | 보안·비밀관리 | [[Infisical 도입 전략]], [[Infisical 헤드리스 인증]], [[API Key 관리 원칙]] | pricing/license 변경, auth 권장 방식, 실제 운영 사고/대응 사례 | 도구 노트 최신화와 보안 체크리스트 보강 |
 | 연구·전망 검증 | [[Meta-Harness]], [[Neural Computer]], [[생성형 AI 면접 평가 축]], [[강한 모델로 덜 헤매기]] | 후속 논문, 재현 자료, 시장/모델 업데이트, 채용 자료 | 단일 출처/시점 의존 주장 보강 |
 | 디자인 작업 체계 | [[디자인 시스템 기본값]], [[AI 기본값 수용과 오버라이드 전략]], [[AI Experience Architect]] | 추가 디자인 조직 사례, 운영 문서 예시, override/approval 사례 | design core 축 보강 및 상위 허브 안정화 |
