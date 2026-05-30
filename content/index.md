@@ -86,7 +86,6 @@
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 core 검토 여부 재판단 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
-| [[Loop와 Routines]] | cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
 
 
 ## 점검 대기
@@ -112,7 +111,6 @@
 
 | 항목 | 사유 | 처리 방향 |
 | --- | --- | --- |
-| [[Loop와 Routines]] | "코드베이스 100% 자동 작성", "하루 150개 PR", "수천 에이전트 야간 운영"은 1인 영상 발언으로 외부 검증이 부족하다. | Anthropic 외부 사례 또는 공식 도구 문서 ingest 시 재검토 |
 | [[Meta-Harness]] | Stanford/MIT/KRAFTON 공동 연구의 단일 논문 기준이며 3개 도메인 실험은 후속 재현 자료가 더 필요하다. | 후속 실험 자료 ingest 시 evergreen 검토 |
 | [[Neural Computer]] | 전망 성격이 강해 추가 출처가 필요하다. | 관련 카파시 원문 또는 후속 자료 검증 |
 | [[AI 하네스 최소화]] | 단일 X thread에서 나온 4 skills / 4 agents 주장이라 범용화 전 추가 사례 검증이 필요하다. | 후속 harness workflow 사례 ingest 시 재검토 |
