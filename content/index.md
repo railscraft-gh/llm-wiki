@@ -85,7 +85,6 @@
 | --- | --- | --- |
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 core 검토 여부 재판단 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
-| [[Quartz로 Obsidian Wiki 배포하기]] | vault 운영과 웹 배포를 연결하는 반복 workflow다. | 실제 배포 repo 구조 확정 후 evergreen 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
 | [[Loop와 Routines]] | cron 기반 자동화 운영이 [[Ralph Loop]], [[Claude Code 오케스트레이션]]과 연결된다. | 실제 운영 사례 추가 ingest 후 evergreen 검토 |
 
@@ -105,7 +104,6 @@
 | [[OpenClaw]] | 활성 사용자 수, 배포 비율, 보안 advisories는 빠르게 바뀌며 실제 권한 모델 검증이 필요하다. | 도입 전 공식 docs·release note·security advisory 재확인 |
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
 | [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |
-| [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
 | [[바선생]] | Claude Code 대화 분석 도구의 6대 차원 가중치와 게이트 조건은 raw 시점 기준이다. | 공식 README 업데이트 시 재검토 |
 | [[온디바이스 TTS]] | 모델 스펙, benchmark, 라이선스와 배포 가이드는 빠르게 변동한다. | 도입 전 공식 모델 카드/README 재확인 |
