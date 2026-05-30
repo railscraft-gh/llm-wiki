@@ -65,6 +65,11 @@
 - 대상: [[Hermes Agent Google Workspace 연결]]
 - 근거: Google Workspace 연결은 OAuth scope, 토큰, setup script 같은 구현 세부는 바뀔 수 있지만, 핵심은 에이전트가 외부 서비스에 권한 기반으로 연결되는 안정적인 workflow다. setup 상태 확인과 partial auth 점검을 포함한 절차 자체는 재사용 가능하므로 evergreen으로 승격했다.
 
+### 상태 승격
+
+- 대상: [[Loop와 Routines]]
+- 근거: 개별 숫자와 데모 수치는 검증이 더 필요하지만, cron 기반 반복 루프와 서버 상주 routines라는 운영 프레임은 재사용 가능하다. 과장된 운영 주장만 충돌 섹션에 남기고, 핵심 개념은 evergreen으로 유지했다.
+
 ## 2026-05-29
 
 ### Ingest
