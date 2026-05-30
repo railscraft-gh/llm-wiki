@@ -106,7 +106,6 @@
 | [[OpenCode]] | agent, skill, MCP, provider 설정이 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 OpenCode docs 확인 |
 | [[Pi Coding Agent]] | 설치 패키지명, provider, extension/package API가 빠르게 바뀌는 도구 문서다. | 실사용 전 공식 Pi docs 확인 |
 | [[Quartz로 Obsidian Wiki 배포하기]] | Quartz Node 요구사항, hosting workflow, GitHub Pages 설정은 버전 영향을 받는다. | 배포 전 공식 Quartz docs와 실제 branch 확인 |
-| [[RuboCop]] | Ruby 생태계 표준 도구이지만 cop 이름/플래그가 메이저 버전마다 변동된다. | 메이저 RuboCop 릴리스 시 needs-review |
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
 | [[바선생]] | Claude Code 대화 분석 도구의 6대 차원 가중치와 게이트 조건은 raw 시점 기준이다. | 공식 README 업데이트 시 재검토 |
 | [[온디바이스 TTS]] | 모델 스펙, benchmark, 라이선스와 배포 가이드는 빠르게 변동한다. | 도입 전 공식 모델 카드/README 재확인 |

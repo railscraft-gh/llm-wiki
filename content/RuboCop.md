@@ -1,6 +1,6 @@
 ---
 type: tool
-status: needs-review
+status: evergreen
 core: false
 tags:
   - ruby
@@ -20,7 +20,7 @@ updated: 2026-05-13
 
 ## 한 줄 정의
 
-RuboCop은 Ruby 생태계의 사실상 표준 정적 코드 분석기 겸 포매터로, 580개가 넘는 Cop으로 스타일·레이아웃·잠재적 버그·보안 취약점·복잡도를 검사하고 자동 수정한다.
+RuboCop은 Ruby 생태계에서 널리 쓰이는 정적 코드 분석기 겸 포매터로, 여러 Cop으로 스타일·레이아웃·잠재적 버그·보안 취약점·복잡도를 검사하고 자동 수정한다.
 
 ## 핵심 요지
 
