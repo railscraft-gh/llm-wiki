@@ -1,6 +1,6 @@
 ---
 type: workflow
-status: needs-review
+status: evergreen
 core: false
 tags:
   - llm

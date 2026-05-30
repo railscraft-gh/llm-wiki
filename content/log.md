@@ -60,6 +60,11 @@
 - 대상: `wiki/index.md`의 `## 승격 후보`, `## 점검 대기`
 - 조치: [[Quartz로 Obsidian Wiki 배포하기]]를 두 표에서 모두 제거해 현재 상태와 인덱스 표를 일치시킴
 
+### 상태 승격
+
+- 대상: [[Hermes Agent Google Workspace 연결]]
+- 근거: Google Workspace 연결은 OAuth scope, 토큰, setup script 같은 구현 세부는 바뀔 수 있지만, 핵심은 에이전트가 외부 서비스에 권한 기반으로 연결되는 안정적인 workflow다. setup 상태 확인과 partial auth 점검을 포함한 절차 자체는 재사용 가능하므로 evergreen으로 승격했다.
+
 ## 2026-05-29
 
 ### Ingest
