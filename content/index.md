@@ -96,7 +96,6 @@
 | --- | --- | --- |
 | [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스·검색·sandbox 명세가 빠르게 변동한다. | 실사용 전 공식 docs 확인 |
 | [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
-| [[Graphify]] | 지식 그래프 도구로 schema와 추출 알고리즘이 빠르게 변동한다. | 실사용 전 공식 README 확인 |
 | [[Infisical 도입 전략]] | 가격과 enterprise 기능 범위가 변동되며 raw와 공식 출처 간 충돌이 있다. | 도입 전 공식 pricing/license 재확인 |
 | [[Infisical 헤드리스 인증]] | Universal Auth와 Service Token 권장 상태가 변동될 수 있다. | 운영 적용 전 공식 Infisical docs 확인 |
 | [[OpenAgent Team Mode]] | opencode 재시작 요구와 tmux_visualization 옵션이 버전 영향 받는다. | 실사용 후 evergreen 검토 |
@@ -134,9 +133,9 @@
 ## 현재 점검 상태
 
 - raw/ 83개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 68개, needs-review 19개, draft 0개다.
+- 현재 상태 분포는 evergreen 69개, needs-review 18개, draft 0개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
-- `status: needs-review` 노트 19개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
+- `status: needs-review` 노트 18개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
 ## 후속 ingest 대기 묶음
 

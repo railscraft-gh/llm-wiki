@@ -1,6 +1,6 @@
 ---
 type: tool
-status: needs-review
+status: evergreen
 core: false
 tags:
   - ai-coding
