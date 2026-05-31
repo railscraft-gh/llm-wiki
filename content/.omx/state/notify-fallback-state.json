@@ -67,12 +67,12 @@
     "last_nudged_at": ""
   },
   "authority_backoff": {
-    "active": true,
-    "reason": "primary_watcher_healthy",
-    "primary_pid": 37695,
-    "primary_last_tick_at": "2026-05-31T05:21:18.007Z",
-    "freshness_ms": 719,
-    "threshold_ms": 1000
+    "active": false,
+    "reason": "",
+    "primary_pid": null,
+    "primary_last_tick_at": "",
+    "freshness_ms": null,
+    "threshold_ms": null
   },
   "adaptive_poll": {
     "enabled": true,
@@ -84,5 +84,7 @@
     "last_activity_at": null,
     "last_activity_reason": "hud_state_incomplete"
   },
-  "last_cycle_activity": "hud_state_incomplete"
+  "stop_reason": "signal",
+  "stop_signal": "SIGTERM",
+  "stopping": true
 }
