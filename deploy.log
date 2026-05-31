@@ -8303,3 +8303,36 @@ After doing this, you may fix the identity used for this commit with:
 [2026-05-31 14:21:15] 배포 시작
 [2026-05-31 14:21:15] wiki 동기화 완료
 [2026-05-31 14:21:15] 출처 섹션 제거 완료
+[v4 0cc5776] Auto-deploy: sync wiki content 2026-05-31 14:21
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 14 files changed, 565 insertions(+)
+ create mode 100644 content/.omx/logs/notify-fallback-2026-05-31.jsonl
+ create mode 100644 content/.omx/logs/omx-2026-05-31.jsonl
+ create mode 100644 content/.omx/metrics.json
+ create mode 100644 content/.omx/state/notify-fallback-authority-owner.json
+ create mode 100644 content/.omx/state/notify-fallback-state.json
+ create mode 100644 content/.omx/state/notify-fallback.pid
+ create mode 100644 content/.omx/state/session.json
+ create mode 100644 content/.omx/state/sessions/omx-1780204874261-5dyeuz/AGENTS.md
+ create mode 100644 content/.omx/state/sessions/omx-1780204874261-5dyeuz/hud-state.json
+ create mode 100644 content/.omx/state/team-leader-nudge.json
+ create mode 100644 content/.omx/state/tmux-extended-keys/private-tmp-tmux-501-default.json
+ create mode 100644 content/.omx/state/update-check.json
+[2026-05-31 14:21:18] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-05-31 14:21:18] symlink 복원 완료
+---
+[2026-05-31 14:21:18] 배포 시작
+[2026-05-31 14:21:18] wiki 동기화 완료
+[2026-05-31 14:21:19] 출처 섹션 제거 완료
