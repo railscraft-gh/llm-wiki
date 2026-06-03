@@ -14,8 +14,9 @@ sources:
   - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
   - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
   - raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-03
 ---
 
 # LLM Wiki 구현 선택지
@@ -33,6 +34,8 @@ LLM Wiki 구현 선택지는 같은 위키 유지 패턴을 app, package, skill,
 ## 상세
 
 세 raw를 함께 보면 LLM Wiki는 하나의 제품이 아니라 여러 구현 수준을 가질 수 있는 패턴으로 읽힌다. 가장 가벼운 형태는 `raw/`, `wiki/`, `AGENTS.md`만으로 돌아가는 유지형 markdown wiki다. 이 수준에서는 Codex나 Claude Code가 wiki maintainer처럼 행동하도록 instruction을 주고, 사람이 source를 넣고 질문하며, agent가 정리와 filing을 맡는다.
+
+`raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`는 그 패턴이 결국 사고의 외부화라는 점을 분명히 한다. wiki의 가치는 저장소 크기가 아니라, 읽고 연결하고 다시 쓰는 동안 생각이 어떻게 바뀌는지에 있다.
 
 좀 더 무거운 형태는 programmatic package다. typed contract, deterministic ID, structured pipeline, batch run, audit trail, markdown processing layer를 붙여 결과 재현성과 자동화를 높인다. corpus가 크고 wiki가 또 다른 시스템의 입력이 될수록 이쪽 이점이 커진다. 가장 무거운 형태는 full app이다. document import, graph, search, clipping, review queue, background ingest job까지 포함해 non-technical user도 다룰 수 있게 만든다.
 
