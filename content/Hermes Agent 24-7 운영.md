@@ -8,6 +8,7 @@ tags:
   - infrastructure
   - security
 aliases:
+  - Hermes Agent 24/7 운영
   - Hermes 24/7 운영
   - Hermes Agent 운영
   - Hermes safe runtime
@@ -18,7 +19,7 @@ created: 2026-06-03
 updated: 2026-06-03
 ---
 
-# Hermes Agent 24/7 운영
+# Hermes Agent 24-7 운영
 
 ## 한 줄 정의
 
