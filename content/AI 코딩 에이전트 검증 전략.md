@@ -23,7 +23,7 @@ sources:
  - raw/andrej-karpathy-skills-CLAUDE-번역.md
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
- - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
   - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/

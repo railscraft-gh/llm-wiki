@@ -17,7 +17,7 @@ sources:
  - raw/Good Design Doesn’t Happen By Default.md
  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
- - raw/The most important Design System in 2026 that designers missed was built by a developer..md
+  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
   - raw/AI와 디자인 시스템 - 출판형 다듬기.md
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
