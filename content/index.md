@@ -95,6 +95,7 @@
 
 | 항목 | 사유 | 처리 방향 |
 | --- | --- | --- |
+| [[Hermes Agent 24/7 운영]] | Hermes runtime, skill, sandbox, curator 조합은 구현 경로가 빠르게 바뀌는 tool note다. | 실제 repo 상태와 최신 문서 확인 |
 | [[Context Mode]] | MCP/sandbox/FTS5 도구로 인덱스·검색·sandbox 명세가 빠르게 변동한다. | 실사용 전 공식 docs 확인 |
 | [[GStack]] | command 목록, host 지원, 설치 방식이 빠르게 바뀌는 tool note다. | 실사용 전 공식 GitHub 저장소 확인 |
 | [[Infisical 도입 전략]] | 가격과 enterprise 기능 범위가 변동되며 raw와 공식 출처 간 충돌이 있다. | 도입 전 공식 pricing/license 재확인 |
