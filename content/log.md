@@ -17,6 +17,10 @@
 - 대상: [[DESIGN.md 운영 원칙]]
 - 근거: 새 raw는 DESIGN.md를 단순한 token dump가 아니라 제품 요약, 제약, do/don't, interview-first skill까지 포함한 운영 문서로 다룰 것을 강조한다. 기존 노트의 시각 기본값 분리 원칙과 직접 맞물려 같은 허브를 더 구체화하는 보강으로 처리했다.
 
+- 결정: 신규 생성
+- 대상: [[Hermes Agent 24/7 운영]], [[늦게 나타나는 지표]]
+- 근거: Hermes 원문 묶음은 24/7 runtime 안전성, sandbox, skills, curator라는 운영 패턴으로 분리하는 편이 재사용성이 높았고, Top 1% 원문은 결과 지표보다 정체성과 선행 지표를 다루는 개념 노트가 더 적합했다.
+
 ### Lint
 
 - 실행 방식: `python3` 스크립트로 `wiki/*.md` 전체의 frontmatter, broken wikilink, orphan page, 새 노트 inbound link를 점검
