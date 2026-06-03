@@ -31,6 +31,12 @@
 - 새 노트 inbound: [[Hermes Agent 24-7 운영]] 3개, [[늦게 나타나는 지표]] 2개
 - 현재 상태 분포: evergreen 70개, needs-review 19개, draft 0개
 - 조치: 새 evergreen concept 1개와 needs-review workflow 1개를 추가하고, 기존 디자인/하네스/위키/오픈소스 허브를 보강함
+
+### 재검증
+
+- 실행 방식: 동일한 Python 점검 스크립트로 재실행
+- 결과: broken wikilink 0개, orphan page 0개
+- 조치: `Hermes Agent 24-7 운영` 제목 정규화와 관련 링크 보정을 반영한 뒤 정합성 확인 완료
 ## 2026-05-31
 
 ### Ingest
