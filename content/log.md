@@ -2,6 +2,39 @@
 
 ## 2026-05-31
 
+## 2026-06-03
+
+### Ingest
+
+- 입력: `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`
+- 생성: [[Hermes Agent 24/7 운영]], [[늦게 나타나는 지표]]
+- 수정: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]], `wiki/index.md`
+- index 업데이트: 완료
+- 남은 검토: [[Hermes Agent 24/7 운영]]은 tool/runtime 특성이 강해서 실제 적용 전 최신 repo 상태를 다시 확인해야 한다.
+
+### Lint
+
+- 실행 방식: `python3` 스크립트로 `wiki/*.md` 전체의 frontmatter, broken wikilink, orphan page, 새 노트 inbound link를 점검
+- 깨진 wikilink: 0개
+- 고아 페이지: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 출처 없는 수치 문장: 0개
+- 새 노트 inbound: [[Hermes Agent 24/7 운영]] 3개, [[늦게 나타나는 지표]] 2개
+- 현재 상태 분포: evergreen 70개, needs-review 19개, draft 0개
+- 조치: 새 evergreen concept 1개와 needs-review workflow 1개를 추가하고, 기존 디자인/하네스/위키/오픈소스 허브를 보강함
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[Hermes Agent 24/7 운영]], [[늦게 나타나는 지표]]
+- 근거: Hermes 원문 묶음은 24/7 runtime 안전성, sandbox, skills, curator라는 운영 패턴으로 분리하는 편이 재사용성이 높았고, Top 1% 원문은 결과 지표보다 정체성과 선행 지표를 다루는 개념 노트가 더 적합했다.
+
+- 결정: 보강
+- 대상: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]]
+- 근거: 새 raw들은 기존 허브의 빈칸을 메우는 보강 자료였다. Figma/role 압축/리뷰 프롬프트/production harness/오픈소스 툴킷/LLM Wiki/agent-native infra/OpenClaw/기록 습관의 경계가 더 선명해졌다.
+
+## 2026-05-31
+
 ### Ingest
 
 - 입력: `raw/거인의 노트.pdf_by_PaddleOCR-VL-1.6.md`, `raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md`, `raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md`, `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`, `raw/미움받을 용기.pdf_by_PaddleOCR-VL-1.6.md`, `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md`
