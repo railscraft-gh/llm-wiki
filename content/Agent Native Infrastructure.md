@@ -21,9 +21,10 @@ sources:
  - raw/arxiv-2603.28052-meta-harness.md
  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+ - raw/The Open-Source Agent Toolkit in 2026-ko.md
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
-updated: 2026-05-28
+updated: 2026-06-03
 ---
 
 # Agent Native Infrastructure
@@ -57,6 +58,8 @@ Hermes Agent의 Google Workspace 연결도 같은 결이다. OAuth client JSON, 
 
 [[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다.
 이 레이어 구분은 [[에이전트 확장 3계층]]으로 다시 읽을 수 있다.
+
+`raw/The Open-Source Agent Toolkit in 2026-ko.md`는 이 레이어 구분을 더 실전적인 선택지로 풀어 준다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 층은 "어떤 도구를 넣을까"가 아니라 "어느 층이 비어 있나"를 먼저 묻게 만든다. 이 관점이 있어야 agent-native 문서, CLI, API, sandbox, 브라우저 제어가 한 묶음으로 보인다.
 
 Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다.
 
