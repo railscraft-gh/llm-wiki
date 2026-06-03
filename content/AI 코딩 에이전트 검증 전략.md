@@ -24,6 +24,7 @@ sources:
  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06
@@ -57,6 +58,8 @@ UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위
 후속 raw는 여기에 responsive behavior, do's and don'ts, component state 같은 더 구체적인 검사 기준을 붙인다. 즉 디자인 검증은 단순히 "예뻐 보이는가"가 아니라, role이 정의된 color, typography hierarchy, spacing scale, component state, mobile behavior가 spec을 벗어났는지 확인하는 일이다.
 
 [[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다.
+
+`raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`는 검증의 범위를 테스트 밖으로 넓힌다. AI는 Context Dump로 세션 맥락을 정리하고, Documentation Generator로 누락된 문서를 채우고, Code Review Partner로 PR를 먼저 검토할 수 있다. 더 나아가 Architecture Advisor, Security Auditor, Performance Profiler, Migration Assistant, Full Codebase Analysis까지 맡기면 AI는 코드 생성기에서 벗어나 사전 감사자와 사전 전환 보조자로 바뀐다.
 
 
 하네스 관점에서 verification loop는 부가 옵션이 아니라 핵심 부품이다. `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 verification을 component 10으로 따로 분리하며, agent에게 자기 결과를 다시 테스트하고 실패를 입력으로 되돌릴 수 있게 할 때 최종 품질이 크게 올라간다고 정리한다. 즉 검증은 프롬프트 문구보다 [[Agent Harness]]의 설계 문제에 더 가깝다.
