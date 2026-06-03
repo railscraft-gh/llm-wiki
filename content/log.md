@@ -4,12 +4,18 @@
 
 ### Ingest
 
-- 입력: `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`
+- 입력: `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`, `raw/How to write a DESIGN.md file Claude can actually use-ko.md`
 - 생성: [[Hermes Agent 24/7 운영]], [[늦게 나타나는 지표]]
-- 수정: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]], `wiki/index.md`
+- 수정: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]], [[DESIGN.md 운영 원칙]], `wiki/index.md`
 - index 업데이트: 완료
-- 남은 검토: [[Hermes Agent 24/7 운영]]은 tool/runtime 특성이 강해서 실제 적용 전 최신 repo 상태를 다시 확인해야 한다.
+- 남은 검토: [[Hermes Agent 24/7 운영]]은 tool/runtime 특성이 강해서 실제 적용 전 최신 repo 상태를 다시 확인해야 한다. [[DESIGN.md 운영 원칙]]은 design.md spec과 lint CLI가 바뀔 수 있어 공식 repo와 다시 대조해야 한다.
 - 후속 정리: [[Hermes Agent 24/7 운영]]에 [[OpenClaw]] 대비를 명시해 runtime 사례와 운영 패턴의 경계를 더 선명하게 구분했다.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[DESIGN.md 운영 원칙]]
+- 근거: 새 raw는 DESIGN.md를 단순한 token dump가 아니라 제품 요약, 제약, do/don't, interview-first skill까지 포함한 운영 문서로 다룰 것을 강조한다. 기존 노트의 시각 기본값 분리 원칙과 직접 맞물려 같은 허브를 더 구체화하는 보강으로 처리했다.
 
 ### Lint
 
