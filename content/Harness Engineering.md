@@ -20,9 +20,10 @@ sources:
   - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
   - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
   - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 # Harness Engineering
@@ -76,6 +77,8 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 **보안 가드레일은 [[Lethal Trifecta]]로 정리한다.** 신뢰 불가 입력 + 민감 시스템 접근 + 상태 변경 세 능력 중 최대 두 개만 동시에 허용한다는 Meta AI의 Rule of Two가 실천 가능한 규칙이다.
 
 [[Context Engineering]]은 하네스의 하위 층으로 볼 수 있다. 하네스가 규칙·도구·검증 전체를 설계한다면, context engineering은 노드 사이 handoff와 routing을 다뤄 "무엇을 보여줄 것인가"를 구체화한다.
+
+`raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`는 이 관점을 production blueprint로 내린다. Map → Identify → Blueprint → Implement → Launch라는 단계, permission matrix, context layering, budget, security eval, launch checklist는 하네스가 단순한 규칙 파일이 아니라 실행 가능한 런타임이라는 점을 다시 보여 준다. 모델이 제안하고 harness가 실행하며, 모든 tool call이 observation으로 돌아와야 한다는 원칙도 여기서 더 선명해진다.
 
 **수치 증거:**
 - LangChain: 동일 모델에서 하네스만 변경 시 Terminal Bench 2.0 52.8% → 66.5%
