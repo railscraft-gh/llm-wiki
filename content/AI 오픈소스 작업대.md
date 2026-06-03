@@ -15,8 +15,10 @@ sources:
   - raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
   - raw/The Complete (Honest) Guide to OpenClaw.md
   - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+  - raw/The Open-Source Agent Toolkit in 2026-ko.md
 created: 2026-05-26
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 # AI 오픈소스 작업대
@@ -37,6 +39,10 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 후속 TTS raw를 보면 이 작업 표면이 텍스트를 넘어 speech layer로도 확장된다. 즉 local runtime과 open-weight 흐름은 코딩·검색·문서 요약뿐 아니라 음성 출력까지 온디바이스화하는 쪽으로 확장되고 있다.
 
 `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`는 같은 지형을 한 번 더 스냅샷처럼 보여 준다. 단일 저장소 소개보다 중요한 것은, local stack, workflow automation, RAG platform, terminal assistant가 여전히 반복되는 작업 표면이라는 점이다.
+
+`raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`는 이 지형을 도구 묶음으로 다시 보여 준다. NocoBase, n8n, Qdrant, Outline, Coolify, OpenHands는 각각 app builder, automation, vector store, knowledge base, deployment, agent runtime이라는 서로 다른 표면을 대표한다. 즉 "오픈소스 작업대"는 하나의 앱이 아니라, 서로 다른 문제를 해결하는 작업 표면들의 묶음이다.
+
+`raw/The Open-Source Agent Toolkit in 2026-ko.md`는 같은 흐름을 stack layer로 재배치한다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 레이어는 어떤 저장소를 먼저 보아야 하는지 결정하는 체크리스트가 된다. 이 노트의 생태계 관찰은 결국 이 레이어 선택 문제로 수렴한다.
 
 이 묶음은 [[Agent Native Infrastructure]]와 이어진다. 클릭 기반 SaaS가 아니라, self-hosted runtime·CLI·workflow builder·RAG platform이 에이전트용 작업 표면을 만든다는 뜻이기 때문이다. 또한 [[에이전트 확장 3계층]] 관점에서 보면 이들 저장소는 Skill/MCP/tool의 구분을 구현체 수준에서 다르게 조합한 사례로 볼 수 있다.
 
