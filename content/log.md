@@ -27,17 +27,6 @@
 - 새 노트 inbound: [[Hermes Agent 24/7 운영]] 3개, [[늦게 나타나는 지표]] 2개
 - 현재 상태 분포: evergreen 70개, needs-review 19개, draft 0개
 - 조치: 새 evergreen concept 1개와 needs-review workflow 1개를 추가하고, 기존 디자인/하네스/위키/오픈소스 허브를 보강함
-
-### 결정 기록
-
-- 결정: 신규 생성
-- 대상: [[Hermes Agent 24/7 운영]], [[늦게 나타나는 지표]]
-- 근거: Hermes 원문 묶음은 24/7 runtime 안전성, sandbox, skills, curator라는 운영 패턴으로 분리하는 편이 재사용성이 높았고, Top 1% 원문은 결과 지표보다 정체성과 선행 지표를 다루는 개념 노트가 더 적합했다.
-
-- 결정: 보강
-- 대상: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]]
-- 근거: 새 raw들은 기존 허브의 빈칸을 메우는 보강 자료였다. Figma/role 압축/리뷰 프롬프트/production harness/오픈소스 툴킷/LLM Wiki/agent-native infra/OpenClaw/기록 습관의 경계가 더 선명해졌다.
-
 ## 2026-05-31
 
 ### Ingest
