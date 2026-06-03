@@ -15,8 +15,10 @@ sources:
   - raw/Good Design Doesn’t Happen By Default.md
   - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
   - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-03
 ---
 
 # AI 디자인 역할 맵
@@ -54,6 +56,10 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 맨 위에는 [[AI Experience Architect]]가 있다. 여기서는 누가 무엇을 승인하는지, AI가 어디까지 결정하는지, 규제·감사·fallback을 어떻게 설계할지, 조직 안에서 어떤 사회적 계약을 둘지를 다룬다. 이 층은 디자인이 아니라 운영처럼 보일 수 있지만, 실제로는 제품 경험의 경계를 정하는 디자인이다.
 
 이 네 층을 한 번에 보지 않으면 흔한 오해가 생긴다. 예를 들어 task agent만 만들고 기본값 층을 비워 두면 산출 속도는 빨라져도 시각 drift가 심해진다. 반대로 DESIGN.md만 잘 써두고 문제 정의 workflow를 설계하지 않으면 보기 좋은 평균 UI만 반복 생성할 수 있다.
+
+`raw/Agentic AI, design systems & Figma. a practical guide-ko.md`는 이 프레임의 가장 아래층을 더 구체화한다. Variables, component property, state, slots, auto layout, Code Connect는 모두 파일 단위에서 맞물려야 한다. 이건 Figma를 "그림 그리는 앱"이 아니라 machine-readable design contract로 쓰는 방법이다.
+
+`raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`는 반대로 상위층의 압력을 보여 준다. 시니어 디자이너가 research, production, system upkeep, communication을 하나의 역할로 떠안는 Four-for-One 압축이 진행될수록, 기본값과 task agent와 architecture를 분리하지 않으면 결국 한 사람이 네 가지 일을 다 떠안게 된다. 이 노트의 목적은 그 압축을 개인의 초과근무가 아니라 운영 계층 설계 문제로 바꾸는 데 있다.
 
 ## 예시
 
