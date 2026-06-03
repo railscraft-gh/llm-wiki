@@ -73,4 +73,5 @@ Hermes를 안전하게 오래 돌릴 수 있으면, 에이전트는 더 이상 "
 - [[OpenClaw]]
 - [[Harness Engineering]]
 - [[Hermes Agent Google Workspace 연결]]
+- [[AI 오픈소스 작업대]]
 
