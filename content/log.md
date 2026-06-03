@@ -9,6 +9,7 @@
 - 수정: [[AI 시대 디자인 시스템]], [[AI 디자인 역할 맵]], [[AI 코딩 에이전트 검증 전략]], [[Harness Engineering]], [[AI 오픈소스 작업대]], [[LLM Wiki 운영 패턴]], [[LLM Wiki 구현 선택지]], [[Agent Native Infrastructure]], [[OpenClaw]], [[기록으로 성장하는 법]], `wiki/index.md`
 - index 업데이트: 완료
 - 남은 검토: [[Hermes Agent 24/7 운영]]은 tool/runtime 특성이 강해서 실제 적용 전 최신 repo 상태를 다시 확인해야 한다.
+- 후속 정리: [[Hermes Agent 24/7 운영]]에 [[OpenClaw]] 대비를 명시해 runtime 사례와 운영 패턴의 경계를 더 선명하게 구분했다.
 
 ### Lint
 
