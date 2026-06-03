@@ -11,8 +11,9 @@ aliases:
   - openclaw
 sources:
   - raw/The Complete (Honest) Guide to OpenClaw.md
+  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-03
 ---
 
 # OpenClaw
@@ -33,6 +34,8 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 원문 기준 OpenClaw는 WhatsApp, Telegram, Slack, Discord 등 50개+ 채널에서 들어온 요청을 하나의 Gateway가 받아 chosen LLM으로 보내고, 다시 tool 실행으로 연결한다. memory는 vector DB보다 markdown file 중심이며, `SOUL.md`가 행동 규칙을, `MEMORY.md`가 장기 맥락을 담당한다. 이 조합은 [[에이전트 확장 3계층]]에서 말하는 tool·skill·외부 연결을 제품 수준에서 묶은 사례다.
 
 중요한 점은 capability만이 아니다. 보안이 같이 따라온다. 원문은 악성 skill, 과도한 권한, localhost가 아닌 공개 바인딩, prompt injection 내성 부족을 핵심 리스크로 본다. 따라서 OpenClaw는 강력한 runtime이지만, "항상 켜져 있고 실제 권한을 가진 agent"를 어떻게 격리할지 함께 설계해야 한다는 교훈을 준다.
+
+비교 raw를 보면 이 판단은 더 선명해진다. OpenClaw와 Hermes를 같은 서버에 올려 두고도 결국 하나를 지운 이유는 기능 수보다 24/7 운영의 안전성과 부담이 더 중요했기 때문이다. 재미있는 데모보다 오래 켜 둘 수 있는 runtime이 먼저라는 결론이다.
 
 ## 예시
 
@@ -75,4 +78,5 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 - [[AI 기본값 구현체]]
 - [[AI 기본값 수용과 오버라이드 전략]]
 - [[AI 에이전트 런타임 역할 맵]]
+- [[Hermes Agent 24/7 운영]]
 
