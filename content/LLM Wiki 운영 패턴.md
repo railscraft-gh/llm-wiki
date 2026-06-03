@@ -13,11 +13,12 @@ sources:
  - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
  - raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
- - raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
- - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
- - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+  - raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+  - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
 created: 2026-05-24
-updated: 2026-05-26
+updated: 2026-06-03
 ---
 
 # LLM Wiki 운영 패턴
@@ -36,6 +37,8 @@ LLM Wiki 운영 패턴은 raw 문서를 일회성 질의 대상으로 두지 않
 ## 상세
 
 Karpathy의 LLM Wiki 아이디어는 RAG처럼 매번 raw 파일 묶음을 다시 훑어 답을 만드는 방식 대신, 에이전트가 raw를 읽고 개념 페이지, 요약 페이지, 비교 페이지, glossary, index, log를 계속 편집하는 구조를 제안한다. 핵심 산출물은 답변 자체가 아니라 시간이 갈수록 조밀해지는 markdown wiki다.
+
+`raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`는 이 패턴의 진짜 목적을 더 짧게 정리한다. 지식 시스템은 사실을 더 많이 저장하는 상자가 아니라, 생각을 외부화하고 다시 읽으면서 사고의 구조를 바꾸는 장치다. 그래서 raw를 그대로 쌓는 것보다, wiki로 승격해 연결과 충돌을 남기는 편이 훨씬 중요하다.
 
 운영 단위는 세 레이어로 나뉜다. `raw/`는 PDF, 인터뷰 정리, 기사, 녹취록 같은 원천 자료를 보존하는 층이고, `wiki/`는 개념과 판단 기준을 재구성하는 층이며, schema나 instruction 파일은 에이전트가 어떤 형식과 절차로 움직일지 규정하는 층이다. 이 분리는 [[Agent Native Infrastructure]]의 관점에서 중요하다. 클릭과 기억 대신 파일 구조, 문서 규칙, 로그가 에이전트의 작업 인터페이스가 되기 때문이다.
 
