@@ -54,4 +54,5 @@ AI Slop은 [[Vibe Coding과 Agentic Engineering]]의 제품 디자인 버전으�
 - [[AI 하네스 최소화]]
 - [[AI 네이티브 사용자]]
 - [[AI 시대 소프트웨어 펀더멘탈]]
+- [[프론트엔드 디자인 스킬]]
 
