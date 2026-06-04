@@ -4,34 +4,39 @@
 
 ### Ingest
 
-- 입력: `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md`
-- 생성: [[Gajae-Code]], [[프론트엔드 디자인 스킬]]
-- 수정: [[AI Slop]], [[AI 기본값 구현체]], `wiki/index.md`, `wiki/log.md`
+- 입력: `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md`, `raw/AI 겨울이 시작됐다-ko.md`, `raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md`, `raw/2026년의 AI 에이전트 실전 가이드-ko.md`, `raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md`, `raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md`, `raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md`, `raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md`, `raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md`
+- 생성: [[Gajae-Code]] (신규), [[AI 겨울과 경제적 조정]] (신규)
+- 수정: [[프론트엔드 디자인 스킬]] (보강 및 핵심 승격), [[AI Slop]] (보강), [[AI 기본값 구현체]] (보강), [[Agent Harness]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI Experience Architect]] (보강 및 핵심 승격), [[전략적 사고]] (보강), [[병렬 에이전트 세션 운영]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
-  - Gajae-Code: 기본 workflow, role agent, state path, package metadata가 저장소 스냅샷에 종속적이어서 upstream 변경 시 재확인 필요
-  - 프론트엔드 디자인 스킬: Anthropic의 공식 frontend-design 플레이북에 관한 내용이며, 추후 공식 플레이북 가이드가 업데이트되거나 변동이 있을 시 재확인 및 보강 필요.
+  - Gajae-Code: 기본 workflow, role agent, state path, package metadata가 저장소 스냅샷에 종속적이어서 upstream 변경 시 재확인 필요.
+  - AI 겨울과 경제적 조정: AI 산업 전반의 투자와 수익성 균형을 다룬 거시적 분석 노트로, 후속 CAPEX 및 수익 지표 갱신 시 재검토 필요.
+  - 프론트엔드 디자인 스킬: 4개월 간 277,000+ 설치에 따른 미적 수렴 모순과 취향/제한 조건의 실무 정합성 분석 보강에 따라 evergreen 및 core 승격.
 
 ### 결정 기록
 
 - 결정: 신규 생성
-- 대상: [[Gajae-Code]]
-- 근거: 원문은 Gajae-Code 저장소의 구조를 하네스 관점에서 정리한 분석이다. 재사용 가능한 메시지는 "작은 공개 surface + 파일 기반 state + evidence-first 운영"이지만, 세부 command와 path는 버전 의존성이 높아 `tool` / `needs-review` 노트로 분리하는 편이 적절했다.
+- 대상: [[Gajae-Code]], [[AI 겨울과 경제적 조정]]
+- 근거: Gajae-Code는 하네스 구조 저장소 분석으로 needs-review 도구 노정리로 분리하였고, AI 겨울과 경제적 조정은 AI CAPEX 과열과 실질 비즈니스 ROI의 격차(MIT NANDA 95% ROI 실패 지표 등)로 인한 장기 조정 국면을 다루는 거시 개념 노정리로 적합했다.
 
-- 결정: 신규 생성 및 보강
-- 대상: [[프론트엔드 디자인 스킬]], [[AI Slop]], [[AI 기본값 구현체]]
-- 근거: `raw/frontend-design-skill.md` 원문은 Anthropic의 에이전트가 프론트엔드 개발 시 따르는 디자인 플레이북이다. 이는 AI가 평균적인 아웃풋(AI Slop)으로 수렴하는 것을 극복하기 위한 디자인 씽킹과 구체적인 디자인 가이드라인을 정의하고 있어 새 독자적인 `workflow` 노드로 추출했다. 또한 연관성이 매우 높은 [[AI Slop]] 및 [[AI 기본값 구현체]] 노트에도 관련 내용을 교차 링크로 연결하여 구조를 보강했다.
+- 결정: 보강 및 core 승격
+- 대상: [[프론트엔드 디자인 스킬]], [[AI Experience Architect]]
+- 근거: 프론트엔드 디자인 스킬은 엄청난 파급력과 세부 모순(다양성과 수렴의 역설 등) 분석을 결합하여 디자인 허브의 중요 기둥으로 격상함. AI Experience Architect 역시 AI 상품화에 대응해 화면을 넘어 위임 경계, 에러 실패 정책, 신뢰 모델 등 디자이너가 붙들어야 할 7대 핵심 상류 역량(시스템 사고, 피드백 번역, 데이터가 없는 판단 등)을 통합해 최상위 아키텍처 허브로서 core로 격상함.
+
+- 결정: 보강
+- 대상: [[Agent Harness]], [[Claude.md 운영 원칙]], [[전략적 사고]], [[병렬 에이전트 세션 운영]], [[AI Slop]], [[AI 기본값 구현체]]
+- 근거: 2026년 에이전트 가이드와 LangGraph 코스 빌더 파이프라인 분석을 연계하여, RAG/워크플로와 에이전트 제어 문제의 차이와 4대 필수 설계(상태 스키마, 행동 선택, 예산 제약, durable checkpoint 멱등 복구), 개인 문체 파일(voice_profile.md)과 비서 필터를 걷어내는 적대적 프레이밍, 장기 궤적 제어를 위한 렌즈의 사다리(Temporal Distancing) 모델, LangGraph fan-out 및 중복 덮어쓰기 reducer 패턴 등 구체적 구현 패턴을 보강함.
 
 ### Lint
 
-- 실행 방식: `run_wiki_lint.py` 파이썬 스크립트 실행을 통한 91개 위키 노트 전체 검사 및 정합성 검증
+- 실행 방식: 파이썬 수동 스크립트 실행 및 수동 링크 구조 교차 검사
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
 - 출처 없는 수치 문장: 0개
 - 관련 노트 2개 미만 문서: 0개
-- 고아 페이지: 0개 (Gajae-Code 고아 감지 후 Agent Harness, OpenCode에 상호 링크 추가 완료)
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 린트 스크립트로 위키 구조를 확인하여 고아 페이지를 해결하고, 전체 위키 정합성 오류 0개 상태로 검증 완료.
+- 고아 페이지: 0개
+- 조치: 신규 노트를 관련 노트와 양방향 역링크로 연결하고 전체 위키 노트의 상태별 수치 일치 확인 완료.
+
 
 ## 2026-06-03
 
