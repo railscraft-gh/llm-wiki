@@ -4,17 +4,23 @@
 
 ### Ingest
 
-- 입력: `raw/gajae-code_AI_코딩_하네스_분석.md`
-- 생성: [[Gajae-Code]]
-- 수정: `wiki/index.md`, `wiki/log.md`
+- 입력: `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md`
+- 생성: [[Gajae-Code]], [[프론트엔드 디자인 스킬]]
+- 수정: [[AI Slop]], [[AI 기본값 구현체]], `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
-- 남은 검토: 기본 workflow, role agent, state path, package metadata가 저장소 스냅샷에 종속적이어서 upstream 변경 시 재확인 필요
+- 남은 검토: 
+  - Gajae-Code: 기본 workflow, role agent, state path, package metadata가 저장소 스냅샷에 종속적이어서 upstream 변경 시 재확인 필요
+  - 프론트엔드 디자인 스킬: Anthropic의 공식 frontend-design 플레이북에 관한 내용이며, 추후 공식 플레이북 가이드가 업데이트되거나 변동이 있을 시 재확인 및 보강 필요.
 
 ### 결정 기록
 
 - 결정: 신규 생성
 - 대상: [[Gajae-Code]]
 - 근거: 원문은 Gajae-Code 저장소의 구조를 하네스 관점에서 정리한 분석이다. 재사용 가능한 메시지는 "작은 공개 surface + 파일 기반 state + evidence-first 운영"이지만, 세부 command와 path는 버전 의존성이 높아 `tool` / `needs-review` 노트로 분리하는 편이 적절했다.
+
+- 결정: 신규 생성 및 보강
+- 대상: [[프론트엔드 디자인 스킬]], [[AI Slop]], [[AI 기본값 구현체]]
+- 근거: `raw/frontend-design-skill.md` 원문은 Anthropic의 에이전트가 프론트엔드 개발 시 따르는 디자인 플레이북이다. 이는 AI가 평균적인 아웃풋(AI Slop)으로 수렴하는 것을 극복하기 위한 디자인 씽킹과 구체적인 디자인 가이드라인을 정의하고 있어 새 독자적인 `workflow` 노드로 추출했다. 또한 연관성이 매우 높은 [[AI Slop]] 및 [[AI 기본값 구현체]] 노트에도 관련 내용을 교차 링크로 연결하여 구조를 보강했다.
 
 ### Lint
 
@@ -25,7 +31,7 @@
 - 관련 노트 2개 미만 문서: 0개
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: `raw/` 96개 전체 반영 상태를 유지하고, 새 tool note 1개를 추가했다
+- 조치: `raw/` 97개 전체 반영 상태를 유지하고, 새 workflow 및 tool 노트를 추가하여 교차 연결을 확보함.
 
 ## 2026-06-03
 
