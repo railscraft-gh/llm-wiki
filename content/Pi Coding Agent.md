@@ -8,7 +8,6 @@ tags:
  - ai-coding
 aliases:
  - Pi
- - pi coding agent
 sources:
  - raw/pi-coding-agent-overview.md
  - https://pi.dev/

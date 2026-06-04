@@ -7,7 +7,6 @@ tags:
  - agent
  - ai-coding
 aliases:
- - opencode
  - OpenCode CLI
 sources:
  - raw/opencode-masterclass-summary.md
