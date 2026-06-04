@@ -7,8 +7,6 @@ tags:
   - open-source
   - tool
   - self-hosted
-aliases:
-  - openclaw
 sources:
   - raw/The Complete (Honest) Guide to OpenClaw.md
   - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
