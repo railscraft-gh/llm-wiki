@@ -61,4 +61,5 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Pi Coding Agent]]
 - [[에이전트 확장 3계층]]
+- [[Gajae-Code]]
 
