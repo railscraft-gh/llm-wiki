@@ -63,4 +63,5 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[Claude.md 운영 원칙]]
 - [[AI 산출물 포맷 결정 트리]]
 - [[AI 에이전트 런타임 역할 맵]]
+- [[Gajae-Code]]
 
