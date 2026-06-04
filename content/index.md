@@ -11,27 +11,29 @@
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-05-07 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
 | [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-05-26 |
-| [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-05-26 |
+| [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-06-04 |
 | [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
 | [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
 | [[LLM Wiki 운영 패턴]] | raw 보존, wiki 승격, index/log/lint 분리로 지식 베이스를 지속 운영하는 workflow를 정리한다. | evergreen | 2026-05-26 |
-| [[병렬 에이전트 세션 운영]] | 역할 분리, 파일 범위, 검증 경계를 기준으로 multi-agent 세션을 안전하게 병렬화하는 절차를 정리한다. | evergreen | 2026-05-26 |
-| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-05-26 |
+| [[병렬 에이전트 세션 운영]] | 역할 분리, 파일 범위, 검증 경계를 기준으로 multi-agent 세션을 안전하게 병렬화하는 절차를 정리한다. | evergreen | 2026-06-04 |
+| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-06-04 |
 | [[Agent Native Infrastructure]] | agent가 바로 실행할 수 있는 CLI·API·문서·권한 구조를 설계하는 인프라 관점을 정리한다. | evergreen | 2026-05-26 |
 | [[AI 에이전트 런타임 역할 맵]] | 확장 층, 하네스, 인프라, 오픈소스 작업대, 제품 구현체를 한 장의 런타임 계층으로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 네이티브 작업 시스템]] | 사용자 숙련, 디자인 계층, 런타임 계층, 검증 루프를 하나의 작업 체계로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 디자인 역할 맵]] | 기본값, DESIGN.md, task agent, AI Experience Architect를 한 장의 디자인 운영 계층으로 묶는다. | evergreen | 2026-05-26 |
+| [[AI Experience Architect]] | 화면 제작을 넘어 에이전트 위임 경계, 검토 게이트, 신뢰 모델 등 상류 디자인 전략을 설계하는 역할을 정의한다. | evergreen | 2026-06-04 |
 | [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
 | [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
 | [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
-| [[디자인 에이전트 5종]] | upstream design work를 research·define·ideate·flow 단계의 agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
+| [[프론트엔드 디자인 스킬]] | AI가 만든 UI slop을 거부하기 위해 Anthropic 엔지니어가 배포한 30줄 미학 스킬의 영향력과 한계를 정리한다. | evergreen | 2026-06-04 |
+| [[디자인 에이전트 5종]] | upstream design work to research·define·ideate·flow 단계의 agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력·민감 시스템 접근·상태 변경의 동시 보유를 금지하는 에이전트 보안 위험 모델을 정리한다. | evergreen | 2026-05-16 |
 
 ## Ingest 현황
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
-| 2026-06-04 | `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md` | [[Gajae-Code]] (신규), [[프론트엔드 디자인 스킬]] (신규), [[AI Slop]] (보강), [[AI 기본값 구현체]] (보강) | done | [[log#2026-06-04]] |
+| 2026-06-04 | `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md`, `raw/AI 겨울이 시작됐다-ko.md`, `raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md`, `raw/2026년의 AI 에이전트 실전 가이드-ko.md`, `raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md`, `raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md`, `raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md`, `raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md`, `raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md` | [[Gajae-Code]] (신규), [[프론트엔드 디자인 스킬]] (보강/핵심 승격), [[AI Slop]] (보강), [[AI 기본값 구현체]] (보강), [[AI 겨울과 경제적 조정]] (신규), [[Agent Harness]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI Experience Architect]] (보강/핵심 승격), [[전략적 사고]] (보강), [[병렬 에이전트 세션 운영]] (보강) | done | [[log#2026-06-04]] |
 | 2026-06-03 | `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`, `raw/How to write a DESIGN.md file Claude can actually use-ko.md` | [[AI 시대 디자인 시스템]] (보강), [[AI 디자인 역할 맵]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Harness Engineering]] (보강), [[AI 오픈소스 작업대]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[LLM Wiki 구현 선택지]] (보강), [[Agent Native Infrastructure]] (보강), [[OpenClaw]] (보강), [[기록으로 성장하는 법]] (보강), [[Hermes Agent 24-7 운영]] (신규), [[늦게 나타나는 지표]] (신규), [[DESIGN.md 운영 원칙]] (보강) | done | [[log#2026-06-03]] |
 | 2026-05-31 | `raw/거인의 노트.pdf_by_PaddleOCR-VL-1.6.md`, `raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md`, `raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md`, `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`, `raw/미움받을 용기.pdf_by_PaddleOCR-VL-1.6.md`, `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md` | [[기록으로 성장하는 법]] (신규), [[목표를 뇌에 입력하기]] (신규), [[돈의 심리학]] (신규), [[의지와 고통]] (신규), [[과제 분리와 용기]] (신규), [[추월차선과 서행차선]] (신규) | done | [[log#2026-05-31]] |
 | 2026-05-29 | `raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md`, `raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md` | [[주의력 회복]] (신규), [[AI 디자인 팀 운영]] (신규) | done | [[log#2026-05-29]] |
@@ -45,9 +47,9 @@
 | 2026-05-26 | `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md` | [[디자인 에이전트 5종]], [[DESIGN.md 운영 원칙]] (보강), [[AI 시대 디자인 시스템]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md`, `raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md`, `raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md` | [[생성형 AI 면접 평가 축]], [[AI 오픈소스 작업대]], [[학습용 노트 외부화 원칙]], [[AI 네이티브 사용자]] (보강), [[Competence Debt]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md`, `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`, `raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md` | [[LLM Wiki 구현 선택지]], [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
-| 2026-05-26 | `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md` | [[Harness Engineering]] (보강), [[Agent Harness]] (보강) | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md` | [[Harness Engineering]] (보강), [[Agent Harness]] (보강) | done | [[log#2026-05-26 |
 | 2026-05-26 | `raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md` | [[온디바이스 TTS]], [[AI 오픈소스 작업대]] (보강), [[Agent Native Infrastructure]] (관련 링크 보강) | done | [[log#2026-05-26]] |
-| 2026-05-26 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md` | 기존 [[LLM Wiki 운영 패턴]] ingest 결과 재사용, 중복 raw로 분류 | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md` | 기존 [[LLM Wiki 운영 패턴]] ingest 결과 재사용, 중복 raw로 분류 | done | [[log#2026-05-26 |
 | 2026-05-24 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md` | [[LLM Wiki 운영 패턴]], [[Software 3.0]] (보강), [[Thinking과 Understanding 분리]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-17 | (Sync 3 — raw 재감사, 상태 정합성 갱신) | [[Harness Engineering]] (core 승격), [[Software 3.0]] (Reasoning Models 링크), [[바선생]] (cross-link 보강), 35개 draft 노트 → 22 evergreen / 13 needs-review로 상태 정정 | done | [[log#2026-05-17 (Sync 3 — raw 재감사, 상태 정합성)]] |
 | 2026-05-24 | `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md` | [[Obsidian vault용 Slash Command 운영]], [[Claude Code 오케스트레이션]] (보강), [[AI 네이티브 사용자]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
@@ -136,10 +138,10 @@
 
 ## 현재 점검 상태
 
-- raw/ 96개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 70개, needs-review 22개, draft 0개다.
+- raw/ 105개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 현재 상태 분포는 evergreen 71개, needs-review 20개, draft 1개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
-- `status: needs-review` 노트 22개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
+- `status: needs-review` 노트 20개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
 ## 후속 ingest 대기 묶음
 
