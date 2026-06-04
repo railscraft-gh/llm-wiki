@@ -1,0 +1,69 @@
+---
+type: concept
+status: draft
+core: false
+tags:
+  - ai
+  - economy
+  - market
+  - capex
+aliases:
+  - AI 겨울
+  - AI Winter
+  - AI 버블
+  - 경제적 상전이
+sources:
+  - raw/AI 겨울이 시작됐다-ko.md
+created: 2026-06-04
+updated: 2026-06-04
+---
+
+# AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
+
+## 한 줄 정의
+
+AI 겨울은 기술 자체의 완전한 붕괴가 아니라, 기업이 지출한 인프라 자본(CAPEX) 대비 생성형 AI 제품이 가져오는 실제 매출 및 비즈니스 ROI의 괴리가 임계점을 넘어섬에 따라 발생하는 지루한 경제적 조정 기간이자 상전이(Phase Transition) 과정이다.
+
+## 핵심 요지
+
+- **경제적 불일치**: 2025~2026년 하이퍼스케일러의 천문학적인 AI CAPEX 지출 성장 속도와 비교하여 실제 AI 비즈니스가 벌어들이는 매출 성장의 격차가 심화되면서 버블 붕괴와 유사한 조정이 도래한다.
+- **ROI 증명 실패**: 기업들의 생성형 AI 파일럿 도입 시도 중 압도적인 다수가 측정 가능한 ROI를 만들어내는 데 실패했으며, 이는 기술의 오작동보다는 제품 및 기업 워크플로우 결합의 결함에 기인한다.
+- **상전이로서의 겨울**: AI 겨울은 기술의 소멸이 아니라 잘못된 경제적 예측 위에 세워진 경제 인프라의 조정기다. 기하급수적 성장 기대에 의존한 프로젝트는 도태되나, 실제 유용성을 입증한 실무 도구(Frugal/Actionable Tools)는 살아남는다.
+- **미학적/기능적 한계**: 스케일링을 통한 AGI(인공일반지능) 도달에 대한 한계가 명확해지면서, 단순한 대규모 데이터 스케일링 위주의 투자 방식에서 신경-기호적(neurosymbolic) 접근이나 하이브리드 아키텍처로 연구 투자 트렌드가 이동한다.
+
+## 상세
+
+### 1. CAPEX 과열과 투자 효율성 격차
+2025년 Alphabet, Amazon, Meta, Microsoft, Oracle 등 5대 하이퍼스케일러는 AI 하드웨어에 약 3,800억 달러를 지출했으며, 2026년에는 이 지출이 6,600억~7,700억 달러에 이를 것으로 전망된다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md). GPT-4 출시 이후 분기별 CAPEX의 연간화 성장률은 72%에 달하며, 2030년까지 데이터센터 구축 비용은 총 6.7조 달러에 이를 것으로 McKinsey는 추정한다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+반면, OpenAI의 2025년 연간 반복 매출은 200억 달러 수준이며, AI 비즈니스 전체 매출은 250억~500억 달러에 불과해 자본 투자액 대비 매출 회수 비율이 역사적으로 극단적인 불균형 상태를 보여준다. S&P 500 내 상위 10개 IT 기업의 밸류에이션은 1990년대 닷컴 버블 정점보다도 과대평가되었다는 지적이 투자은행(Apollo 등)을 중심으로 제기되고 있다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+### 2. 기업 AI 도입의 한계와 "Shadow AI" 현상
+MIT NANDA 프로젝트가 2025년 8월 발표한 보고서(*The GenAI Divide: State of AI in Business 2025*)에 따르면, 기업의 GenAI 파일럿 프로그램 중 95%가 손익에 측정 가능한 영향을 미치는 ROI를 내지 못한 것으로 나타났다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+실패 요인으로는 다음과 같은 구조적 문제가 꼽힌다:
+- **예산 왜곡**: ROI가 낮은 단순 영업/마케팅 분야의 콘텐츠 생성에 예산이 편향됨.
+- **워크플로우 간극**: 일반 범용 AI 모델과 기업 고유의 세부 비즈니스 로직 및 제약조건 사이의 연계 부재.
+- **Shadow AI Economy**: 기업이 제공하는 공식 엔터프라이즈 AI 솔루션이 개별 소비자가 사용하는 ChatGPT/Claude 성능보다 뒤처지자, 직원들이 사비를 들여 개인 계정을 업무에 은밀히 우회 사용하여 공식 솔루션을 거부하는 현상.
+
+### 3. 에이전트 경제의 현실 안착
+Gartner 보고서에 따르면, 2026년 시점에 기획된 자율적 AI 에이전트(Agentic AI) 프로젝트의 약 40%가 실제 구현 단계에서 중단되거나 보류되었다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md). 이는 1980년대 전문가 시스템(Expert Systems)의 파일럿이 데모 수준을 넘어 대규모 실제 운영 환경으로 들어서며 복잡성을 극복하지 못하고 좌초되었던 역사적 버블의 붕괴 패턴과 일치한다.
+
+따라서 AI 제품 개발팀은 마케팅적인 기하급수적 성장이나 AGI 과장 광고에서 벗어나, "도구는 싸지고 제품은 더 어려워진다"는 대원칙을 직시하고 실제 구체적으로 작동하는 워크플로우에 최적화해야 한다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+## 예시
+
+- 기업용 알림 요약 기능을 비싸게 도입했으나, 하루에 발생하는 수백 개의 알림 누적으로 인한 피로도 증가 등 거시적인 UX 분석 없이 화면만 개편하여 결국 사용량이 저조해지고 파일럿 프로그램이 중단됨 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
+- 자금 회수 계획이 없는 AI 스타트업들이 Runway를 소진하며 재평가를 받는 동안, Claude Code, Cursor 등 개발자의 생산성을 직접적이고 지속적으로 보장해 주는 미시적이고 구체적인 도구들은 생존함 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+## 충돌
+
+- **기술적 능력의 붕괴 vs. 기대의 수정**: 일부 미디어에서는 AI 겨울이 기술 수준의 쇠퇴를 초래한다고 선전하나, 현업 분석에 따르면 LLM의 실제 기능(기록 정리, 코드 자동완성 등)은 유효하게 존재하며 단지 기대치가 경제성(ROI) 수준에 맞춰 정상화되는 '상전이'이자 2년가량의 '지루한 조정 기간'으로 해석하는 것이 타당하다 [AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md).
+
+## 관련 노트
+
+- [[Vibe Coding과 Agentic Engineering]] : AI의 기하급수적 성장 환상과 책임 있는 실무 엔지니어링의 충돌을 다룬다.
+- [[제품 오버행]] : 모델 기술 역량과 실제 제품화/UX 도입 성과 사이의 미스매치를 규명한다.
+- [[AI 네이티브 작업 시스템]] : 단순 챗봇을 넘어선 에이전틱 작업 시스템과 인프라의 필요성을 설명한다.
+- [[AI Slop]] : 기계적으로 생산된 평균적인 AI 결과물의 가치 부재와 이를 극복해야 하는 당위성을 보여준다.
+
