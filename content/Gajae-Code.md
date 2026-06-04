@@ -8,9 +8,7 @@ tags:
   - ai-coding
   - harness-engineering
 aliases:
-  - gajae-code
   - GJC
-  - Gajae Code
 sources:
   - raw/gajae-code_AI_코딩_하네스_분석.md
 created: 2026-06-04

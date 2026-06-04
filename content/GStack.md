@@ -9,7 +9,6 @@ tags:
   - tool
 aliases:
   - G스택
-  - gstack
   - garrytan/gstack
 sources:
   - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
