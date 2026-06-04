@@ -9,7 +9,6 @@ tags:
  - ai
 aliases:
  - 역량 부채
- - competence debt
 sources:
  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
 created: 2026-05-24
