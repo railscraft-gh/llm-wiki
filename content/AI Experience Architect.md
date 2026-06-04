@@ -9,7 +9,6 @@ tags:
   - ux
 aliases:
   - AI 경험 아키텍트
-  - AI Experience Architect
   - AI Designer to Architect
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md
