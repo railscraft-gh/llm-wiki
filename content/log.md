@@ -1,5 +1,32 @@
 # LLM Wiki Log
 
+## 2026-06-04
+
+### Ingest
+
+- 입력: `raw/gajae-code_AI_코딩_하네스_분석.md`
+- 생성: [[Gajae-Code]]
+- 수정: `wiki/index.md`, `wiki/log.md`
+- index 업데이트: 완료
+- 남은 검토: 기본 workflow, role agent, state path, package metadata가 저장소 스냅샷에 종속적이어서 upstream 변경 시 재확인 필요
+
+### 결정 기록
+
+- 결정: 신규 생성
+- 대상: [[Gajae-Code]]
+- 근거: 원문은 Gajae-Code 저장소의 구조를 하네스 관점에서 정리한 분석이다. 재사용 가능한 메시지는 "작은 공개 surface + 파일 기반 state + evidence-first 운영"이지만, 세부 command와 path는 버전 의존성이 높아 `tool` / `needs-review` 노트로 분리하는 편이 적절했다.
+
+### Lint
+
+- 실행 방식: 수동 대조 + `rg` / `grep -F` 기반 raw 반영 여부 확인
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: `raw/` 96개 전체 반영 상태를 유지하고, 새 tool note 1개를 추가했다
+
 ## 2026-06-03
 
 ### Ingest

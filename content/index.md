@@ -31,6 +31,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-06-04 | `raw/gajae-code_AI_코딩_하네스_분석.md` | [[Gajae-Code]] (신규) | done | [[log#2026-06-04]] |
 | 2026-06-03 | `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`, `raw/How to write a DESIGN.md file Claude can actually use-ko.md` | [[AI 시대 디자인 시스템]] (보강), [[AI 디자인 역할 맵]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Harness Engineering]] (보강), [[AI 오픈소스 작업대]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[LLM Wiki 구현 선택지]] (보강), [[Agent Native Infrastructure]] (보강), [[OpenClaw]] (보강), [[기록으로 성장하는 법]] (보강), [[Hermes Agent 24-7 운영]] (신규), [[늦게 나타나는 지표]] (신규), [[DESIGN.md 운영 원칙]] (보강) | done | [[log#2026-06-03]] |
 | 2026-05-31 | `raw/거인의 노트.pdf_by_PaddleOCR-VL-1.6.md`, `raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md`, `raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md`, `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`, `raw/미움받을 용기.pdf_by_PaddleOCR-VL-1.6.md`, `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md` | [[기록으로 성장하는 법]] (신규), [[목표를 뇌에 입력하기]] (신규), [[돈의 심리학]] (신규), [[의지와 고통]] (신규), [[과제 분리와 용기]] (신규), [[추월차선과 서행차선]] (신규) | done | [[log#2026-05-31]] |
 | 2026-05-29 | `raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md`, `raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md` | [[주의력 회복]] (신규), [[AI 디자인 팀 운영]] (신규) | done | [[log#2026-05-29]] |
@@ -134,8 +135,8 @@
 
 ## 현재 점검 상태
 
-- raw/ 95개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 70개, needs-review 19개, draft 0개다.
+- raw/ 96개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 현재 상태 분포는 evergreen 70개, needs-review 20개, draft 0개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
 - `status: needs-review` 노트 18개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
@@ -145,6 +146,7 @@
 | --- | --- | --- | --- |
 | 조직 운영 검증 | [[AI 네이티브 엔지니어링 조직]], [[Ralph Loop]], [[제품 오버행]] | 비 Anthropic 조직 사례, 실패 사례, 운영 지표, 검증/승인 구조 자료 | 조직/자동화 주장 검증 및 core 재판단 |
 | 도구·spec 업데이트 | [[Context Mode]], [[GStack]], [[Graphify]], [[OpenAgent Team Mode]], [[OpenCode]], [[Pi Coding Agent]], [[shadcn-ui]], [[OpenClaw]], [[온디바이스 TTS]] | 공식 docs, release note, README, 설치/배포 가이드 | 버전 변동 흡수 및 needs-review 유지/해제 판단 |
+| 도구·spec 업데이트 | [[Gajae-Code]] | 저장소 스냅샷 기준 workflow, state path, package metadata가 빠르게 바뀌는 하네스 분석 노트 | 다음 snapshot 또는 upstream release 때 재검토 |
 | 보안·비밀관리 | [[Infisical 도입 전략]], [[Infisical 헤드리스 인증]], [[API Key 관리 원칙]] | pricing/license 변경, auth 권장 방식, 실제 운영 사고/대응 사례 | 도구 노트 최신화와 보안 체크리스트 보강 |
 | 연구·전망 검증 | [[Meta-Harness]], [[Neural Computer]], [[생성형 AI 면접 평가 축]], [[강한 모델로 덜 헤매기]] | 후속 논문, 재현 자료, 시장/모델 업데이트, 채용 자료 | 단일 출처/시점 의존 주장 보강 |
 | 디자인 작업 체계 | [[디자인 시스템 기본값]], [[AI 기본값 수용과 오버라이드 전략]], [[AI Experience Architect]] | 추가 디자인 조직 사례, 운영 문서 예시, override/approval 사례 | design core 축 보강 및 상위 허브 안정화 |
