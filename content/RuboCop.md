@@ -8,8 +8,6 @@ tags:
   - formatter
   - ci
   - verification
-aliases:
-  - RuboCop
 sources:
   - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
 created: 2026-05-13

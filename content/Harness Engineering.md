@@ -8,7 +8,6 @@ tags:
   - harness-engineering
   - ai-coding
 aliases:
-  - Harness Engineering
   - 하네스 엔지니어링
 sources:
   - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
