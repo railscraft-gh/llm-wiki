@@ -9,7 +9,6 @@ tags:
   - orchestration
 aliases:
   - 에이전트 하네스
-  - Agent Harness
 sources:
   - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
   - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
