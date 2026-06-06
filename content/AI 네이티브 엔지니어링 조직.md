@@ -92,4 +92,5 @@ Fiona Fung의 Code w/ Claude 발표 정리는 Claude Code 팀의 경험을 "과�
 - [[Loop와 Routines]]
 - [[제품 오버행]]
 - [[소프트웨어 민주화]]
+- [[AI 세컨드 브레인]]
 
