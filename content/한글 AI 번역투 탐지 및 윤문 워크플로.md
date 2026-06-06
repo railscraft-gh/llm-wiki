@@ -1,6 +1,6 @@
 ---
 type: workflow
-status: draft
+status: evergreen
 core: false
 tags:
   - llm
@@ -9,6 +9,7 @@ tags:
 aliases: []
 sources:
   - raw/im-not-ai.md
+  - raw/The Best Way to Make AI Write Like You-ko.md
 created: 2026-06-07
 updated: 2026-06-07
 ---
@@ -20,6 +21,7 @@ AI 모델이 작성한 한글 텍스트 특유의 부자연스러움(번역투, 
 
 ## 핵심 요지
 - **10대 대분류 × 40+ 서브 패턴**: 번역투(A), 영어식 용어 과다(B), 기계적 구조(C), 관용구(D), 리듬 균일성(E) 등을 기반으로 AI 티를 탐지한다.
+- **개인 문체 프로필 (Voice Profile) 통합**: 단순 긍정적 지침보다 거부(Reject)하는 구체적 규칙(예: 특정 문장 부호 기피, 절대 쓰지 않는 단어 명시 등)을 `.md` 파일 하나로 구조화하여 AI 윤문 엔진에 제약 조건으로 주입한다 [The Best Way to Make AI Write Like You-ko.md](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md).
 - **Fast/Strict 이원화 모드**: 5,000자 이하는 단일 `humanize-monolith`로 고속 처리하며, 8,000자 이상이거나 정밀 검증 시에는 5인 에이전트 파이프라인(Strict)을 돌린다.
 - **Antigravity 이식**: Claude Code의 빌트인 `Agent` 및 `TeamCreate` 도구 의존적인 원본 워크플로를 Antigravity의 `define_subagent` 및 `invoke_subagent` 도구 체계로 매핑하여 동작하도록 이식했다.
 
