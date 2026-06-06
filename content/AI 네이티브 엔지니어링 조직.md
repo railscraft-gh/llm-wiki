@@ -13,8 +13,9 @@ aliases:
 sources:
   - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
   - raw/anthropic-boris-cherny-interview.md
+  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md
 created: 2026-05-14
-updated: 2026-05-16
+updated: 2026-06-07
 ---
 
 # AI 네이티브 엔지니어링 조직
@@ -37,6 +38,8 @@ Fiona Fung의 Code w/ Claude 발표 정리는 Claude Code 팀의 경험을 "과�
 기획은 모든 것을 사전에 문서화하기보다 JIT Planning(Just-In-Time planning, 필요한 시점에 필요한 만큼 계획하기)에 가까워진다. 기술 논쟁은 Claude로 여러 대안 PR을 생성해 실제 diff, 호출자 변경, 테스트 부담을 비교하는 방식이 된다. 단, "마지막으로 커밋한 사람이 이긴다"는 뜻은 아니다. 구현 결과를 더 빨리 볼 수 있을 뿐, 팀 정렬과 사람의 판단은 더 중요해진다.
 
 팀 구성도 바뀐다. 발표 정리는 AI 시대에도 창의적 빌더와 제품 감각, 깊은 시스템 전문성이 모두 필요하다고 본다. 순수 코딩 처리량의 가치는 낮아지고, 교차 기능 간극을 AI로 메우는 능력이 커진다. Claude Code 팀 사례에서는 모든 팀원이 Claude Code를 쓰고, 반복 업무는 먼저 자동화 가능성을 검토하며, 매니저도 IC로 시작해 실제 dogfooding을 한다.
+
+또한, AI 에이전트나 LLM 기반 시스템에서는 시스템 프롬프트(System Prompt), 평가 데이터셋(Evaluation Dataset), 모델 버전 설정 파일과 같이 텍스트로 구성된 파일 변경 자체가 핵심적인 제품 기획/의사결정이다. 따라서 기획자(PM)나 디자이너 등 비개발자 직군이 Git과 GitHub(Branch, PR, Commit, Revert)에 직접 결합하여 변경 이력을 읽고 필요 시 직접 수정함으로써, 개발-기획 간의 중간 전달 병목(Communication Gap)을 걷어내고 실시간으로 제품 결정을 제어해야 한다 [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md](file:///Users/railscraft/Obsidian/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch%20Was-ko.md).
 
 
 ## 조직 점검 질문
