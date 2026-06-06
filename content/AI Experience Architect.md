@@ -13,8 +13,9 @@ aliases:
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md
   - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+  - raw/Why senior UX designers are struggling in 2026-ko.md
 created: 2026-05-26
-updated: 2026-06-04
+updated: 2026-06-07
 ---
 
 # AI Experience Architect
@@ -26,7 +27,9 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 ## 핵심 요지
 
 - **인터페이스의 상품화와 가치 이동**: 에이전트가 픽셀 단위로 완성도 높은 UI를 30초 만에 생성해 내면서, 디자이너의 핵심 가치는 화면 제작 단계에서 시스템 설계 및 전략적 문제 해결의 상류층으로 완전히 이동한다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
-- **팀 성장의 신호**: AI를 UX 실무에 접목한 선도 조직들은 디자이너를 대체하기보다 오히려 디자인 인력을 늘리고 있다. 2026년 기준 내부 팀을 늘린 곳이 51%, 외부 파트너십을 늘린 곳이 66%에 달하며, AI 기술을 갖춘 경험 디자이너는 약 56% 높은 평균 급여를 받는다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
+- **프레임 세팅 (Frame-setting) 역량**: 정돈된 기획서(Input)를 가공해 화면(Output)으로 변환하는 수동적인 프레임 워킹(Frame-working)에서 벗어나, 비즈니스 모호함 속에서 문제와 타깃, 지표를 직접 규정하는 프레임 세팅 역량이 필수적이다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
+- **예측 가능성 (Predictability) 확보**: 기획서나 리서치 데이터 등 주변 서포트 인프라(보호막)가 부재한 불확실한 극한 상황(예: 슬랙 한 줄의 간략한 지시)에서도 주도적으로 문제를 헤쳐나갈 수 있는 예측 가능한 해결력이 2026년 시니어 채용 시장(56%)의 주요 기준이다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
+- **UX 리서처의 감축과 인사이트 내재화**: 리서치 조직이 다른 직군 대비 약 3배 높은 비율로 감축되는 시장 환경에서, 디자이너는 인사이트를 직접 발굴하거나 데이터 공백 상황을 주도적으로 통제해야 한다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
 - **조직적 위임과 아키텍처**: 조직이 어떤 범위의 의사결정을 에이전트에 자율 위임하고, 어떤 경계에서 사람의 검토와 승인을 통제할지 사회적/구조적 계약을 설계하는 역할이다.
 
 ## 상세
