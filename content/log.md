@@ -16,17 +16,29 @@
   - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
   - `raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md`
   - `raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md`
-- 생성: [[한글 AI 번역투 탐지 및 윤문 워크플로]]
-- 수정: `wiki/index.md`, `wiki/log.md` (단, 10개 번역본 raw 파일들에 대해 누락/오역 2차 검증 및 정밀 윤문을 거쳐 덮어쓰기 완료)
+- 생성: [[한글 AI 번역투 탐지 및 윤문 워크플로]] (신규), [[GBrain]] (신규), [[oMLX]] (신규), [[Pinterest MCP]] (신규), [[AI 세컨드 브레인]] (신규/핵심)
+- 수정: [[AI Experience Architect]] (보강/핵심), [[Agent Harness]] (보강/핵심), [[AI 네이티브 엔지니어링 조직]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[한글 AI 번역투 탐지 및 윤문 워크플로]]: im-not-ai 스킬 및 에이전트의 CLI/환경 의존적인 동작 방식은 버전에 영향을 받으므로 실사용 및 추가 검증이 필요함.
+  - [[GBrain]]: 34개 에이전트 스킬의 실무 작동 한계와 LongMemEval 벤치마크 97.9%의 실제 재현 데이터 확인이 필요함.
+  - [[oMLX]]: 2단계 KV 캐시(RAM+SSD)의 디스크 마모 및 M5 이외의 구형 Apple Silicon 칩셋 환경에서의 성능 비교 검증 필요.
+  - [[Pinterest MCP]]: 사내 API 통합 시 OAuth/JWT/SPIFFE 복합 인프라 유지 비용 및 미세 권한(@authorize_tool) 보안 취약성 재검토 필요.
+  - [[AI 세컨드 브레인]]: 메타 6만 명 PARA 워크스페이스의 공동 컨텍스트(Third Brain) 동기화 시 충돌 및 프라이버시 경계 제어 문제 검토 필요.
 
 ### 결정 기록
 
 - 결정: 신규 생성
 - 대상: [[한글 AI 번역투 탐지 및 윤문 워크플로]]
 - 근거: `im-not-ai` 저장소 분석을 통해 한글 AI 번역투 및 문체 패턴의 탐지/처방 아키텍처를 workflow 노정리로 분리하였고, 이를 Antigravity 환경(`define_subagent`, `invoke_subagent` 등)에 맞게 매핑하여 이식한 기록을 위해 작성함.
+
+- 결정: 신규 생성 및 핵심 지정
+- 대상: [[GBrain]], [[oMLX]], [[Pinterest MCP]], [[AI 세컨드 브레인]]
+- 근거: GBrain과 oMLX는 로컬 장기 기억 및 초고속 KV 캐싱 추론 인프라를 구축하려는 빌더의 주요 도구 노정리로 가치가 높고, Pinterest MCP는 대형 사내망에서 MCP 보안과 권한 미세 인가를 제어하는 최초의 구체적 아키텍처 워크플로우로 적합하다. AI 세컨드 브레인은 PARA 분류 및 점진적 로딩(progressive disclosure)을 통해 6만 명 이상이 검증한 상위 지식 베이스 설계이므로 core(핵심) 노트로 등록함.
+
+- 결정: 보강
+- 대상: [[AI Experience Architect]], [[Agent Harness]], [[AI 네이티브 엔지니어링 조직]]
+- 근거: 시니어 디자이너의 프레임 세팅(Frame-setting) 및 예측 가능성(Predictability), LangGraph 멀티 에이전트 분할(Decomposition)과 최적 모델 매칭 및 승인 게이트, 기획자(PM)의 Git/GitHub 직접 제어를 통한 커뮤니케이션 병목 해결 등 10개 번역본 원문의 핵심 실무 인사이트를 각 관련 허브 노트에 정밀 이식함.
 
 ### Lint
 
