@@ -15,8 +15,9 @@ sources:
   - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
   - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
   - raw/2026년의 AI 에이전트 실전 가이드-ko.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
 created: 2026-05-26
-updated: 2026-06-04
+updated: 2026-06-07
 ---
 
 # Agent Harness
@@ -48,6 +49,12 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - **비영속성 실행(Non-durable execution)**: 런타임 크래시 시 모든 진행 상황이 유실되는 모드. 각 도구 호출 완료 단계마다 상태를 직렬화해 Checkpoint DB에 백업한다.
 - **프롬프트 주입(Prompt injection)**: 악성 외부 입력을 실행해 시스템을 파괴하는 모드. 도구 허용 목록(Allowlist), 실행 전 입력 검사 필터링, 그리고 파괴적 명령어 실행 시 사람의 직접 승인을 강제하는 human-in-the-loop 게이트웨이를 둔다.
 
+### 3. 멀티 에이전트 분할 (Multi-Agent Decomposition) 설계
+복잡하거나 대규모 결과물(예: 여러 챕터의 교육 과정, 대형 소프트웨어 빌드)을 단일 프롬프트(One-shot)로 생성하면, 모델의 일관성 상실 및 자기모순에 봉착하기 쉽다. 하네스는 다음을 조율하는 상위 분할 아키텍처를 제공한다:
+- **역할 분할 및 상태 연동**: 실라버스 설계, 본문 작성, 퀴즈 설계 등 단계를 쪼개어 각각 독립된 에이전트가 이를 담당하게 하고, 중앙의 상태 스키마(State Object)를 거쳐 데이터를 연속적으로 이행(LangGraph 등 활용)한다.
+- **최적 모델 및 도구 매칭**: 무거운 논리 구조를 짤 때는 Reasoning 모델을, 본문 작성에는 저렴하고 신속한 모델을, 최종 문서/슬라이드 렌더링 단계에는 확정적 규칙 코드를 배치하여 효율성을 극대화한다.
+- **안티 슬롭(Anti-slop) 검토기 및 휴먼 인 더 루프**: 각 에이전트의 중간 출력물 전환 시점에 AI Slop(기계적인 반복 어구, 상투적 서사)을 걸러내는 자동 검토 필터를 배치하고, 핵심 기획안 수립 직후 사람의 수정과 승인을 거치는 휴먼 승인 게이트(Human Approval Gate)를 하네스 수준에서 제어한다.
+
 ## 예시
 
 - coding agent: `AGENTS.md`를 읽고, 필요한 파일만 찾고, 테스트를 돌리고, 실패 시 다시 수정하는 loop 전체가 harness다.
@@ -69,5 +76,5 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[AI 에이전트 런타임 역할 맵]]
 - [[Gajae-Code]]
 - [[한글 AI 번역투 탐지 및 윤문 워크플로]]
-
+- [[AI 세컨드 브레인]]
 
