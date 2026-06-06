@@ -33,6 +33,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-06-07 | `raw/im-not-ai.md` | [[한글 AI 번역투 탐지 및 윤문 워크플로]] (신규) | done | [[log#2026-06-07]] |
 | 2026-06-04 | `raw/gajae-code_AI_코딩_하네스_분석.md`, `raw/frontend-design-skill.md`, `raw/AI 겨울이 시작됐다-ko.md`, `raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md`, `raw/2026년의 AI 에이전트 실전 가이드-ko.md`, `raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md`, `raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md`, `raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md`, `raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md`, `raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md` | [[Gajae-Code]] (신규), [[프론트엔드 디자인 스킬]] (보강/핵심 승격), [[AI Slop]] (보강), [[AI 기본값 구현체]] (보강), [[AI 겨울과 경제적 조정]] (신규), [[Agent Harness]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI Experience Architect]] (보강/핵심 승격), [[전략적 사고]] (보강), [[병렬 에이전트 세션 운영]] (보강) | done | [[log#2026-06-04]] |
 | 2026-06-03 | `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`, `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`, `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`, `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`, `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`, `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`, `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`, `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`, `raw/The Open-Source Agent Toolkit in 2026-ko.md`, `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`, `raw/How to write a DESIGN.md file Claude can actually use-ko.md` | [[AI 시대 디자인 시스템]] (보강), [[AI 디자인 역할 맵]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Harness Engineering]] (보강), [[AI 오픈소스 작업대]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[LLM Wiki 구현 선택지]] (보강), [[Agent Native Infrastructure]] (보강), [[OpenClaw]] (보강), [[기록으로 성장하는 법]] (보강), [[Hermes Agent 24-7 운영]] (신규), [[늦게 나타나는 지표]] (신규), [[DESIGN.md 운영 원칙]] (보강) | done | [[log#2026-06-03]] |
 | 2026-05-31 | `raw/거인의 노트.pdf_by_PaddleOCR-VL-1.6.md`, `raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md`, `raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md`, `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`, `raw/미움받을 용기.pdf_by_PaddleOCR-VL-1.6.md`, `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md` | [[기록으로 성장하는 법]] (신규), [[목표를 뇌에 입력하기]] (신규), [[돈의 심리학]] (신규), [[의지와 고통]] (신규), [[과제 분리와 용기]] (신규), [[추월차선과 서행차선]] (신규) | done | [[log#2026-05-31]] |
@@ -111,6 +112,8 @@
 | [[shadcn-ui]] | GitHub star, MCP 지원 범위, 도구별 scaffold 기본값은 빠르게 변한다. | 실제 도입 전 공식 docs와 사용하는 생성 도구의 기본 scaffold 정책 확인 |
 | [[바선생]] | Claude Code 대화 분석 도구의 6대 차원 가중치와 게이트 조건은 raw 시점 기준이다. | 공식 README 업데이트 시 재검토 |
 | [[온디바이스 TTS]] | 모델 스펙, benchmark, 라이선스와 배포 가이드는 빠르게 변동한다. | 도입 전 공식 모델 카드/README 재확인 |
+| [[한글 AI 번역투 탐지 및 윤문 워크플로]] | im-not-ai 스킬 및 에이전트의 CLI/환경 의존적인 동작 방식은 버전에 영향을 받는다. | 실사용 및 추가 검증 후 evergreen 검토 |
+
 
 ### 단일 출처·외부 검증 부족
 
@@ -138,8 +141,8 @@
 
 ## 현재 점검 상태
 
-- raw/ 105개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 71개, needs-review 20개, draft 1개다.
+- raw/ 106개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 현재 상태 분포는 evergreen 71개, needs-review 20개, draft 2개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
 - `status: needs-review` 노트 20개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
