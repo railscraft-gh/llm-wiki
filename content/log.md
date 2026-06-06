@@ -4,9 +4,20 @@
 
 ### Ingest
 
-- 입력: `raw/im-not-ai.md`
+- 입력: 
+  - `raw/im-not-ai.md`
+  - `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
+  - `raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md`
+  - `raw/Building an MCP Ecosystem at Pinterest-ko.md`
+  - `raw/Why senior UX designers are struggling in 2026-ko.md`
+  - `raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md`
+  - `raw/The Best Way to Make AI Write Like You-ko.md`
+  - `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
+  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
+  - `raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md`
+  - `raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md`
 - 생성: [[한글 AI 번역투 탐지 및 윤문 워크플로]]
-- 수정: `wiki/index.md`, `wiki/log.md`
+- 수정: `wiki/index.md`, `wiki/log.md` (단, 10개 번역본 raw 파일들에 대해 누락/오역 2차 검증 및 정밀 윤문을 거쳐 덮어쓰기 완료)
 - index 업데이트: 완료
 - 남은 검토: 
   - [[한글 AI 번역투 탐지 및 윤문 워크플로]]: im-not-ai 스킬 및 에이전트의 CLI/환경 의존적인 동작 방식은 버전에 영향을 받으므로 실사용 및 추가 검증이 필요함.
