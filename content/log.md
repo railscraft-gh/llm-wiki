@@ -4,12 +4,17 @@
 
 ### Ingest
 
-- 입력: `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
-- 생성: [[Model Context Protocol]] (신규/핵심)
+- 입력: 
+  - `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
+  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
+- 생성: 
+  - [[Model Context Protocol]] (신규/핵심)
+  - [[멀티 에이전트 코스 빌더]] (신규)
 - 수정: `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
+  - [[멀티 에이전트 코스 빌더]]: 12개 강의 병렬 작성 시 Reducer 충돌 문제 및 소형 모델을 안티 슬롭 검토기로 채택할 때 반려 판정의 정확성 실측 데이터 확보 필요.
 
 ### 결정 기록
 
@@ -17,18 +22,23 @@
 - 대상: [[Model Context Protocol]]
 - 근거: oMLX, GBrain, Pinterest MCP 등 3개 이상의 문서에서 깨진 링크로 공통 참조하고 있었으며, AI 클라이언트와 데이터 소스 간 연동 비용을 획기적으로 해결하는 기초 통신 표준 프로토콜 규격이므로 core(핵심) 노트로 등록함.
 
+- 결정: 신규 생성
+- 대상: [[멀티 에이전트 코스 빌더]]
+- 근거: 단일 프롬프트가 대규모 작성 작업에서 겪는 문체 이탈 및 모순의 한계를 해결하기 위해, 교수 설계 원칙(ADDIE)에 기반해 기획-집필-설계-제작의 4단계 에이전트 분할 및 Human Approval Gate, Anti-slop Reviewer를 활용하는 프로덕션급 콘텐츠 생성 파이프라인 설계를 정립하기 위해 작성함.
+
 ### Lint
 
 - 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행
 - 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료)
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
-- 관련 노트 2개 미만 문서: 0개
+- 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표 등 새로 인용된 데이터에 출처 링크 추가 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 노트에 관련 위키 링크 2개 이상 매핑 완료)
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 
   - 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 일괄 수정 완료. 
   - 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 텍스트('에 두는')를 '루트에 두는'으로 복원 완료.
+  - 신규 생성 노트를 [[병렬 에이전트 세션 운영]], [[Agent Harness]], [[Context Engineering]] 등 기존 노정리와 상호 연결함.
 
 ## 2026-06-09
 
