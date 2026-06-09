@@ -15,10 +15,11 @@ sources:
  - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+ - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 # DESIGN.md 운영 원칙
@@ -39,7 +40,7 @@ DESIGN.md 운영 원칙은 AI coding agent가 UI를 만들 때 따를 색상, �
 
 Google Labs의 `design.md` GitHub repository는 DESIGN.md를 coding agents에게 visual identity를 설명하는 format specification으로 정의한다. 공식 README는 YAML front matter가 token의 normative value이고, Markdown prose가 적용 맥락을 제공한다고 설명한다. 또한 `npx @google/design.md lint DESIGN.md`로 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다.
 
-Google Stitch 공식 글은 DESIGN.md를 agent-friendly markdown file로 설명하며, 디자인 규칙을 다른 design/coding tool로 export/import하는 용도로 소개한다.
+Google Stitch 공식 글은 DESIGN.md를 agent-friendly markdown file로 설명하며, 디자인 규칙을 다른 design/coding tool로 export/import하는 용도로 소개한다. Gemini 기반 AI 디자인 캔버스인 Google Stitch(stitch.withgoogle.com) 환경에서는 DESIGN.md 텍스트를 고쳐 전체 화면을 바꾸는 하향식 수정과 프롬프트 입력이 텍스트에 자동 반영되는 상향식 수정의 양방향 실시간 동기화를 지원한다. 구체적인 연동 및 설계 실행 절차는 [[DESIGN.md 워크플로우]]를 따른다.
 
 raw 문서는 Design.md를 AI에게 반복해서 던지는 매뉴얼로 다룬다. 핵심은 "예쁘게 해줘"가 아니라 `primary`, `body`, `space-4`, `button-primary`처럼 에이전트가 그대로 참조할 수 있는 이름과 값을 주는 것이다.
 
@@ -98,4 +99,6 @@ Primary는 주요 action에만 사용한다.
 - [[디자인 에이전트 5종]]
 - [[디자인 시스템 기본값]]
 - [[AI 디자인 역할 맵]]
+- [[DESIGN.md 워크플로우]]
+- [[완전히 기계 읽기 가능한 디자인 시스템]]
 
