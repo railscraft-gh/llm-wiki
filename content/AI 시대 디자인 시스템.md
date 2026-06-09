@@ -20,6 +20,7 @@ sources:
  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
  - raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+ - raw/Claude Design이 디자이너를 대체할 것인가-ko.md
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
@@ -61,6 +62,8 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 
 역할 면에서도 변화가 있다. `raw/From faster pencil to AI Experience Architect. a designer’s path.md`는 디자이너가 더 빠른 Figma 작업자에 머무르지 않고 [[AI Experience Architect]]처럼 workflow, 권한, fallback, review gate까지 설계하는 방향으로 이동한다고 설명한다. 이를 한 장으로 정리한 운영 프레임이 [[AI 디자인 역할 맵]]이다.
 
+또한 Anthropic의 [[Claude Design]] 발표(2026-06 프로덕션 정식 배포)는 Google Stitch와 마찬가지로 React `.jsx` 코드를 기반으로 UI를 생성하는 자동화 흐름을 한 단계 더 대중화했다. 그러나 이러한 도구들은 이미 검증된 데이터베이스를 조립하여 평범한 수준(Average+)의 디자인을 반복 생성하는 한계를 가지며, 결국 양산형 디자인이 넘쳐나는 '동질함의 바다'를 형성한다. 이로 인해 단순 컴포넌트 조립식 디자인 시스템 엔지니어링의 위상은 축소되고, 디자이너는 단순 조립에서 벗어나 장인정신적 완성도를 추구하는 상위 1%의 설계자로 거듭나야 생존할 수 있는 환경이 조성된다.
+
 ## 예시
 
 - SaaS dashboard: 표, 필터, toast, modal의 spacing과 density를 먼저 정하고, AI에게 새 화면을 만들 때 같은 token을 쓰게 한다.
@@ -73,6 +76,7 @@ Google Stitch는 2026-03-18 공식 글에서 DESIGN.md를 design rules를 export
 
 ## 관련 노트
 
+- [[Claude Design]]
 - [[AI Slop]]
 - [[DESIGN.md 운영 원칙]]
 - [[Vibe Coding과 Agentic Engineering]]
