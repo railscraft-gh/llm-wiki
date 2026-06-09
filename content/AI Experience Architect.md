@@ -26,10 +26,10 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 
 ## 핵심 요지
 
-- **인터페이스의 상품화와 가치 이동**: 에이전트가 픽셀 단위로 완성도 높은 UI를 30초 만에 생성해 내면서, 디자이너의 핵심 가치는 화면 제작 단계에서 시스템 설계 및 전략적 문제 해결의 상류층으로 완전히 이동한다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
-- **프레임 세팅 (Frame-setting) 역량**: 정돈된 기획서(Input)를 가공해 화면(Output)으로 변환하는 수동적인 프레임 워킹(Frame-working)에서 벗어나, 비즈니스 모호함 속에서 문제와 타깃, 지표를 직접 규정하는 프레임 세팅 역량이 필수적이다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
-- **예측 가능성 (Predictability) 확보**: 기획서나 리서치 데이터 등 주변 서포트 인프라(보호막)가 부재한 불확실한 극한 상황(예: 슬랙 한 줄의 간략한 지시)에서도 주도적으로 문제를 헤쳐나갈 수 있는 예측 가능한 해결력이 2026년 시니어 채용 시장(56%)의 주요 기준이다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
-- **UX 리서처의 감축과 인사이트 내재화**: 리서치 조직이 다른 직군 대비 약 3배 높은 비율로 감축되는 시장 환경에서, 디자이너는 인사이트를 직접 발굴하거나 데이터 공백 상황을 주도적으로 통제해야 한다 [Why senior UX designers are struggling in 2026-ko.md](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
+- **인터페이스의 상품화와 가치 이동**: 에이전트가 픽셀 단위로 완성도 높은 UI를 30초 만에 생성해 내면서, 디자이너의 핵심 가치는 화면 제작 단계에서 시스템 설계 및 전략적 문제 해결의 상류층으로 완전히 이동한다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](../raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
+- **프레임 세팅 (Frame-setting) 역량**: 정돈된 기획서(Input)를 가공해 화면(Output)으로 변환하는 수동적인 프레임 워킹(Frame-working)에서 벗어나, 비즈니스 모호함 속에서 문제와 타깃, 지표를 직접 규정하는 프레임 세팅 역량이 필수적이다 [Why senior UX designers are struggling in 2026-ko.md](../raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
+- **예측 가능성 (Predictability) 확보**: 기획서나 리서치 데이터 등 주변 서포트 인프라(보호막)가 부재한 불확실한 극한 상황(예: 슬랙 한 줄의 간략한 지시)에서도 주도적으로 문제를 헤쳐나갈 수 있는 예측 가능한 해결력이 2026년 시니어 채용 시장(56%)의 주요 기준이다 [Why senior UX designers are struggling in 2026-ko.md](../raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
+- **UX 리서처의 감축과 인사이트 내재화**: 리서치 조직이 다른 직군 대비 약 3배 높은 비율로 감축되는 시장 환경에서, 디자이너는 인사이트를 직접 발굴하거나 데이터 공백 상황을 주도적으로 통제해야 한다 [Why senior UX designers are struggling in 2026-ko.md](../raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md).
 - **조직적 위임과 아키텍처**: 조직이 어떤 범위의 의사결정을 에이전트에 자율 위임하고, 어떤 경계에서 사람의 검토와 승인을 통제할지 사회적/구조적 계약을 설계하는 역할이다.
 
 ## 상세
@@ -37,10 +37,10 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 ### AI 시대 경험 아키텍트의 7대 핵심 역량 (Upstream Skills)
 
 1. **시스템 사고 (Systems Thinking)**: 고립된 단일 화면을 개별 최적화하는 데 그치지 않고, 사용자가 하루 동안 마주하는 알림의 총량, 이탈율, 기능들 간의 상호 누적 효과 등 전체 거시 생태계를 설계하고 조율한다.
-2. **피드백 번역 (Feedback Translation)**: "UI가 답답하다", "화면이 너무 복잡하다" 같은 정제되지 않은 이해관계자/사용자의 불만을 해석하여, 그것이 단순 레이아웃의 결함인지 아니면 AI 추천 결과에 대한 신뢰 상실(Trust Deficit)인지 그 이면의 핵심 우려를 정교하게 짚어낸다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
+2. **피드백 번역 (Feedback Translation)**: "UI가 답답하다", "화면이 너무 복잡하다" 같은 정제되지 않은 이해관계자/사용자의 불만을 해석하여, 그것이 단순 레이아웃의 결함인지 아니면 AI 추천 결과에 대한 신뢰 상실(Trust Deficit)인지 그 이면의 핵심 우려를 정교하게 짚어낸다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](../raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
 3. **데이터 부재 시의 판단 (Judgment without Data)**: AI 모델은 과거 데이터 스케일링에만 의존한다. 전례가 없고 리스크가 큰 신규 도메인 설계 시, 학습 데이터가 존재하지 않는 불확실한 공백 속에서 무엇을 가설로 삼고 검증할지 판단한다.
 4. **패턴 인식과 필터링**: 수많은 사용자 기능 요청(Feature Request) 중에서 6개월 뒤 무용지물이 될 요구사항과 진짜 본질적인 제어 워크플로우에 대한 니즈를 구분하여 개발 방향을 설정한다.
-5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 어떻게 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공할지 인터페이스를 빚어낸다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
+5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 어떻게 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공할지 인터페이스를 빚어낸다 [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md](../raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md).
 6. **전략적 절제 (Strategic Restraint)**: 기계적인 속도로 생성과 배포, A/B 테스트의 반복적인 사이클에 매몰되지 않고, "이 기능은 배포를 멈추고 리서치가 더 필요하다"고 제어할 줄 아는 궤도 속도 조절자 역할을 한다.
 7. **큐레이션으로서의 취향 (Taste as Curation)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 AI Slop 아웃풋을 거부하고, 브랜드 아이덴티티와 고유성에 맞는 타이포그래피, 모션, 색 대비의 관점을 과감히 투입한다.
 

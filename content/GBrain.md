@@ -20,7 +20,7 @@ GBrain은 와이콤비네이터(Y Combinator)의 개리 탄(Garry Tan) 대표가
 
 ## 핵심 요지
 - **자동 구성 지식 그래프**: LLM을 과도하게 호출하지 않고 문서에서 인물, 조직, 이벤트, 관계(`works_at`, `invested_in` 등)를 스캔해 지식 그물망을 빌드한다.
-- **하이브리드 검색 (pgvector + BM25)**: 벡터 유사도와 전통적 키워드 검색을 결합하여, 메모리 역량 평가용 LongMemEval 벤치마크에서 R@5 = 97.9%의 정확도를 달성했다. [출처](file:///Users/railscraft/Obsidian/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20GBrain%20(Open%20Source)-ko.md#L74)
+- **하이브리드 검색 (pgvector + BM25)**: 벡터 유사도와 전통적 키워드 검색을 결합하여, 메모리 역량 평가용 LongMemEval 벤치마크에서 R@5 = 97.9%의 정확도를 달성했다. [출처](../raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20GBrain%20(Open%20Source)-ko.md#L74)
 - **드림 사이클 (Dreaming Cycle)**: 야간 백그라운드 작업을 통해 깨진 참조 링크 복구, 엔티티 관계 업데이트 및 문서 재임베딩 작업을 자율적으로 최적화한다.
 - **MCP(Model Context Protocol) 기본 지원**: `localhost:3000/mcp` 엔드포인트를 제공하여 Claude Code, Cursor, Windsurf 등의 에이전트 도구와 기본 연동된다.
 

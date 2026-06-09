@@ -20,7 +20,7 @@ oMLX는 Apple Silicon(M 시리즈 칩셋) 맥 환경에 맞춤 설계된 고성�
 
 ## 핵심 요지
 - **2단계 KV 캐시 (Two-tier KV Cache)**: RAM의 핫 캐시와 SSD의 콜드 캐시를 유기적으로 맞물려 대규모 프로젝트 컨텍스트나 반복되는 시스템 프롬프트를 디바이스 수준에서 캐싱한다.
-- **TTFT(첫 토큰 생성 시간) 획기적 단축**: `oMLX`를 통해 코딩 에이전트(예: Claude Code)를 구동할 시, 첫 토큰 생성 시간(TTFT)을 기존 30~90초에서 단 1~3초 수준으로 단축한다. [출처](file:///Users/railscraft/Obsidian/raw/I%20Cancelled%20ChatGPT,%20Cursor,%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max%20Quietly%20Replaced%20All%20Three-ko.md#L78)
+- **TTFT(첫 토큰 생성 시간) 획기적 단축**: `oMLX`를 통해 코딩 에이전트(예: Claude Code)를 구동할 시, 첫 토큰 생성 시간(TTFT)을 기존 30~90초에서 단 1~3초 수준으로 단축한다. [출처](../raw/I%20Cancelled%20ChatGPT,%20Cursor,%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max%20Quietly%20Replaced%20All%20Three-ko.md#L78)
 - **통합 서빙 아키텍처**: LLM(대형 언어 모델), VLM(시각 멀티모달 모델), 텍스트 임베딩(Embedding), 리랭커(Reranker) 모델을 단 하나의 프로세스에서 리소스 낭비 없이 병렬로 서빙한다.
 - **Apple Silicon 최적화**: 컨티뉴어스 배칭(Continuous batching), 페이지드 프리픽스 공유(Paged prefix sharing) 등을 완전 제공하여 맥의 GPU Metal 및 Neural Engine 성능을 최고조로 끌어올린다.
 
