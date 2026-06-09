@@ -10,8 +10,9 @@ tags:
 sources:
   - raw/The Complete (Honest) Guide to OpenClaw.md
   - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
 created: 2026-05-26
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 # OpenClaw
