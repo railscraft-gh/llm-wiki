@@ -1,5 +1,35 @@
 # LLM Wiki Log
 
+## 2026-06-10
+
+### Ingest
+
+- 입력: `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
+- 생성: [[Model Context Protocol]] (신규/핵심)
+- 수정: `wiki/index.md`, `wiki/log.md`
+- index 업데이트: 완료
+- 남은 검토: 
+  - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
+
+### 결정 기록
+
+- 결정: 신규 생성 및 핵심 지정
+- 대상: [[Model Context Protocol]]
+- 근거: oMLX, GBrain, Pinterest MCP 등 3개 이상의 문서에서 깨진 링크로 공통 참조하고 있었으며, AI 클라이언트와 데이터 소스 간 연동 비용을 획기적으로 해결하는 기초 통신 표준 프로토콜 규격이므로 core(핵심) 노트로 등록함.
+
+### Lint
+
+- 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행
+- 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료)
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 
+  - 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 일괄 수정 완료. 
+  - 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 텍스트('에 두는')를 '루트에 두는'으로 복원 완료.
+
 ## 2026-06-09
 
 ### Raw 추가 (번역 및 윤문)
@@ -1579,17 +1609,4 @@
 - 실행 방식: `status: needs-review` 노트 24개가 모두 `## 충돌`을 갖추었는지 재확인하고, index의 현재 점검 상태에 반영
 - 결과: needs-review 충돌 섹션 누락 0개
 - 조치: 검토 대기 노트의 스코프/가정/치환 가능성 메타데이터가 모두 기록된 상태로 정규화됨
-
-## 2026-06-10 (로컬 절대 경로 링크 일괄 수정)
-
-### Lint
-
-- 실행 방식: python 스크립트(`fix_links.py`)를 이용하여 wiki/ 폴더 내 전체 마크다운 문서 내 로컬 절대 경로(`file:///Users/railscraft/Obsidian/`) 패턴 탐색 후 상대 경로(`../`)로 일괄 치환
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (기존 출처 보존)
-- 관련 노트 2개 미만 문서: 0개 (기존 관계 유지)
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 수정 완료. 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 부분('에 두는')을 '루트에 두는'으로 수동 복구 완료.
 
