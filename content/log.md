@@ -1,5 +1,31 @@
 # LLM Wiki Log
 
+## 2026-06-09
+
+### Raw 추가 (번역 및 윤문)
+
+- 입력:
+  - `medium/10 Best AI Tools for UI Design. How I 10x My UI_UX Workflow.md`
+  - `medium/Fully Machine-Readable Design Systems.md`
+  - `medium/Hermes Agent + Ollama. FASTEST Way to Install Locally.md`
+  - `medium/I Tried Caveman, Hit a Wall, and Ended Up Sending a Pull Request to a 65k-Star Repo.md`
+  - `medium/The DESIGN.md Workflow. How Google Stitch + Claude Code Quietly Changed the Design-to-Code Handoff.md`
+  - `medium/The End of Vibe Coding.md`
+  - `medium/We Tested 100s of Claude Cowork Prompts. These 7 Automate Your Boring Work.md`
+  - `medium/Will Claude Design replace designers.md`
+  - `medium/Your Cat Understands the World Better Than ChatGPT, and One of AI’s Godfathers Just Quit Meta Over It.md`
+- 생성:
+  - `raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md`
+  - `raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md`
+  - `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`
+  - `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
+  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
+  - `raw/바이브 코딩의 종말-ko.md`
+  - `raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md`
+  - `raw/Claude Design이 디자이너를 대체할 것인가-ko.md`
+  - `raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md`
+- 작업 내용: 영어 원문을 한 문장 한 문장 누락 없이 번역한 후, `humanize-monolith` 서브에이전트(Fast Path)를 활용해 자연스러운 한국어(사람이 쓴 것처럼)로 윤문하여 raw/ 폴더에 저장함. 전 문서 자체검증 6/6 통과 및 A등급 획득 완료.
+
 ## 2026-06-07
 
 ### Ingest
