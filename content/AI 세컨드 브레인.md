@@ -48,4 +48,6 @@ graph TD
 - [[Context Engineering]]
 - [[Agent Harness]]
 - [[Agent Native Infrastructure]]
+- [[GBrain]]
+- [[Claude Cowork]]
 
