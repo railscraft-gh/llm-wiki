@@ -41,7 +41,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`는 같은 지형을 한 번 더 스냅샷처럼 보여 준다. 단일 저장소 소개보다 중요한 것은, local stack, workflow automation, RAG platform, terminal assistant가 여전히 반복되는 작업 표면이라는 점이다.
 
-`raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`는 이 지형을 도구 묶음으로 다시 보여 준다. NocoBase, n8n, Qdrant, Outline, Coolify, OpenHands는 각각 app builder, automation, vector store, knowledge base, deployment, agent runtime이라는 서로 다른 표면을 대표한다. 즉 "오픈소스 작업대"는 하나의 앱이 아니라, 서로 다른 문제를 해결하는 작업 표면들의 묶음이다.
+`raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`는 이 지형을 도구 묶음으로 다시 보여 준다. NocoBase, n8n, Qdrant, Outline, Coolify, OpenHands는 각각 app builder, automation, vector store, knowledge base, deployment, agent runtime이라는 서로 다른 표면을 대표한다. 즉 "오픈소스 작업대"는 하나의 앱이 아니라, 서로 다른 문제를 해결하는 작업 표면들의 묶음이다. 특히 `raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md`에서 나타나듯, NocoBase 외에도 Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 도구들은 셀프 호스팅 에이전트인 [[Hermes Agent]]와 연동되어 데이터 스키마 설계, 승인 워크플로우 구성, 데이터 가공 등의 작업 표면을 구축한다. 구체적인 연동 가이드는 [[Hermes Agent와 오픈소스 내부 도구 연동]]에서 다룬다.
 
 `raw/The Open-Source Agent Toolkit in 2026-ko.md`는 같은 흐름을 stack layer로 재배치한다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 레이어는 어떤 저장소를 먼저 보아야 하는지 결정하는 체크리스트가 된다. 이 노트의 생태계 관찰은 결국 이 레이어 선택 문제로 수렴한다.
 
@@ -79,4 +79,5 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [[AI 기본값 구현체]]
 - [[AI 에이전트 런타임 역할 맵]]
 - [[AI 기본값 수용과 오버라이드 전략]]
+- [[Hermes Agent와 오픈소스 내부 도구 연동]]
 
