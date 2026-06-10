@@ -37,7 +37,7 @@
   - [[의도적 연습]] (신규)
   - [[약한 연결의 힘]] (신규)
   - [[2026년 오픈소스 LLM 플랫폼 비교]] (신규)
-- 수정: [[세계 모델]] (보강/에버그린 승격), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강/에버그린 승격), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강/에버그린 승격), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), [[Andrew Ng 4 에이전틱 디자인 패턴]] (보강), [[DESIGN.md 워크플로우]] (보강), `wiki/index.md`, `wiki/log.md`
+- 수정: [[세계 모델]] (보강/에버그린 승격), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강/에버그린 승격), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강/에버그린 승격), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), [[Andrew Ng 4 에이전틱 디자인 패턴]] (보강), [[DESIGN.md 워크플로우]] (보강), [[Hermes Agent와 오픈소스 내부 도구 연동]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
@@ -72,9 +72,9 @@
 - 대상: [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]
 - 근거: AI 에이전트 오케스트레이션 프레임워크 선정 시, 랭그래프의 통제성(durable execution)과 크루AI의 협업 모델, PydanticAI의 타입 안전성, Smolagents의 파이썬 코드 생성(CodeAgent) 등 기술적 트레이드오프 및 선택 기준을 실무 평가 지표와 함께 정리하기 위해 작성함.
 
-- 결정: 신규 생성
+- 결정: 신규 생성 및 보강
 - 대상: [[Hermes Agent와 오픈소스 내부 도구 연동]]
-- 근거: 셀프 호스팅 가능한 내부 도구 5종(NocoBase, Appsmith, Budibase, Directus, Baserow)의 환경 설계와 스키마, 승인 프로세스 구성에 있어 Hermes 에이전트와의 협업 워크플로우 및 스킬 자산화 전략을 명확히 아카이빙하기 위함.
+- 근거: 셀프 호스팅 가능한 내부 도구 5종(NocoBase, Appsmith, Budibase, Directus, Baserow)의 환경 설계와 스키마, 승인 프로세스 구성에 있어 Hermes 에이전트와의 협업 워크플로우 및 스킬 자산화 전략을 명확히 아카이빙하고, Reddit의 에이전트 벤치마크 및 플랫폼별 깃허브 스타 수치(NocoBase 22.6k, Appsmith 39.9k 등)를 정확한 출처와 함께 정밀하게 보완 반영함.
 
 - 결정: 신규 생성
 - 대상: [[성공을 결정하는 5가지 핵심 자질]], [[학습된 낙관주의]], [[성장 마인드셋]], [[지연된 만족]], [[의도적 연습]], [[약한 연결의 힘]]
@@ -90,25 +90,26 @@
 
 - 결정: 보강 및 상태 evergreen 승격
 - 대상: [[세계 모델]], [[Claude Cowork]], [[Claude Design]]
-- 근거: 새로운 2차 raw 자료를 인제스트하여 물리 세계와의 접촉 논리, 인보이스/대시보드 실무 프롬프트 예시, 그리고 Claude Design 템플릿의 조립 형태와 일반 Opus 4.7 코딩 에이전트 생성 기능 비교를 정밀화하고, 지식 완성도가 성숙하였으므로 evergreen으로 상태를 승격함.
+- 근거: 새로운 2차 raw 자료를 인제스트하여 물리 세계와의 접촉 논리, 인보이스/대시보드 실무 프롬프트 예시, 그리고 Claude Design 템플릿의 조립 형태와 일반 Opus 4.7 코딩 에이전트 생성 기능 비교를 정밀화함. 특히 [[Claude Cowork]]의 경우 데스크톱 앱의 폴더 연동 설정 상세와 가부(Hard Nos) 가드레일 설계 원칙을 추가 수용하여 evergreen으로 상태를 승격함.
 
 - 결정: 보강
 - 대상: [[LLM Wiki 운영 패턴]], [[케이브맨]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[완전히 기계 읽기 가능한 디자인 시스템]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]], [[Spec Kit]], [[사양 기반 개발 (Spec Driven Development)]], [[Vibe Coding과 Agentic Engineering]], [[Andrew Ng 4 에이전틱 디자인 패턴]], [[DESIGN.md 워크플로우]]
-- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함. 더불어, MD Azizul Hakim의 Brevity Constraints 논문(정확도 26%p 향상)에 기반한 케이브맨 스킬 및 caveman-code 독립형 에이전트의 효율 실증, PR #448의 manual mode 토글 설정 추가 및 에이전트의 거절권/정직성 사례, Steph Ango의 Agent Skills 스펙 및 파일 캐비닛 아키텍처(Ingest-Compile-Query-Lint 4단계), 100개 문서 임계값에 따른 RAG 마이그레이션(ChromaDB/DuckDB, bge-m3) 전략 및 7대 실패 방어책을 정밀 반영함. 특히, 인디드의 6개 지식 레이어 구성과 14개 코드베이스 Sourcegraph MCP 감사 데이터에 기반한 설계 배경을 보완하는 `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md` 자료를 연동하여 보강함. 추가적으로, ReAct 패턴의 3대 핵심 가치와 적응형 계획 수립 및 5대 에이전틱 패턴 확장 분류, 그리고 DESIGN.md 디자인-코드 핸드오프 워크플로우를 기존 위키에 반영함.
+- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함. 더불어, MD Azizul Hakim의 Brevity Constraints 논문(정확도 26%p 향상)에 기반한 케이브맨 스킬 및 caveman-code 독립형 에이전트의 효율 실증, PR #448의 manual mode 토글 설정 추가 및 에이전트의 거절권/정직성 사례, Steph Ango의 Agent Skills 스펙 및 파일 캐비닛 아키텍처(Ingest-Compile-Query-Lint 4단계), 100개 문서 임계값에 따른 RAG 마이그레이션(ChromaDB/DuckDB, bge-m3) 전략 및 7대 실패 방어책을 정밀 반영함. 특히, 인디드의 6개 지식 레이어 구성과 14개 코드베이스 Sourcegraph MCP 감사 데이터에 기반한 설계 배경을 보완하는 `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md` 자료를 연동하여 보강함. 추가적으로, ReAct 패턴의 3대 핵심 가치와 적응형 계획 수립 및 5대 에이전틱 패턴 확장 분류, 그리고 DESIGN.md 디자인-코드 핸드오프 워크플로우를 기존 위키에 반영함. 특히 [[UI UX 디자인 AI 워크플로우]]의 경우 OpenAI Image 2 모델 분석, Dribbble 기반 데이터의 복사본 학습 한계, 채용 시장의 성장 곡선 및 페이지포먼스 지표 등의 구체적 수치와 출처를 정밀하게 보강함.
 
 ### Lint
 
-- 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행
+- 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행, 그리고 수동 린트 체크리스트 재검사
 - 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료. 신규 생성한 성공 자질 및 SpaceX AI 인프라 관련 노트들 간 및 기존 노트들과의 상호 연결 무결함)
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표, 마크 그라노베터의 1973년 논문 학술 근거, Spec Kit의 수치, 그리고 케이브맨의 65% 출력 절감/26%p 향상 정확도 논문 근거, SpaceX의 Blackwell Ultra GPU 22만 대 및 JAX 대비 10배 수치, LLM Wiki의 100개 문서 임계값에 대한 raw 출처 명시 완료)
-- 관련 노트 2개 미만 문서: 0개 (신규 노트에 관련 위키 링크 2개 이상 매핑 완료)
+- 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표, 마크 그라노베터의 1973년 논문 학술 근거, Spec Kit의 수치, 그리고 케이브맨의 65% 출력 절감/26%p 향상 정확도 논문 근거, SpaceX의 Blackwell Ultra GPU 22만 대 및 JAX 대비 10배 수치, LLM Wiki의 100개 문서 임계값에 대한 raw 출처 명시 완료. 추가로 NocoBase(22.6k), Appsmith(39.9k), Budibase(28k), Directus(35.9k), Baserow(4.9k) 깃허브 스타 수치 및 OpenAI Image 2의 80% 평균품질 돌파와 Dribbble 9점 지표, 페이지포먼스의 80~97% 방치율 데이터에 대한 raw 출처 링크 명시 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 및 보강 노트에 관련 위키 링크 2개 이상 매핑 완료)
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 
   - 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 일괄 수정 완료. 
   - 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 텍스트('에 두는')를 '루트에 두는'으로 복원 완료.
   - 신규 생성 노트를 [[병렬 에이전트 세션 운영]], [[Agent Harness]], [[Context Engineering]], [[의지와 고통]], [[돈의 심리학]], [[기록으로 성장하는 법]], [[주의력 회복]], [[Agent Native Infrastructure]], [[Software 3.0]] 등 기존 노정리와 상호 연결함.
+  - 3개 문서의 인제스트 및 보강 작업에 따라 깨진 wikilink 및 관련 노트를 수동 정비하여 최종 정합성을 확보함.
 
 ## 2026-06-09
 
