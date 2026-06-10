@@ -20,6 +20,10 @@
   - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
   - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
   - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
 - 생성: 
   - [[Model Context Protocol]] (신규/핵심)
   - [[멀티 에이전트 코스 빌더]] (신규)
@@ -32,7 +36,8 @@
   - [[지연된 만족]] (신규)
   - [[의도적 연습]] (신규)
   - [[약한 연결의 힘]] (신규)
-- 수정: [[세계 모델]] (보강/에버그린 승격), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강/에버그린 승격), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강/에버그린 승격), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), `wiki/index.md`, `wiki/log.md`
+  - [[2026년 오픈소스 LLM 플랫폼 비교]] (신규)
+- 수정: [[세계 모델]] (보강/에버그린 승격), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강/에버그린 승격), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강/에버그린 승격), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), [[Andrew Ng 4 에이전틱 디자인 패턴]] (보강), [[DESIGN.md 워크플로우]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
@@ -50,6 +55,8 @@
   - [[케이브맨]]: 수동 트리거 PR #448의 머지 여부 추적 및 MD Azizul Hakim의 아카이브 논문(Spontaneous Scale-dependent Verbosity 현상)에서 주장하는 26%p 정확도 향상이 상용 LLM(Claude Code 등)에 적용될 때의 절감 비용 실측 검증.
   - [[SpaceX C 언어 기반 AI 인프라 전략]]: 22만 대 Blackwell Ultra GPU(칩당 192GB HBM3e) 클러스터에서 AllReduce NCCL 라이브러리를 포기하고 수동 통신 토폴로지 매핑을 하드코딩한 성능(JAX 대비 10배 향상)의 실측 검증 및 타 연구소에서의 재현 가능성 검토 필요.
   - [[LLM Wiki 운영 패턴]]: 100개 문서(40만 단어) 임계값 돌파 후 ChromaDB/DuckDB 로컬 벡터 DB 마이그레이션 시의 하이브리드 투 트랙 탐색 속도와 검색 정합성 검증.
+  - [[2026년 오픈소스 LLM 플랫폼 비교]]: Cerebras, SambaNova 등 LPU/WSE 칩 기반 추론의 API 호출 제한(Rate Limit) 변화 추이 및 무료 스택 rotator 스크립트의 에러 롤백 안정성 실측 필요.
+  - [[Andrew Ng 4 에이전틱 디자인 패턴]]: 자가 개선 루프(Reflection) 및 ReAct 패턴의 사고 사슬(Chain-of-thought) 깊이가 로컬 경량 모델 구동 환경에서 보장되는지 검증.
 
 ### 결정 기록
 
@@ -77,13 +84,17 @@
 - 대상: [[SpaceX C 언어 기반 AI 인프라 전략]]
 - 근거: PyTorch, JAX 등 고수준 프레임워크를 완전히 배제하고 하드웨어 물리 토폴로지와 일대일 매핑되는 순수 C 언어로 22만 대 Blackwell Ultra GPU를 제어하여 JAX 대비 10배의 성능 향상과 온라인 RL 최적화를 이끌어낸 혁신적 인프라 전략을 보존함.
 
+- 결정: 신규 생성
+- 대상: [[2026년 오픈소스 LLM 플랫폼 비교]]
+- 근거: Ollama, OpenRouter, Groq 등 2026년 최신 LLM 추론/호스팅 인프라 지형과 PHP/Laravel 기반 다중 API 로테이터 백엔드 설계 가이드를 정밀 보존하여 개발팀의 인프라 판단을 돕기 위함.
+
 - 결정: 보강 및 상태 evergreen 승격
 - 대상: [[세계 모델]], [[Claude Cowork]], [[Claude Design]]
 - 근거: 새로운 2차 raw 자료를 인제스트하여 물리 세계와의 접촉 논리, 인보이스/대시보드 실무 프롬프트 예시, 그리고 Claude Design 템플릿의 조립 형태와 일반 Opus 4.7 코딩 에이전트 생성 기능 비교를 정밀화하고, 지식 완성도가 성숙하였으므로 evergreen으로 상태를 승격함.
 
 - 결정: 보강
-- 대상: [[LLM Wiki 운영 패턴]], [[케이브맨]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[완전히 기계 읽기 가능한 디자인 시스템]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]], [[Spec Kit]], [[사양 기반 개발 (Spec Driven Development)]], [[Vibe Coding과 Agentic Engineering]]
-- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함. 더불어, MD Azizul Hakim의 Brevity Constraints 논문(정확도 26%p 향상)에 기반한 케이브맨 스킬 및 caveman-code 독립형 에이전트의 효율 실증, PR #448의 manual mode 토글 설정 추가 및 에이전트의 거절권/정직성 사례, Steph Ango의 Agent Skills 스펙 및 파일 캐비닛 아키텍처(Ingest-Compile-Query-Lint 4단계), 100개 문서 임계값에 따른 RAG 마이그레이션(ChromaDB/DuckDB, bge-m3) 전략 및 7대 실패 방어책을 정밀 반영함. 특히, 인디드의 6개 지식 레이어 구성과 14개 코드베이스 Sourcegraph MCP 감사 데이터에 기반한 설계 배경을 보완하는 `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md` 자료를 연동하여 보강함.
+- 대상: [[LLM Wiki 운영 패턴]], [[케이브맨]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[완전히 기계 읽기 가능한 디자인 시스템]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]], [[Spec Kit]], [[사양 기반 개발 (Spec Driven Development)]], [[Vibe Coding과 Agentic Engineering]], [[Andrew Ng 4 에이전틱 디자인 패턴]], [[DESIGN.md 워크플로우]]
+- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함. 더불어, MD Azizul Hakim의 Brevity Constraints 논문(정확도 26%p 향상)에 기반한 케이브맨 스킬 및 caveman-code 독립형 에이전트의 효율 실증, PR #448의 manual mode 토글 설정 추가 및 에이전트의 거절권/정직성 사례, Steph Ango의 Agent Skills 스펙 및 파일 캐비닛 아키텍처(Ingest-Compile-Query-Lint 4단계), 100개 문서 임계값에 따른 RAG 마이그레이션(ChromaDB/DuckDB, bge-m3) 전략 및 7대 실패 방어책을 정밀 반영함. 특히, 인디드의 6개 지식 레이어 구성과 14개 코드베이스 Sourcegraph MCP 감사 데이터에 기반한 설계 배경을 보완하는 `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md` 자료를 연동하여 보강함. 추가적으로, ReAct 패턴의 3대 핵심 가치와 적응형 계획 수립 및 5대 에이전틱 패턴 확장 분류, 그리고 DESIGN.md 디자인-코드 핸드오프 워크플로우를 기존 위키에 반영함.
 
 ### Lint
 
