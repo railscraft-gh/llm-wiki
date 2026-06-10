@@ -54,7 +54,7 @@ DESIGN.md 워크플로우는 Google Stitch 캔버스에서 도출된 `DESIGN.md`
 1. **프롬프트 입력**: "차분하고 미니멀한 습관 추적 앱 Cadence를 디자인해줘. 따뜻한 오프화이트 배경(#FAF7F2), 세이지 악센트(#8AA890) 사용."
 2. **DESIGN.md 캘리브레이션**: 자동 작성된 `DESIGN.md`에서 본문 행간을 24에서 22로 직접 수정하고, 악센트 컬러를 클레이 색상(`#B5715F`)으로 변경하여 캔버스 화면 자동 동기화 업데이트.
 3. **코드 프로젝트 연동**: React Native Expo 프로젝트 루트에 `DESIGN.md` 붙여넣기 및 `claude mcp add stitch` 연동 완료.
-4. **검토 및 빌드**: Claude Code가 `DESIGN.md`를 파싱해 공통 테마 `theme.ts`를 제안하고, 개발자의 검토 후 Stitch MCP의 Home 화면 레이아웃 매핑 정보를 읽어 `HomeScreen.tsx` 완성. 피드백 30초 내 교정 루프 가동 [DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md](../raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md].
+4. **검토 및 빌드**: Claude Code가 `DESIGN.md`를 파싱해 공통 테마 `theme.ts`를 제안하고, 개발자의 검토 후 Stitch MCP의 Home 화면 레이아웃 매핑 정보를 읽어 `HomeScreen.tsx` 완성. 피드백 30초 내 교정 루프 가동 (출처: DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법)
 
 ## 충돌
 
