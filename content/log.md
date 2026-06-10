@@ -80,16 +80,16 @@
 ### Lint
 
 - 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행
-- 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료. 신규 생성한 성공 자질 노트들 간 및 기존 노트들과의 상호 연결 무결함)
+- 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료. 신규 생성한 성공 자질 및 SpaceX AI 인프라 관련 노트들 간 및 기존 노트들과의 상호 연결 무결함)
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표, 마크 그라노베터의 1973년 논문 학술 근거, Spec Kit의 스타 9만 개/포크 8천 개 수치에 대한 raw 출처 명시 완료)
+- 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표, 마크 그라노베터의 1973년 논문 학술 근거, Spec Kit의 수치, 그리고 케이브맨의 65% 출력 절감/26%p 향상 정확도 논문 근거, SpaceX의 Blackwell Ultra GPU 22만 대 및 JAX 대비 10배 수치, LLM Wiki의 100개 문서 임계값에 대한 raw 출처 명시 완료)
 - 관련 노트 2개 미만 문서: 0개 (신규 노트에 관련 위키 링크 2개 이상 매핑 완료)
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 
   - 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 일괄 수정 완료. 
   - 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 텍스트('에 두는')를 '루트에 두는'으로 복원 완료.
-  - 신규 생성 노트를 [[병렬 에이전트 세션 운영]], [[Agent Harness]], [[Context Engineering]], [[의지와 고통]], [[돈의 심리학]], [[기록으로 성장하는 법]], [[주의력 회복]] 등 기존 노정리와 상호 연결함.
+  - 신규 생성 노트를 [[병렬 에이전트 세션 운영]], [[Agent Harness]], [[Context Engineering]], [[의지와 고통]], [[돈의 심리학]], [[기록으로 성장하는 법]], [[주의력 회복]], [[Agent Native Infrastructure]], [[Software 3.0]] 등 기존 노정리와 상호 연결함.
 
 ## 2026-06-09
 
