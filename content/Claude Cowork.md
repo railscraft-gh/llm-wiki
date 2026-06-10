@@ -1,6 +1,6 @@
 ---
 type: concept
-status: draft
+status: evergreen
 core: false
 tags:
   - llm
@@ -13,8 +13,9 @@ aliases:
   - Cowork
 sources:
   - 우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 ---
 
 # Claude Cowork
