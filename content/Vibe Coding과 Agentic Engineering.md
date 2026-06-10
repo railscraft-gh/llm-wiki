@@ -16,8 +16,9 @@ sources:
   - AI로_만든_제품이_안_팔리는_이유
   - sequoia-ascent-2026-karpathy
   - 바이브 코딩의 종말
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
 created: 2026-05-06
-updated: 2026-06-09
+updated: 2026-06-10
 ---
 
 # Vibe Coding과 Agentic Engineering
