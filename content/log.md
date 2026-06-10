@@ -10,11 +10,15 @@
   - Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기
   - Hermes Agent와 Ollama 로컬 설치 초고속 가이드
   - 파이썬 AI 에이전트 프레임워크 6종 비교 분석
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
 - 생성: 
   - [[Model Context Protocol]] (신규/핵심)
   - [[멀티 에이전트 코스 빌더]] (신규)
   - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] (신규)
-- 수정: [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), `wiki/index.md`, `wiki/log.md`
+  - [[Hermes Agent와 오픈소스 내부 도구 연동]] (신규)
+- 수정: [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
@@ -22,6 +26,10 @@
   - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]: Smolagents의 CodeAgent 실행에 따른 샌드박스 보안 설계 세부 가이드 및 CrewAI와 PydanticAI의 대규모 멀티에이전트 이관 시 런타임 안정성 데이터 실측 필요.
   - [[LLM Wiki 운영 패턴]]: 개인이 사용하는 Obsidian + Claude Code 볼트 환경에서 대량의 JSON 파일(/ingest) 처리 시 토큰 소비량 및 API 레이턴시 제어를 위한 세부 스크립팅 검증 필요.
   - [[Hermes Agent]]: 로컬 gpt-oss:20b 모델 사용 시 복잡한 도구 호출(max iterations: 60) 반복에 의한 성능 저하 및 자가 개선 스킬의 오동작 확률 실측 필요.
+  - [[Hermes Agent와 오픈소스 내부 도구 연동]]: 로우코드 플랫폼 내에서 실행되는 Hermes 에이전트 CLI 명령어의 실제 권한 한계 및 샌드박스 격리 설계 방안 검토 필요.
+  - [[Claude Design]]: OpenAI의 신규 UI 디자인 생성 모델 등 외부 도구와의 생성 시안 동질화 문제와 미시적 안목에 대한 디자이너 피드백 검증 필요.
+  - [[UI UX 디자인 AI 워크플로우]]: Pageformance가 명시한 80~97% 방치 웹사이트들의 실시간 보정을 위해 Clarity 추적 데이터와 연동되는 에이전틱 최적화 루프 실증 데이터 확보.
+  - [[Claude.md 운영 원칙]]: Claude 데스크톱 Cowork 환경에서 layered instruction(CLAUDE.md + voice_profile.md 등) 구동 시 프롬프트 누수 및 준수율 변화 수치 확인.
 
 ### 결정 기록
 
@@ -37,9 +45,13 @@
 - 대상: [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]
 - 근거: AI 에이전트 오케스트레이션 프레임워크 선정 시, 랭그래프의 통제성(durable execution)과 크루AI의 협업 모델, PydanticAI의 타입 안전성, Smolagents의 파이썬 코드 생성(CodeAgent) 등 기술적 트레이드오프 및 선택 기준을 실무 평가 지표와 함께 정리하기 위해 작성함.
 
+- 결정: 신규 생성
+- 대상: [[Hermes Agent와 오픈소스 내부 도구 연동]]
+- 근거: 셀프 호스팅 가능한 내부 도구 5종(NocoBase, Appsmith, Budibase, Directus, Baserow)의 환경 설계와 스키마, 승인 프로세스 구성에 있어 Hermes 에이전트와의 협업 워크플로우 및 스킬 자산화 전략을 명확히 아카이빙하기 위함.
+
 - 결정: 보강
-- 대상: [[LLM Wiki 운영 패턴]], [[Hermes Agent]]
-- 근거: 신규 raw 자료에서 제시된 개인용 AI 세컨드 브레인의 4가지 슬래시 명령어(/ingest, /query, /lint, /log) 및 로컬 Ollama 환경에서의 Hermes Agent 셋업 가이드, gpt-oss:20b 로컬 추론 성능 수치를 기존 지식 베이스에 정밀 반영함.
+- 대상: [[LLM Wiki 운영 패턴]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[Claude Design]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]]
+- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함.
 
 ### Lint
 
