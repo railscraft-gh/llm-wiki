@@ -121,4 +121,5 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 - [[에이전트 코딩 4원칙]]
 - [[Claude Code 세션 운영 명령어]]
 - [[Agent Harness]]
+- [[Claude Cowork]]
 
