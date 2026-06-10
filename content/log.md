@@ -16,6 +16,10 @@
   - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
   - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
   - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
 - 생성: 
   - [[Model Context Protocol]] (신규/핵심)
   - [[멀티 에이전트 코스 빌더]] (신규)
@@ -28,7 +32,7 @@
   - [[지연된 만족]] (신규)
   - [[의도적 연습]] (신규)
   - [[약한 연결의 힘]] (신규)
-- 수정: [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), `wiki/index.md`, `wiki/log.md`
+- 수정: [[세계 모델]] (보강/에버그린 승격), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강/에버그린 승격), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강/에버그린 승격), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
