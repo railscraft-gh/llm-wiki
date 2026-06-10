@@ -53,8 +53,8 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
   - `Session Reset Policy`: 비활성 1440분(24시간) 또는 오전 4시 도달 시 세션 리셋
 
 ### 4. OpenClaw와의 비교
-- **Hermes Agent 강점**: 개인 동반자(Personal Advisor) 특화, 자동 기술 자가 학습, 음성 지원(기본 Microsoft Edge TTS), 가벼운 리소스 점유(20MB 대 200MB+).
-- **OpenClaw 강점**: 멀티 에이전트 조정 및 채널 관리(Fleet 지휘관), 브라우저 자동화, 풍부한 플러그인 생태계와 검증된 실적(307k 스타 대 6k 스타).
+- **Hermes Agent 강점**: 개인 동반자(Personal Advisor) 특화, 자동 기술 자가 학습(자가 개선), 음성 지원(기본 Microsoft Edge TTS), 가벼운 리소스 점유(20MB 대 200MB 이상). (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
+- **OpenClaw 강점**: 멀티 에이전트 조정 및 채널 관리(Fleet 지휘관), 브라우저 자동화, 풍부한 플러그인 생태계와 대규모 커뮤니티의 검증된 실적(깃허브 스타 수 30.7만 개 대 Hermes Agent 6천 개 남짓). (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
 
 ### 5. 오픈소스 내부 도구 플랫폼과의 연동
 Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 플랫폼과 긴밀하게 연동된다. 자연어 지시를 통해 DB 스키마, UI 기획, 절차 프로세스를 구축하고 권한을 설정할 수 있으며, 이 노하우를 '스킬'로 저장해 재사용한다. 구체적인 동작 방식은 [[Hermes Agent와 오픈소스 내부 도구 연동]]을 참조한다.
