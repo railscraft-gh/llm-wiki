@@ -8,7 +8,7 @@ tags:
  - algorithm
 aliases: []
 sources:
- - raw/강화학습-RL-초보자-가이드.md
+ - 강화학습-RL-초보자-가이드
 created: 2026-05-11
 updated: 2026-05-11
 ---

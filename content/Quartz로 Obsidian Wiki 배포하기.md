@@ -10,8 +10,8 @@ aliases:
  - Quartz 배포
  - Quartz GitHub Pages
 sources:
- - raw/Quartz-Deploy-Guide.md
- - raw/Quartz-GitHub-Pages-Complete-Guide.md
+ - Quartz-Deploy-Guide
+ - Quartz-GitHub-Pages-Complete-Guide
  - https://quartz.jzhao.xyz/
  - https://quartz.jzhao.xyz/build
  - https://quartz.jzhao.xyz/hosting

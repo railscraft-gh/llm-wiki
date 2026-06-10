@@ -11,8 +11,8 @@ aliases:
  - Infisical Universal Auth
  - Machine Identity 인증
 sources:
- - raw/Infisical_SSH_헤드리스_인증_가이드.md
- - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - Infisical_SSH_헤드리스_인증_가이드
+ - API_Key_관리_및_Infisical_도입_가이드
  - https://infisical.com/docs/documentation/platform/identities/machine-identities
  - https://infisical.com/docs/documentation/platform/identities/universal-auth
  - https://infisical.com/docs/cli/commands

@@ -11,11 +11,11 @@ aliases:
  - DESIGN.md
  - 디자인용 AGENTS.md
 sources:
- - raw/AI로_만든_제품이_안_팔리는_이유.md
- - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
- - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
- - raw/How to write a DESIGN.md file Claude can actually use-ko.md
- - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+ - AI로_만든_제품이_안_팔리는_이유
+ - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
+ - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+ - How to write a DESIGN.md file Claude can actually use
+ - DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07

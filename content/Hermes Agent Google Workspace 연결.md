@@ -12,7 +12,7 @@ aliases:
   - Hermes Google 연결
   - Google Workspace 연결 절차
 sources:
-  - raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+  - Hermes Agent에 구글 연결하는 초보자 매뉴얼
 created: 2026-05-28
 updated: 2026-05-28
 ---

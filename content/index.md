@@ -149,7 +149,7 @@
 
 ## 현재 점검 상태
 
-- raw/ 106개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 106개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
 - 현재 상태 분포는 evergreen 71개, needs-review 20개, draft 2개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
 - `status: needs-review` 노트 20개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.

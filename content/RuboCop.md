@@ -9,7 +9,7 @@ tags:
   - ci
   - verification
 sources:
-  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+  - RuboCop - Ruby 정적 코드 분석기 완벽 정리
 created: 2026-05-13
 updated: 2026-05-13
 ---

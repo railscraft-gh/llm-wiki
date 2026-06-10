@@ -10,16 +10,16 @@ tags:
 aliases:
   - 하네스 엔지니어링
 sources:
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-  - raw/evolution-of-ai-agentic-patterns.md
-  - raw/andrej-karpathy-skills-CLAUDE-번역.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
-  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
-  - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
-  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
-  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+  - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+  - evolution-of-ai-agentic-patterns
+  - andrej-karpathy-skills-CLAUDE-번역
+  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+  - 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
+  - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+  - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
+  - 하네스를 내 것으로 만들기 - 출판형 다듬기
+  - AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
 updated: 2026-06-03

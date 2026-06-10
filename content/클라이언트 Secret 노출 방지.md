@@ -10,7 +10,7 @@ aliases:
  - 브라우저 Secret 노출 방지
  - Client-side API Key
 sources:
- - raw/API_Key_관리_및_Infisical_도입_가이드.md
+ - API_Key_관리_및_Infisical_도입_가이드
 created: 2026-05-07
 updated: 2026-05-07
 ---

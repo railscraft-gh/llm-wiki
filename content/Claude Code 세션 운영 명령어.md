@@ -11,7 +11,7 @@ aliases:
  - Claude Code 명령어 운영
  - Claude Code power user commands
 sources:
- - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+ - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
 created: 2026-05-24
 updated: 2026-05-24
 ---

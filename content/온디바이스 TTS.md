@@ -12,7 +12,7 @@ aliases:
   - 로컬 TTS
   - Supertonic 3
 sources:
-  - raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
+  - Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
 created: 2026-05-26
 updated: 2026-05-26
 ---

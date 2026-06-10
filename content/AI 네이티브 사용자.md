@@ -10,18 +10,18 @@ aliases:
  - AI-native user
  - AI 네이티브 개발자
 sources:
- - raw/안드레_카파시_인터뷰_정리.md
- - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
- - raw/sequoia-ascent-2026-karpathy-ko.md
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
- - raw/anthropic-boris-cherny-interview.md
- - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
- - raw/아무도 AI를 배우고 싶어 하지 않는다.md
- - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
- - raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
+ - 안드레_카파시_인터뷰_정리
+ - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+ - sequoia-ascent-2026-karpathy
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표
+ - anthropic-boris-cherny-interview
+ - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+ - 아무도 AI를 배우고 싶어 하지 않는다
+ - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+ - 2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변
 created: 2026-05-06
 updated: 2026-05-26
 ---

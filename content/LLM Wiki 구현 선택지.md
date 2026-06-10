@@ -11,10 +11,10 @@ aliases:
   - LLM Wiki app vs skill
   - purpose.md 운영
 sources:
-  - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
-  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-  - raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
-  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
+  - Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다
+  - Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
+  - 완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다
+  - How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)
 created: 2026-05-26
 updated: 2026-06-03
 ---

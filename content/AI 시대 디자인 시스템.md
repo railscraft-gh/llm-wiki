@@ -11,16 +11,16 @@ aliases:
  - AI 디자인 시스템
  - 에이전트용 디자인 시스템
 sources:
- - raw/AI로_만든_제품이_안_팔리는_이유.md
- - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
- - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
- - raw/Good Design Doesn’t Happen By Default.md
- - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
- - raw/From faster pencil to AI Experience Architect. a designer’s path.md
- - raw/The most important Design System in 2026 that designers missed was built by a developer..md
- - raw/AI와 디자인 시스템 - 출판형 다듬기.md
- - raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
- - raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+ - AI로_만든_제품이_안_팔리는_이유
+ - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
+ - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+ - Good Design Doesn’t Happen By Default
+ - Agentic AI, design systems & Figma. a practical guide
+ - From faster pencil to AI Experience Architect. a designer’s path
+ - The most important Design System in 2026 that designers missed was built by a developer.
+ - AI와 디자인 시스템 - 출판형 다듬기
+ - 완전히 기계 읽기 가능한 디자인 시스템
+ - Claude Design이 디자이너를 대체할 것인가
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07

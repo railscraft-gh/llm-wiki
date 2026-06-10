@@ -9,7 +9,7 @@ tags:
   - sandbox
 aliases: []
 sources:
-  - raw/context-mode-README-정리.md
+  - context-mode-README-정리
 created: 2026-05-09
 updated: 2026-05-26
 ---

@@ -11,8 +11,8 @@ aliases:
   - MCP
   - 모델 컨텍스트 프로토콜
 sources:
-  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-  - raw/Building an MCP Ecosystem at Pinterest-ko.md
+  - What Is MCP? Build a Custom MCP Server in Python
+  - Building an MCP Ecosystem at Pinterest
 created: 2026-06-10
 updated: 2026-06-10
 ---

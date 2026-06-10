@@ -11,20 +11,20 @@ aliases:
  - Verification Loop
  - 검증 루프
 sources:
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/안드레_카파시_인터뷰_정리.md
- - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
- - raw/AI로_만든_제품이_안_팔리는_이유.md
- - raw/opencode-masterclass-summary.md
- - raw/cc101_axwith_ko.md
- - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
- - raw/andrej-karpathy-skills-CLAUDE-번역.md
- - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
- - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - 안드레_카파시_인터뷰_정리
+ - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+ - AI로_만든_제품이_안_팔리는_이유
+ - opencode-masterclass-summary
+ - cc101_axwith_ko
+ - RuboCop - Ruby 정적 코드 분석기 완벽 정리
+ - andrej-karpathy-skills-CLAUDE-번역
+ - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+ - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+  - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+  - You’re Using AI to Write Code. You’re Not Using It to Review Code.
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06

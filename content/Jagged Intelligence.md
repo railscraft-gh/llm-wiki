@@ -10,9 +10,9 @@ aliases:
  - 재기드 인텔리전스
  - 들쭉날쭉한 지능
 sources:
- - raw/안드레_카파시_인터뷰_정리.md
- - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
- - raw/sequoia-ascent-2026-karpathy-ko.md
+ - 안드레_카파시_인터뷰_정리
+ - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+ - sequoia-ascent-2026-karpathy
 created: 2026-05-06
 updated: 2026-05-14
 ---

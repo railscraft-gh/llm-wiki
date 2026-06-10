@@ -10,7 +10,7 @@ tags:
 aliases:
   - GJC
 sources:
-  - raw/gajae-code_AI_코딩_하네스_분석.md
+  - gajae-code_AI_코딩_하네스_분석
 created: 2026-06-04
 updated: 2026-06-04
 ---

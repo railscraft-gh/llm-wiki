@@ -10,7 +10,7 @@ tags:
 aliases:
   - 컨텍스트 엔지니어링
 sources:
-  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+  - AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다
 created: 2026-05-26
 updated: 2026-05-26
 ---

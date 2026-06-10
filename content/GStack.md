@@ -11,9 +11,9 @@ aliases:
   - G스택
   - garrytan/gstack
 sources:
-  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
-  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
-  - raw/매퍼코-3스킬-조합-워크플로우-해강.md
+  - GStack - Claude Code 가상 엔지니어링 팀 도구
+  - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+  - 매퍼코-3스킬-조합-워크플로우-해강
   - https://github.com/garrytan/gstack
 created: 2026-05-14
 updated: 2026-05-14

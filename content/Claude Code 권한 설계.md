@@ -11,12 +11,12 @@ aliases:
  - AI 에이전트 권한 설계
  - Permission Design
 sources:
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/API_Key_관리_및_Infisical_도입_가이드.md
- - raw/pi-coding-agent-overview.md
- - raw/cc101_axwith_ko.md
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - API_Key_관리_및_Infisical_도입_가이드
+ - pi-coding-agent-overview
+ - cc101_axwith_ko
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
 updated: 2026-05-14

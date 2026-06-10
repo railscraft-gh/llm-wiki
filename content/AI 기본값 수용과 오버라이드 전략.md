@@ -12,9 +12,9 @@ aliases:
   - AI 기본값 채택 전략
   - default adoption strategy in AI era
 sources:
-  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
-  - raw/The Complete (Honest) Guide to OpenClaw.md
-  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+  - The most important Design System in 2026 that designers missed was built by a developer.
+  - The Complete (Honest) Guide to OpenClaw
+  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
 created: 2026-05-26
 updated: 2026-05-26
 ---

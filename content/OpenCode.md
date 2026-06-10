@@ -9,7 +9,7 @@ tags:
 aliases:
  - OpenCode CLI
 sources:
- - raw/opencode-masterclass-summary.md
+ - opencode-masterclass-summary
  - https://opencode.ai/docs/agents/
  - https://opencode.ai/docs/rules/
  - https://opencode.ai/docs/skills/

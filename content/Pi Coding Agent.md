@@ -9,7 +9,7 @@ tags:
 aliases:
  - Pi
 sources:
- - raw/pi-coding-agent-overview.md
+ - pi-coding-agent-overview
  - https://pi.dev/
  - https://pi.dev/docs/latest
  - https://pi.dev/docs/latest/quickstart

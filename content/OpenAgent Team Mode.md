@@ -10,7 +10,7 @@ aliases:
   - OMO Team Mode
   - Oh My OpenAgent Team Mode
 sources:
-  - raw/oh-my-openagent-team-mode.md
+  - oh-my-openagent-team-mode
 created: 2026-05-11
 updated: 2026-05-11
 ---

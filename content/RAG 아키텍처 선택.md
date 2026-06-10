@@ -12,7 +12,7 @@ aliases:
   - GraphRAG
   - Vectorless RAG
 sources:
-  - raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md
+  - GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기
 created: 2026-05-29
 updated: 2026-05-29
 ---

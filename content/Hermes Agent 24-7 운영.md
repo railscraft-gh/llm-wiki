@@ -13,8 +13,8 @@ aliases:
   - Hermes Agent 운영
   - Hermes safe runtime
 sources:
-  - raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
-  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+  - Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.
+  - I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
 created: 2026-06-03
 updated: 2026-06-03
 ---

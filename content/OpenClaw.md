@@ -8,9 +8,9 @@ tags:
   - tool
   - self-hosted
 sources:
-  - raw/The Complete (Honest) Guide to OpenClaw.md
-  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
-  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+  - The Complete (Honest) Guide to OpenClaw
+  - I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
+  - Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
 created: 2026-05-26
 updated: 2026-06-09
 ---
@@ -36,7 +36,7 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 
 비교 raw를 보면 이 판단은 더 선명해진다. OpenClaw와 Hermes를 같은 서버에 올려 두고도 결국 하나를 지운 이유는 기능 수보다 24/7 운영의 안전성과 부담이 더 중요했기 때문이다. 재미있는 데모보다 오래 켜 둘 수 있는 runtime이 먼저라는 결론이다.
 
-[[Hermes Agent]]와 비교할 때, OpenClaw는 다중 에이전트 조정(Fleet 지휘관)이나 더 많은 플러그인, 브라우저 자동화 측면에서 우위에 있으며 300k+ 스타의 대규모 생태계를 자랑한다. 반면, Hermes Agent는 개인 동반자(Personal Advisor)로서의 자동화된 기술 학습, 3층 구조의 정교한 메모리, 가벼운 실행 리소스(20MB 대 200MB+) 면에서 유리하다 [Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md](../raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20+%20Ollama.%20%EB%A1%9C%EC%BB%AC%EC%97%90%20%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EB%B9%A0%EB%A5%B8%20%EB%B0%A9%EB%B2%95-ko.md). 두 도구는 각각의 특성에 맞춰 상호 공존하며 플릿 지휘관(OpenClaw)과 개인 고문(Hermes)의 역할을 분담할 수 있다.
+[[Hermes Agent]]와 비교할 때, OpenClaw는 다중 에이전트 조정(Fleet 지휘관)이나 더 많은 플러그인, 브라우저 자동화 측면에서 우위에 있으며 300k+ 스타의 대규모 생태계를 자랑한다. 반면, Hermes Agent는 개인 동반자(Personal Advisor)로서의 자동화된 기술 학습, 3층 구조의 정교한 메모리, 가벼운 실행 리소스(20MB 대 200MB+) 면에서 유리하다 (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법). 두 도구는 각각의 특성에 맞춰 상호 공존하며 플릿 지휘관(OpenClaw)과 개인 고문(Hermes)의 역할을 분담할 수 있다.
 
 ## 예시
 

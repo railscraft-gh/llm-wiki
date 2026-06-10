@@ -12,8 +12,8 @@ aliases:
   - Spectrum Workflow
   - build-loop
 sources:
-  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
-  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+  - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+  - GStack - Claude Code 가상 엔지니어링 팀 도구
 created: 2026-05-14
 updated: 2026-05-14
 ---

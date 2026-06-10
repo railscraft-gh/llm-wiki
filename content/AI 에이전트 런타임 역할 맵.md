@@ -11,12 +11,12 @@ aliases:
   - 에이전트 런타임 계층 맵
   - agent runtime role map
 sources:
-  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
-  - raw/The Complete (Honest) Guide to OpenClaw.md
-  - raw/opencode-masterclass-summary.md
+  - Skills, MCP, Tool Calling. 에이전트 확장의 세 층
+  - Structuring Agents, Skills, and MCPs 🤖🧩
+  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+  - The Complete (Honest) Guide to OpenClaw
+  - opencode-masterclass-summary
 created: 2026-05-26
 updated: 2026-05-26
 ---

@@ -10,9 +10,9 @@ tags:
   - ddd
 aliases: []
 sources:
-  - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
-  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
-  - raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+  - ai-era-six-pitfalls-six-prescriptions-matt-pocock
+  - 아무도 AI를 배우고 싶어 하지 않는다
+  - Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals
 created: 2026-05-09
 updated: 2026-05-26
 ---

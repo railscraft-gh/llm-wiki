@@ -13,8 +13,8 @@ aliases:
   - o1
   - DeepSeek-R1
 sources:
-  - raw/강화학습-RL-초보자-가이드.md
-  - raw/sequoia-ascent-2026-karpathy-ko.md
+  - 강화학습-RL-초보자-가이드
+  - sequoia-ascent-2026-karpathy
 created: 2026-05-16
 updated: 2026-05-16
 ---

@@ -12,7 +12,7 @@ aliases:
   - 4 agents 4 skills
   - Bloated AI Slop Labs
 sources:
-  - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+  - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
 created: 2026-05-28
 updated: 2026-05-28
 ---

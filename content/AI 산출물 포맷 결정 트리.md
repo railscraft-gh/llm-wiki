@@ -11,7 +11,7 @@ aliases:
   - HTML vs Markdown 결정 트리
   - Markdown source HTML artifact
 sources:
-  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+  - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
 created: 2026-05-26
 updated: 2026-05-26
 ---

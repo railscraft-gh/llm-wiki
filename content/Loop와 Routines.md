@@ -12,7 +12,7 @@ aliases:
   - Claude Routines
   - 클라우드 루프
 sources:
-  - raw/anthropic-boris-cherny-interview.md
+  - anthropic-boris-cherny-interview
 created: 2026-05-16
 updated: 2026-05-16
 ---

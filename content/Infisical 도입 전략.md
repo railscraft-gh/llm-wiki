@@ -11,8 +11,8 @@ aliases:
  - 인피지컬
  - Infisical Secret Manager
 sources:
- - raw/API_Key_관리_및_Infisical_도입_가이드.md
- - raw/Infisical_SSH_헤드리스_인증_가이드.md
+ - API_Key_관리_및_Infisical_도입_가이드
+ - Infisical_SSH_헤드리스_인증_가이드
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
  - https://infisical.com/docs/documentation/platform/identities/machine-identities
  - https://infisical.com/docs/documentation/platform/identities/universal-auth

@@ -10,8 +10,8 @@ tags:
 aliases:
   - 메타 하네스
 sources:
-  - raw/arxiv-2603.28052-meta-harness.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+  - arxiv-2603.28052-meta-harness
+  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
 created: 2026-05-13
 updated: 2026-05-26
 ---

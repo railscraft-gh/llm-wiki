@@ -11,14 +11,14 @@ aliases:
  - Claude Code Orchestration
  - 에이전트 오케스트레이션
 sources:
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/cc101_axwith_ko.md
- - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
- - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
- - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
- - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - cc101_axwith_ko
+ - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+ - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+ - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+ - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
 created: 2026-05-06
 updated: 2026-05-28
 ---

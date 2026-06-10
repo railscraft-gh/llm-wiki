@@ -10,7 +10,7 @@ aliases:
   - 클로드 디자인
   - Claude Design
 sources:
-  - raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+  - Claude Design이 디자이너를 대체할 것인가
 created: 2026-06-09
 updated: 2026-06-09
 ---

@@ -11,12 +11,12 @@ aliases:
   - AI GitHub 생태계 신호
   - AI OSS 작업대
 sources:
-  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
-  - raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
-  - raw/The Complete (Honest) Guide to OpenClaw.md
-  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
-  - raw/The Open-Source Agent Toolkit in 2026-ko.md
+  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+  - Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
+  - The Complete (Honest) Guide to OpenClaw
+  - 지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기
+  - After Claude Code. 6 Open-Source Tools You Should Know
+  - The Open-Source Agent Toolkit in 2026
 created: 2026-05-26
 updated: 2026-06-03
 ---

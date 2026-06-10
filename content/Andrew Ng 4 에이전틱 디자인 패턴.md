@@ -10,7 +10,7 @@ aliases:
   - 4 Agentic Design Patterns
   - Andrew Ng 4가지 패턴
 sources:
-  - raw/evolution-of-ai-agentic-patterns.md
+  - evolution-of-ai-agentic-patterns
   - https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/
 created: 2026-05-16
 updated: 2026-05-24

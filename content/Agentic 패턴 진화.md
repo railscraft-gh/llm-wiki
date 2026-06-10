@@ -13,7 +13,7 @@ aliases:
   - 프롬프트-컨텍스트-하네스 진화
   - Agentic Patterns Evolution
 sources:
-  - raw/evolution-of-ai-agentic-patterns.md
+  - evolution-of-ai-agentic-patterns
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
   - https://www.honeycomb.io/blog/production-is-where-the-rigor-goes
   - https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus

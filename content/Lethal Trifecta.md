@@ -11,7 +11,7 @@ aliases:
   - 치명적 삼위일체
   - Rule of Two
 sources:
-  - raw/evolution-of-ai-agentic-patterns.md
+  - evolution-of-ai-agentic-patterns
   - https://simonwillison.net/2025/Jun/2/the-lethal-trifecta/
   - https://ai.meta.com/blog/practical-ai-agent-security/
 created: 2026-05-16

@@ -11,22 +11,22 @@ aliases:
  - Claude.md
  - AGENTS.md
 sources:
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/AI로_만든_제품이_안_팔리는_이유.md
- - raw/opencode-masterclass-summary.md
- - raw/pi-coding-agent-overview.md
- - raw/cc101_axwith_ko.md
- - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
- - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
- - raw/andrej-karpathy-skills-CLAUDE-번역.md
- - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
- - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
- - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
- - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
- - raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
- - raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - AI로_만든_제품이_안_팔리는_이유
+ - opencode-masterclass-summary
+ - pi-coding-agent-overview
+ - cc101_axwith_ko
+ - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+ - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+ - andrej-karpathy-skills-CLAUDE-번역
+ - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+ - Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
+ - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+ - CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
+ - AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
+ - Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
  - https://opencode.ai/docs/rules/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
@@ -44,7 +44,7 @@ Claude.md는 Claude Code나 OpenCode 같은 coding agent에게 프로젝트의 �
 - Claude.md는 설정 파일이라기보다 새 팀원에게 주는 업무 매뉴얼에 가깝다.
 - 가장 중요한 항목은 잘해야 할 일보다 "절대 하면 안 되는 일(Hard Nos)"이다.
 - 너무 길면 context window를 낭비하고 실제 작업 중 참조성이 떨어지므로 60줄 이하의 핵심 지침 위주로 조립한다.
-- **문체/사고 프로필의 분리**: 글쓰기나 특정 전문 컨설팅처럼 미학이나 취향이 강하게 작용하는 영역은 프로젝트 전반의 `CLAUDE.md`와 별개로, 에이전트의 비서 필터를 걷어내는 **적대적 프레이밍(Adversarial Framing)** 및 개인의 목소리를 정의한 **문체 프로필(Voice Profile) .md** 파일로 분리하여 주입한다 [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md](../raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md).
+- **문체/사고 프로필의 분리**: 글쓰기나 특정 전문 컨설팅처럼 미학이나 취향이 강하게 작용하는 영역은 프로젝트 전반의 `CLAUDE.md`와 별개로, 에이전트의 비서 필터를 걷어내는 **적대적 프레이밍(Adversarial Framing)** 및 개인의 목소리를 정의한 **문체 프로필(Voice Profile) .md** 파일로 분리하여 주입한다 (출처: AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법).
 
 ## 상세
 
@@ -71,14 +71,13 @@ Karpathy가 제안한 [[LLM Wiki 운영 패턴]]은 이 원칙을 지식 베이�
 ## 전문 영역에서의 프레이밍 고도화
 
 ### 1. 문체 프로필 (Voice Profile) .md 구축
-단순 비서 어조의 "AI Slop"을 방지하고 사용자의 고유한 작문 톤을 이끌어내기 위해 `voice_profile.md`를 주입한다 [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md](../raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md].
-- **배제의 구체성**: 목소리를 규정하는 것은 무엇을 쓸지보다 "무엇을 절대 거부하는지"에 달려 있다 (예: "세미콜론 금지", "filler phrase 단어 리스트 정의" 등).
-- **인터뷰 기반 DNA 추출**: 40~100개 가량의 집요한 인터뷰 프롬프트로 에이전트가 사용자를 취조하게 해 개성 있는 스타일 스키마를 축적하고 이를 .md 파일에 저장해 Cowork/에이전트 세션의 상시 context로 로드한다 [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md](../raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md).
+단순 비서 어조의 "AI Slop"을 방지하고 사용자의 고유한 작문 톤을 이끌어내기 위해 `voice_profile.md`를 주입한다 (출처: AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법).
+- **인터뷰 기반 DNA 추출**: 40~100개 가량의 집요한 인터뷰 프롬프트로 에이전트가 사용자를 취조하게 해 개성 있는 스타일 스키마를 축적하고 이를 .md 파일에 저장해 Cowork/에이전트 세션의 상시 context로 로드한다 (출처: AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법).
 
 ### 2. 적대적 프레이밍 (Adversarial Framing)
-모델의 공손하고 안전한 '중간 지대 기본값' 필터를 걷어내고, 시간당 900달러짜리 최고급 컨설턴트 수준의 날카롭고 고밀도인 사고를 끌어내기 위한 프롬프트 기법이다 [Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md](../raw/Claude%20900%EB%8B%AC%EB%9F%AC%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%2010%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md):
+모델의 공손하고 안전한 '중간 지대 기본값' 필터를 걷어내고, 시간당 900달러짜리 최고급 컨설턴트 수준의 날카롭고 고밀도인 사고를 끌어내기 위한 프롬프트 기법이다 (출처: Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트):
 - **역할의 극적 구체성**: "CFO처럼 행동해라"가 아닌 "스타트업 재무 모델 200개를 검토해 봤고 회사를 무너뜨릴 가정을 단번에 찾아내는 CFO"처럼 페르소나의 범위를 극도로 좁혀 설정한다.
-- **적대적 비평 강제**: "PR 리뷰에서 가차 없이 뜯어보고 거절하라", "격려나 미사여구는 빼라" 등의 지시어를 주입하여 에이전트가 본인의 결과물 또는 대상 코드를 철저히 의심하게 만든다 [Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md](../raw/Claude%20900%EB%8B%AC%EB%9F%AC%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%2010%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md).
+- **적대적 비평 강제**: "PR 리뷰에서 가차 없이 뜯어보고 거절하라", "격려나 미사여구는 빼라" 등의 지시어를 주입하여 에이전트가 본인의 결과물 또는 대상 코드를 철저히 의심하게 만든다 (출처: Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트).
 - **명시적 출력 구조화**: 모호한 형식이 아닌 3가지 지뢰 조항, 5가지 취약점 등 번호 매겨진 목록과 스키마를 강제한다.
 
 ---

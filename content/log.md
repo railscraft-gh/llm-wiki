@@ -5,8 +5,8 @@
 ### Ingest
 
 - 입력: 
-  - `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
-  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
+  - What Is MCP? Build a Custom MCP Server in Python
+  - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
 - 생성: 
   - [[Model Context Protocol]] (신규/핵심)
   - [[멀티 에이전트 코스 빌더]] (신규)
@@ -55,29 +55,29 @@
   - `medium/Will Claude Design replace designers.md`
   - `medium/Your Cat Understands the World Better Than ChatGPT, and One of AI’s Godfathers Just Quit Meta Over It.md`
 - 생성:
-  - `raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md`
-  - `raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md`
-  - `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`
-  - `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
-  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
-  - `raw/바이브 코딩의 종말-ko.md`
-  - `raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md`
-  - `raw/Claude Design이 디자이너를 대체할 것인가-ko.md`
-  - `raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md`
+  - UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법
+  - 완전히 기계 읽기 가능한 디자인 시스템
+  - Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
+  - 케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기
+  - DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법
+  - 바이브 코딩의 종말
+  - 우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트
+  - Claude Design이 디자이너를 대체할 것인가
+  - ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
 - 작업 내용: 영어 원문을 한 문장 한 문장 누락 없이 번역한 후, `humanize-monolith` 서브에이전트(Fast Path)를 활용해 자연스러운 한국어(사람이 쓴 것처럼)로 윤문하여 raw/ 폴더에 저장함. 전 문서 자체검증 6/6 통과 및 A등급 획득 완료.
 
 ### Ingest
 
 - 입력:
-  - `raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md`
-  - `raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md`
-  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
-  - `raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md`
-  - `raw/Claude Design이 디자이너를 대체할 것인가-ko.md`
-  - `raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md`
-  - `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`
-  - `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
-  - `raw/바이브 코딩의 종말-ko.md`
+  - UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법
+  - 완전히 기계 읽기 가능한 디자인 시스템
+  - DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법
+  - 우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트
+  - Claude Design이 디자이너를 대체할 것인가
+  - ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
+  - Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
+  - 케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기
+  - 바이브 코딩의 종말
 - 생성:
   - [[완전히 기계 읽기 가능한 디자인 시스템]] (신규/핵심)
   - [[DESIGN.md 워크플로우]] (신규)
@@ -154,17 +154,17 @@
 ### Ingest
 
 - 입력: 
-  - `raw/im-not-ai.md`
-  - `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
-  - `raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md`
-  - `raw/Building an MCP Ecosystem at Pinterest-ko.md`
-  - `raw/Why senior UX designers are struggling in 2026-ko.md`
-  - `raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md`
-  - `raw/The Best Way to Make AI Write Like You-ko.md`
-  - `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
-  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
-  - `raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md`
-  - `raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md`
+  - im-not-ai
+  - Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)
+  - How We Built an AI Second Brain for 60K Knowledge Workers
+  - Building an MCP Ecosystem at Pinterest
+  - Why senior UX designers are struggling in 2026
+  - I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three
+  - The Best Way to Make AI Write Like You
+  - What Is MCP? Build a Custom MCP Server in Python
+  - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
+  - I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was
+  - Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)
 - 생성: [[한글 AI 번역투 탐지 및 윤문 워크플로]] (신규), [[GBrain]] (신규), [[oMLX]] (신규), [[Pinterest MCP]] (신규), [[AI 세컨드 브레인]] (신규/핵심)
 - 수정: [[AI Experience Architect]] (보강/핵심), [[Agent Harness]] (보강/핵심), [[AI 네이티브 엔지니어링 조직]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
@@ -303,10 +303,10 @@
 
 ### 중복 원문 확인
 
-- `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`
-- `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기.md`
-- `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기.md`
-- `raw/아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기.md`
+- AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기
+- 아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기
 - 처리: 기존 원문 혹은 이미 생성된 wiki 노트의 변주로 확인되어, 새 노트 없이 중복 원문으로 유지
 
 ### 결정 기록
@@ -462,10 +462,10 @@
 
 ### 중복 raw
 
-- `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기.md`
-- `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`
-- `raw/아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기.md`
-- `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기.md`
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기
+- AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기
+- 아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기
 - 처리: 기존 원문과 동일 주제의 출판형 변주로 확인되어 새 wiki note를 만들지 않았음
 
 ## 2026-05-26

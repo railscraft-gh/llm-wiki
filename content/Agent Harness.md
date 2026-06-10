@@ -10,12 +10,12 @@ tags:
 aliases:
   - 에이전트 하네스
 sources:
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
-  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
-  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
-  - raw/2026년의 AI 에이전트 실전 가이드-ko.md
-  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+  - 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
+  - 아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기
+  - 2026년의 AI 에이전트 실전 가이드
+  - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
 created: 2026-05-26
 updated: 2026-06-07
 ---

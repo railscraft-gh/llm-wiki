@@ -11,12 +11,12 @@ aliases:
   - AI 디자인 계층 맵
   - AI 디자인 운영 계층
 sources:
-  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
-  - raw/Good Design Doesn’t Happen By Default.md
-  - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
-  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+  - From faster pencil to AI Experience Architect. a designer’s path
+  - Good Design Doesn’t Happen By Default
+  - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
+  - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+  - Agentic AI, design systems & Figma. a practical guide
+  - Why senior designers are doing four jobs for one salary in 2026
 created: 2026-05-26
 updated: 2026-06-03
 ---

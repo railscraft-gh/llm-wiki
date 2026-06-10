@@ -11,15 +11,15 @@ aliases:
  - 플랜 모드
  - OpenCode Plan agent
 sources:
- - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
- - raw/보리스_클로드코드_실무_사용법.md
- - raw/Claude-Code-실무활용법-보리스-관점-정리.md
- - raw/안드레_카파시_인터뷰_정리.md
- - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
- - raw/opencode-masterclass-summary.md
- - raw/pi-coding-agent-overview.md
- - raw/cc101_axwith_ko.md
- - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+ - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+ - 보리스_클로드코드_실무_사용법
+ - Claude-Code-실무활용법-보리스-관점-정리
+ - 안드레_카파시_인터뷰_정리
+ - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+ - opencode-masterclass-summary
+ - pi-coding-agent-overview
+ - cc101_axwith_ko
+ - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
  - https://opencode.ai/docs/agents/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06

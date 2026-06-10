@@ -9,10 +9,10 @@ tags:
 aliases:
  - 소프트웨어 3.0
 sources:
- - raw/안드레_카파시_인터뷰_정리.md
- - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
- - raw/sequoia-ascent-2026-karpathy-ko.md
- - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+ - 안드레_카파시_인터뷰_정리
+ - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+ - sequoia-ascent-2026-karpathy
+ - AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
 created: 2026-05-06
 updated: 2026-05-24
 ---

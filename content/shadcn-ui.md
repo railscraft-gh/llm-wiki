@@ -11,7 +11,7 @@ aliases:
   - shadcn/ui
   - shadcn
 sources:
-  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
+  - The most important Design System in 2026 that designers missed was built by a developer.
 created: 2026-05-26
 updated: 2026-05-26
 ---
