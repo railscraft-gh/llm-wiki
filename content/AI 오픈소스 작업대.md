@@ -17,8 +17,9 @@ sources:
   - 지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기
   - After Claude Code. 6 Open-Source Tools You Should Know
   - The Open-Source Agent Toolkit in 2026
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
 created: 2026-05-26
-updated: 2026-06-03
+updated: 2026-06-10
 ---
 
 # AI 오픈소스 작업대
