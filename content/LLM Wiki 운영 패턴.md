@@ -3,22 +3,23 @@ type: workflow
 status: evergreen
 core: true
 tags:
- - llm
- - wiki
- - obsidian
+  - llm
+  - wiki
+  - obsidian
 aliases:
- - Karpathy의 LLM Wiki
- - LLM Wiki
+  - Karpathy의 LLM Wiki
+  - LLM Wiki
 sources:
- - AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
- - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
+  - AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
+  - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
   - 더 빨리 배우고 싶다면 이 노트 정리 방식을 써라
   - 완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다
   - Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
   - Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다
   - How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
 created: 2026-05-24
-updated: 2026-06-03
+updated: 2026-06-10
 ---
 
 # LLM Wiki 운영 패턴
