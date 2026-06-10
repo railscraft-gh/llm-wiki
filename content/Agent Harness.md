@@ -77,4 +77,6 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[Gajae-Code]]
 - [[한글 AI 번역투 탐지 및 윤문 워크플로]]
 - [[AI 세컨드 브레인]]
+- [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]
+- [[케이브맨]]
 
