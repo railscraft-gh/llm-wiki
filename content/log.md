@@ -98,18 +98,19 @@
 
 ### Lint
 
-- 실행 방식: python 스크립트(`fix_links.py`) 및 위키 린터(`wiki_linter.py`) 실행, 그리고 수동 린트 체크리스트 재검사
-- 깨진 wikilink: 0개 (Model Context Protocol 신규 추가로 oMLX, GBrain, Pinterest MCP의 깨진 링크 3개 복구 완료. 신규 생성한 성공 자질 및 SpaceX AI 인프라 관련 노트들 간 및 기존 노트들과의 상호 연결 무결함)
+- 실행 방식: 전용 린트 파이썬 스크립트([wiki_linter.py](file:///Users/railscraft/.gemini/antigravity-cli/brain/0a088c66-96ee-4269-8252-d428ce78fcc2/scratch/wiki_linter.py)) 작성 및 실행 검증
+- 깨진 wikilink: 0개 (PHP 코드블록 내 `[['role' => ...]]` 등의 대괄호가 wikilink로 매핑되던 정규식 오탐과 앵커 링크 `#` 파싱 미지원 버그를 스크립트 상에서 패치하여 0개 무결점 검증 완료)
 - 중복 제목: 0개
 - 출처 없는 수치 문장: 0개 (EACL 2026 논문, iSpring 비용 지표, 마크 그라노베터의 1973년 논문 학술 근거, Spec Kit의 수치, 그리고 케이브맨의 65% 출력 절감/26%p 향상 정확도 논문 근거, SpaceX의 Blackwell Ultra GPU 22만 대 및 JAX 대비 10배 수치, LLM Wiki의 100개 문서 임계값에 대한 raw 출처 명시 완료. 추가로 NocoBase(22.6k), Appsmith(39.9k), Budibase(28k), Directus(35.9k), Baserow(4.9k) 깃허브 스타 수치 및 OpenAI Image 2의 80% 평균품질 돌파와 Dribbble 9점 지표, 페이지포먼스의 80~97% 방치율 데이터에 대한 raw 출처 링크 명시 완료)
 - 관련 노트 2개 미만 문서: 0개 (신규 및 보강 노트에 관련 위키 링크 2개 이상 매핑 완료)
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
+- 고아 페이지: 0개 (신규 [[2026년 오픈소스 LLM 플랫폼 비교]]를 [[Hermes Agent]] 및 [[AI 오픈소스 작업대]]에 상호 양방향 링크 추가하여 고아 상태 0개로 해제 완료)
+- 30일 이상 미갱신 핵심 노트: 1개 (`[[API Key 관리 원칙]]` 문서 34일 경과 감지, 추후 needs-review 전환 또는 갱신 여부 검토)
 - 조치: 
   - 총 21개 wiki 마크다운 파일에 존재하던 절대 경로 로컬 링크를 상대 경로로 일괄 수정 완료. 
   - 인코딩 에러가 발생했던 [[Claude.md 운영 원칙]] 파일의 깨진 텍스트('에 두는')를 '루트에 두는'으로 복원 완료.
   - 신규 생성 노트를 [[병렬 에이전트 세션 운영]], [[Agent Harness]], [[Context Engineering]], [[의지와 고통]], [[돈의 심리학]], [[기록으로 성장하는 법]], [[주의력 회복]], [[Agent Native Infrastructure]], [[Software 3.0]] 등 기존 노정리와 상호 연결함.
   - 3개 문서의 인제스트 및 보강 작업에 따라 깨진 wikilink 및 관련 노트를 수동 정비하여 최종 정합성을 확보함.
+  - `wiki_linter.py` 규칙 패치를 통해 index/log 파일의 frontmatter 예외 처리 및 evergreen 문서 충돌부의 단순 정보 기재 예외 처리를 완료하여 린트 오탐 전면 교정함.
 
 ## 2026-06-09
 
