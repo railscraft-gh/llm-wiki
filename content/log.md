@@ -69,9 +69,13 @@
 - 대상: [[성공을 결정하는 5가지 핵심 자질]], [[학습된 낙관주의]], [[성장 마인드셋]], [[지연된 만족]], [[의도적 연습]], [[약한 연결의 힘]]
 - 근거: 인생의 장기적 성장을 결정하는 학계의 5대 자질(학습된 낙관주의, 성장 마인드셋, 지연된 만족, 의도적 연습, 약한 연결의 힘)을 원자적 개념으로 명확히 정돈하고, 이들이 향후 에이전틱 워크플로우(예: 피드백 루프 설계, 신뢰 기반 위임 등)와 어떻게 유기적으로 맞물리는지 지식 체계를 구축하기 위해 작성함.
 
+- 결정: 신규 생성
+- 대상: [[SpaceX C 언어 기반 AI 인프라 전략]]
+- 근거: PyTorch, JAX 등 고수준 프레임워크를 완전히 배제하고 하드웨어 물리 토폴로지와 일대일 매핑되는 순수 C 언어로 22만 대 Blackwell Ultra GPU를 제어하여 JAX 대비 10배의 성능 향상과 온라인 RL 최적화를 이끌어낸 혁신적 인프라 전략을 보존함.
+
 - 결정: 보강
-- 대상: [[LLM Wiki 운영 패턴]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[Claude Design]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]], [[Spec Kit]], [[사양 기반 개발 (Spec Driven Development)]], [[Vibe Coding과 Agentic Engineering]]
-- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함.
+- 대상: [[LLM Wiki 운영 패턴]], [[케이브맨]], [[Hermes Agent]], [[AI 오픈소스 작업대]], [[Claude Design]], [[UI UX 디자인 AI 워크플로우]], [[Claude.md 운영 원칙]], [[Spec Kit]], [[사양 기반 개발 (Spec Driven Development)]], [[Vibe Coding과 Agentic Engineering]]
+- 근거: 신규 릴리즈된 OpenAI의 UI 생성 성능 지표(디자이너 80% 상회), 템플릿 복제 현상(Ava, 9:41), Pageformance의 배포 웹사이트 방치율(80~97%), Claude 데스크톱 Cowork 및 인터뷰 기반 Reject 가드레일 설계, 그리고 오픈소스 내부 도구 연동 흐름을 각 문서에 정밀하게 교차 연계 및 업데이트함. 추가로, GitHub Spec Kit v0.8.4의 최신 스펙(29종 에이전트, 스킬 모드 설정 및 70+ 확장 플러그인)과 SDD 방법론을 둘러싼 애자일 방법론 전문가 고이코 아지치(Gojko Adzic)의 경고(폭포수 퇴보 위험) 및 대처 전략(살아있는 명세 운영), 그리고 에이전트는 코드 렌더러에 불과하다는 본질을 기존 위키 노트에 정밀 반영함. 더불어, MD Azizul Hakim의 Brevity Constraints 논문(정확도 26%p 향상)에 기반한 케이브맨 스킬 및 caveman-code 독립형 에이전트의 효율 실증, PR #448의 manual mode 토글 설정 추가 및 에이전트의 거절권/정직성 사례, Steph Ango의 Agent Skills 스펙 및 파일 캐비닛 아키텍처(Ingest-Compile-Query-Lint 4단계), 100개 문서 임계값에 따른 RAG 마이그레이션(ChromaDB/DuckDB, bge-m3) 전략 및 7대 실패 방어책을 정밀 반영함.
 
 ### Lint
 
