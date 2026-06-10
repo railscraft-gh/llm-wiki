@@ -11,8 +11,9 @@ aliases:
   - DESIGN.md workflow
 sources:
   - DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 ---
 
 # DESIGN.md 워크플로우
