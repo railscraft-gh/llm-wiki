@@ -27,7 +27,7 @@ Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학
 - **자동화된 기술 학습(Skill-Learning Automated)**: 수행한 작업 단계를 기술(skill)로 자동 저장하고 스스로 다듬어 재사용한다.
 - **3층 구조 메모리**: 단기(대화 맥락), 장기(선호도), 기술(스킬)로 메모리를 관리하며 SQLite FTS5 기반 과거 대화 검색을 지원한다.
 - **멀티 플랫폼 공유**: Telegram, Discord, Slack 등 12개 채널을 연동할 수 있고 채널 간 메모리가 통합 공유된다.
-- **100% 로컬 구동**: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: `gpt-oss:20b` 모델)로 실행할 수 its다.
+- **100% 로컬 구동**: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: `gpt-oss:20b` 모델)로 실행할 수 있다.
 
 ## 상세
 
@@ -43,7 +43,7 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 ### 3. 로컬 셋업 및 Ollama 연동
 - **설치**: `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash` 명령어로 설치 마법사를 시작한다.
 - **마이그레이션**: Nous Research의 이전 에이전트 툴인 OpenClaw 데이터(`~/.openclaw`)를 자동으로 마이그레이션할 수 있다.
-- **Ollama 연동**: Base URL을 `http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다.
+- **Ollama 연동**: Base URL`http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다.
 - **주요 설정 지표**:
   - `max iterations`: 도구 호출 최대 반복 횟수 (기본값: 60)
   - `Tool Progress Display`: 실시간 수행 작업 시각화 정책 ('all')
@@ -53,6 +53,9 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 ### 4. OpenClaw와의 비교
 - **Hermes Agent 강점**: 개인 동반자(Personal Advisor) 특화, 자동 기술 자가 학습, 음성 지원(기본 Microsoft Edge TTS), 가벼운 리소스 점유(20MB 대 200MB+).
 - **OpenClaw 강점**: 멀티 에이전트 조정 및 채널 관리(Fleet 지휘관), 브라우저 자동화, 풍부한 플러그인 생태계와 검증된 실적(307k 스타 대 6k 스타).
+
+### 5. 오픈소스 내부 도구 플랫폼과의 연동
+Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 플랫폼과 긴밀하게 연동된다. 자연어 지시를 통해 DB 스키마, UI 기획, 절차 프로세스를 구축하고 권한을 설정할 수 있으며, 이 노하우를 '스킬'로 저장해 재사용한다. 구체적인 동작 방식은 [[Hermes Agent와 오픈소스 내부 도구 연동]]을 참조한다.
 
 ## 예시
 
@@ -68,4 +71,5 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 - [[Hermes Agent 24-7 운영]]
 - [[Hermes Agent Google Workspace 연결]]
 - [[Agent Native Infrastructure]]
+- [[Hermes Agent와 오픈소스 내부 도구 연동]]
 
