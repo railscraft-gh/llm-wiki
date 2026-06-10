@@ -80,4 +80,5 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [[AI 에이전트 런타임 역할 맵]]
 - [[AI 기본값 수용과 오버라이드 전략]]
 - [[Hermes Agent와 오픈소스 내부 도구 연동]]
+- [[2026년 오픈소스 LLM 플랫폼 비교]]
 
