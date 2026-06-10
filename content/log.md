@@ -7,14 +7,21 @@
 - 입력: 
   - What Is MCP? Build a Custom MCP Server in Python
   - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
+  - Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기
+  - Hermes Agent와 Ollama 로컬 설치 초고속 가이드
+  - 파이썬 AI 에이전트 프레임워크 6종 비교 분석
 - 생성: 
   - [[Model Context Protocol]] (신규/핵심)
   - [[멀티 에이전트 코스 빌더]] (신규)
-- 수정: `wiki/index.md`, `wiki/log.md`
+  - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] (신규)
+- 수정: [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), `wiki/index.md`, `wiki/log.md`
 - index 업데이트: 완료
 - 남은 검토: 
   - [[Model Context Protocol]]: stdio 전송 방식 외에 Streamable HTTP로 원격 서버 상태 유지 시 OAuth 2.1 미세 권한 인가 절차의 이식 비용 추가 확인 필요.
   - [[멀티 에이전트 코스 빌더]]: 12개 강의 병렬 작성 시 Reducer 충돌 문제 및 소형 모델을 안티 슬롭 검토기로 채택할 때 반려 판정의 정확성 실측 데이터 확보 필요.
+  - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]: Smolagents의 CodeAgent 실행에 따른 샌드박스 보안 설계 세부 가이드 및 CrewAI와 PydanticAI의 대규모 멀티에이전트 이관 시 런타임 안정성 데이터 실측 필요.
+  - [[LLM Wiki 운영 패턴]]: 개인이 사용하는 Obsidian + Claude Code 볼트 환경에서 대량의 JSON 파일(/ingest) 처리 시 토큰 소비량 및 API 레이턴시 제어를 위한 세부 스크립팅 검증 필요.
+  - [[Hermes Agent]]: 로컬 gpt-oss:20b 모델 사용 시 복잡한 도구 호출(max iterations: 60) 반복에 의한 성능 저하 및 자가 개선 스킬의 오동작 확률 실측 필요.
 
 ### 결정 기록
 
@@ -25,6 +32,14 @@
 - 결정: 신규 생성
 - 대상: [[멀티 에이전트 코스 빌더]]
 - 근거: 단일 프롬프트가 대규모 작성 작업에서 겪는 문체 이탈 및 모순의 한계를 해결하기 위해, 교수 설계 원칙(ADDIE)에 기반해 기획-집필-설계-제작의 4단계 에이전트 분할 및 Human Approval Gate, Anti-slop Reviewer를 활용하는 프로덕션급 콘텐츠 생성 파이프라인 설계를 정립하기 위해 작성함.
+
+- 결정: 신규 생성
+- 대상: [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]
+- 근거: AI 에이전트 오케스트레이션 프레임워크 선정 시, 랭그래프의 통제성(durable execution)과 크루AI의 협업 모델, PydanticAI의 타입 안전성, Smolagents의 파이썬 코드 생성(CodeAgent) 등 기술적 트레이드오프 및 선택 기준을 실무 평가 지표와 함께 정리하기 위해 작성함.
+
+- 결정: 보강
+- 대상: [[LLM Wiki 운영 패턴]], [[Hermes Agent]]
+- 근거: 신규 raw 자료에서 제시된 개인용 AI 세컨드 브레인의 4가지 슬래시 명령어(/ingest, /query, /lint, /log) 및 로컬 Ollama 환경에서의 Hermes Agent 셋업 가이드, gpt-oss:20b 로컬 추론 성능 수치를 기존 지식 베이스에 정밀 반영함.
 
 ### Lint
 
