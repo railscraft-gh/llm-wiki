@@ -44,7 +44,8 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 ### 3. 로컬 셋업 및 Ollama 연동
 - **설치**: `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash` 명령어로 설치 마법사를 시작한다.
 - **마이그레이션**: Nous Research의 이전 에이전트 툴인 OpenClaw 데이터(`~/.openclaw`)를 자동으로 마이그레이션할 수 있다.
-- **Ollama 연동**: Base URL`http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다.
+- **Ollama 연동**: Base URL을 `http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 Microsoft의 200억 매개변수(20B) 모델인 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다. (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
+- **로컬 구동 성능**: 로컬 단독 하드웨어 자원만 사용할 때 컨텍스트 제한 13.1만 토큰 중 약 9.23K 토큰을 사용하는 상태에서 단 2초 안팎의 응답 속도를 보여 쾌적한 추론 속도를 실감할 수 있다. (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
 - **주요 설정 지표**:
   - `max iterations`: 도구 호출 최대 반복 횟수 (기본값: 60)
   - `Tool Progress Display`: 실시간 수행 작업 시각화 정책 ('all')
