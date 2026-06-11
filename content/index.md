@@ -32,27 +32,15 @@
 | [[디자인 에이전트 5종]] | upstream design work to research·define·ideate·flow 단계 of agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
 | [[Lethal Trifecta]] | 신뢰 불가 입력·민감 시스템 접근·상태 변경의 동시 보유를 금지하는 에이전트 보안 위험 모델을 정리한다. | evergreen | 2026-06-11 |
 | [[Model Context Protocol]] | AI 클라이언트와 데이터 소스/도구 간에 컨텍스트와 실행 권한을 주고받기 위한 통신 표준 프로토콜을 다룬다. | evergreen | 2026-06-10 |
-| [[에이전트 복리 실패 of 수학]] | 비결정론적 실패 of 누적 수식 및 Google Antigravity 드라이브 포맷, Replit DB 삭제 등의 실제 물리 파괴 사고 사례 분석을 다룬다. | evergreen | 2026-06-11 |
+| [[에이전트 복리 실패의 수학]] | 비결정론적 실패의 누적 수식 및 Google Antigravity 드라이브 포맷, Replit DB 삭제 등의 실제 물리 파괴 사고 사례 분석을 다룬다. | evergreen | 2026-06-11 |
 | [[오픈소스 LLM 경제성과 벤더 종속성 해지]] | NIST CAISI DeepSeek 평가 격차, 우버/MS의 실제 클로드 코드 예산 소모 등 오픈소스 도입의 실질적 비용과 3단계 추론 프레임워크를 다룬다. | evergreen | 2026-06-11 |
 
 ## Ingest 현황
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
-| 2026-06-11 | `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`<br>`raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`<br>`raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`<br>`raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`<br>`raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`<br>`raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`<br>`raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`<br>`raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`<br>`raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`<br>`raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md` | [[에이전트 복리 실패 of 수학]] (신규/핵심), [[오픈소스 LLM 경제성과 벤더 종속성 해지]] (신규/핵심), [[유기적 개인 지식 시스템]] (신규), [[Vibe Coding과 Agentic Engineering]] (보강), [[Agent Harness]] (보강/핵심), [[Lethal Trifecta]] (보강/핵심), [[AI 시대 디자인 시스템]] (보강/핵심) | done | [[log#2026-06-11]] |�용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
-| [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
-| [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
-| [[프론트엔드 디자인 스킬]] | AI가 만든 UI slop을 거부하기 위해 Anthropic 엔지니어가 배포한 30줄 미학 스킬의 영향력과 한계를 정리한다. | evergreen | 2026-06-04 |
-| [[디자인 에이전트 5종]] | upstream design work to research·define·ideate·flow 단계의 agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
-| [[Lethal Trifecta]] | 신뢰 불가 입력·민감 시스템 접근·상태 변경의 동시 보유를 금지하는 에이전트 보안 위험 모델을 정리한다. | evergreen | 2026-05-16 |
-| [[Model Context Protocol]] | AI 클라이언트와 데이터 소스/도구 간에 컨텍스트와 실행 권한을 주고받기 위한 통신 표준 프로토콜을 다룬다. | evergreen | 2026-06-10 |
-
-## Ingest 현황
-
-| 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
-| --- | --- | --- | --- | --- |
-| 2026-06-11 | `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`<br>`raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`<br>`raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`<br>`raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`<br>`raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`<br>`raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`<br>`raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`<br>`raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`<br>`raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`<br>`raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md` | 없음 (번역물 보존) | done | [[log#2026-06-11]] |
-| 2026-06-10 | `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`<br>`raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`<br>`raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md`<br>`raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md`<br>`raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md`<br>`raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md`<br>`raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md`<br>`raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`<br>`raw/인생의 성공을 결정하는 5가지 핵심 자질.md`<br>`raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md`<br>`raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md`<br>raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md<br>raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md<br>`raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md`<br>`raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md`<br>`raw/지루한 업무라고 자동화하는 클로드 코워크 프롬프트 7가지.md`<br>`raw/클로드 디자인은 과연 디자이너를 대체할까.md`<br>`raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md`<br>`raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md`<br>`raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md`<br>`raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md` | [[Model Context Protocol]] (신규/핵심), [[멀티 에이전트 코스 빌더]] (신규), [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] (신규), [[Hermes Agent와 오픈소스 내부 도구 연동]] (신규), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[케이브맨]] (보강), [[SpaceX C 언어 기반 AI 인프라 전략]] (신규), [[성공을 결정하는 5가지 핵심 자질]] (신규), [[학습된 낙관주의]] (신규), [[성장 마인드셋]] (신규), [[지연된 만족]] (신규), [[의도적 연습]] (신규), [[약한 연결의 힘]] (신규), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), [[세계 모델]] (보강), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강), [[2026년 오픈소스 LLM 플랫폼 비교]] (신규), [[Andrew Ng 4 에이전틱 디자인 패턴]] (보강), [[DESIGN.md 워크플로우]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강) | done | [[log#2026-06-10]] |
+| 2026-06-11 | `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`<br>`raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`<br>`raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`<br>`raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`<br>`raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`<br>`raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`<br>`raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`<br>`raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`<br>`raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`<br>`raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md` | [[에이전트 복리 실패의 수학]] (신규/핵심), [[오픈소스 LLM 경제성과 벤더 종속성 해지]] (신규/핵심), [[유기적 개인 지식 시스템]] (신규), [[Vibe Coding과 Agentic Engineering]] (보강), [[Agent Harness]] (보강/핵심), [[Lethal Trifecta]] (보강/핵심), [[AI 시대 디자인 시스템]] (보강/핵심) | done | [[log#2026-06-11]] |
+| 2026-06-10 | `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`<br>`raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`<br>`raw/Claude Code와 Obsidian으로 AI 세컨드 브레인을 만든 방법.md`<br>`raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md`<br>`raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md`<br>`raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md`<br>`raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md`<br>`raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`<br>`raw/인생의 성공을 결정하는 5가지 핵심 자질.md`<br>`raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md`<br>`raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md`<br>raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md<br>raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md<br>`raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md`<br>`raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md`<br>`raw/지루한 업무라고 자동화하는 클로드 코워크 프롬프트 7가지.md`<br>`raw/클로드 디자인은 과연 디자이너를 대체할까.md`<br>`raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md`<br>`raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md`<br>`raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md`<br>`raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md` | [[Model Context Protocol]] (신규/핵심), [[멀티 에이전트 코스 빌더]] (신규), [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] (신규), [[Hermes Agent와 오픈소스 내부 도구 연동]] (신규), [[LLM Wiki 운영 패턴]] (보강), [[Hermes Agent]] (보강), [[AI 오픈소스 작업대]] (보강), [[Claude Design]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강), [[Claude.md 운영 원칙]] (보강), [[케이브맨]] (보강), [[SpaceX C 언어 기반 AI 인프라 전략]] (신규), [[성공을 결정하는 5가지 핵심 자질]] (신규), [[학습된 낙관주의]] (신규), [[성장 마인드셋]] (신규), [[지연된 만족]] (신규), [[의도적 연습]] (신규), [[약한 연결의 힘]] (신규), [[Spec Kit]] (보강), [[사양 기반 개발 (Spec Driven Development)]] (보강), [[Vibe Coding과 Agentic Engineering]] (보강), [[세계 모델]] (보강), [[완전히 기계 읽기 가능한 디자인 시스템]] (보강), [[Claude Cowork]] (보강), [[2026년 오픈소스 LLM 플랫폼 비교]] (신규), [[Andrew Ng 4 에이전틱 디자인 패턴]] (보강), [[DESIGN.md 워크플로우]] (보강), [[UI UX 디자인 AI 워크플로우]] (보강) | done | [[log#2026-06-10]] |
 | 2026-06-09 | `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`<br>`raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`<br>`raw/바이브 코딩의 종말-ko.md` | [[Hermes Agent]] (신규), [[케이브맨]] (신규), [[사양 기반 개발 (Spec Driven Development)]] (신규), [[Spec Kit]] (신규), [[Vibe Coding과 Agentic Engineering]] (보강), [[OpenClaw]] (보강) | done | [[log#2026-06-09]] |
 | 2026-06-09 | `raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md`<br>`raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md`<br>`raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`<br>`raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md`<br>`raw/Claude Design이 디자이너를 대체할 것인가-ko.md`<br>`raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md` | [[완전히 기계 읽기 가능한 디자인 시스템]] (신규/핵심), [[DESIGN.md 워크플로우]] (신규), [[UI UX 디자인 AI 워크플로우]] (신규), [[DESIGN.md 운영 원칙]] (보강), [[AI 시대 디자인 시스템]] (보강), [[Claude Design]] (신규), [[세계 모델]] (신규/핵심), [[JEPA]] (신규), [[쓰라린 교훈]] (신규), [[공간 지능]] (신규), [[모라벡의 역설]] (신규), [[AMI Labs]] (신규), [[Claude Cowork]] (신규) | done | [[log#2026-06-09]] |
 | 2026-06-07 | `raw/im-not-ai.md`<br>`raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`<br>`raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md`<br>`raw/Building an MCP Ecosystem at Pinterest-ko.md`<br>`raw/Why senior UX designers are struggling in 2026-ko.md`<br>`raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md`<br>`raw/The Best Way to Make AI Write Like You-ko.md`<br>`raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`<br>`raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`<br>`raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md`<br>`raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md` | [[한글 AI 번역투 탐지 및 윤문 워크플로]] (신규/보강), [[GBrain]] (신규), [[oMLX]] (신규), [[Pinterest MCP]] (신규), [[AI 세컨드 브레인]] (신규/핵심), [[AI Experience Architect]] (보강/핵심), [[Agent Harness]] (보강/핵심), [[AI 네이티브 엔지니어링 조직]] (보강) | done | [[log#2026-06-07]] |
@@ -64,14 +52,14 @@
 | 2026-05-28 | `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md` | [[AI 하네스 최소화]] (신규), [[Harness Engineering]] (보강), [[AI Slop]] (보강) | done | [[log#2026-05-28]] |
 | 2026-05-28 | `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`, `raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md` | [[Hermes Agent Google Workspace 연결]] (신규), [[메시징 서버 스트레스 테스트 운영 원칙]] (신규), [[Agent Native Infrastructure]] (보강), [[Claude Code 오케스트레이션]] (보강), [[Harness Engineering]] (보강) | done | [[log#2026-05-28]] |
 | 2026-05-26 | `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`, `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md` | [[Agent Harness]], [[Harness Engineering]] (보강), [[Claude.md 운영 원칙]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Meta-Harness]] (보강), [[에이전트 코딩 4원칙]] (보강) | done | [[log#2026-05-26]] |
-| 2026-05-26 | `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md` | [[AI 산출물 포맷 결정 트리]] (신규), [[Claude.md 운영 원칙]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
+| 2026-05-26 | `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`, `raw/Anthropic 엔지니어어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`, `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md` | [[AI 산출물 포맷 결정 트리]] (신규), [[Claude.md 운영 원칙]] (보강), [[Harness Engineering]] (보강), [[Agent Harness]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`, `raw/From faster pencil to AI Experience Architect. a designer’s path.md`, `raw/Good Design Doesn’t Happen By Default.md`, `raw/The Complete (Honest) Guide to OpenClaw.md`, `raw/The most important Design System in 2026 that designers missed was built by a developer..md` | [[AI Experience Architect]] (신규), [[디자인 시스템 기본값]] (신규), [[OpenClaw]] (신규), [[shadcn-ui]] (신규), [[AI 디자인 역할 맵]] (신규), [[AI 기본값 구현체]] (신규), [[AI 에이전트 런타임 역할 맵]] (신규), [[AI 네이티브 작업 시스템]] (신규), [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 시대 디자인 시스템]] (보강), [[에이전트 확장 3계층]] (보강), [[AI 오픈소스 작업대]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`, `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md` | [[디자인 에이전트 5종]], [[DESIGN.md 운영 원칙]] (보강), [[AI 시대 디자인 시스템]] (보강), [[AI 코딩 에이전트 검증 전략]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md`, `raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md`, `raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md` | [[생성형 AI 면접 평가 축]], [[AI 오픈소스 작업대]], [[학습용 노트 외부화 원칙]], [[AI 네이티브 사용자]] (보강), [[Competence Debt]] (보강), [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md`, `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`, `raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md` | [[LLM Wiki 구현 선택지]], [[LLM Wiki 운영 패턴]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (관련 링크 보강) | done | [[log#2026-05-26]] |
-| 2026-05-26 | `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md` | [[Harness Engineering]] (보강), [[Agent Harness]] (보강) | done | [[log#2026-05-26 |
+| 2026-05-26 | `raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md` | [[Harness Engineering]] (보강), [[Agent Harness]] (보강) | done | [[log#2026-05-26]] |
 | 2026-05-26 | `raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md` | [[온디바이스 TTS]], [[AI 오픈소스 작업대]] (보강), [[Agent Native Infrastructure]] (관련 링크 보강) | done | [[log#2026-05-26]] |
-| 2026-05-26 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md` | 기존 [[LLM Wiki 운영 패턴]] ingest 결과 재사용, 중복 raw로 분류 | done | [[log#2026-05-26 |
+| 2026-05-26 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md` | 기존 [[LLM Wiki 운영 패턴]] ingest 결과 재사용, 중복 raw로 분류 | done | [[log#2026-05-26]] |
 | 2026-05-24 | `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md` | [[LLM Wiki 운영 패턴]], [[Software 3.0]] (보강), [[Thinking과 Understanding 분리]] (보강), [[Agent Native Infrastructure]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
 | 2026-05-17 | (Sync 3 — raw 재감사, 상태 정합성 갱신) | [[Harness Engineering]] (core 승격), [[Software 3.0]] (Reasoning Models 링크), [[바선생]] (cross-link 보강), 35개 draft 노트 → 22 evergreen / 13 needs-review로 상태 정정 | done | [[log#2026-05-17 (Sync 3 — raw 재감사, 상태 정합성)]] |
 | 2026-05-24 | `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md` | [[Obsidian vault용 Slash Command 운영]], [[Claude Code 오케스트레이션]] (보강), [[AI 네이티브 사용자]] (보강), [[Claude.md 운영 원칙]] (보강) | done | [[log#2026-05-24]] |
@@ -97,7 +85,6 @@
 | 2026-05-07 | `raw/API_Key_관리_및_Infisical_도입_가이드.md`, `raw/AI로_만든_제품이_안_팔리는_이유.md` | [[API Key 관리 원칙]], [[클라이언트 Secret 노출 방지]], [[Infisical 도입 전략]], [[AI Slop]], [[DESIGN.md 운영 원칙]], [[AI 시대 디자인 시스템]], [[AI 코딩 에이전트 검증 전략]], [[Vibe Coding과 Agentic Engineering]], [[Claude.md 운영 원칙]], [[Agent Native Infrastructure]], [[Claude Code 권한 설계]] | done | [[log#2026-05-07]] |
 | 2026-05-06 | `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`, `raw/보리스_클로드코드_실무_사용법.md`, `raw/Claude-Code-실무활용법-보리스-관점-정리.md`, `raw/안드레_카파시_인터뷰_정리.md`, `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md` | [[AI 코딩 에이전트 검증 전략]], [[Claude.md 운영 원칙]], [[Claude Code 권한 설계]], [[Plan Mode 기반 AI 작업]], [[병렬 에이전트 세션 운영]], [[Claude Code 오케스트레이션]], [[강한 모델로 덜 헤매기]], [[Software 3.0]], [[Neural Computer]], [[Jagged Intelligence]], [[Vibe Coding과 Agentic Engineering]], [[AI 네이티브 사용자]], [[Agent Native Infrastructure]], [[Thinking과 Understanding 분리]], [[LLM을 동물 지능처럼 다루지 않기]] | done | [[log#2026-05-06]] |
 
-
 ## 승격 후보
 
 ### core 우선 후보
@@ -113,7 +100,6 @@
 | [[AI 산출물 포맷 결정 트리]] | Markdown source와 HTML artifact를 독자 기준으로 나누는 실무 규칙이다. | 실제 배포/리포트 사례 raw 추가 후 core 검토 여부 재판단 |
 | [[디자인 시스템 기본값]] | AI 생성 UI drift를 막는 spacing·token·component default의 실무 규칙이다. | [[AI 시대 디자인 시스템]] 하위 허브로 유지, 반복 raw 누적 시 core 검토 |
 | [[OpenCode]] | Claude Code 계열 workflow와 provider/model 선택을 연결하는 도구 허브다. | 추가 실사용 자료 ingest 후 tool note 보강 |
-
 
 ## 점검 대기
 
@@ -135,7 +121,6 @@
 | [[바선생]] | Claude Code 대화 분석 도구의 6대 차원 가중치와 게이트 조건은 raw 시점 기준이다. | 공식 README 업데이트 시 재검토 |
 | [[온디바이스 TTS]] | 모델 스펙, benchmark, 라이선스와 배포 가이드는 빠르게 변동한다. | 도입 전 공식 모델 카드/README 재확인 |
 | [[한글 AI 번역투 탐지 및 윤문 워크플로]] | im-not-ai 스킬 및 에이전트의 CLI/환경 의존적인 동작 방식은 버전에 영향을 받는다. | 실사용 및 추가 검증 후 evergreen 검토 |
-
 
 ### 단일 출처·외부 검증 부족
 
@@ -164,10 +149,10 @@
 
 ## 현재 점검 상태
 
-- 108개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
-- 현재 상태 분포는 evergreen 75개, needs-review 19개, draft 1개다.
+- 111개 파일은 모두 wiki/에 반영되어 raw 미반영 0개다.
+- 현재 상태 분포는 evergreen 78개, needs-review 19개, draft 1개다.
 - broken wikilink와 orphan page는 0개로 확인됐다.
-- `status: needs-review` 노트 20개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
+- `status: needs-review` 노트 19개는 모두 `## 충돌` 섹션을 갖추도록 정리됐다.
 
 ## 후속 ingest 대기 묶음
 
