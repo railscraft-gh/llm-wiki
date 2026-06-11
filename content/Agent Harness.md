@@ -87,7 +87,6 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 
 ## 관련 노트
 - [[Harness Engineering]]
-- [[Harness Engineering]]
 - [[Context Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Meta-Harness]]
