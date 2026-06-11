@@ -68,7 +68,6 @@ Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 �
 - **버전 미성숙에 따른 한계**: v0.2.0 기준 메모리 정확도가 완벽하지 않고 의도치 않은 기술 생성이 일어날 수 있어, 운영 중 실시간 수동 검증이 필요할 수 있다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법)
 
 ## 관련 노트
-## 관련 노트
 - [[OpenClaw]]
 - [[Hermes Agent 24-7 운영]]
 - [[Hermes Agent Google Workspace 연결]]

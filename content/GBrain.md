@@ -10,7 +10,7 @@ aliases: []
 sources:
   - "raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md"
 created: 2026-06-07
-updated: 2026-06-07
+updated: 2026-06-11
 ---
 
 # GBrain
