@@ -124,7 +124,7 @@ macOS 환경에서 `fswatch`와 `launchd`를 활용하여 Obsidian `wiki/` 폴�
 - **GitHub Pages v4 branch 배포 거부 오류**:
   GitHub 저장소 `Settings -> Environments -> github-pages`에서 Deployment branches 제한 설정에 `v4` 브랜치 패턴이 정상 등록되었는지 확인한다. (공식 문서와 가이드의 sync 방식 차이로 생기는 환경 보호 에러 해결책).
 - **Git Push 시 Permission denied (publickey) 에러**:
-  SSH 키 인증 오류 시 `eval "$(ssh-agent -s)"`와 `ssh-add` to 사용해 키를 등록하거나 HTTPS origin URL(`https://github.com/...`)로 원격을 변경하여 대처한다.
+  SSH 키 인증 오류 시 `eval "$(ssh-agent -s)"`와 `ssh-add`를 사용해 키를 등록하거나 HTTPS origin URL(`https://github.com/...`)로 원격을 변경하여 대처한다.
 - **index.html 미생성 오류**:
   Quartz 빌드 에러의 주원인으로, `content/` 폴더 내에 반드시 홈 화면 역할을 할 `index.md` 파일이 존재해야 한다.
 
