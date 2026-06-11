@@ -5,32 +5,17 @@
 ### Raw 추가 (번역 및 윤문)
 
 - 입력:
-  - `medium/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`
-  - `medium/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`
-  - `medium/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
-  - `medium/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`
-  - `medium/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`
-  - `medium/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`
-  - `medium/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`
-  - `medium/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
-  - `medium/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
-  - `medium/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md`
+  - `medium/How Hermes, OpenClaw, ChatGPT Agents, and Future AI Systems Actually Work (Theory Simplified).md`
+  - `medium/I Rebuilt My Obsidian Workflow With 5 New Plugins (2026 Setup).md`
+  - `medium/Microsoft Told Its Engineers to Stop Using AI. Uber Burned Through Its Entire Annual AI Budget in Four Months. Here Is What Nobody Is Saying About This..md`
+  - `medium/AI Agents Are Dead. Why 88% Fail Before Production.md`
+  - `medium/Open source models are good enough. Stop overpaying for intelligence you don’t need.md`
+  - `medium/A Qwen 3.5 122B LLM on a 16 GB Mac mini. MoE Expert Streaming with TurboQuant-MLX.md`
+  - `medium/Inside Hermes Agent. How a Self-Improving AI Agent Actually Works.md`
+  - `medium/I Gave My AI Design System Ethics, Accessibility, and a Memory.md`
+  - `medium/GBrain.md`
+  - `medium/Building a Week-Long Running Agentic System.md`
 - 생성:
-  - Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리
-  - 5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정)
-  - 마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실
-  - AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유
-  - 오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라
-  - 16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍
-  - Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리
-  - AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법
-  - GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라
-  - 일주일 동안 지속 실행되는 에이전틱 시스템 구축하기
-- 작업 내용: 영어 원문 10개를 누락 및 의역 없이 한 문장씩 꼼꼼하게 한국어로 번역하고 검증하였으며, 최종적으로 사람이 직접 쓴 것과 같이 매끄럽고 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
-
-### Ingest
-
-- 입력:
   - `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`
   - `raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`
   - `raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
@@ -41,21 +26,32 @@
   - `raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
   - `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
   - `raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md`
-- 생성: 없음
-- 수정: `wiki/index.md`, `wiki/log.md`
+- 작업 내용: 영어 원문 10개를 누락 및 의역 없이 한 문장씩 한국어로 번역하고, 사람이 쓴 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
+
+### Ingest
+
+- 입력:
+  - `raw/` 적재 번역본 10개 문서
+- 생성: 없음 (원시 번역본 보존)
+- 수정: `wiki/index.md`, `wiki/log.md`, `raw/` 내 교정 대상 번역본 4종
 - index 업데이트: 완료
 - 남은 검토: 없음 (번역본 보존 및 raw 폴더 적재 완료)
 
-### Lint
+### Lint & 번역 재검증
 
-- 실행 방식: 수동 교차 검증 및 wikilink 정합성 확인
+- 실행 방식: 수동 교차 검증, wikilink 정합성 확인, 10개 번역본 원문 대조 검사
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
 - 출처 없는 수치 문장: 0개
 - 관련 노트 2개 미만 문서: 0개
 - 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 번역된 raw 파일 10개가 올바르게 한국어 및 자연스러운 문체로 적재되었음을 확인하고 `wiki/index.md`에 Ingest 테이블을 업데이트함.
+- 30일 이상 미갱신 핵심 노트: 0개 (index.md 상의 API Key 관리 원칙 30일 이상 미갱신 건 확인됨, needs-review 전환 여부 차주 검토 예정)
+- 조치: 번역 완료된 10개 문서 전체에 대하여 영어 원문과 한국어 번역본을 1:1 대조 및 가독성 교차 검증을 전면 수행함. 검증 과정에서 아래의 누락 및 오번역 결함을 확인하여 수정 패치함:
+  1. `16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기...`: 중간 핵심 기술 단락의 영문 미번역 누락 구간을 한국어로 완전 번역 및 수정 완료.
+  2. `마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고...`: '마이크로소프트 and 우버' 오타를 자연스러운 한글 조사인 '마이크로소프트와 우버'로 수정 완료.
+  3. `AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유`: '일겁' -> '일곱', '비상 정단 장치' -> '비상 중단 장치'로 오타 수정 완료.
+  4. `일주일 동안 지속 실행되는 에이전틱 시스템 구축하기`: 501라인 이후 후반부 정밀 검증을 통해 `VerifierTrust` 반환값의 슬라이싱 오류(`combined[-200:]` -> `combined[-2000:]`)를 교정하고, 영어 주석 및 독스트링(`EgressPolicy`, `CredentialBroker`)을 모두 한글로 번역 완료. RRF, 지식 정리(Consolidation), 배포 승인 관문(Promotion Gate) 등 주요 개념 번역의 어색한 중복 표현 및 번역 투(본선 소스코드, 1픽셀도, 침묵식 편의 제공, 밀봉되어 등)를 매끄러운 한글 표현(실제 소스코드, 조금도, 묵인하고 통과시키는 일, 제한되어 등)으로 전면 윤문함.
+  5. 위키 인덱스(`wiki/index.md`) 및 로그(`wiki/log.md`)의 Ingest 기록 정합성 일치화 완료.
 
 ## 2026-06-10
 
