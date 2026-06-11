@@ -31,11 +31,35 @@
 ### Ingest
 
 - 입력:
-  - `raw/` 적재 번역본 10개 문서
-- 생성: 없음 (원시 번역본 보존)
-- 수정: `wiki/index.md`, `wiki/log.md`, `raw/` 내 교정 대상 번역본 4종
+  - `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`
+  - `raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`
+  - `raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
+  - `raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`
+  - `raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`
+  - `raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`
+  - `raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`
+  - `raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
+  - `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
+  - `raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md`
+- 생성:
+  - [[에이전트 복리 실패의 수학]] (신규/핵심)
+  - [[오픈소스 LLM 경제성과 벤더 종속성 해지]] (신규/핵심)
+  - [[유기적 개인 지식 시스템]] (신규)
+- 수정:
+  - [[Vibe Coding과 Agentic Engineering]] (보강)
+  - [[Agent Harness]] (보강/핵심)
+  - [[Lethal Trifecta]] (보강/핵심)
+  - [[AI 시대 디자인 시스템]] (보강/핵심)
+  - `wiki/index.md`
+  - `wiki/log.md`
 - index 업데이트: 완료
-- 남은 검토: 없음 (번역본 보존 및 raw 폴더 적재 완료)
+- 남은 검토: 
+  - [[에이전트 복리 실패의 수학]]: 비결정론적 단일 연산 성공률의 누적 실패 수식 및 Google Antigravity, Replit 등의 데이터 파괴 사례를 통한 에이전트 가동 신뢰 한계.
+  - [[오픈소스 LLM 경제성과 벤더 종속성 해지]]: DeepSeek NIST CAISI 평가 격차 및 우버/MS의 실제 클로드 코드 예산 소모 사례 분석과 3단계 추론 프레임워크(DeepSeek R1/O1 등 추론 모델 도입 시나리오).
+  - [[유기적 개인 지식 시스템]]: Obsidian 5대 플러그인(Make.md, Omnisearch, Linter, QuickAdd, Calendar) 조합 가이드 및 실질 2026 세팅 가이드.
+  - [[Agent Harness]]: Temporal 기반 Durable Execution(Replay/Journaling), 비용 가버너(Budget Governor) 및 무한 루프 탐지기, 2인 통제 규칙(Rule of Two) 보안 통합.
+  - [[Lethal Trifecta]]: Google Antigravity 파괴 사례(드라이브 포맷) 및 Replit DB 삭제 사례를 3대 치명적 권한(외부 입력, 사적 데이터, 외부 송신)의 폭발성 사례로 보완하여 샌드박싱과 HITL(Human-In-The-Loop)의 당위성을 강화.
+  - [[AI 시대 디자인 시스템]]: BADS(Beautiful, Accessible, Durable Design System) 프레임워크의 3대 축인 윤리(Ethics), 웹 접근성(WCAG 2.2 AAA, 5대 접근성 차원 페르소나), 기억(교정 일지, Corrections log) 통합.
 
 ### Lint & 번역 재검증
 
@@ -52,6 +76,21 @@
   3. `AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유`: '일겁' -> '일곱', '비상 정단 장치' -> '비상 중단 장치'로 오타 수정 완료.
   4. `일주일 동안 지속 실행되는 에이전틱 시스템 구축하기`: 501라인 이후 후반부 정밀 검증을 통해 `VerifierTrust` 반환값의 슬라이싱 오류(`combined[-200:]` -> `combined[-2000:]`)를 교정하고, 영어 주석 및 독스트링(`EgressPolicy`, `CredentialBroker`)을 모두 한글로 번역 완료. RRF, 지식 정리(Consolidation), 배포 승인 관문(Promotion Gate) 등 주요 개념 번역의 어색한 중복 표현 및 번역 투(본선 소스코드, 1픽셀도, 침묵식 편의 제공, 밀봉되어 등)를 매끄러운 한글 표현(실제 소스코드, 조금도, 묵인하고 통과시키는 일, 제한되어 등)으로 전면 윤문함.
   5. 위키 인덱스(`wiki/index.md`) 및 로그(`wiki/log.md`)의 Ingest 기록 정합성 일치화 완료.
+
+### 결정 기록
+
+- 결정: 신규 생성 및 핵심 지정
+- 대상: [[에이전트 복리 실패의 수학]]
+- 근거: 비결정성 실패의 누적 수식과 실제 에이전트 구동 과정에서 발생하는 드라이브 포맷 및 DB 삭제 등 치명적 물리 파괴 사례를 정리하고 에이전트 신뢰성의 수학적/실증적 한계를 밝히기 위해 작성.
+- 결정: 신규 생성 및 핵심 지정
+- 대상: [[오픈소스 LLM 경제성과 벤더 종속성 해지]]
+- 근거: NIST CAISI의 DeepSeek 평가와 우버의 클로드 코드 예산 소모 사례 등 오픈소스 모델 도입의 실질적 비용과 종속성 탈피를 위한 3단계 추론 프레임워크를 정립하기 위해 작성.
+- 결정: 신규 생성
+- 대상: [[유기적 개인 지식 시스템]]
+- 근거: Obsidian 5대 플러그인을 조합하여 에이전트와 유기적으로 지식 베이스를 교류하고 관리하는 세컨드 브레인의 실질적 2026년식 셋업 가이드를 정립하기 위해 작성.
+- 결정: 보강 및 핵심 유지/지정
+- 대상: [[Agent Harness]], [[Lethal Trifecta]], [[AI 시대 디자인 시스템]]
+- 근거: 신규 수집된 2차 raw 자료(일주일 지속 에이전트, 에이전트 복리 실패, BADS 등)를 바탕으로 Temporal Durable Execution, Budget Governor, Loop Detector, Rule of Two, BADS 3대 기둥(윤리, 접근성, 기억) 등의 구체적 아키텍처와 보안/가드레일을 통합하고 교차 wikilink 정합성을 맞춤.
 
 ## 2026-06-10
 
