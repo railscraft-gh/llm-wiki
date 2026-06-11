@@ -17,8 +17,10 @@ sources:
   - sequoia-ascent-2026-karpathy
   - 바이브 코딩의 종말
   - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - "raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md"
+  - "raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md"
 created: 2026-05-06
-updated: 2026-06-10
+updated: 2026-06-11
 ---
 
 # Vibe Coding과 Agentic Engineering
