@@ -8,14 +8,13 @@ tags:
   - automation
   - prompting
 aliases:
-  - Claude Cowork
   - 클로드 코워크
   - Cowork
 sources:
   - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
   - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
 created: 2026-06-09
-updated: 2026-06-10
+updated: 2026-06-11
 ---
 
 # Claude Cowork

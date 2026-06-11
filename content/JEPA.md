@@ -9,11 +9,10 @@ tags:
   - algorithm
 aliases:
   - 공동 임베딩 예측 아키텍처
-  - JEPA
 sources:
   - ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-11
 ---
 
 # JEPA

@@ -8,13 +8,12 @@ tags:
   - design-system
 aliases:
   - 클로드 디자인
-  - Claude Design
 sources:
   - Claude Design이 디자이너를 대체할 것인가
   - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
   - raw/클로드 디자인은 과연 디자이너를 대체할까.md
 created: 2026-06-09
-updated: 2026-06-10
+updated: 2026-06-11
 ---
 
 # Claude Design

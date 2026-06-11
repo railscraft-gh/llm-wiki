@@ -7,12 +7,11 @@ tags:
   - startup
   - intelligence
 aliases:
-  - AMI Labs
   - 아미 랩스
 sources:
   - ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-11
 ---
 
 # AMI Labs
