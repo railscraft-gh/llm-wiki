@@ -79,4 +79,6 @@ Sequoia Ascent 2026에서 카파시는 MenuGen 결제 버그를 예시로 들었
 - [[소프트웨어 민주화]]
 - [[사양 기반 개발 (Spec Driven Development)]]
 - [[Spec Kit]]
+- [[에이전트 복리 실패의 수학]]
+- [[오픈소스 LLM 경제성과 벤더 종속성 해지]]
 
