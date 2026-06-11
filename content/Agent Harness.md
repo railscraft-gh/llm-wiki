@@ -86,7 +86,7 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
+## 관련 노트
 - [[Harness Engineering]]
 - [[Context Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
@@ -97,6 +97,7 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[Gajae-Code]]
 - [[한글 AI 번역투 탐지 및 윤문 워크플로]]
 - [[AI 세컨드 브레인]]
+- [[GBrain]]
 - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]]
 - [[케이브맨]]
 - [[에이전트 복리 실패의 수학]]
