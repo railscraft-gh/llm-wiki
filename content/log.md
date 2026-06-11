@@ -51,6 +51,7 @@
   - [[Lethal Trifecta]] (보강/핵심)
   - [[AI 시대 디자인 시스템]] (보강/핵심)
   - [[Quartz로 Obsidian Wiki 배포하기]] (보강)
+  - [[공간 지능]] (보강)
   - `wiki/index.md`
   - `wiki/log.md`
 - index 업데이트: 완료
@@ -62,6 +63,7 @@
   - [[Lethal Trifecta]]: Google Antigravity 파괴 사례(드라이브 포맷) 및 Replit DB 삭제 사례를 3대 치명적 권한(외부 입력, 사적 데이터, 외부 송신)의 폭발성 사례로 보완하여 샌드박싱과 HITL(Human-In-The-Loop)의 당위성을 강화.
   - [[AI 시대 디자인 시스템]]: BADS(Beautiful, Accessible, Durable Design System) 프레임워크의 3대 축인 윤리(Ethics), 웹 접근성(WCAG 2.2 AAA, 5대 접근성 차원 페르소나), 기억(교정 일지, Corrections log) 통합.
   - [[Quartz로 Obsidian Wiki 배포하기]]: Symlink 빌드 해소 스텝, macOS fswatch/launchd 실시간 배포 자동화, 커스텀 도메인 DNS 레코드(A레코드 4개) 및 FAQ 문제해결 3종 추가 반영.
+  - [[공간 지능]]: aliases 항목 내 파일명과 동일한 중복 지칭 제거(Quartz 리다이렉트 루프 유발 해결).
 
 ### Lint & 번역 재검증
 
@@ -96,6 +98,9 @@
 - 결정: 보강
 - 대상: [[Quartz로 Obsidian Wiki 배포하기]]
 - 근거: raw 가이드(Quartz-Deploy-Guide, Quartz-GitHub-Pages-Complete-Guide)의 세부 사항인 symlink Actions 빌드 해소, macOS fswatch 기반 배포 스크립트, 커스텀 도메인 DNS 설정, 주요 트러블슈팅 FAQ 3종을 통합 반영하여 실무 활용성을 극대화하기 위해 보강함.
+- 결정: 보강
+- 대상: [[공간 지능]]
+- 근거: 파일명과 aliases 명이 동일하여 Quartz 빌드 시 무한 리다이렉션을 유발하는 html 덮어쓰기 결함을 예방하기 위해 frontmatter aliases 내의 중복 값 제거함.
 
 ## 2026-06-10
 
