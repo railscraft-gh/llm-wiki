@@ -27,7 +27,7 @@ updated: 2026-06-10
 
 ## 한 줄 정의
 
-LLM Wiki 운영 패턴은 raw 문서를 단순히 보관하는 메모장(Notebook) 단계를 넘어, 에이전트가 점진적으로 정제하고 연결하는 파일 캐비닛(Filing Cabinet) 아키텍처이자, 요약-우선 탐색(Summary-first navigation)과 자동 인덱싱 루프로 구성된 지속형 마크다운 지식 관리 워크플로우다.
+LLM Wiki 운영 패턴은 raw 문서를 단순히 보관하는 메모장(Notebook) 단계를 넘어, 에이전트가 점진적으로 정제하고 연결하는 파일 캐비닛(Filing Cabinet) 아키텍처이자, 요약-우선 탐색(Summary-first navigation)과 자동 인덱싱 루프로 구성된 지속형 마크다운 지식 관리 워크플로우다. 이 패턴은 GBrain 같은 장기 기억/지식 그래프 인프라와 붙을 때 더 강해진다.
 
 ## 핵심 요지
 
