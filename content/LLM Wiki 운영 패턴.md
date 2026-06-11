@@ -103,7 +103,7 @@ LLM Wiki 운영 패턴은 raw 문서를 단순히 보관하는 메모장(Noteboo
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
+## 관련 노트
 - [[Software 3.0]]
 - [[Thinking과 Understanding 분리]]
 - [[Agent Native Infrastructure]]
@@ -112,4 +112,5 @@ LLM Wiki 운영 패턴은 raw 문서를 단순히 보관하는 메모장(Noteboo
 - [[AI 산출물 포맷 결정 트리]]
 - [[학습용 노트 외부화 원칙]]
 - [[LLM Wiki 구현 선택지]]
+- [[GBrain]]
 
