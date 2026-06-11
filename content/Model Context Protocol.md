@@ -143,9 +143,10 @@ if __name__ == "__main__":
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
+## 관련 노트
 - [[Context Mode]]
 - [[Pinterest MCP]]
 - [[oMLX]]
 - [[Agent Harness]]
+- [[GBrain]]
 
