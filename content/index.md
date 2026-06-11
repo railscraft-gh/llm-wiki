@@ -8,7 +8,7 @@
 | [[Software 3.0]] | prompt와 context window가 프로그래밍 레버가 되는 패러다임을 설명한다. | evergreen | 2026-05-24 |
 | [[Jagged Intelligence]] | LLM이 검증 가능한 영역에서 강하고 그 외 영역에서 들쭉날쭉한 이유를 설명한다. | evergreen | 2026-05-14 |
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
-| [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-09 |
+| [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-11 |
 | [[완전히 기계 읽기 가능한 디자인 시스템]] | 대규모 AI 에이전트 개발을 위한 6개 지식 레이어 구성 및 점진적 맥락 공개 아키텍처를 정리한다. | evergreen | 2026-06-09 |
 | [[세계 모델]] | 물리 세계 예측 및 탐색이 지능의 본체라는 얀 르쿤의 관점과 JEPA, 공간 지능, 모라벡의 역설 등을 다룬다. | needs-review | 2026-06-09 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
@@ -18,7 +18,7 @@
 | [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
 | [[LLM Wiki 운영 패턴]] | raw 보존, wiki 승격, index/log/lint 분리로 지식 베이스를 지속 운영하는 workflow를 정리한다. | evergreen | 2026-05-26 |
 | [[병렬 에이전트 세션 운영]] | 역할 분리, 파일 범위, 검증 경계를 기준으로 multi-agent 세션을 안전하게 병렬화하는 절차를 정리한다. | evergreen | 2026-06-04 |
-| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-06-07 |
+| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-06-11 |
 | [[Agent Native Infrastructure]] | agent가 바로 실행할 수 있는 CLI·API·문서·권한 구조를 설계하는 인프라 관점을 정리한다. | evergreen | 2026-05-26 |
 | [[AI 에이전트 런타임 역할 맵]] | 확장 층, 하네스, 인프라, 오픈소스 작업대, 제품 구현체를 한 장의 런타임 계층으로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 네이티브 작업 시스템]] | 사용자 숙련, 디자인 계층, 런타임 계층, 검증 루프를 하나의 작업 체계로 묶는다. | evergreen | 2026-05-26 |
@@ -26,6 +26,20 @@
 | [[AI Experience Architect]] | 화면 제작을 넘어 에이전트 위임 경계, 검토 게이트, 신뢰 모델 등 상류 디자인 전략을 설계하는 역할을 정의한다. | evergreen | 2026-06-07 |
 | [[AI 세컨드 브레인]] | PARA 구조와 점진적 맥락 공개(CLAUDE.md)로 6만 명의 대화 맥락을 유지한 지식 시스템 구축 사례를 정리한다. | evergreen | 2026-06-07 |
 | [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
+| [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
+| [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
+| [[프론트엔드 디자인 스킬]] | AI가 만든 UI slop을 거부하기 위해 Anthropic 엔지니어가 배포한 30줄 미학 스킬의 영향력과 한계를 정리한다. | evergreen | 2026-06-04 |
+| [[디자인 에이전트 5종]] | upstream design work to research·define·ideate·flow 단계 of agent workflow로 분해하는 상위 task map이다. | evergreen | 2026-05-26 |
+| [[Lethal Trifecta]] | 신뢰 불가 입력·민감 시스템 접근·상태 변경의 동시 보유를 금지하는 에이전트 보안 위험 모델을 정리한다. | evergreen | 2026-06-11 |
+| [[Model Context Protocol]] | AI 클라이언트와 데이터 소스/도구 간에 컨텍스트와 실행 권한을 주고받기 위한 통신 표준 프로토콜을 다룬다. | evergreen | 2026-06-10 |
+| [[에이전트 복리 실패 of 수학]] | 비결정론적 실패 of 누적 수식 및 Google Antigravity 드라이브 포맷, Replit DB 삭제 등의 실제 물리 파괴 사고 사례 분석을 다룬다. | evergreen | 2026-06-11 |
+| [[오픈소스 LLM 경제성과 벤더 종속성 해지]] | NIST CAISI DeepSeek 평가 격차, 우버/MS의 실제 클로드 코드 예산 소모 등 오픈소스 도입의 실질적 비용과 3단계 추론 프레임워크를 다룬다. | evergreen | 2026-06-11 |
+
+## Ingest 현황
+
+| 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
+| --- | --- | --- | --- | --- |
+| 2026-06-11 | `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`<br>`raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`<br>`raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`<br>`raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`<br>`raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`<br>`raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`<br>`raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`<br>`raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`<br>`raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`<br>`raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md` | [[에이전트 복리 실패 of 수학]] (신규/핵심), [[오픈소스 LLM 경제성과 벤더 종속성 해지]] (신규/핵심), [[유기적 개인 지식 시스템]] (신규), [[Vibe Coding과 Agentic Engineering]] (보강), [[Agent Harness]] (보강/핵심), [[Lethal Trifecta]] (보강/핵심), [[AI 시대 디자인 시스템]] (보강/핵심) | done | [[log#2026-06-11]] |�용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
 | [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
 | [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
 | [[프론트엔드 디자인 스킬]] | AI가 만든 UI slop을 거부하기 위해 Anthropic 엔지니어가 배포한 30줄 미학 스킬의 영향력과 한계를 정리한다. | evergreen | 2026-06-04 |
