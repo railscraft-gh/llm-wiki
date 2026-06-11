@@ -13169,3 +13169,6 @@ After doing this, you may fix the identity used for this commit with:
 [2026-06-11 12:40:27] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
 [2026-06-11 12:40:27] symlink 복원 완료
 ---
+[2026-06-11 16:22:33] 배포 시작
+[2026-06-11 16:22:33] wiki 동기화 완료
+[2026-06-11 16:22:33] 출처 섹션 제거 완료

@@ -1,7 +1,7 @@
 ---
 type: tool
 status: evergreen
-core: false
+core: true
 tags:
   - memory
   - agent
