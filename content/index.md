@@ -25,6 +25,7 @@
 | [[AI 디자인 역할 맵]] | 기본값, DESIGN.md, task agent, AI Experience Architect를 한 장의 디자인 운영 계층으로 묶는다. | evergreen | 2026-05-26 |
 | [[AI Experience Architect]] | 화면 제작을 넘어 에이전트 위임 경계, 검토 게이트, 신뢰 모델 등 상류 디자인 전략을 설계하는 역할을 정의한다. | evergreen | 2026-06-07 |
 | [[AI 세컨드 브레인]] | PARA 구조와 점진적 맥락 공개(CLAUDE.md)로 6만 명의 대화 맥락을 유지한 지식 시스템 구축 사례를 정리한다. | evergreen | 2026-06-07 |
+| [[GBrain]] | 마크다운 노트를 지식 그래프로 자동 구축하고 MCP로 에이전트 메모리를 제공하는 장기 기억 인프라를 정리한다. | evergreen | 2026-06-11 |
 | [[AI 기본값 수용과 오버라이드 전략]] | AI가 밀어 넣는 foundation을 어디까지 수용하고 어디서 override할지 정하는 상위 의사결정 프레임이다. | evergreen | 2026-05-26 |
 | [[API Key 관리 원칙]] | secret을 코드에서 분리하고 생성·로테이션·폐기·감사까지 생명주기로 다루는 보안 체크리스트다. | evergreen | 2026-05-07 |
 | [[Context Engineering]] | agent 단계 사이에 필요한 정보만 필요한 형식으로 넘기는 handoff 설계 원칙을 정리한다. | evergreen | 2026-05-26 |
