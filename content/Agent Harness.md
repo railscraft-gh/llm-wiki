@@ -16,8 +16,10 @@ sources:
   - 아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기
   - 2026년의 AI 에이전트 실전 가이드
   - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
+  - "raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md"
+  - "raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md"
 created: 2026-05-26
-updated: 2026-06-07
+updated: 2026-06-11
 ---
 
 # Agent Harness
