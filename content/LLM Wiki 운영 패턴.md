@@ -103,7 +103,6 @@ LLM Wiki 운영 패턴은 raw 문서를 단순히 보관하는 메모장(Noteboo
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-## 관련 노트
 - [[Software 3.0]]
 - [[Thinking과 Understanding 분리]]
 - [[Agent Native Infrastructure]]
