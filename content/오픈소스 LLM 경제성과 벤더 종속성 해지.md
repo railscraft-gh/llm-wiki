@@ -67,4 +67,5 @@ updated: 2026-06-11
 - [[AI 겨울과 경제적 조정]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[Agent Harness]]
+- [[오픈소스 라이선스 갈등과 커뮤니티 역풍]]
 
