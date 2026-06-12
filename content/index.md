@@ -10,6 +10,7 @@
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-11 |
 | [[완전히 기계 읽기 가능한 디자인 시스템]] | 대규모 AI 에이전트 개발을 위한 6개 지식 레이어 구성 및 점진적 맥락 공개 아키텍처를 정리한다. | evergreen | 2026-06-09 |
+| [[DESIGN.md 워크플로우]] | Figma의 디자인 토큰 명세를 DESIGN.md로 고정하고 v0, Stitch, Claude Code를 체인화해 UI 격차 없이 구현하는 파이프라인을 다룬다. | evergreen | 2026-06-12 |
 | [[세계 모델]] | 물리 세계 예측 및 탐색이 지능의 본체라는 얀 르쿤의 관점과 JEPA, 공간 지능, 모라벡의 역설 등을 다룬다. | needs-review | 2026-06-09 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
 | [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-05-26 |
