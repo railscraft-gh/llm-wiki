@@ -60,4 +60,5 @@ Sequoia Ascent 2026에서 카파시는 이를 "기존의 소프트웨어 스택�
 - [[Harness Engineering]]
 - [[소프트웨어 민주화]]
 - [[LLM Wiki 운영 패턴]]
+- [[AI 엔지니어 필수 논문]]
 
