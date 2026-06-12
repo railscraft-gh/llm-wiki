@@ -72,10 +72,10 @@ graph TD
 ```
 
 ## 관련 노트
-- `[[Software 3.0]]`
+- [[Software 3.0]]
   - 트랜스포머 추론 모델이 컴퓨터 CPU 인터프리터가 되고 컨텍스트를 메모리/프로그램으로 쓰는 구조적 연관성.
-- `[[Context Engineering]]`
+- [[Context Engineering]]
   - RAG 및 롱 컨텍스트 내의 정보 밀도와 탐색 효율을 극대화하는 컨텍스트 설계 기법.
-- `[[Agent Harness]]`
+- [[Agent Harness]]
   - ReAct 루프를 안전하고 지속적으로 실행하기 위한 가이드레일 및 인프라 구조.
 
