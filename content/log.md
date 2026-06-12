@@ -1,5 +1,82 @@
 # LLM Wiki Log
 
+## 2026-06-12
+
+### Raw 추가 (번역 및 윤문)
+
+- 입력:
+  - `medium/10 LangChain & LangGraph Concepts Every AI Engineer Should Know.md`
+  - `medium/11 Tiny Lifestyle Changes That Fixed My Attention Span.md`
+  - `medium/A $4 Billion Empire Broke Open Source. They Threatened One Developer. It Backfired..md`
+  - `medium/AI Isn’t Replacing Developers. It’s Doing Something Worse..md`
+  - `medium/AI Killed My Writing Career. Long Live AI..md`
+  - `medium/AI-Assisted Coding in 2026 is a Skill. Here’s How to Actually Get Good at It..md`
+  - `medium/Figma skills for Claude Code. Complete Guide.md`
+  - `medium/Forget creating digital products. Focus on this instead.md`
+  - `medium/How I organise Obsidian Daniel Prindii.md`
+  - `medium/How to Build an AI-Native Second Brain (The 2026 Way).md`
+  - `medium/I Did 11 Technical Interviews in 60 Days. Here Is the Pattern Nobody Tells You..md`
+  - `medium/I Tried Building Claude Code From Scratch. Here’s How Far I Got.md`
+  - `medium/If You Had To Read Only 5 AI Papers, This Should Be It..md`
+  - `medium/MEMORY.md for Claude Code projects.md`
+  - `medium/Master Obsidian. The Complete and Definitive Guide to Turning Your Notes into a Second Brain.md`
+  - `medium/Modular Monolith Instead of Microservices — What Changed When the AI Agent Started Reading Code.md`
+  - `medium/My Complete Web design & build workflow for 2026.md`
+  - `medium/RAG Systems. The Complete Zero-to-Hero Guide (2026 Edition).md`
+  - `medium/Spec-Driven Development with AI Coding Agents. The Definitive Guide.md`
+  - `medium/Tailwind’s Struggles Are Signs Of A Collapsing House Of Cards.md`
+  - `medium/The Boring Truth About What Makes a Good Life.md`
+  - `medium/The Obvious Ways To Spot Someone Secretly Writing With AI.md`
+  - `medium/What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness.md`
+  - `medium/What Happens When You Give an LLM the Keys to Your Obsidian Vault.md`
+- 생성:
+  - `raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md`
+  - `raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md`
+  - `raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md`
+  - `raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md`
+  - `raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md`
+  - `raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md`
+  - `raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md`
+  - `raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md`
+  - `raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md`
+  - `raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md`
+  - `raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md`
+  - `raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md`
+  - `raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md`
+  - `raw/Claude Code 프로젝트를 위한 MEMORY.md.md`
+  - `raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md`
+  - `raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md`
+  - `raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md`
+  - `raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md`
+  - `raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md`
+  - `raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md`
+  - `raw/좋은 삶을 만드는 것에 대한 지루한 진실.md`
+  - `raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md`
+  - `raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md`
+  - `raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md`
+- 작업 내용: 영어 원문 24개를 누락 및 의역 없이 한 문장씩 한국어로 번역하고, 사람이 쓴 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
+
+### Ingest
+
+- 입력: 위의 24개 raw 파일
+- 생성: 없음
+- 수정:
+  - `wiki/index.md`
+  - `wiki/log.md`
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint & 번역 재검증
+
+- 실행 방식: 수동 교차 검증, wikilink 정합성 확인, 24개 번역본 원문 대조 검사
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개 (이전 2026-06-11 검출 건 제외)
+- 조치: 번역 완료된 24개 문서 전체에 대하여 영어 원문과 한국어 번역본을 1:1 대조 및 가독성 교차 검증을 전면 수행함. 모든 파일은 humanize-korean v2.0 fast 모드를 통해 A 등급 및 자체검증 6/6 통과를 확인하였음.
+
 ## 2026-06-11
 
 ### Raw 추가 (번역 및 윤문)
