@@ -11,38 +11,42 @@ aliases:
   - GenAI 면접 평가 축
   - LLM 엔지니어 면접 질문 축
 sources:
-  - 2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변
+  - "raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md"
+  - "raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md"
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-12
 ---
 
 # 생성형 AI 면접 평가 축
 
 ## 한 줄 정의
-
-생성형 AI 면접 평가 축은 GenAI·LLM 엔지니어 면접에서 정의 암기보다 시스템 trade-off와 운영 경험을 어떤 축으로 검증하는지 정리한 실무 프레임이다.
+생성형 AI 면접 평가 축은 GenAI·LLM 엔지니어 및 범용 소프트웨어 엔지니어 채용 시, AI 에이전트의 보급으로 인해 암기식 코딩 테스트에서 탈피하여 시스템 아키텍처 설계, AI 페어 프로그래밍 실무, 슬롭(Slop) 탐지 및 코드 비평(Critique) 능력을 검증하는 다차원 평가 프레임이다.
 
 ## 핵심 요지
-
-- 면접은 모델 기초보다 RAG, multi-agent, 평가, observability, guardrail, NL-to-SQL 같은 시스템 단위 설계를 더 많이 본다.
-- 좋은 답변은 용어 설명보다 왜 특정 선택이 필요한지, 어떤 실패 모드를 어떻게 줄였는지까지 포함한다.
-- 채용 신호는 "써봤다"보다 trade-off를 설명하고 운영 실패를 복구한 경험에 가깝다.
+- **AI 페어 프로그래밍 실무 검증**: LeetCode식 손코딩의 변별력 상실로 인해, 면접관이 실제 에이전트 환경(Cursor, Claude Code 등)을 제공하고 제한된 시간(예: 30분) 내에 마이크로서비스를 구현·테스트하게 하는 실무 중심 과제가 주류를 이룬다.
+- **슬롭(Slop) 탐지와 코드 비평**: 에이전트가 자동 생성한 코드의 결함(보안 취약점, 쿼리 비효율, 예외 처리 누락, 슬롭스쿼팅 등)을 날카롭게 포착하고 리팩토링 방향을 지휘하는 시니어 리뷰어로서의 역량을 평가한다.
+- **시스템 trade-off 및 실패 복구 검증**: 단순 프레임워크 사용법보다 RAG 튜닝, 에이전트 교착 상태(Deadlock) 해결, observability 추적, 비용 가버너 설계 등 운영 중 겪은 실패와 트레이드오프 판단을 깊게 묻는다.
 
 ## 상세
 
-원문 40문항은 결국 몇 개의 평가 축으로 압축된다. 첫째는 **모델·추론 기초**다. attention, context window, decoding, instruction tuning 같은 기초를 이해해야 한다. 둘째는 **grounding과 retrieval 설계**다. chunking, hybrid search, reranker, RAG 평가, lost-in-the-middle 대응을 설명할 수 있어야 한다. 셋째는 **agent orchestration과 memory**다. ReAct, Plan-and-Execute, state 공유, loop 종료, memory 분리, deadlock 방지가 여기에 들어간다. 넷째는 **fine-tuning과 alignment**다. RAG와 fine-tuning을 언제 나누는지, LoRA/QLoRA, RLHF/DPO를 어떤 문제에서 쓰는지 본다. 다섯째는 **평가와 observability**다. offline/online eval, LLM-as-judge 편향, trace, latency, token, retrieval score를 어떻게 추적하는지 묻는다. 여섯째는 **시스템 설계와 safety**다. 멀티테넌트 RAG, guardrail, latency, NL-to-SQL 실패 모드, GraphRAG 같은 주제가 포함된다.
+### 1. 2026년 기술 인터뷰의 3대 메가 트렌드
+AI 에이전트가 코딩의 장벽을 낮춤에 따라 채용 평가의 초점이 "코드를 기계적으로 짜는 사람"에서 "시스템 전체를 감독하고 조율하는 설계자"로 전환되었다.
+1. **자율 에이전트와 함께하는 라이브 챌린지**: 단순 알고리즘 작성이 아닌, 에이전트와 페어 프로그래밍을 하여 라이브로 작동하는 실무급 백엔드 API와 DB 스키마를 30분 내로 조립하고 테스트 팩까지 기계적으로 통과시켜 동작 여부를 증명하는 라이브 검증이다.
+2. **코드 비평(Code Critique) 및 슬롭 스캔**: AI가 생성한 복잡하지만 어설픈 코드를 제공하고, "이 코드에서 에러 핸들링 부재, 가짜 라이브러리 참조(슬롭스쿼팅), N+1 쿼리 등의 시스템 결함을 최소 5개 이상 지적하고 리팩토링을 제안하라"는 비판적 검토 능력을 확인한다.
+3. **아키텍처 스케칭 및 트러블슈팅**: 구체적인 프로그래밍 언어의 신택스(syntax) 암기 테스트를 전면 배제하고, 화이트보드 상에서 분산 시스템(IDP, API Handoff, 멱등성 보장) 아키텍처 지도를 그릴 수 있는지와 복잡한 분산 에러 로그를 읽고 장애 지점을 찾아내는 트러블슈팅 역량을 집중 평가한다.
 
-이 프레임은 [[AI 네이티브 사용자]]와 직접 연결된다. 실제 채용은 더 이상 "손코딩을 얼마나 빨리 하느냐"보다 agent와 retrieval, 검증 루프를 붙여 큰 시스템을 안전하게 다룰 수 있는지를 본다. 동시에 [[AI 코딩 에이전트 검증 전략]]이나 [[Context Engineering]] 같은 노트가 바로 면접 대답의 실무형 근거가 된다.
+### 2. GenAI 시스템 엔지니어링 6대 평가 축
+- **모델·추론 기초**: 어텐션(Attention) 제곱 비용 한계, 컨텍스트 윈도우 한계 및 Lost in the middle 극복 원리.
+- **RAG 및 컨텍스트 엔지니어링**: RAG 튜닝(청킹, 하이브리드 검색, 리랭커), 벡터 데이터베이스 튜닝, 평가 지표(Faithfulness, Answer Relevance).
+- **에이전트 오케스트레이션**: ReAct 루프 제어, 멱등성(Idempotency), Durable Execution(지속성 실행) 및 루프 탈출 조건 설계.
+- **파인튜닝 및 정렬**: LoRA/QLoRA 매커니즘, RLHF/DPO의 실무 도입 분기점 및 모델 한계 극복 판단.
+- **평가 및 Observability**: Offline/Online Eval, LLM-as-judge 편향 제거, Latency 및 Token 가버닝.
+- **보안 및 가드레일**: 멀티테넌트 RAG 테넌트 격리, Lethal Trifecta 위험 통제, 슬롭스쿼팅 방어 방침.
 
 ## 예시
-
-- RAG 질문에선 "vector search를 썼다"보다 hybrid search, reranker, citation, faithfulness 검증까지 말해야 강하다.
-- multi-agent 질문에선 역할 분리보다 loop 종료 조건, state pollution 방지, supervisor 구조를 설명할 수 있어야 한다.
-- 시스템 설계 질문에선 tenant 격리, guardrail, observability, fallback까지 포함해야 한다.
-
-## 충돌
-
-현재 확인된 충돌 없음.
+- **RAG 설계 질문**: "단순 Vector Search보다 검색 정확도를 30% 높인 하이브리드 검색과 리랭커 튜닝, 그리고 Lost in the Middle 현상을 예방하기 위한 컨텍스트 엔지니어링 설계를 설명해 보십시오."
+- **코드 비평 질문**: "AI가 임의로 구현한 결제 연동 코드에서 슬롭 API 호출과 트랜잭션 롤백 누락 결함을 지적해 보십시오."
+- **에이전트 조율 질문**: "장기 실행 에이전트의 무한 재시도로 인한 비용 폭주와 API Rate Limit 도달 문제를 방지하기 위해 가버너(Governor)와 루프 탐지기를 설계한 경험을 말씀해 보십시오."
 
 ## 관련 노트
 
