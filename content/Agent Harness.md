@@ -105,4 +105,5 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - [[케이브맨]]
 - [[에이전트 복리 실패의 수학]]
 - [[오픈소스 LLM 경제성과 벤더 종속성 해지]]
+- [[AI 엔지니어 필수 논문]]
 
