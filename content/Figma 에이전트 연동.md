@@ -62,10 +62,10 @@ Model Context Protocol (MCP) 표준 프로토콜을 통해 Claude Code 등의 �
   이전 단계에서 요약한 텍스트 분석 내용을 바탕으로 슬라이드 덱에 카드와 목차, 강조 도형을 생성한다.
 
 ## 관련 노트
-- `[[DESIGN.md 워크플로우]]`
+- [[DESIGN.md 워크플로우]]
   - Stitch 및 Claude Code를 사용해 DESIGN.md 명세를 Figma에 적용하는 핸드오프 워크플로우.
-- `[[AI 시대 디자인 시스템]]`
+- [[AI 시대 디자인 시스템]]
   - 에이전트가 생성하는 디자인 결과물이 일치하도록 토큰과 가이드라인을 규정하는 설계 방식.
-- `[[Model Context Protocol]]`
+- [[Model Context Protocol]]
   - Figma MCP와 같은 외부 도구 연결 인터페이스의 기초 통신 프로토콜 표준.
 
