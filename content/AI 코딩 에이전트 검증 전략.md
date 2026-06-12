@@ -23,43 +23,27 @@ sources:
  - andrej-karpathy-skills-CLAUDE-번역
  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
-  - You’re Using AI to Write Code. You’re Not Using It to Review Code.
+ - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+ - You’re Using AI to Write Code. You’re Not Using It to Review Code.
+ - "raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md"
+ - "raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md"
  - https://github.com/google-labs-code/design.md
  - https://opencode.ai/docs/config/
 created: 2026-05-06
-updated: 2026-05-26
+updated: 2026-06-12
 ---
 
 # AI 코딩 에이전트 검증 전략
 
 ## 한 줄 정의
-
-AI 코딩 에이전트 검증 전략은 에이전트에게 구현뿐 아니라 테스트, 린트, UI 확인, 실패 시 수정까지 맡겨 결과물을 스스로 확인하게 만드는 workflow다.
+AI 코딩 에이전트 검증 전략은 에이전트에게 단순 코드 생성을 넘어 테스트 팩(Test Pack) 검사, 린터 구동, 브라우저/UI 검토, 그리고 오류 발생 시의 자율 디버깅 및 자가 수정(Self-Correction)의 전 과정을 책임지게 만드는 엔지니어링 워크플로우다.
 
 ## 핵심 요지
-
-- 좋은 지시는 "기능을 만들어라"에서 끝나지 않고 "검증할 테스트를 만들고 실행한 뒤 실패하면 원인을 고쳐라"까지 포함한다.
-- 검증 루프는 [[Jagged Intelligence]] 때문에 필요하다. LLM은 코드처럼 채점 가능한 영역에서는 강하지만, 상식이나 제품 판단에서는 들쭉날쭉할 수 있다.
-- 자동화의 목표는 AI에게 권한을 더 많이 주는 것이 아니라 사람이 신뢰할 수 있는 확인 구조를 만드는 것이다.
+- **기능 개발과 검증의 동시성**: 모든 기능 명세 지시는 "코드를 작성하라"에서 끝나지 않고, "해당 명세를 입증할 테스트 코드를 함께 작성하고, 린트와 테스트가 100% 통과할 때까지 자율 디버깅을 반복하여 결과를 제출하라"는 완료 조건(DoD)을 명시해야 한다.
+- **결정론적 검증 체계 (Deterministic Verification)**: LLM의 비결정론적이고 들쭉날쭉한 지능([[Jagged Intelligence]])을 통제하기 위해, 사람이 짠 테스트 프레임워크나 정적 린터 같은 객관적이고 기계적인 채점 시스템을 검증 수단으로 제공한다.
+- **AI 보조 코딩 마스터링 3대 핵심축**: AI 코딩을 단순 바이브 코딩에서 전문 엔지니어링 기술로 승격시키기 위해 컨텍스트 정합성(Alignment) 관리, 테스트 팩을 통한 기계적 검증, 정량적 피드백 루프를 철저히 조율한다.
 
 ## 상세
-
-보리스 관점의 핵심은 Claude Code, Codex, Gemini CLI 같은 도구를 코드 생성기가 아니라 "자기 작업을 확인하고 실패하면 다시 고치는 에이전트"로 쓰는 것이다. 이때 검증 수단은 프로젝트에 이미 있는 `npm test`, `ruff check`, `pytest`, 빌드 명령, CI, 브라우저 자동화 같은 실행 가능한 기준이어야 한다.
-
-카파시의 [[Jagged Intelligence]] 관점에서도 같은 결론이 나온다. LLM은 검증 가능한 영역에서는 빠르게 강해지지만, 검증 기준이 없으면 사람 눈에는 그럴듯한 결과를 내고도 시스템 결정을 틀릴 수 있다. 따라서 [[Vibe Coding과 Agentic Engineering]]을 구분하는 핵심은 속도가 아니라 검증 책임을 유지하는가다.
-
-`raw/andrej-karpathy-skills-CLAUDE-번역.md`는 이 검증 책임을 더 짧은 규칙으로 압축한다. [[에이전트 코딩 4원칙]]의 Goal-Driven Execution은 "버그 수정"이나 "검증 로직 추가"를 막연한 작업으로 두지 않고, 실패 가능한 테스트와 확인 방법으로 다시 쓰라고 요구한다.
-
-또한 `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`는 세션 운영 차원의 보조 장치를 제공한다. [[Claude Code 세션 운영 명령어]]의 `/review`는 구현 뒤 결함 탐색을 구조화하고, `/compact`는 긴 검증 세션이 context 한계에 부딪히기 전에 흐름을 유지하게 한다.
-
-UI 작업의 검증 기준에는 screenshot 확인뿐 아니라 design token 위반 확인도 포함된다. Google Labs의 `design.md` repository는 `DESIGN.md` lint가 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다고 설명한다. 따라서 [[DESIGN.md 운영 원칙]]은 UI 생성 작업의 검증 루프에 들어갈 수 있다.
-
-후속 raw는 여기에 responsive behavior, do's and don'ts, component state 같은 더 구체적인 검사 기준을 붙인다. 즉 디자인 검증은 단순히 "예뻐 보이는가"가 아니라, role이 정의된 color, typography hierarchy, spacing scale, component state, mobile behavior가 spec을 벗어났는지 확인하는 일이다.
-
-[[OpenCode]] 자료는 Playwright MCP를 붙여 agent가 브라우저에서 직접 입력, 클릭, 화면 확인을 수행하게 하는 예를 든다. 공식 config 문서는 `opencode.json`의 `mcp` 항목으로 MCP server를 설정할 수 있다고 설명한다. UI 검증에서는 "구현 후 테스트"가 아니라 "브라우저 조작으로 실패를 발견하고 수정한 뒤 다시 확인"까지가 완료 조건이다.
-
-`raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`는 검증의 범위를 테스트 밖으로 넓힌다. AI는 Context Dump로 세션 맥락을 정리하고, Documentation Generator로 누락된 문서를 채우고, Code Review Partner로 PR를 먼저 검토할 수 있다. 더 나아가 Architecture Advisor, Security Auditor, Performance Profiler, Migration Assistant, Full Codebase Analysis까지 맡기면 AI는 코드 생성기에서 벗어나 사전 감사자와 사전 전환 보조자로 바뀐다.
 
 
 하네스 관점에서 verification loop는 부가 옵션이 아니라 핵심 부품이다. `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 verification을 component 10으로 따로 분리하며, agent에게 자기 결과를 다시 테스트하고 실패를 입력으로 되돌릴 수 있게 할 때 최종 품질이 크게 올라간다고 정리한다. 즉 검증은 프롬프트 문구보다 [[Agent Harness]]의 설계 문제에 더 가깝다.
