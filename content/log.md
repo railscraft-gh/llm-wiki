@@ -1,5 +1,16 @@
 # LLM Wiki Log
 
+## 2026-06-14
+
+### Raw 추가 (번역 및 윤문)
+
+- 입력:
+  - `medium/The Last Time This Happened, Lots of Regular People Became Millionaires.md`
+- 생성:
+  - `raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md`
+- 작업 내용: 영어 원문 1개를 누락 및 의역 없이 한 문장씩 한국어로 번역하고, 사람이 쓴 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
+- index 업데이트: 완료
+
 ## 2026-06-12
 
 ### Raw 추가 (번역 및 윤문)
