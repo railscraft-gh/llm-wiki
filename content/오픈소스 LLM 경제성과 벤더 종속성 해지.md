@@ -76,7 +76,7 @@ updated: 2026-06-14
   - Together AI (DeepSeek V4-Pro 호스팅): 입력 $2.10 / 출력 $4.40
 
 ## 관련 노트
-- [[AI 겨울과 경제적 조정]]
+- [[AI 겨울과 경제적 조정]] : 빅테크의 과도한 CAPEX 투자 거품과 일자리 조정, 그리고 모델 다운그레이드가 맞물리는 거시 환경을 다룬다.
 - [[Vibe Coding과 Agentic Engineering]]
 - [[Agent Harness]]
 - [[오픈소스 라이선스 갈등과 커뮤니티 역풍]]
