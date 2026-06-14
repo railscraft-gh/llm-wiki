@@ -70,6 +70,7 @@ AI 네이티브 사용자는 LLM을 단순 챗봇이나 자동완성으로 쓰�
 
 ## 관련 노트
 
+- [[멘탈 모델 기반 사고법]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[Claude Code 오케스트레이션]]
 - [[Claude.md 운영 원칙]]
