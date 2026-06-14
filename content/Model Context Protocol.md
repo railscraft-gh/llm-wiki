@@ -176,6 +176,7 @@ if __name__ == "__main__":
 현재 확인된 충돌 없음.
 
 ## 관련 노트
+- [[로컬 LLM 30분 실전 가이드]]
 - [[Context Mode]]
 - [[Pinterest MCP]]
 - [[oMLX]]
