@@ -13,82 +13,77 @@ aliases:
 sources:
  - AI로_만든_제품이_안_팔리는_이유
  - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
- - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
- - How to write a DESIGN.md file Claude can actually use
- - DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법
+ - "raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md"
+ - "raw/How to write a DESIGN.md file Claude can actually use-ko.md"
+ - "raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md"
  - https://github.com/google-labs-code/design.md
  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
-updated: 2026-06-09
+updated: 2026-06-14
 ---
 
 # DESIGN.md 운영 원칙
 
 ## 한 줄 정의
 
-DESIGN.md 운영 원칙은 AI coding agent가 UI를 만들 때 따를 색상, 타이포그래피, 간격, 컴포넌트 규칙과 설계 이유를 저장하는 디자인 시스템 workflow다.
+DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관된 UI를 유지하도록 디자인 시스템의 값, 의도, 경계 규칙을 인코딩하고 제어하는 마크다운 기반의 영구 컨텍스트(Persistent context) 관리 기법이다.
 
 ## 핵심 요지
 
-- DESIGN.md는 디자인 맥락을 repo에 남기는 파일이며, [[Claude.md 운영 원칙]]이 코드 관습을 주는 것과 비슷한 역할을 한다.
-- 상단 YAML front matter에는 machine-readable design token을, 본문 Markdown에는 human-readable design rationale을 둔다.
-- 파일의 시작점은 색상이 아니라 제품 요약이어야 한다. 이 제품이 무엇인지, 누가 쓰는지, UI가 무엇을 돕는지부터 적어야 모델이 토큰 값을 맥락 없이 추측하지 않는다.
-- UI 작업마다 에이전트에게 먼저 읽히고, 결과물에는 token 밖의 색, font size, spacing이 들어갔는지 확인한다.
-- 개별 spec과 CLI는 바뀔 수 있지만, design token과 rationale를 agent-readable 파일로 분리해 유지한다는 운영 원칙 자체는 안정적이다.
+- **디자인 기억(Design Memory) 보장**: 에이전트가 시각적 일관성을 유지하지 못하는 이유는 성능의 한계보다 디자인 전용 인프라와 기억 장치의 부재에 있다. `DESIGN.md`는 에이전트 세션 간에 "우리 앱의 디자인 문법"을 전달하는 역할을 한다.
+- **값-의도-경계(Value-Intent-Boundary) 공식**: 단순한 토큰 덤프(예: hex 코드 목록)를 지양하고, 해당 토큰값의 역할(Intent)과 금지 구역(Boundary)을 명세한다. 에이전트는 구조화된 산문적 제약(prose constraints)을 가장 잘 준수하기 때문이다.
+- **하지 말아야 할 것(Do's and Don'ts)의 강조**: "시스템이 절대 하지 않는 선택(예: 그라데이션 금지, heavy headline 금지 등)"을 명문화하는 것이 토큰 종류를 두 배로 늘리는 것보다 에이전트의 오작동과 generic default 회귀를 예방하는 데 효과적이다.
+- **진단 루프(Diagnostic Loop)**: 기획 단계에서 화면 3개를 생성해 보고, 시각 스타일이 엇나가는 지점을 진단하여 빠진 제약을 `DESIGN.md`에 추가하는 보정 루프를 반복 실행한다.
+- **제품 요약 중심 설계**: 파일 상단에 hex 코드나 수치 대신 제품 요약(무엇을 하는지, 누가 쓰는지, UI가 사용자를 어떻게 돕는지)을 먼저 두어 모델이 디자인 의도를 사전 방향짓게 만든다.
 
 ## 상세
 
-Google Labs의 `design.md` GitHub repository는 DESIGN.md를 coding agents에게 visual identity를 설명하는 format specification으로 정의한다. 공식 README는 YAML front matter가 token의 normative value이고, Markdown prose가 적용 맥락을 제공한다고 설명한다. 또한 `npx @google/design.md lint DESIGN.md`로 broken token reference, WCAG contrast ratio, 구조적 문제를 점검할 수 있다.
+### 1. 디자인 에이전트 오작동 방지 (세 가지 실패 모드 예방)
+- **Bootstrap Default**: 디자인 문맥이 제공되지 않으면 에이전트는 generic modern style(흰 배경, 파란 primary 버튼, Tailwind 기본값)로 수렴하여 브랜드 정체성을 잃어버린다.
+- **Color Roulette**: 색상 개별 선택은 그럴듯하나 역할(예: Accent와 Error 상태 색상의 혼용)이 엮이지 않아 visual noise가 발생한다.
+- **Style Drift**: 세션마다 둥근 모서리나 여백 단위(8px와 16px 등)가 불일치하는 현상이다. `DESIGN.md`를 영구 기준으로 삼아야 이 이탈을 방지할 수 있다.
 
-Google Stitch 공식 글은 DESIGN.md를 agent-friendly markdown file로 설명하며, 디자인 규칙을 다른 design/coding tool로 export/import하는 용도로 소개한다. Gemini 기반 AI 디자인 캔버스인 Google Stitch(stitch.withgoogle.com) 환경에서는 DESIGN.md 텍스트를 고쳐 전체 화면을 바꾸는 하향식 수정과 프롬프트 입력이 텍스트에 자동 반영되는 상향식 수정의 양방향 실시간 동기화를 지원한다. 구체적인 연동 및 설계 실행 절차는 [[DESIGN.md 워크플로우]]를 따른다.
+### 2. DESIGN.md에 포함되어야 할 3층 9개 섹션
+1. **Foundation (브랜드를 세팅하는 층)**
+   - **Visual Theme & Atmosphere**: 숫자가 아닌 느낌(예: technical and luxurious 등) 정의.
+   - **Color Palette & Roles**: 색상 값에 따른 엄격한 역할(Primary, Neutral scale 등) 지정.
+   - **Typography Rules**: 폰트 패밀리, 계층, 금지 굵기 및 크기 규정.
+2. **Components (실제 UI를 구성하는 층)**
+   - **Component Stylings**: 버튼, 카드 등 컴포넌트의 다채로운 상태(Hover, Active, Loading, Disabled) 규정.
+   - **Layout Principles**: 베이스 간격 단위(Base spacing unit), 최대 폭, 반경 스케일 지정.
+   - **Depth & Elevation**: 높이에 따른 그림자(Shadow) 시스템과 레이어 구분.
+3. **Guardrails (일관성을 지키는 층)**
+   - **Do's and Don'ts**: 에이전트의 Hallucination과 무난한 default를 차단할 강력한 금지 조건 설정.
+   - **Responsive Behavior**: 화면 해상도 변화에 따른 Breakpoint, Collapse 방식, Touch target 설정.
+   - **Agent Prompt Guide**: 세션 전환 시 복구를 위한 퀵 레퍼런스(다주 참조 컬러코드, 체크리스트).
 
-raw 문서는 Design.md를 AI에게 반복해서 던지는 매뉴얼로 다룬다. 핵심은 "예쁘게 해줘"가 아니라 `primary`, `body`, `space-4`, `button-primary`처럼 에이전트가 그대로 참조할 수 있는 이름과 값을 주는 것이다.
-
-후속 raw는 좋은 DESIGN.md가 단순한 token export가 아니라는 점을 더 분명히 했다. 파일이 잘 작동하려면 제품 요약, 토큰, 타이포그래피, 컴포넌트 로직, 하지 말아야 할 것들을 이 순서로 적어야 한다. 특히 "primary 색상은 CTA와 활성 상태에만 쓴다"처럼 값과 의도, 경계를 함께 써야 모델이 배경용 색이나 장식 패턴을 임의로 늘리지 않는다.
-
-또한 좋은 DESIGN.md를 만드는 과정 자체를 skill로 고정하는 접근이 중요하다. 먼저 제품 맥락, 기존 토큰, UI의 핵심 역할, 제약을 묻는 인터뷰를 하고, 그다음 올바른 순서로 파일을 생성한 뒤, 화면 세 개 정도를 만들어 drift와 누락된 제약을 찾는 진단 루프까지 포함해야 한다. 이 방식은 파일 하나보다 운영 절차가 더 중요하다는 점을 보여 준다.
-
-
-후속 raw는 DESIGN.md에 특히 중요한 9개 섹션을 더 구체화한다. Visual Theme & Atmosphere, Color Palette & Roles, Typography Rules, Component Stylings, Layout Principles, Depth & Elevation, Do's and Don'ts, Responsive Behavior, Agent Prompt Guide가 그것이다. 이 목록은 token과 rationale을 함께 남겨 style drift를 줄이는 실무 체크리스트로 쓸 수 있다. 또한 [[디자인 에이전트 5종]]처럼 research·problem definition·flow design을 맡는 task agent와 달리, DESIGN.md는 시각 언어를 지속적으로 고정하는 기준 파일이라는 점을 구분해야 한다.
-
+### 3. 디자인 인프라(Design Infrastructure)의 격차 해소
+코드 일관성을 위해 `.cursorrules`, lint, formatters, CI 등이 촘촘히 보장되던 것에 반해, 디자인 레이어는 persistent context file이 전무했다. 2026년 4월 21일 Google의 `DESIGN.md` 사양 공개와 VoltAgent의 `awesome-design-md` 저장소(423개 브랜드 디자인 명세 취합) 활성화는 이러한 격차를 메우는 조용한 표준으로 자리 잡았다.
 
 ## 안정적인 운영 규칙
 
-DESIGN.md를 어떤 spec으로 구현하든, 아래 원칙은 비교적 안정적이다.
-
-1. **token과 rationale를 분리한다**
-   - 색, 타이포그래피, spacing 같은 값은 machine-readable하게 두고, 왜 그렇게 정했는지는 prose로 남긴다.
-2. **agent가 작업 전에 먼저 읽게 한다**
-   - 화면을 만든 뒤 맞추는 것이 아니라, 생성 전에 기본값을 주입한다.
-3. **검증 규칙을 같이 둔다**
-   - token 밖 색상, 임의 radius, 잘못된 density 같은 위반 항목을 확인한다.
-4. **시각 언어와 task workflow를 구분한다**
-   - DESIGN.md는 visual consistency 파일이고, [[디자인 에이전트 5종]]은 research/flow task workflow다.
-5. **브랜드 차별점은 기본값으로 못 박는다**
-   - AI가 평균적인 UI로 수렴하지 않게 하려면, 제품 tone과 interaction rule을 문서로 고정해야 한다.
+1. **인터뷰 기반 맥락 보강**: 에이전트에게 Figma에서 토큰만 파싱하여 자동으로 파일을 채우게 하지 말고, 제품 맥락과 제약을 도출하는 인간 디자이너의 "왜(Why)"에 해당하는 사고를 인터뷰를 통해 텍스트로 보강해야 한다.
+2. **상향식/하향식 양방향 동기화**: Google Stitch 등과 연동 시, 전역 규칙은 캔버스가 아닌 `DESIGN.md` 파일 자체를 고쳐서 반영(하향식)하고, 캔버스 편집 내용이 문서에 올바르게 동기화되는지 확인(상향식)한다.
+3. **자동화 검증(Linting)**: `npx @google/design.md lint DESIGN.md` CLI 도구를 가동하여 깨진 토큰 참조, WCAG 대비 부족, 구조적 에러를 체크하고, 어긋난 코드는 롤백하거나 문서를 갱신하여 정합성을 일치시킨다.
 
 ## 예시
 
+### 값-의도-경계 인코딩 예시
 ```markdown
----
-colors:
- primary: "#2563EB"
-typography:
- body:
- fontFamily: "Pretendard"
- fontSize: "16px"
- lineHeight: 1.5
-spacing:
- md: "16px"
----
-
-## Colors
-Primary는 주요 action에만 사용한다.
+### Primary Accent Color
+- Value: `#1B4DFF`
+- Intent: 콜투액션(CTA) 버튼 및 현재 활성화된 네비게이션 상태에만 적용.
+- Boundary: 장식용이나 일반 배경으로 절대 사용 금지. 화면당 primary action은 오직 하나로 제한하며, 추가 행동이 필요할 경우 보조 버튼 스타일 적용.
 ```
+
+### 금지 규칙(Do's and Don'ts) 예시
+- **Don't**: 상태 색상(Green/Red)을 의미 없이 장식용 그리드 라인에 사용 금지.
+- **Don't**: 카드 모서리 반경(`--radius-md: 6px`)에 임의의 둥글기 오버라이드 금지.
+- **Don't**: 로딩 전환 애니메이션이 200ms를 초과하게 설계 금지.
 
 ## 충돌
 
-- 2026-05-26 확인: Google Labs `design.md`의 정확한 문법, lint CLI, export/import 흐름은 변할 수 있다. 하지만 디자인 기본값을 agent-readable 파일로 외부화한다는 운영 원칙은 특정 spec 변화와 별개로 유지된다.
+- **화면 스크린샷 vs 구조화된 텍스트 제약**: 스크린샷은 픽셀 정보를 직관적으로 보여주나 설계 원리를 주지 못하므로 에이전트의 재현성이 떨어진다. 반면 `DESIGN.md`는 원리와 의도를 prose로 주기 때문에 재현성과 일관성 면에서 압도적으로 우수하다. 스크린샷 단독 전달보다 `DESIGN.md`를 함께 참조하게 해야 한다.
 
 ## 관련 노트
 
@@ -98,7 +93,6 @@ Primary는 주요 action에만 사용한다.
 - [[AI 코딩 에이전트 검증 전략]]
 - [[디자인 에이전트 5종]]
 - [[디자인 시스템 기본값]]
-- [[AI 디자인 역할 맵]]
 - [[DESIGN.md 워크플로우]]
-- [[완전히 기계 읽기 가능한 디자인 시스템]]
+- [[AI 네이티브 프로토타이핑]]
 
