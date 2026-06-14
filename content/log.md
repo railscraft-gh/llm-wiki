@@ -1,5 +1,49 @@
 # LLM Wiki Log
 
+## 2026-06-14 (Audit Batch — Coding Agent & Infrastructure Wiki Audit)
+
+### Ingest
+
+- 입력: 
+  - `raw/2026년 AI 보조 코딩은 하나의 기술이다...md`
+  - `raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md`
+  - `raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`
+  - `raw/sequoia-ascent-2026-karpathy-ko.md`
+  - `raw/보리스_클로드코드_실무_사용법.md`
+  - `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`
+  - `raw/pi-coding-agent-overview.md`
+  - `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`
+- 생성: 없음
+- 수정: 
+  - [[AI 코딩 에이전트 검증 전략]] (보강)
+  - [[Agent Harness]] (보강)
+  - [[Agent Native Infrastructure]] (보강)
+  - [[Claude Code 오케스트레이션]] (보강)
+  - [[Claude Code 세션 운영 명령어]] (보강)
+  - [[Harness Engineering]] (보강)
+  - [[Plan Mode 기반 AI 작업]] (보강)
+  - [[LLM Wiki 구현 선택지]] (보강)
+  - [[Pi Coding Agent]] (보강)
+- index 업데이트: 완료
+- 남은 검토: 없음 (모든 대상 검증 완료 및 정합성 보강 완료)
+
+### Lint
+
+- 실행 방식: 수동 교차 검증
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (Terminal Bench 2.0 51.3% -> 91.5% 향상, Vercel SQL Agent 3.3단계 -> 12단계/17초/6달러 수치, 65줄 CLAUDE.md 및 14가지 세션 명령어 등의 실증 수치 및 퀵스타트 NPM 네임스페이스 출처 명기 완료)
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개 (수정된 핵심 노트 `Harness Engineering`, `Agent Harness`, `Agent Native Infrastructure`, `Claude.md 운영 원칙`, `MEMORY.md 운영 원칙`, `AI 코딩 에이전트 검증 전략` 모두 `updated: 2026-06-14`로 최신화됨)
+- 조치: 수정한 9개 지식 노트의 frontmatter updated 날짜를 2026-06-14로 갱신하고, index.md 내의 갱신일 정보 정합성을 맞춤.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[AI 코딩 에이전트 검증 전략]], [[Agent Harness]], [[Agent Native Infrastructure]], [[Claude Code 오케스트레이션]], [[Claude Code 세션 운영 명령어]], [[Harness Engineering]], [[Plan Mode 기반 AI 작업]], [[LLM Wiki 구현 선택지]], [[Pi Coding Agent]]
+- 근거: 원문(raw) 자료 정밀 분석 결과 미반영된 기술적 명세, 벤치마크 수치, 명령어 목록 및 아키텍처 파이프라인 단계들을 누락 없이 통합하여 지식 가치 극대화.
+
 ## 2026-06-14 (Batch 2 — 테크/투자/사고법 지식 ingest)
 
 ### Ingest
