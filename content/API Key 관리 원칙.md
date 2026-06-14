@@ -13,6 +13,7 @@ sources:
  - API_Key_관리_및_Infisical_도입_가이드
  - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
  - https://www.12factor.net/config
+created: 2026-05-07
 updated: 2026-06-14
 ---
 
