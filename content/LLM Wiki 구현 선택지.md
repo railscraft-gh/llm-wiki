@@ -56,7 +56,7 @@ Karpathy가 스케치한 raw 자료의 wiki 컴파일 프로세스는 다음과 
 ### 2. Agentic Markdown 아키텍처 (단일 `AGENTS.md`)
 Claude Code, Cursor 등 에이전트 모드가 작동하는 개발 환경 자체를 주 작업장으로 사용하는 개인 및 소규모 팀에 최적화된 셋업이다.
 - **제거된 인프라**: Python 패키지 의존성, Pydantic 모델, Dockerfile, CI 워크플로, 별도의 Chat UI 등이 제거되어 즉각 시작할 수 있다.
-- **유지된 가드레일**: `Writer -> Evaluator -> Editor` 트리플 패스 검증 룰, `[[wikilink]]` 분석 규약, 린팅 규칙 및 복구 동작 정의, 초기 런타임 환경설정용 config 블록은 파일 내 자연어로 고스란히 유지된다.
+- **유지된 가드레일**: `Writer -> Evaluator -> Editor` 트리플 패스 검증 룰, `\[\[wikilink\]\]` 분석 규약, 린팅 규칙 및 복구 동작 정의, 초기 런타임 환경설정용 config 블록은 파일 내 자연어로 고스란히 유지된다.
 
 ### 3. 마크다운 처리 레이어 (`markdown-hero`)의 중요성
 에이전트는 겉보기에 그럴듯하지만(plausible) 엄밀한 마크다운 문법 기준을 자주 어긴다. heading nesting의 단계를 건너뛰거나, YAML frontmatter 콜론(:) 문법 오류, 중복 H1 헤더 생성, 재생성 시 섹션 순서 드리프트 등이 대표적이다.
