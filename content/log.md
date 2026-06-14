@@ -6,10 +6,46 @@
 
 - 입력:
   - `medium/The Last Time This Happened, Lots of Regular People Became Millionaires.md`
+  - `medium/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md`
+  - `medium/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md`
+  - `medium/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md`
+  - `medium/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md`
+  - `medium/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md`
+  - `medium/9 RAG Architectures Every AI Developer Must Know. A Complete Guide with Examples.md`
 - 생성:
   - `raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md`
-- 작업 내용: 영어 원문 1개를 누락 및 의역 없이 한 문장씩 한국어로 번역하고, 사람이 쓴 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
+  - `raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md`
+  - `raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md`
+- 작업 내용: 영어 원문들을 누락 및 의역 없이 한 문장씩 한국어로 정밀하게 번역하고, 사람이 쓴 자연스러운 문체로 윤문하여 `raw/` 디렉터리에 저장 완료.
+
+### Ingest
+
+- 입력: 위의 7개 raw 파일
+- 생성:
+  - [[LLM 메모리 시스템 아키텍처]] (신규/핵심): LLM 에이전트의 5대 메모리 계층(슬라이딩 윈도우, 자동 요약, 벡터, 지식 그래프, 계층형 자체 관리)과 그 트레이드오프 분석을 다룬 개념 문서 구축.
+- 수정:
+  - [[RAG 아키텍처 선택]] (보강): 2026년 실무에 적용되는 9가지 RAG 아키텍처 패턴(Standard, Conversational, Corrective, Adaptive, Self-RAG, Fusion, HyDE, Agentic, GraphRAG) 상세 및 구현 상의 위험 신호 보강.
+  - `wiki/index.md`
+  - `wiki/log.md`
 - index 업데이트: 완료
+
+### Lint
+
+- 실행 방식: 수동 교차 검증 및 checklist 대조
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개 (신규 생성된 [[LLM 메모리 시스템 아키텍처]]는 [[RAG 아키텍처 선택]] 및 `wiki/index.md`에서 인바운드 링크 확보)
+- 30일 이상 미갱신 핵심 노트: 3개
+  - [[API Key 관리 원칙]] (마지막 갱신: 2026-05-07, 38일 경과)
+  - [[Jagged Intelligence]] (마지막 갱신: 2026-05-14, 31일 경과)
+  - [[Vibe Coding과 Agentic Engineering]] (마지막 갱신: 2026-05-14, 31일 경과)
+- 조치: 30일 이상 미갱신 핵심 노트 경고 기록, 추후 `status: needs-review`로의 전환 및 최신화 보강 작업 검토 예정.
 
 ## 2026-06-12
 
