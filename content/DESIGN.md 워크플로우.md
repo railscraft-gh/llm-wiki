@@ -31,42 +31,71 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
 ## 핵심 요지
 
 - **단일 기준점(Source of Truth) 확립**: 프로젝트 루트의 `DESIGN.md` 평문 마크다운 파일에 색상, 타이포그래피, 여백, 컴포넌트 규칙을 명세화하여 Stitch, Claude Code, Cursor, v0 등 상이한 AI 에이전트들이 일관된 UI를 유지하도록 강제한다.
-- **번역 레이어(Translation Layer)의 혁신적 제거**: 디자이너와 개발자 사이의 Figma 시안 핸드오프 과정에서 발생하는 소통 비용과 데이터 유실을 없앤다. 저장소 자체가 기획 명세서이자 동작하는 프로토타입이 된다.
-- **프로토타입 우선 디자인(Prototype-First Design)**: 디자이너가 VS Code 환경에서 AI 페어 프로그래머와 함께 HTML/CSS로 작동하는 프로토타입을 직접 작성해 GitHub에 공유하고, 상용화 시 AI 에이전트가 이 저장소를 직접 읽어 시각적 일치도 100%의 프로덕션 코드로 렌더링하는 '피그마 프리(Figma-free)' 구조를 지향한다.
-- **개발자와 디자이너의 역할 전환**: 픽셀을 미세 조정하던 '픽셀 푸싱(Pixel-pushing)' 시대가 막을 내림에 따라(제이콥 닐슨 2025 UX 회고), 개발자는 프론트엔드 아키텍처와 통합 등 깊은 엔지니어링에 집중하고 디자이너는 에이전트 오케스트레이션과 브랜드 금지 규칙 설계에 몰두한다.
+- **DESIGN.md의 3대 강점**:
+  1. *이식성*: 구글 오픈소스 규격을 준수하여 Stitch 외에도 Claude Code, Cursor, v0 등 타 클라이언트와 호환.
+  2. *직관성*: 복잡한 Figma 토큰/JSON 대비 인간과 AI 모두 쉽게 판독할 수 있는 마크다운 포맷.
+  3. *버전 관리*: Git을 통한 Pull Request, 코드 리뷰 및 변경 추적이 용이하여 엔지니어링 자산화가 가능.
+- **번역 레이어의 혁신적 제거**: 디자이너와 개발자 사이의 Figma 시안 핸드오프 과정에서 발생하는 소통 비용과 데이터 유실을 없앤다. 기존 Figma 핸드오프 시 데이터 유실로 인해 프로젝트의 50%가 승인을 받지 못하고 실패/지연된다 [출처](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%8C%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md).
+- **프로토타입 우선 디자인(Prototype-First Design)**: 디자이너가 HTML/CSS로 작동하는 프로토타입을 직접 작성해 GitHub에 공유하면, 상용화 시 AI 에이전트가 이를 컨텍스트로 읽어 100% 일치도의 프로덕션 코드로 빌드하는 '피그마 프리' 모델이다.
 
 ## 상세
 
 ### 1. 두 가지 협업 경로 (Stitch 경로 vs Figma-Free 경로)
-DESIGN.md 워크플로우는 프로젝트의 특성에 따라 두 가지 실행 경로를 제공한다.
 
 #### 경로 A: Google Stitch & Figma 연동 경로 (시각 캔버스 중심)
-1. **Stitch 디자인 생성**: `stitch.withgoogle.com`에서 자연어, 스크린샷 등으로 다채로운 화면 구조를 대화형 에이전트로 렌더링한다.
-2. **DESIGN.md 자동 동기화**: 캔버스를 분석해 생성된 `DESIGN.md` 문서와 캔버스를 상향식(프롬프트)/하향식(텍스트 편집)으로 양방향 수정하며 다듬는다.
-3. **코드베이스 적용 및 MCP 연동**: `DESIGN.md`를 프로젝트 루트에 복사하고, `claude mcp add stitch` 명령으로 Stitch API를 Claude Code에 활성화한다.
-4. **에이전트 구현**: Claude Code가 `DESIGN.md` 규격과 Stitch MCP를 결합하여 공통 테마 파일(`theme.ts`) 및 개별 React Native 컴포넌트를 빌드한다.
+1. **Google Stitch 캔버스 구동**: `stitch.withgoogle.com`에서 Gemini 기반의 대화형 에이전트, 에이전트 매니저(Agent Manager)를 사용하여 자연어, 스크린샷 등으로 다채로운 화면 UI를 생성.
+2. **양방향 동기화**: 캔버스를 분석해 생성된 `DESIGN.md` 문서를 하향식(텍스트 편집) 혹은 상향식(프롬프트 조율)으로 수정하여 캔버스와 DESIGN.md를 일치시킴.
+3. **코드베이스 적용 및 MCP 연동**: `DESIGN.md`를 프로젝트 루트에 복사하고, `claude mcp add stitch` 명령으로 Stitch API를 Claude Code에 활성화.
+4. **에이전트 구현**: Claude Code가 `DESIGN.md` 규격과 Stitch MCP를 결합하여 공통 테마 파일(`theme.ts`) 및 개별 React Native 컴포넌트를 빌드.
 
 #### 경로 B: Figma-Free 프로토타이핑 경로 (코드 직접 설계 중심)
-1. **코드 프로토타이핑**: 디자이너가 VS Code에서 AI와 페어 프로그래밍을 진행하여 HTML, CSS, 실제 인터랙션 및 상태(State)가 내장된 경량 코드를 구현한다.
-2. **저장소 업로드 및 호스팅**: 코드를 GitHub 저장소에 올리고 GitHub Pages 등으로 라이브 URL을 호스팅해 팀에 공유한다.
-3. **상용화 코드 생성**: 프로덕션 배포 단계에서 AI 에이전트(Claude 등)가 이 프로토타입 코드를 컨텍스트로 완벽하게 읽어, 일관된 디자인 시스템 규격에 맞춰 재사용 가능한 프로덕션 리액트 컴포넌트를 100% 일치하게 자동 빌드한다.
+1. **코드 프로토타이핑**: 디자이너가 VS Code에서 AI와 페어 프로그래밍을 진행하여 HTML, CSS, 실제 인터랙션 및 상태가 내장된 경량 코드를 구현.
+2. **저장소 업로드 및 호스팅**: 코드를 GitHub 저장소에 올리고 GitHub Pages 등으로 라이브 URL을 호스팅해 공유.
+3. **상용화 코드 생성**: 프로덕션 배포 단계에서 AI 에이전트가 이 프로토타입 코드를 컨텍스트로 읽어, 일관된 디자인 시스템 규격에 맞춰 재사용 가능한 프로덕션 리액트 컴포넌트를 100% 일치하게 자동 빌드.
 
-### 2. 번역 마찰에 대한 실증 데이터
-- **프로젝트 실패율**: 기존의 정적 Figma 파일을 개발자에게 인수인계하여 재해석 및 재코딩하는 구조에서는 디자이너와 개발자 사이의 데이터 유실로 인해 프로젝트의 50%가 승인을 받지 못하고 지연되거나 실패한다 (Kony 연구, 340개 제품 팀 대상).
-- **데이터 마찰 지점**: 제품 수명 주기에서 디자인에서 시공(구현)으로 넘어가는 핸드오프 단계가 데이터 마찰이 가장 크게 발생하는 영역이며, 업계 전문가의 65%가 이를 최대 문제로 꼽는다 (ONSIGHT Projection Report 2026).
-- **오케스트레이션 전망**: Gartner는 2026년 말까지 개발자의 75%가 코드를 직접 작성하는 대신 오케스트레이션(조율)하게 될 것이라 전망하며, 디자이너 또한 직접 프로토타입 코드를 기반으로 에이전트를 조율하는 방식으로 진화하고 있다.
+---
+
+### 2. 10단계 핵심 워크플로우 (Stitch 경로 기준)
+1. **Google Stitch 열기** (`stitch.withgoogle.com`)
+2. **초기 디자인 생성 또는 가져오기** (자연어 프롬프트, 스크린샷 활용)
+3. **Stitch가 캔버스를 분석해 DESIGN.md 자동 생성**
+4. **디자인 반복 수정** (색상 팔레트, 서체, 컴포넌트 조율)
+5. **DESIGN.md가 실시간으로 업데이트되는 것 확인**
+6. **DESIGN.md 파일을 코드 프로젝트의 루트 디렉토리에 복사**
+7. **Claude Code에서 Stitch MCP 설정** (`claude mcp add stitch` 연동)
+8. **특정 화면 작업을 Claude Code에 전달**
+9. **Claude Code가 DESIGN.md를 읽고 화면 레이아웃 구현**
+10. **검토, 다듬기 및 배포** (실기기 Expo 테스트 등을 활용한 최종 튜닝)
+
+---
+
+### 3. 적용 체크리스트 (흔히 범하기 쉬운 실수 방지)
+- [ ] **전역 디자인 변경 규칙 준수**: 다수 화면에 공통 적용할 속성은 캔버스가 아닌 `DESIGN.md` 파일 자체를 직접 열어 수정하는가?
+- [ ] **살아있는 문서 취급**: DESIGN.md를 일회성 내보내기용이 아닌, 모든 디자인 의사결정이 모여 흐르는 영구 소스로 취급하는가?
+- [ ] **Stitch MCP 연동 필터링**: 번거롭다는 이유로 MCP 설정을 생략하고 스크린샷에만 의존해 구조적 데이터를 유실하고 있지 않은가?
+- [ ] **구체적인 프롬프트 지시**: Claude Code에게 단순히 "보기 좋게 만들어달라"고 모호하게 요청하는 대신 `DESIGN.md`를 엄격하게 참조하라고 명시했는가?
+- [ ] **정합성 유지**: `DESIGN.md` 명세와 실제 구현 코드 간의 싱크가 어긋나지 않도록 정합성을 상시 맞추고 있는가?
 
 ## 예시
 
 ### 1. Cadence 습관 추적 앱 실무 연동 (경로 A 사례)
-- **Stitch 조율**: 따뜻한 오프화이트 배경(#FAF7F2), 세이지 악센트(#8AA890)를 캔버스에 생성한 후, 텍스트 가이드라인의 악센트를 클레이 색상(`#B5715F`)으로 직접 고쳐 캔버스 화면을 자동 동기화.
-- **Claude Code 최종 빌드**: React Native Expo 프로젝트 루트에 `DESIGN.md`를 커밋하고, Claude Code에 구현 전 테마 계획(`theme.ts`)을 검토하게 한 뒤 Home 화면(`HomeScreen.tsx`)을 자동 생성하여 픽셀 단위 오차를 30초 내 피드백 루프로 해결.
+*   **Stitch 프롬프트**: "차분하고 미니멀한 모바일 습관 추적 앱 Cadence를 디자인해줘. warm minimal 톤, #FAF7F2 오프화이트 배경, 1개의 세이지 악센트, soft serif 헤딩, no gradients, no confetti. Things 3 혹은 Linear의 미학과 가깝게 디자인해줘."
+*   **Stitch 조율**: 생성된 결과물에서 포인트 컬러를 클레이 색상(`#B5715F`)으로 바꾸고 빈 화면(Empty State)을 차분하게 격려하는 문구로 캔버스-문서 양방향 조율.
+*   **Claude Code 최종 빌드**: React Native 프로젝트 루트에 `DESIGN.md`를 커밋하고 아래의 프롬프트로 Claude Code를 구동:
+    ```text
+    Read DESIGN.md at the project root. This is the source of truth for all visual decisions. Honor it strictly.
+    Then, using the Stitch MCP, fetch the layout of the "Home" screen from my Cadence Stitch project and build it as a React Native component at app/screens/HomeScreen.tsx.
+    Use Expo's StyleSheet API. Pull all design tokens from DESIGN.md into a shared theme file at app/theme.ts so they can be reused.
+    Before writing code, show me the file structure and the theme.ts contents to review.
+    ```
+    이 '코드 구현 전 계획 검토(Plan before code)' 단계를 거쳐 `theme.ts`와 `HomeScreen.tsx`를 30초 피드백 루프 안에서 픽셀 단위로 완벽하게 빌드함 [출처](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md).
 
 ### 2. Hazelcast 2인 팀의 협업 모델 (경로 B 사례)
-- **구조**: 디자이너가 HTML/CSS로 완벽히 동작하는 마이크로 프로토타입을 빌드해 리포지토리에 푸시한다.
-- **엔지니어링**: 프론트엔드 개발자는 픽셀 단위를 재구현하는 낭비 없이, AI 에이전트가 프로토타입으로부터 안전하게 생성해낸 100% 시각 일치도의 컴포넌트를 넘겨받아 아키텍처 결합, 상태 관리 통합, 서버 사이드 렌더링 최적화 등 딥 엔지니어링에만 집중한다.
+*   **구조**: 디자이너가 HTML/CSS로 완벽히 동작하는 마이크로 프로토타입을 빌드해 리포지토리에 푸시.
+*   **엔지니어링**: 프론트엔드 개발자는 픽셀 단위를 재구현하는 낭비 없이, AI 에이전트가 프로토타입으로부터 안전하게 생성해낸 100% 시각 일치도의 컴포넌트를 넘겨받아 아키텍처 결합, 상태 관리 통합, 서버 사이드 렌더링 최적화 등 딥 엔지니어링에만 집중 [출처](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%8C%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md).
 
 ## 관련 노트
+
 - [[DESIGN.md 운영 원칙]]
 - [[AI 시대 디자인 시스템]]
 - [[Figma 에이전트 연동]]
