@@ -59,7 +59,7 @@ Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스�
   sudo apt-get update && sudo apt-get upgrade -y
   
   # 에이전트 패키지 설치
-  npm install -g @mariozechner/pi-coding-agent
+  npm install -g @earendil-works/pi-coding-agent
   
   # 환경변수 로드 후 읽기 전용으로 가볍게 시작
   pi --tools read,grep,find,ls --no-context-files -p "옵시디언 /sources 폴더 내 지식 파일 요약 요청"
@@ -68,8 +68,8 @@ Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스�
   라즈베리 파이 내에서 `tmux`를 사용하여 Hermes CLI를 분리 구동하고, 백그라운드 24시간 사이버 보안 스캔 모니터링을 위임한다.
 
 ## 충돌
-- **설치 네임스페이스 불일치**: 
-  기존 에어렌딜 웍스(`@earendil-works/*`) 네임스페이스와 달리 공식 퀵스타트 배포 패키지명이 `@mariozechner/pi-coding-agent`로 수정되었으므로 최신 공식 quickstart를 추종하여 설치해야 한다.
+- **설치 네임스페이스 혼선**:
+  개발자 Mario Zechner가 프로젝트를 주도하였으나, 공식 배포처 및 NPM 패키지 네임스페이스는 Earendil Works 조직 명의인 `@earendil-works/pi-coding-agent`이다. 개인 개발자명인 `@mariozechner/*`로 설치를 시도하면 패키지를 찾을 수 없으므로 주의해야 한다.
 - **에이전트 권한 격리 수준**: 
   클라우드 환경이나 로컬 Docker 격리도 유효하지만, 저전력 무소음 하드웨어 격리를 원하는 사용자는 Raspberry Pi 하드웨어 샌드박스 구성이 클라우드 API 호출 요금 절감과 오프라인 프라이버시 유지 측면에서 이상적인 결합임을 실험을 통해 실증하였다.
 
