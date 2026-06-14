@@ -14,7 +14,7 @@ sources:
  - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
  - sequoia-ascent-2026-karpathy
 created: 2026-05-06
-updated: 2026-05-14
+updated: 2026-06-14
 ---
 
 # Jagged Intelligence
