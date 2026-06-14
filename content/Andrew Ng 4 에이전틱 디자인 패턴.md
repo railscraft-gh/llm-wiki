@@ -16,7 +16,7 @@ sources:
   - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
   - https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/
 created: 2026-05-16
-updated: 2026-06-10
+updated: 2026-06-14
 ---
 
 # Andrew Ng 4 에이전틱 디자인 패턴
