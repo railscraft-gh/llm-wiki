@@ -24,7 +24,7 @@
 
 ### Ingest
 
-- 입력: 위의 7개 raw 파일 및 아래 8개 디자인/프로토타이핑 raw 파일
+- 입력: 위의 7개 raw 파일 및 아래 17개 디자인/프로토타이핑/에이전트 하네스/로컬 AI raw 파일
   - `raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md`
   - `raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md`
   - `raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md`
@@ -33,15 +33,32 @@
   - `raw/How to write a DESIGN.md file Claude can actually use-ko.md`
   - `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`
   - `raw/우리가 피그마 없이 제품을 배포하는 방법.md`
+  - `raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md`
+  - `raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md`
+  - `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`
+  - `raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md`
+  - `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`
+  - `raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md`
+  - `raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md`
+  - `raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md`
+  - `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`
 - 생성:
   - [[LLM 메모리 시스템 아키텍처]] (신규/핵심): LLM 에이전트의 5대 메모리 계층(슬라이딩 윈도우, 자동 요약, 벡터, 지식 그래프, 계층형 자체 관리)과 그 트레이드오프 분석을 다룬 개념 문서 구축.
   - [[AI 네이티브 프로토타이핑]] (신규): 팟캐스트 302개 에피소드 처리 자동화 및 Supabase MCP, Phaser 3를 연동해 8시간 만에 LennyRPG를 구축한 실제 에이전트-오픈소스 협업 프로토타이핑 사례 분석.
+  - [[Claude Code 스킬 관리]] (신규): Claude Code의 컨텍스트 윈도우 비용(Context Tax)을 최소화하기 위한 8대 스킬 구성 요건과 스킬 감사(Audit) 프레임워크 구축.
 - 수정:
   - [[RAG 아키텍처 선택]] (보강): 2026년 실무에 적용되는 9가지 RAG 아키텍처 패턴(Standard, Conversational, Corrective, Adaptive, Self-RAG, Fusion, HyDE, Agentic, GraphRAG) 상세 및 구현 상의 위험 신호 보강.
   - [[디자인 시스템 기본값]] (보강): 1인/소규모 팀을 위한 주말 완성 최소 기능 디자인 시스템(MVDS), CSS 사용자 정의 속성(Custom Properties)을 이용한 이중 레이어 토큰 및 3대 컴포넌트(버튼->폼->카드) 구축 우선순위 반영.
   - [[UI UX 디자인 AI 워크플로우]] (보강): 실패하는 도구 패턴(과도한 시안 생성, 코파일럿형, 프레임워크 강제 등)과 Recraft 및 Perplexity Pro 등을 활용한 실무형 5단계 AI 디자인 프로세스 정립.
   - [[DESIGN.md 워크플로우]] (보강/핵심 승격): Figma와 Google Stitch 캔버스 외에도, 코드로 직접 설계하여 저장소 자체를 기획 명세서화하는 '프로토타입 우선 디자인(Figma-free)' 조율 파이프라인 추가 반영 및 관련 ONSIGHT, Kony 연구 수치 보완.
   - [[DESIGN.md 운영 원칙]] (보강): 지속적인 디자인 기억 장치로서의 값-의도-경계 공식화, Foundation-Components-Guardrails 3층 9대 섹션 명시 및 3대 실패 모드(Bootstrap Default, Color Roulette, Style Drift) 예방 규칙 상세화.
+  - [[로컬 LLM 30분 실전 가이드]] (보강): Google TurboQuant(PolarQuant + QJL)의 극저비트 KV 캐시 압축 기술, Ollama 0.19 MLX 엔진 업그레이드 성능 데이터, 그리고 3계층 하이브리드 아키텍처(Ollama + Apple Foundation + Cloud API) 설계 기준 추가.
+  - [[Claude.md 운영 원칙]] (보강/핵심): Forrest Chang이 Karpathy의 에이전트 실패 관찰을 바탕으로 정리한 65줄 행동 가이드라인과 4대 원칙의 상세 비즈니스/글쓰기 특화 프로필 융합.
+  - [[MEMORY.md 운영 원칙]] (보강/핵심): `autoMemoryEnabled: true` 설정 경로, `~/.claude/projects/` 기반 물리 디렉토리 구조 및 SaaS 대시보드 비교 명세 추가.
+  - [[LLM Wiki 구현 선택지]] (보강): Karpathy의 llm-wiki.md 컴파일 구상, Pydantic/SHA-256 UUID 기반 코드 지향 패키지(`wiki-llm`)와 단일 `AGENTS.md` 지침 에이전트 협상의 트레이드오프 및 `markdown-hero` 파서의 무결성 제약 추가.
+  - [[Pi Coding Agent]] (보강): 샌드박스 보안 격리를 위한 라즈베리 파이 4 물리 하드웨어 도입 비화, 옵시디언 볼트 안전 분석 경로 및 Hermes/OpenClaw의 24/7 장기 런타임 안정성 비교.
+  - [[LLM 메모리 시스템 아키텍처]] (보강/핵심): 지식 그래프의 시맨틱 기준 데이터(Semantic Reference Data) 역할, 인적 변동에 따른 Rationale 손실 제어용 경량 의사 결정 기록(Lightweight Decision Records) 보강.
+  - [[Harness Engineering]] (보강/핵심): 800줄 에이전트 생성 규칙의 자아 비평 기반 65줄 압축 역사, 매주 금요일 5분 실수 반영 루프, Cursor/Claude Code 설치 명령어 명세 보강.
   - `wiki/index.md`
   - `wiki/log.md`
 - index 업데이트: 완료
@@ -54,9 +71,9 @@
 - 실행 방식: 수동 교차 검증 및 checklist 대조
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (디자인 시스템 적용 시 폼 개발 시간 47% 절감, 성숙한 디자인 시스템의 74%가 토큰 전파 채택, 프로젝트 50% 실패율 및 65%의 핸드오프 데이터 마찰 지점 수치에 대한 raw 출처 명기 완료)
-- 관련 노트 2개 미만 문서: 0개 (신규 생성된 [[AI 네이티브 프로토타이핑]]에 [[AI 네이티브 작업 시스템]] 및 [[AI 오픈소스 작업대]] 등을 연결하여 충족)
-- 고아 페이지: 0개 (신규 생성된 [[AI 네이티브 프로토타이핑]]을 [[AI 네이티브 작업 시스템]] 및 [[AI 오픈소스 작업대]]에서 상호 연결하여 0개 유지)
+- 출처 없는 수치 문장: 0개 (디자인 시스템 적용 시 폼 개발 시간 47% 절감, 성숙한 디자인 시스템의 74%가 토큰 전파 채택, 프로젝트 50% 실패율 및 65%의 핸드오프 데이터 마찰 지점 수치, Google TurboQuant의 4~6배 압축률 및 FP16 대비 98% 처리 지표, M5 Max MLX-Ollama 런타임 112 tok/s 디코드 수치 등에 대한 raw 출처 명기 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 생성된 [[Claude Code 스킬 관리]]에 [[Claude Code 오케스트레이션]], [[Harness Engineering]] 등을 연결하여 충족)
+- 고아 페이지: 0개 (신규 생성된 [[Claude Code 스킬 관리]]를 [[Claude Code 오케스트레이션]] 등에서 상호 연결하여 0개 유지)
 - 30일 이상 미갱신 핵심 노트: 3개
   - [[API Key 관리 원칙]] (마지막 갱신: 2026-05-07, 38일 경과)
   - [[Jagged Intelligence]] (마지막 갱신: 2026-05-14, 31일 경과)
@@ -68,9 +85,19 @@
 - 결정: 신규 생성
 - 대상: [[AI 네이티브 프로토타이핑]]
 - 근거: LLM 에이전트와 오픈소스 Phaser 3, Supabase MCP, CLI 자동화를 조합하여 8시간 내에 300개 팟캐스트 기반 RPG 웹서비스를 고속 배포하는 실무 프로토타이핑 원리와 교훈을 기록하기 위해 생성.
+- 결정: 신규 생성
+- 대상: [[Claude Code 스킬 관리]]
+- 근거: 에이전트의 컨텍스트 예산 1% 원칙을 지키며 불필요한 토큰 세금(Context Tax)을 정리하고, webapp-testing, mcp-builder 등 8대 실무 필수 로컬 스킬 구성을 명세화하기 위해 생성.
 - 결정: 보강 및 핵심 상태 유지
 - 대상: [[DESIGN.md 워크플로우]]
 - 근거: Figma 핸드오프의 50% 실패율 극복 및 개발자 오케스트레이션 패러다임에 맞춘 '프로토타입 우선 디자인(Figma-free)' 코드 빌드 경로를 추가하기 위해 2차 8번 raw 파일 내용을 보강 적용함.
+- 결정: 보강 및 핵심 상태 유지
+- 대상: [[Claude.md 운영 원칙]]
+- 근거: Forrest Chang이 정리한 Andrej Karpathy의 LLM 코딩 3대 실패 관찰에 근거한 4대 행동 원칙을 프로젝트에 수혈해 에이전트 오동작(포맷 오염, 과도한 추상화)을 예방하는 운영 수칙을 반영함.
+- 결정: 보강 및 핵심 상태 유지
+- 대상: [[Harness Engineering]]
+- 근거: 에이전트 환경 디버깅을 위해 CLAUDE.md의 4대 행동 규칙(Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution)과 pre-commit hook 결합 방안 및 5분 실수 튜닝 루틴을 명시하여 보강함.
+
 
 
 ## 2026-06-12
