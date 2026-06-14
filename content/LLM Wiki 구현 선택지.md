@@ -34,7 +34,19 @@ LLM Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키
 ## 상세
 
 ### 1. Programmatic Package 아키텍처 (예: Python `wiki-llm`)
-대규모 데이터나 엄밀한 데이터 무결성이 보장되어야 하는 기업형 인프라에 적합하다. 8단계 파이프라인(`Writer -> Evaluator -> Editor -> Lint -> Repair` 등)을 기계적 코드로 고정한다.
+대규모 데이터나 엄밀한 데이터 무결성이 보장되어야 하는 기업형 인프라에 적합하다. 8단계 파이프라인을 기계적 코드로 고정한다.
+
+#### Karpathy의 8단계 파이프라인 (8-Stage Pipeline)
+Karpathy가 스케치한 raw 자료의 wiki 컴파일 프로세스는 다음과 같은 8단계로 구성된다:
+1. **Source Scan & Ingest (수집)**: 신규 또는 변경된 raw 소스 파일을 감지하고 읽어들임.
+2. **Concept & Entity Extraction (추출)**: 소스 텍스트에서 핵심 개념, 인물, 도구, 주장, 용어 등의 엔티티를 추출.
+3. **Draft Generation (Writer)**: 추출된 개념별로 위키 노트 초안(Draft)을 작성.
+4. **Draft Evaluation (Evaluator)**: 작성된 초안의 완성도, 정확성, 누락 항목을 평가 및 검증.
+5. **Editing & Consolidation (Editor)**: 평가 피드백을 반영하여 초안을 다듬고 기존 위키 노트와 병합 및 업데이트.
+6. **Integrity Checking (Lint)**: 마크다운 문법, frontmatter 규칙, 깨진 위키링크 등을 정밀 검사.
+7. **Error Repair (Repair)**: 린트 과정에서 발견된 오류를 수정하여 무결성 확보.
+8. **Index & Log Rebuild (기록)**: `index.md` 및 `log.md`를 갱신하여 전체 위키 상태를 최신화.
+
 - **Pydantic v2 계약**: 각 단계별로 타입 스키마(Typed Contract)를 엄격히 정의해 LLM 간 데이터 송수신 무결성을 보장한다.
 - **콘텐츠 주소 지정 ID (Content-addressable ID)**: 페이지 바디(stripped body)의 SHA-256 해시값을 기반으로 UUID를 생성한다. 파일 이름이나 frontmatter 메타가 바뀌어도 본문 내용이 같다면 동일 ID를 유지하므로, 다운스트림 링크 파손을 방지한다.
 - **`instructor` 기반 Multi-backend**: OpenRouter, OpenAI, Bedrock, Ollama 등을 호환하며 API 호출 실패 시 자동 재시도(Retry) 규칙을 탑재한다.
