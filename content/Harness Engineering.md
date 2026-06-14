@@ -20,84 +20,72 @@ sources:
   - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
   - 하네스를 내 것으로 만들기 - 출판형 다듬기
   - AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 created: 2026-05-13
-updated: 2026-06-03
+updated: 2026-06-14
 ---
 
 # Harness Engineering
 
 ## 한 줄 정의
-
-Harness Engineering은 AI 코딩 에이전트를 감싸는 규칙, 도구, 스킬, 메모리, 피드백 루프를 설계해 모델 자체보다 환경이 결과를 결정하게 하는 기술이다.
+Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions), 검증 도구(Hooks), 커스텀 스킬, 메모리, 관찰 피드백 루프를 시스템적으로 설계하여, 모델 본연의 한계를 외부 제약 환경을 통해 보완하고 정합성 높은 결과물을 얻어내는 에이전트 인프라 구축 기술이다.
 
 ## 핵심 요지
-
-- 모델 성능은 빠르게 수렴 중이므로 GPT-Claude-Gemini 논쟁보다 **시스템 설계**에 투자해야 한다.
-- 좋은 CLAUDE.md 하나와 pre-commit 훅이 복잡한 미들웨어보다 큰 ROI를 낼 수 있다.
-- 하네스는 팀원이 바뀌거나 모델이 업데이트되어도 리포지토리에 남는 **축적되는 자산**이다.
+- **모델은 Commodity, 하네스는 Moat**: 모델 자체의 성능 차이에 매몰되기보다, 에이전트가 실수할 때마다 그 실수가 다신 발생하지 않게 시스템을 엔지니어링하는 하네스 설계에 투자하는 것이 더 높은 ROI와 영구적 자산을 형성한다.
+- **Andrej Karpathy의 65줄 기적**: Forrest Chang이 Karpathy의 에이전트 실패 관찰을 토대로 제작한 65줄짜리 `CLAUDE.md` 파일(GitHub 10만 스타 돌파)은 프롬프트나 미들웨어 튜닝보다 저장소 루트에 두는 기계 가독 행동 계약(Behavioral Contract)이 훨씬 강력함을 실증했다.
+- **점진적 압축과 자아 비평**: Forrest Chang은 에이전트를 시켜 최초 800줄짜리 규칙 스키마를 작성하게 한 뒤, **에이전트가 자기 자신을 스스로 리뷰하게 만들어** 65줄의 고농도 지침으로 압축했다.
+- **매주 금요일 5분 루틴**: 일주일 동안 에이전트가 저지른 실수 패턴을 모아 매주 하네스(규칙, 훅, 스킬)에 한 줄씩 반영하는 정기 튜닝을 통해 시스템이 점진적으로 지능화된다.
 
 ## 상세
 
-Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지니어링은 "에이전트가 실수할 때마다 그 실수가 다시는 발생하지 않도록 시스템을 엔지니어링하는 것"이다. 모델 가중치를 바꾸는 대신 에이전트가 보는 컨텍스트, 사용하는 도구, 검증 기준, 권한 범위를 설계한다.
-후속 raw는 이 정의를 더 생활감 있게 풀어낸다. 핵심 전환은 반복되는 에이전트 실수를 짜증이 아니라 신호로 보는 것이다. 채팅창에서 한 번 고쳐 주고 끝내지 않고, instructions, hook, test, diff, 자동 검증 같은 바깥 환경을 바꿔 같은 실수가 다시 나오기 어렵게 만든다. 즉 하네스는 거대한 프레임워크가 아니라, "같은 실수를 두 번 보지 않게 만드는 영구 수정의 축적"으로도 이해할 수 있다.
+### 1. Karpathy의 LLM 코딩 3대 실패 패턴과 4대 행동 계약 매핑
+| Karpathy의 실패 관찰 | 하네스 제약 솔루션 | 실무 적용 행동 가이드라인 |
+| :--- | :--- | :--- |
+| **묵시적 가정 (Silent Assumptions)**: 불확실한 지점에서 질문하지 않고 임의로 선택해 코딩 후 돌진함. | **Think Before Coding** | 구현 전 가정을 명시적으로 노출할 것. 여러 대안이 있다면 독단적으로 결정하지 말고 질문해 조율할 것. 헷갈릴 땐 멈출 것. |
+| **과도한 엔지니어링 (Overcomplication)**: 불필요한 아키텍처 추상화를 늘리고 100줄짜리를 1,000줄로 비대화함. | **Simplicity First** | 문제를 푸는 최소한의 코드만 작성할 것. 추측성 유연성을 엄격히 배제할 것. "시니어 엔지니어가 과하게 복잡하다 비판할지" 자문할 것. 200줄 코드를 50줄로 압축하도록 리트머스 테스트 수행. |
+| **부수적 피해 (Collateral Damage)**: 엉뚱한 기존 코드를 수정/포맷팅하거나 주석을 삭제하여 PR diff를 더럽힘. | **Surgical Changes** | 꼭 필요한 목표 라인만 건드릴 것. 인접 코드 개선/리팩토링 금지. 기존 코드 스타일 준수. 자신의 변경으로 인해 생겨난 고아(Orphan) import/변수만 청소할 것. |
+| **자율 루프 부재**: 명령형 지시("잘 돌아가게 버그 고쳐줘")를 주면 자가 루프를 돌지 못함. | **Goal-Driven Execution** | 지시를 선언적 목표로 바꿀 것. "X 검증 추가" -> "잘못된 입력값 테스트 코드를 작성하고 통과시키기". 멀티스텝 작업 시 `[단계] -> [확인]` 템플릿 강제. |
 
-**패러다임의 변화:**
-- 프롬프트 엔지니어링(2023-2024): "무엇을 물어볼 것인가?"
-- 컨텍스트 엔지니어링(2025): "무엇을 보여줄 것인가?"
-- 하네스 엔지니어링(2026): "전체 환경을 어떻게 설계할 것인가?"
+### 2. 하네스 엔지니어링 진화 패러다임
+```
+프롬프트 엔지니어링 (2023-2024: "무엇을 물어볼 것인가?")
+  → 컨텍스트 엔지니어링 (2025: "무엇을 보여줄 것인가?")
+    → 하네스 엔지니어링 (2026: "전체 환경을 어떻게 설계할 것인가?")
+```
 
-후속 raw는 이 진화를 `CLAUDE.md → AGENTS.md → Harness`의 실무 단계로 다시 설명한다. 처음에는 규칙 파일 하나로 품질을 끌어올릴 수 있지만, 프로젝트가 커지면 규칙 위반 감지, 세션 기억, skill 실행 순서, 검증 강제까지 필요해지고, 그때부터 하네스는 문서가 아니라 실행 구조가 된다.
-
-**CLAUDE.md의 4가지 행동 원칙**은 하네스 엔지니어링의 가장 기본적이고 강력한 구성 요소다. Andrej Karpathy가 지적한 LLM 코딩의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 원칙으로 매핑했다. 이 행동 지침 자체는 [[에이전트 코딩 4원칙]]으로 분리해 재사용할 수 있다.
-
-| 원칙 | 핵심 | 하네스 관점 |
-|------|------|------------|
-| Think Before Coding | 가정하지 마라. 혼란을 숨기지 마라. | 컨텍스트 엔지니어링: 충분한 정보 제공 |
-| Simplicity First | 최소한의 코드. 추측성 요소 없이. | 아키텍처 제약: 솔루션 공간 제한 |
-| Surgical Changes | 꼭 필요한 것만 건드려라. | 피드백 루프: 변경 범위 최소화 |
-| Goal-Driven Execution | 성공 기준을 정의하고 루프를 돌아라. | 목표 기반 검증: 사전 완료 체크리스트 |
-
-**개발자의 역할 변화:**
-- 코드 작성 → AI가 코드를 작성하는 환경 설계
-- 코드 디버깅 → 에이전트 행동 디버깅
-- 코드 리뷰 → 에이전트 출력 + 하네스 효과성 리뷰
-
-`raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md`는 이 환경 설계를 더 운영체제 비유로 풀어낸다. context window는 RAM, external database는 disk, tools는 device driver, harness는 operating system처럼 작동한다. 실무적으로는 [[Agent Harness]]라는 실행 표면에서 orchestration loop, tool layer, memory, context compaction, prompt builder, output parsing이 함께 묶여 돌아간다.
-
-`raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md`는 이 하네스 관점을 도메인 운영에 적용한 사례다. 반복적인 배포, 대시보드 캡처, 리포트 생성, subagent 병렬 수집을 명령 단위로 묶고, 성공/실패/검증 기준을 명시해야 AI가 그럴듯하지만 틀린 리포트를 만들지 않는다.
-
-`raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md`는 하네스 소유권을 "한 번 세팅한 규칙"이 아니라 compaction과 memory ownership의 문제로 끌고 온다. 세션이 길어질수록 무엇을 기억에 남기고 무엇을 버릴지 통제해야 하며, 이 선택이 곧 agent infrastructure의 품질이 된다.
-
-`raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md`는 이 하네스 관점을 더 날카롭게 축약한다. 기능을 무작정 늘리기보다, deep interview / pre-mortem / parallel implementation / verification loop처럼 실제로 자주 쓰는 workflow만 남기고 나머지는 줄여야 한다는 주장이다. 즉 하네스 엔지니어링의 목표는 "더 많은 스킬"이 아니라 "더 적은 수의 반복 가능한 루프"로 수렴할 수 있다.
-
-**하네스는 rippable해야 한다.** Fowler/Böckeler가 강조한 원칙으로, 모델이 한 세대 좋아지면 하네스의 "smart" 로직 중 일부는 불필요해진다. Claude 5.0이 나오면 4.5용으로 만든 에러 복구 로직 다수가 부채가 될 수 있다. 하네스 설계의 기술은 "무엇을 만들 것인가"만큼 "무엇을 쉽게 제거할 수 있게 만들 것인가"에 있다. [[Agentic 패턴 진화]] 관점에서 하네스는 컨텍스트와 프롬프트를 포함(subsume)하므로, 좋은 하네스는 여전히 좋은 컨텍스트를 요구한다.
-
-**보안 가드레일은 [[Lethal Trifecta]]로 정리한다.** 신뢰 불가 입력 + 민감 시스템 접근 + 상태 변경 세 능력 중 최대 두 개만 동시에 허용한다는 Meta AI의 Rule of Two가 실천 가능한 규칙이다.
-
-[[Context Engineering]]은 하네스의 하위 층으로 볼 수 있다. 하네스가 규칙·도구·검증 전체를 설계한다면, context engineering은 노드 사이 handoff와 routing을 다뤄 "무엇을 보여줄 것인가"를 구체화한다.
-
-`raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`는 이 관점을 production blueprint로 내린다. Map → Identify → Blueprint → Implement → Launch라는 단계, permission matrix, context layering, budget, security eval, launch checklist는 하네스가 단순한 규칙 파일이 아니라 실행 가능한 런타임이라는 점을 다시 보여 준다. 모델이 제안하고 harness가 실행하며, 모든 tool call이 observation으로 돌아와야 한다는 원칙도 여기서 더 선명해진다.
-
-**수치 증거:**
-- LangChain: 동일 모델에서 하네스만 변경 시 Terminal Bench 2.0 52.8% → 66.5%
-- OpenAI Codex 팀: 5개월간 하네스에 코드 제로, 에이전트가 100만 줄+ 생성
-- revfactory/harness A/B 테스트: 사전 설정 적용 시 품질 점수 49.5 → 79.3 (+60%)
+### 3. 하네스 구축의 핵심 철학 및 규칙
+1. **Rippable (탈착 가능성)**: 하네스에 복잡한 복구 로직을 직접 짜 넣지 않는다. 다음 세대 모델(예: Claude 5.0)이 출시되면 기존 에러 복구 로직은 기술 부채로 전락한다. 불필요해진 하네스 계층을 쉽게 도려낼(Rip) 수 있게 설계해야 한다.
+2. **CLAUDE.md는 200줄 이하로**: Anthropic 공식 문서에 따르면 지침이 200줄을 초과하는 순간부터 에이전트의 규칙 준수율(Compliance)이 급락한다. 범용 행동 계약은 60줄 이하로 `CLAUDE.md`에 두고, 복잡한 템플릿과 세부 사실 정보는 `~/.claude/projects/<project>/memory/MEMORY.md`로 격리 운영한다.
+3. **가드레일과 강제성**: `CLAUDE.md`는 에이전트에게 보내는 '권고'일 뿐이다. 절대 타협 불가능한 린터, 포매팅, 보안 검사는 pre-commit hook이나 샌드박스로 강제 설계(Enforce)해야 한다.
+4. **보안 가드레일 (Lethal Trifecta 예방)**: 
+   신뢰 불가 외부 입력 수용, 민감 내부 시스템 접근, 상태(State)의 물리적 변경이라는 세 가지 능력 중 최대 두 개까지만 하나의 에이전트 노드에 허용한다.
 
 ## 예시
+### CLAUDE.md 행동 가이드라인을 프로젝트에 추가하는 3대 실무 방법
 
-- 시스템 프롬프트: 저장소 루트의 60줄 이하 마크다운 파일(CLAUDE.md / AGENTS.md)
-- 검증 루프: pre-commit 훅에 린터 + 테스트 연결
-- 스킬 파일: 반복 패턴을 재사용 가능한 에이전트 스킬로 분리
-- 권한 설계: 프로덕션 DB 명령 자동 실행 금지, 마이그레이션 파일 수정 금지
-- 영구 수정: pandas 대신 polars, snake_case 컬럼명, inner join 금지 조건 같은 규칙을 instructions에 추가
+- **방법 1 (Claude Code CLI 플러그인 활용)**:
+  ```bash
+  # 모든 세션에 전역 플러그인 형태로 Karpathy Skills를 서빙
+  /plugin marketplace add forrestchang/andrej-karpathy-skills
+  /plugin install andrej-karpathy-skills@karpathy-skills
+  ```
+- **방법 2 (curl 명령어로 프로젝트 루트에 결합)**:
+  ```bash
+  # 기존 CLAUDE.md가 없다면 바로 다운로드
+  curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+  
+  # 기존 CLAUDE.md 파일이 있다면 하단에 병합
+  curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
+  ```
+- **방법 3 (Cursor IDE 적용)**:
+  `.cursor/rules/karpathy-guidelines.mdc` 파일을 프로젝트 내에 생성하여 커서 에이전트 행동 가이드라인으로 활용한다.
 
 ## 충돌
-
-현재 확인된 충돌 없음.
+- **규칙의 명세화 vs 에이전트 우회**: 
+  에이전트는 프롬프트 계약을 약 80% 확률로만 준수한다. 따라서 오타 수정이나 단순 1줄 코드 변경처럼 가벼운 작업에까지 65줄 행동 가이드라인을 기계적으로 대입하면 컨텍스트 로딩과 지연 속도만 낭비된다. 주니어처럼 돌진하는 상황을 제어할 때만 룰을 타이트하게 활성화하고, 단순 작업 시에는 에이전트의 기본 판단(Vibe coding)과 절충해야 한다.
 
 ## 관련 노트
-
 - [[Claude.md 운영 원칙]]
 - [[Meta-Harness]]
 - [[AI 코딩 에이전트 검증 전략]]
@@ -112,4 +100,6 @@ Mitchell Hashimoto(Terraform 창시자)의 정의를 따르면, 하네스 엔지
 - [[AI 하네스 최소화]]
 - [[메시징 서버 스트레스 테스트 운영 원칙]]
 - [[AI 산출물 포맷 결정 트리]]
+- [[Claude Code 스킬 관리]]
+- [[MEMORY.md 운영 원칙]]
 
