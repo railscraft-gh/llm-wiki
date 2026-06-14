@@ -11,13 +11,9 @@ aliases:
   - DESIGN.md
   - 디자인용 AGENTS.md
 sources:
-  - AI로_만든_제품이_안_팔리는_이유
-  - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
   - "raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md"
   - "raw/How to write a DESIGN.md file Claude can actually use-ko.md"
   - "raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md"
-  - https://github.com/google-labs-code/design.md
-  - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
 created: 2026-05-07
 updated: 2026-06-14
 ---
@@ -34,6 +30,7 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 - **값-의도-경계(Value-Intent-Boundary) 매핑**: 단순한 토큰 덤프(hex 코드의 단순 나열)가 아니라, 토큰값의 구체적인 역할(Intent)과 금지/경계 구역(Boundary)을 명세한다. 모델은 산문적 제약(Prose constraints)을 가장 효과적으로 준수하기 때문이다.
 - **Do's and Don'ts(금지 규칙)의 효용성**: 시스템이 절대 취하지 않는 선택(예: 그라데이션 금지, 8px 초과 반경 금지 등)을 명문화하는 것이 토큰 종류를 늘리는 것보다 plausible default(그럴듯하지만 브랜드와 어긋나는 기본값)로의 회귀를 차단하는 데 훨씬 우수하다.
 - **디자인 인프라 격차 해소**: TypeScript generics나 아키텍처 리팩터링은 도구들의 보완책(`.cursorrules`, type check, formatter, CI) 덕분에 고정되나 디자인 일관성은 장치가 없었다. `DESIGN.md`는 이 디자인 레이어의 컨텍스트 기억 부재 문제를 해결하는 단순한 뼈대다.
+- **디자이너의 의도적 판단(Reasoning Layer) 주입**: AI는 Figma 디자인 등에서 색상이나 치수 같은 "무엇(What)"은 잘 추출하지만, 제품의 목적이나 비협상적 가이드라인 같은 "왜(Why)"는 추론하거나 날조하기 때문에 인간이 직접 인터뷰 형식을 통해 "왜"에 대한 의사결정 맥락을 입력해 주어야 한다.
 
 ## 상세
 
@@ -43,7 +40,7 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 - **Style Drift**: 영구적인 디자인 참고 문서가 없어서 대화 세션마다 모서리 반경(Rounded vs Square)이나 spacing scale(8px vs 16px)을 일관성 없게 구현하는 현상.
 
 ### 2. 4가지 핵심 질문 인터뷰 프레임워크 (Figma 추출의 한계 극복)
-에이전트가 Figma에서 토큰만 파싱하게 방치하면 "무엇(What)"은 정확해도 "왜(Why)" 즉, 제품의 본질적 의도와 비협상 항목을 임의로 날조하여 그럴듯한 추론(Plausible default)으로 채우게 된다. 따라서 문서를 구성하기 전 디자이너/개발자는 반드시 다음 4가지 핵심 질문으로 구성된 인터뷰를 통해 "왜"에 해당하는 생각을 주입해야 한다 [출처](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md).
+에이전트가 Figma에서 토큰만 파싱하게 방치하면 "무엇"은 정확해도 "왜" 즉, 제품의 본질적 의도와 비협상 항목을 임의로 날조하여 그럴듯한 추론(Plausible default)으로 채우게 된다. 따라서 문서를 구성하기 전 디자이너/개발자는 반드시 다음 4가지 핵심 질문으로 구성된 인터뷰를 통해 "왜"에 해당하는 생각을 주입해야 한다 [출처](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md).
 1. *이 제품은 무엇을 하는가?*
 2. *누가 쓰는가?*
 3. *UI가 사용자를 무엇으로 도와야 하는가?* (제품 요약을 상단에 배치)
@@ -51,7 +48,8 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 
 ---
 
-### 3. DESIGN.md 3층 9개 섹션 레이아웃
+### 3. DESIGN.md Spec과 9개 섹션 레이아웃
+2026년 4월 21일 Google은 `DESIGN.md` Spec을 공개하였고, 이후 VoltAgent의 `awesome-design-md` 아카이브는 이 형식을 따르는 **423개 브랜드의 디자인 시스템 파일**을 모아 배포했다. 이 표준 파일 레이아웃은 다음과 같이 3대 레이어, 9개 섹션으로 구성된다.
 1. **Foundation (브랜드를 세팅하는 층)**
    *   **Visual Theme & Atmosphere**: 숫자가 아닌 제품 미학적 톤앤매너(예: technical and luxurious 등) 규정.
    *   **Color Palette & Roles**: hex 나열 대신 색상의 역할 지정으로 Color Roulette 방지.
@@ -67,7 +65,10 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 
 ## 예시
 
-### 1. 값-의도-경계 인코딩 예시
+### 1. 여행 계획 웹앱 'Oooff' 프로토타입 설계 사례
+Oooff 웹앱의 디자인 시스템 구축 시, 단순히 Figma에서 토큰을 내보내는 것에 그치지 않고 디자이너가 직접 작성한 4단계 의사결정 순서(순서 설정 $\rightarrow$ 요약 및 본질 서술 $\rightarrow$ 제약 스케일 $\rightarrow$ 비협상 Do's and Don'ts)를 DESIGN.md 파일 상단에 주입했다. 이를 통해 세션이 끊기더라도 Claude가 매번 동일한 모서리 둥글기(`--radius-md: 6px`) 및 여백 규칙을 100% 일치하여 재현해 냈다.
+
+### 2. 값-의도-경계 인코딩 예시
 *   **AS-IS**: `primary: #1B4DFF`
 *   **TO-BE**:
     ```markdown
@@ -77,7 +78,7 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
     - Boundary: 일반 배경이나 장식용 데코 레이어에 사용을 전면 금지. 화면당 primary action은 반드시 오직 하나로 제한하며, 추가 액션이 필요할 경우 보조 버튼 스타일(Outline/Muted)로 조율할 것.
     ```
 
-### 2. 구체적 금지 규칙(Do's and Don'ts) 예시
+### 3. 구체적 금지 규칙(Do's and Don'ts) 예시
 *   **Don't**: 상태 색상(Green/Red/Amber)을 오류/성공 정보 전달이 아닌 일반 데코레이션에 사용 금지.
 *   **Don't**: 카드 모서리 반경(`--radius-md: 6px`)에 임의의 인라인 둥글기 오버라이드 금지.
 *   **Don't**: 에러 상태를 색상(#EF4444)으로만 표현 금지. 반드시 에러 설명 텍스트를 함께 제공할 것.
