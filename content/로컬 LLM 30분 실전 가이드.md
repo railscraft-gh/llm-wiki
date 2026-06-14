@@ -1,7 +1,7 @@
 ---
 type: concept
-status: draft
-core: false
+status: evergreen
+core: true
 tags:
   - llm
   - local-ai
@@ -17,198 +17,145 @@ aliases:
   - Ollama
   - TurboQuant
 sources:
-  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-  - raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md
+  - "raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md"
+  - "raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md"
+  - "raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md"
+  - "raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md"
 created: 2026-06-12
 updated: 2026-06-14
 ---
 
 # 로컬 LLM 30분 실전 가이드
 
-> [!summary]
-> - 구독료 지출과 인터넷 유출 우려 없이 개인 기기(PC/Mac)에서 최신 MLX 엔진 기반 Ollama 및 TurboQuant 압축 기술을 통해 고성능 로컬 모델을 초고속으로 구동하는 온디바이스 AI 가이드다.
-> - VS Code 에디터(Cline 연동), 경량 벡터리스 RAG 스크립트, 실시간 로컬 오프라인 음성 비서 파이프라인의 3대 실무 구축 경로 및 3계층 하이브리드 아키텍처를 설명한다.
-> - 로컬 구동 시 속도는 메모리 대역폭(Memory Bandwidth)과 KV 캐시 압축률에 직접 비례하므로, 하드웨어 사양에 맞추어 모델 스펙을 영리하게 계층화해야 한다.
+## 한 줄 정의
+로컬 LLM 실전 가이드는 외부 API 요금 결제나 인터넷 개인정보 유출 우려 없이 개인 기기(PC/Mac)에서 최신 MLX 엔진 기반 Ollama, KV 캐시 압축 기술(TurboQuant) 및 디스크 스트리밍 기법을 융합하여 고성능 모델을 온디바이스로 초고속 구동하는 실무 기술 명세서다.
 
-구독 요금 결제나 인터넷 연결 없이 전적으로 로컬 기기(특히 Apple Silicon Mac)에서 가동되는 온디바이스(On-device) AI 환경 구축 방법 및 실무 활용 경로를 기술한다.
+## 핵심 요지
+- **엔진 진화 (Ollama-MLX)**: Ollama 0.19(2026년 3월 30일 출시)부터 애플 실리콘의 백엔드가 MLX로 교체되면서 M5 Max 환경 기준 Prefill 57%(1,810 tok/s), Decode 93%(112 tok/s) 수준의 비약적인 속도 성능 향상을 달성했다.
+- **KV 캐시 메모리 벽 차단 (TurboQuant)**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
+- **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
+- **3대 실무 구현 경로**: IDE 코딩 어시스턴트(Cline), 콤팩트 문서 RAG(Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
 
----
+## 상세
 
-## 1. 기반 설정 (Ollama & MLX 엔진)
+### 1. 하드웨어 스펙별 런타임 및 모델 매핑
 
-로컬 LLM 구동의 표준 추론 엔진인 **Ollama**를 설치한다. 특히 **Ollama 0.19(2026년 3월 30일 출시)**부터 Apple Silicon의 추론 엔진이 MLX로 교체되어, M5 Max 기기 기준 Qwen3.5-35B-A3B 실행 시 사전 입력 처리(Prefill) 속도는 57%(1,810 tok/s), 디코드(Decode) 속도는 93%(112 tok/s) 가량 대폭 향상되었다.
+| 하드웨어 구분 | 가용 물리 RAM | 추천 모델 | STT / TTS 엔진 | 디코드 성능 및 특징 |
+| :--- | :--- | :--- | :--- | :--- |
+| **M1 / M1 Pro** | 8 ~ 16GB | 내장 Apple 파운데이션 (3B)<br>Q4 Qwen3 (8B) | WhisperKit (base/small)<br>Kokoro ONNX | 스왑 부하 방지를 위해 3B~4B 이하 모델 권장 |
+| **M2 / M2 Pro** | 16 ~ 32GB | Q4 Qwen3 (8B)<br>Phi-4 (14B) | WhisperKit (large-v3-turbo)<br>Kokoro ONNX | 이 사양부터 로컬-클라우드 하이브리드 구성 가능 |
+| **M3 Pro / M3 Max** | 18 ~ 128GB | Qwen3 (8B) 상주<br>Phi-4 14B Q4 병용 | WhisperKit (large-v3-turbo)<br>Kokoro ONNX | 다수의 모델을 메모리에 상주(Resident)시켜 즉시 전환 가능 (1인 개발 스윗스팟) |
+| **M4 Pro / M4 Max** | 24 ~ 128GB | DeepSeek-V3-Distill-32B<br>Llama 4 Scout Q4 | WhisperKit / FluidAudio (Parakeet)<br>Kokoro ONNX | 30B급 모델 디코드 속도 60~90 tok/s 도달 |
+| **M5 / M5 Max** | 32 ~ 128GB | Qwen3.5-35B-A3B (최적)<br>70B급 양자화 모델 | FluidAudio (0.19초 전사)<br>Kokoro ONNX | M5 GPU 뉴럴 엑셀러레이터 지원으로 Qwen3.5-35B 디코드 112 tok/s 돌파 |
 
-### 1.1 엔진 설치
-- **macOS (Homebrew)**: `brew install ollama`
-- **Linux**: `curl -fsSL https://ollama.com/install.sh | sh`
-- **Windows**: Ollama 공식 웹사이트에서 MSI 설치 프로그램 다운로드
-
-### 1.2 모델 로드 및 기동 테스트
-기본 범용 모델로 대중적인 **Qwen 3 (8B)** 모델을 사용한다. (디스크 용량 약 5GB 필요, 16GB RAM 권장)
-```bash
-# 모델 다운로드
-ollama pull qwen3:8b
-
-# 로컬 추론 동작 검증
-ollama run qwen3:8b "Write a python script to reverse a string."
-```
-> [!NOTE]
-> 만약 8GB RAM 이하의 저사양 기기라면 스왑 디스크 부하로 속도가 저하되므로 `qwen3:4b` 또는 `gemma3:4b`로 다운그레이드할 것을 권장하며, 반대로 24GB VRAM GPU나 M시리즈 고사양 Mac이라면 `qwen3:14b` 이상으로 체급을 올리는 것이 유리하다.
+- **4대 로컬 런타임 비교**:
+  1. *Apple 파운데이션 모델 (Swift)*: macOS/iOS 내장 3B 모델. `@Generable` 매크로 기반 타입 안전 구조화 출력 및 기본 도구 호출 지원.
+  2. *Ollama 0.19+ (MLX)*: API 기반 범용 서빙 및 1000개 이상 모델 즉각 pull 지원.
+  3. *MLX Direct (Python/Swift)*: 하드웨어 밀착 가속. llama.cpp 대비 20~30% 성능 우수. macMLX 활용 시 OpenAI API 호환 지원.
+  4. *LM Studio*: 데스크톱 GUI 환경의 모델 및 API 서버 개설용.
 
 ---
 
-## 2. 하드웨어 사이징 및 런타임 선택
+### 2. KV 캐시 압축 기술 (TurboQuant)
 
-### 2.1 실용적인 기기별 추천 스펙
-*   **M1 / M1 Pro (8–16GB)**: 하드웨어 내장 3B 온디바이스 파운데이션 모델 활용 권장. 무거운 작업 시 Q4(4비트) 양자화된 7~8B 모델 사용. STT는 WhisperKit 기반 Whisper-base/small 권장.
-*   **M2 / M2 Pro (16–32GB)**: Q4 양자화된 Qwen 3 8B 모델(메모리 약 5GB) 및 WhisperKit large-v3 turbo 버전 추천. 로컬-클라우드 조합 하이브리드 스택 시작 가능.
-*   **M3 Pro / M3 Max (18–128GB)**: 1인 개발자 스윗스팟. Qwen 3 8B 상주 및 정밀 추론용 Phi-4 14B Q4 병용.
-*   **M4 Pro / M4 Max (24–128GB)**: 30B급 모델 쾌적 구동. DeepSeek-V3-Distill-32B 추천(디코드 60~90 tok/s). Llama 4 Scout Q4 기동 가능.
-*   **M5 / M5 Max (32–128GB)**: 70B급 모델 가동 및 Qwen3.5-35B-A3B 최적 구동(디코드 112 tok/s 이상).
+로컬 추론의 크리티컬 병목은 컨텍스트 시퀀스 길이에 비례해 비대해지는 **KV 캐시**다. TurboQuant(arXiv:2504.19874, ICLR 2026 채택)는 재학습 없이 정확도를 보존하며 캐시를 4~6배 압축한다.
 
-### 2.2 4가지 핵심 런타임 비교
-1.  **Apple 파운데이션 모델 (Swift 프레임워크)**: macOS 26 / iOS 26 기본 내장 3B 모델. `@Generable` 매크로 기반 타입 안전 구조화 출력 및 도구 호출 지원. 네이티브 앱 배포에 적합.
-2.  **Ollama 0.19+ (MLX 백엔드)**: REST API 기반 범용적 서빙. 1,000개 이상의 모델 지원.
-3.  **MLX Direct (Python/Swift)**: 최상의 속도와 긴밀한 하드웨어 통합(llama.cpp 대비 20~30% 우수). macMLX 및 Rapid-MLX(Ollama 대비 4.2배 속도) 등도 활용 가능.
-4.  **LM Studio (GUI)**: 데스크톱 그래픽 환경 테스트 및 팀 전파용.
-
----
-
-## 3. KV 캐시 압축 기술: TurboQuant
-
-로컬 LLM 구동의 최대 병목은 가중치(Weights) 크기뿐 아니라, 컨텍스트가 길어짐에 따라 기하급수적으로 늘어나 메모리를 고갈시키는 **KV 캐시(KV Cache)**다. 32B 모델로 128K 컨텍스트를 처리할 경우 KV 캐시만 30~40GB를 점유하여 시스템이 마비된다.
-
-이를 위해 구글 리서치가 개발한 **TurboQuant(arXiv:2504.19874, ICLR 2026)**는 재학습 없이 정확도 손실을 최소화하면서 KV 캐시 메모리 사용량을 4~6배 절감하고 최대 8배 속도를 높인다.
-
-### 3.1 작동 메커니즘
 ```mermaid
 flowchart LR
     A[Raw KV Cache] --> B[1단계: PolarQuant]
     B --> C[2단계: QJL 잔차 보정]
     C --> D[Compressed Cache]
 ```
-1.  **1단계: 폴라퀀트(PolarQuant)**: 
-    - 무작위 회전(Random Rotation)을 적용하여 특정 축에 몰려 어텐션 정확도를 깨뜨리던 이상치(Outlier)를 Gaussian 분포로 골고루 분산시킵니다.
-    - 회전된 벡터를 극좌표계의 '방향(3비트)'과 '크기(8비트)'로 분해 양자화합니다. 추가 메모리 오버헤드가 사실상 제로에 수렴합니다.
-2.  **2단계: QJL(Quantised Johnson-Lindenstrauss)**:
-    - 원본과 PolarQuant 벡터 간의 오차(잔차)를 무작위 행렬로 투영(JL 변환)한 뒤, 차원당 단 1비트의 부호 비트(+1 또는 -1)로 저장하여 소프트맥스 연산 직전에 이를 완벽히 보정합니다.
 
-### 3.2 MLX 구현체 및 벤치마크 결과
-- **arozanov/turboquant-mlx**: 커스텀 퓨즈드 메탈(Fused Metal) 커널을 구현하여 V3 방식의 연산 병목을 극복하고, FP16 속도의 91~98% 수준을 유지하며 **4.6배 캐시 압축률**을 달성했다. `mlx-lm`과 드롭인 대체가 가능하다.
-- **flovflo/turboquant-mlx-qwen35-kv**: Qwen3.5-35B-A3B-4bit 기준, 문장 생성 속도를 44.8 tok/s 수준으로 유지하면서 메모리를 급격히 절약한다.
-- **성능 개선 효과**: Gemma 3/4 등 헤드 차원(D)이 큰 모델(D=256)에서 Llama 계열(D=128)보다 더 우수한 복원력을 보여주며, V2 4비트 회전 모드 적용 시 FP16 원본 대비 펄플렉시티(Perplexity)가 오히려 소폭 개선되는 정규화 필터 효과를 나타낸다.
+1. **폴라퀀트(PolarQuant)**: 무작위 회전(Random Rotation)을 적용하여 특정 차원의 이상치(Outlier)를 가우시안 분포로 골고루 펼친 후, 극좌표계의 '방향(3비트)'과 '크기(8비트)'로 분해 양자화한다. 추가 메타데이터 보존 오버헤드가 제로(effectively zero)에 가깝다.
+2. **QJL(Quantised Johnson-Lindenstrauss)**: 폴라퀀트 복원 잔차 오차를 무작위 행렬 투영(JL 변환)을 거쳐 차원당 단 1비트의 부호 비트(+1/-1)로 기록한다. 소프트맥스 연산 직전에 오차를 거의 완벽히 복원한다.
+3. **압축 모드 튜닝 전략**:
+   - *V2 (속도 최적화)*: `mx.quantized_matmul` 활용 아핀 양자화. Llama3.2 3B 4비트 회전 모드 시 펄플렉시티 FP16 원본 대비 0.8% 역개선 (정규화 필터 효과). 헤드 차원이 클수록(Gemma D=256) 복원력 우수. 8K 토큰 디코드 속도 105% 달성.
+   - *V3 (품질 최적화)*: 로이드-맥스 코드북 양자화. 3비트 극저비트에서 V2 대비 높은 정확도를 보이나, 커스텀 Metal 커널 없이는 5~6배 느려 `arozanov/turboquant-mlx` Fused Metal 커널 구현체를 써야만 제 속도를 낸다.
 
 ---
 
-## 4. 실무 활용 경로
+### 3. 물리 RAM 한계 해소: 개별 전문가 디스크 스트리밍
 
-```mermaid
-graph TD
-    A[Local Engine / MLX-TurboQuant] --> B[경로 A: 코딩 어시스턴트]
-    A --> C[경로 B: 문서 기반 RAG]
-    A --> D[경로 C: 오프라인 음성 비서]
-    
-    B --> B1[Qwen3-Coder 30B MoE + Cline VS Code]
-    C --> C1[nomic-embed-text + Cosine Similarity numpy]
-    D --> D1[WhisperKit STT + Kokoro ONNX TTS]
+3비트 양자화된 Qwen3.5-122B-A10B 모델은 디스크 크기가 54GB에 달해 16GB Mac mini(가용 10~12GB)에서 구동이 불가능하다.
+
+1. **지연 로딩(Lazy Loading)의 덫**: MLX에서 단순히 `lazy=True`로 로딩하면 첫 순방향 연산(forward pass)이 일어나는 순간 256개 전체 전문가 텐서가 물리 버퍼 위로 호출되어 기기가 스왑(Swap) 먹통이 된다.
+2. **자율 수동 격리 설계**: 토큰당 256개 중 라우터가 활성화한 8개 전문가 가중치만 SSD에서 수동 적재하고 연산 즉시 해제한다. 자주 호출되는 전문가는 LRU 캐시에 담아둔다.
+3. **F_NOCACHE 기반 페이지 캐시 차단**: 14GB가 넘는 전문가 가중치를 mmap 슬라이싱으로 빈번히 읽으면 macOS Unified buffer 캐시가 가용 메모리를 잠식한다. 파일 디스크립터에 fcntl 플래그 **`F_NOCACHE`**를 걸고 `os.pread`로 오프셋 직접 읽기를 하여 실제 물리 RSS를 3.9GB 수준으로 고정한다.
+4. **Metal Wired Cap 통제**: 16GB Mac의 물리 장벽은 RAM 크기가 아닌 macOS GPU 커널이 스왑에서 제외하고 영구 고정하는 와이어드 메모리 제한선(약 10.5GB)이다. `mlx_peak ≈ 5GB(백본) + 캐시 용량`이므로 안전한 캐시 크기는 4~5GB로 제한한다. 이 골디락스 지점에서 디스크 대역폭 병목을 타고 **초당 1토큰(1 tok/s)** 속도로 122B 구동에 성공했다.
+
+---
+
+### 4. 3대 실무 구현 가이드
+
+#### ① 경로 A: 로컬 코딩 어시스턴트 (VS Code + Cline)
+- **추천 모델**: `qwen3-coder:30b` (30B MoE, 3B 활성화) / 저사양 노트북 `qwen2.5-coder:7b`.
+- **Modelfile 튜닝**: Cline은 시스템 프롬프트만 25K 토큰을 초과하므로 num_ctx 65536으로 튜닝하여 diff 서식 유실 및 환각을 차단한다.
+  ```dockerfile
+  FROM qwen3-coder:30b
+  PARAMETER num_ctx 65536
+  PARAMETER temperature 0.2
+  PARAMETER stop "<|im_end|>"
+  ```
+- **빌드 및 연동**:
+  ```bash
+  ollama create qwen3-coder-cline -f ./Modelfile
+  # VS Code Cline 설정에서 Ollama 프로바이더 및 포트 11434 지정
+  ```
+
+#### ② 경로 B: 내 문서 기반 RAG (Ollama Embedding + NumPy)
+- **임베딩 모델**: `nomic-embed-text` (137M 파라미터, 8,192 컨텍스트 창 지원).
+- **NumPy 코사인 유사도**: 두 벡터가 정규화(Norm = 1)되어 있으면 벡터 내적이 곧 코사인 유사도가 된다. 루프 없이 행렬 곱 `scores = doc_matrix @ query_vector` 한 번으로 고속 검색을 처리한다.
+  ```python
+  q = query_vec / (np.linalg.norm(query_vec) + 1e-8)
+  d = doc_matrix / (np.linalg.norm(doc_matrix, axis=1, keepdims=True) + 1e-8)
+  scores = d @ q
+  top_indices = np.argsort(scores)[::-1][:k]
+  ```
+- **가드레일**: 로컬 모델의 임의 창작을 억제하기 위해 프롬프트에 *"Answer using ONLY the context below. If the context does not contain the answer, say so plainly."*를 강제 주입한다. 코퍼스가 5000개 이상으로 커지면 `sqlite-vec`을 연동한다.
+
+#### ③ 경로 C: 오프라인 음성 비서 (STT + LLM + TTS)
+- **STT (Speech-to-Text)**: CoreML로 애플 뉴럴 엔진(ANE) 가속을 받는 **WhisperKit** (Whisper-large-v3-turbo 사용 시 1시간 분량을 90초 내 전사) 또는 Parakeet 기반의 **FluidAudio** (평균 전사 속도 0.19초)를 채택한다 (단순 CPU 연산인 whisper.cpp는 속도 저하로 배제).
+- **TTS (Text-to-Speech)**: CPU 실시간 음성 합성이 가능한 **Kokoro ONNX** 엔진 활용.
+- **2대 주의사항**:
+  1. *16kHz 모노 녹음*: Whisper는 16kHz 규격으로 훈련되었으므로, 입력 녹음을 반드시 다운샘플링하여 mono int16 포맷으로 전달해야 한다 (그렇지 않으면 환각 텍스트 유발).
+  2. *마크다운 및 기호 금지*: Kokoro TTS 엔진이 별표(`*`)나 하이픈(`-`) 기호 자체를 소리 내어 읽어 루프가 파괴되는 것을 방지하기 위해 시스템 프롬프트 단에서 마크다운을 금지한다.
+
+---
+
+### 5. 최적의 3계층 하이브리드 아키텍처
+
+로컬 컴퓨팅 자원과 개인정보 보호, 그리고 클라우드 초고성능 모델을 결합하는 최선의 배포 전략이다.
+
+```text
+┌────────────────────────────────────────────────────────┐
+│ 1계층: 상시 활성화, 초저지연 (Tier 1)                      │
+│ → Apple 파운데이션 모델 (3B, Swift 네이티브, 비용 무료)       │
+│ - 역할: 실시간 분류, 요청 라우팅, 간단한 필드 추출, 요약     │
+├────────────────────────────────────────────────────────┤
+│ 2계층: 필요 시 무거운 작업 처리 (Tier 2)                    │
+│ → Qwen 3 8B / Qwen 3.5 35B (Ollama-MLX / TurboQuant)    │
+│ - 역할: 복잡한 논리 분석, 다단계 추론, 오프라인 정밀 질의    │
+├────────────────────────────────────────────────────────┤
+│ 3계층: 필요 시 클라우드 확장 (Tier 3, 선택 동의)             │
+│ → Claude Opus 4.7 / GPT-5.5                             │
+│ - 역할: 프라이버시 동의 기반 최상위 난이도 추론               │
+└────────────────────────────────────────────────────────┘
 ```
 
-### 4.1 경로 A: 로컬 코딩 어시스턴트
-VS Code의 에이전트 확장 프로그램인 **Cline**과 로컬 최강 코딩 모델인 **Qwen3-Coder**를 연동한다. 
-TurboQuant가 적용된 `arozanov/turboquant-mlx` 모듈을 연동하면 긴 컨텍스트 세션에서도 메모리 한계 없이 가동 가능하다.
+- **안티 패턴**: 
+  - `mlx-lm` 패키지를 이용해 프로덕션 제품의 전체 비즈니스 로직을 Python으로만 구동하는 방식 (메모리 오버헤드가 크고 네이티브 Swift/macMLX 대비 하드웨어 가속 미흡).
+  - Q2/Q3 수준으로 극단적 양자화 적용 (정확도 붕괴 유발. Q4 8B가 Q2 14B보다 대부분의 작업에서 우수).
+  - 로컬 모델에 클라우드급 Opus 추론 능력을 맹신하고 라우터 설계 없이 작업을 넘기는 태도.
 
-1. **모델 다운로드**:
-   - 고사양(32GB+ 통합 메모리): MoE 아키텍처 기반 `qwen3-coder:30b` (추론 시 3B 활성화)
-   - 일반(16GB RAM): `qwen2.5-coder:7b` (약 4.7GB 크기)
-   ```bash
-   ollama pull qwen3-coder:30b  # or qwen2.5-coder:7b
-   ```
+## 예시
+- **보안 격리 코딩**: 회사 코드 노출 우려 없이 `qwen3-coder-cline` 모델을 VS Code 로컬 백엔드로 연동하여 리팩터링 diff를 로컬 환경 내에서 안전하게 생성한다.
+- **오프라인 회의록 질의**: SQLite에 sqlite-vec을 얹어 회의록 임베딩을 저장하고, 비행기나 격리망 오프라인 환경에서 NumPy Cosine Similarity 내적으로 관련 내용을 검색한 뒤 답변을 추출한다.
 
-2. **Cline 연동을 위한 Modelfile 작성**:
-   컨텍스트 창 크기를 65,536 이상 확보하기 위해 파라미터를 강제 튜닝한다.
-   
-   ```dockerfile
-   # ./Modelfile
-   FROM qwen3-coder:30b
-   PARAMETER num_ctx 65536
-   PARAMETER temperature 0.2
-   PARAMETER stop "<|im_end|>"
-   ```
-   
-   ```bash
-   # 커스텀 Cline 튜닝 모델 생성
-   ollama create qwen3-coder-cline -f ./Modelfile
-   ```
+## 충돌
+- **지연 로딩(Lazy Loading)의 한계와 pread**: mmap을 사용한 지연 로딩이 메모리를 절약해 줄 것이라는 일반적인 오해는 MLX 런타임에서 첫 forward pass 시에 OOM으로 이어진다. 반드시 fcntl의 `F_NOCACHE` 플래그를 통한 OS 캐시 억제 및 `os.pread`로 활성 전문가 8개만 로드하는 수동 격리 적재가 수반되어야 한다.
 
-3. **VS Code Cline 설정**:
-   - **API Provider**: `Ollama`
-   - **Base URL**: `http://localhost:11434`
-   - **Model**: `qwen3-coder-cline`
-   - **Context Window**: `65536`
-
-### 4.2 경로 B: 내 문서 기반 RAG
-벡터 데이터베이스 대신, **Ollama Embeddings API**와 **NumPy** 코사인 유사도 연산만을 사용하여 60줄짜리 콤팩트한 문서 검색 엔진을 구축한다.
-
-1. **임베딩 모델 다운로드**:
-   ```bash
-   ollama pull nomic-embed-text
-   pip install ollama numpy
-   ```
-
-2. **구현 메커니즘 (Cosine Similarity)**:
-   임베딩 벡터가 단위 길이(Norm = 1)로 정규화되어 있다면, 두 벡터의 내적(Dot Product) 연산이 곧 코사인 유사도가 된다. NumPy 행렬 곱(`scores = doc_matrix @ query_vector`) 한 번으로 Python 루프 없이 수백 개의 문서 청크 중 가장 유사도가 높은 Top-K 문서를 고속으로 회수한다.
-   
-   ```python
-   # RAG 핵심 루직 스니펫
-   q_vec = embed([query])[0]
-   q = q_vec / (np.linalg.norm(q_vec) + 1e-8)
-   d = doc_matrix / (np.linalg.norm(doc_matrix, axis=1, keepdims=True) + 1e-8)
-   scores = d @ q
-   top_indices = np.argsort(scores)[::-1][:k]
-   ```
-   
-   RAG 질의 시 모델 환각을 억제하기 위해 프롬프트에 반드시 아래와 같은 제약 문구를 강제 주입해야 한다.
-   > *"Answer the question using ONLY the context below. If the context does not contain the answer, say so plainly."*
-
-### 4.3 경로 C: 오프라인 음성 비서
-인터넷 유출 위험이 전혀 없이 로컬 하드웨어(CPU/GPU/ANE)로 가동하는 음성 대화 파이프라인이다.
-
-- **STT (Speech-to-Text)**:
-  - **WhisperKit** (Argmax): CoreML로 컴파일되어 Apple 뉴럴 엔진(ANE)에서 실행되는 표준 스택이다. Whisper-large-v3-turbo 사용 시 1시간 분량 오디오를 90초 만에 텍스트화한다.
-  - **FluidAudio**: Parakeet 기반 CoreML 모델로, Large 모델 기준 전사 속도가 평균 0.19초에 불과해 WhisperKit 대비 고속 처리가 가능하다.
-  - **피할 것**: whisper.cpp(뉴럴 엔진 미가속으로 속도 저하) 및 클라우드 API.
-- **LLM**: 로컬 `qwen3:8b`가 대답을 생성한다.
-- **TTS (Text-to-Speech)**: CPU에서도 실시간 음성 합성이 가능한 `Kokoro ONNX` 엔진(`AF_Sarah` 목소리 모델 등)을 이용한다.
-
-```bash
-# 의존 패키지 설치
-brew install whisperkit-cli ffmpeg
-pip install -U sounddevice ollama kokoro-onnx
-```
-
-> [!IMPORTANT]
-> **음성 비서 파이프라인 주의사항**
-> 1. **16kHz 모노 녹음 필수**: Whisper 모델은 16kHz 오디오로만 사전 학습되어, OS 기본 마이크 값인 44.1kHz를 그대로 집어넣으면 인식 불능 상태나 환각 텍스트를 마구 쏟아낸다. 반드시 다운샘플링하여 mono int16 포맷으로 녹음 후 집어넣어야 한다.
-> 2. **마크다운 금지**: TTS 엔진(Kokoro)은 특수 기호(예: `*`, `-`)가 텍스트에 포함되면 기호까지 발음해 음성 출력이 깨진다. 시스템 프롬프트 수준에서 마크다운 및 리스트 출력 금지 가이드를 견고히 달아두어야 한다.
-
----
-
-## 5. 최적의 3계층 하이브리드 아키텍처
-
-로컬 컴퓨팅 자과 프라이버시, 그리고 클라우드의 초고성능 지능을 결합하는 최적의 배포 전략이다.
-
-1.  **Tier 1 (상시 활성화, 초저지연)**: Apple 파운데이션 모델 (3B, 무료)
-    - 역할: 실시간 요청 분류, 라우팅(Routing), 구조화된 필드 추출, 간단한 요약.
-2.  **Tier 2 (로컬 추론 분기)**: Qwen 3 8B / Qwen 3.5 35B (Ollama-MLX / TurboQuant)
-    - 역할: 복잡한 논리 분석, 다단계 추론, 오프라인 질의, 긴 문장 생성.
-3.  **Tier 3 (클라우드 확장)**: Claude Opus 4.7 / GPT-5.5
-    - 역할: 사용자가 명시적 동의한 경우에만 가동하는 최고 난이도의 최종 추론.
-
----
-
-## 6. 관련 위키 노트
-
+## 관련 노트
 - [[온디바이스 TTS]]
 - [[AI 오픈소스 작업대]]
 - [[오픈소스 LLM 경제성과 벤더 종속성 해지]]
@@ -216,9 +163,3 @@ pip install -U sounddevice ollama kokoro-onnx
 - [[GStack]]
 - [[Claude Code 스킬 관리]]
 
----
-
-## 7. 출처
-- `raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md`
-- `raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md`
-- `raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md`
