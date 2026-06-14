@@ -12,7 +12,7 @@ aliases:
 sources:
  - 아무도 AI를 배우고 싶어 하지 않는다
 created: 2026-05-24
-updated: 2026-05-26
+updated: 2026-06-14
 ---
 
 # Competence Debt
