@@ -35,8 +35,8 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
   1. *이식성*: 구글 오픈소스 규격을 준수하여 Stitch 외에도 Claude Code, Cursor, v0 등 타 클라이언트와 호환.
   2. *직관성*: 복잡한 Figma 토큰/JSON 대비 인간과 AI 모두 쉽게 판독할 수 있는 마크다운 포맷.
   3. *버전 관리*: Git을 통한 Pull Request, 코드 리뷰 및 변경 추적이 용이하여 엔지니어링 자산화가 가능.
-- **번역 레이어의 혁신적 제거**: 디자이너와 개발자 사이의 Figma 시안 핸드오프 과정에서 발생하는 소통 비용과 데이터 유실을 없앤다. 기존 Figma 핸드오프 시 데이터 유실로 인해 프로젝트의 50%가 승인을 받지 못하고 실패/지연된다 [출처](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%8C%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md).
-- **프로토타입 우선 디자인(Prototype-First Design)**: 디자이너가 HTML/CSS로 작동하는 프로토타입을 직접 작성해 GitHub에 공유하면, 상용화 시 AI 에이전트가 이를 컨텍스트로 읽어 100% 일치도의 프로덕션 코드로 빌드하는 '피그마 프리' 모델이다.
+- **번역 레이어의 혁신적 제거**: 디자이너와 개발자 사이의 Figma 시안 핸드오프 과정에서 발생하는 소통 비용과 데이터 유실을 없앤다. Kony 연구에 따르면 디자이너-개발자 간 소통 오류로 프로젝트의 **50%**가 승인을 받지 못하고 실패/지연된다 [출처](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%9D%B8%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%8C%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md). ONSIGHT Report에 따르면 전문가 **65%**가 제품 수명 주기 내에서 핸드오프를 가장 큰 마찰 지점으로 지목했다.
+- **프로토타입 우선 디자인(Prototype-First Design)**: 디자이너가 HTML/CSS로 작동하는 프로토타입을 직접 작성해 GitHub에 공유하면, 상용화 시 AI 에이전트가 이를 컨텍스트로 읽어 100% 일치도의 프로덕션 코드로 빌드하는 '피그마 프리' 모델이다. Gartner는 2026년 말까지 개발자의 **75%**가 코드를 직접 작성하는 대신 오케스트레이션(조율)하게 될 것이라 전망했다.
 
 ## 상세
 
@@ -46,10 +46,10 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
 1. **Google Stitch 캔버스 구동**: `stitch.withgoogle.com`에서 Gemini 기반의 대화형 에이전트, 에이전트 매니저(Agent Manager)를 사용하여 자연어, 스크린샷 등으로 다채로운 화면 UI를 생성.
 2. **양방향 동기화**: 캔버스를 분석해 생성된 `DESIGN.md` 문서를 하향식(텍스트 편집) 혹은 상향식(프롬프트 조율)으로 수정하여 캔버스와 DESIGN.md를 일치시킴.
 3. **코드베이스 적용 및 MCP 연동**: `DESIGN.md`를 프로젝트 루트에 복사하고, `claude mcp add stitch` 명령으로 Stitch API를 Claude Code에 활성화.
-4. **에이전트 구현**: Claude Code가 `DESIGN.md` 규격과 Stitch MCP를 결합하여 공통 테마 파일(`theme.ts`) 및 개별 React Native 컴포넌트를 빌드.
+4. **에이전트 구현**: Claude Code가 `DESIGN.md` 규격과 Stitch MCP를 결합하여 공통 테마 파일 (`theme.ts`) 및 개별 React Native 컴포넌트를 빌드.
 
 #### 경로 B: Figma-Free 프로토타이핑 경로 (코드 직접 설계 중심)
-1. **코드 프로토타이핑**: 디자이너가 VS Code에서 AI와 페어 프로그래밍을 진행하여 HTML, CSS, 실제 인터랙션 및 상태가 내장된 경량 코드를 구현.
+1. **코드 프로토타이핑**: 디자이너가 VS Code에서 AI와 페어 프로그래밍을 진행하여 HTML, CSS, 실제 인터랙션 및 상태가 내장된 경량 코드를 구현. 웹 환경 블루프린트 그리드 표준인 `64 x 32 x 12` 구조를 적용하여 기본 계층과 비율을 맞춘다.
 2. **저장소 업로드 및 호스팅**: 코드를 GitHub 저장소에 올리고 GitHub Pages 등으로 라이브 URL을 호스팅해 공유.
 3. **상용화 코드 생성**: 프로덕션 배포 단계에서 AI 에이전트가 이 프로토타입 코드를 컨텍스트로 읽어, 일관된 디자인 시스템 규격에 맞춰 재사용 가능한 프로덕션 리액트 컴포넌트를 100% 일치하게 자동 빌드.
 
@@ -69,10 +69,28 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
 
 ---
 
-### 3. 적용 체크리스트 (흔히 범하기 쉬운 실수 방지)
+### 3. Claude Code와 Figma MCP 스킬 활용 가이드
+Claude Code가 실제 Figma 환경과 실시간 동기화하여 검증하기 위해서는 다음 스킬셋과 명령어를 정렬해 사용해야 한다.
+- **MCP 연결 명령어**: 터미널에서 `claude mcp add figma`를 실행하여 플러그인을 활성화한다.
+- **플러그인 및 MCP 상태 검증**: `/plugin` 명령어를 실행하여 *Figma Plugin*(Enabled)과 *Figma MCP*(Connected 및 Authenticated) 상태가 올바르게 잡혔는지 확인한다.
+- **Figma 기본 스킬 활용**:
+  *   `figma-use`: Figma 파일 내에서 레이아웃을 가져오거나 디자인을 수정할 때 사용하는 범용 스킬.
+  *   `figma-generate-design`: 에이전트에게 뼈대를 넘겨주고 디자인을 생성할 때 사용. 템플릿: `[빌드할 내용 설명] figma.com/design/new?node-id-%`
+  *   `figma-use-figjam`: FigJam 보드에서 스티커, 계획 보드, SWOT 다이어그램 등을 생성 및 편집. 예: `/figma-use-figjam create a SWOT for OpenAI https://www.figma.com/board/new?node-id=%`
+  *   `figma-generate-diagram`: 소스 코드 및 사양을 시퀀스/ER/상태/플로우차트 다이어그램으로 변환.
+  *   `figma-use-slides`: 다이어그램 등의 정보를 분석해 Figma Slides 덱으로 내보낼 때 사용. 예: `/figma-use-slides turn this information into slides and post it here https://www.figma.com/slides/%link%`
+  *   `figma-code-connect`: Figma 디자인 컴포넌트와 실제 프로덕션 코드 컴포넌트를 연결 (Dev Mode 지원).
+- **커뮤니티 제작 스킬**:
+  *   `apply-design-system`: Figma 시안과 빌드 구현 결과물 사이의 격차(Implementation Gap)를 최소화하기 위해 컴포넌트를 직접 연결함.
+  *   `audit-design-system`: 로컬 덮어쓰기나 연결 끊긴 토큰 등 디자인 시스템의 일탈(Style Drift) 현상을 감사함.
+  *   `create-voice`: 컴포넌트를 말로 설명하면 마크다운(`DESIGN.md` 등) 명세를 생성한 후, 이를 Figma 주석 프레임으로 자동 렌더링.
+
+---
+
+### 4. 적용 체크리스트 (흔히 범하기 쉬운 실수 방지)
 - [ ] **전역 디자인 변경 규칙 준수**: 다수 화면에 공통 적용할 속성은 캔버스가 아닌 `DESIGN.md` 파일 자체를 직접 열어 수정하는가?
 - [ ] **살아있는 문서 취급**: DESIGN.md를 일회성 내보내기용이 아닌, 모든 디자인 의사결정이 모여 흐르는 영구 소스로 취급하는가?
-- [ ] **Stitch MCP 연동 필터링**: 번거롭다는 이유로 MCP 설정을 생략하고 스크린샷에만 의존해 구조적 데이터를 유실하고 있지 않은가?
+- [ ] **Figma 및 Stitch MCP 연동 필터링**: 번거롭다는 이유로 MCP 설정을 생략하고 스크린샷에만 의존해 구조적 데이터를 유실하고 있지 않은가?
 - [ ] **구체적인 프롬프트 지시**: Claude Code에게 단순히 "보기 좋게 만들어달라"고 모호하게 요청하는 대신 `DESIGN.md`를 엄격하게 참조하라고 명시했는가?
 - [ ] **정합성 유지**: `DESIGN.md` 명세와 실제 구현 코드 간의 싱크가 어긋나지 않도록 정합성을 상시 맞추고 있는가?
 
