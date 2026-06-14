@@ -11,10 +11,13 @@ aliases:
   - 개인 지식 관리 시스템
   - PKM
 sources:
-  - "raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md"
-  - "raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md"
-  - "raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md"
-  - "rupdated: 2026-06-14
+  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+created: 2026-06-07
+updated: 2026-06-14
 ---
 
 # AI 세컨드 브레인
