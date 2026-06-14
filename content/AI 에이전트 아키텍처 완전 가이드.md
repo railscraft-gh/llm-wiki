@@ -1,7 +1,7 @@
 ---
 type: concept
-status: draft
-core: false
+status: evergreen
+core: true
 tags:
   - ai-agent
   - architecture
@@ -15,7 +15,7 @@ aliases:
 sources:
   - raw/AI Agents. Complete Course.md
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-14
 ---
 
 # AI 에이전트 아키텍처 완전 가이드
