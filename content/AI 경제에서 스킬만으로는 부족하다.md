@@ -68,6 +68,7 @@ AI 시대에 진짜 레버리지는 기술 습득이 아니라 가치가 복리�
 
 ## 관련 노트
 
+- [[디지털 제품 생산 및 출시 워크플로우]]
 - [[Competence Debt]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[소프트웨어 민주화]]
