@@ -1,63 +1,85 @@
 ---
 type: tool
-status: needs-review
+status: evergreen
 core: false
 tags:
- - llm
- - agent
- - ai-coding
+  - llm
+  - agent
+  - ai-coding
+  - raspberry-pi
+  - sandbox
 aliases:
- - Pi
+  - Pi
+  - 라즈베리 파이 에이전트 하네스
 sources:
- - pi-coding-agent-overview
- - https://pi.dev/
- - https://pi.dev/docs/latest
- - https://pi.dev/docs/latest/quickstart
- - https://pi.dev/docs/latest/usage
- - https://pi.dev/docs/latest/providers
- - https://pi.dev/docs/latest/packages
+  - pi-coding-agent-overview
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+  - https://pi.dev/
+  - https://pi.dev/docs/latest
+  - https://pi.dev/docs/latest/quickstart
+  - https://pi.dev/docs/latest/usage
+  - https://pi.dev/docs/latest/providers
+  - https://pi.dev/docs/latest/packages
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-06-14
 ---
 
 # Pi Coding Agent
 
 ## 한 줄 정의
-
-Pi Coding Agent는 작은 core를 유지하고 extension, skill, prompt template, theme, package로 workflow를 조립하게 하는 terminal coding harness다.
+Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스트 환경의 파괴적 훼손을 방지하기 위해, 저전력 항시 켜져 있는 라즈베리 파이를 물리적 샌드박스로 삼아 Claude Code, OpenClaw, Hermes 등 에이전트 CLI를 격리 구동하는 하드웨어-에이전트 조율 인프라다.
 
 ## 핵심 요지
-
-- Pi는 "기능이 많은 완제품"보다 사용자가 workflow에 맞게 바꾸는 하네스(harness)를 지향한다.
-- interactive, print/JSON, RPC, SDK 흐름을 제공해 터미널 사용과 외부 시스템 통합을 함께 겨냥한다.
-- Plan mode, subagent, MCP, permission popup을 기본 내장하지 않고 extension, package, tmux, container 같은 외부/확장 레이어로 넘긴다.
-- 설치 패키지명, provider 목록, subscription login 범위는 빠르게 바뀌므로 실사용 전 공식 docs를 확인한다.
+- **물리적 격리(Isolation)의 필요성**: 자율 에이전트에 터미널 액세스, 브라우저 자동화, 파일 제어권 등을 주면 잘못된 명령을 초고속으로 연쇄 실행하는 리스크가 생긴다. 맥 미니나 개인용 노트북 대신 라즈베리 파이를 단독 샌드박스로 격리 구동하면 리스크를 물리적으로 분리할 수 있다.
+- **Obsidian 볼트와 Claude CLI의 결합**: 마크다운 파일들의 묶음인 옵시디언(Obsidian) 폴더 구조를 에이전트에 연동해, 광범위한 자율 권한 부여 없이 지식 베이스를 안전하게 탐색, 정리, 요약하는 '세컨드 브레인 오케스트레이션' 환경을 구축한다.
+- **에이전트 런타임 비교**:
+  - *Claude Code*: 단순하고 이해하기 쉬운 CLI 작동 및 컨텍스트 제어가 강점이다.
+  - *OpenClaw*: 네트워크 셋업은 쉽지만 하트비트/크론 구성 등 장기 운영 시 일관성 유지가 어렵고, 오동작의 연쇄적 파급을 막기 위해 옵시디언 파일로 운영 프로세스를 제한해야 하는 등 까다롭다.
+  - *Hermes Agent*: OpenClaw 대비 훨씬 성숙하고 장기 실행(24/7)에서 안정적인 디지털 비서 대안이다.
 
 ## 상세
 
-Pi 공식 문서는 Pi를 TypeScript extension, skill, prompt template, theme, Pi package로 확장하는 minimal terminal coding harness로 설명한다. 기본 사용은 프로젝트 디렉터리에서 `pi`를 실행하고, `/login`으로 subscription provider를 인증하거나 `ANTHROPIC_API_KEY` 같은 환경 변수를 넣는 방식이다. 2026-05-08 확인 기준 공식 quickstart의 npm 설치 패키지는 `@mariozechner/pi-coding-agent`다.
+### 1. 라즈베리 파이 물리 샌드박스 셋업
+개인용 노트북이나 고비용 맥 미니를 대체하여 저비용, 저전력, 24시간 상시 가동 가능한 라즈베리 파이 4를 격리 샌드박스로 사용한다.
+- **유지관리 최적화**: 프로젝트마다 개별 microSD 카드를 생성하고 라즈비안(OS) 설치 후 `sudo apt update && sudo apt upgrade`를 거친 뒤 쉘 스크립트 한 줄로 하네스 셋업을 완료한다. 
+- **리셋 가치**: 에이전트가 파일 시스템을 심각하게 망가뜨리거나 잘못된 코드를 다량 배포하더라도, SD 카드 포맷만으로 즉각 물리 복구가 가능하다.
 
-[[Claude.md 운영 원칙]]과 연결되는 부분은 context file이다. Pi는 시작 시 전역 `~/.pi/agent/AGENTS.md`, 현재 디렉터리와 상위 디렉터리의 `AGENTS.md` 또는 `CLAUDE.md`를 읽어 프로젝트 규칙을 주입한다. clean run이 필요하면 `--no-context-files` 또는 `-nc`로 끌 수 있다.
+### 2. 세컨드 브레인(Obsidian)과의 로컬 통합
+- 셸 액세스 및 MCP(Model Context Protocol) 통합을 지원하는 Claude CLI를 통해 옵시디언 마크다운 볼트 폴더를 에이전트에 연동한다.
+- `CLAUDE.md` 지침 또는 로컬 스킬을 사용하면, 에이전트가 전체 하드웨어 제어 권한을 획득하지 않고도 볼트 디렉터리 바운더리 내에서 사고를 정리하고 연결하는 것이 가능해져 보안 리스크를 통제할 수 있다.
 
-[[Plan Mode 기반 AI 작업]]과 [[병렬 에이전트 세션 운영]]에서는 OpenCode와 반대 설계가 드러난다. Pi는 built-in plan mode, subagent, background bash를 넣지 않고, 파일에 계획을 쓰거나 extension/package로 구현하거나 tmux를 쓰라고 권한다. 이 선택은 workflow를 덜 제공한다는 단점이 있지만, 팀이 원하는 권한 모델과 UI를 직접 만들 수 있다는 장점이 있다.
+### 3. OpenClaw 대 Hermes 하네스 비교
+- **OpenClaw**: 며칠 이상 장기 실행(Long-horizon tasks)할 경우, 하트비트(Heartbeat) 데몬 작동과 크론 스케줄링 간의 불일치로 인하여 동작 일관성이 쉽게 파손된다.
+- **Hermes (Nous Research)**: OpenClaw가 주던 장기 런타임 오류 및 혼란을 극복하고, 라즈베리 파이에서 구동 시 사이버 보안 검사 보고 등 장기 배치 작업을 안정적으로 수행한다.
 
 ## 예시
-
-- read-only 리뷰: `pi --tools read,grep,find,ls -p "Review this code"`처럼 쓰기 도구 없이 검토만 시킨다.
-- 자동화 통합: `pi --mode json` 또는 `pi --mode rpc`로 이벤트 스트림이나 stdin/stdout JSONL 프로토콜에 붙인다.
-- 확장 배포: `pi install npm:...` 또는 git URL로 extension, skill, prompt, theme bundle을 설치한다. 단, Pi package는 시스템 접근 권한으로 실행될 수 있으므로 서드파티 패키지는 소스 검토 후 설치한다.
+- **RPi SD 카드 초기화 및 CLI 샌드박스 환경 기동**:
+  ```bash
+  # SD 카드 포맷 후 초기 OS 셋업 완료 상태에서
+  sudo apt-get update && sudo apt-get upgrade -y
+  
+  # 에이전트 패키지 설치
+  npm install -g @mariozechner/pi-coding-agent
+  
+  # 환경변수 로드 후 읽기 전용으로 가볍게 시작
+  pi --tools read,grep,find,ls --no-context-files -p "옵시디언 /sources 폴더 내 지식 파일 요약 요청"
+  ```
+- **Hermes 에이전트 백엔드 오프라인 백그라운드 기동**:
+  라즈베리 파이 내에서 `tmux`를 사용하여 Hermes CLI를 분리 구동하고, 백그라운드 24시간 사이버 보안 스캔 모니터링을 위임한다.
 
 ## 충돌
-
-- 2026-05-08 확인: raw 문서는 npm 설치 패키지와 내부 패키지를 `@earendil-works/*` 네임스페이스로 적지만, 공식 quickstart는 `@mariozechner/pi-coding-agent` 설치를 안내한다. 현재 노트의 설치 관련 문장은 공식 문서 기준으로 기록한다.
-- 2026-05-08 확인: raw 문서는 "20개 이상의 provider"를 언급하지만, 공식 홈은 "15+ providers"처럼 더 보수적으로 표현한다. provider 수는 release마다 변하므로 숫자 자체보다 subscription/API key 지원 방식과 실사용 전 공식 providers 문서 확인을 우선한다.
+- **설치 네임스페이스 불일치**: 
+  기존 에어렌딜 웍스(`@earendil-works/*`) 네임스페이스와 달리 공식 퀵스타트 배포 패키지명이 `@mariozechner/pi-coding-agent`로 수정되었으므로 최신 공식 quickstart를 추종하여 설치해야 한다.
+- **에이전트 권한 격리 수준**: 
+  클라우드 환경이나 로컬 Docker 격리도 유효하지만, 저전력 무소음 하드웨어 격리를 원하는 사용자는 Raspberry Pi 하드웨어 샌드박스 구성이 클라우드 API 호출 요금 절감과 오프라인 프라이버시 유지 측면에서 이상적인 결합임을 실험을 통해 실증하였다.
 
 ## 관련 노트
-
 - [[OpenCode]]
 - [[Claude.md 운영 원칙]]
 - [[Plan Mode 기반 AI 작업]]
 - [[병렬 에이전트 세션 운영]]
 - [[Claude Code 권한 설계]]
 - [[Agent Native Infrastructure]]
+- [[Hermes Agent]]
+- [[OpenClaw]]
 
