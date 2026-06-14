@@ -3,46 +3,46 @@ type: workflow
 status: evergreen
 core: true
 tags:
- - llm
- - agent
- - claude-code
+  - llm
+  - agent
+  - claude-code
 aliases:
- - CLAUDE.md
- - Claude.md
- - AGENTS.md
+  - CLAUDE.md
+  - Claude.md
+  - AGENTS.md
 sources:
- - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
- - 보리스_클로드코드_실무_사용법
- - Claude-Code-실무활용법-보리스-관점-정리
- - AI로_만든_제품이_안_팔리는_이유
- - opencode-masterclass-summary
- - pi-coding-agent-overview
- - cc101_axwith_ko
- - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
- - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
- - andrej-karpathy-skills-CLAUDE-번역
- - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
- - Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
- - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
- - CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
- - AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
- - Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
- - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
- - https://opencode.ai/docs/rules/
- - https://pi.dev/docs/latest/usage
+  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+  - 보리스_클로드코드_실무_사용법
+  - Claude-Code-실무활용법-보리스-관점-정리
+  - AI로_만든_제품이_안_팔리는_이유
+  - opencode-masterclass-summary
+  - pi-coding-agent-overview
+  - cc101_axwith_ko
+  - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+  - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+  - andrej-karpathy-skills-CLAUDE-번역
+  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+  - Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
+  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+  - CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
+  - AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
+  - Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - https://opencode.ai/docs/rules/
+  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-06-10
+updated: 2026-06-14
 ---
 
 # Claude.md 운영 원칙
 
 ## 한 줄 정의
-
 Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모드 같은 에이전트에게 프로젝트 구조, 제약 조건, 거부 기준을 명시하여 반복되는 온보딩 과정 없이 답변 품질을 극대화하는 AI 행동 계약(Behavioral Contract) 문서다.
 
 ## 핵심 요지
-
-- **행동 계약(Behavioral Contract)으로서의 본질**: 설정 파일이라기보다 새 팀원에게 주는 업무 매뉴얼에 가깝다. 에이전트가 묵시적 가정이나 과잉 엔지니어링을 피하게 돕는다.
+- **행동 계약(Behavioral Contract)으로서의 본질**: 설정 파일이라기보다 새 팀원에게 주는 업무 매뉴얼에 가깝다. 복잡한 추상화 레이어를 겹겹이 쌓는 대신, 저장소 루트의 평범한 영어 문장만으로 에이전트가 묵시적 가정이나 과잉 엔지니어링을 피하도록 강제할 수 있다.
+- **Forrest Chang의 바이럴 레포지토리**: Andrej Karpathy의 에이전트 행동 관찰을 바탕으로 정리된 단 한 장의 마크다운 파일(`CLAUDE.md`)이 GitHub에서 스타 9만 1천 개를 받으며 주목받았다. 이는 도구 자체보다 '행동 가드레일 공유'라는 본질적인 문제를 해결하려는 개발자들의 요구를 방증한다.
 - **거부하는 것(Reject) 중심 설계**: 모호한 긍정적 지침("전문적으로 써줘") 대신 싫어하는 문체, 쓰지 않을 단어, 피해야 할 결과물 등 "Hard Nos" 가드레일을 촘촘하게 규정할 때 최상의 답변이 나온다.
 - **Cowork 기능과의 연동**: 데스크톱 앱의 Cowork 탭을 통해 프로젝트 폴더 권한을 부여하면, 매 대화 세션마다 .md 파일을 복사/붙여넣기 할 필요 없이 에이전트가 폴더 내 마크다운 규칙을 자동으로 파악한다.
 - **인터뷰 기반 DNA 추출**: 맨땅에서 작성을 시작하는 대신 에이전트에게 40~50개의 질문을 하나씩 던지게 하는 인터뷰 방식을 통해 사용자의 구체적 사례가 반영된 맞춤형 .md 프로필을 자동으로 도출한다.
@@ -54,7 +54,23 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 - **전역 설정 (`~/.claude.json` / `/memory` 명령어)**: 프로젝트 범위를 넘어 전역적으로 적용할 규칙을 설정한다.
 - **`.claudeignore`**: `.gitignore`처럼 에이전트가 탐색하거나 읽지 않아야 할 파일(보안 비밀 키, 빌드 로그 등)을 지정한다.
 
-### 2. 전문 영역별 5대 프로필 유형
+### 2. Forrest Chang의 4가지 행동 원칙 (Andrej Karpathy의 관찰 기반)
+에이전트가 기본적으로 보일러플레이트를 과도하게 생성하거나 무작정 파일 전체를 포맷팅하는 실패 동작을 방지하기 위한 핵심 규칙이다.
+
+1. **코딩하기 전에 먼저 생각하라 (Think before coding)**:
+   - 추론 도중 가정을 소리 내어 말하고, 요청이 모호하면 즉시 질문하여 확인한다.
+   - 헷갈릴 때 자의적으로 해석하여 잘못된 방향으로 코드를 전개하지 않고, 어떤 지점이 불분명한지 구체화하여 제시한다.
+2. **단순함을 먼저 택하라 (Choose simplicity first)**:
+   - 문제를 해결하는 최소한의 코드만 작성한다.
+   - 향후 발생할지 모르는 요구사항에 대비한 추측성 추상화나 불필요한 아키텍처적 유연성을 일절 배제한다. 항상 "시니어 엔지니어가 이 코드를 보고 과하게 복잡하다고 비판할 것인가?"를 자문하도록 강제한다.
+3. **외과적으로 수정하라 (Make surgical edits)**:
+   - 요청받은 기능 수정 영역만 정밀하게 건드린다.
+   - 주변 코드 스타일을 임의로 고치거나, 정상 작동하는 무관한 함수를 리팩토링하거나, 전체 파일에 포맷터/타입 힌트를 붙이는 범위 확장(Scope creep)을 엄격하게 금지한다.
+4. **목표 중심으로 실행하라 (Act target-oriented)**:
+   - 코드 작성을 시작하기 전에 모호한 비즈니스 요청을 검증 가능한 기술적 목표로 전환한다.
+   - 예컨대 "검증 로직 추가"라는 태스크는 "잘못된 입력값에 대응하는 테스트 케이스를 우선 작성하고 통과시키기"로 구체화되어야 한다.
+
+### 3. 전문 영역별 5대 프로필 유형
 취향과 미학, 혹은 도메인 지식의 엄밀성이 강하게 작동하는 워크스페이스는 아래의 특화 프로필(`.md`)로 나누어 Cowork 폴더에 보관한다.
 
 #### ① 비즈니스 맥락 프로필 (Business Context)
@@ -72,8 +88,8 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 #### ⑤ 데이터 분석 및 연구원 프로필 (Analyst & Researcher)
 - 최종 독자층 및 핵심 의문점, 목소리 대신 숫자를 신뢰하는 통계적 유의성, 신뢰도 및 출처 명시 기준, 가독성 높은 표 서식, 피해야 할 모호한 해석(자의적 주장)을 포함한다.
 
-### 3. 적대적 프레이밍 (Adversarial Framing)
-모델의 지나치게 공손하고 안전한 '기본 필터'를 해제하고 900달러 상당의 고급 컨설턴트급 사고력을 끌어내기 위한 프롬프트 전략이다.
+### 4. 적대적 프레이밍 (Adversarial Framing)
+- 모델의 지나치게 공손하고 안전한 '기본 필터'를 해제하고 900달러 상당의 고급 컨설턴트급 사고력을 끌어내기 위한 프롬프트 전략이다.
 - 페르소나의 범위를 극도로 좁히고("스타트업 재무 모델 200개를 검토해 본 CFO"), "PR 리뷰에서 가차 없이 뜯어보고 거절하라"는 등의 적대적 비평을 강제한다.
 
 ## 실무 템플릿 3종 (CC101 가이드)
@@ -104,11 +120,9 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 ```
 
 ## 충돌
-
 - **프로젝트 규칙의 비대화에 따른 준수율 저하**: Anthropic의 공식 연구에 따르면 에이전트 지침이 200줄을 넘어가면 준수율이 급격히 저하된다. 따라서 범용 프로젝트 룰은 60줄 이하로 `CLAUDE.md`에 유지하고, 상세 가이드라인과 템플릿 양식은 하위 폴더의 개별 프로필 마크다운(예: `voice_profile.md`)로 분리해 필요한 상황에서만 참조(Refer)하도록 레이어드 구조로 운영해야 한다.
 
 ## 관련 노트
-
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Claude Code 권한 설계]]
 - [[Plan Mode 기반 AI 작업]]
@@ -122,4 +136,5 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 - [[Claude Code 세션 운영 명령어]]
 - [[Agent Harness]]
 - [[Claude Cowork]]
+- [[Claude Code 스킬 관리]]
 
