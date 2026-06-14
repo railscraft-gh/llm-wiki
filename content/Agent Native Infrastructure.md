@@ -24,7 +24,7 @@ sources:
  - The Open-Source Agent Toolkit in 2026
  - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
 created: 2026-05-06
-updated: 2026-06-03
+updated: 2026-06-14
 ---
 
 # Agent Native Infrastructure
@@ -61,7 +61,24 @@ Hermes Agent의 Google Workspace 연결도 같은 결이다. OAuth client JSON, 
 
 `raw/The Open-Source Agent Toolkit in 2026-ko.md`는 이 레이어 구분을 더 실전적인 선택지로 풀어 준다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 층은 "어떤 도구를 넣을까"가 아니라 "어느 층이 비어 있나"를 먼저 묻게 만든다. 이 관점이 있어야 agent-native 문서, CLI, API, sandbox, 브라우저 제어가 한 묶음으로 보인다.
 
-Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대신해 센서와 액추에이터를 사용하는 에이전트들이다. 구체적인 에이전트 네이티브 인프라 요소로 마크다운 문서, CLI, API, MCP 서버, 구조화된 로그, 기계 판독 가능 스키마, 복사-붙여넣기 가능한 에이전트 명령어, 안전한 권한 부여, 감사 가능한 액션, 헤드리스 설정 플로우를 제시했다.
+Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대표하여 센서와 액추에이터를 사용하는 에이전트들이 네트워킹된 구조다.
+에이전트가 작동하기 편리한 **에이전트 네이티브 표면(Agent-native Surfaces)의 10대 요구사항**은 다음과 같다.
+1. **마크다운 문서 (Markdown docs)**: 복사해 즉시 이식 가능한 텍스트 지침.
+2. **CLI**: 에이전트가 바로 쉘을 통해 트리거 가능한 명령줄.
+3. **API**: 클릭이 배제된 직접 호출 인터페이스.
+4. **MCP 서버 (Model Context Protocol)**: 에이전트에 로컬 디스크 및 컨텍스트를 서빙하는 표준 통신 스펙.
+5. **구조화된 로그 (Structured logs)**: 에러 분석이 쉬운 JSON 기반 로그 출력.
+6. **기계 판독 가능 스키마 (Machine-readable schemas)**: Pydantic 등 규격화된 타입 보장 계약.
+7. **복사-붙여넣기 가능한 에이전트 명령어**: 에이전트에 입력하기 쉬운 단발성 매크로 코드 조각.
+8. **안전한 권한 부여 (Secure auth)**: API 키 수동 타이핑 대신 헤드리스 환경용 위임 인증.
+9. **감사 가능한 액션 (Auditable actions)**: 에이전트의 파괴적 행위를 로깅하고 롤백할 수 있는 감시 체계.
+10. **헤드리스 설정 플로우 (Headless setup flows)**: UI 렌더링이 필요 없는 오프라인 인스톨 환경.
+
+이러한 인프라가 갖춰질 때 소프트웨어 자체의 본질적인 전도(전통적 소프트웨어 스택의 소멸)가 일어난다. 카파시가 제시한 **MenuGen 사례**가 대표적이다. 전통적인 웹 앱은 프론트엔드, API, 이미지 생성기, 배포, 결제 모듈이 겹겹이 얽힌 복잡한 비계(Scaffolding)였으나, 소프트웨어 3.0에서는 신경망(LLM)이 메뉴 사진이라는 입력 미디어를 요리 사진이라는 출력 미디어로 직접 변환(Pixel-to-pixel)해 버린다. 즉, **인프라가 에이전트 네이티브화될수록 전통적 소프트웨어 앱의 상당 부분은 존재하지 않아도 무방해진다.**
+
+이에 따라 **희소성의 패러다임이 이동**한다.
+- *덜 희소해지는 것 (Commodity)*: 코드 생성, API 명세 암기, 보일러플레이트 작성, 반복적 설정, 단순 데이터 변환.
+- *더 희소해지는 것 (Moat)*: 시스템에 대한 깊은 이해, 아키텍처적 취향(Taste), 평가 및 검증 설계, 보안 경계 관리, 에이전트 오케스트레이션, 도메인 특화 피드백 루프 정의.
 
 
 후속 GitHub raw는 이 인프라가 어떤 공개 작업 표면으로 구현되는지도 보여 준다. local model runtime, self-hosted UI, RAG platform, workflow builder, terminal assistant가 각각 agent-native 인프라의 다른 면을 담당한다. 이를 묶은 허브가 [[AI 오픈소스 작업대]]다.
