@@ -23,7 +23,7 @@ sources:
  - https://opencode.ai/docs/agents/
  - https://pi.dev/docs/latest/usage
 created: 2026-05-06
-updated: 2026-05-26
+updated: 2026-06-14
 ---
 
 # Plan Mode 기반 AI 작업
@@ -100,6 +100,10 @@ Shift+Tab # Plan Mode → 일반 모드 전환
 Plan Mode에서 "이렇게 하려고 하는데 맞나요?" 확인을 받은 후, 승인하면 그때 실행한다. 일반 모드로 전환하는 방법은 `Shift+Tab`을 두 번 누르거나 `/plan`을 다시 입력하는 것이다.
 
 Plan Mode는 [[Claude Code 권한 설계]]의 3가지 권한 모드 중 하나이며, 파일 수정 없이 계획만 세우는 "안전 장치" 역할을 한다.
+
+### `opusplan` 하이브리드 계획 모드
+*   **작동 방식**: 계획 수립 단계에서는 정교하고 추론 성능이 극대화된 **Opus** 모델을 호출하고, 승인 후 코드를 실제 작성/실행하는 단계에서는 처리 속도가 빠르고 저렴한 **Sonnet** 모델로 자동 전환하는 하이브리드 세션 제어 모드다.
+*   **활성화 명령어**: `/model opusplan`을 입력하여 구동하며, 속도, 비용, 정교함의 3대 요소를 최적으로 조화시키는 오케스트레이션 기법이다.
 
 ## 충돌
 
