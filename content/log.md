@@ -1,5 +1,64 @@
 # LLM Wiki Log
 
+## 2026-06-14 (Audit Batch 2 — UI/UX Design System & RAG/LLM Infrastructure Wiki Audit)
+
+### Ingest
+
+- 입력:
+  - `raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md`
+  - `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md`
+  - `raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md`
+  - `raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md`
+  - `raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md`
+  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
+  - `raw/How to write a DESIGN.md file Claude can actually use-ko.md`
+  - `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`
+  - `raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
+  - `raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md`
+  - `raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md`
+  - `raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026 에디션).md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md` ~ `#5. 계층형 자체 관리 메모리.md`
+  - `raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md`
+  - `raw/What Is MCP? Build a Custom MCP Server in Python.md`
+  - `raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md`
+  - `raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md`
+  - `raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`
+- 생성: 없음
+- 수정:
+  - [[디자인 시스템 기본값]] (보강)
+  - [[완전히 기계 읽기 가능한 디자인 시스템]] (보강)
+  - [[UI UX 디자인 AI 워크플로우]] (보강)
+  - [[DESIGN.md 워크플로우]] (보강)
+  - [[DESIGN.md 운영 원칙]] (보강)
+  - [[AI 시대 디자인 시스템]] (보강)
+  - [[AI 네이티브 프로토타이핑]] (보강)
+  - [[RAG 아키텍처 선택]] (보강, core 승격)
+  - [[LLM 메모리 시스템 아키텍처]] (보강, core 승격)
+  - [[Model Context Protocol]] (보강, core 유지)
+  - [[로컬 LLM 30분 실전 가이드]] (보강, core 승격)
+- index 업데이트: 완료
+- 남은 검토: 없음 (대상 11개 노트의 원천 자료 동기화 및 누락 기술 세부사항 전량 보완 완료)
+
+### Lint
+
+- 실행 방식: 수동 교차 검증 및 checklist 대조
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (Naive RAG 실패율 40%, 하이브리드 RRF k=60 상수, Cross-Encoder 2차 압축률 15-30% RAGAS 향상, Vector RAG 엔티티 5개 초과 시 정확도 0%, GraphRAG 정확도 3.4배 향상 및 인덱싱 비용 $20-$500, Vectorless FinanceBench 98.7% 정확도, Unified Buffer 캐시 잠식 7.5GB 및 GPU Wired Memory Cap 10.5GB 기준 mlx_peak 튜닝 공식 등 검증 가능한 모든 벤치마크 및 수학적 수치에 대해 raw 출처 명기 완료)
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 없음 (수정 및 승격된 핵심 노트들의 updated 날짜를 2026-06-14로 전면 최신화함)
+- 조치: 수정한 11개 위키 노트의 frontmatter updated 날짜를 2026-06-14로 갱신하고, index.md 내 핵심 노트 갱신 정보 정합성을 맞춤.
+
+### 결정 기록
+
+- 결정: 보강 및 핵심(core) 승격
+- 대상: [[RAG 아키텍처 선택]], [[로컬 LLM 30분 실전 가이드]]
+- 근거: 원문(raw)에 정의된 9대 RAG 아키텍처 아우트라인, 하이브리드 RRF 수식 및 벤치마크 데이터, 그리고 로컬 LLM 환경의 MoE 디스크 스트리밍 수식 및 TurboQuant 4비트 회전 모드 등의 핵심 인프라 가이드를 풍부하게 반영하여 wiki 허브로서의 가치가 충분하여 핵심 노트로 승격함.
+- 결정: 보강 및 핵심(core) 상태 유지
+- 대상: [[LLM 메모리 시스템 아키텍처]], [[Model Context Protocol]]
+- 근거: MemGPT 계층형 메모리 라이프사이클 도구 명세 및 지식 그래프 도입 시의 시맨틱 부채, Pinterest의 대규모 분산 MCP 엔터프라이즈 보안 인가 아키텍처(Envoy, SPIFFE, Dynamic OAuth) 등의 핵심 엔지니어링 의사결정 요소를 대폭 보강함.
+
 ## 2026-06-14 (Audit Batch — Coding Agent & Infrastructure Wiki Audit)
 
 ### Ingest
