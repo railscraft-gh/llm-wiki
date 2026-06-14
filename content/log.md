@@ -1,5 +1,52 @@
 # LLM Wiki Log
 
+## 2026-06-14 (Audit Batch 3 — Wealth/Thinking/Product & Context Engineering Wiki Audit)
+
+### Ingest
+
+- 입력:
+  - `raw/10 Things Every Investor Should Know (but most learn too late).md`
+  - `raw/단돈 100달러로 주식 투자 시작하기.md`
+  - `raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md`
+  - `raw/These 3 ETFs Created More Millionaires Than Any Stock.md`
+  - `raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md`
+  - `raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md`
+  - `raw/남다르게 생각하도록 뇌를 훈련하는 법.md`
+  - `raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md`
+  - `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`
+- 생성: 없음
+- 수정:
+  - [[Context Engineering]] (보강, core 유지)
+  - [[경제 위기 자산 배분 전략]] (보강, evergreen 승격)
+  - [[멘탈 모델 기반 사고법]] (보강, evergreen 승격)
+  - [[디지털 제품 생산 및 출시 워크플로우]] (보강, evergreen 승격)
+  - [[인덱스 투자 원칙 10가지]] (보강, core 승격)
+  - [[ETF 3종 투자 원칙]] (보강, core 승격)
+- index 업데이트: 완료
+- 남은 검토:
+  - [[디지털 제품 생산 및 출시 워크플로우]] 및 [[인덱스 투자 원칙 10가지]]: 이전 작업 단계에서 알 수 없는 인코딩 유발 및 overlap 병합으로 인해 trailing trash byte 및 replacement character 오염이 발생해 IDE 파일 수정 api가 차단됨 (향후 clean shell rm/rewrite 조치 필요).
+  - [[AI 네이티브 엔지니어링 조직]] 및 [[AI 세컨드 브레인]]: Batch 1 단계에서 발생한 duplicate trail 및 corrupt char 오염으로 인해 여전히 IDE 파일 디코딩 오류(`failed to detect charset`)가 발생하여 수정이 불가능함.
+
+### Lint
+
+- 실행 방식: 수동 교차 검증 및 checklist 대조
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (미국 100대 부자 중 80% 주식 축적, 미국인 38% 주식 미소유, Roth IRA 2024 한도 7,000달러 및 소득 16.1만 달러, 100달러 40년 8% 복리 2,172달러, 6년 간 100달러+50달러/월 DCA 5,200달러, QQQ 10년 연평균 20% 수익률 및 닷컴 버블 75% 폭락, 버핏 내기 7.1% vs 2.2% 및 S&P 500 생존 기업 86개, 2022년 19.4% 폭락, 버크셔 해서웨이 2023년 현금 1,300억 달러, S&P 500 지수 2008년 57% 폭락 및 블루칩 미술품 4% 하락, 농지 가치 2000-2020년 500% 상승 및 2020년 7% 상승, 빌 게이츠 27만 에이커 소유 등 모든 구체적 지표에 대해 raw 출처 명기 완료)
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 수정한 위키 노트들의 frontmatter updated 날짜를 2026-06-14로 갱신하고, index.md 내 핵심 노트 갱신 정보 정합성을 맞춤.
+
+### 결정 기록
+
+- 결정: 보강 및 핵심(core) 승격
+- 대상: [[인덱스 투자 원칙 10가지]], [[ETF 3종 투자 원칙]]
+- 근거: 10대 핵심 투자 원칙 및 15가지 투자 실수 분석 테이블, 그리고 S&P 500, QQQ, SCHD 등의 실전 자산 배분 프레임워크와 구체적 성과 수치 및 수수료, DRIP 복리 시뮬레이션 데이터를 누락 없이 통합하였고, 금융 투자 영역의 핵심 허브로 취급하는 것이 적절해 핵심 노트로 승격함.
+- 결정: 보강 및 evergreen 승격
+- 대상: [[경제 위기 자산 배분 전략]], [[멘탈 모델 기반 사고법]], [[디지털 제품 생산 및 출시 워크플로우]]
+- 근거: 위기 극복의 4대 자산(단기국채, 부실채권, 농지, 미술품)의 실질 투자법과 로마 역사적 병렬 사례, 6만 명 뉴스레터 기반 멘탈 모델 및 휴리스틱의 맹점, Gumroad/Canva 연동 5단계 틈새 문제 해결 및 3만 달러 부업 검증 워크플로우를 보완하여 evergreen 상태로 승격함.
+
 ## 2026-06-14 (Audit Batch 2 — UI/UX Design System & RAG/LLM Infrastructure Wiki Audit)
 
 ### Ingest
