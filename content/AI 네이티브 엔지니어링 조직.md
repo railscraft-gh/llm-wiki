@@ -11,9 +11,11 @@ aliases:
   - AI-native engineering org
   - AI 네이티브 조직 운영
 sources:
-  - AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표
-  - anthropic-boris-cherny-interview
-  - I Sat in Engineering Meetings for Two Years Without Unupdated: 2026-06-14
+  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+  - raw/anthropic-boris-cherny-interview.md
+  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md
+created: 2026-05-14
+updated: 2026-06-14
 ---
 
 # AI 네이티브 엔지니어링 조직
