@@ -73,6 +73,7 @@ Andrew Ng의 에이전틱 디자인 패턴은 모델 자체를 변경하지 않�
 
 ## 관련 노트
 
+- [[AI 에이전트 아키텍처 완전 가이드]]
 - [[Agentic 패턴 진화]]
 - [[Harness Engineering]]
 - [[Plan Mode 기반 AI 작업]]
