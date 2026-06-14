@@ -4,7 +4,7 @@
 
 | 노트 | 역할 | 상태 | updated |
 | --- | --- | --- | --- |
-| [[AI 코딩 에이전트 검증 전략]] | 에이전트 결과물을 신뢰하기 위한 테스트, 린트, UI 확인, 사람 감독 기준을 정리한다. | evergreen | 2026-05-24 |
+| [[AI 코딩 에이전트 검증 전략]] | 에이전트 결과물을 신뢰하기 위한 테스트, 린트, UI 확인, 사람 감독 기준을 정리한다. | evergreen | 2026-06-14 |
 | [[Software 3.0]] | prompt와 context window가 프로그래밍 레버가 되는 패러다임을 설명한다. | evergreen | 2026-05-24 |
 | [[Jagged Intelligence]] | LLM이 검증 가능한 영역에서 강하고 그 외 영역에서 들쭉날쭉한 이유를 설명한다. | evergreen | 2026-05-14 |
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
@@ -16,11 +16,11 @@
 | [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-06-14 |
 | [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-06-14 |
 | [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
-| [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
+| [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-06-14 |
 | [[LLM Wiki 운영 패턴]] | raw 보존, wiki 승격, index/log/lint 분리로 지식 베이스를 지속 운영하는 workflow를 정리한다. | evergreen | 2026-05-26 |
 | [[병렬 에이전트 세션 운영]] | 역할 분리, 파일 범위, 검증 경계를 기준으로 multi-agent 세션을 안전하게 병렬화하는 절차를 정리한다. | evergreen | 2026-06-04 |
-| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-06-11 |
-| [[Agent Native Infrastructure]] | agent가 바로 실행할 수 있는 CLI·API·문서·권한 구조를 설계하는 인프라 관점을 정리한다. | evergreen | 2026-05-26 |
+| [[Agent Harness]] | orchestration loop, tool, memory, context, parsing, verification을 묶는 실행 인프라의 구성 요소를 정리한다. | evergreen | 2026-06-14 |
+| [[Agent Native Infrastructure]] | agent가 바로 실행할 수 있는 CLI·API·문서·권한 구조를 설계하는 인프라 관점을 정리한다. | evergreen | 2026-06-14 |
 | [[AI 에이전트 런타임 역할 맵]] | 확장 층, 하네스, 인프라, 오픈소스 작업대, 제품 구현체를 한 장의 런타임 계층으로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 네이티브 작업 시스템]] | 사용자 숙련, 디자인 계층, 런타임 계층, 검증 루프를 하나의 작업 체계로 묶는다. | evergreen | 2026-05-26 |
 | [[AI 디자인 역할 맵]] | 기본값, DESIGN.md, task agent, AI Experience Architect를 한 장의 디자인 운영 계층으로 묶는다. | evergreen | 2026-05-26 |
