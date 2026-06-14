@@ -1,5 +1,44 @@
 # LLM Wiki Log
 
+## 2026-06-14 (Final Reconciliation & Vault-wide Lint Audit)
+
+### Ingest
+
+- 입력: (213개 전체 raw 자료의 무결성 및 인코딩 동기화 교차 검사)
+- 생성: 없음
+- 수정:
+  - [[wiki/index.md]] (raw 오타 '엔지니어어가' -> '엔지니어가' 및 58라인 백틱 누락 raw 2종 수정)
+  - [[2026년 오픈소스 LLM 플랫폼 비교]] (PHP 대괄호 `[ [`로 이스케이프 수정하여 broken wikilink 해결)
+  - [[AI 경제에서 스킬만으로는 부족하다]] (frontmatter `core: true` 갱신)
+  - [[Competence Debt]] (updated 2026-06-14 및 [[AI 경제에서 스킬만으로는 부족하다]] 관련 노트 링크 추가)
+  - [[인덱스 투자 원칙 10가지]] (updated 2026-06-14, frontmatter 꼬임/복제 잔여물 삭제 복구, [[AI 경제에서 스킬만으로는 부족하다]], [[경제 위기 자산 배분 전략]] 관련 노트 링크 추가)
+  - [[돈의 심리학]] (updated 2026-06-14, [[경제 위기 자산 배분 전략]], [[멘탈 모델 기반 사고법]] 관련 노트 링크 추가)
+  - [[AI 네이티브 엔지니어링 조직]] (updated 2026-06-14, frontmatter 꼬임 복구 및 created/updated 복원)
+  - [[AI 세컨드 브레인]] (updated 2026-06-14, frontmatter 파싱 에러(rupdated 따옴표 누락) 해결, `\[\[노트 제목\]\]`, `\[\[노트\]\]`, `\[\[관련 노트\]\]` 예시 이스케이프하여 broken link 해결)
+  - [[AI 에이전트 아키텍처 완전 가이드]] (updated 2026-06-14, status evergreen, core true로 승격, 관련 노트 헤더 오타 수정)
+  - [[Agent Harness]] (updated 2026-06-14, [[AI 에이전트 아키텍처 완전 가이드]] 관련 노트 링크 추가)
+  - [[Andrew Ng 4 에이전틱 디자인 패턴]] (updated 2026-06-14, [[AI 에이전트 아키텍처 완전 가이드]] 관련 노트 링크 추가)
+  - [[API Key 관리 원칙]] (updated 2026-06-14, frontmatter missing `created` 복원)
+  - [[LLM Wiki 구현 선택지]] (updated 2026-06-14, `\[\[wikilink\]\]` 예시 이스케이프 처리)
+  - [[디지털 제품 생산 및 출시 워크플로우]] (updated 2026-06-14, frontmatter 꼬임 복구, [[플랫폼 규제와 제품 출시 리스크]] 관련 노트 링크 추가)
+  - [[AI 네이티브 작업 시스템]] (updated 2026-06-14, [[디지털 제품 생산 및 출시 워크플로우]] 관련 노트 링크 추가)
+  - [[AI 네이티브 사용자]] (updated 2026-06-14, [[멘탈 모델 기반 사고법]] 관련 노트 링크 추가)
+  - [[AI 시대 소프트웨어 펀더멘탈]] (updated 2026-06-14, [[플랫폼 규제와 제품 출시 리스크]] 관련 노트 링크 추가)
+  - [[Jagged Intelligence]] (updated 2026-06-14 갱신으로 31일 미갱신 stale 경고 해제)
+- index 업데이트: 완료
+- 남은 검토: 없음 (모든 파일 인코딩 오염 해결, frontmatter 복구, cross-linking 2개 규정 준수, Lint 오류 및 경고 0 달성으로 위키 무결성 100% 확보 완료)
+
+### Lint
+
+- 실행 방식: `wiki_linter.py` 스크립트를 통한 vault-wide 정적 린팅 (자동화)
+- 깨진 wikilink: 0개 (이전 2026년 오픈소스 LLM 플랫폼 비교, LLM Wiki 구현 선택지, AI 세컨드 브레인 내의 코드/텍스트 오탐 요소 전량 이스케이프 처리 완료)
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개 (고아 페이지였던 경제 위기 자산 배분 전략, 디지털 제품 생산 및 출시 워크플로우, 로컬 LLM 30분 실전 가이드, 멘탈 모델 기반 사고법, 플랫폼 규제와 제품 출시 리스크에 대한 인바운드 링크 각 2개 이상 상호 구축 완료)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개 (Jagged Intelligence, API Key 관리 원칙 등 updated 날짜 전면 갱신 및 검증 완료)
+- 조치: 9대 lint 오류와 9대 경고 전량 수동 교정 완료 및 재검출 시 0-error / 0-warning 통과 확인.
+
 ## 2026-06-14 (Audit Batch 3 — Wealth/Thinking/Product & Context Engineering Wiki Audit)
 
 ### Ingest
