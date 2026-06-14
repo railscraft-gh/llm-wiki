@@ -19,7 +19,7 @@ sources:
   - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
   - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-14
 ---
 
 # AI 네이티브 작업 시스템
