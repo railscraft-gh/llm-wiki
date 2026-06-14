@@ -20,7 +20,7 @@ sources:
   - "raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md"
   - "raw/What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness.md"
 created: 2026-05-26
-updated: 2026-06-12
+updated: 2026-06-14
 ---
 
 # Agent Harness
@@ -33,22 +33,37 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - **제어 문제 해결**: RAG(지식 접근 문제)나 결정론적 워크플로(프로세스 문제)와 달리, 에이전트는 목표와 도구를 쥐고 최적의 경로를 탐색하는 **제어 문제**를 풀며, 하네스는 이 탐색 루프(`Thought -> Action -> Observation -> State Update`)를 중재한다.
 - **하네스의 모델 내재화 (Harness Absorption)**: 빅테크 모델(Anthropic Opus 4.8 등)이 사후 학습 및 테스트 시점 추론(CoT) 레이어를 통해 예외 처리, 자가 교정, 툴 호출 제어 등의 상당 부분을 모델 내부로 흡수(Absorb)하고 있다.
 - **외부 하네스의 역할 재정립**: 모델이 똑똑해질수록 복잡한 프롬프트 가드라인이나 파이프라인 코드는 모델에 통합되며, 개발자는 금융 예산 통제(Budget Governor), 물리적 샌드박싱, 인간 최종 승인 게이트(HITL) 등 모델 내부로 우회할 수 없는 '물리적 통제선' 구축에 집중해야 한다.
+- **하네스 엔지니어링의 기원**: Terraform의 창시자인 **Mitchell Hashimoto가 2026년 초 제창한 개념**으로, 에이전트가 실수할 때마다 채팅 창에서 일회성으로 프롬프트를 고쳐주는 대신, 동일한 실수가 다신 발생하지 않도록 모델 바깥의 실행 환경/설정(Harness)을 영구적으로 수정해주는 규율을 의미한다.
 
 ## 상세
 
-### 1. 에이전트 하네스의 4대 아키텍처 필러
-신뢰성 있는 프로덕션급 에이전트를 빌드하기 위해 하네스는 다음 네 가지 요구사항을 충족해야 한다:
-1. **구조화된 상태 관리**: 단순 대화 기록을 넘어서, 목표 지향적인 상태 스키마(State Object)를 유지해야 한다. 여기에는 전체 목표, 최종 도구 실행 결과, 생각 스크래치패드(Scratchpad), 중간 누적 데이터 등이 포함된다.
-2. **상태 기반 행동 선택**: 모델이 자유 텍스트 생성기가 아닌 '정책 엔진(Policy Engine)'으로 작동하도록 통제한다. 스키마에 따라 사용자 소명 요청, 도구 호출, 상태 변경, 종료 결정 등의 행동을 정확히 분기한다.
-3. **엄격한 예산(Budgeting) 통제**: 비용 폭주와 무한 루프를 방지하기 위해 최대 스텝 수(`Max Steps`), 전체 실행 타임아웃(`Timeouts`), 비용 상한선(`Cost Limits`), 도구 재시도 제한(`Retries`) 등의 제약 조건을 하네스 엔진 수준에서 관리한다.
-4. **멱등성 및 지속성 (Durable Execution)**: 서버가 다운되어도 영속성 저장소(Postgres, Redis 등)에 각 단계 완료 시점의 체크포인트(Durable Checkpoints)를 저장해 중단 지점에서 정확히 재개할 수 있어야 한다. 또한, 도구가 중복 실행되어 부수적 피해를 내지 않도록 모든 외부 호출은 멱등성(Idempotent)을 보장해야 한다.
+### 1. 에이전트 하네스의 11대 아키텍처 구성 요소 (11 Components)
+프로덕션 환경의 에이전트는 다음 11가지의 유기적으로 연결된 모듈을 통해 상태와 제어권을 통제받는다.
+1. **오케스트레이션 루프 (Orchestration Loop)**: `Thought ➡️ Action ➡️ Observation`으로 순환하는 ReAct 루프를 구동하고, 루프가 탈선하지 않도록 종료 조건을 모델이 아닌 하네스 엔진 수준에서 하드 가이드한다.
+2. **도구 레이어 (Tool Layer)**: 도구 등록, 스키마 유효성 검증, 샌드박스 실행 및 결과 포맷팅을 처리한다. 호출 전후에 승인과 감사를 실행할 수 있는 `Pre/Post-tool hooks`를 장착한다.
+3. **메모리 시스템 (Memory Systems)**: 컨텍스트 윈도우 내 단기 기억(Short-term), Vector DB나 지식 그래프 기반 장기 기억(Long-term), 성공/실패했던 문제 접근법을 기록하는 에피소드 기억(Episodic)을 계층화하여 서빙한다.
+4. **컨텍스트 관리 (Context Management)**: 입력 길이에 따른 지능 저하를 막기 위해 대화 압축(Compaction), 오래된 결과 마스킹(Observation Masking), JIT 검색(JIT Retrieval), 서브 에이전트 위임(Sub-agent Delegation) 등의 요약 룰을 작동한다.
+5. **프롬프트 구성 (Prompt Construction)**: 캐시 효율을 위해 정적 프리픽스(Static Prefix)를 맨 앞에 두고 동적 컨텍스트(Dynamic Context)를 뒤에 두어 조립하며, 충돌 시 우선순위 계층(Priority Hierarchy)을 강제한다.
+6. **출력 파싱 (Output Parsing)**: 단순 문자열 파싱 대신 정형 API(Tool call) 또는 최종 답변(Final Answer), 타 에이전트 이관(Handoff)의 3가지 분기를 Pydantic과 같은 스키마로 검증하고 에러 피드백을 전달하는 `Error-aware retry` 루틴을 둔다.
+7. **상태 관리 (State Management)**: 장기 가동 중 런타임이 붕괴해도 재개할 수 있도록 각 단계 완료 시점마다 직렬화 상태를 저장하는 **Durable Checkpoints**를 보존한다.
+8. **오류 처리 (Error Handling)**: 실패율을 차단하기 위해 도구 오용 시 Validation 피드백, API 오류 시 지수 백오프(Exponential Backoff), 통제 불가 시 서킷 브레이커(Circuit Breaker)를 탑재한다.
+9. **가드레일 & 보안 (Guardrails & Safety)**: 민감 데이터, 시스템 파일, 외부 통신망의 3대 치명 권한이 겹쳐 터지지 않게 분리 통제하며, 파괴적인 액션 직전에는 **HITL(Human-In-The-Loop) 게이트**를 거치게 설계한다.
+10. **검증 루프 (Verification Loops)**: 작성된 코드를 테스트 팩(pytest, jest 등) 및 정적 분석기(Ruff, ESLint)로 기계적 검증하여 자가 교정을 시도하는 루프를 중재한다.
+11. **서브 에이전트 조율 (Subagent Orchestration)**: 대규모 프로젝트 시 특정 역할(기획, 코딩, 리뷰)을 쪼개어 독립된 에이전트 런타임에 이관하고 결과 요약만 공유해 메인 컨텍스트를 보호한다.
 
 ### 2. 에이전트의 5대 실패(Crash) 모드와 하네스 방어선
 - **무한 루프(Infinite loops)**: 동일 상태에서 무의미한 도구 호출을 반복하는 모드. `max_steps` 하드 가이드로 해결한다.
 - **도구 오용(Tool misuse)**: 모델이 헛소리로 도구 인자값을 입력하는 모드. Pydantic이나 JSON Schema를 통한 강제 스키마 검증(Validation Loop)을 두고, 오류 발생 시 모델에 피드백을 전달해 스스로 교정하도록 설계한다.
 - **비용 폭주(Runaway costs)**: 유료 API의 재시도가 제어되지 않고 소모되는 모드. Exponential backoff 및 retry limit을 지정하고, 임계치가 넘을 시 도구를 정지하는 서킷 브레이커(Circuit Breaker)를 도입한다.
 - **비영속성 실행(Non-durable execution)**: 런타임 크래시 시 모든 진행 상황이 유실되는 모드. 각 도구 호출 완료 단계마다 상태를 직렬화해 Checkpoint DB에 백업한다.
-- **프롬프트 주입(Prompt injection)**: 악성 외부 입력을 실행해 시스템을 파괴하는 모드. 도구 허용 목록(Allowlist), 실행 전 입력 검사 필터링, 그리고 파괴적 명령어 실행 시 사람의 직접 승인을 강제하는 human-in-the-loop 게이트웨이를 둔다.
+- **프롬프트 주입(Prompt injection)**: 악성 외부 입력을 실행해 시스템을 파괴하는 모드. 도구 허용 목록(Allowlist), 실행 전 입력 검사 필터링, 그리고 파괴적 명령어 실행 시 사람의 직접 승인을 강제하는 human-in-the-loop gate를 둔다.
+
+### 3. 하네스 엔지니어링의 핵심 지표 및 실무 검증 사례
+- **Terminal Bench 2.0 성능 격차**: LangChain 연구팀이 모델 가중치를 전혀 손대지 않고, 오케스트레이션 루프, 컨텍스트 매니지먼트, reasoning budget 등 하네스 인프라만 튜닝했더니 벤치마크 점수가 **52.8%에서 66.5%로 (+13.7포인트) 상승**하여 리더보드 Top 5에 진입했다. 하네스 구성을 최적화하는 메타 하네스(Meta-Harness) 활용 시 **76.4%**까지 상승했다.
+- **Vercel SQL 에이전트 도구 축소 사례**: 당초 15개가 넘는 세분화된 도구를 가졌으나, 이를 단 1개의 bash 실행 도구로 통폐합했더니 성공률이 **80%에서 100%로 상승**하고 속도는 3.5배 빨라졌으며 토큰 소모량은 37% 감소했다. 모델에 좁고 자잘한 도구를 쥐여주는 것은 오히려 추론의 성능을 저해한다.
+- **연쇄 실패의 수학 (Step Reliability)**: 개별 툴 콜의 신뢰도가 **99%**로 매우 높더라도, 10단계 태스크의 성공률은 **90.4%**로 떨어지며, 프로덕션에서 흔한 50단계가 되면 성공률은 **60.5%**까지 급감한다. 이 때문에 단 한 번의 에러로 전체 흐름이 깨지지 않게 실패를 복원하는 하네스의 내충격성(Fault-tolerance)이 필수다.
+- **Lost in the Middle (Stanford 연구)**: Stanford 대학 연구팀에 따르면 모델의 컨텍스트 윈도우 한계에 닿기 훨씬 전부터, 본문 중간에 배치된 지식을 추론하고 인출하는 정확도가 **30% 이상 급감**한다 (Context Rot 현상). 따라서 Position-aware 컨텍스트 설계와 요약 압축은 필수적이다.
+- **Surrounding Engineering의 부피**: 2026년 3월 유출된 Claude Code의 소스코드는 무려 1,906개 파일, 513,000줄에 달하는 TypeScript로 이루어져 있었는데, 여기에는 단 한 줄의 모델 가중치도 포함되어 있지 않았다. 에이전트의 실무 경쟁력은 모델 그 자체보다 51만 줄에 달하는 하네스 코드에서 결정됨을 뜻한다.
 
 ### 3. 모델 수준의 하네스 흡수 (Harness Absorption by Models)
 - **추론 모델의 제어권 내재화**: Anthropic의 Opus 4.8이나 OpenAI O1/O3 계열과 같이 강화 학습(RL)과 생각의 사슬(CoT) 연산을 사후 학습에 고밀도로 탑재한 모델들은, 도구 호출 시 인자 포맷팅 결함이나 예외 발생 시 외부 코드가 개입하지 않아도 모델 내부 추론 루프에서 스스로 에러를 인지하고 교정하여 재시도한다.
