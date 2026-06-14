@@ -105,6 +105,7 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 현재 확인된 충돌 없음.
 
 ## 관련 노트
+- [[AI 에이전트 아키텍처 완전 가이드]]
 - [[Harness Engineering]]
 - [[Context Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
