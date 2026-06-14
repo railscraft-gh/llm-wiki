@@ -96,6 +96,7 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 
 ## 관련 노트
 
+- [[로컬 LLM 30분 실전 가이드]]
 - [[Software 3.0]]
 - [[Neural Computer]]
 - [[Claude Code 오케스트레이션]]
