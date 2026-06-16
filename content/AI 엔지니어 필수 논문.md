@@ -13,7 +13,7 @@ aliases:
 sources:
   - "raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 ---
 
 # AI 엔지니어 필수 논문 (Essential AI Papers)

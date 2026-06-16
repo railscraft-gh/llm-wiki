@@ -13,7 +13,7 @@ aliases:
 sources:
   - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-16
 ---
 
 # SpaceX C 언어 기반 AI 인프라 전략
@@ -59,4 +59,5 @@ PyTorch나 JAX 같은 고수준 프레임워크와 컴파일러 추상화 레이
 - [[Software 3.0]]
 - [[Reasoning Models]]
 - [[Vibe Coding과 Agentic Engineering]]
+- [[빅테크 아키텍처 10대 엔지니어링 논문]]
 
