@@ -22,8 +22,9 @@ sources:
   - AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)
   - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
+  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
 created: 2026-05-13
-updated: 2026-06-14
+updated: 2026-06-16
 ---
 
 # Harness Engineering
@@ -61,6 +62,8 @@ Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions),
 3. **가드레일과 강제성**: `CLAUDE.md`는 에이전트에게 보내는 '권고'일 뿐이다. 절대 타협 불가능한 린터, 포매팅, 보안 검사는 pre-commit hook이나 샌드박스로 강제 설계(Enforce)해야 한다.
 4. **보안 가드레일 (Lethal Trifecta 예방)**: 
    신뢰 불가 외부 입력 수용, 민감 내부 시스템 접근, 상태(State)의 물리적 변경이라는 세 가지 능력 중 최대 두 개까지만 하나의 에이전트 노드에 허용한다.
+5. **격리된 샌드박스 실행 강제**: 에이전트가 코드를 임의로 생성 및 구동할 때 호스트가 파괴되거나 메모리가 고갈되지 않도록, `E2B`, `Modal Sandbox`, `Daytona` 등의 ephemeral 샌드박스를 제공하여 실행 통제 가드레일을 얹어야 한다.
+6. **MCP 표준 도구 연동**: 에이전트의 도구 확장성을 확보하기 위해 Model Context Protocol(MCP) 서버를 사용하여 도구 목록과 스펙을 표준화해 서빙한다.
 
 ## 예시
 ### CLAUDE.md 행동 가이드라인을 프로젝트에 추가하는 3대 실무 방법
@@ -103,4 +106,5 @@ Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions),
 - [[AI 산출물 포맷 결정 트리]]
 - [[Claude Code 스킬 관리]]
 - [[MEMORY.md 운영 원칙]]
+- [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 에이전틱 AI 엔지니어 역량과 스택 로드맵
 
