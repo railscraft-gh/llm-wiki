@@ -13,20 +13,16 @@ aliases:
 sources:
   - From faster pencil to AI Experience Architect. a designer’s path
   - UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
-  - Why senior UX designers are struggling in 2026
-created: 2026-05-26
-updated: 2026-06-07
----
-
-# AI Experience Architect
+  - Why senior UX designers are stru# AI Experience Architect
 
 ## 한 줄 정의
 
-AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 아니라, AI의 침투로 인터페이스가 상품화되는 환경에서 전체 비즈니스 흐름, 권한 정책, 검토 지점(Approval Gates), 에러/실패 경계면, 신뢰 모델까지 총체적으로 설계하는 상류(Upstream) 디자인 전략가다.
+AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 아니라, AI의 침투로 인터페이스가 상품화되는 환경에서 전체 비즈니스 흐름, 권한 정책, 검토 지점(Approval Gates), 에러/실패 경계면, 신뢰 모델까지 총체적으로 설계하고 비즈니스 문제를 스스로 정의하는 상류(Upstream) 디자인 전략가다.
 
 ## 핵심 요지
 
 - **인터페이스의 상품화와 가치 이동**: 에이전트가 픽셀 단위로 완성도 높은 UI를 30초 만에 생성해 내면서, 디자이너의 핵심 가치는 화면 제작 단계에서 시스템 설계 및 전략적 문제 해결의 상류층으로 완전히 이동한다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
+- **의사결정자와의 거리(Proximity) 좁히기**: 단순 시안 납품(deliverable)에서 벗어나, 문제가 정의되는 날것의 기획 회의(upstream)에 개입하여 '비즈니스 전제 조건'을 스스로 규정하고 비즈니스 파트너로서 신뢰를 회복하는 주역이다 (출처: Design’s craft crisis. senior designers built it).
 - **프레임 세팅 (Frame-setting) 역량**: 정돈된 기획서(Input)를 가공해 화면(Output)으로 변환하는 수동적인 프레임 워킹(Frame-working)에서 벗어나, 비즈니스 모호함 속에서 문제와 타깃, 지표를 직접 규정하는 프레임 세팅 역량이 필수적이다 (출처: Why senior UX designers are struggling in 2026).
 - **예측 가능성 (Predictability) 확보**: 기획서나 리서치 데이터 등 주변 서포트 인프라(보호막)가 부재한 불확실한 극한 상황(예: 슬랙 한 줄의 간략한 지시)에서도 주도적으로 문제를 헤쳐나갈 수 있는 예측 가능한 해결력이 2026년 시니어 채용 시장(56%)의 주요 기준이다 (출처: Why senior UX designers are struggling in 2026).
 - **UX 리서처의 감축과 인사이트 내재화**: 리서치 조직이 다른 직군 대비 약 3배 높은 비율로 감축되는 시장 환경에서, 디자이너는 인사이트를 직접 발굴하거나 데이터 공백 상황을 주도적으로 통제해야 한다 (출처: Why senior UX designers are struggling in 2026).
@@ -36,13 +32,18 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 
 ### AI 시대 경험 아키텍트의 7대 핵심 역량 (Upstream Skills)
 
-1. **시스템 사고 (Systems Thinking)**: 고립된 단일 화면을 개별 최적화하는 데 그치지 않고, 사용자가 하루 동안 마주하는 알림의 총량, 이탈율, 기능들 간의 상호 누적 효과 등 전체 거시 생태계를 설계하고 조율한다.
+1. **시스템 사고 (Systems Thinking)와 비즈니스 레버 주도**: 고립된 단일 화면을 개별 최적화하는 데 그치지 않고, 비즈니스 지표(신규 유입 activation, 잔존율 retention 등)를 책임지고 개선하기 위해 디자인 실험을 설계하고 전체 거시 생태계를 조율한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
 2. **피드백 번역 (Feedback Translation)**: "UI가 답답하다", "화면이 너무 복잡하다" 같은 정제되지 않은 이해관계자/사용자의 불만을 해석하여, 그것이 단순 레이아웃의 결함인지 아니면 AI 추천 결과에 대한 신뢰 상실(Trust Deficit)인지 그 이면의 핵심 우려를 정교하게 짚어낸다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
 3. **데이터 부재 시의 판단 (Judgment without Data)**: AI 모델은 과거 데이터 스케일링에만 의존한다. 전례가 없고 리스크가 큰 신규 도메인 설계 시, 학습 데이터가 존재하지 않는 불확실한 공백 속에서 무엇을 가설로 삼고 검증할지 판단한다.
 4. **패턴 인식과 필터링**: 수많은 사용자 기능 요청(Feature Request) 중에서 6개월 뒤 무용지물이 될 요구사항과 진짜 본질적인 제어 워크플로우에 대한 니즈를 구분하여 개발 방향을 설정한다.
-5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 어떻게 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공할지 인터페이스를 빚어낸다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
+5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 에이전트 협업 설계(agent handoff)를 적용한다. 시스템이 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공하도록 인터페이스와 fallback을 설계한다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
 6. **전략적 절제 (Strategic Restraint)**: 기계적인 속도로 생성과 배포, A/B 테스트의 반복적인 사이클에 매몰되지 않고, "이 기능은 배포를 멈추고 리서치가 더 필요하다"고 제어할 줄 아는 궤도 속도 조절자 역할을 한다.
-7. **큐레이션으로서의 취향 (Taste as Curation)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 AI Slop 아웃풋을 거부하고, 브랜드 아이덴티티와 고유성에 맞는 타이포그래피, 모션, 색 대비의 관점을 과감히 투입한다.
+7. **시스템으로서의 취향 (Taste as a System)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 AI Slop 아웃풋을 거부하고, Before/After 대조 캔버스를 구축하여 최종안의 시각적/기능적 우수성의 상세한 근거를 입증한다. 외부 안목 리뷰(taste review) 세션을 통해 제품 전체의 디자인 품질 기준을 격상한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
+
+### 경험 아키텍트의 인간적 우위 (The Human Edge)
+
+- **Narrative Docs**: 복잡한 시각적 화면(screens)을 보여주기 전에 문제 상황, 대안 분석, 최종 설계 방향을 스토리텔링 방식으로 풀어낸 상세 문서를 작성하여 공유함으로써 기획 초기 단계에 질문을 던지고 개발 실수를 차단한다.
+- **Micro-Alliances**: 디자인 부서 외부(PM, 개발자, CS, 영업 등)와 긴밀한 파트너십을 구축하여, 병목 문제와 사업 기회를 기록해 나가는 공유 문서(running doc)를 주도적으로 운영한다.
 
 ---
 
@@ -60,7 +61,6 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 
 - 디자이너가 Figma 컴포넌트 픽셀 배치보다 prompt, approval flow, handoff 문서, review gate, edge-case handle을 더 오래 다듬는다.
 - PM, 법무, 보안, 운영팀과 함께 "AI가 어디까지 결정해도 되는가"를 자주 협의한다.
-- 디자인 시스템, workflow, 권한 정책이 서로 충돌할 때 최종 우선순위를 누가 정하는가.
 - DESIGN.md나 flow spec만으로는 부족해서 escalation rule, fallback, audit trail까지 별도 문서화한다.
 
 ## 예시
@@ -78,6 +78,7 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 - [[AI 디자인 역할 맵]]
 - [[AI 기본값 수용과 오버라이드 전략]]
 - [[AI 네이티브 작업 시스템]]
-- [[AI 겨울과 경제적 조정]]
-- [[AI 세컨드 브레인]]
+- [[디자인의 크래프트 위기]]
+- [[디자이너 생존 전략 (2026-2030)]]
+- [[AI 디자인 팀 운영]]
 
