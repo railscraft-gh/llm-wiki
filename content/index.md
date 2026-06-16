@@ -7,13 +7,13 @@
 | [[AI 코딩 에이전트 검증 전략]] | 에이전트 결과물을 신뢰하기 위한 테스트, 린트, UI 확인, 사람 감독 기준을 정리한다. | evergreen | 2026-05-24 |
 | [[Software 3.0]] | prompt와 context window가 프로그래밍 레버가 되는 패러다임을 설명한다. | evergreen | 2026-05-24 |
 | [[Jagged Intelligence]] | LLM이 검증 가능한 영역에서 강하고 그 외 영역에서 들쭉날쭉한 이유를 설명한다. | evergreen | 2026-05-14 |
-| [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-05-14 |
+| [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-06-16 |
 | [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-14 |
 | [[완전히 기계 읽기 가능한 디자인 시스템]] | 대규모 AI 에이전트 개발을 위한 6개 지식 레이어 구성 및 점진적 맥락 공개 아키텍처를 정리한다. | evergreen | 2026-06-14 |
 | [[DESIGN.md 워크플로우]] | Figma의 디자인 토큰 명세를 DESIGN.md로 고정하고 v0, Stitch, Claude Code를 체인화해 UI 격차 없이 구현하는 파이프라인을 다룬다. | evergreen | 2026-06-14 |
 | [[세계 모델]] | 물리 세계 예측 및 탐색이 지능의 본체라는 얀 르쿤의 관점과 JEPA, 공간 지능, 모라벡의 역설 등을 다룬다. | needs-review | 2026-06-09 |
 | [[Agentic 패턴 진화]] | Prompt → Context → Harness 엔지니어링으로 이동한 4년 연대기와 엄밀함의 이동 경로를 정리한다. | evergreen | 2026-05-16 |
-| [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-06-14 |
+| [[Harness Engineering]] | LLM의 비결정성을 흡수하는 외부 구조(컨텍스트, 도구, 검증, rippability) 설계로 패러다임을 정의한다. | evergreen | 2026-06-16 |
 | [[Claude.md 운영 원칙]] | coding agent가 프로젝트 규칙·금지 사항·검증 루프를 지속적으로 참조하게 만드는 운영 문서 원칙을 정리한다. | evergreen | 2026-06-14 |
 | [[AI 네이티브 사용자]] | 같은 도구를 써도 context, command, hook, 검증 루프로 leverage를 키우는 사용자 역량 모델을 정리한다. | evergreen | 2026-05-26 |
 | [[Plan Mode 기반 AI 작업]] | 구현 전에 파일 범위, 테스트, 위험, 승인 경계를 먼저 고정하는 agent 작업 절차를 정리한다. | evergreen | 2026-05-26 |
@@ -39,18 +39,20 @@
 | [[모듈러 모놀리스]] | AI 에이전트의 컨텍스트 경제학을 위해 패키지 수준의 도메인 경계를 강제하는 아키텍처를 정리한다. | evergreen | 2026-06-12 |
 | [[MEMORY.md 운영 원칙]] | 에이전트의 장기 세션 지식을 기록·보존하는 인덱스 템플릿과 운영 수칙을 정리한다. | evergreen | 2026-06-14 |
 | [[사양 기반 개발 (Spec Driven Development)]] | 바이브 코딩에서 탈피해 살아있는 자연어 명세서와 테스트를 중심으로 빌드하는 6단계 순환 주기를 정리한다. | evergreen | 2026-06-12 |
-| [[AI 에이전트 아키텍처 완전 가이드]] | 에이전트의 초급·중급·고급 설계 패턴, 작업 분해, 프로덕션 최적화 및 보안 가이드 | draft | 2026-06-12 |
+| [[AI 에이전트 아키텍처 완전 가이드]] | 에이전트의 초급·중급·고급 설계 패턴, 작업 분해, 프로덕션 최적화 및 보안 가이드 | evergreen | 2026-06-16 |
 | [[로컬 LLM 30분 실전 가이드]] | 온디바이스 Ollama 환경 설정 및 3대 실무 경로(코딩, RAG, 음성비서) 실전 구현 가이드 | evergreen | 2026-06-14 |
 | [[AI 경제에서 스킬만으로는 부족하다]] | AI 시대 역량 자산 구축과 커리어 생존을 위한 자산화 전략을 정리한다. | evergreen | 2026-06-14 |
 | [[LLM 메모리 시스템 아키텍처]] | LLM 에이전트의 5대 메모리 계층 설계와 트레이드오프를 설명한다. | evergreen | 2026-06-14 |
 | [[RAG 아키텍처 선택]] | 데이터 복잡도와 인프라 제약 조건에 따라 9가지 RAG 디자인 패턴과 3대 검색 철학 중 최적의 경로를 분기하는 의사결정 프레임을 정리한다. | evergreen | 2026-06-14 |
 | [[인덱스 투자 원칙 10가지]] | 주식 투자의 10가지 장기 원칙과 피해야 할 15가지 치명적 실수를 다룬다. | evergreen | 2026-06-14 |
 | [[ETF 3종 투자 원칙]] | VOO, SCHD, QQQ를 이용한 장기 자산 배분과 배당 재투자 전략을 다룬다. | evergreen | 2026-06-14 |
+| [[에이전틱 AI 엔지니어 실무 로드맵]] | 2026년 에이전틱 AI 엔지니어의 4대 계층 10대 핵심 기술, 표준 스택 및 학습 의존 경로를 다룬다. | evergreen | 2026-06-16 |
 
 ## Ingest 현황
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-06-16 | `raw/7 Coding Patterns I Stole From Senior Engineers.md`<br>`raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`<br>`raw/Most Developers Are Solving the Wrong Problem.md` | [[시니어 엔지니어의 7가지 코딩 패턴]] (신규), [[에이전틱 AI 엔지니어 실무 로드맵]] (신규/핵심), [[개발자가 잘못된 문제를 해결하는 패턴]] (신규), [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 에이전트 아키텍처 완전 가이드]] (보강/핵심), [[Harness Engineering]] (보강/핵심), [[Vibe Coding과 Agentic Engineering]] (보강/핵심) | done | [[log#2026-06-16]] |
 | 2026-06-16 | `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`<br>`raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`<br>`raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md` | [[10,000피트 규칙 (10,000-Foot Rule)]] (신규), [[결과물 중심 생산성 스택]] (신규), [[지적 우월주의와 인지적 방어 기제]] (신규), [[유기적 개인 지식 시스템]] (보강), [[성공을 결정하는 5가지 핵심 자질]] (보강) | done | [[log#2026-06-16]] |
 | 2026-06-16 | `raw/I will never walk into a backend interview without solving these 20 questions..md`<br>`raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md` | [[백엔드 면접 질문 20선]] (신규), [[빅테크 아키텍처 10대 엔지니어링 논문]] (신규), [[AI 엔지니어 필수 논문]] (보강), [[SpaceX C 언어 기반 AI 인프라 전략]] (보강), [[웹 서버와 배포 기초]] (보강), [[메시징 서버 스트레스 테스트 운영 원칙]] (보강) | done | [[log#2026-06-16]] |
 | 2026-06-14 | `raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md`<br>`raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md`<br>`raw/남다르게 생각하도록 뇌를 훈련하는 법.md`<br>`raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md`<br>`raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md`<br>`raw/단돈 100달러로 주식 투자 시작하기.md`<br>`raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md`<br>`raw/오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다.md`<br>`raw/우리가 초대받지 못한 새로운 AI 시대의 개막.md`<br>`raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md`<br>`raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md` | [[AI 겨울과 경제적 조정]] (보강), [[경제 위기 자산 배분 전략]] (신규), [[멘탈 모델 기반 사고법]] (신규), [[Claude Cowork]] (보강), [[디지털 제품 생산 및 출시 워크플로우]] (신규), [[인덱스 투자 원칙 10가지]] (보강), [[플랫폼 규제와 제품 출시 리스크]] (신규), [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[오픈소스 LLM 경제성과 벤더 종속성 해지]] (보강/핵심), [[ETF 3종 투자 원칙]] (보강) | done | [[log#2026-06-14 (Batch 2 — 테크/투자/사고법 지식 ingest)]] |
