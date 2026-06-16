@@ -1,5 +1,34 @@
 # LLM Wiki Log
 
+## 2026-06-16
+
+### Ingest
+
+- 입력:
+  - `raw/I will never walk into a backend interview without solving these 20 questions..md`
+  - `raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md`
+- 생성:
+  - [[백엔드 면접 질문 20선]]
+  - [[빅테크 아키텍처 10대 엔지니어링 논문]]
+- 수정:
+  - [[AI 엔지니어 필수 논문]] (updated 2026-06-16 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 링크 추가)
+  - [[SpaceX C 언어 기반 AI 인프라 전략]] (updated 2026-06-16 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 링크 추가)
+  - [[웹 서버와 배포 기초]] (updated 2026-06-16 및 [[백엔드 면접 질문 20선]] 링크 추가)
+  - [[메시징 서버 스트레스 테스트 운영 원칙]] (updated 2026-06-16 및 [[백엔드 면접 질문 20선]] 링크 추가)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 교차 검증
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (5,000만 개의 행, 5GB 대용량 파일, 40초 이상 소요 작업, 10대 논문 등의 수치 정보는 모두 raw 출처 명시 완료)
+- 관련 노트 2개 미만 문서: 0개 (새로 작성된 [[백엔드 면접 질문 20선]] 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 문서가 기존 문서들과 상호 링크를 맺음)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 새로 생성한 문서와 수정한 기존 문서들의 정합성을 맞춰 frontmatter 및 links 정리 완료.
+
 ## 2026-06-14 (Final Reconciliation & Vault-wide Lint Audit)
 
 ### Ingest
