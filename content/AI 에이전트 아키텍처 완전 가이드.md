@@ -14,8 +14,9 @@ aliases:
   - 멀티 에이전트 시스템
 sources:
   - raw/AI Agents. Complete Course.md
+  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
 created: 2026-06-12
-updated: 2026-06-14
+updated: 2026-06-16
 ---
 
 # AI 에이전트 아키텍처 완전 가이드
@@ -87,6 +88,14 @@ LLM이 외부 시스템과 상호작용하도록 백엔드 함수 명세(API, DB
 - **병렬형 (Parallel)**: 상호 의존성이 없는 작업을 동시에 실행하여 지연 시간을 단축한다.
 - **단일 관리자 계층형 (Single Manager)**: 관리자 에이전트가 하위 실무 에이전트들을 조율하고 통제하며 동적으로 수정 사항을 분기하는 구조 (현업 표준).
 - **전체 대 전체 (All-to-All)**: 제한 없는 토론식 구조. 창의적 브레인스토밍에는 유용하나 상용 서비스 구현에는 부적합하다.
+- **2026 오케스트레이션 표준 (LangGraph)**: 파이썬 에이전트 오케스트레이션은 단순 loop 대신 StateGraph, ReAct 에이전트, Send/Command 구조, checkpointers를 사용하는 **LangGraph**가 지배적인 표준으로 자리 잡았다. 데이터가 영구 보존되는 durable execution을 보장하여 다단계 그래프 실행 복구와 Human-in-the-loop를 유기적으로 결합한다.
+
+### 2.5 4대 아키텍처 계층 (2026 Roadmap 기준)
+에이전트 인프라는 다음 4개 계층으로 세분화되어 발전하고 있다.
+1. **Foundation Layer**: 비동기 Python(asyncio/Pydantic), SSE(Server-Sent Events) 스트리밍, message queues와 지수 백오프 등을 활용한 분산 영속 실행(durable execution).
+2. **LLM Layer**: Structured outputs 강제(JSON Schema), 모델 선택 및 비용 제어(Opus, Sonnet, Haiku, Gemini, 로컬 Qwen/Llama 등 모델 간 티어링), prompt design 및 캐싱.
+3. **Agent Layer**: LangGraph 기반 그래프 제어 및 메모리 관리(작업 memory, 일화 memory, 의미 memory). sqlite-vec(로컬), Qdrant(오픈소스 프로덕션), Turbopuffer(서버리스) 등의 2026 표준 데이터 스택 활용.
+4. **Production Layer**: 격리된 샌드박스 내부 코드 실행 및 MCP(Model Context Protocol) 표준 연동.
 
 ---
 
@@ -111,8 +120,8 @@ LLM이 외부 시스템과 상호작용하도록 백엔드 함수 명세(API, DB
 - **적극적 캐싱**: 동일 데이터 임베딩, 정적 DB 쿼리, 검색 결과 등은 캐싱(Redis 등)하여 중복 비용과 시간 손실을 차단한다.
 
 ### 3.4 관찰 가능성 및 보안
-- **의사결정 이력(Trace) 기록**: 에이전트가 왜 그런 판단을 내렸고 어떤 도구를 썼는지의 중간 실행 상태와 샌드박스 로그를 보존한다. 디버깅과 샘플링 검수에 필수적이다.
-- **보안 및 서킷 브레이커**: 프롬프트 인젝션 탐지 필터를 적용하고, 에이전트가 코드 실행 도구를 기용할 경우 철저히 격리된 **가상 샌드박스**에서만 구동되게 제한하며, 무한 루프나 누적 비용 임계 도달 시 즉시 작동을 멈추는 서킷 브레이커(Circuit Breaker)를 탑재해야 한다.
+- **의사결정 이력(Trace) 기록**: 에이전트가 왜 그런 판단을 내렸고 어떤 도구를 썼는지의 중간 실행 상태와 샌드박스 로그를 보존한다. 디버깅과 샘플링 검수에 필수적이며, Promptfoo, RAGAS 등의 자동 평가 도구(evals)를 적용하여 아키텍처 성능 저하를 방지한다.
+- **보안 및 서킷 브레이커**: 프롬프트 인젝션 방어 시스템을 탑재하고, 에이전트가 코드 실행 도구를 사용할 경우 호스트 보호를 위해 `E2B`, `Modal Sandbox`, `Daytona` 같은 격리된 일시적 샌드박스 환경(ephemeral environments)을 의무화해야 한다. 무한 루프나 누적 비용 임계 도달 시 작동을 멈추는 서킷 브레이커(Circuit Breaker)를 결합한다.
 
 ---
 
@@ -125,3 +134,4 @@ LLM이 외부 시스템과 상호작용하도록 백엔드 함수 명세(API, DB
 - [[AI 에이전트 런타임 역할 맵]] — 실시간 에이전트 오케스트레이션 역할 정의
 - [[AI 코딩 에이전트 검증 전략]] — 코딩 전용 에이전트의 검증 루프 설계
 - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] — 실전 프레임워크 툴킷 분석
+- [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 에이전틱 AI 엔지니어 역량과 스택 로드맵

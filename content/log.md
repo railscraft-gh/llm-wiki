@@ -1,5 +1,34 @@
 # LLM Wiki Log
 
+## 2026-06-16 (Batch 2 — 집중력/생산성/심리학 지식 Ingest)
+
+### Ingest
+
+- 입력:
+  - `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`
+  - `raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md`
+- 생성:
+  - [[10,000피트 규칙 (10,000-Foot Rule)]]
+  - [[결과물 중심 생산성 스택]]
+  - [[지적 우월주의와 인지적 방어 기제]]
+- 수정:
+  - [[유기적 개인 지식 시스템]] (updated 2026-06-16 및 [[결과물 중심 생산성 스택]]과의 충돌 추가)
+  - [[성공을 결정하는 5가지 핵심 자질]] (updated 2026-06-16 및 [[지적 우월주의와 인지적 방어 기제]]와의 충돌 추가)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 교차 검증
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (월 구독료 $112, 일회성 $129, FAA 규정 121.542, 10,000피트 규칙 등 수치 출처 보존 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 작성된 3개 문서 모두 2개 이상의 관련 노트 교차 연결 완료)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 새로 생성한 문서와 수정한 기존 문서들의 정합성을 맞춰 frontmatter 및 links 정리 완료.
+
 ## 2026-06-16
 
 ### Ingest
