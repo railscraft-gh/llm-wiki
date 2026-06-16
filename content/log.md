@@ -1,9 +1,9 @@
 # LLM Wiki Log
- 
+
 ## 2026-06-16
- 
+
 ### Ingest
- 
+
 - 입력:
   - `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`
   - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
@@ -44,9 +44,9 @@
   - [[메시징 서버 스트레스 테스트 운영 원칙]] (보강 - 백엔드 면접 질문 20선 링크 보강)
 - index 업데이트: 완료
 - 남은 검토: 없음
- 
+
 ### Lint
- 
+
 - 실행 방식: 수동 교차 검증 및 checklist 대조
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
@@ -55,76 +55,15 @@
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
 - 조치: 수정한 위키 노트들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
- 
+
 ### 결정 기록
- 
+
 - 결정: 생성 및 핵심(core) 승격
 - 대상: [[에이전틱 AI 엔지니어 실무 로드맵]]
 - 근거: 2026년 기준 에이전트 엔지니어가 학습해야 할 의존성 그래프와 불필요한 스택 제거 등 최신 의사결정 프레임워크를 제공하므로 핵심 가이드 문서로 지정함.
 - 결정: 보강 및 핵심(core) 유지
 - 대상: [[AI Experience Architect]], [[AI 시대 디자인 시스템]], [[AI 에이전트 아키텍처 완전 가이드]], [[Harness Engineering]], [[Vibe Coding과 Agentic Engineering]]
-- 근거: 이번에 유입된 11개의 검증된 raw 자료를 통해 디자인의 크래프트 위기 대응, 에이전트의 샌드박스 실행, MCP 표준 조율, 시니어 코딩 패턴 등의 실천적이고 복리적인 지식을 기존 핵심 위키들에 결합하여 보강함.��강 수행.
-- 결정: 생성 및 핵심(core) 승격
-- 대상: [[에이전틱 AI 엔지니어 실무 로드맵]]
-- 근거: 2026년 기준 에이전트 엔지니어가 학습해야 할 의존성 그래프와 불필요한 스택 제거 등 최신 의사결정 프레임워크를 제공하므로 핵심 가이드 문서로 지정함.
-
-## 2026-06-16 (Batch 2 — 집중력/생산성/심리학 지식 Ingest)
-
-### Ingest
-
-- 입력:
-  - `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`
-  - `raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
-  - `raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md`
-- 생성:
-  - [[10,000피트 규칙 (10,000-Foot Rule)]]
-  - [[결과물 중심 생산성 스택]]
-  - [[지적 우월주의와 인지적 방어 기제]]
-- 수정:
-  - [[유기적 개인 지식 시스템]] (updated 2026-06-16 및 [[결과물 중심 생산성 스택]]과의 충돌 추가)
-  - [[성공을 결정하는 5가지 핵심 자질]] (updated 2026-06-16 및 [[지적 우월주의와 인지적 방어 기제]]와의 충돌 추가)
-- index 업데이트: 완료
-- 남은 검토: 없음
-
-### Lint
-
-- 실행 방식: 수동 교차 검증
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (월 구독료 $112, 일회성 $129, FAA 규정 121.542, 10,000피트 규칙 등 수치 출처 보존 완료)
-- 관련 노트 2개 미만 문서: 0개 (신규 작성된 3개 문서 모두 2개 이상의 관련 노트 교차 연결 완료)
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 새로 생성한 문서와 수정한 기존 문서들의 정합성을 맞춰 frontmatter 및 links 정리 완료.
-
-## 2026-06-16
-
-### Ingest
-
-- 입력:
-  - `raw/I will never walk into a backend interview without solving these 20 questions..md`
-  - `raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md`
-- 생성:
-  - [[백엔드 면접 질문 20선]]
-  - [[빅테크 아키텍처 10대 엔지니어링 논문]]
-- 수정:
-  - [[AI 엔지니어 필수 논문]] (updated 2026-06-16 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 링크 추가)
-  - [[SpaceX C 언어 기반 AI 인프라 전략]] (updated 2026-06-16 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 링크 추가)
-  - [[웹 서버와 배포 기초]] (updated 2026-06-16 및 [[백엔드 면접 질문 20선]] 링크 추가)
-  - [[메시징 서버 스트레스 테스트 운영 원칙]] (updated 2026-06-16 및 [[백엔드 면접 질문 20선]] 링크 추가)
-- index 업데이트: 완료
-- 남은 검토: 없음
-
-### Lint
-
-- 실행 방식: 수동 교차 검증
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (5,000만 개의 행, 5GB 대용량 파일, 40초 이상 소요 작업, 10대 논문 등의 수치 정보는 모두 raw 출처 명시 완료)
-- 관련 노트 2개 미만 문서: 0개 (새로 작성된 [[백엔드 면접 질문 20선]] 및 [[빅테크 아키텍처 10대 엔지니어링 논문]] 문서가 기존 문서들과 상호 링크를 맺음)
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 새로 생성한 문서와 수정한 기존 문서들의 정합성을 맞춰 frontmatter 및 links 정리 완료.
+- 근거: 이번에 유입된 11개의 검증된 raw 자료를 통해 디자인의 크래프트 위기 대응, 에이전트의 샌드박스 실행, MCP 표준 조율, 시니어 코딩 패턴 등의 실천적이고 복리적인 지식을 기존 핵심 위키들에 결합하여 보강함.
 
 ## 2026-06-14 (Final Reconciliation & Vault-wide Lint Audit)
 
