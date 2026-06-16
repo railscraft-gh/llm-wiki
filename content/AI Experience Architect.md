@@ -11,9 +11,16 @@ aliases:
   - AI 경험 아키텍트
   - AI Designer to Architect
 sources:
-  - From faster pencil to AI Experience Architect. a designer’s path
-  - UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
-  - Why senior UX designers are stru# AI Experience Architect
+  - "From faster pencil to AI Experience Architect. a designer’s path"
+  - "UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다"
+  - "Why senior UX designers are struggling in 2026"
+  - "raw/Design’s craft crisis. senior designers built it.md"
+  - "raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md"
+created: 2026-05-26
+updated: 2026-06-16
+---
+
+# AI Experience Architect
 
 ## 한 줄 정의
 
