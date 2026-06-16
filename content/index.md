@@ -8,7 +8,7 @@
 | [[Software 3.0]] | prompt와 context window가 프로그래밍 레버가 되는 패러다임을 설명한다. | evergreen | 2026-05-24 |
 | [[Jagged Intelligence]] | LLM이 검증 가능한 영역에서 강하고 그 외 영역에서 들쭉날쭉한 이유를 설명한다. | evergreen | 2026-05-14 |
 | [[Vibe Coding과 Agentic Engineering]] | AI로 빨리 만드는 경험과 책임 있는 엔지니어링을 구분한다. | evergreen | 2026-06-16 |
-| [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-14 |
+| [[AI 시대 디자인 시스템]] | AI 생성 UI가 평균적인 결과물로 수렴하지 않게 하는 디자인 맥락과 검증 기준을 정리한다. | evergreen | 2026-06-16 |
 | [[완전히 기계 읽기 가능한 디자인 시스템]] | 대규모 AI 에이전트 개발을 위한 6개 지식 레이어 구성 및 점진적 맥락 공개 아키텍처를 정리한다. | evergreen | 2026-06-14 |
 | [[DESIGN.md 워크플로우]] | Figma의 디자인 토큰 명세를 DESIGN.md로 고정하고 v0, Stitch, Claude Code를 체인화해 UI 격차 없이 구현하는 파이프라인을 다룬다. | evergreen | 2026-06-14 |
 | [[세계 모델]] | 물리 세계 예측 및 탐색이 지능의 본체라는 얀 르쿤의 관점과 JEPA, 공간 지능, 모라벡의 역설 등을 다룬다. | needs-review | 2026-06-09 |
@@ -52,6 +52,7 @@
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-06-16 | `raw/Design’s craft crisis. senior designers built it.md`<br>`raw/How top companies are using AI in their design workflows.md`<br>`raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md` | [[디자인의 크래프트 위기]] (신규), [[디자이너 생존 전략 (2026-2030)]] (신규), [[AI Experience Architect]] (보강/핵심), [[AI 시대 디자인 시스템]] (보강/핵심), [[UI UX 디자인 AI 워크플로우]] (보강), [[AI 디자인 팀 운영]] (보강) | done | [[log#2026-06-16-batch-4]] |
 | 2026-06-16 | `raw/7 Coding Patterns I Stole From Senior Engineers.md`<br>`raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`<br>`raw/Most Developers Are Solving the Wrong Problem.md` | [[시니어 엔지니어의 7가지 코딩 패턴]] (신규), [[에이전틱 AI 엔지니어 실무 로드맵]] (신규/핵심), [[개발자가 잘못된 문제를 해결하는 패턴]] (신규), [[AI 시대 소프트웨어 펀더멘탈]] (보강), [[AI 에이전트 아키텍처 완전 가이드]] (보강/핵심), [[Harness Engineering]] (보강/핵심), [[Vibe Coding과 Agentic Engineering]] (보강/핵심) | done | [[log#2026-06-16]] |
 | 2026-06-16 | `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`<br>`raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`<br>`raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md` | [[10,000피트 규칙 (10,000-Foot Rule)]] (신규), [[결과물 중심 생산성 스택]] (신규), [[지적 우월주의와 인지적 방어 기제]] (신규), [[유기적 개인 지식 시스템]] (보강), [[성공을 결정하는 5가지 핵심 자질]] (보강) | done | [[log#2026-06-16]] |
 | 2026-06-16 | `raw/I will never walk into a backend interview without solving these 20 questions..md`<br>`raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md` | [[백엔드 면접 질문 20선]] (신규), [[빅테크 아키텍처 10대 엔지니어링 논문]] (신규), [[AI 엔지니어 필수 논문]] (보강), [[SpaceX C 언어 기반 AI 인프라 전략]] (보강), [[웹 서버와 배포 기초]] (보강), [[메시징 서버 스트레스 테스트 운영 원칙]] (보강) | done | [[log#2026-06-16]] |
