@@ -1,5 +1,41 @@
 # LLM Wiki Log
 
+## 2026-06-16 (Batch 4 — 디자인 크래프트 위기 및 AI 실무 워크플로우 Ingest)
+
+### Ingest
+
+- 입력:
+  - `raw/Design’s craft crisis. senior designers built it.md`
+  - `raw/How top companies are using AI in their design workflows.md`
+  - `raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md`
+- 생성:
+  - [[디자인의 크래프트 위기]] (신규 개념 노트)
+  - [[디자이너 생존 전략 (2026-2030)]] (신규 생존 전략 워크플로우 노트)
+- 수정:
+  - [[AI Experience Architect]] (updated 2026-06-16, 비즈니스 레버 주도, 시스템적 취향, 의사결정 이력 기록 등 핵심 개념 보강)
+  - [[AI 시대 디자인 시스템]] (updated 2026-06-16, Atlassian 템플릿 전략 및 가이드라인, Tesco Figma MCP 연동, Taste as a System 개념 반영)
+  - [[UI UX 디자인 AI 워크플로우]] (updated 2026-06-16, Meta/Faire/Tesco 실무 사례 프로세스 통합, AI 오케스트레이터 및 의사결정 이력 포트폴리오 관리 가이드 보강)
+  - [[AI 디자인 팀 운영]] (updated 2026-06-16, Atlassian/Meta 지침 플레이북 정착 및 직무 융합 협업 모델 보강)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 교차 검증 및 checklist 대조
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (주니어 채용 50% 급감, IDEO 매출 $300M->$100M, CDO 영입 1건, WebAIM 100만 웹사이트 중 81% 저대비 텍스트, AI 디자인 위임 80-90% 등의 수치 검증 및 출처 기록 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 생성된 두 문서 [[디자인의 크래프트 위기]], [[디자이너 생존 전략 (2026-2030)]] 모두 2개 이상의 크로스링크 확보)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 생성 문서 및 수정한 핵심 문서들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
+
+### 결정 기록
+
+- 결정: 보강 및 핵심(core) 유지
+- 대상: [[AI Experience Architect]], [[AI 시대 디자인 시스템]]
+- 근거: 디자인의 크래프트 위기 분석과 2026-2030 디자이너 생존 전략, 그리고 Atlassian, Meta, Tesco 등의 글로벌 기업의 AI 실무 활용 프로세스를 기존 핵심 디자인 아키텍처 및 시스템에 연결하여 보강함.
+
 ## 2026-06-16 (Batch 3 — 에이전틱 엔지니어링 및 펀더멘탈 Ingest)
 
 ### Ingest
