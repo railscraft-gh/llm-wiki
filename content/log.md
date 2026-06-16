@@ -1,77 +1,69 @@
 # LLM Wiki Log
-
-## 2026-06-16 (Batch 4 — 디자인 크래프트 위기 및 AI 실무 워크플로우 Ingest)
-
+ 
+## 2026-06-16
+ 
 ### Ingest
-
+ 
 - 입력:
+  - `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`
+  - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
   - `raw/Design’s craft crisis. senior designers built it.md`
   - `raw/How top companies are using AI in their design workflows.md`
-  - `raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md`
-- 생성:
-  - [[디자인의 크래프트 위기]] (신규 개념 노트)
-  - [[디자이너 생존 전략 (2026-2030)]] (신규 생존 전략 워크플로우 노트)
-- 수정:
-  - [[AI Experience Architect]] (updated 2026-06-16, 비즈니스 레버 주도, 시스템적 취향, 의사결정 이력 기록 등 핵심 개념 보강)
-  - [[AI 시대 디자인 시스템]] (updated 2026-06-16, Atlassian 템플릿 전략 및 가이드라인, Tesco Figma MCP 연동, Taste as a System 개념 반영)
-  - [[UI UX 디자인 AI 워크플로우]] (updated 2026-06-16, Meta/Faire/Tesco 실무 사례 프로세스 통합, AI 오케스트레이터 및 의사결정 이력 포트폴리오 관리 가이드 보강)
-  - [[AI 디자인 팀 운영]] (updated 2026-06-16, Atlassian/Meta 지침 플레이북 정착 및 직무 융합 협업 모델 보강)
-- index 업데이트: 완료
-- 남은 검토: 없음
-
-### Lint
-
-- 실행 방식: 수동 교차 검증 및 checklist 대조
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (주니어 채용 50% 급감, IDEO 매출 $300M->$100M, CDO 영입 1건, WebAIM 100만 웹사이트 중 81% 저대비 텍스트, AI 디자인 위임 80-90% 등의 수치 검증 및 출처 기록 완료)
-- 관련 노트 2개 미만 문서: 0개 (신규 생성된 두 문서 [[디자인의 크래프트 위기]], [[디자이너 생존 전략 (2026-2030)]] 모두 2개 이상의 크로스링크 확보)
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 신규 생성 문서 및 수정한 핵심 문서들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
-
-### 결정 기록
-
-- 결정: 보강 및 핵심(core) 유지
-- 대상: [[AI Experience Architect]], [[AI 시대 디자인 시스템]]
-- 근거: 디자인의 크래프트 위기 분석과 2026-2030 디자이너 생존 전략, 그리고 Atlassian, Meta, Tesco 등의 글로벌 기업의 AI 실무 활용 프로세스를 기존 핵심 디자인 아키텍처 및 시스템에 연결하여 보강함.
-
-## 2026-06-16 (Batch 3 — 에이전틱 엔지니어링 및 펀더멘탈 Ingest)
-
-### Ingest
-
-- 입력:
-  - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
-  - `raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`
+  - `raw/I will never walk into a backend interview without solving these 20 questions..md`
   - `raw/Most Developers Are Solving the Wrong Problem.md`
+  - `raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md`
+  - `raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`
+  - `raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md`
+  - `raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md`
 - 생성:
-  - [[시니어 엔지니어의 7가지 코딩 패턴]]
-  - [[에이전틱 AI 엔지니어 실무 로드맵]]
-  - [[개발자가 잘못된 문제를 해결하는 패턴]]
+  - [[디자인의 크래프트 위기]] (신규 개념)
+  - [[디자이너 생존 전략 (2026-2030)]] (신규 워크플로우)
+  - [[시니어 엔지니어의 7가지 코딩 패턴]] (신규 개념)
+  - [[에이전틱 AI 엔지니어 실무 로드맵]] (신규 핵심 개념)
+  - [[개발자가 잘못된 문제를 해결하는 패턴]] (신규 개념)
+  - [[10,000피트 규칙 (10,000-Foot Rule)]] (신규 개념)
+  - [[결과물 중심 생산성 스택]] (신규 개념)
+  - [[지적 우월주의와 인지적 방어 기제]] (신규 개념)
+  - [[백엔드 면접 질문 20선]] (신규 개념)
+  - [[빅테크 아키텍처 10대 엔지니어링 논문]] (신규 개념)
 - 수정:
-  - [[AI 시대 소프트웨어 펀더멘탈]] (updated 2026-06-16 및 [[시니어 엔지니어의 7가지 코딩 패턴]], [[개발자가 잘못된 문제를 해결하는 패턴]] 링크 및 요점 보강)
-  - [[AI 에이전트 아키텍처 완전 가이드]] (updated 2026-06-16, core 유지, 2026 에이전틱 엔지니어 4대 계층 및 LangGraph 표준화, sqlite-vec/Qdrant 스택 반영 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
-  - [[Harness Engineering]] (updated 2026-06-16, MCP 연동 및 E2B/Modal/Daytona 샌드박스 보안 가드레일 규칙 추가 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
-  - [[Vibe Coding과 Agentic Engineering]] (updated 2026-06-16, 프롬프트 엔지니어링 강의/transformer 수학 생략 논점 및 시스템 엔지니어링 경계 보강 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
+  - [[AI Experience Architect]] (보강/핵심 - 비즈니스 레버 주도, 시스템적 취향, 의사결정 이력 기록 등 보강)
+  - [[AI 시대 디자인 시스템]] (보강/핵심 - Atlassian 템플릿 전략, Tesco Figma MCP 연동, Taste as a System 반영)
+  - [[UI UX 디자인 AI 워크플로우]] (보강 - Meta/Faire/Tesco 실무 사례 프로세스 통합 및 의사결정 포트폴리오 관리 보강)
+  - [[AI 디자인 팀 운영]] (보강 - 지침 플레이북 정착 및 직무 융합 협업 모델 보강)
+  - [[AI 시대 소프트웨어 펀더멘탈]] (보강 - 시니어 코딩 패턴 7선 및 문제 정의 6단계 진단 프로세스 추가)
+  - [[AI 에이전트 아키텍처 완전 가이드]] (보강/핵심 - 2026 에이전틱 엔지니어 4대 계층, sqlite-vec/Qdrant 스택 및 E2B 샌드박스 보강)
+  - [[Harness Engineering]] (보강/핵심 - MCP 연동 및 E2B/Modal/Daytona 샌드박스 보안 규칙 보강)
+  - [[Vibe Coding과 Agentic Engineering]] (보강/핵심 - 시스템 엔지니어링 가드레일 구축 및 2026 로드맵 논점 보강)
+  - [[유기적 개인 지식 시스템]] (보강 - 도구 오버헤드 비판 및 결과물 중심 스택 대조 보강)
+  - [[성공을 결정하는 5가지 핵심 자질]] (보강 - 지적 우월주의 심리와 성장 마인드셋 충돌 보강)
+  - [[AI 엔지니어 필수 논문]] (보강 - 빅테크 아키텍처 10대 엔지니어링 논문 링크 보강)
+  - [[SpaceX C 언어 기반 AI 인프라 전략]] (보강 - 빅테크 아키텍처 10대 엔지니어링 논문 링크 보강)
+  - [[웹 서버와 배포 기초]] (보강 - 백엔드 면접 질문 20선 링크 보강)
+  - [[메시징 서버 스트레스 테스트 운영 원칙]] (보강 - 백엔드 면접 질문 20선 링크 보강)
 - index 업데이트: 완료
 - 남은 검토: 없음
-
+ 
 ### Lint
-
+ 
 - 실행 방식: 수동 교차 검증 및 checklist 대조
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (7가지 코딩 패턴, 2026년 5월 채용공고의 27가지 기술, sqlite-vec, Qdrant, Turbopuffer, pgvector, E2B/Modal/Daytona 샌드박스 등 수치 및 고유기술 출처 보존 완료)
-- 관련 노트 2개 미만 문서: 0개 (신규 생성된 3개 문서 모두 2개 이상의 상호 연관 노트 크로스링크 구축 완료)
+- 출처 없는 수치 문장: 0개 (주니어 채용 50% 급감, IDEO 매출 $300M->$100M, CDO 영입 1건, WebAIM 81%, AI 디자인 80-90% 자동화, sqlite-vec, E2B 샌드박스, 구독료 $112 및 일회성 $129, 10,000피트 FAA 규정, 5,000만 행 및 5GB 대용량 파일 등 모든 신규 개념 내 수치 검증 및 출처 명기 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 생성된 10개 문서 모두 2개 이상의 관련 노트 크로스링크 구축 완료)
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 신규 생성한 문서 및 수정한 핵심 문서들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
-
+- 조치: 수정한 위키 노트들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
+ 
 ### 결정 기록
-
+ 
+- 결정: 생성 및 핵심(core) 승격
+- 대상: [[에이전틱 AI 엔지니어 실무 로드맵]]
+- 근거: 2026년 기준 에이전트 엔지니어가 학습해야 할 의존성 그래프와 불필요한 스택 제거 등 최신 의사결정 프레임워크를 제공하므로 핵심 가이드 문서로 지정함.
 - 결정: 보강 및 핵심(core) 유지
-- 대상: [[AI 에이전트 아키텍처 완전 가이드]], [[Harness Engineering]], [[Vibe Coding과 Agentic Engineering]]
-- 근거: 2026 에이전틱 AI 엔지니어 실무 로드맵의 4대 계층 10대 기술, 오케스트레이션(LangGraph), 샌드박스(E2B), MCP 프로토콜 표준, 그리고 7가지 시니어 코딩 패턴 및 문제해결 진단 프로세스를 기존 핵심 아키텍처 및 하네스 설계 가이드에 밀접하게 연결하여 복리적 보강 수행.
+- 대상: [[AI Experience Architect]], [[AI 시대 디자인 시스템]], [[AI 에이전트 아키텍처 완전 가이드]], [[Harness Engineering]], [[Vibe Coding과 Agentic Engineering]]
+- 근거: 이번에 유입된 11개의 검증된 raw 자료를 통해 디자인의 크래프트 위기 대응, 에이전트의 샌드박스 실행, MCP 표준 조율, 시니어 코딩 패턴 등의 실천적이고 복리적인 지식을 기존 핵심 위키들에 결합하여 보강함.��강 수행.
 - 결정: 생성 및 핵심(core) 승격
 - 대상: [[에이전틱 AI 엔지니어 실무 로드맵]]
 - 근거: 2026년 기준 에이전트 엔지니어가 학습해야 할 의존성 그래프와 불필요한 스택 제거 등 최신 의사결정 프레임워크를 제공하므로 핵심 가이드 문서로 지정함.
