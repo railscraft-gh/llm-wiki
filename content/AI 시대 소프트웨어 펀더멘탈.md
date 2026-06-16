@@ -13,8 +13,10 @@ sources:
   - Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals
   - 아무도 AI를 배우고 싶어 하지 않는다
   - 오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다
+  - raw/7 Coding Patterns I Stole From Senior Engineers.md
+  - raw/Most Developers Are Solving the Wrong Problem.md
 created: 2026-05-09
-updated: 2026-06-14
+updated: 2026-06-16
 ---
 
 # AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
@@ -29,6 +31,8 @@ AI 시대일수록 좋은 설계와 공통 이해를 바탕으로 한 소프트�
 - **코드는 싸지 않다**: Matt Pocock은 자신의 2026년 4월 AI Engineer Conference 강연에서 "Code is not cheap. Bad code is the most expensive it's ever been"이라고 강조했다. 코드베이스를 수정하기 어렵다면 AI가 제안하는 코드를 온전히 흡수할 수 없다. AI는 아키텍처 결함을 해결하기는커녕 엔트로피를 더 빠르게 증폭시킨다. AI는 아키텍처라는 배수기(multiplier) 위에서 작동하기에, 좋은 구조는 가치를 복리로 만들고 나쁜 구조는 부패를 가속한다.
 - **버그의 폭발적 증가**: GitClear의 *2025 code quality study*에 따르면, AI가 공동 작성한 PR은 사람만 작성한 PR보다 이슈(버그)가 1.7배 더 많이 발생한다. 복사·붙여넣기된 코드의 비중은 2021년 8.3%에서 2024년 12.3%로 크게 늘었다. 한편 AI는 현재 GitHub 전체 코드의 41%를 작성하고 있으며, 유료 Copilot 구독자는 470만 명에 이른다.
 - **durable skill vs perishable skill**: 프레임워크나 API 구현 세부사항처럼 유통기한이 2~3년인 perishable skill(React hooks, 특정 에이전트 API 등)에 매몰되지 않고, 시스템 디버깅 능력, 아키텍처 판단력, 코드베이스 분석력 등 반감기가 수십 년에 달하는 durable skill을 훈련해야 [[Competence Debt]]을 피할 수 있다. 무료 온라인 강의(MOOC)의 완주율은 3%~10% 미만에 불과하며, 가트너(Gartner)에 따르면 기업 교육의 45%가 실무에 쓰이지 않는 'scrap learning'으로 낭비된다.
+- **시니어의 7가지 펀더멘탈 패턴**: AI가 코드를 빠르게 배출할수록 동료와 AI간 혼선을 줄이고 복잡성을 통제하기 위해, 조기 반환(`Return Early`), 외부 오염을 차단하는 완충 경계(`Boundary`), 무효 상태 차단, 판단과 실행의 분리 등의 펀더멘탈 패턴을 적용하여 동료의 놀라움을 예방해야 한다.
+- **잘못된 문제 진단과 소유권**: 성능 측정 없는 렌더링 최적화 맹신, API 스펙 파탄을 UI 방어 코드로 해결하는 등 잘못된 문제를 해결하는 안티패턴을 경계해야 한다. 소유권이 명확하지 않은 아키텍처는 거추장스러울 뿐이며, 처방 전 6단계의 철저한 근원 레이어 역추적 진단이 선행되어야 한다.
 
 ## 상세
 
@@ -103,4 +107,6 @@ AI 시대일수록 좋은 설계와 공통 이해를 바탕으로 한 소프트�
 - [[AI Slop]]
 - [[Competence Debt]]
 - [[에이전트 코딩 4원칙]]
+- [[시니어 엔지니어의 7가지 코딩 패턴]]
+- [[개발자가 잘못된 문제를 해결하는 패턴]]
 
