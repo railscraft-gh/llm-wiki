@@ -1,5 +1,45 @@
 # LLM Wiki Log
 
+## 2026-06-16 (Batch 3 — 에이전틱 엔지니어링 및 펀더멘탈 Ingest)
+
+### Ingest
+
+- 입력:
+  - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
+  - `raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`
+  - `raw/Most Developers Are Solving the Wrong Problem.md`
+- 생성:
+  - [[시니어 엔지니어의 7가지 코딩 패턴]]
+  - [[에이전틱 AI 엔지니어 실무 로드맵]]
+  - [[개발자가 잘못된 문제를 해결하는 패턴]]
+- 수정:
+  - [[AI 시대 소프트웨어 펀더멘탈]] (updated 2026-06-16 및 [[시니어 엔지니어의 7가지 코딩 패턴]], [[개발자가 잘못된 문제를 해결하는 패턴]] 링크 및 요점 보강)
+  - [[AI 에이전트 아키텍처 완전 가이드]] (updated 2026-06-16, core 유지, 2026 에이전틱 엔지니어 4대 계층 및 LangGraph 표준화, sqlite-vec/Qdrant 스택 반영 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
+  - [[Harness Engineering]] (updated 2026-06-16, MCP 연동 및 E2B/Modal/Daytona 샌드박스 보안 가드레일 규칙 추가 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
+  - [[Vibe Coding과 Agentic Engineering]] (updated 2026-06-16, 프롬프트 엔지니어링 강의/transformer 수학 생략 논점 및 시스템 엔지니어링 경계 보강 및 [[에이전틱 AI 엔지니어 실무 로드맵]] 관련 링크 보강)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 교차 검증 및 checklist 대조
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (7가지 코딩 패턴, 2026년 5월 채용공고의 27가지 기술, sqlite-vec, Qdrant, Turbopuffer, pgvector, E2B/Modal/Daytona 샌드박스 등 수치 및 고유기술 출처 보존 완료)
+- 관련 노트 2개 미만 문서: 0개 (신규 생성된 3개 문서 모두 2개 이상의 상호 연관 노트 크로스링크 구축 완료)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 신규 생성한 문서 및 수정한 핵심 문서들의 frontmatter updated 날짜를 2026-06-16으로 갱신하고 index.md 정합성을 맞춤.
+
+### 결정 기록
+
+- 결정: 보강 및 핵심(core) 유지
+- 대상: [[AI 에이전트 아키텍처 완전 가이드]], [[Harness Engineering]], [[Vibe Coding과 Agentic Engineering]]
+- 근거: 2026 에이전틱 AI 엔지니어 실무 로드맵의 4대 계층 10대 기술, 오케스트레이션(LangGraph), 샌드박스(E2B), MCP 프로토콜 표준, 그리고 7가지 시니어 코딩 패턴 및 문제해결 진단 프로세스를 기존 핵심 아키텍처 및 하네스 설계 가이드에 밀접하게 연결하여 복리적 보강 수행.
+- 결정: 생성 및 핵심(core) 승격
+- 대상: [[에이전틱 AI 엔지니어 실무 로드맵]]
+- 근거: 2026년 기준 에이전트 엔지니어가 학습해야 할 의존성 그래프와 불필요한 스택 제거 등 최신 의사결정 프레임워크를 제공하므로 핵심 가이드 문서로 지정함.
+
 ## 2026-06-16 (Batch 2 — 집중력/생산성/심리학 지식 Ingest)
 
 ### Ingest
