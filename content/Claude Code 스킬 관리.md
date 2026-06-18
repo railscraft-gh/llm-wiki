@@ -79,4 +79,5 @@ ls ~/.claude/skills/
 *   [[Harness Engineering]]
 *   [[Model Context Protocol]]
 *   [[Claude Code 세션 운영 명령어]]
+*   [[Cursor Superpowers 플러그인]]
 
