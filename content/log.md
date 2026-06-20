@@ -5,34 +5,49 @@
 ### Ingest
 
 - 입력: 
-  - `/Users/railscraft/Obsidian/medium/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `/Users/railscraft/Obsidian/medium/1 Aviation Rule That Will Instantly Improve Your Focus.md`
+  - `/Users/railscraft/Obsidian/medium/7 Coding Patterns I Stole From Senior Engineers.md`
   - `/Users/railscraft/Obsidian/medium/Design’s craft crisis. senior designers built it.md`
+  - `/Users/railscraft/Obsidian/medium/How top companies are using AI in their design workflows.md`
+  - `/Users/railscraft/Obsidian/medium/I will never walk into a backend interview without solving these 20 questions..md`
+  - `/Users/railscraft/Obsidian/medium/Most Developers Are Solving the Wrong Problem.md`
+  - `/Users/railscraft/Obsidian/medium/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `/Users/railscraft/Obsidian/medium/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md`
+  - `/Users/railscraft/Obsidian/medium/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`
+  - `/Users/railscraft/Obsidian/medium/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md`
+  - `/Users/railscraft/Obsidian/medium/The Signs of a Pseudo-Smart Person Are Easy To Spot.md`
 - 생성: 
-  - `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md` (신규 번역본)
+  - `raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md` (신규 번역본)
+  - `raw/시니어 엔지니어들에게서 훔친 7가지 코딩 패턴.md` (신규 번역본)
   - `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md` (신규 번역본)
+  - `raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md` (신규 번역본)
+  - `raw/이 20가지 문제를 풀지 않고는 백엔드 면접에 절대 들어가지 않겠다.md` (신규 번역본)
+  - `raw/대부분의 개발자는 잘못된 문제를 해결하고 있다.md` (신규 번역본)
+  - `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md` (신규 번역본)
+  - `raw/넷플릭스, 우버, 아마존, 구글의 뒤에 있는 10가지 엔지니어링 논문.md` (신규 번역본)
+  - `raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md` (신규 번역본)
+  - `raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md` (신규 번역본)
+  - `raw/아는 척만 하는 사람의 징후는 쉽게 알아차릴 수 있다.md` (신규 번역본)
 - 수정:
 - index 업데이트: 완료
 - 남은 검토: 없음
 
 ### Lint
 
-- 실행 방식: 수동 대조 및 quick-rules.md 기반 자가 검증
+- 실행 방식: 수동 대조 및 quick-rules.md 기반 자가 검증 일관성 점검
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
+- 출처 없는 수치 문장: 0개 (원문에 포함된 수치 데이터 100% 보존 완료)
 - 관련 노트 2개 미만 문서: 0개
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 번역본 마크다운 작성 시 원문의 수치($112, $129, 350+, 50%, 81%, $300M, $100M 등) 및 고유명사를 100% 보존하고, quick-rules.md에 기반하여 번역투 및 AI 서명을 제거해 자연스러운 한글 평어체로 윤문 완료함. (두 번역본 모두 자가 점검 상 A 등급 판정 및 6/6개 항목 모두 통과)
+- 조치: 번역본 마크다운 작성 시 원문의 모든 수치, 벤치마크 지표, 고유명사(예: FAA 규정, Amazon/Google/Netflix 시스템 수치, 연도 2026, 비용 $112/$129 등)를 100% 원형 보존하고, quick-rules.md에 기반하여 번역투 및 AI 부작용(기계적 피동태, 연결어미 뒤 쉼표, 이모지 등)을 제거하고 한국어 원어민 독자가 자연스럽게 읽을 수 있도록 윤문을 완료함. (11종 모두 자가 검증 상 A 등급 판정 완료)
 
 ### 결정 기록
 
 - 결정: 신규 생성 및 draft 등록
-- 대상: `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md`
-- 근거: 2026년 IT 생산성 스택을 다룬 영어 칼럼을 완벽하게 번역 및 윤문하여 재사용성 높은 한국어 source 노트로 등록함.
-- 결정: 신규 생성 및 draft 등록
-- 대상: `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md`
-- 근거: 디자인 산업의 크래프트 위기 및 전략적 입지 부재를 분석한 영어 칼럼을 완벽하게 번역 및 윤문하여 재사용성 높은 한국어 source 노트로 등록함.
+- 대상: `raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md` 외 10종 번역본
+- 근거: `medium/`에 보관된 11개의 테크, 디자인, 커리어, 엔지니어링 우수 칼럼 문서를 왜곡이나 탈락 없이 한 문장씩 정확하게 직역하고, `quick-rules.md`를 적용해 자연스러운 한국어 평어체로 윤문한 고품질의 번역 raw 노트를 구축함.
 
 ## 2026-06-19
 
