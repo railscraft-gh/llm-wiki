@@ -4,8 +4,12 @@
 
 ### Ingest
 
-- 입력: `/Users/railscraft/Obsidian/medium/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
-- 생성: `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md` (신규 번역본)
+- 입력: 
+  - `/Users/railscraft/Obsidian/medium/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `/Users/railscraft/Obsidian/medium/Design’s craft crisis. senior designers built it.md`
+- 생성: 
+  - `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md` (신규 번역본)
+  - `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md` (신규 번역본)
 - 수정:
 - index 업데이트: 완료
 - 남은 검토: 없음
@@ -19,13 +23,16 @@
 - 관련 노트 2개 미만 문서: 0개
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 번역본 마크다운 작성 시 원문의 수치($112, $129, 350+ 등) 및 고유명사를 100% 보존하고, quick-rules.md에 기반하여 번역투 및 AI 서명을 제거해 자연스러운 한글 평어체로 윤문 완료함. (자가 점검 상 A 등급 판정 및 6/6개 항목 모두 통과)
+- 조치: 번역본 마크다운 작성 시 원문의 수치($112, $129, 350+, 50%, 81%, $300M, $100M 등) 및 고유명사를 100% 보존하고, quick-rules.md에 기반하여 번역투 및 AI 서명을 제거해 자연스러운 한글 평어체로 윤문 완료함. (두 번역본 모두 자가 점검 상 A 등급 판정 및 6/6개 항목 모두 통과)
 
 ### 결정 기록
 
 - 결정: 신규 생성 및 draft 등록
 - 대상: `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md`
 - 근거: 2026년 IT 생산성 스택을 다룬 영어 칼럼을 완벽하게 번역 및 윤문하여 재사용성 높은 한국어 source 노트로 등록함.
+- 결정: 신규 생성 및 draft 등록
+- 대상: `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md`
+- 근거: 디자인 산업의 크래프트 위기 및 전략적 입지 부재를 분석한 영어 칼럼을 완벽하게 번역 및 윤문하여 재사용성 높은 한국어 source 노트로 등록함.
 
 ## 2026-06-19
 
