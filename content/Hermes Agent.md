@@ -29,23 +29,22 @@ sources:
 - raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
 - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
 - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
 status: evergreen
 tags:
 - llm
 - agent
 - open-source
 type: tool
-updated: '2026-06-22'
+updated: 2026-06-22
 ---
 
 # Hermes Agent
 
 ## 한 줄 정의
-
-Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학습하고 진화시킬 수 있는 오픈소스 AI 에이전트 프레임워크이다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법)
+Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학습하고 진화시킬 수 있는 오픈소스 AI 에이전트 프레임워크이다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko)
 
 ## 핵심 요지
-
 - **자동화된 기술 학습(Skill-Learning Automated)**: 수행한 작업 단계를 기술(skill)로 자동 저장하고 스스로 다듬어 재사용한다.
 - **3층 구조 메모리**: 단기(대화 맥락), 장기(선호도), 기술(스킬)로 메모리를 관리하며 SQLite FTS5 기반 과거 대화 검색을 지원한다.
 - **멀티 플랫폼 공유**: Telegram, Discord, Slack 등 12개 채널을 연동할 수 있고 채널 간 메모리가 통합 공유된다.
@@ -54,7 +53,7 @@ Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학
 ## 상세
 
 ### 1. 자동화된 기술 학습 (Skill-Learning Automated)
-인간이 수동으로 기술을 작성해야 하는 [[OpenClaw]]와 달리, Hermes Agent는 작업을 수행하면서 이를 기술로 저장하고 실행 과정에서 비효율적이거나 낡은 부분을 스스로 수정(Self-improvement)해 나간다.
+인간이 수동으로 기술을 작성해야 하는 [[OpenClaw]]와 달리, Hermes Agent는 작업을 수행하면서 이를 기술로 저장하고 실행 과정에서 비효율적이거나 낡은 부분을 스스로 수정(Self-improvement)해 나간다. 예를 들어, 사용자가 "Docker를 사용하여 서비스를 배포해줘"라고 요청하면, 배포 과정을 한 번 수행한 후 그 절차를 재사용 가능한 기술 파일로 저장하여 차후 동종 작업에서 속도와 정확도를 향상시킨다.
 
 ### 2. 메모리 3층 구조와 세션 검색
 AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 레이어로 정보를 축적한다.
@@ -64,29 +63,36 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 
 ### 3. 로컬 셋업 및 Ollama 연동
 - **설치**: `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash` 명령어로 설치 마법사를 시작한다.
-- **마이그레이션**: Nous Research의 이전 에이전트 툴인 OpenClaw 데이터(`~/.openclaw`)를 자동으로 마이그레이션할 수 있다.
-- **Ollama 연동**: Base URL을 `http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 Microsoft의 200억 매개변수(20B) 모델인 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다. (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md) 로컬 호스팅 및 외부 추론 플랫폼 간의 상세 비교는 [[2026년 오픈소스 LLM 플랫폼 비교]]를 참고한다.
-- **로컬 구동 성능**: 로컬 단독 하드웨어 자원만 사용할 때 컨텍스트 제한 13.1만 토큰 중 약 9.23K 토큰을 사용하는 상태에서 단 2초 안팎의 응답 속도를 보여 쾌적한 추론 속도를 실감할 수 있다. (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
-- **주요 설정 지표**:
-  - `max iterations`: 도구 호출 최대 반복 횟수 (기본값: 60)
-  - `Tool Progress Display`: 실시간 수행 작업 시각화 정책 ('all')
-  - `Context Compression`: 메모리 한계 절반(0.5) 도달 시 이전 대화 요약
-  - `Session Reset Policy`: 비활성 1440분(24시간) 또는 오전 4시 도달 시 세션 리셋
+- **마이그레이션**: Nous Research의 이전 에이전트 툴인 OpenClaw 데이터(`~/.openclaw`)를 자동으로 마이그레이션할 수 있다. 필요 시 `openclaw-migration` 기술을 수동 구동한다.
+- **Ollama 연동**: Base URL을 `http://localhost:11434/v1`로 지정하여 Custom OpenAI-compatible endpoint를 구축하고, API 인증 없이 Microsoft의 200억 매개변수(20B) 모델인 `gpt-oss:20b` 같은 로컬 모델로 추론을 구성한다. 컨텍스트 길이는 자동 감지를 위해 비워둔다.
+- **모델 재설정**: 설정이 꼬이거나 다른 로컬 모델로 교체하고 싶을 경우 터미널에서 `hermes model`을 실행하여 로컬 엔드포인트를 수정한다.
+- **로컬 구동 성능**: 로컬 단독 하드웨어 자원만 사용할 때 컨텍스트 제한 13.1만 토큰 중 약 9.23K 토큰을 사용하는 상태에서 단 2초 안팎의 응답 속도를 보여 쾌적한 추론 속도를 실감할 수.
 
-### 4. OpenClaw와의 비교
-- **Hermes Agent 강점**: 개인 동반자(Personal Advisor) 특화, 자동 기술 자가 학습(자가 개선), 음성 지원(기본 Microsoft Edge TTS), 가벼운 리소스 점유(20MB 대 200MB 이상). (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
-- **OpenClaw 강점**: 멀티 에이전트 조정 및 채널 관리(Fleet 지휘관), 브라우저 자동화, 풍부한 플러그인 생태계와 대규모 커뮤니티의 검증된 실적(깃허브 스타 수 30.7만 개 대 Hermes Agent 6천 개 남짓). (출처: raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md)
+### 4. TurboQuant를 통한 로컬 M4 맥 성능 비약
+Hermes 에이전트 로컬 구동 시 핵심 병목인 KV 캐시의 메모리 사용량을 해결하기 위해 구글 리서치(ICLR 2026 채택, arXiv:2504.19874)의 **TurboQuant** 캐시 압축 기술을 백엔드에 장착할 수 있다.
+- **작동 원리**: 아웃라이어 이상치를 가우시안으로 고르게 펴주는 폴라퀀트(PolarQuant) 1단계 압축과 잔차 오차를 차원당 1비트로 보정하는 QJL(Quantised Johnson-Lindenstrauss) 2단계 결합 구조로 캐시 정밀도를 무손실 유지한다.
+- **정량적 메모리 효과**: 48GB Unified Memory를 갖춘 M4 Pro 기기에서 `arozanov/turboquant-mlx` 모듈을 연동해 Qwen2.5-32B-Instruct-4bit로 16K 컨텍스트를 돌릴 때, KV 캐시 공간이 4.2GB에서 897MB로 **4.6배** 급감한다. M4 Max 64GB 기기에서 Gemma 4 31B 128K 구동 시 KV 캐시를 13.3GB에서 4.9GB로 줄이며 피크 메모리를 75.2GB에서 65.8GB로 낮춘다.
+- **통합 생태계**: `mlx-vlm` v0.4.3에서 Gemma 4 출시 당일(day-zero) 지원과 TurboQuant 통합을 완료했으며, SwiftLM 라이브러리를 통해 네이티브 iOS 연동 및 Swift LLM 서버로도 활용된다.
 
-### 5. 오픈소스 내부 도구 플랫폼과의 연동
+### 5. 주요 설정 지표 (Agent Settings)
+- `max iterations`: 도구 호출 최대 반복 횟수 (기본값: 60)
+- `Tool Progress Display`: 실시간 수행 작업 시각화 정책 ('all')
+- `Context Compression`: 메모리 한계 절반(0.5) 도달 시 이전 대화 자동 요약
+- `Session Reset Policy`: 비활성 1440분(24시간) 또는 오전 4시 도달 시 세션 리셋 (대화 중 `/reset` 명령어로 즉시 초기화 가능)
+- **도구 및 브라우저**: DuckDuckGo 내장 검색, Edge TTS, Chromium Local Browser를 탑재한다.
+
+### 6. OpenClaw와의 비교
+- **Hermes Agent 강점**: 개인 동반자(Personal Advisor) 특화, 자동 기술 자가 학습(자가 개선), 음성 지원(기본 Microsoft Edge TTS), 가벼운 리소스 점유(20MB 대 200MB 이상).
+- **OpenClaw 강점**: 멀티 에이전트 조정 및 채널 관리(Fleet 지휘관), 브라우저 자동화, 풍부한 플러그인 생태계와 대규모 커뮤니티의 검증된 실적(깃허브 스타 수 30.7만 개 대 Hermes Agent 6천 개 남짓).
+
+### 7. 오픈소스 내부 도구 플랫폼과의 연동
 Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 플랫폼과 긴밀하게 연동된다. 자연어 지시를 통해 DB 스키마, UI 기획, 절차 프로세스를 구축하고 권한을 설정할 수 있으며, 이 노하우를 '스킬'로 저장해 재사용한다. 구체적인 동작 방식은 [[Hermes Agent와 오픈소스 내부 도구 연동]]을 참조한다.
 
 ## 예시
-
 - 사용자로부터 "Docker를 사용해 백엔드 서비스를 배포해줘"라는 명령을 받으면, 빌드 및 배포 명령과 설정을 실행한 후 해당 성공 흐름을 내부 `skills/` 디렉토리에 하나의 기술 코드로 저장한다. 이후 유사 요청 시 이를 로드해 활용한다.
 
 ## 충돌
-
-- **버전 미성숙에 따른 한계**: v0.2.0 기준 메모리 정확도가 완벽하지 않고 의도치 않은 기술 생성이 일어날 수 있어, 운영 중 실시간 수동 검증이 필요할 수 있다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법)
+- **버전 미성숙에 따른 한계**: v0.2.0 기준 메모리 정확도가 완벽하지 않고 의도치 않은 기술 생성이 일어날 수 있어, 운영 중 실시간 수동 검증이 필요할 수 있다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko)
 
 ## 관련 노트
 - [[OpenClaw]]
