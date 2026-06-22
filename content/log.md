@@ -8,40 +8,51 @@
   - `raw/바이브 코딩의 종말-ko.md`
   - `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`
   - `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
+  - `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md`
+  - `raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md`
+  - `raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md`
+  - `raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md`
   - `raw/시니어 엔지니어들에게서 훔친 7가지 코딩 패턴.md`
   - `raw/이 20가지 문제를 풀지 않고는 백엔드 면접에 절대 들어가지 않겠다.md`
   - `raw/2026년 나의 전체 생산성 스택. 실제로 사용하는 모든 도구, 지출 비용, 그리고 거부한 도구들.md`
   - `raw/넷플릭스, 우버, 아마존, 구글의 뒤에 있는 10가지 엔지니어링 논문.md`
-  - `raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md`
-- 생성: 없음
+  - `raw/Cursor에서 Superpowers 플러그인 쓰는 법 — 상세 정리-ko.md`
+  - `raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md`
+- 생성:
+  - [[Cursor Superpowers 플러그인]] (신규)
 - 수정:
-  - [[사양 기반 개발 (Spec Driven Development)]] (updated 날짜 갱신)
-  - [[Spec Kit]] (sources 갱신 및 updated 날짜 갱신)
-  - [[Hermes Agent]] (sources 갱신 및 updated 날짜 갱신)
-  - [[케이브맨]] (sources 갱신 및 updated 날짜 갱신)
-  - [[시니어 엔지니어의 7가지 코딩 패턴]] (FAA 10,000피트 비행 규칙 및 0-1 모드 적용, 7가지 패턴 구체화 및 sources 갱신)
-  - [[백엔드 면접 질문 20선]] (트랜잭션 중첩 함정, 분산 락 에지 케이스, 격리 수준 동시성 문제, 결제 미캡처 예외 처리 보강 및 sources 갱신)
-  - [[결과물 중심 생산성 스택]] (도구별 비용 및 스택 구체화, sources 갱신)
-  - [[빅테크 아키텍처 10대 엔지니어링 논문]] (10대 논문별 상세 기술 기법, 블록 사이즈, 정족수 수준 구체화 및 sources 갱신)
+  - [[사양 기반 개발 (Spec Driven Development)]] (6단계 SDD 생명주기 및 FAA Sterile Cockpit 10,000피트 룰 매핑 추가, sources 갱신 및 updated 날짜 갱신)
+  - [[Spec Kit]] (specify CLI 설치/init 및 10,000피트 룰 연결, sources 갱신 및 updated 날짜 갱신)
+  - [[Hermes Agent]] (Ollama 로컬 통합 매개변수 및 성능 벤치마크, TurboQuant MLX 극적 KV Cache 압축률 데이터 보강, 로컬 구동 성능 문맥 오타 수정, sources 갱신 및 updated 날짜 갱신)
+  - [[케이브맨]] (케이브맨 수동 모드 설정 및 토큰 절감 지표 추가, AI 신뢰 테스트 통과 기준(47 pass, 4 fail) 기록 보강, sources 갱신 및 updated 날짜 갱신)
+  - [[디자인의 크래프트 위기]] (4-salary role (Four-for-One) $130,000 연봉 단일 디자이너 통폐합 데이터 및 주니어 채용 50% 급감 등 정량 지표 추가, sources 갱신 및 updated 날짜 갱신)
+  - [[디자이너 생존 전략 (2026-2030)]] (4-salary role 현상에 대응하는 AI 협업 프로토타이핑 및 디자인 스택, 리서치/시스템 디자이너 타이틀 융합 서술 추가, sources 갱신 및 updated 날짜 갱신)
+  - [[AI Experience Architect]] (Figma variables 3단계 설계, 7단계 업스트림 워크플로우, CSS aesthetics rule 추가, core: true 유지 및 sources 갱신, updated 날짜 갱신)
+  - [[AI 시대 디자인 시스템]] (앤트로픽의 30줄 CSS Aesthetics Rule 및 components token 매핑, 6대 검토 게이트 체크리스트 추가, core: true 유지 및 sources 갱신, updated 날짜 갱신)
+  - [[시니어 엔지니어의 7가지 코딩 패턴]] (1981년 FAA 제정 10,000피트 비행 규칙 및 0-1 주의력 관리 모델 결합 보강, sources 갱신 및 updated 날짜 갱신)
+  - [[백엔드 면접 질문 20선]] (트랜잭션 중첩 예외 롤백 함정, 분산 락 펜싱 토큰, 격리 수준별 쓰기 스큐, 결제 미캡처 예외 처리 보강, sources 갱신 및 updated 날짜 갱신)
+  - [[결과물 중심 생산성 스택]] (도구별 지출 비용 월 $112, 일시불 $129 및 Notion, Obsidian 등 도구 탈락 사유 구체화, sources 갱신 및 updated 날짜 갱신)
+  - [[빅테크 아키텍처 10대 엔지니어링 논문]] (HDFS 128MB 블록 규칙, Gossip Protocol O(log N) 라운드 전파, Cassandra Tunable Consistency 보강, sources 갱신 및 updated 날짜 갱신)
+  - [[Claude Code 스킬 관리]] (plugin marketplace add/install 명령어 및 샌드박스 격리 E2B 환경 설정 명령어 추가, CLAUDE.md 제약 사항(2,500 tokens) 추가, sources 갱신 및 updated 날짜 갱신)
 - index 업데이트: 완료
-- 남은 검토: 없음
+- 남은 검토: 없음 (모든 파일 인코딩 오염 해결 및 13개 raw 파일 대응 위키 노트들의 갱신 완료)
 
 ### Lint
 
 - 실행 방식: `audit_wiki.py` 정적 점검 및 수동 정밀 점검
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개 (FAA 10,000피트 규칙, 결제 멱등성 2단계, 분산 락 펜싱 토큰, 생산성 스택 월 $112 및 일시불 $129, HDFS 128MB 블록 및 Gossip O(log N) 라운드 등 정량 정보 원형 일치 검증 완료)
+- 출처 없는 수치 문장: 0개 (M4 Pro KV Cache 압축 4.2GB->897MB, M4 Max 13.3GB->4.9GB, 주니어 채용 50% 급감, IDEO 매출 $300M->$100M, 4-salary role $130,000, WebAIM 81%, FAA 10,000피트, 생산성 스택 월 $112 및 일시불 $129, HDFS 128MB 블록 및 Gossip O(log N) 라운드, CLAUDE.md 2,500 tokens 제약 등 정량 정보 원형 일치 검증 완료)
 - 관련 노트 2개 미만 문서: 0개
 - 고아 페이지: 0개
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 8개 raw 파일과 대응되는 위키 노트들의 동기화 정합성을 완료하고, updated 날짜 및 sources 목록에 한국어 번역본 raw 경로를 매핑하여 위키의 무결성을 확보함. `audit_wiki.py` 실행결과 PASS 검증 완료.
+- 조치: 13개 raw 파일과 대응되는 위키 노트들의 동기화 정합성을 완료하고, updated 날짜 및 sources 목록에 한국어 번역본 raw 경로를 매핑하여 위키의 무결성을 확보함. `audit_wiki.py` 실행결과 PASS 검증 완료.
 
 ### 결정 기록
 
-- 결정: 보강 및 유지
-- 대상: [[사양 기반 개발 (Spec Driven Development)]], [[Spec Kit]], [[Hermes Agent]], [[케이브맨]], [[시니어 엔지니어의 7가지 코딩 패턴]], [[백엔드 면접 질문 20선]], [[결과물 중심 생산성 스택]], [[빅테크 아키텍처 10대 엔지니어링 논문]]
-- 근거: 신규 유입 및 갱신된 raw 자료의 핵심 정보와 세부 수치가 위키 노트들에 완벽하게 보강되었으며, sources를 보다 정교하고 명확한 로컬 경로로 정비하기 위한 메타데이터 최신화를 수행함.
+- 결정: 보강 및 생성, 상태 유지
+- 대상: [[사양 기반 개발 (Spec Driven Development)]], [[Spec Kit]], [[Hermes Agent]], [[케이브맨]], [[디자인의 크래프트 위기]], [[디자이너 생존 전략 (2026-2030)]], [[AI Experience Architect]], [[AI 시대 디자인 시스템]], [[시니어 엔지니어의 7가지 코딩 패턴]], [[백엔드 면접 질문 20선]], [[결과물 중심 생산성 스택]], [[빅테크 아키텍처 10대 엔지니어링 논문]], [[Cursor Superpowers 플러그인]], [[Claude Code 스킬 관리]]
+- 근거: 오늘 처리된 13개 raw 파일에 대한 핵심 벤치마크 및 정량적 수치를 누락 없이 연동하고, FAA 10,000피트 Sterile Cockpit Rule 연계, 앤트로픽 30줄 CSS aesthetics rule, E2B sandbox 구성 요건 등을 반영하여 위키 노트를 정밀화함. 또한 audit 린터를 실행하여 vault 무결성 검증을 마침.
 
 ## 2026-06-21
 
