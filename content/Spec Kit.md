@@ -10,10 +10,10 @@ tags:
 aliases:
   - 스펙 킷
 sources:
-  - 바이브 코딩의 종말
+  - raw/바이브 코딩의 종말-ko.md
   - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
 created: 2026-06-09
-updated: 2026-06-11
+updated: 2026-06-22
 ---
 
 # Spec Kit

@@ -10,11 +10,11 @@ aliases:
   - 헤르메스 에이전트
   - Hermes 에이전트
 sources:
-  - Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
+  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
   - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
   - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
 created: 2026-06-09
-updated: 2026-06-10
+updated: 2026-06-22
 ---
 
 # Hermes Agent
