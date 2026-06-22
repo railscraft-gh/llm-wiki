@@ -46,7 +46,9 @@ tags:
 - reinforcement-learning
 type: concept
 updated: '2026-06-22'
----# SpaceX C 언어 기반 AI 인프라 전략
+---
+
+# SpaceX C 언어 기반 AI 인프라 전략
 
 ## 한 줄 정의
 
