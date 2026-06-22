@@ -28,7 +28,9 @@ tags:
 - intelligence
 type: concept
 updated: '2026-06-22'
----# AMI Labs
+---
+
+# AMI Labs
 
 ## 한 줄 정의
 

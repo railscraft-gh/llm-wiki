@@ -22,7 +22,9 @@ tags:
 - test-time-compute
 type: concept
 updated: '2026-06-22'
----# Reasoning Models
+---
+
+# Reasoning Models
 
 ## 한 줄 정의
 

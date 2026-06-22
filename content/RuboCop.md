@@ -16,7 +16,9 @@ tags:
 - verification
 type: tool
 updated: '2026-06-22'
----# RuboCop
+---
+
+# RuboCop
 
 ## 한 줄 정의
 

@@ -13,7 +13,9 @@ tags:
 - sandbox
 type: tool
 updated: '2026-06-22'
----# Context Mode
+---
+
+# Context Mode
 
 ## 한 줄 정의
 

@@ -78,7 +78,9 @@ tags:
 - context-engineering
 type: concept
 updated: '2026-06-22'
----# RAG 아키텍처 선택
+---
+
+# RAG 아키텍처 선택
 
 ## 한 줄 정의
 RAG 아키텍처 선택은 데이터의 구조적 특성(사실 검색, 관계 추론, 계층형 문서)과 시스템 요구사항에 부합하도록 Vector RAG, GraphRAG, 그리고 가벼운 Vectorless RAG를 포함한 9가지 핵심 디자인 패턴 중 최적의 검색 및 컨텍스트 엔지니어링 설계를 채택하는 의사결정 프레임이다.

@@ -100,7 +100,9 @@ tags:
 - orchestration
 type: concept
 updated: '2026-06-22'
----# Agent Harness
+---
+
+# Agent Harness
 
 ## 한 줄 정의
 Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바꾸기 위해 모델 바깥에서 상태, 도구, 검증, 복구, 안전을 관리하는 실행 인프라다.

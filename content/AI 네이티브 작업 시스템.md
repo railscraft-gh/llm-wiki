@@ -26,7 +26,9 @@ tags:
 - design
 type: concept
 updated: '2026-06-22'
----# AI 네이티브 작업 시스템
+---
+
+# AI 네이티브 작업 시스템
 
 ## 한 줄 정의
 

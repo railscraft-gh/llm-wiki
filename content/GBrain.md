@@ -24,7 +24,9 @@ tags:
 - rag
 type: tool
 updated: '2026-06-22'
----# GBrain
+---
+
+# GBrain
 
 ## 한 줄 정의
 GBrain은 와이콤비네이터(Y Combinator)의 개리 탄(Garry Tan) 대표가 공개한 오픈소스 에이전트 장기 기억(Long-term Memory) 시스템으로, 마크다운 파일을 기반으로 지식 그래프를 자동 구축하고 이를 MCP를 통해 에이전트에 영구 메모리로 공급하는 실행 인프라다.

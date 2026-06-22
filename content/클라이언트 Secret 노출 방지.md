@@ -15,7 +15,9 @@ tags:
 - api-key
 type: workflow
 updated: '2026-06-22'
----# 클라이언트 Secret 노출 방지
+---
+
+# 클라이언트 Secret 노출 방지
 
 ## 한 줄 정의
 

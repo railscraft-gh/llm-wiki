@@ -58,7 +58,9 @@ tags:
 - machine-learning
 type: concept
 updated: '2026-06-22'
----# AI 엔지니어 필수 논문 (Essential AI Papers)
+---
+
+# AI 엔지니어 필수 논문 (Essential AI Papers)
 
 ## 한 줄 정의
 현대 생성형 AI와 에이전틱 엔지니어링의 근간을 형성한 5편의 학술 논문과 1편의 역사적 에세이의 핵심 작동 원리 및 실무적 로드맵이다.

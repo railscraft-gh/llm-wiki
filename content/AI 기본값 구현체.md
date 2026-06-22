@@ -33,7 +33,9 @@ tags:
 - agent
 type: concept
 updated: '2026-06-22'
----# AI 기본값 구현체
+---
+
+# AI 기본값 구현체
 
 ## 한 줄 정의
 

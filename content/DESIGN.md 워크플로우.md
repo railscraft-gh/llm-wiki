@@ -97,7 +97,9 @@ tags:
 - workflow
 type: workflow
 updated: '2026-06-22'
----# DESIGN.md 워크플로우
+---
+
+# DESIGN.md 워크플로우
 
 ## 한 줄 정의
 

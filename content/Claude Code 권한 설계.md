@@ -30,7 +30,9 @@ tags:
 - safety
 type: workflow
 updated: '2026-06-22'
----# Claude Code 권한 설계
+---
+
+# Claude Code 권한 설계
 
 ## 한 줄 정의
 

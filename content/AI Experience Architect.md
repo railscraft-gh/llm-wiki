@@ -58,7 +58,9 @@ tags:
 - ux
 type: concept
 updated: '2026-06-22'
----# AI Experience Architect
+---
+
+# AI Experience Architect
 
 ## 한 줄 정의
 

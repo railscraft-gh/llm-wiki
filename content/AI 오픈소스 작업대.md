@@ -70,7 +70,9 @@ tags:
 - tooling
 type: concept
 updated: '2026-06-22'
----# AI 오픈소스 작업대
+---
+
+# AI 오픈소스 작업대
 
 ## 한 줄 정의
 

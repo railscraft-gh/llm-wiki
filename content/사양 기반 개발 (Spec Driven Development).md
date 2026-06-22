@@ -70,7 +70,9 @@ tags:
 - engineering
 type: workflow
 updated: '2026-06-22'
----# 사양 기반 개발 (Spec Driven Development)
+---
+
+# 사양 기반 개발 (Spec Driven Development)
 
 ## 한 줄 정의
 일회성 프롬프팅에 의존하는 개발 방식에서 벗어나, 기술 스택을 배제하고 요구사항만 담은 '살아있는 사양서(spec)'를 구축하고 AI 에이전트를 코드 렌더러로 삼아 구현을 완성해 나가는 구조화된 에이전틱 개발 패러다임이다. (출처: 바이브 코딩의 종말-ko)

@@ -14,7 +14,9 @@ tags:
 - team-mode
 type: tool
 updated: '2026-06-22'
----# OpenAgent Team Mode
+---
+
+# OpenAgent Team Mode
 
 ## 한 줄 정의
 

@@ -17,7 +17,9 @@ tags:
 - secret-management
 type: workflow
 updated: '2026-06-22'
----# API Key 관리 원칙 (API Key Management Principles)
+---
+
+# API Key 관리 원칙 (API Key Management Principles)
 
 ## 한 줄 정의
 

@@ -38,7 +38,9 @@ tags:
 - ai-coding
 type: workflow
 updated: '2026-06-22'
----# Plan Mode 기반 AI 작업
+---
+
+# Plan Mode 기반 AI 작업
 
 ## 한 줄 정의
 

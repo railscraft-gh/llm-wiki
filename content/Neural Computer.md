@@ -19,7 +19,9 @@ tags:
 - software
 type: concept
 updated: '2026-06-22'
----# Neural Computer
+---
+
+# Neural Computer
 
 ## 한 줄 정의
 

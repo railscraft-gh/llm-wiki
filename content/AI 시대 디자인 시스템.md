@@ -71,7 +71,9 @@ tags:
 - product
 type: concept
 updated: '2026-06-22'
----# AI 시대 디자인 시스템
+---
+
+# AI 시대 디자인 시스템
 
 ## 한 줄 정의
 

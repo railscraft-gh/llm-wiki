@@ -46,7 +46,9 @@ tags:
 - github
 type: tool
 updated: '2026-06-22'
----# Spec Kit
+---
+
+# Spec Kit
 
 ## 한 줄 정의
 

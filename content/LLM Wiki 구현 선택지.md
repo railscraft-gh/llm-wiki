@@ -54,7 +54,9 @@ tags:
 - agent
 type: workflow
 updated: '2026-06-22'
----# LLM Wiki 구현 선택지
+---
+
+# LLM Wiki 구현 선택지
 
 ## 한 줄 정의
 LLM Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키로 변환하는 루프를 Programmatic 코드 패키지로 굳힐 것인지, 아니면 단일 `AGENTS.md` 지침을 통해 에이전트의 런타임 자율 협상에 맡길 것인지 결정하는 아키텍처 의사결정 기준이다.

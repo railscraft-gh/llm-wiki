@@ -20,7 +20,9 @@ tags:
 - tool
 type: tool
 updated: '2026-06-22'
----# GStack
+---
+
+# GStack
 
 ## 한 줄 정의
 

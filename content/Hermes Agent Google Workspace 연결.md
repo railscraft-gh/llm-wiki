@@ -17,7 +17,9 @@ tags:
 - integration
 type: workflow
 updated: '2026-06-22'
----# Hermes Agent Google Workspace 연결
+---
+
+# Hermes Agent Google Workspace 연결
 
 ## 한 줄 정의
 

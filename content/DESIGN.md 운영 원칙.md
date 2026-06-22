@@ -56,7 +56,9 @@ tags:
 - ai-coding
 type: workflow
 updated: '2026-06-22'
----# DESIGN.md 운영 원칙
+---
+
+# DESIGN.md 운영 원칙
 
 ## 한 줄 정의
 

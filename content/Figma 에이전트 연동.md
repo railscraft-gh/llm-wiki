@@ -46,7 +46,9 @@ tags:
 - figma
 type: workflow
 updated: '2026-06-22'
----# Figma 에이전트 연동 (Figma Agent Integration)
+---
+
+# Figma 에이전트 연동 (Figma Agent Integration)
 
 ## 한 줄 정의
 Model Context Protocol (MCP) 표준 프로토콜을 통해 Claude Code 등의 개발 에이전트를 Figma 디자인 툴 및 컴포넌트 라이브러리와 연동하여, 디자인 생성, 다이어그램 시각화, 슬라이드 덱 작성 및 디자인 시스템 정합성 감사(audit)를 자동화하는 워크플로우다.

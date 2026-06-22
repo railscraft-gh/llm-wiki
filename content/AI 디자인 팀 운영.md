@@ -28,7 +28,9 @@ tags:
 - product
 type: workflow
 updated: '2026-06-22'
----# AI 디자인 팀 운영
+---
+
+# AI 디자인 팀 운영
 
 ## 한 줄 정의
 

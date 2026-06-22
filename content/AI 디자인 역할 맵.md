@@ -37,7 +37,9 @@ tags:
 - product-design
 type: workflow
 updated: '2026-06-22'
----# AI 디자인 역할 맵
+---
+
+# AI 디자인 역할 맵
 
 ## 한 줄 정의
 

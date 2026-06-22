@@ -47,7 +47,9 @@ tags:
 - sandbox
 type: tool
 updated: '2026-06-22'
----# Pi Coding Agent
+---
+
+# Pi Coding Agent
 
 ## 한 줄 정의
 Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스트 환경의 파괴적 훼손을 방지하기 위해, 저전력 항시 켜져 있는 라즈베리 파이를 물리적 샌드박스로 삼아 Claude Code, OpenClaw, Hermes 등 에이전트 CLI를 격리 구동하는 하드웨어-에이전트 조율 인프라다.

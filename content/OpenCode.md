@@ -22,7 +22,9 @@ tags:
 - ai-coding
 type: tool
 updated: '2026-06-22'
----# OpenCode
+---
+
+# OpenCode
 
 ## 한 줄 정의
 

@@ -23,7 +23,9 @@ tags:
 - research
 type: workflow
 updated: '2026-06-22'
----# AI를 UX에 쓰는 법
+---
+
+# AI를 UX에 쓰는 법
 
 ## 한 줄 정의
 

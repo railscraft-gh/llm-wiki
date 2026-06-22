@@ -70,7 +70,9 @@ tags:
 - claude-code
 type: workflow
 updated: '2026-06-22'
----# MEMORY.md 운영 원칙
+---
+
+# MEMORY.md 운영 원칙
 
 ## 한 줄 정의
 AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결정 사항, 지식 자산, 제약 사항 및 시행착오(Dead Ends)를 마크다운 기반으로 정리하여 세션 로드 시 자동 반영하는 지식 보존(Knowledge Persistence) 운영 매뉴얼이다.

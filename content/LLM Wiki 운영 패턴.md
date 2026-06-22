@@ -64,7 +64,9 @@ tags:
 - obsidian
 type: workflow
 updated: '2026-06-22'
----# LLM Wiki 운영 패턴
+---
+
+# LLM Wiki 운영 패턴
 
 ## 한 줄 정의
 

@@ -58,7 +58,9 @@ tags:
 - wealth-building
 type: concept
 updated: '2026-06-22'
----# ETF 3종 투자 원칙
+---
+
+# ETF 3종 투자 원칙
 
 > [!summary]
 > - 장기 자산 구축을 위해 미국 시장 전체 성장을 반영하는 VOO, 꾸준한 현금흐름 배당 배가를 노리는 SCHD, 혁신 기술 성장주 중심의 QQQ 3대 ETF를 조합한다.

@@ -35,7 +35,9 @@ tags:
 - agent
 type: concept
 updated: '2026-06-22'
----# Claude Code 스킬 관리
+---
+
+# Claude Code 스킬 관리
 
 ## 한 줄 정의
 Claude Code 스킬 관리는 에이전트의 컨텍스트 윈도우 오버헤드와 비용(Context Tax)을 최소화하기 위해 사용하지 않는 로컬 스킬을 정리하고, 핵심 도구 중심으로 최적의 스택을 유지하는 프레임워크다.

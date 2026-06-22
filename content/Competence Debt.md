@@ -17,7 +17,9 @@ tags:
 - ai
 type: claim
 updated: '2026-06-22'
----# Competence Debt
+---
+
+# Competence Debt
 
 ## 한 줄 정의
 

@@ -60,7 +60,9 @@ tags:
 - optimization
 type: concept
 updated: '2026-06-22'
----# AI 에이전트 아키텍처 완전 가이드
+---
+
+# AI 에이전트 아키텍처 완전 가이드
 
 > [!summary]
 > - AI 에이전트는 stateless LLM 외부에서 상태, 도구, 성찰(Reflection), 계획(Planning) 루프를 통제하는 아키텍처 체계이다.

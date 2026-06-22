@@ -23,7 +23,9 @@ tags:
 - harness-engineering
 type: tool
 updated: '2026-06-22'
----# Gajae-Code
+---
+
+# Gajae-Code
 
 ## 한 줄 정의
 

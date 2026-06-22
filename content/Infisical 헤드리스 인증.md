@@ -22,7 +22,9 @@ tags:
 - infrastructure
 type: workflow
 updated: '2026-06-22'
----# Infisical 헤드리스 인증
+---
+
+# Infisical 헤드리스 인증
 
 ## 한 줄 정의
 

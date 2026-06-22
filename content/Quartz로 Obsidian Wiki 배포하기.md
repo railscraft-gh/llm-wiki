@@ -34,7 +34,9 @@ tags:
 - deployment
 type: workflow
 updated: '2026-06-22'
----# Quartz로 Obsidian Wiki 배포하기
+---
+
+# Quartz로 Obsidian Wiki 배포하기
 
 ## 한 줄 정의
 

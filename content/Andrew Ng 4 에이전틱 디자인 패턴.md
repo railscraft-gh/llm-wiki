@@ -42,7 +42,9 @@ tags:
 - design-pattern
 type: concept
 updated: '2026-06-22'
----# Andrew Ng 4 에이전틱 디자인 패턴
+---
+
+# Andrew Ng 4 에이전틱 디자인 패턴
 
 ## 한 줄 정의
 

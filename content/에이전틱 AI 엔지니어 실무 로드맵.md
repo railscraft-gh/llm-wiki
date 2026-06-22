@@ -25,7 +25,9 @@ tags:
 - engineering-stack
 type: concept
 updated: '2026-06-22'
----# 에이전틱 AI 엔지니어 실무 로드맵 (Agentic AI Engineer Practical Roadmap)
+---
+
+# 에이전틱 AI 엔지니어 실무 로드맵 (Agentic AI Engineer Practical Roadmap)
 
 ## 한 줄 정의
 

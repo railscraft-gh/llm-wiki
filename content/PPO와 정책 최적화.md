@@ -12,7 +12,9 @@ tags:
 - algorithm
 type: concept
 updated: '2026-06-22'
----# PPO와 정책 최적화
+---
+
+# PPO와 정책 최적화
 
 ## 한 줄 정의
 

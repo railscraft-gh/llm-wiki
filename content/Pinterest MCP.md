@@ -24,7 +24,9 @@ tags:
 - security
 type: workflow
 updated: '2026-06-22'
----# Pinterest MCP
+---
+
+# Pinterest MCP
 
 ## 한 줄 정의
 Pinterest MCP는 핀터레스트가 자율 AI 에이전트의 안전한 사내 자원 연동과 제어를 위해 구축한 클라우드 호스팅 기반의 모델 컨텍스트 프로토콜(MCP) 서버 아키텍처 및 보안 거버넌스 프레임워크다.

@@ -15,7 +15,9 @@ tags:
 - workflow
 type: workflow
 updated: '2026-06-22'
----# Obsidian vault용 Slash Command 운영
+---
+
+# Obsidian vault용 Slash Command 운영
 
 ## 한 줄 정의
 

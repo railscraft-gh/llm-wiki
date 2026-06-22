@@ -25,7 +25,9 @@ tags:
 - tool
 type: tool
 updated: '2026-06-22'
----# Infisical 도입 전략
+---
+
+# Infisical 도입 전략
 
 ## 한 줄 정의
 

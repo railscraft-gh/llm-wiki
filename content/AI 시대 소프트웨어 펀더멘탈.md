@@ -46,7 +46,9 @@ tags:
 - ddd
 type: concept
 updated: '2026-06-22'
----# AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
+---
+
+# AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
 
 ## 한 줄 정의
 

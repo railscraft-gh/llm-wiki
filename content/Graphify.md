@@ -13,7 +13,9 @@ tags:
 - vibe-coding
 type: tool
 updated: '2026-06-22'
----# Graphify
+---
+
+# Graphify
 
 ## 한 줄 정의
 

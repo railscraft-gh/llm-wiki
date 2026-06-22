@@ -17,7 +17,9 @@ tags:
 - html
 type: workflow
 updated: '2026-06-22'
----# AI 산출물 포맷 결정 트리
+---
+
+# AI 산출물 포맷 결정 트리
 
 ## 한 줄 정의
 

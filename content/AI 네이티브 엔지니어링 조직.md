@@ -35,7 +35,9 @@ tags:
 - organization
 type: concept
 updated: '2026-06-22'
----# AI 네이티브 엔지니어링 조직
+---
+
+# AI 네이티브 엔지니어링 조직
 
 ## 한 줄 정의
 

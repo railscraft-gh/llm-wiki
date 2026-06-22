@@ -69,7 +69,9 @@ tags:
 - engineering
 type: concept
 updated: '2026-06-22'
----# Vibe Coding과 Agentic Engineering
+---
+
+# Vibe Coding과 Agentic Engineering
 
 ## 한 줄 정의
 

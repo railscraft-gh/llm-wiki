@@ -29,7 +29,9 @@ tags:
 - algorithm
 type: concept
 updated: '2026-06-22'
----# JEPA
+---
+
+# JEPA
 
 ## 한 줄 정의
 

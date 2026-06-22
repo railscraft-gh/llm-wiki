@@ -14,7 +14,9 @@ tags:
 - alignment
 type: concept
 updated: '2026-06-22'
----# LLM 정렬 기법
+---
+
+# LLM 정렬 기법
 
 ## 한 줄 정의
 

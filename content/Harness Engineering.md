@@ -95,7 +95,9 @@ tags:
 - ai-coding
 type: concept
 updated: '2026-06-22'
----# Harness Engineering
+---
+
+# Harness Engineering
 
 ## 한 줄 정의
 Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions), 검증 도구(Hooks), 커스텀 스킬, 메모리, 관찰 피드백 루프를 시스템적으로 설계하여, 모델 본연의 한계를 외부 제약 환경을 통해 보완하고 정합성 높은 결과물을 얻어내는 에이전트 인프라 구축 기술이다.

@@ -38,7 +38,9 @@ tags:
 - capex
 type: concept
 updated: '2026-06-22'
----# AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
+---
+
+# AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
 
 ## 한 줄 정의
 

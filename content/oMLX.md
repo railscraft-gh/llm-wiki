@@ -24,7 +24,9 @@ tags:
 - local
 type: tool
 updated: '2026-06-22'
----# oMLX
+---
+
+# oMLX
 
 ## 한 줄 정의
 oMLX는 Apple Silicon(M 시리즈 칩셋) 맥 환경에 맞춤 설계된 고성능 로컬 대규모 언어 모델(LLM) 추론 엔진으로, 에이전트 구동에 필요한 대규모 콘텍스트의 캐싱 및 병렬 서빙에 최적화된 도구다.

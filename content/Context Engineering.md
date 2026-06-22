@@ -21,7 +21,9 @@ tags:
 - harness-engineering
 type: concept
 updated: '2026-06-22'
----# Context Engineering
+---
+
+# Context Engineering
 
 ## 한 줄 정의
 

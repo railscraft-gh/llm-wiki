@@ -77,7 +77,9 @@ tags:
 - apple-silicon
 type: concept
 updated: '2026-06-22'
----# 로컬 LLM 30분 실전 가이드
+---
+
+# 로컬 LLM 30분 실전 가이드
 
 ## 한 줄 정의
 로컬 LLM 실전 가이드는 외부 API 요금 결제나 인터넷 개인정보 유출 우려 없이 개인 기기(PC/Mac)에서 최신 MLX 엔진 기반 Ollama, KV 캐시 압축 기술(TurboQuant) 및 디스크 스트리밍 기법을 융합하여 고성능 모델을 온디바이스로 초고속 구동하는 실무 기술 명세서다.

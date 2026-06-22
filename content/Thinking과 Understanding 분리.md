@@ -24,7 +24,9 @@ tags:
 - cognition
 type: claim
 updated: '2026-06-22'
----# Thinking과 Understanding 분리
+---
+
+# Thinking과 Understanding 분리
 
 ## 한 줄 정의
 

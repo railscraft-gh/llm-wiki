@@ -33,7 +33,9 @@ tags:
 - workflow
 type: workflow
 updated: '2026-06-22'
----# Hermes Agent와 오픈소스 내부 도구 연동
+---
+
+# Hermes Agent와 오픈소스 내부 도구 연동
 
 ## 한 줄 정의
 

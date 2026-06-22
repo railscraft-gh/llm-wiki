@@ -61,7 +61,9 @@ tags:
 - prompting
 type: concept
 updated: '2026-06-22'
----# Claude Cowork
+---
+
+# Claude Cowork
 
 ## 한 줄 정의
 

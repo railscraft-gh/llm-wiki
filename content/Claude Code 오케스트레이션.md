@@ -34,7 +34,9 @@ tags:
 - orchestration
 type: workflow
 updated: '2026-06-22'
----# Claude Code 오케스트레이션
+---
+
+# Claude Code 오케스트레이션
 
 ## 한 줄 정의
 

@@ -64,7 +64,9 @@ tags:
 - harness-engineering
 type: concept
 updated: '2026-06-22'
----# Lethal Trifecta
+---
+
+# Lethal Trifecta
 
 ## 한 줄 정의
 

@@ -24,7 +24,9 @@ tags:
 - context-engineering
 type: concept
 updated: '2026-06-22'
----# Agentic 패턴 진화
+---
+
+# Agentic 패턴 진화
 
 ## 한 줄 정의
 

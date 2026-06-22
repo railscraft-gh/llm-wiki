@@ -67,7 +67,9 @@ tags:
 - infrastructure
 type: concept
 updated: '2026-06-22'
----# Agent Native Infrastructure
+---
+
+# Agent Native Infrastructure
 
 ## 한 줄 정의
 

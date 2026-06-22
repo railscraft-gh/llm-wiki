@@ -20,7 +20,9 @@ tags:
 - meta-learning
 type: concept
 updated: '2026-06-22'
----# Meta-Harness
+---
+
+# Meta-Harness
 
 ## 한 줄 정의
 
