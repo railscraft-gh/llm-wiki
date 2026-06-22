@@ -36,6 +36,7 @@ sources:
   - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md
 created: 2026-06-14
 updated: 2026-06-22
 ---
@@ -136,6 +137,15 @@ allowed-tools: Bash(git diff *) Bash(gh pr *)
 *   **`frontend-design`**: Claude의 기본 미학(회색 그라데이션, Inter 폰트 중심 등)을 오버라이드하여, 브루탈리스트나 레트로 퓨처리즘 등 다양한 UI 레이아웃 컨셉을 강제 설계하게 돕는다.
 *   **`static-analysis`** (by Trail of Bits): 백그라운드에서 Semgrep 및 CodeQL을 구동해 SQL 인젝션, CSRF 누락, 비밀 키 하드코딩 등 정규식(Grep) 수준에서 잡아낼 수 있는 보안 취약점을 80% 가량 사전에 탐지해 컨텍스트로 전달한다.
 *   **`agent-sandbox`**: E2B 등의 임시 클라우드 격리 환경을 활용해 코드를 실행함으로써, 자율 에이전트가 로컬 파일 시스템을 훼손하거나 `.env` 파일을 우발적으로 커밋하는 등의 파괴적 행위를 예방한다.
+
+### 실무 유용한 추천 스킬 6선
+Claude Code 세션의 컨텍스트 예산 내에서 실무 활용성과 생산성 향상 가치가 검증된 6가지 유용한 추천 스킬 목록은 다음과 같다.
+- **`Frontend Slides`** (`/frontend-slides:frontend-slides`): HTML 기반 전문가급 프레젠테이션 피치 덱을 생성하며, PPT 변환 기능도 지원한다.
+- **`XLS`** (`xlsx`): `.xlsx`, `.csv` 등 스프레드시트 파일을 로컬에서 열고, 정제하며, 차트 작성 및 서식/수식 편집 작업을 자동 수행한다. (공식 스킬: `anthropics/skills/blob/main/skills/xlsx/SKILL.md` 참조)
+- **`figma-generate-design`**: Figma API와 연동해 아트보드 구조를 양방향으로 동기화하고 즉시 코드로 구현하거나 코드를 바탕으로 Figma에 디자인을 자동 렌더링한다.
+- **`Remotion`** (`npx skills add remotion/agent-skills`): 기능 설명용 프로덕션 비디오 에셋을 세션 내에서 코드로 빌드해 내보낸다.
+- **`Codex`**: OpenAI Codex 플러그인을 git 커밋 검토 및 리서치 검증에 배치하여 Claude의 일일 토큰 예산을 세이브한다.
+- **`pm-skills`**: Atlassian MCP 연동 기능이 포함된 6가지 PM 모듈(senior-pm, scrum-master 등)로, 스프린트 예측 및 리스크 분석, Confluence 템플릿 레이아웃 등을 오케스트레이션한다.
 
 ---
 
