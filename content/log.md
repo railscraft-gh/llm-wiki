@@ -1,5 +1,39 @@
 # LLM Wiki Log
 
+## 2026-06-22
+
+### Ingest
+
+- 입력:
+  - `raw/바이브 코딩의 종말-ko.md`
+  - `raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md`
+  - `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
+- 생성: 없음
+- 수정:
+  - [[사양 기반 개발 (Spec Driven Development)]] (updated 날짜 갱신)
+  - [[Spec Kit]] (sources 갱신 및 updated 날짜 갱신)
+  - [[Hermes Agent]] (sources 갱신 및 updated 날짜 갱신)
+  - [[케이브맨]] (sources 갱신 및 updated 날짜 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 대조 및 wiki 규칙 정적 점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 3개 raw 파일에 대한 개념, 수치, 출처가 기존 wiki 노트들에 완전히 동기화되어 있음을 확인하고, 각 노트들의 updated 날짜를 최신화하고 sources 목록에 정확한 로컬 마크다운 경로를 매핑하여 무결성을 확보함.
+
+### 결정 기록
+
+- 결정: 보강 및 유지
+- 대상: [[사양 기반 개발 (Spec Driven Development)]], [[Spec Kit]], [[Hermes Agent]], [[케이브맨]]
+- 근거: 신규 3개 raw 자료의 핵심 정보와 세부 수치가 이미 위키 노트들에 완벽하게 보강되어 있으며, sources를 보다 정교하고 명확한 로컬 경로로 정비하기 위한 메타데이터 최신화를 수행함.
+
 ## 2026-06-21
 
 ### Ingest
