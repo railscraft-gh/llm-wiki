@@ -92,6 +92,47 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 - **Narrative Docs**: 복잡한 시각적 화면(screens)을 보여주기 전에 문제 상황, 대안 분석, 최종 설계 방향을 스토리텔링 방식으로 풀어낸 상세 문서를 작성하여 공유함으로써 기획 초기 단계에 질문을 던지고 개발 실수를 차단한다.
 - **Micro-Alliances**: 디자인 부서 외부(PM, 개발자, CS, 영업 등)와 긴밀한 파트너십을 구축하여, 병목 문제와 사업 기회를 기록해 나가는 공유 문서(running doc)를 주도적으로 운영한다.
 
+### 업스트림 디자인 워크플로우 7단계 (Upstream Design Workflow)
+
+AI가 화면을 조립(assembly)하는 속도가 Jira 티켓을 끊는 속도보다 빨라지는 환경에서, 디자이너는 아래의 7단계 상류(upstream) 프로세스를 통해 작업을 조율한다.
+1. **Frame setting (프레임 세팅)**: 비즈니스의 극초기 모호함 속에서 진짜 해결할 가치가 있는 문제를 명명하고 지표(activation, retention 등)를 정의하여 문제 백로그(problem backlog)를 구축한다.
+2. **Narrative & Documenting (서술형 문서 작성)**: 복잡한 시각 화면(screens)을 만들기 전, 문제 정의, 대안 분석, 최종 설계 방향을 스토리텔링 방식으로 풀어낸 상세 서술 문서(Narrative Docs)를 작성해 PM/개발팀과 공유한다.
+3. **Token & Vocabulary Design (토큰 및 어휘 설계)**: Primitives(원시 값)에서 Semantic tokens(의도 기술), Component tokens로 이어지는 3단계 토큰 구조를 구축하고 네이밍 컨벤션을 코드의 props 구조와 일치시킨다.
+4. **State & Slot Modeling (상태 및 슬롯 모델링)**: 호버(hover), 에러(error), 로딩(loading), 스켈레톤(skeleton) 등 컴포넌트의 모든 상태를 variant로 설계하고, 컴포넌트 해체(detaching)를 막기 위해 named slot을 명시한다.
+5. **Auto Layout & Semantics Constraint (레이아웃 및 시맨틱 제약)**: Figma Auto Layout을 완벽히 설정하여 Flexbox/CSS Grid로 1:1 변환 가능한 코딩 가독성을 확보하고, 레이어명을 의미적으로 지정(Frame 247 배제)한다.
+6. **Code Connect Mapping (코드 커넥트 연동)**: 피그마 컴포넌트와 개발 코드베이스의 컴포넌트 카운터파트 간 1:1 매핑을 연결(Code Connect)하여 에이전트가 임의 컴포넌트를 날조하지 않고 기존 컴포넌트를 재사용하도록 강제한다.
+7. **Circadian Orchestration & Gates (서캐디안 오케스트레이션 및 게이트 검수)**: 24시간 당직 에이전트의 야간 draft PR 발의를 검수하고, 승인/반려(what you killed) 이력을 의사결정 로그(Decision Log)로 축적하여 피드백 루프를 가동한다.
+
+### 피그마 토큰 구조 매핑 (Figma Token Mapping Structure)
+
+에이전트가 디자인의 시각적 외형(appearance)에 현혹되지 않고 설계자의 의도(intent)를 정확히 읽게 하기 위해 피그마 변수(Variables)를 3단계 레이어로 설계한다.
+- **Primitives (원시 토큰)**: hex값, 간격 스케일, 기본 폰트 사이즈 등 기초 물리 값 (`blue/500 = #3B8BD4`, `space/4 = 16px`). 디자이너의 직접적인 컴포넌트 사용을 제한하도록 Figma properties panel에서 숨김 처리(`_` prefix 등)하며, 상위 세맨틱 토큰이 참조할 수 있게 둔다.
+- **Semantic Tokens (의도 토큰) [필수]**: 모양이 아닌 '사용 목적과 의미'를 정의한다 (`color/interactive/default`, `color/interactive/hover`, `color/interactive/disabled`). 색상 테마가 바뀌어도 의도 토큰이 컴포넌트와 연결되어 있으므로 에이전트 생성물이 무너지지 않는다.
+- **Component Tokens (컴포넌트 토큰)**: 개별 컴포넌트 단위의 변수 매핑 (`button/background/default` -> `color/interactive/default`). 멀티 브랜드나 복잡한 대규모 디자인 시스템에서 부분적인 커스터마이징을 제어할 때 사용한다.
+- *참고*: 피그마의 슬래시 네이밍 (`color/interactive/default`)은 코드의 dot notation (`color.interactive.default`)과 빌드 파이프라인에서 자동 매핑되도록 디자이너-개발자 간 합의가 선행되어야 한다.
+
+### 검토 게이트 체크리스트 (Approval Gate Checklist)
+
+디자인 드리프트(Design Drift)와 AI Slop의 무분별한 유입을 사전에 차단하기 위해 디자이너가 승인 게이트에서 검수해야 할 체크리스트이다.
+- [ ] **Figma Token Validation**: Primitives의 직접 노출 여부를 검증하고, 모든 컴포넌트 색상이 Semantic Token으로 올바르게 매핑되어 있는가?
+- [ ] **PascalCase Component Name**: 피그마와 코드베이스의 이름이 `ProductCard`와 같이 PascalCase로 정확히 일치하여 Code Connect 매핑이 유효한가?
+- [ ] **Component Properties Align**: 피그마 variants 이름(variant, size, state 등)이 코드 props와 대소문자까지 동일하게 설정되었는가?
+- [ ] **Zero Detaching (Slots Check)**: 컴포넌트가 임의로 깨지지(detached) 않았으며, named slot 분홍색 테두리 내에 정상적으로 drop 되었는가?
+- [ ] **Auto Layout Coverage**: 모든 컴포넌트 프레임이 Hug, Fill, Fixed 등의 의도적인 크기 제어와 variables spacing을 통해 Flexbox CSS로 무리 없이 매핑되는가?
+- [ ] **WCAG 2.2 AAA Contrast**: 대비율 7:1 이상 보장, 터치 타겟 44x44px 이상 확보, 폰트 14px 하한선이 지켜졌는가?
+
+### 앤트로픽의 30줄 CSS 미학 선언문 (Anthropic's 30-Line CSS Aesthetics Rule)
+
+Anthropic의 엔지니어 Prithvi Rajasekaran과 Alexander Bricken이 작성한 `SKILL.md` 문서(GitHub `anthropics/skills` 저장소 내 `frontend-design` 폴더)에 수록된 30줄의 실제 지시문은 AI 생성 UI의 시각적 서명인 'AI Slop'을 차단하고 독창적인 프런트엔드 미학을 강제하는 선언적 취향 기준이다.
+- **AI Slop 방지를 위한 영구 금지 규칙 (Forbidden List)**:
+  - 폰트 수렴 금지: **Inter**, **Roboto**, **Arial**, 시스템 기본 폰트, 그리고 흔히 쓰이는 **Space Grotesk**를 포함한 평범한 서체 수렴을 **절대(NEVER)** 금지한다.
+  - 흔한 색상 조합 금지: **흰색 배경에 보라색 그라데이션** 같은 판에 박힌 SaaS 랜딩 페이지 미학을 절대 배제한다.
+- **11가지 극단적인 시각적 미학 제안**:
+  - 모델에게 애매한 평균값(modern, clean 등)을 찾지 말고, **Brutally minimal**, **Maximalist chaos**, **Retro-futuristic**, **Organic/natural**, **Luxury/refined**, **Playful/toy-like**, **Editorial/magazine**, **Brutalist/raw**, **Art deco/geometric**, **Soft/pastel**, **Industrial/utilitarian**의 11가지 아트스쿨 미학적 갈래 중 입장을 명확히 정리하여 한 방향으로 깊이 있게 조립하도록 강제한다.
+- **수렴 방지와 디테일 허용**:
+  - 생성물 간의 유사성을 거부하고 어두운 테마와 밝은 테마, 질감(gradient meshes, noise textures, layered transparencies 등)을 과감히 활용하도록 격려한다.
+  - "보이지 않는 취향"을 30줄의 짧은 plain-text 마크다운 문서로 AI 런타임에 심음으로써, 277,000번 이상 개발자 도구에 설치되어 전통적인 거대 디자인 시스템보다 실질적으로 더 많은 프런트엔드 산출량의 가이드라인으로 동작하고 있다.
+
 ---
 
 ## 판단 질문
