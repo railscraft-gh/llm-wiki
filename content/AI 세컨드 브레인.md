@@ -53,6 +53,7 @@ sources:
 - raw/Building an MCP Ecosystem at Pinterest-ko.md
 - raw/Skills Alone Won’t Save You in the AI Economy.md
 - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+- "raw/AI 세컨드 브레인을 구축하기 전에 알았더라면 좋았을 것들.md"
 status: evergreen
 tags:
 - knowledge
