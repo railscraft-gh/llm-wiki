@@ -15,7 +15,7 @@ sources:
   - "raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md"
   - "raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md"
 created: 2026-06-09
-updated: 2026-06-12
+updated: 2026-06-22
 ---
 
 # 사양 기반 개발 (Spec Driven Development)
