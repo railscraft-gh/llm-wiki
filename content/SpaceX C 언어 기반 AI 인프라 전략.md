@@ -26,6 +26,18 @@ sources:
 - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
 - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
 - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  and What I Rejected.md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
 status: draft
 tags:
 - llm
@@ -34,9 +46,7 @@ tags:
 - reinforcement-learning
 type: concept
 updated: '2026-06-22'
----
-
-# SpaceX C 언어 기반 AI 인프라 전략
+---# SpaceX C 언어 기반 AI 인프라 전략
 
 ## 한 줄 정의
 
