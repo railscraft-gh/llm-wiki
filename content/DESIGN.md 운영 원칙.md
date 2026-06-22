@@ -49,6 +49,7 @@ sources:
 - raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
 - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
 - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+- "raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md"
 status: evergreen
 tags:
 - llm
@@ -99,9 +100,16 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
    *   **Layout Principles**: 감으로 정하지 않는 base spacing unit scale, max width, whitespace 철학.
    *   **Depth & Elevation**: blue-tinted shadow 등 브랜드 전용 그림자 및 레이어 구분.
 3. **Guardrails (일관성을 지키는 층)**
-   *   **Do's and Don'ts**: "8px 초과 반경 금지", "상태 색상 장식 금지" 등 에이전트의 독자적 hallucination을 방지할 금지 조건.
-   *   **Responsive Behavior**: 모바일을 단순 데스크톱 축소판이 아닌 별도 맥락으로 분할하여 Breakpoint와 Touch target 규정.
-   *   **Agent Prompt Guide**: 세션 전환 시 에이전트의 기억을 단숨에 복구할 자주 쓰는 토큰과 iteration checklist 퀵 레퍼런스.
+    *   **Do's and Don'ts**: "8px 초과 반경 금지", "상태 색상 장식 금지" 등 에이전트의 독자적 hallucination을 방지할 금지 조건.
+    *   **Responsive Behavior**: 모바일을 단순 데스크톱 축소판이 아닌 별도 맥락으로 분할하여 Breakpoint와 Touch target 규정.
+    *   **Agent Prompt Guide**: 세션 전환 시 에이전트의 기억을 단숨에 복구할 자주 쓰는 토큰과 iteration checklist 퀵 레퍼런스.
+
+### 4. DESIGN.md 3대 핵심 작성 원칙
+Google Stitch 프로젝트에서 최초 도입된 `DESIGN.md`는 제품의 시각적 정체성을 서술하고 디자인 시스템 기반의 비주얼 톤앤매너를 유지하도록 돕는 일반 텍스트 문서이다. AI 협업 시 다음 3대 핵심 작성 원칙이 강조된다.
+1. **역할 기반 토큰 정의**: 디자인 토큰을 역할 기반 명칭(`primary`, `surface` 등)으로 정의하고 의도를 마크다운에 명시할 것.
+2. **논리적 근거(Reasoning) 제공**: 단순 스타일 속성이 아닌 목적-근거-제약조건을 포함한 디자인 결정의 논리적 배경을 제공하여 AI의 임의 추론 및 오동작을 방지할 것.
+3. **상태 전이(State Transitions) 규칙 명세**: 컴포넌트는 기본 상태뿐만 아니라 Hover, Active, Disabled, Loading 등 모든 상태 전이 규칙을 포함해 명시할 것.
+이 3대 원칙은 AI 에이전트가 디자인 시스템 명세와 일치하는 프로덕션 코드를 정확히 생성하도록 돕는 강력한 가드레일이 된다.
 
 ## 예시
 
