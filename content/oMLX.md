@@ -17,6 +17,7 @@ sources:
 - raw/Building an MCP Ecosystem at Pinterest-ko.md
 - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
   Source)-ko.md
+- "raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md"
 status: evergreen
 tags:
 - inference
@@ -43,6 +44,16 @@ oMLX는 Apple Silicon(M 시리즈 칩셋) 맥 환경에 맞춤 설계된 고성�
 
 ### API 규격의 상호 교환성
 oMLX는 OpenAI API 표준 규격(`http://localhost:8000/v1`)뿐만 아니라, Claude Code와 같이 프록시 설정이 필요한 특수 터미널 에이전트들을 위한 Anthropic 메시지 API 규격(`/v1/messages`)도 네이티브로 지원하여, 상용 클라우드 모델 결제를 완벽히 대체할 수 있는 로컬 에이전트 환경의 중추 역할을 담당한다.
+
+### Apple Silicon 환경 oMLX 성능 벤치마크 실증
+M1 Max 및 M4 Max (64GB Unified Memory) 맥북에서 MoE 모델(Qwen3.6-35B-A3B-UD-MLX-4bit, 21GB)을 사용해 수행한 8,700토큰 분량의 프리필(Prefill) 벤치마크 데이터가 확보되었습니다.
+- **프리필(Prefill) 처리 지연 시간 비교**:
+  - **M1 Max**: 순수 MLX의 경우 20.35초(초당 579토큰)가 소요되었으나, oMLX 사용 시 **2.95초(초당 2,975토큰, 약 5.1배 가속)**로 단축되었습니다.
+  - **M4 Max**: 순수 MLX의 경우 5.75초(초당 1,520토큰)가 소요되었으나, oMLX 사용 시 **1.01초(초당 8,664토큰, 약 5.7배 가속)**로 단축되어 실시간에 가까운 응답성을 달성하였습니다.
+- **출력 생성 속도**:
+  - 생성 단계는 MLX 코어 효율을 유지하여 M1 Max에서 초당 42토큰, M4 Max에서 초당 95토큰을 기록하였습니다.
+- **RAM/SSD 하이브리드 KV 캐시 적용 효과**:
+  - 첫 요청 이후 8,700토큰의 캐시 데이터가 RAM(Hot)과 SSD(Cold) 계층에 적재되어, 후속 지시 시 프리필 단계를 완전히 스킵하므로 즉각적인 피드백 피드를 완성합니다.
 
 ## 관련 노트
 - [[Agent Native Infrastructure]]
