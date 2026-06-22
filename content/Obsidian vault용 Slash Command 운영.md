@@ -1,22 +1,21 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
- - llm
- - obsidian
- - claude-code
- - workflow
 aliases:
- - Obsidian slash command 운영
- - AI 세컨드 브레인 명령어 운영
-sources:
- - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+- Obsidian slash command 운영
+- AI 세컨드 브레인 명령어 운영
+core: false
 created: 2026-05-24
-updated: 2026-05-24
----
-
-# Obsidian vault용 Slash Command 운영
+sources:
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+- raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+status: evergreen
+tags:
+- llm
+- obsidian
+- claude-code
+- workflow
+type: workflow
+updated: '2026-06-22'
+---# Obsidian vault용 Slash Command 운영
 
 ## 한 줄 정의
 

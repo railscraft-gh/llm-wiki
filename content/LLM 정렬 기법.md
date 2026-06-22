@@ -1,21 +1,20 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
- - llm
- - rlhf
- - dpo
- - grpo
- - alignment
 aliases: []
-sources:
- - 강화학습-RL-초보자-가이드
+core: false
 created: 2026-05-11
-updated: 2026-05-11
----
-
-# LLM 정렬 기법
+sources:
+- 강화학습-RL-초보자-가이드
+- raw/강화학습-RL-초보자-가이드.md
+status: evergreen
+tags:
+- llm
+- rlhf
+- dpo
+- grpo
+- alignment
+type: concept
+updated: '2026-06-22'
+---# LLM 정렬 기법
 
 ## 한 줄 정의
 

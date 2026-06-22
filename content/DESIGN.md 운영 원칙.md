@@ -1,24 +1,62 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
-  - llm
-  - design-system
-  - ai-coding
 aliases:
-  - Design.md
-  - DESIGN.md
-  - 디자인용 AGENTS.md
-sources:
-  - "raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md"
-  - "raw/How to write a DESIGN.md file Claude can actually use-ko.md"
-  - "raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md"
+- Design.md
+- DESIGN.md
+- 디자인용 AGENTS.md
+core: false
 created: 2026-05-07
-updated: 2026-06-14
----
-
-# DESIGN.md 운영 원칙
+sources:
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+- raw/우리가 피그마 없이 제품을 배포하는 방법.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+status: evergreen
+tags:
+- llm
+- design-system
+- ai-coding
+type: workflow
+updated: '2026-06-22'
+---# DESIGN.md 운영 원칙
 
 ## 한 줄 정의
 

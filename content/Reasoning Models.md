@@ -1,25 +1,28 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
-  - llm
-  - reasoning
-  - rl
-  - test-time-compute
 aliases:
-  - 추론 모델
-  - Reasoning LLM
-  - o1
-  - DeepSeek-R1
-sources:
-  - 강화학습-RL-초보자-가이드
-  - sequoia-ascent-2026-karpathy
+- 추론 모델
+- Reasoning LLM
+- o1
+- DeepSeek-R1
+core: false
 created: 2026-05-16
-updated: 2026-05-16
----
-
-# Reasoning Models
+sources:
+- 강화학습-RL-초보자-가이드
+- sequoia-ascent-2026-karpathy
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+status: evergreen
+tags:
+- llm
+- reasoning
+- rl
+- test-time-compute
+type: concept
+updated: '2026-06-22'
+---# Reasoning Models
 
 ## 한 줄 정의
 

@@ -1,25 +1,44 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
-  - ai
-  - economy
-  - market
-  - capex
 aliases:
-  - AI 겨울
-  - AI Winter
-  - AI 버블
-  - 경제적 상전이
-sources:
-  - AI 겨울이 시작됐다
-  - 4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실
+- AI 겨울
+- AI Winter
+- AI 버블
+- 경제적 상전이
+core: false
 created: 2026-06-04
-updated: 2026-06-14
----
-
-# AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
+sources:
+- AI 겨울이 시작됐다
+- 4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실
+- raw/단돈 100달러로 주식 투자 시작하기.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md
+- raw/frontend-design-skill.md
+- raw/우리가 초대받지 못한 새로운 AI 시대의 개막.md
+- raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md
+- raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다.md
+- raw/남다르게 생각하도록 뇌를 훈련하는 법.md
+- raw/AI 겨울이 시작됐다-ko.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md
+status: evergreen
+tags:
+- ai
+- economy
+- market
+- capex
+type: concept
+updated: '2026-06-22'
+---# AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
 
 ## 한 줄 정의
 

@@ -1,20 +1,19 @@
 ---
-type: tool
-status: needs-review
-core: false
-tags:
-  - ai-coding
-  - context-window
-  - mcp
-  - sandbox
 aliases: []
-sources:
-  - context-mode-README-정리
+core: false
 created: 2026-05-09
-updated: 2026-05-26
----
-
-# Context Mode
+sources:
+- context-mode-README-정리
+- raw/context-mode-README-정리.md
+status: needs-review
+tags:
+- ai-coding
+- context-window
+- mcp
+- sandbox
+type: tool
+updated: '2026-06-22'
+---# Context Mode
 
 ## 한 줄 정의
 

@@ -1,22 +1,25 @@
 ---
-type: concept
-status: needs-review
-core: false
-tags:
- - llm
- - neural-network
- - software
 aliases:
- - 뉴럴 컴퓨터
- - 신경 컴퓨터
-sources:
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- 뉴럴 컴퓨터
+- 신경 컴퓨터
+core: false
 created: 2026-05-06
-updated: 2026-05-06
----
-
-# Neural Computer
+sources:
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: needs-review
+tags:
+- llm
+- neural-network
+- software
+type: concept
+updated: '2026-06-22'
+---# Neural Computer
 
 ## 한 줄 정의
 

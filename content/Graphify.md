@@ -1,20 +1,19 @@
 ---
-type: tool
-status: evergreen
-core: false
-tags:
-  - ai-coding
-  - knowledge-graph
-  - context-management
-  - vibe-coding
 aliases: []
-sources:
-  - graphify_정리
+core: false
 created: 2026-05-09
-updated: 2026-05-14
----
-
-# Graphify
+sources:
+- graphify_정리
+- raw/graphify_정리.md
+status: evergreen
+tags:
+- ai-coding
+- knowledge-graph
+- context-management
+- vibe-coding
+type: tool
+updated: '2026-06-22'
+---# Graphify
 
 ## 한 줄 정의
 

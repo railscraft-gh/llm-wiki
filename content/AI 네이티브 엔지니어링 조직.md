@@ -1,24 +1,41 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
-  - llm
-  - agent
-  - engineering
-  - organization
 aliases:
-  - AI-native engineering org
-  - AI 네이티브 조직 운영
-sources:
-  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
-  - raw/anthropic-boris-cherny-interview.md
-  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md
+- AI-native engineering org
+- AI 네이티브 조직 운영
+core: false
 created: 2026-05-14
-updated: 2026-06-14
----
-
-# AI 네이티브 엔지니어링 조직
+sources:
+- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+- raw/im-not-ai.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+status: evergreen
+tags:
+- llm
+- agent
+- engineering
+- organization
+type: concept
+updated: '2026-06-22'
+---# AI 네이티브 엔지니어링 조직
 
 ## 한 줄 정의
 

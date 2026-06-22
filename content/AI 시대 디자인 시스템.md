@@ -1,33 +1,77 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
- - llm
- - design-system
- - product
 aliases:
- - AI-native design system
- - AI 디자인 시스템
- - 에이전트용 디자인 시스템
-sources:
- - "raw/AI로_만든_제품이_안_팔리는_이유.md"
- - "raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md"
- - "raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md"
- - "raw/Good Design Doesn’t Happen By Default.md"
- - "raw/Agentic AI, design systems & Figma. a practical guide-ko.md"
- - "raw/From faster pencil to AI Experience Architect. a designer’s path.md"
- - "raw/The most important Design System in 2026 that designers missed was built by a developer..md"
- - "raw/AI와 디자인 시스템 - 출판형 다듬기.md"
- - "raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md"
- - "raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md"
- - "raw/How top companies are using AI in their design workflows.md"
- - "raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md"
+- AI-native design system
+- AI 디자인 시스템
+- 에이전트용 디자인 시스템
+core: true
 created: 2026-05-07
-updated: 2026-06-16
----
-
-# AI 시대 디자인 시스템
+sources:
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  and What I Rejected.md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/cc101_axwith_ko.html
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+status: evergreen
+tags:
+- llm
+- design-system
+- product
+type: concept
+updated: '2026-06-22'
+---# AI 시대 디자인 시스템
 
 ## 한 줄 정의
 

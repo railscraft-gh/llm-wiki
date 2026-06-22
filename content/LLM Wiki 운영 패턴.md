@@ -1,29 +1,70 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
-  - llm
-  - wiki
-  - obsidian
 aliases:
-  - Karpathy의 LLM Wiki
-  - LLM Wiki
-  - 파일 캐비닛 아키텍처
-sources:
-  - AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
-  - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
-  - 더 빨리 배우고 싶다면 이 노트 정리 방식을 써라
-  - 완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다
-  - Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
-  - Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다
-  - How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)
-  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+- Karpathy의 LLM Wiki
+- LLM Wiki
+- 파일 캐비닛 아키텍처
+core: true
 created: 2026-05-24
-updated: 2026-06-10
----
-
-# LLM Wiki 운영 패턴
+sources:
+- AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
+- Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
+- 더 빨리 배우고 싶다면 이 노트 정리 방식을 써라
+- 완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다
+- Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
+- Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다
+- How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)
+- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+- raw/클로드 디자인은 과연 디자이너를 대체할까.md
+- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+- raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
+- raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md
+- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+status: evergreen
+tags:
+- llm
+- wiki
+- obsidian
+type: workflow
+updated: '2026-06-22'
+---# LLM Wiki 운영 패턴
 
 ## 한 줄 정의
 

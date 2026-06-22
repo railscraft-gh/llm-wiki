@@ -1,19 +1,18 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
- - rl
- - ppo
- - algorithm
 aliases: []
-sources:
- - 강화학습-RL-초보자-가이드
+core: false
 created: 2026-05-11
-updated: 2026-05-11
----
-
-# PPO와 정책 최적화
+sources:
+- 강화학습-RL-초보자-가이드
+- raw/강화학습-RL-초보자-가이드.md
+status: evergreen
+tags:
+- rl
+- ppo
+- algorithm
+type: concept
+updated: '2026-06-22'
+---# PPO와 정책 최적화
 
 ## 한 줄 정의
 

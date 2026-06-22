@@ -1,23 +1,22 @@
 ---
-type: tool
-status: needs-review
-core: false
-tags:
-  - ai
-  - speech
-  - tts
-  - on-device
 aliases:
-  - On-device TTS
-  - 로컬 TTS
-  - Supertonic 3
-sources:
-  - Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
+- On-device TTS
+- 로컬 TTS
+- Supertonic 3
+core: false
 created: 2026-05-26
-updated: 2026-05-26
----
-
-# 온디바이스 TTS
+sources:
+- Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
+- raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
+status: needs-review
+tags:
+- ai
+- speech
+- tts
+- on-device
+type: tool
+updated: '2026-06-22'
+---# 온디바이스 TTS
 
 ## 한 줄 정의
 

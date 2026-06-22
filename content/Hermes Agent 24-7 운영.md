@@ -1,25 +1,35 @@
 ---
-type: workflow
-status: needs-review
-core: false
-tags:
-  - agent
-  - runtime
-  - infrastructure
-  - security
 aliases:
-  - Hermes Agent 24/7 운영
-  - Hermes 24/7 운영
-  - Hermes Agent 운영
-  - Hermes safe runtime
-sources:
-  - Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.
-  - I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
+- Hermes Agent 24/7 운영
+- Hermes 24/7 운영
+- Hermes Agent 운영
+- Hermes safe runtime
+core: false
 created: 2026-06-03
-updated: 2026-06-03
----
-
-# Hermes Agent 24-7 운영
+sources:
+- Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.
+- I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+status: needs-review
+tags:
+- agent
+- runtime
+- infrastructure
+- security
+type: workflow
+updated: '2026-06-22'
+---# Hermes Agent 24-7 운영
 
 ## 한 줄 정의
 

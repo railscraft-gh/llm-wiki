@@ -1,24 +1,30 @@
 ---
-type: claim
-status: evergreen
-core: false
-tags:
- - llm
- - learning
- - cognition
 aliases:
- - Thinking is outsourceable, understanding is not
- - 싱킹과 언더스탠딩
-sources:
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - sequoia-ascent-2026-karpathy
- - 아무도 AI를 배우고 싶어 하지 않는다
+- Thinking is outsourceable, understanding is not
+- 싱킹과 언더스탠딩
+core: false
 created: 2026-05-06
-updated: 2026-05-24
----
-
-# Thinking과 Understanding 분리
+sources:
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- sequoia-ascent-2026-karpathy
+- 아무도 AI를 배우고 싶어 하지 않는다
+- raw/아무도 AI를 배우고 싶어 하지 않는다.md
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- learning
+- cognition
+type: claim
+updated: '2026-06-22'
+---# Thinking과 Understanding 분리
 
 ## 한 줄 정의
 

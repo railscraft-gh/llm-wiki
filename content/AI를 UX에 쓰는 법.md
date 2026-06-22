@@ -1,25 +1,29 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
-  - llm
-  - ux
-  - workflow
-  - prompt
-  - research
 aliases:
-  - AI for UX
-  - UX에서 AI 쓰는 법
-sources:
-  - UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
-  - AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
-  - AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
+- AI for UX
+- UX에서 AI 쓰는 법
+core: false
 created: 2026-05-29
-updated: 2026-05-29
----
-
-# AI를 UX에 쓰는 법
+sources:
+- UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
+- AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
+- AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
+- raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md
+- raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형
+  다듬기.md
+- raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
+- 'raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md'
+- 'raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md'
+status: evergreen
+tags:
+- llm
+- ux
+- workflow
+- prompt
+- research
+type: workflow
+updated: '2026-06-22'
+---# AI를 UX에 쓰는 법
 
 ## 한 줄 정의
 

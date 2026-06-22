@@ -1,22 +1,26 @@
 ---
-type: tool
-status: needs-review
-core: false
-tags:
-  - design-system
-  - frontend
-  - ui
-  - ai-coding
 aliases:
-  - shadcn/ui
-  - shadcn
-sources:
-  - The most important Design System in 2026 that designers missed was built by a developer.
+- shadcn/ui
+- shadcn
+core: false
 created: 2026-05-26
-updated: 2026-05-26
----
-
-# shadcn-ui
+sources:
+- The most important Design System in 2026 that designers missed was built by a developer.
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+status: needs-review
+tags:
+- design-system
+- frontend
+- ui
+- ai-coding
+type: tool
+updated: '2026-06-22'
+---# shadcn-ui
 
 ## 한 줄 정의
 

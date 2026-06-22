@@ -1,39 +1,101 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
- - llm
- - agent
- - ai-coding
- - verification
 aliases:
- - Verification Loop
- - 검증 루프
-sources:
- - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
- - 보리스_클로드코드_실무_사용법
- - Claude-Code-실무활용법-보리스-관점-정리
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - AI로_만든_제품이_안_팔리는_이유
- - opencode-masterclass-summary
- - cc101_axwith_ko
- - RuboCop - Ruby 정적 코드 분석기 완벽 정리
- - andrej-karpathy-skills-CLAUDE-번역
- - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
- - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
- - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
- - You’re Using AI to Write Code. You’re Not Using It to Review Code.
- - "raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md"
- - "raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md"
- - https://github.com/google-labs-code/design.md
- - https://opencode.ai/docs/config/
+- Verification Loop
+- 검증 루프
+core: true
 created: 2026-05-06
-updated: 2026-06-14
----
-
-# AI 코딩 에이전트 검증 전략
+sources:
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- 보리스_클로드코드_실무_사용법
+- Claude-Code-실무활용법-보리스-관점-정리
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- AI로_만든_제품이_안_팔리는_이유
+- opencode-masterclass-summary
+- cc101_axwith_ko
+- RuboCop - Ruby 정적 코드 분석기 완벽 정리
+- andrej-karpathy-skills-CLAUDE-번역
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+- You’re Using AI to Write Code. You’re Not Using It to Review Code.
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+- https://github.com/google-labs-code/design.md
+- https://opencode.ai/docs/config/
+- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+- raw/andrej-karpathy-skills-CLAUDE-번역.md
+- raw/opencode-masterclass-summary.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+- raw/AI Agents. Complete Course.md
+- raw/How to Do Hard Things When You Have Zero Motivation.md
+- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/cc101_axwith_ko.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/Quartz-Deploy-Guide.md
+- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+- raw/arxiv-2603.28052-meta-harness.md
+- raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+- raw/Your Wandering Mind Is Not the Enemy of Focus.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+- raw/Skills Alone Won’t Save You in the AI Economy.md
+- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- agent
+- ai-coding
+- verification
+type: workflow
+updated: '2026-06-22'
+---# AI 코딩 에이전트 검증 전략
 
 ## 한 줄 정의
 AI 코딩 에이전트 검증 전략은 에이전트에게 단순 코드 생성을 넘어 테스트 팩(Test Pack) 검사, 린터 구동, 브라우저/UI 검토, 그리고 오류 발생 시의 자율 디버깅 및 자가 수정(Self-Correction)의 전 과정을 책임지게 만드는 엔지니어링 워크플로우다.

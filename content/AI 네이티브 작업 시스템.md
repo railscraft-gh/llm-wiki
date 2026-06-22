@@ -1,28 +1,32 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
-  - ai
-  - agent
-  - workflow
-  - infrastructure
-  - design
 aliases:
-  - AI-native work system
-  - 에이전트 시대 작업 시스템
-sources:
-  - sequoia-ascent-2026-karpathy
-  - From faster pencil to AI Experience Architect. a designer’s path
-  - Skills, MCP, Tool Calling. 에이전트 확장의 세 층
-  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
-  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- AI-native work system
+- 에이전트 시대 작업 시스템
+core: true
 created: 2026-05-26
-updated: 2026-06-14
----
-
-# AI 네이티브 작업 시스템
+sources:
+- sequoia-ascent-2026-karpathy
+- From faster pencil to AI Experience Architect. a designer’s path
+- Skills, MCP, Tool Calling. 에이전트 확장의 세 층
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+status: evergreen
+tags:
+- ai
+- agent
+- workflow
+- infrastructure
+- design
+type: concept
+updated: '2026-06-22'
+---# AI 네이티브 작업 시스템
 
 ## 한 줄 정의
 

@@ -1,23 +1,27 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
- - llm
- - intelligence
- - verification
 aliases:
- - 재기드 인텔리전스
- - 들쭉날쭉한 지능
-sources:
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - sequoia-ascent-2026-karpathy
+- 재기드 인텔리전스
+- 들쭉날쭉한 지능
+core: true
 created: 2026-05-06
-updated: 2026-06-14
----
-
-# Jagged Intelligence
+sources:
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- sequoia-ascent-2026-karpathy
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- intelligence
+- verification
+type: concept
+updated: '2026-06-22'
+---# Jagged Intelligence
 
 ## 한 줄 정의
 

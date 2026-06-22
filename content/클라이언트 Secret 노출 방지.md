@@ -1,21 +1,21 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
- - security
- - frontend
- - api-key
 aliases:
- - 브라우저 Secret 노출 방지
- - Client-side API Key
-sources:
- - API_Key_관리_및_Infisical_도입_가이드
+- 브라우저 Secret 노출 방지
+- Client-side API Key
+core: false
 created: 2026-05-07
-updated: 2026-05-07
----
-
-# 클라이언트 Secret 노출 방지
+sources:
+- API_Key_관리_및_Infisical_도입_가이드
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+status: evergreen
+tags:
+- security
+- frontend
+- api-key
+type: workflow
+updated: '2026-06-22'
+---# 클라이언트 Secret 노출 방지
 
 ## 한 줄 정의
 

@@ -1,33 +1,73 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
- - llm
- - agent
- - infrastructure
 aliases:
- - 에이전트 네이티브 인프라
- - Agent-native docs
-sources:
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - sequoia-ascent-2026-karpathy
- - API_Key_관리_및_Infisical_도입_가이드
- - Quartz-Deploy-Guide
- - Quartz-GitHub-Pages-Complete-Guide
- - opencode-masterclass-summary
- - pi-coding-agent-overview
- - arxiv-2603.28052-meta-harness
- - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
- - Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
- - The Open-Source Agent Toolkit in 2026
- - https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+- 에이전트 네이티브 인프라
+- Agent-native docs
+core: true
 created: 2026-05-06
-updated: 2026-06-14
----
-
-# Agent Native Infrastructure
+sources:
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- sequoia-ascent-2026-karpathy
+- API_Key_관리_및_Infisical_도입_가이드
+- Quartz-Deploy-Guide
+- Quartz-GitHub-Pages-Complete-Guide
+- opencode-masterclass-summary
+- pi-coding-agent-overview
+- arxiv-2603.28052-meta-harness
+- 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+- Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
+- The Open-Source Agent Toolkit in 2026
+- https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+- raw/Quartz-GitHub-Pages-Complete-Guide.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
+- raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/opencode-masterclass-summary.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/Quartz-Deploy-Guide.md
+- raw/arxiv-2603.28052-meta-harness.md
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+- raw/pi-coding-agent-overview.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- agent
+- infrastructure
+type: concept
+updated: '2026-06-22'
+---# Agent Native Infrastructure
 
 ## 한 줄 정의
 

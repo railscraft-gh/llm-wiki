@@ -1,27 +1,43 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
-  - design
-  - ai
-  - workflow
-  - product-design
 aliases:
-  - AI 디자인 계층 맵
-  - AI 디자인 운영 계층
-sources:
-  - From faster pencil to AI Experience Architect. a designer’s path
-  - Good Design Doesn’t Happen By Default
-  - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
-  - 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
-  - Agentic AI, design systems & Figma. a practical guide
-  - Why senior designers are doing four jobs for one salary in 2026
+- AI 디자인 계층 맵
+- AI 디자인 운영 계층
+core: true
 created: 2026-05-26
-updated: 2026-06-03
----
-
-# AI 디자인 역할 맵
+sources:
+- From faster pencil to AI Experience Architect. a designer’s path
+- Good Design Doesn’t Happen By Default
+- Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
+- 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
+- Agentic AI, design systems & Figma. a practical guide
+- Why senior designers are doing four jobs for one salary in 2026
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  For)-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+status: evergreen
+tags:
+- design
+- ai
+- workflow
+- product-design
+type: workflow
+updated: '2026-06-22'
+---# AI 디자인 역할 맵
 
 ## 한 줄 정의
 

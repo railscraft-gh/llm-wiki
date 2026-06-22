@@ -1,23 +1,42 @@
 ---
-type: tool
-status: evergreen
-core: false
-tags:
-  - llm
-  - agent
-  - open-source
 aliases:
-  - 헤르메스 에이전트
-  - Hermes 에이전트
-sources:
-  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
-  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+- 헤르메스 에이전트
+- Hermes 에이전트
+core: false
 created: 2026-06-09
-updated: 2026-06-22
----
-
-# Hermes Agent
+sources:
+- raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+- raw/클로드 디자인은 과연 디자이너를 대체할까.md
+- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/바이브 코딩의 종말-ko.md
+- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+- raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
+- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+status: evergreen
+tags:
+- llm
+- agent
+- open-source
+type: tool
+updated: '2026-06-22'
+---# Hermes Agent
 
 ## 한 줄 정의
 

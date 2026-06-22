@@ -1,20 +1,22 @@
 ---
-type: tool
-status: evergreen
 core: false
-tags:
-  - ruby
-  - linter
-  - formatter
-  - ci
-  - verification
-sources:
-  - RuboCop - Ruby 정적 코드 분석기 완벽 정리
 created: 2026-05-13
-updated: 2026-05-13
----
-
-# RuboCop
+sources:
+- RuboCop - Ruby 정적 코드 분석기 완벽 정리
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/arxiv-2603.28052-meta-harness.md
+status: evergreen
+tags:
+- ruby
+- linter
+- formatter
+- ci
+- verification
+type: tool
+updated: '2026-06-22'
+---# RuboCop
 
 ## 한 줄 정의
 

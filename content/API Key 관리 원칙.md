@@ -1,23 +1,23 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
- - security
- - api-key
- - secret-management
 aliases:
- - API Key 보안
- - Secret 관리 원칙
-sources:
- - API_Key_관리_및_Infisical_도입_가이드
- - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
- - https://www.12factor.net/config
+- API Key 보안
+- Secret 관리 원칙
+core: true
 created: 2026-05-07
-updated: 2026-06-14
----
-
-# API Key 관리 원칙 (API Key Management Principles)
+sources:
+- API_Key_관리_및_Infisical_도입_가이드
+- https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- https://www.12factor.net/config
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+status: evergreen
+tags:
+- security
+- api-key
+- secret-management
+type: workflow
+updated: '2026-06-22'
+---# API Key 관리 원칙 (API Key Management Principles)
 
 ## 한 줄 정의
 

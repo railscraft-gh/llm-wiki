@@ -1,21 +1,23 @@
 ---
-type: claim
-status: evergreen
-core: false
-tags:
- - llm
- - learning
- - career
- - ai
 aliases:
- - 역량 부채
-sources:
- - 아무도 AI를 배우고 싶어 하지 않는다
+- 역량 부채
+core: false
 created: 2026-05-24
-updated: 2026-06-14
----
-
-# Competence Debt
+sources:
+- 아무도 AI를 배우고 싶어 하지 않는다
+- raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
+- raw/아무도 AI를 배우고 싶어 하지 않는다.md
+- raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+- raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
+status: evergreen
+tags:
+- llm
+- learning
+- career
+- ai
+type: claim
+updated: '2026-06-22'
+---# Competence Debt
 
 ## 한 줄 정의
 

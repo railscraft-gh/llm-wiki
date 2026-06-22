@@ -1,25 +1,70 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
-  - llm
-  - agent
-  - security
-  - harness-engineering
 aliases:
-  - 치명적 삼위일체
-  - Rule of Two
-sources:
-  - evolution-of-ai-agentic-patterns
-  - https://simonwillison.net/2025/Jun/2/the-lethal-trifecta/
-  - https://ai.meta.com/blog/practical-ai-agent-security/
-  - "raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md"
+- 치명적 삼위일체
+- Rule of Two
+core: true
 created: 2026-05-16
-updated: 2026-06-12
----
-
-# Lethal Trifecta
+sources:
+- evolution-of-ai-agentic-patterns
+- https://simonwillison.net/2025/Jun/2/the-lethal-trifecta/
+- https://ai.meta.com/blog/practical-ai-agent-security/
+- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+- raw/AI Agents. Complete Course.md
+- raw/How to Do Hard Things When You Have Zero Motivation.md
+- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+- raw/Your Wandering Mind Is Not the Enemy of Focus.md
+- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/Skills Alone Won’t Save You in the AI Economy.md
+- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+status: evergreen
+tags:
+- llm
+- agent
+- security
+- harness-engineering
+type: concept
+updated: '2026-06-22'
+---# Lethal Trifecta
 
 ## 한 줄 정의
 

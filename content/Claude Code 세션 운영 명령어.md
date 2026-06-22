@@ -1,22 +1,21 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
- - llm
- - claude-code
- - workflow
- - commands
 aliases:
- - Claude Code 명령어 운영
- - Claude Code power user commands
-sources:
- - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- Claude Code 명령어 운영
+- Claude Code power user commands
+core: false
 created: 2026-05-24
-updated: 2026-06-14
----
-
-# Claude Code 세션 운영 명령어
+sources:
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+status: evergreen
+tags:
+- llm
+- claude-code
+- workflow
+- commands
+type: workflow
+updated: '2026-06-22'
+---# Claude Code 세션 운영 명령어
 
 ## 한 줄 정의
 

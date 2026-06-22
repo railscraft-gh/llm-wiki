@@ -1,23 +1,22 @@
 ---
-type: workflow
-status: needs-review
-core: false
-tags:
-  - llm
-  - agent
-  - harness-engineering
-  - workflow
 aliases:
-  - 4 스킬 하네스
-  - 4 agents 4 skills
-  - Bloated AI Slop Labs
-sources:
-  - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- 4 스킬 하네스
+- 4 agents 4 skills
+- Bloated AI Slop Labs
+core: false
 created: 2026-05-28
-updated: 2026-05-28
----
-
-# AI 하네스 최소화
+sources:
+- Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+status: needs-review
+tags:
+- llm
+- agent
+- harness-engineering
+- workflow
+type: workflow
+updated: '2026-06-22'
+---# AI 하네스 최소화
 
 ## 한 줄 정의
 

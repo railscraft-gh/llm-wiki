@@ -1,23 +1,34 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
- - llm
- - design
- - product
 aliases:
- - AI 슬롭
- - 평균적 AI 결과물
- - generic AI output
-sources:
- - AI로_만든_제품이_안_팔리는_이유
- - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- AI 슬롭
+- 평균적 AI 결과물
+- generic AI output
+core: false
 created: 2026-05-07
-updated: 2026-05-28
----
-
-# AI Slop
+sources:
+- AI로_만든_제품이_안_팔리는_이유
+- Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- raw/frontend-design-skill.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/AI 겨울이 시작됐다-ko.md
+status: evergreen
+tags:
+- llm
+- design
+- product
+type: concept
+updated: '2026-06-22'
+---# AI Slop
 
 ## 한 줄 정의
 

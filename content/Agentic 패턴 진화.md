@@ -1,27 +1,30 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
-  - llm
-  - agent
-  - history
-  - harness-engineering
-  - context-engineering
 aliases:
-  - Prompt to Context to Harness
-  - 프롬프트-컨텍스트-하네스 진화
-  - Agentic Patterns Evolution
-sources:
-  - evolution-of-ai-agentic-patterns
-  - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
-  - https://www.honeycomb.io/blog/production-is-where-the-rigor-goes
-  - https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+- Prompt to Context to Harness
+- 프롬프트-컨텍스트-하네스 진화
+- Agentic Patterns Evolution
+core: true
 created: 2026-05-16
-updated: 2026-05-16
----
-
-# Agentic 패턴 진화
+sources:
+- evolution-of-ai-agentic-patterns
+- https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
+- https://www.honeycomb.io/blog/production-is-where-the-rigor-goes
+- https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+status: evergreen
+tags:
+- llm
+- agent
+- history
+- harness-engineering
+- context-engineering
+type: concept
+updated: '2026-06-22'
+---# Agentic 패턴 진화
 
 ## 한 줄 정의
 

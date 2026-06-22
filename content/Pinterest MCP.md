@@ -1,19 +1,30 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
-  - mcp
-  - infrastructure
-  - security
 aliases: []
-sources:
-  - "raw/Building an MCP Ecosystem at Pinterest-ko.md"
+core: false
 created: 2026-06-07
-updated: 2026-06-07
----
-
-# Pinterest MCP
+sources:
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/im-not-ai.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+status: evergreen
+tags:
+- mcp
+- infrastructure
+- security
+type: workflow
+updated: '2026-06-22'
+---# Pinterest MCP
 
 ## 한 줄 정의
 Pinterest MCP는 핀터레스트가 자율 AI 에이전트의 안전한 사내 자원 연동과 제어를 위해 구축한 클라우드 호스팅 기반의 모델 컨텍스트 프로토콜(MCP) 서버 아키텍처 및 보안 거버넌스 프레임워크다.

@@ -1,27 +1,39 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
-  - agent
-  - runtime
-  - infrastructure
-  - workflow
 aliases:
-  - 에이전트 런타임 계층 맵
-  - agent runtime role map
-sources:
-  - Skills, MCP, Tool Calling. 에이전트 확장의 세 층
-  - Structuring Agents, Skills, and MCPs 🤖🧩
-  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
-  - The Complete (Honest) Guide to OpenClaw
-  - opencode-masterclass-summary
+- 에이전트 런타임 계층 맵
+- agent runtime role map
+core: true
 created: 2026-05-26
-updated: 2026-05-26
----
-
-# AI 에이전트 런타임 역할 맵
+sources:
+- Skills, MCP, Tool Calling. 에이전트 확장의 세 층
+- Structuring Agents, Skills, and MCPs 🤖🧩
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+- The Complete (Honest) Guide to OpenClaw
+- opencode-masterclass-summary
+- raw/cc101_axwith_ko.html
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+status: evergreen
+tags:
+- agent
+- runtime
+- infrastructure
+- workflow
+type: workflow
+updated: '2026-06-22'
+---# AI 에이전트 런타임 역할 맵
 
 ## 한 줄 정의
 

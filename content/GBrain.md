@@ -1,19 +1,30 @@
 ---
-type: tool
-status: evergreen
-core: true
-tags:
-  - memory
-  - agent
-  - rag
 aliases: []
-sources:
-  - "raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md"
+core: true
 created: 2026-06-07
-updated: 2026-06-11
----
-
-# GBrain
+sources:
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/im-not-ai.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+status: evergreen
+tags:
+- memory
+- agent
+- rag
+type: tool
+updated: '2026-06-22'
+---# GBrain
 
 ## 한 줄 정의
 GBrain은 와이콤비네이터(Y Combinator)의 개리 탄(Garry Tan) 대표가 공개한 오픈소스 에이전트 장기 기억(Long-term Memory) 시스템으로, 마크다운 파일을 기반으로 지식 그래프를 자동 구축하고 이를 MCP를 통해 에이전트에 영구 메모리로 공급하는 실행 인프라다.

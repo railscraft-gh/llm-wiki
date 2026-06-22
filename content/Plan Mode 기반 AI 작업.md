@@ -1,32 +1,44 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
- - llm
- - agent
- - ai-coding
 aliases:
- - Plan Mode
- - 플랜 모드
- - OpenCode Plan agent
-sources:
- - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
- - 보리스_클로드코드_실무_사용법
- - Claude-Code-실무활용법-보리스-관점-정리
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - opencode-masterclass-summary
- - pi-coding-agent-overview
- - cc101_axwith_ko
- - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
- - https://opencode.ai/docs/agents/
- - https://pi.dev/docs/latest/usage
+- Plan Mode
+- 플랜 모드
+- OpenCode Plan agent
+core: true
 created: 2026-05-06
-updated: 2026-06-14
----
-
-# Plan Mode 기반 AI 작업
+sources:
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- 보리스_클로드코드_실무_사용법
+- Claude-Code-실무활용법-보리스-관점-정리
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- opencode-masterclass-summary
+- pi-coding-agent-overview
+- cc101_axwith_ko
+- Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+- https://opencode.ai/docs/agents/
+- https://pi.dev/docs/latest/usage
+- raw/pi-coding-agent-overview.md
+- raw/opencode-masterclass-summary.md
+- raw/Quartz-GitHub-Pages-Complete-Guide.md
+- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/cc101_axwith_ko.md
+- raw/Quartz-Deploy-Guide.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- agent
+- ai-coding
+type: workflow
+updated: '2026-06-22'
+---# Plan Mode 기반 AI 작업
 
 ## 한 줄 정의
 

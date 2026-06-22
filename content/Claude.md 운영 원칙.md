@@ -1,41 +1,118 @@
 ---
-type: workflow
-status: evergreen
-core: true
-tags:
-  - llm
-  - agent
-  - claude-code
 aliases:
-  - CLAUDE.md
-  - Claude.md
-  - AGENTS.md
-sources:
-  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-  - 보리스_클로드코드_실무_사용법
-  - Claude-Code-실무활용법-보리스-관점-정리
-  - AI로_만든_제품이_안_팔리는_이유
-  - opencode-masterclass-summary
-  - pi-coding-agent-overview
-  - cc101_axwith_ko
-  - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
-  - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
-  - andrej-karpathy-skills-CLAUDE-번역
-  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-  - Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
-  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
-  - CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
-  - AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
-  - Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
-  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - https://opencode.ai/docs/rules/
-  - https://pi.dev/docs/latest/usage
+- CLAUDE.md
+- Claude.md
+- AGENTS.md
+core: true
 created: 2026-05-06
-updated: 2026-06-14
----
-
-# Claude.md 운영 원칙
+sources:
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- 보리스_클로드코드_실무_사용법
+- Claude-Code-실무활용법-보리스-관점-정리
+- AI로_만든_제품이_안_팔리는_이유
+- opencode-masterclass-summary
+- pi-coding-agent-overview
+- cc101_axwith_ko
+- 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+- andrej-karpathy-skills-CLAUDE-번역
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
+- 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+- CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
+- AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
+- Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
+- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- https://opencode.ai/docs/rules/
+- https://pi.dev/docs/latest/usage
+- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+- raw/arxiv-2603.28052-meta-harness.md
+- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+- raw/AI 겨울이 시작됐다-ko.md
+- raw/우리가 피그마 없이 제품을 배포하는 방법.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- raw/클로드 디자인은 과연 디자이너를 대체할까.md
+- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+- raw/frontend-design-skill.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/cc101_axwith_ko.md
+- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+- raw/Quartz-Deploy-Guide.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
+- raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+- raw/보리스_클로드코드_실무_사용법.md
+- raw/Quartz-GitHub-Pages-Complete-Guide.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+- raw/andrej-karpathy-skills-CLAUDE-번역.md
+- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+- raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+- raw/pi-coding-agent-overview.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+- raw/opencode-masterclass-summary.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+status: evergreen
+tags:
+- llm
+- agent
+- claude-code
+type: workflow
+updated: '2026-06-22'
+---# Claude.md 운영 원칙
 
 ## 한 줄 정의
 Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모드 같은 에이전트에게 프로젝트 구조, 제약 조건, 거부 기준을 명시하여 반복되는 온보딩 과정 없이 답변 품질을 극대화하는 AI 행동 계약(Behavioral Contract) 문서다.

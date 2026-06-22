@@ -1,22 +1,23 @@
 ---
-type: workflow
-status: evergreen
-core: false
-tags:
-  - llm
-  - agent
-  - markdown
-  - html
 aliases:
-  - HTML vs Markdown 결정 트리
-  - Markdown source HTML artifact
-sources:
-  - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
+- HTML vs Markdown 결정 트리
+- Markdown source HTML artifact
+core: false
 created: 2026-05-26
-updated: 2026-05-26
----
-
-# AI 산출물 포맷 결정 트리
+sources:
+- Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+status: evergreen
+tags:
+- llm
+- agent
+- markdown
+- html
+type: workflow
+updated: '2026-06-22'
+---# AI 산출물 포맷 결정 트리
 
 ## 한 줄 정의
 

@@ -1,24 +1,25 @@
 ---
-type: workflow
-status: needs-review
-core: false
-tags:
-  - llm
-  - agent
-  - ai-coding
-  - orchestration
 aliases:
-  - Spectrum Development
-  - Spectrum Workflow
-  - build-loop
-sources:
-  - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
-  - GStack - Claude Code 가상 엔지니어링 팀 도구
+- Spectrum Development
+- Spectrum Workflow
+- build-loop
+core: false
 created: 2026-05-14
-updated: 2026-05-14
----
-
-# Ralph Loop
+sources:
+- Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+- GStack - Claude Code 가상 엔지니어링 팀 도구
+- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+status: needs-review
+tags:
+- llm
+- agent
+- ai-coding
+- orchestration
+type: workflow
+updated: '2026-06-22'
+---# Ralph Loop
 
 ## 한 줄 정의
 

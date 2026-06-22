@@ -1,23 +1,28 @@
 ---
-type: concept
-status: evergreen
-core: true
-tags:
- - llm
- - software
- - programming
 aliases:
- - 소프트웨어 3.0
-sources:
- - 안드레_카파시_인터뷰_정리
- - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
- - sequoia-ascent-2026-karpathy
- - AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
+- 소프트웨어 3.0
+core: true
 created: 2026-05-06
-updated: 2026-05-24
----
-
-# Software 3.0
+sources:
+- 안드레_카파시_인터뷰_정리
+- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+- sequoia-ascent-2026-karpathy
+- AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+status: evergreen
+tags:
+- llm
+- software
+- programming
+type: concept
+updated: '2026-06-22'
+---# Software 3.0
 
 ## 한 줄 정의
 

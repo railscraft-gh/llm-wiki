@@ -1,25 +1,39 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
-  - ai
-  - default
-  - tooling
-  - design-system
-  - agent
 aliases:
-  - AI가 표준화한 기본 구현체
-  - default implementation in AI era
-sources:
-  - The most important Design System in 2026 that designers missed was built by a developer.
-  - The Complete (Honest) Guide to OpenClaw
-  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+- AI가 표준화한 기본 구현체
+- default implementation in AI era
+core: false
 created: 2026-05-26
-updated: 2026-05-26
----
-
-# AI 기본값 구현체
+sources:
+- The most important Design System in 2026 that designers missed was built by a developer.
+- The Complete (Honest) Guide to OpenClaw
+- 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+- raw/frontend-design-skill.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/AI 겨울이 시작됐다-ko.md
+status: evergreen
+tags:
+- ai
+- default
+- tooling
+- design-system
+- agent
+type: concept
+updated: '2026-06-22'
+---# AI 기본값 구현체
 
 ## 한 줄 정의
 

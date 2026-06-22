@@ -1,19 +1,30 @@
 ---
-type: tool
-status: evergreen
-core: false
-tags:
-  - inference
-  - agent
-  - local
 aliases: []
-sources:
-  - "raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md"
+core: false
 created: 2026-06-07
-updated: 2026-06-07
----
-
-# oMLX
+sources:
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/im-not-ai.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+status: evergreen
+tags:
+- inference
+- agent
+- local
+type: tool
+updated: '2026-06-22'
+---# oMLX
 
 ## 한 줄 정의
 oMLX는 Apple Silicon(M 시리즈 칩셋) 맥 환경에 맞춤 설계된 고성능 로컬 대규모 언어 모델(LLM) 추론 엔진으로, 에이전트 구동에 필요한 대규모 콘텍스트의 캐싱 및 병렬 서빙에 최적화된 도구다.

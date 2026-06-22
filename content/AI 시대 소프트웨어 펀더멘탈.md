@@ -1,25 +1,52 @@
 ---
-type: concept
-status: evergreen
-core: false
-tags:
-  - ai-coding
-  - software-engineering
-  - fundamentals
-  - tdd
-  - ddd
 aliases: []
-sources:
-  - Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals
-  - 아무도 AI를 배우고 싶어 하지 않는다
-  - 오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
-  - raw/Most Developers Are Solving the Wrong Problem.md
+core: false
 created: 2026-05-09
-updated: 2026-06-16
----
-
-# AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
+sources:
+- Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals
+- 아무도 AI를 배우고 싶어 하지 않는다
+- 오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/단돈 100달러로 주식 투자 시작하기.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  and What I Rejected.md
+- raw/아무도 AI를 배우고 싶어 하지 않는다.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/우리가 초대받지 못한 새로운 AI 시대의 개막.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md
+- raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md
+- raw/오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/남다르게 생각하도록 뇌를 훈련하는 법.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md
+status: evergreen
+tags:
+- ai-coding
+- software-engineering
+- fundamentals
+- tdd
+- ddd
+type: concept
+updated: '2026-06-22'
+---# AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
 
 ## 한 줄 정의
 

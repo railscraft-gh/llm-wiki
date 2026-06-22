@@ -1,21 +1,20 @@
 ---
-type: tool
-status: needs-review
-core: false
-tags:
-  - agent
-  - omo
-  - team-mode
 aliases:
-  - OMO Team Mode
-  - Oh My OpenAgent Team Mode
-sources:
-  - oh-my-openagent-team-mode
+- OMO Team Mode
+- Oh My OpenAgent Team Mode
+core: false
 created: 2026-05-11
-updated: 2026-05-11
----
-
-# OpenAgent Team Mode
+sources:
+- oh-my-openagent-team-mode
+- raw/oh-my-openagent-team-mode.md
+status: needs-review
+tags:
+- agent
+- omo
+- team-mode
+type: tool
+updated: '2026-06-22'
+---# OpenAgent Team Mode
 
 ## 한 줄 정의
 
