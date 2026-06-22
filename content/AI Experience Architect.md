@@ -9,12 +9,15 @@ sources:
 - UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
 - Why senior UX designers are struggling in 2026
 - raw/Design’s craft crisis. senior designers built it.md
+- raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md
+- raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
 - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
-  Quietly Replaced All Three-ko.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md
 - raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
-- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  and What I Rejected.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md
 - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
 - raw/From faster pencil to AI Experience Architect. a designer’s path.md
 - raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
@@ -25,16 +28,13 @@ sources:
 - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
 - raw/Why senior UX designers are struggling in 2026-ko.md
 - raw/The Complete (Honest) Guide to OpenClaw.md
-- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
-  Source)-ko.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md
 - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
-- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
-  Was-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md
 - raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
 - raw/im-not-ai.md
 - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-- raw/The most important Design System in 2026 that designers missed was built by
-  a developer..md
+- raw/The most important Design System in 2026 that designers missed was built by a developer..md
 - raw/2026년의 AI 에이전트 실전 가이드-ko.md
 - raw/Good Design Doesn’t Happen By Default.md
 - raw/The Best Way to Make AI Write Like You-ko.md
@@ -57,7 +57,7 @@ tags:
 - workflow
 - ux
 type: concept
-updated: '2026-06-22'
+updated: 2026-06-22
 ---
 
 # AI Experience Architect
