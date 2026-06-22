@@ -12,18 +12,21 @@ sources:
 - raw/Good Design Doesn’t Happen By Default.md
 - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
 - raw/From faster pencil to AI Experience Architect. a designer’s path.md
-- raw/The most important Design System in 2026 that designers missed was built by
-  a developer..md
+- raw/The most important Design System in 2026 that designers missed was built by a developer..md
 - raw/AI와 디자인 시스템 - 출판형 다듬기.md
 - raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
 - raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
 - raw/How top companies are using AI in their design workflows.md
+- raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
+- raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md
+- raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
 - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
 - raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
 - raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
 - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  and What I Rejected.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md
 - raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
 - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
 - raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
@@ -33,8 +36,7 @@ sources:
 - raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
 - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
 - raw/cc101_axwith_ko.html
-- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
-  For)-ko.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
 - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
 - raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
 - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
@@ -70,7 +72,7 @@ tags:
 - design-system
 - product
 type: concept
-updated: '2026-06-22'
+updated: 2026-06-22
 ---
 
 # AI 시대 디자인 시스템
