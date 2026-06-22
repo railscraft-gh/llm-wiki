@@ -63,13 +63,14 @@ sources:
 - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
 - raw/Skills Alone Won’t Save You in the AI Economy.md
 - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md
 status: evergreen
 tags:
 - ai-coding
 - workflow
 - engineering
 type: workflow
-updated: '2026-06-22'
+updated: 2026-06-22
 ---
 
 # 사양 기반 개발 (Spec Driven Development)
