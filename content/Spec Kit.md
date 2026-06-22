@@ -104,7 +104,7 @@ Claude Code, GitHub Copilot, Gemini CLI, Cursor, Windsurf, Codex CLI, Qwen Code,
   - `specify integration list` 명령어로 연동 가능한 목록 및 연동 모드를 확인할 수 있다.
 
 ### 5. 확장 기능 및 사전 설정
-Spec Kit은 오픈소스 커뮤어티를 통해 70개 이상의 확장 모듈이 보급되어 있다.
+Spec Kit은 오픈소스 커뮤니티를 통해 70개 이상의 확장 모듈이 보급되어 있다.
 - **확장 도구(Extensions)**: Jira/Azure DevOps 연동, 사후 코드 리뷰 자동화, OWASP 기반 LLM 위협 분석 모델링, V-모델 테스트 추적성 등 특화 명령어와 템플릿을 이식한다.
 - **사전 설정(Presets)**: 기업 고유의 사내 보안 규격이나 코딩 지침에 맞게 기본 템플릿 구조를 강제로 재조정하는 옵션을 제공한다.
 
