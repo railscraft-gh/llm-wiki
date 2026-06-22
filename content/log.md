@@ -1,5 +1,72 @@
 # LLM Wiki Log
 
+## 2026-06-22-번역
+
+### Ingest
+
+- 입력:
+  - `/Users/railscraft/Obsidian/medium/14 Amazing Open Source Tools You Need To Try.md`
+  - `/Users/railscraft/Obsidian/medium/6 Developer Tools So Good, They Feel Illegal in 2026.md`
+  - `/Users/railscraft/Obsidian/medium/8 Books You Should Definitely Read at Least Once in Your Life.md`
+  - `/Users/railscraft/Obsidian/medium/Best UX Practices for Designing a Sidebar.md`
+  - `/Users/railscraft/Obsidian/medium/DESIGN.md Best Practices.md`
+  - `/Users/railscraft/Obsidian/medium/How I Learn New Technical Skills Fast.md`
+  - `/Users/railscraft/Obsidian/medium/I Tried Running AI Agents on My MacBook. MLX Was Too Slow. Then I Found oMLX.md`
+  - `/Users/railscraft/Obsidian/medium/I Used Git Wrong for Years.md`
+  - `/Users/railscraft/Obsidian/medium/I Wish I Knew This Before Building an AI Second Brain.md`
+  - `/Users/railscraft/Obsidian/medium/If You’re Reading Technical Books, Read This First.md`
+  - `/Users/railscraft/Obsidian/medium/Is It Worth Buying a $4,000–8,000 Machine to Run AI Locally.md`
+  - `/Users/railscraft/Obsidian/medium/I’ve Tried 100+ Claude Code Skills. These are The Best..md`
+  - `/Users/railscraft/Obsidian/medium/Logo Design with Claude Code.md`
+  - `/Users/railscraft/Obsidian/medium/RAG Systems in 5 Levels of Difficulty (With Full Code Implementation).md`
+  - `/Users/railscraft/Obsidian/medium/Real UXUI design test of the best Design AI tool out there..md`
+  - `/Users/railscraft/Obsidian/medium/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
+  - `/Users/railscraft/Obsidian/medium/The Basics of Becoming Wise.md`
+  - `/Users/railscraft/Obsidian/medium/The First Company-Wide AI Ban Just Hit My Inbox. Here’s What It Means.md`
+  - `/Users/railscraft/Obsidian/medium/This Is Why the Rich Hold Cash but Tell You to Invest.md`
+  - `/Users/railscraft/Obsidian/medium/A Step-by-Step Guide for Developing Your Personal Agentic System..md`
+- 생성:
+  - `raw/반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md`
+  - `raw/2026년 반칙 수준으로 유용한 개발자 도구 6선.md`
+  - `raw/일생에 한 번은 꼭 읽어야 할 비소설 추천 도서 8선.md`
+  - `raw/사용성을 극대화하는 사이드바 UI UX 디자인 모범 사례.md`
+  - `raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md`
+  - `raw/새로운 기술을 빠르게 습득하는 나만의 학습 워크플로우.md`
+  - `raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md`
+  - `raw/내가 수년 동안 Git을 잘못 사용했음을 깨닫게 해준 실전 Git 팁.md`
+  - `raw/AI 세컨드 브레인을 구축하기 전에 알았더라면 좋았을 것들.md`
+  - `raw/기술 서적을 효과적으로 읽고 내 것으로 만드는 5단계 공부법.md`
+  - `raw/로컬 AI 구동용 고사양 PC 구매는 돈값할까.md`
+  - `raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md`
+  - `raw/Claude Code를 활용한 브랜드 로고 디자인 가이드.md`
+  - `raw/5단계 난이도로 알아보는 RAG 시스템 구축 및 구현 가이드.md`
+  - `raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md`
+  - `raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md`
+  - `raw/지혜로운 사람이 되기 위한 15가지 기초 습관.md`
+  - `raw/어느 IT 기업의 사내 AI 사용 전면 금지령이 시사하는 것.md`
+  - `raw/부자들이 현금을 보유하는 진짜 이유와 금융 업계의 거짓말.md`
+  - `raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md`
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음 (번역 원문 20종에 대한 1:1 대응 번역 및 정밀 윤문 완료)
+
+### Lint
+
+- 실행 방식: 수동 대조 및 quick-rules.md 기반 자가 검증 일관성 점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개 (원문 수치 전량 보존)
+- 관련 노트 2개 미만 문서: 0개 (이번엔 raw/ 생성 단계이므로 위키 노트 크로스링크 제한 조건에 예외를 둠)
+- 고아 페이지: 0개 (raw 문서이므로 해당 없음)
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 20종 전체 번역 마크다운 파일에 대해 문장 누락 검증을 거친 후, 자연스러운 한국어 IT 위키에 걸맞은 평어체로 윤문을 수행해 raw/ 폴더에 안전하게 기록함.
+
+### 결정 기록
+
+- 결정: 신규 생성 및 draft 등록
+- 대상: 번역본 raw 20종 전체
+- 근거: medium/ 에 위치한 영문 기술 및 경영, 라이프스타일 20개 문서를 한국어 원어민이 쓴 것처럼 높은 완성도로 번역하여 raw 원형 자산으로 확보함.
+
 ## 2026-06-22
 
 ### Ingest
