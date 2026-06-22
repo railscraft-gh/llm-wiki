@@ -140,11 +140,29 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
 - **Tesco의 Figma MCP 연동 플러그인**:
   - Cursor(바이브 코딩)와 Figma MCP 서버를 활용하여 자체 Figma 플러그인을 구축한다. 이를 통해 실제 운영 웹사이트의 라이브 데이터(이미지, 제품 설명, 평점 등)를 UI 컴포넌트에 실시간 긁어와 자동 정렬 및 입력함으로써, 목업이 아닌 고도로 사실적인 디자인 품질을 보장한다.
 
+- **Anthropic의 30줄 CSS 미학 선언문**:
+  - **AI Slop 방지를 위한 수렴 거부**: Inter, Roboto, Arial, Space Grotesk 등 일반적인 폰트 선택 및 흰 배경 위 보라색 그라데이션 같은 진부한 SaaS 미학의 사용을 절대 금지(Forbidden List)한다.
+  - **극단적 미학 명세**: Brutally minimal, Maximalist chaos, Retro-futuristic, Editorial/magazine 등 11가지 시각 미학 방향 중 하나를 명확히 선언하고, gradient meshes, noise textures, layered transparencies 등의 디테일 질감을 적극 수용하여 '평균적 AI Slop'을 차단한다.
+
 ### 7. 시스템으로서의 취향 (Taste as a System) 구축
 
 시각적 결과물(output)은 AI가 무한히 양산할 수 있으므로, 디자인 시스템은 단순 컴포넌트 가이드를 넘어 '취향과 안목의 통제소'가 되어야 한다.
 - **Before/After 대조 캔버스**: 초기 서비스 흐름(flows)과 최종 설계안을 나란히 배치하고, 최종안이 우수한 설계 및 시각적 판단의 상세 근거를 디자인 시스템 내에 이력으로 보존한다.
 - **디자인 안목 리뷰 (Taste Review)**: 디자인 시스템팀 주도로 월 1회 외부 트렌드를 스캔하고 릴리스 직전 다듬어야 할 품질 하한선을 상향하는 안목 리뷰 세션을 구축한다.
+
+### 8. 피그마 토큰 매핑 및 검토 게이트 (Figma Token Mapping & Approval Gates)
+
+- **피그마 변수(Variables) 3단계 구조**:
+  - Primitives (원시 토큰): hex값, 간격 스케일, 기본 폰트 사이즈 등 기초 물리 값 (`blue/500 = #3B8BD4`, `space/4 = 16px`). 직접 사용을 피하기 위해 properties panel에서 숨겨두고 상위 토큰이 참조하게 한다.
+  - Semantic Tokens (의도 토큰) [필수]: 색상이나 간격이 쓰이는 '의도와 목적'을 정의한다 (`color/interactive/default`, `color/interactive/hover`, `color/interactive/disabled`).
+  - Component Tokens (컴포넌트 토큰): 개별 컴포넌트 단위의 변수 매핑 (`button/background/default` -> `color/interactive/default`).
+- **검토 게이트 체크리스트 (Approval Gate Checklist)**:
+  - [ ] **Figma Token Validation**: Primitives의 직접 노출 여부를 검증하고, 모든 컴포넌트 색상이 Semantic Token으로 올바르게 매핑되어 있는가?
+  - [ ] **PascalCase Component Name**: 피그마와 코드베이스의 이름이 `ProductCard`와 같이 PascalCase로 정확히 일치하여 Code Connect 매핑이 유효한가?
+  - [ ] **Component Properties Align**: 피그마 variants 이름(variant, size, state 등)이 코드 props와 대소문자까지 동일하게 설정되었는가?
+  - [ ] **Zero Detaching (Slots Check)**: 컴포넌트가 임의로 깨지지(detached) 않았으며, named slot 분홍색 테두리 내에 정상적으로 drop 되었는가?
+  - [ ] **Auto Layout Coverage**: 모든 컴포넌트 프레임이 Hug, Fill, Fixed 등의 의도적인 크기 제어와 variables spacing을 통해 Flexbox CSS로 무리 없이 매핑되는가?
+  - [ ] **WCAG 2.2 AAA Contrast**: 대비율 7:1 이상 보장, 터치 타겟 44x44px 이상 확보, 폰트 14px 하한선이 지켜졌는가?
 
 ## 예시
 
