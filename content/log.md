@@ -1,5 +1,35 @@
 # LLM Wiki Log
 
+## 2026-06-30-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/superpowers-brainstorming.md`
+- 생성:
+  - [[Brainstorming 스킬 운영 원칙]] (신규)
+- 수정:
+  - [[Cursor Superpowers 플러그인]] (brainstorming 스킬 상세 내용 및 디자인 하드게이트 개념 보강, sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개 (`[[Brainstorming 스킬 운영 원칙]]`에 `[[Cursor Superpowers 플러그인]]`, `[[Plan Mode 기반 AI 작업]]`, `[[사양 기반 개발 (Spec Driven Development)]]`, `[[Harness Engineering]]` 등 4개의 관련 위키 노트 상호 연동 완료)
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 신규 생성 및 보강
+- 대상: [[Brainstorming 스킬 운영 원칙]], [[Cursor Superpowers 플러그인]]
+- 근거: `superpowers:brainstorming` 스킬의 디자인 승인 하드게이트와 비주얼 컴패니언 등의 통제 규칙을 지식 노트로 계통화하여 에이전트의 설계 검토 루틴을 체계화함.
+
 ## 2026-06-22-ingest
 
 ### Ingest
