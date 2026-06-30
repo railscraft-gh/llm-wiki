@@ -14,8 +14,9 @@ aliases:
   - Cursor 스킬 플러그인
 sources:
   - raw/Cursor에서 Superpowers 플러그인 쓰는 법 — 상세 정리-ko.md
+  - raw/superpowers-brainstorming.md
 created: 2026-06-19
-updated: 2026-06-22
+updated: 2026-06-30
 ---
 
 # Cursor Superpowers 플러그인
@@ -114,9 +115,10 @@ Superpowers 각 스킬은 에이전트에게 강제할 행동 지침을 담고 �
 
 #### brainstorming
 
-- 무언가를 만들기 전에 아이디어를 설계/스펙으로 정리하는 스킬
-- 핵심은 “설계를 승인하기 전에는 구현 금지”
-- 에이전트가 바로 코딩으로 뛰어드는 걸 막는다.
+- 구현 시작 전 아이디어를 구체적인 설계 명세서(Spec)로 구체화하는 스킬. (상세 내용은 [[Brainstorming 스킬 운영 원칙]] 참조)
+- **디자인 승인 하드게이트**: 사용자의 명시적 설계 승인을 받기 전까지는 구현 및 코딩 작업을 시작하지 않는 절대 규칙을 강제한다.
+- **적시 비주얼 컴패니언 (Just-in-Time Visual Companion)**: 레이아웃이나 다이어그램 등 시각적 검토가 진짜로 유용한 경우에만 단독 메시지로 비주얼 툴을 제안한다.
+- 에이전트가 생각 없이 바로 코딩으로 뛰어드는 것을 막는 대표적인 Flexible 스킬이다.
 
 #### writing-plans
 
