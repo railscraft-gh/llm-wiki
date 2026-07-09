@@ -1,77 +1,78 @@
 ---
 aliases:
-- Design.md
-- DESIGN.md
-- 디자인용 AGENTS.md
+  - Design.md
+  - DESIGN.md
+  - 디자인용 AGENTS.md
 core: false
 created: 2026-05-07
 sources:
-- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-- raw/How to write a DESIGN.md file Claude can actually use-ko.md
-- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
-- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
-- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
-- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
-- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
-  For)-ko.md
-- raw/AI로_만든_제품이_안_팔리는_이유.md
-- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-- raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
-- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
-- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-- raw/우리가 피그마 없이 제품을 배포하는 방법.md
-- raw/The Open-Source Agent Toolkit in 2026-ko.md
-- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
-- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
-- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-- raw/API_Key_관리_및_Infisical_도입_가이드.md
-- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
-- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
-- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-- "raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md"
+  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+  - raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+  - raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  - raw/AI로_만든_제품이_안_팔리는_이유.md
+  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+  - raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
+  - raw/The Open-Source Agent Toolkit in 2026-ko.md
+  - raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+  - raw/API_Key_관리_및_Infisical_도입_가이드.md
+  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+  - raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+  - raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md
 status: evergreen
 tags:
-- llm
-- design-system
-- ai-coding
-type: workflow
-updated: '2026-06-22'
+  - llm
+  - design-system
+  - ai-coding
+  - design
+  - workflow
+type: concept
+updated: 2026-07-10
 ---
 
 # DESIGN.md 운영 원칙
 
 ## 한 줄 정의
-
 DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관된 UI를 유지하도록 디자인 시스템의 값, 의도, 경계 규칙을 인코딩하고 제어하는 마크다운 기반의 영구 컨텍스트(Persistent context) 관리 기법이다.
 
 ## 핵심 요지
-
 - **CLAUDE.md vs DESIGN.md 역할 분할**: `CLAUDE.md`가 에이전트에게 **코드 작성 방식(Code Behavior)**을 가르친다면, `DESIGN.md`는 에이전트가 엉성하고 파편화된 UI를 만들지 않게 **비주얼 가이드(Visual Behavior)**를 고정한다 [출처](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md).
 - **값-의도-경계(Value-Intent-Boundary) 매핑**: 단순한 토큰 덤프(hex 코드의 단순 나열)가 아니라, 토큰값의 구체적인 역할(Intent)과 금지/경계 구역(Boundary)을 명세한다. 모델은 산문적 제약(Prose constraints)을 가장 효과적으로 준수하기 때문이다.
 - **Do's and Don'ts(금지 규칙)의 효용성**: 시스템이 절대 취하지 않는 선택(예: 그라데이션 금지, 8px 초과 반경 금지 등)을 명문화하는 것이 토큰 종류를 늘리는 것보다 plausible default(그럴듯하지만 브랜드와 어긋나는 기본값)로의 회귀를 차단하는 데 훨씬 우수하다.
 - **디자인 인프라 격차 해소**: TypeScript generics나 아키텍처 리팩터링은 도구들의 보완책(`.cursorrules`, type check, formatter, CI) 덕분에 고정되나 디자인 일관성은 장치가 없었다. `DESIGN.md`는 이 디자인 레이어의 컨텍스트 기억 부재 문제를 해결하는 단순한 뼈대다.
 - **디자이너의 의도적 판단(Reasoning Layer) 주입**: AI는 Figma 디자인 등에서 색상이나 치수 같은 "무엇(What)"은 잘 추출하지만, 제품의 목적이나 비협상적 가이드라인 같은 "왜(Why)"는 추론하거나 날조하기 때문에 인간이 직접 인터뷰 형식을 통해 "왜"에 대한 의사결정 맥락을 입력해 주어야 한다.
+- 기계 가독성을 온전히 확보하기 위해 9가지 필수 섹션을 일관성 있게 구성한다.
+- Figma 디자인 토큰과 UI 핸드오프를 코드 격차 없이 동기화하기 위한 뼈대로 작동한다.
 
 ## 상세
 
@@ -111,6 +112,25 @@ Google Stitch 프로젝트에서 최초 도입된 `DESIGN.md`는 제품의 시�
 3. **상태 전이(State Transitions) 규칙 명세**: 컴포넌트는 기본 상태뿐만 아니라 Hover, Active, Disabled, Loading 등 모든 상태 전이 규칙을 포함해 명시할 것.
 이 3대 원칙은 AI 에이전트가 디자인 시스템 명세와 일치하는 프로덕션 코드를 정확히 생성하도록 돕는 강력한 가드레일이 된다.
 
+### DESIGN.md 필수 9대 섹션 상세 가이드
+
+`DESIGN.md`는 AI 에이전트가 시각적 일관성(Visual consistency)을 유지하며 일관된 UI를 구축할 수 있도록 돕는 3대 레이어, 9대 핵심 섹션으로 구성된다.
+
+#### 1. Foundation: 브랜드를 세팅하는 층
+*   **Visual Theme & Atmosphere**: 숫자가 아닌 제품의 미학적 톤앤매너를 텍스트로 정의한다 (예: "technical and luxurious, precise and warm"). 이것이 부재하면 에이전트는 generic modern style로 수렴한다.
+*   **Color Palette & Roles**: 단순한 색상값 나열을 넘어 각 색상의 구체적인 역할을 지정한다 (primary, accent, interactive state, neutral scale, surface, border, shadow of 사용처와 금지처 명세). Color Roulette 현상을 예방한다.
+*   **Typography Rules**: font family, size hierarchy, weight, line-height, letter-spacing, OpenType feature, headline rule 등을 상세히 기술한다 (예: headline에 700을 쓰지 않는 규칙 등).
+
+#### 2. Components: 실제 UI를 구성하는 층
+*   **Component Stylings**: button, card, input, badge, navigation 등의 base style과 다양한 상태 전이(hover, active, disabled, loading state)를 정의한다. 없을 경우 에이전트는 generic blue rectangle로 수렴한다.
+*   **Layout Principles**: base spacing unit, max width, grid, radius scale, whitespace 철학을 정의한다. spacing은 임의의 감이 아닌 명확한 scale 단위로 규정해야 한다.
+*   **Depth & Elevation**: shadow system과 layer 구분을 적는다. 단순히 "그림자를 준다"가 아닌, 특정 높이에 어떤 shadow를 쓰고, neutral gray 대신 blue-tinted shadow를 쓰는 등의 구체적인 규칙을 지정한다.
+
+#### 3. Guardrails: 일관성을 지키는 층
+*   **Do's and Don'ts**: "border-radius는 8px를 넘기지 않는다", "pill-shaped button 금지", "heavy headline 금지"처럼 에이전트가 plausible default(그럴듯하지만 브랜드와 어긋나는 기본값)를 선택하지 않도록 사전에 경계를 잘라낸다.
+*   **Responsive Behavior**: breakpoint, collapse 방식, touch target, mobile에서의 typography 조정, component별 responsive rule을 적어 모바일이 별도의 design context임을 명시한다.
+*   **Agent Prompt Guide**: 새 세션에서 빠르게 참고할 quick reference로 자주 쓰는 color code, component prompt, iteration checklist를 포함하여 style drift를 방지한다.
+
 ## 예시
 
 ### 1. 여행 계획 웹앱 'Oooff' 프로토타입 설계 사례
@@ -132,12 +152,71 @@ Oooff 웹앱의 디자인 시스템 구축 시, 단순히 Figma에서 토큰을 
 *   **Don't**: 에러 상태를 색상(#EF4444)으로만 표현 금지. 반드시 에러 설명 텍스트를 함께 제공할 것.
 *   **Don't**: 모든 모션 애니메이션 및 페이지 로딩 트랜지션이 200ms를 초과하게 설계 금지.
 
-## 충돌
+### DESIGN.md 9대 섹션 기반 점진적 빌드 및 작성 템플릿
 
+#### 1. 직접 작성을 위한 점진적 접근법 (경로 C)
+처음부터 9대 섹션을 모두 완성할 필요는 없다. 초기 프로토타이핑 및 구축 시에는 다음 4가지 핵심 섹션을 우선 구현하여 가동하고, 이후 나머지를 점진적으로 확장하는 방식이 효과적이다.
+1. Visual Theme & Atmosphere (미학적 톤)
+2. Color Palette & Roles (역할별 색상)
+3. Component Stylings (컴포넌트 기본 스타일)
+4. Do's and Don'ts (금지 규칙)
+
+#### 2. DESIGN.md 9대 섹션 뼈대 템플릿
+```markdown
+# DESIGN.md
+
+## 1. Foundation
+### Visual Theme & Atmosphere
+- Tone: Technical, precise, clean, yet warm and approachable.
+- Do not make it generic modern or standard Bootstrap-like design.
+
+### Color Palette & Roles
+- Primary: `#635bff` (For primary actions and trust signals. Never use decoratively)
+- Accent: `#ff4f81` (For promotions and visual highlights)
+- Neutral Scale: Gray 50 (`#f8f9fa`) to Gray 900 (`#1a1f36`)
+
+### Typography Rules
+- Font Family: Inter, sans-serif
+- Hierarchy: Display Hero (48px, Bold 700), Headline (24px, Medium 500, line-height 1.2)
+- Constraints: Never use 700 weight for small inline texts or headlines.
+
+## 2. Components
+### Component Stylings
+- Button Base: Height 40px, padding 0 16px, font-weight 500.
+  - Hover: Opacity 0.9, transition 200ms ease.
+  - Active: Scale 0.98.
+  - Disabled: Background `#e6ebf1`, text `#a3acb9`, cursor not-allowed.
+
+### Layout Principles
+- Base Spacing: 8px scale (8px, 16px, 24px, 32px, 48px, 64px)
+- Margin/Padding: Always use multiples of 8px. Do not use ad-hoc pixel values.
+
+### Depth & Elevation
+- Layer 1 (Card): Box shadow `0 2px 4px rgba(99, 91, 255, 0.05)` (blue-tinted shadow)
+- Layer 2 (Modal): Box shadow `0 8px 16px rgba(0, 0, 0, 0.1)`
+
+## 3. Guardrails
+### Do's and Don'ts
+- DO: Use 8px base spacing scale consistently.
+- DON'T: Do not exceed `border-radius: 8px` on any card or button.
+- DON'T: Do not use pill-shaped buttons.
+
+### Responsive Behavior
+- Breakpoints: Mobile (768px), Tablet (1024px), Desktop (1200px)
+- Touch Targets: Min 44px x 44px on mobile view.
+
+### Agent Prompt Guide
+- Rapid Tokens: Primary (`#635bff`), Border Radius (`6px`), Font (`Inter`)
+- Iteration Checklist:
+  1. Check hover/active states for buttons.
+  2. Verify spacing matches the 8px scale.
+  3. Ensure no pill-shaped components are generated.
+```
+
+## 충돌
 - **Figma vs Markdown (Two Source of Truth)**: Figma 파일과 마크다운 명세 사이에 싱크가 어긋나는 순간 에이전트의 신뢰도 체계가 붕괴한다. 둘 중 하나가 갱신되면 `npx @google/design.md lint DESIGN.md` CLI 도구를 가동해 즉시 정합성(WCAG 명암비, 깨진 토큰 참조 등)을 동기화해야 한다.
 
 ## 관련 노트
-
 - [[AI 시대 디자인 시스템]]
 - [[AI Slop]]
 - [[Claude.md 운영 원칙]]
@@ -146,4 +225,5 @@ Oooff 웹앱의 디자인 시스템 구축 시, 단순히 Figma에서 토큰을 
 - [[디자인 시스템 기본값]]
 - [[DESIGN.md 워크플로우]]
 - [[AI 네이티브 프로토타이핑]]
+- [[완전히 기계 읽기 가능한 디자인 시스템]]
 
