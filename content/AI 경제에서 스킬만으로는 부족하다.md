@@ -5,7 +5,7 @@ aliases:
 core: true
 created: 2026-06-12
 sources:
-  - 'raw/Skills Alone Won't Save You in the AI Economy.md'
+  - "raw/Skills Alone Won't Save You in the AI Economy.md"
   - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
   - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
   - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
