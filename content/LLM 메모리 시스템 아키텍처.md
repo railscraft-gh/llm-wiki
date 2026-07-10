@@ -1,43 +1,43 @@
 ---
 aliases:
-- LLM Memory System Architecture
-- 에이전트 메모리 계층
+  - LLM Memory System Architecture
+  - 에이전트 메모리 계층
 core: true
 created: 2026-06-14
 sources:
-- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-- raw/How to write a DESIGN.md file Claude can actually use-ko.md
-- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-- raw/우리가 피그마 없이 제품을 배포하는 방법.md
-- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
+  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
 status: evergreen
 tags:
-- llm
-- memory
-- agent-workflow
-- architecture
-- knowledge-graph
+  - llm
+  - memory
+  - agent-workflow
+  - architecture
+  - knowledge-graph
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # LLM 메모리 시스템 아키텍처
@@ -50,6 +50,9 @@ LLM 메모리 시스템 아키텍처는 LLM 에이전트가 단기 대화 맥락
 - **메모리 계층 구조 (Memory Hierarchy)**: 하드웨어의 RAM과 하드디스크의 이원화 구조처럼, 매 대화 턴마다 즉각 상주하며 갱신되는 **핵심 메모리(Core Memory)**와 방대한 지식을 저장하고 필요할 때 시맨틱 검색으로 퍼 올리는 **보관용 장기 메모리(Archival Memory)**로 계층을 설계하여 컨텍스트 예산(Context Tax)을 관리한다.
 - **구축 기법의 트레이드오프**: 단순 순환 버퍼(FIFO)부터 지식 그래프(관계 추론) 및 MemGPT식 계층 메모리에 이르기까지, 각 메커니즘은 컴퓨팅 비용, 설명 가능성, 추론 복잡도 측면에서 명확한 트레이드오프를 가진다.
 - **지식 그래프의 시맨틱 닻(Semantic Reference Data)**: 지식 그래프는 모호한 데이터 조회 프레임을 비즈니스 의미 분석과 충돌 감지로 전환해 주지만, 인적 변동에 따른 의사결정 증발과 높은 시맨틱 세금(Semantic Tax)으로 인해 스타트업의 규율과 대기업의 현실주의적 절충안이 엄격히 요구된다.
+- 벡터 메모리는 RAG 조회 시 유저 질문과 AI 답변을 개별 임베딩하면 문맥 정보가 유실되므로 반드시 상호작용 쌍(Interaction Pair - `User: {q}\nAssistant: {a}`) 구조로 묶어 저장해야 의미론적 정확성이 보장된다. (출처: 밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md)
+- 벡터 메모리의 의미론적 유사도 거리가 메우지 못하는 관계 기반 다단계 추론(Multi-Hop Reasoning) 한계는 트리플렛 노드 기반의 지식 그래프 탐색(Graph Traversal)을 통해 해결한다. (출처: 밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md)
+- 계층형 자체 관리 메모리(MemGPT 아키텍처)는 에이전트에게 3대 메모리 관리 도구를 부여하여, 최종 답변 전 하트비트 루프(Heartbeat Loop)를 작동시키는 자율적 주도권을 모델에 이양한다. (출처: 밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md)
 
 ## 상세
 
@@ -121,8 +124,115 @@ LLM 메모리 시스템 아키텍처는 LLM 에이전트가 단기 대화 맥락
 4. **휴먼 인 더 루프(Human-in-the-loop) 가이드라인**:
    - LLM은 트리플렛을 추출하고 쿼리를 생성하는 훌륭한 가속기(Assistant)일 뿐, 최종 신뢰도를 책임지는 주체가 아니다. 생성된 데이터는 필터링을 거치고 사람이 최종 검증 및 정제(Sanitize)하여 그래프를 보존해야 한다.
 
+### 5대 메모리 모델별 구체적 아키텍처 및 스펙
+
+1. **슬라이딩 윈도우 버퍼 (Sliding Window Buffer)**:
+   - **특징**: 컨베이어 벨트 방식. 토큰 제한 범위(`n_ctx=4096`) 내에서 가장 최신의 대화 기록만 보존. (출처: 밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md)
+   - **VRAM/모델 튜닝 파라미터**: Qwen 2.5 7B Instruct 모델 구동 시 `n_gpu_layers=-1` 옵션으로 8GB VRAM 하드웨어 예산 한도 내에서 동작 최적화.
+
+2. **자동 요약 버퍼 (Auto-Summarization Buffer)**:
+   - **특징**: 전체 이력을 압축하여 요약본 문자열로 프롬프트 주입. JPEG 손실 압축과 같아 미세한 팩트(예: 포트 번호) 유실 가능. (출처: 밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md)
+   - **설정**: 요약의 일관성 및 무한 루프 예방을 위해 모델의 온도(`temperature`) 파라미터를 0.1로 고정하여 튜닝.
+
+3. **벡터 메모리 (Vector Memory)**:
+   - **특징**: DB 도서관 방식. 의미론적 유사도를 기준으로 한 청크 RAG 조회. (출처: 밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md)
+   - **구조**: Dense 벡터 인덱스(ChromaDB)와 Sparse 키워드 인덱스(rank_bm25)를 결합한 하이브리드 RAG에 교차 인코더(Cross-Encoder) 기반 리랭커(ms-marco-MiniLM-L-6-v2)를 얹어 최종 상위 K개 문서를 리랭킹 수집하는 파이프라인.
+
+4. **지식 그래프 메모리 (Knowledge Graph Memory)**:
+   - **특징**: 도시 지도 방식. 정보를 `(Subject) --[Relation]--> (Object)`의 트리플렛으로 구조화하여 그래프를 탐색. (출처: 밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md)
+   - **탐색**: 시작점 노드를 기준으로 BFS(너비 우선 탐색)를 실행하여 최대 `max_depth` 범위 내의 관련 엣지를 모두 수집한 뒤, 관계 힌트(Relation hints) 매칭 점수를 기준으로 정렬하여 LLM에 최종 텍스트 컨텍스트로 제공.
+
+5. **계층형 자체 관리 메모리 (Hierarchical Self-Managed Memory)**:
+   - **특징**: 운영체제(OS) 방식. 항상 노출되는 고속 소용량 RAM '핵심 메모리(Core Memory)'와 영구 대용량 디스크 '보관용 메모리(Archival Memory)'로 계층을 이원화. (출처: 밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md)
+   - **루프 제어**: 1턴에 1회 실행하는 단순 파이프라인 대신, 모델이 자율적으로 도구 호출을 중단하고 응답을 출력할 때까지 동작을 이어가는 하트비트 루프 구동. 무한 루프 방지를 위해 `max_llm_calls = 10` 안전 차단 장치 설치.
+
 ## 예시
+
 - **엔터프라이즈 통합 고객 관리**: 사용자의 현재 신체 정보와 즉각적 운동 스펙은 **핵심 메모리**에 상주시킨다. 반면, 과거의 진료 데이터나 금융 거래 이력은 **보관용 벡터 DB**에 두고 검색한다. 이때 각 고객의 거래 형태 정의("Active User"의 조건 등)는 회사 지식 그래프의 **시맨틱 기준 데이터(Semantic Reference Data)**에 닻을 내리게 하여, 여러 부서의 AI 비서들이 "고객"에 대해 일관되게 해석하고 답할 수 있게 설계한다.
+
+### 각 메모리 핵심 파이썬 코드 구현 스키마
+
+#### ① 슬라이딩 윈도우 토큰 카운터
+```python
+from collections import deque
+
+def build_window(history: deque, max_tokens: int, tokenizer) -> list:
+    # FIFO 큐에서 토큰 한도를 초과하지 않을 때까지 역순으로 대화를 꺼내어 윈도우 조립
+    current_tokens = 0
+    window = []
+    for msg in reversed(history):
+        msg_tokens = len(tokenizer.encode(msg['content']))
+        if current_tokens + msg_tokens > max_tokens:
+            break
+        window.insert(0, msg)
+        current_tokens += msg_tokens
+    return window
+```
+
+#### ② 자동 요약 및 팩트 추출
+```python
+SUMMARIZATION_SYSTEM_PROMPT = """
+Analyze the conversation. Update the current summary to preserve:
+1. USER PROFILE: Critical identity data.
+2. CONVERSATION TOPICS: Key points discussed.
+3. PREFERENCES/REQUESTS: Specific directives from the user.
+Keep the output compact. Do not invent facts.
+"""
+```
+
+#### ③ 벡터 메모리의 Interaction Pair 저장 구조
+```python
+def save_interaction(vector_db, user_query: str, bot_response: str):
+    # 쿼리와 답변을 단일 Interaction Pair 텍스트 블록으로 패키징하여 적재
+    interaction_block = f"User: {user_query}\nAssistant: {bot_response}"
+    vector_db.add(document=interaction_block)
+```
+
+#### ④ 지식 그래프 NetworkX 탐색 및 우선순위 정렬
+```python
+import networkx as nx
+
+def get_related_triplets(graph: nx.DiGraph, entities: list, relation_hints: list = None, max_depth: int = 2) -> list:
+    triplets = []
+    frontier = [e.lower() for e in entities if graph.has_node(e.lower())]
+    visited = set()
+    
+    for _ in range(max_depth):
+        next_frontier = []
+        for node in frontier:
+            # outgoing & incoming edges
+            for u, v, data in graph.out_edges(node, data=True):
+                edge = (u, data['relation'], v)
+                if edge not in visited:
+                    visited.add(edge)
+                    triplets.append(edge)
+                    next_frontier.append(v)
+        frontier = next_frontier
+        
+    # 관계 힌트를 활용한 Relevance 정렬
+    if relation_hints and triplets:
+        triplets.sort(key=lambda t: 2 if t[1] in relation_hints else (1 if any(h in t[1] for h in relation_hints) else 0), reverse=True)
+    return triplets
+```
+
+#### ⑤ 계층형 자체 관리 메모리 제어 루프
+```python
+def answer_heartbeat(user_text: str, model, core_memory: dict, archival_store) -> str:
+    history = [{"role": "user", "content": user_text}]
+    for call_count in range(10): # max_llm_calls = 10 안전 장치
+        prompt = build_system_prompt(core_memory)
+        response = model.generate(prompt + history)
+        tool_calls = parse_tool_calls(response)
+        
+        if not tool_calls:
+            return response # 최종 텍스트 출력 반환
+            
+        for tool in tool_calls:
+            result = execute_tool(tool, core_memory, archival_store)
+            history.append({"role": "assistant", "content": json.dumps(tool)})
+            history.append({"role": "tool", "content": f"Tool Output: {result}"})
+    return "Error: Maximum LLM calls exceeded."
+```
 
 ## 충돌
 - **에이전트 자율성 vs 인간의 검증 책무**:
@@ -136,4 +246,6 @@ LLM 메모리 시스템 아키텍처는 LLM 에이전트가 단기 대화 맥락
 - [[MEMORY.md 운영 원칙]]
 - [[Model Context Protocol]]
 - [[Claude Code 스킬 관리]]
+- [[AI 에이전트 아키텍처 완전 가이드]]
+- [[RAG 시스템 초보자부터 전문가까지의 완전 가이드]]
 

@@ -1,18 +1,18 @@
 ---
-type: workflow
-status: draft
+aliases:
+  - 실전 Git 팁
+  - 시니어 Git 워크플로우
 core: false
+created: 2026-06-22
+sources:
+  - raw/내가 수년 동안 Git을 잘못 사용했음을 깨닫게 해준 실전 Git 팁.md
+status: evergreen
 tags:
   - tool
   - git
   - development
-aliases:
-  - 실전 Git 팁
-  - 시니어 Git 워크플로우
-sources:
-  - raw/내가 수년 동안 Git을 잘못 사용했음을 깨닫게 해준 실전 Git 팁.md
-created: 2026-06-22
-updated: 2026-06-22
+type: workflow
+updated: 2026-07-10
 ---
 
 # 실전 Git 활용 팁과 워크플로우
@@ -26,6 +26,7 @@ Git을 단순한 백업 수단이 아닌 프로젝트 타임라인으로 인지�
 - **자유로운 가상 공간 활용**: 작업을 임시 저장하고 복원하는 `git stash`와, 메인 브랜치 오염을 방지하기 위한 실험용 독립 브랜치(`git switch -c`) 활용을 습관화한다.
 - **병렬 작업의 최적화**: `git worktree`를 활용하면 하던 작업을 stash로 감추는 마찰 없이, 외부의 독립 디렉토리에 병렬 브랜치를 체크아웃하여 안전하게 동시 작업을 수행할 수 있다.
 - **전지전능한 히스토리 제어**: 모든 행동 기록을 영구 보존(약 90일)하는 `git reflog`를 이용해 지워진 커밋이나 강제 리셋을 완벽히 복구하고, `git rebase -i`를 통해 커밋 히스토리를 정돈하여 코드 품질을 유지한다.
+- `git reflog`는 강제 리셋이나 삭제된 브랜치 내역까지 약 90일간 완벽 보존하여 언제든 시간 여행처럼 복원할 수 있는 궁극의 안전망이다. (출처: 내가 수년 동안 Git을 잘못 사용했음을 깨닫게 해준 실전 Git 팁.md)
 
 ## 상세
 
@@ -45,9 +46,29 @@ Git을 단순한 백업 수단이 아닌 프로젝트 타임라인으로 인지�
 13. **고고학적 역추적**: `git blame`으로 라인별 수정 흔적과 맥락 분석.
 14. **쉘 별칭(Alias)화**: 자주 쓰는 명령어를 축약해 타이핑 수고와 마찰을 방지.
 
+### 안전한 실습과 복원 메커니즘
+
+- **git reflog의 원리**: 로컬 저장소에서 HEAD가 가리켰던 모든 변경 내역을 수집하는 기록 파일로, 리베이스 실패나 강제 하드 리셋(`git reset --hard`)으로 커밋이 날아갔을 때도 reflog에 표시된 정확한 해시값으로 복구(`git checkout <commit-id>` 혹은 `git reset --hard <commit-id>`)할 수 있다. 기본 90일간 기록이 쉘 파일에 남으므로 낭패를 보기 전에 활용한다.
+- **git add -p를 통한 부분 등록**: 같은 파일 내에 핫픽스와 주석 수정 등이 어지럽게 섞여 있을 때 `git add -p`를 쳐서 코드 덩어리(hunk)별로 스테이징 여부(`y`/`n`)를 결정해 커밋의 원자성(Atomicity)을 유지한다.
+
 ## 예시
+
 - **버그 유발 커밋 탐색**: 프로덕션 서버에서 발생한 미해결 버그를 잡기 위해 `git bisect`를 수행, 80개의 커밋 범위 내에서 이진 탐색을 돌려 단 11분 만에 "minor cleanup"이라 표기되었던 오류 커밋 1개를 색출해 냄.
 - **병렬 핫픽스 수행**: 기능 개발 도중 `git worktree add ../hotfix-branch hotfix/login-timeout` 명령을 내려 현재 빌드 중인 디렉토리의 수정 상태를 stash로 숨기는 번거로움 없이 즉시 별도 폴더에서 로그인 버그를 디버깅 및 푸시하고 본래 작업 디렉토리로 돌아온 사례.
+
+### 쉘 환경 설정용 Git 터미널 단축 명령어 (Alias)
+
+타이핑 수고를 경감하고 오조작율을 떨어뜨리기 위해 zshrc/bashrc에 아래의 실전 별칭들을 상시 등록하여 가동한다.
+
+```bash
+alias gs='git status'  
+alias ga='git add'  
+alias gc='git commit -m'  
+alias gp='git push'  
+alias gl='git log --oneline --graph --decorate'
+```
+
+## 충돌
 
 ## 관련 노트
 - [[Claude Code 스킬 관리]]

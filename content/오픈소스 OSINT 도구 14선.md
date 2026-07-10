@@ -1,15 +1,15 @@
 ---
-type: tool
-status: draft
 core: false
+created: 2026-06-22
+sources:
+  - raw/반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md
+status: evergreen
 tags:
   - security
   - osint
   - tool
-sources:
-  - "raw/반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md"
-created: 2026-06-22
-updated: 2026-06-22
+type: tool
+updated: 2026-07-10
 ---
 
 # 오픈소스 OSINT 도구 14선
@@ -20,8 +20,11 @@ updated: 2026-06-22
 ## 핵심 요지
 - **조사의 차별성 확보**: 대중적인 보안 도구(NMap 등)를 넘어 특정 문제를 해결하는 작고 전문화된 도구들을 통해 남들이 놓치기 쉬운 신호를 포착한다.
 - **다양한 영역의 도구**: URL 안전도 및 웹사이트 분석(CyScan, Recox, DNSDumpster, Website Informer), 멀티미디어 분석(Filmot, Find Pic Location), 온라인 신원 및 발자국 추적(What's My Name, haveibeensquattəd, OSINT Investigator’s Toolkit, Antipublic, ShareTrace, Searchall), 특정 커뮤니티 정보 복원(Telegram Spoiler Decoder), 다크웹 검색(Robin) 등으로 구성된다.
+- 유출 데이터 세트 계정 정보 조회 시 haveibeenpwned 사이트의 훌륭한 무료 대안으로 antipublic.net 플랫폼을 활용할 수 있다. (출처: 반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md)
+- 다크웹 검색 자동화 및 LLM 요약을 포함하는 에이전틱 OSINT 조사 도구로 robin(github.com/apurvsinghgautam/robin) 프로젝트가 존재한다.
 
 ## 상세
+
 1. **CyScan**: 링크를 열기 전에 리다이렉트 경로, 외부 연결, 백그라운드 활동 등을 파악하는 URL 스캔 도구.
 2. **Filmot**: 유튜브 영상 자막과 녹취록을 색인화하여 특정 키워드/문장이 언급된 정확한 구간으로 이동하게 돕는 검색 도구.
 3. **Find Pic Location**: 랜드마크, 건축 양식, 지형 등을 AI로 분석해 GPS Exif 정보가 유실된 사진의 촬영 위치 좌표나 후보지를 추정하는 도구.
@@ -38,9 +41,32 @@ updated: 2026-06-22
 14. **ShareTrace**: 사용자명, 이메일 등의 식별자가 존재하는 공개 플랫폼을 스캔하여 개인의 디지털 발자국을 추적하는 통합 도구.
 *   **Searchall**: 검색어 하나로 여러 검색 엔진, AI 챗봇, 소셜 네트워크를 동시에 검색할 수 있는 메타 검색 플랫폼.
 
+### 주요 14대 OSINT 도구 목록 및 공식 웹 주소
+
+1. **CyScan** ([cyscan.io](https://cyscan.io/)): 리다이렉트 경로, 외부 연결, 백그라운드 활동을 분석하는 경량 URL 스캔 도구. (출처: 반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md)
+2. **Filmot** ([filmot.com](https://filmot.com/)): 유튜브 자막과 트랜스크립트 색인 기반 키워드 영상 구간 탐색기.
+3. **Find Pic Location** ([findpiclocation.com](https://findpiclocation.com/)): 시각적 요소(지형, 건축) 분석 기반 사진 촬영 위치 지오로케이션 추정 도구.
+4. **What's My Name** ([whatsmyname.app](https://whatsmyname.app/)): 수백 개 소셜 플랫폼에서의 계정명 사용 여부 일괄 조회 도구.
+5. **Recox**: 수동형 데이터 소스 취합 서브도메인 정찰 도구.
+6. **Telegram Spoiler Decoder** ([spoiler.soxoj.com](https://spoiler.soxoj.com/)): macOS 텔레그램 스포일러 의사 점자 서식 복원 도구.
+7. **Eyedex**: 공개 노출 FTP/웹 디렉토리 내 대규모 파일 통합 검색 엔진.
+8. **haveibeensquattəd**: 철자 사칭 타이포스쿼팅 도메인 유효성 실시간 감지 및 상세 레코드 시각화 도구.
+9. **OSINT Investigator’s Toolkit**: 온체인 지갑 트랜잭션 추적 및 웹 흔적 단일 통합 툴킷.
+10. **Antipublic** ([antipublic.net](https://antipublic.net/)): 과거 수집된 유출 로그인 크리덴셜 데이터베이스 검색 사이.
+11. **DNSDumpster** ([dnsdumpster.com](https://dnsdumpster.com/)): 패시브 DNS 인프라 시각적 맵 추출 도구.
+12. **Website Informer** ([website.informer.com](https://website.informer.com/)): WHOIS 레코드, 트래픽, 보안 평판 대시보드 리포팅 도구.
+13. **Robin** ([github.com/apurvsinghgautam/robin](https://github.com/apurvsinghgautam/robin)): 다크웹 AI 스크래핑 및 LLM 인텔리전스 요약 CLI 도구.
+14. **ShareTrace**: 개인의 흩어진 디지털 발자국 프로파일 통합 스캐너.
+- **Searchall** ([searchall.net](https://searchall.net/)): 하나의 키워드로 다수 검색 엔진, 소셜 미디어, AI 챗봇을 한눈에 조회하는 올인원 메타 검색 엔진.
+
 ## 예시
+
 - **보안 사고 선제 대응**: `haveibeensquattəd`를 이용해 자사 브랜드와 유사하게 만들어진 피싱 도메인을 감시하고, `Antipublic`을 통해 임직원 계정의 외부 유출 여부를 주기적으로 모니터링함.
 - **디지털 포렌식 및 지오로케이션**: 촬영 위치 메타데이터가 삭제된 조각상 이미지 파일의 배경 지형을 `Find Pic Location`에 입력하여 대략적인 촬영 장소를 찾아내어 증거를 확보함.
+
+### 실제 OSINT 활용 시나리오
+- **유출 확인**: `antipublic.net`에 조사를 희망하는 도메인이나 이메일 주소를 쿼리하여 계정 탈취 여부 점검. (출처: 반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md)
+- **다크웹 탐색**: 다크웹 환경에 수동 접근하는 리스크 없이 로컬 CLI 환경에서 `robin`을 기동하여 인텔리전스 요약 생성.
 
 ## 충돌
 *등록된 충돌 정보 없음*

@@ -5,6 +5,216 @@
 ### Ingest
 
 - 입력:
+  - `raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md`
+  - `raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md`
+  - `raw/미움받을 용기.pdf_by_PaddleOCR-VL-1.6.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md`
+  - `raw/바이브 코딩의 종말-ko.md`
+  - `raw/반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md`
+  - `raw/보리스_클로드코드_실무_사용법.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[AI 에이전트 아키텍처 완전 가이드]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[플랫폼 규제와 제품 출시 리스크]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[과제 분리와 용기]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[LLM 메모리 시스템 아키텍처]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[사양 기반 개발 (Spec Driven Development)]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[오픈소스 OSINT 도구 14선]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude.md 운영 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[AI 에이전트 아키텍처 완전 가이드]], [[플랫폼 규제와 제품 출시 리스크]], [[과제 분리와 용기]], [[LLM 메모리 시스템 아키텍처]], [[사양 기반 개발 (Spec Driven Development)]], [[오픈소스 OSINT 도구 14선]], [[Claude.md 운영 원칙]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md`
+  - `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`
+  - `raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md`
+  - `raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[모듈러 모놀리스]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[의지와 고통]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[oMLX]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[메시징 서버 스트레스 테스트 운영 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[모듈러 모놀리스]], [[의지와 고통]], [[oMLX]], [[메시징 서버 스트레스 테스트 운영 원칙]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/넷플릭스, 우버, 아마존, 구글의 뒤에 있는 10가지 엔지니어링 논문.md`
+  - `raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md`
+  - `raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md`
+  - `raw/단돈 100달러로 주식 투자 시작하기.md`
+  - `raw/대부분의 개발자는 잘못된 문제를 해결하고 있다.md`
+  - `raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md`
+  - `raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md`
+  - `raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[빅테크 아키텍처 10대 엔지니어링 논문]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Agent Harness]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Spec Kit]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[인덱스 투자 원칙 10가지]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[개발자가 잘못된 문제를 해결하는 패턴]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[학습용 노트 외부화 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[돈의 심리학]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 디자인 팀 운영]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[빅테크 아키텍처 10대 엔지니어링 논문]], [[Agent Harness]], [[Spec Kit]], [[인덱스 투자 원칙 10가지]], [[개발자가 잘못된 문제를 해결하는 패턴]], [[학습용 노트 외부화 원칙]], [[돈의 심리학]], [[AI 디자인 팀 운영]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md`
+  - `raw/기술 서적을 효과적으로 읽고 내 것으로 만드는 5단계 공부법.md`
+  - `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
+  - `raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md`
+  - `raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md`
+  - `raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md`
+  - `raw/내가 수년 동안 Git을 잘못 사용했음을 깨닫게 해준 실전 Git 팁.md`
+- 생성:
+  - [[옵시디언 폴더 구조와 제텔카스텐 정리 규칙]] (신규)
+  - [[클로드와 ChatGPT 프롬프트 설계 차이]] (신규)
+- 수정:
+  - [[목표를 뇌에 입력하기]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[기술 서적 5단계 공부법]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Vibe Coding과 Agentic Engineering]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[주의력 회복]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[실전 Git 활용 팁과 워크플로우]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[목표를 뇌에 입력하기]], [[기술 서적 5단계 공부법]], [[Vibe Coding과 Agentic Engineering]], [[주의력 회복]], [[옵시디언 폴더 구조와 제텔카스텐 정리 규칙]], [[클로드와 ChatGPT 프롬프트 설계 차이]], [[실전 Git 활용 팁과 워크플로우]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/im-not-ai.md`
+  - `raw/oh-my-openagent-team-mode.md`
+  - `raw/opencode-masterclass-summary.md`
+  - `raw/pi-coding-agent-overview.md`
+  - `raw/superpowers-brainstorming.md`
+  - `raw/vibe_sunsang_정리.md`
+  - `raw/거인의 노트.pdf_by_PaddleOCR-VL-1.6.md`
+  - `raw/강화학습-RL-초보자-가이드.md`
+- 생성:
+  - [[GRPO]] (신규)
+- 수정:
+  - [[한글 AI 번역투 탐지 및 윤문 워크플로]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[OpenAgent Team Mode]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[OpenCode]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Pi Coding Agent]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Brainstorming 스킬 운영 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[바선생]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[기록으로 성장하는 법]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[한글 AI 번역투 탐지 및 윤문 워크플로]], [[OpenAgent Team Mode]], [[OpenCode]], [[Pi Coding Agent]], [[Brainstorming 스킬 운영 원칙]], [[바선생]], [[기록으로 성장하는 법]], [[GRPO]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
   - `raw/graphify_정리.md`
   - `raw/context-mode-README-정리.md`
   - `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`

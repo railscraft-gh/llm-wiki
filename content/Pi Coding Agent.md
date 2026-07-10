@@ -1,52 +1,52 @@
 ---
 aliases:
-- Pi
-- 라즈베리 파이 에이전트 하네스
+  - Pi
+  - 라즈베리 파이 에이전트 하네스
 core: false
 created: 2026-05-08
 sources:
-- pi-coding-agent-overview
-- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-- https://pi.dev/
-- https://pi.dev/docs/latest
-- https://pi.dev/docs/latest/quickstart
-- https://pi.dev/docs/latest/usage
-- https://pi.dev/docs/latest/providers
-- https://pi.dev/docs/latest/packages
-- raw/Quartz-GitHub-Pages-Complete-Guide.md
-- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-- raw/How to write a DESIGN.md file Claude can actually use-ko.md
-- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-- raw/pi-coding-agent-overview.md
-- raw/우리가 피그마 없이 제품을 배포하는 방법.md
-- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - pi-coding-agent-overview
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+  - 'https://pi.dev/'
+  - 'https://pi.dev/docs/latest'
+  - 'https://pi.dev/docs/latest/quickstart'
+  - 'https://pi.dev/docs/latest/usage'
+  - 'https://pi.dev/docs/latest/providers'
+  - 'https://pi.dev/docs/latest/packages'
+  - raw/Quartz-GitHub-Pages-Complete-Guide.md
+  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+  - raw/pi-coding-agent-overview.md
+  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
+  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
 status: evergreen
 tags:
-- llm
-- agent
-- ai-coding
-- raspberry-pi
-- sandbox
+  - llm
+  - agent
+  - ai-coding
+  - raspberry-pi
+  - sandbox
 type: tool
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Pi Coding Agent
@@ -77,7 +77,14 @@ Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스�
 - **OpenClaw**: 며칠 이상 장기 실행(Long-horizon tasks)할 경우, 하트비트(Heartbeat) 데몬 작동과 크론 스케줄링 간의 불일치로 인하여 동작 일관성이 쉽게 파손된다.
 - **Hermes (Nous Research)**: OpenClaw가 주던 장기 런타임 오류 및 혼란을 극복하고, 라즈베리 파이에서 구동 시 사이버 보안 검사 보고 등 장기 배치 작업을 안정적으로 수행한다.
 
+### 1. 단축키 및 에디터 인터랙션
+- **파일 및 경로 참조**: 에디터창에서 `@`를 입력하면 프로젝트 파일의 퍼지 검색이 실행되며, `Tab` 키로 경로를 자동완성한다.
+- **셸 명령 실행**: 에디터 내에서 `!command`는 출력을 모델에 전송하고, `!!command`는 모델 전송 없이 셸에서만 백그라운드로 실행한다.
+- **모델 순환 및 레벨 제어**: Ctrl+L로 전체 모델 선택기를 열고, Ctrl+P로 설정된 스코프 모델들을 순환한다. Shift+Tab으로 thinking 레벨(off, minimal, low, medium, high, xhigh)을 실시간 토글한다.
+- **메시지 큐(Message Queue)**: 에이전트가 연산 중일 때 `Enter`를 누르면 현재 턴 종료 후 전달될 steering 메시지가, `Alt+Enter`를 누르면 작업이 완전히 종료된 후 전달될 follow-up 메시지가 적재된다.
+
 ## 예시
+
 - **RPi SD 카드 초기화 및 CLI 샌드박스 환경 기동**:
   ```bash
   # SD 카드 포맷 후 초기 OS 셋업 완료 상태에서
@@ -91,6 +98,17 @@ Pi Coding Agent 및 라즈베리 파이 기반 에이전트 하네스는 호스�
   ```
 - **Hermes 에이전트 백엔드 오프라인 백그라운드 기동**:
   라즈베리 파이 내에서 `tmux`를 사용하여 Hermes CLI를 분리 구동하고, 백그라운드 24시간 사이버 보안 스캔 모니터링을 위임한다.
+
+### 2. 패키지 관리 및 CLI 실행 예시
+Pi는 확장성 보장을 위해 npm이나 git 소스 기반의 패키지 설치 및 업데이트를 지원한다.
+```bash
+# Pi 패키지 관리
+pi install npm:@foo/pi-tools
+pi update --self
+
+# 도구를 제한하고 context 파일 로드를 생략해 기동
+pi --tools read,grep,find,ls --no-context-files
+```
 
 ## 충돌
 - **설치 네임스페이스 혼선**:

@@ -90,6 +90,7 @@ sources:
   - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
   - raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
   - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
 status: evergreen
 tags:
   - llm
@@ -119,6 +120,8 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - Opus 4.8은 자화자찬식 코드 결함 방관 확률을 4배 감소시켰으며, 750,000줄 Rust 코드베이스를 11일 만에 마이그레이션(테스트 통과율 99.8%)하는 동적 워크플로를 플랫폼 내재화했다.
 - 100만 토큰의 컨텍스트 창에서 장기 검색 성공률은 기존 40.3%에서 68.1%로 상승했다.
 - 독자적 해자는 이제 제약/실행/검증 인프라에서 기업 고유의 L2. 컨텍스트(Context) 및 L5. 라이프사이클(Lifecycle, Evals) 영역으로 이동한다.
+- 개인용 PC의 오염/안전 리스크 격리를 위해 저전력, 상시 기동이 가능한 라즈베리 파이 4(RPi 4) 환경을 하네스 인프라로 채택. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
+- 에이전트 자율성에 따른 잘못된 연쇄 결정(비정상적 무한 루프 등)을 억제하기 위해 Obsidian 지식 베이스 및 CLAUDE.md를 활용해 세션 컨텍스트를 제한하고 장기 작업을 조율. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
 
 ## 상세
 
@@ -198,6 +201,12 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - **노력 제어(L1 제약)**: `effort control`(low, high, extra, max 4단계, 기본 high)을 통해 모델 라우팅 및 비용 제어를 단순화. 빠른 모드(/fast)는 속도 2.5배 향상, 비용 3배 절감.
 - **해자의 이동**: 배관 인프라가 범용화(commodity)됨에 따라, 벤더가 탈취할 수 없는 보안 데이터, 지능형 메모리 설계(L2), 그리고 비즈니스 정의 기반 Evals/관제 파이프라인(L5)이 차별점의 핵심 보루가 된다.
 
+### 라즈베리 파이 4 기반 하네스 환경 구축 실무
+- **물리적 격리**: 터미널 및 브라우저 자동화 등 에이전트 자율 권한을 24시간 가동할 때 호스트 시스템 보호를 위해 RPi 4를 Ephemeral Sandbox 대안으로 사용. 마이크로 SD 카드를 분리 운영하여 유사시 즉각 포맷 리셋하도록 구성.
+- **주요 도구 비교**:
+  - **Claude Code**: 컨텍스트 관리가 직관적이며, 로컬 Obsidian 볼트 연동과 CLAUDE.md 스킬 제어 적합.
+  - **OpenClaw / Hermes**: 터미널/파일시스템/메시징 권한 오케스트레이션 수행. Hermes가 상대적으로 더 안정적인 기동과 구성을 보여줌.
+
 ## 예시
 
 - coding agent: `AGENTS.md`를 읽고, 필요한 파일만 찾고, 테스트를 돌리고, 실패 시 다시 수정하는 loop 전체가 harness다.
@@ -246,6 +255,12 @@ while not budgets.exhausted():
 - **L3 실행**: 직접 짠 fan-out/planner 배관 대신 플랫폼이 제공하는 동적 워크플로 위임을 검토하여 Undifferentiated heavy lifting을 차단.
 - **L1 제약**: 복잡한 라우터 코드 대신 `/fast` 스위치 및 `effort control` 옵션 활용.
 
+### 라즈베리 파이 하네스 초기 환경 설정 명령어
+```bash
+sudo apt update && sudo apt upgrade -y
+# 각 하네스 도구 CLI 표준 curl 설치 수행
+```
+
 ## 충돌
 현재 확인된 충돌 없음.
 
@@ -267,4 +282,5 @@ while not budgets.exhausted():
 - [[에이전트 복리 실패의 수학]]
 - [[오픈소스 LLM 경제성과 벤더 종속성 해지]]
 - [[AI 엔지니어 필수 논문]]
+- [[Obsidian AI 제2의 뇌는 기억이 아니다]]
 

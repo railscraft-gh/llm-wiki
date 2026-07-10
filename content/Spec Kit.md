@@ -1,51 +1,51 @@
 ---
 aliases:
-- 스펙 킷
+  - 스펙 킷
 core: false
 created: 2026-06-09
 sources:
-- raw/바이브 코딩의 종말-ko.md
-- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-- raw/클로드 디자인은 과연 디자이너를 대체할까.md
-- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
-- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
-- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
-- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
-- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
-- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-- raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
-- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
-- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
-- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
-- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-- raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
-- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
-- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/바이브 코딩의 종말-ko.md
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+  - raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+  - raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+  - raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+  - raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+  - raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+  - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+  - raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
+  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
 status: draft
 tags:
-- ai-coding
-- open-source
-- tool
-- github
+  - ai-coding
+  - open-source
+  - tool
+  - github
 type: tool
-updated: 2026-06-22
+updated: 2026-07-10
 ---
 
 # Spec Kit
@@ -58,6 +58,8 @@ GitHub이 사양 기반 개발(Spec Driven Development) 워크플로우를 AI �
 - **`specify` CLI와 부트스트랩**: Python 3.11 이상 요구하며, Astral의 `uv` 패키지 관리자를 통해 설치하여 프로젝트에 `.specify/` 환경을 구축한다.
 - **아키텍처 헌장(Constitution)**: `.specify/memory/constitution.md`에 정의되는 최상위 핵심 원칙으로, 에이전트가 신규 구현 시 준수해야 할 디자인 시스템, 모듈 패키지화 원칙 등을 강제해 탈선을 방지한다.
 - **6+3 명령 체계**: 6단계의 인과적 선형 구현 명령어와 3가지 품질 보증 검증 명령어 체계를 지원하여 '느낌 코딩(Vibe Coding)'의 주먹구구식 한계를 보완한다.
+- 신규 개발(Greenfield), 기존 소스 점진 개선(Brownfield), 레거시 현대화(Modernization) 시나리오 전반에 걸쳐 기획 사양을 뼈대 삼아 AI의 코드 작성을 규제함. [출처: 느낌 코딩의 시대는 끝났다]
+- 애자일 전문가 고이코 아지치(Gojko Adzic)는 SDD가 고정된 기획 명세를 강제할 경우 폭포수(Waterfall) 모델의 경직성을 부활시킬 위험이 있다고 경고함. [출처: 느낌 코딩의 시대는 끝났다]
 
 ## 상세
 
@@ -108,8 +110,22 @@ Spec Kit은 오픈소스 커뮤니티를 통해 70개 이상의 확장 모듈이
 - **확장 도구(Extensions)**: Jira/Azure DevOps 연동, 사후 코드 리뷰 자동화, OWASP 기반 LLM 위협 분석 모델링, V-모델 테스트 추적성 등 특화 명령어와 템플릿을 이식한다.
 - **사전 설정(Presets)**: 기업 고유의 사내 보안 규격이나 코딩 지침에 맞게 기본 템플릿 구조를 강제로 재조정하는 옵션을 제공한다.
 
+### 신규, 점진 개선, 레거시 현대화 시나리오 지원 워크플로우
+- **Greenfield (신규 프로젝트)**: 6단계 표준 워크플로우를 순차 이행하여 백지상태에서 아키텍처 뼈대를 안전하게 수립.
+- **Brownfield (기존 프로젝트)**: 기존 아키텍처 헌장이 존재하면 생략하고, `specs/` 내부에 Git 브랜치 단위 폴더를 생성하여 기존 아키텍처 맥락에 맞춰 점진적 기능 수립.
+- **Legacy Modernization (레거시 리팩토링)**: 낡은 시스템의 비즈니스 로직만 핵심 기획 명세서로 먼저 추출한 뒤, 계획 단계에서 아키텍처 설계를 완전히 새로 짜서 AI 에이전트가 코드를 백지에서 재구현하게 만듦으로써 기술 부채 청산.
+
 ## 예시
+
 - `photo-app` 구현을 설계하기 전 `.specify/memory/constitution.md` 파일에 "모든 기능은 독립형 라이브러리로 추상화하여 시작해야 한다"는 헌장을 규정해 둔다. 이후 에이전트는 코드 구현 도중 이 헌장을 수시로 점검하며 어플리케이션에 하드코딩하는 실수를 피한다.
+
+### 앨범 관리 서비스 구현용 /speckit.specify 예시
+```markdown
+/speckit.specify 사진을 효과적으로 앨범별로 정돈하여 보여주는 웹 서비스를 개발해 줘.
+메인 화면에서 앨범들을 날짜 단위로 묶어 제공하며, 마우스 드래그 앤 드롭 동작으로 자유롭게 순서를 변경할 수 있어야 해.
+앨범 내부에 다른 하위 앨범을 중첩하여 배치하지 않아야 해.
+사용자는 앨범의 이름을 변경하거나 앨범 단위로 삭제할 수 있지만, 개별 사진 한 장만 따로 지우는 동작은 허용하지 않아.
+```
 
 ## 충돌
 - **소형 패치 작업에서의 오버헤드**: 단순 에러 수정이나 코드 한 줄 변경과 같은 마이너 패치 작업에 Spec Kit 파이프라인(6단계 설계)을 그대로 대입하는 것은 오버헤드(Overkill)가 되므로 상황에 맞춰 우회하는 하이브리드 운영이 필요하다. (출처: 바이브 코딩의 종말-ko)
@@ -120,4 +136,5 @@ Spec Kit은 오픈소스 커뮤니티를 통해 70개 이상의 확장 모듈이
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Harness Engineering]]
+- [[10,000피트 규칙 (10,000-Foot Rule)]]
 

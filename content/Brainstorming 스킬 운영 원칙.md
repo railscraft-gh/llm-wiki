@@ -1,35 +1,36 @@
 ---
-type: workflow
-status: draft
+aliases:
+  - brainstorming
+  - 'superpowers:brainstorming'
+  - 디자인 승인 하드게이트
+  - 아이디어를 디자인으로 브레인스토밍하기
 core: false
+created: 2026-06-30
+sources:
+  - raw/superpowers-brainstorming.md
+status: draft
 tags:
   - llm
   - agent
   - skill
   - design
-aliases:
-  - brainstorming
-  - superpowers:brainstorming
-  - 디자인 승인 하드게이트
-  - 아이디어를 디자인으로 브레인스토밍하기
-sources:
-  - raw/superpowers-brainstorming.md
-created: 2026-06-30
-updated: 2026-06-30
+type: workflow
+updated: 2026-07-10
 ---
 
 # Brainstorming 스킬 운영 원칙
 
 ## 한 줄 정의
-
 `brainstorming` 스킬은 AI 에이전트가 기능 구현이나 코드 작성을 시작하기 전에, 아이디어를 명확한 설계 명세서(Spec)로 정제하고 사용자의 승인을 받도록 통제하는 워크플로우 제어 레이어다.
 
 ## 핵심 요지
-
 - **디자인 승인 하드게이트 (Design Approval Hard-Gate)**: 디자인 명세를 작성하고 사용자가 명시적으로 승인하기 전에는 어떠한 코드 작성, 스캐폴딩, 프로젝트 구성 등의 구현 행위도 금지한다.
 - **체크리스트 기반 단계별 전개**: 프로젝트의 맥락을 분석하고, 명확화 질문(한 번에 하나씩), 대안 제시, 상세 설계 제시, Spec 문서화(`docs/superpowers/specs/` 하위 저장), 셀프 리뷰 순으로 순차 진행한다.
 - **적시 비주얼 컴패니언 (Just-in-Time Visual Companion) 활용**: 시각적 설명이 정말로 필요한 순간에만 브라우저 기반의 컴패니언 도구 연동을 제안하며, 제안 메시지는 반드시 단독으로 전송해야 한다.
 - **구현 계획 스킬로의 전환**: 설계 승인이 완료되면 다음 단계인 `writing-plans` 스킬을 기동하여 구체적인 구현 계획을 수립한다.
+- 디자인 승인 하드게이트(Design Approval Hard-Gate): 명세가 작성되고 명시적 승인을 획득하기 전까지는 어떠한 코드 작성, 프로젝트 스캐폴딩 등 구현 행동도 전면 금지된다.
+- 설계 및 브레인스토밍의 최종 종단 상태(terminal state)는 오직 writing-plans 스킬의 기동이며, 그 외의 구현 및 스타일링 스킬을 brainstorming 단계에서 직접 기동할 수 없다.
+- Visual Companion(비주얼 도구)은 적시에만(Just-in-time) 단독 메시지로 제안하며, 레이아웃이나 와이어프레임 등 시각적인 영역에만 한정적으로 활성화하고 텍스트 질문은 터미널을 고수한다.
 
 ## 상세
 
@@ -75,6 +76,18 @@ graph TD
   - **텍스트(터미널) 유지**: 개념 정의, 옵션 선택지, 요구사항 질문, 의사결정 프레임 등.
   - **브라우저 전송**: 와이어프레임, 아키텍처 다이어그램, UI 컴포넌트 목업, 레이아웃 비교 등.
 
+### 1. 브레인스토밍 9단계 실천 체크리스트
+에이전트는 브레인스토밍 진입 시 다음 작업을 차례대로 정의하고 실행해야 한다.
+1. **Explore project context**: 기존 코드 구조, 최근 커밋, 문서 스캔.
+2. **Visual Companion 제안**: 시각적 설명이 정말 필요한 시점에만 단독 제안 메시지 발송.
+3. **Clarifying questions**: 요구사항, 제약 조건, 성공 지표를 위해 한 번에 하나의 질문만 수행.
+4. **Propose 2-3 approaches**: 추천 경로와 근거를 포함한 트레이드오프 분석 제안.
+5. **Present design**: 구조화된 설계 세부 정보를 섹션별로 전달해 피드백 획득.
+6. **Write design doc**: `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md` 경로에 명세 저장 및 커밋.
+7. **Spec self-review**: TODO, TBD 등의 미완성 문장이나 모순점을 스스로 스캔하고 즉시 보완.
+8. **User reviews written spec**: 사용자에게 커밋된 명세 경로를 제시하고 최종 검토 요청.
+9. **Transition to implementation**: 승인 즉시 `writing-plans` 스킬 기동 및 다음 계획 작성으로 전환.
+
 ## 예시
 
 ### 1. 단순 작업에 대한 하드게이트 적용 예시
@@ -90,10 +103,16 @@ graph TD
 UI 레이아웃 옵션을 시각적으로 비교해야 하는 시점에 도달하면 다음과 같이 단독 메시지로 제안한다.
 > 이 다음 단계는 화면 배치를 결정하는 것입니다. 옵션 A(사이드바 고정형)와 옵션 B(탑 내비게이션형)를 시각적으로 비교할 수 있도록 브라우저 탭에 목업과 비교 다이어그램을 띄워 설명해 드릴 수 있습니다. visual companion을 열어 진행할까요?
 
-## 관련 노트
+### 2. 격리 및 명확성 극대화를 위한 설계 원칙
+- **단일 책임 유닛 분할**: 시스템을 명확한 역할을 가지며 독립적으로 테스트와 변경이 용이한 최소 단위(Unit)로 해체한다.
+- **인터페이스 경계 수호**: 유닛 간 통신은 잘 정의된 규격에만 의존하게 설계하여, 내부의 변경이 외부로 전파되어 시스템 전체를 깨뜨리는 부작용을 원천 차단한다.
 
+## 충돌
+
+## 관련 노트
 - `[[Cursor Superpowers 플러그인]]`: Superpowers 프레임워크와 스킬 오케스트레이션 전반을 다룬다.
 - `[[Plan Mode 기반 AI 작업]]`: 구현 전에 위험 요소와 승인 경계를 지정하는 에이전트 행동 지침.
 - `[[사양 기반 개발 (Spec Driven Development)]]`: 바이브 코딩에서 탈피하여 명세서 중심의 점진적 구현 루틴을 다룬다.
 - `[[Harness Engineering]]`: 비결정적인 LLM 출력을 외부 통제 절차로 제어하는 상위 패러다임.
+- [[Gajae-Code]]
 

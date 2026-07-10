@@ -58,6 +58,8 @@ tags:
   - orchestration
   - productivity
   - optimization
+  - llm
+  - agent
 type: concept
 updated: 2026-07-10
 ---
@@ -173,16 +175,25 @@ LLM을 컴퓨터의 핵심 CPU 연산 코어, 토큰을 바이트, 컨텍스트 
 ---
 
 ## 한 줄 정의
-
 AI 에이전트는 stateless LLM 외부에서 상태, 도구, 성찰(Reflection), 계획(Planning) 루프를 통제하는 아키텍처 체계이다.
 
 ## 핵심 요지
 - 복잡성/정밀도 매트릭스: 에이전틱 AI는 높은 복잡성과 상대적으로 낮은 정밀도가 허용되는 업무(예: 강의 노트 요약 및 검토)에서 가장 빠르게 높은 ROI를 증명할 수 있으며, 세금 신고서처럼 높은 정확도가 요구되는 분야는 더 촘촘한 가드레일이 수반되어야 한다.
+- 2026 에이전트 오케스트레이션은 단순한 LLM 프롬프트 결합을 넘어 상태 중심 그래프(LangGraph)로 수렴한다. (출처: 모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md)
+- 사용자 동의가 필요한 액션(결제, 승인 등)은 Human-in-the-loop(HITL) 설계의 checkpointers 상태 저장 기능을 통해 안전하게 일시 중단 및 재개된다.
 
 ## 상세
 
 ### 멀티 에이전트 설계 및 비효율 제거
 멀티 에이전트 오케스트레이션 설계 시 R&R을 명확히 쪼개어 중복 연산(Duplicate Work)과 불필요한 직렬화(Unnecessary Serialization)로 인한 지연 시간 및 토큰 낭비를 차단해야 한다.
+
+### LangGraph 기반 상태 중심 아키텍처 표준 (2026)
+
+2026년 기준 복잡한 멀티 에이전트 오케스트레이션은 에이전트의 대화 히스토리와 중간 생성 결과물을 단일 `State` 클래스(TypedDict 등)로 래핑하여 에이전트 노드들이 이를 수정 및 갱신해 나가는 **상태 그래프(State Graph)** 패턴으로 전환되었다.
+
+- **상태 정의 (TypedDict State)**: 그래프 내 모든 노드가 공유하며 수정하는 런타임 상태 객체.
+- **노드 (Nodes)**: 특정 비즈니스 로직이나 LLM 호출을 담당하고 상태의 변동 분량을 딕셔너리로 반환하여 그래프 상태를 누적 업데이트함.
+- **에이전트 제어 루프**: 상태 내부의 특정 필드(예: `risk_score`)를 평가하여 에이전트 루프의 분기 혹은 휴먼 승인(Human-in-the-loop) 인터럽트를 결정함.
 
 ## 예시
 
@@ -194,8 +205,63 @@ AI 에이전트는 stateless LLM 외부에서 상태, 도구, 성찰(Reflection)
 - **디자이너 에이전트**: 데이터 차트 렌더링 코드 실행 및 이미지 생성
 - **작가 에이전트**: 조사 결과와 디자인 그래픽 에셋을 취합해 최종 브로셔 문구 집필
 
-## 충돌
+```python
+from typing import Annotated, TypedDict
+from langgraph.graph import StateGraph, START, END
+from langgraph.graph.message import add_messages
+from langgraph.checkpoint.memory import MemorySaver
 
+# 1. State 정의
+class AgentState(TypedDict):
+    messages: Annotated[list, add_messages]
+    risk_score: float
+    needs_approval: bool
+
+# 2. Node 함수 정의
+def analyze_request(state: AgentState):
+    # 요청 분석 후 risk_score 평가 노드
+    risk = 0.85 # 임의 계산 값
+    return {
+        "messages": [{"role": "assistant", "content": f"Risk score calculated: {risk}"}],
+        "risk_score": risk,
+        "needs_approval": risk > 0.7
+    }
+
+def process_action(state: AgentState):
+    # 실행 노드
+    return {
+        "messages": [{"role": "assistant", "content": "Action successfully processed."}]
+    }
+
+# 3. conditional edge 라우팅 함수
+def check_approval(state: AgentState):
+    if state.get("needs_approval", False):
+        return "approval_required"
+    return "process"
+
+# 4. 그래프 빌드
+builder = StateGraph(AgentState)
+builder.add_node("analyzer", analyze_request)
+builder.add_node("executor", process_action)
+
+builder.add_edge(START, "analyzer")
+# risk_score에 따라 실행 노드로 바로 갈지, 휴먼 피드백을 받기 위해 중단할지 분기
+builder.add_conditional_edges(
+    "analyzer",
+    check_approval,
+    {
+        "approval_required": END, # checkpointer가 상태를 저장하고 일시 중단
+        "process": "executor"
+    }
+)
+builder.add_edge("executor", END)
+
+# 5. Checkpointer 결합을 통한 Human-in-the-loop 일시 중단 활성화
+memory = MemorySaver()
+graph = builder.compile(checkpointer=memory, interrupt_before=["executor"])
+```
+
+## 충돌
 ## 관련 노트
 - [[Agent Harness]] — 에이전트 외부 실행 제어 환경(하네스) 구축 상세
 - [[Harness Engineering]] — 하네스 엔지니어링의 상세 방법론
@@ -205,4 +271,6 @@ AI 에이전트는 stateless LLM 외부에서 상태, 도구, 성찰(Reflection)
 - [[AI 코딩 에이전트 검증 전략]] — 코딩 전용 에이전트의 검증 루프 설계
 - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] — 실전 프레임워크 툴킷 분석
 - [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 에이전틱 AI 엔지니어 역량과 스택 로드맵
+- [[AI 에이전트 작업 매뉴얼]]
+- [[Vibe Coding과 Agentic Engineering]]
 

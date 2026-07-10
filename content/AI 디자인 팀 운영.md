@@ -1,49 +1,48 @@
 ---
 aliases:
-- AI 디자인 팀 빌드 방식
-- 디자인 팀 운영 방식
+  - AI 디자인 팀 빌드 방식
+  - 디자인 팀 운영 방식
 core: false
 created: 2026-05-29
 sources:
-- 디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기
-- raw/How top companies are using AI in their design workflows.md
-- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-- raw/I will never walk into a backend interview without solving these 20 questions..md
-- raw/Most Developers Are Solving the Wrong Problem.md
-- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-- raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md
-- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  and What I Rejected.md
-- raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md
-- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-- raw/Design’s craft crisis. senior designers built it.md
-- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-- raw/7 Coding Patterns I Stole From Senior Engineers.md
-- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+  - 디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기
+  - raw/How top companies are using AI in their design workflows.md
+  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+  - raw/I will never walk into a backend interview without solving these 20 questions..md
+  - raw/Most Developers Are Solving the Wrong Problem.md
+  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+  - raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md
+  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  - raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md
+  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+  - raw/Design’s craft crisis. senior designers built it.md
+  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+  - raw/7 Coding Patterns I Stole From Senior Engineers.md
+  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
 status: evergreen
 tags:
-- design
-- workflow
-- ai
-- product
+  - design
+  - workflow
+  - ai
+  - product
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI 디자인 팀 운영
 
 ## 한 줄 정의
-
 AI 디자인 팀 운영은 사람 중심의 순차적 handoff를 줄이고, intent-based design과 도구 체계를 통해 디자인 팀 전체의 빌드 방식을 다시 설계하는 workflow다.
 
 ## 핵심 요지
-
 - AI가 들어오면 디자인 팀의 질문은 "누가 그리느냐"에서 "누가 무엇을 결정하느냐"로 바뀐다.
 - 좋은 프로세스는 화면을 먼저 그리는 것이 아니라 사용자의 의도와 결과를 먼저 명시한다.
 - 디자인 시스템은 component catalog보다 intent, block, primitive, review gate를 관리하는 쪽으로 이동한다.
 - 핵심 변화는 사람을 빼는 것이 아니라, 사람이 정말 중요한 판단에 집중하게 만드는 것이다.
 - **플레이북 및 지침 문서화**: AI를 팀 프로세스에 정착시키기 위해 AI 가이드라인, 오버라이드 지시어가 포함된 지침(instruction) 파일 및 플레이북을 초기부터 구축하고 공유하여 내부 표준을 확립한다.
 - **직무 경계의 융합**: AI로 인해 직무 경계가 희석된다. PM이 UI 기획과 개념 검증(바이브 코딩)을 직접 처리하고, 디자이너는 전략적 전제 조건 설정(upstream)에 개입하는 Product Owner/Problem Solver 중심의 협업 체제로 전환된다.
+- 화면 픽셀과 레이아웃 배치 중심의 전통적 기획을 포기하고, 목적과 기획 의도를 담아 의무와 결과를 기술하는 처방형 디자인(descriptive design) 체제로 전향. [출처: 디자인 팀이 만드는 방식을 다시 짜기]
+- 디자인 시스템의 계층을 Tokens -> Components -> Blocks -> Artifacts -> Threads 구조로 설계하여 AI가 거버넌스 룰에 맞춰 자동 조립하게 제어. [출처: 디자인 팀이 만드는 방식을 다시 짜기]
 
 ## 상세
 
@@ -55,18 +54,37 @@ AI 디자인 팀 운영은 사람 중심의 순차적 handoff를 줄이고, inte
 
 이러한 도구 체인과 가이드라인 정착은 직무의 경계 융합을 가속한다. PM이 기본적인 UI 디자인을 구성하고 개념 검증(Proof of Concept) 코드를 직접 작성해 개발자에게 넘겨주면서 진정한 제품 소유자(Product Owner)로 변모하게 되며, 디자이너는 단순 화면 픽셀 배치에 시간을 쓰는 대신 타 부서와 **공유 문서(running doc)를 운영하는 마이크로 얼라이언스(Micro-alliances)**를 맺어 전략적 의사결정을 주도한다.
 
+### 의도 기반 디자인 시스템 계층 구조 (Composition Hierarchy)
+1. **Tokens & Design Primitives** (최하위): principles, taste, density rules, iconography, copy voice 등을 AI가 해석할 기계 가독 규칙 문서로 정의. 명시적인 오미션(Intentional Omission, never rules)을 포함하여 AI의 캔버스 폭주 차단.
+2. **Components**: 고정된 개별 요소.
+3. **Blocks**: 목적을 품은 구조 단위. 블록 내부의 컨테이너, 레이아웃, 인터랙션은 불변(Invariant)으로 보존하며, 라벨/아이콘/데이터 필드는 가변 슬롯(Slots) 형태로 맥락에 맞게 동적 할당.
+4. **Artifacts**: 사용자가 실제로 이동하고 탐색하는 면(Surface).
+5. **Threads**: 사용자가 달성하려는 하나의 완전한 비즈니스 목표 단위.
+
+### 의도 기반 디자인 컴포넌트 충돌 우선순위 규격
+- 기존에 생성되어 실존하는 블록(Existing block)의 우선순위가 컴포넌트 레벨 결정(Component-level decision)보다 우위에 있고, 컴포넌트 결정이 토큰 레벨 결정(Token-level decision)을 오버라이드하며, 전역 디자인 프리미티브(Design primitive)가 시스템 전체를 최상위 거버넌스로 제약함.
+
+### 상호 연결된 3대 툴체인 파이프라인
+- **도구 1 (Problem Space Map)**: 도메인 내 모든 Job-to-be-done, 규제 요건, AI 구현 가능성, 실패 모드를 정의하고 자율성 수준(Autonomy level) 분류.
+- **도구 2 (Specification Tool)**: 타겟 작업과 사용자를 지정하여 에이전트 빌드 경로(완전 자율 vs HITL vs 협업 모드)를 자동 판정하고 What & Why 명세서 조립.
+- **도구 3 (Surface Builder)**: 명세를 컴포넌트/디자인 프리미티브와 결합해 wireframe이 아닌 데이터가 흐르는 동작 prototype으로 자동 컴파일.
+
+### 패턴 자동 중복 제거 및 인간 승인 게이트
+- 여러 프로젝트에서 분리 생성되는 신규 UI 구조 패턴에 기계적으로 빈도 수(Frequency count)를 측정해 자동 중복 제거를 지원함. 검증된 패턴은 도구 라이브러리로 승격(promote)되기 전, 반드시 인간 디자이너의 최종 승인 게이트(Human-only gate)를 강제하여 거버넌스를 엄수함.
+
 ## 예시
 
 - 도메인 분석: 역할, 규제, 실패 모드를 먼저 매핑하고 그 결과를 설계 입력으로 쓴다.
 - 명세 생성: 어떤 사용자 행동을 허용하고 어떤 자율성 수준을 줄지 먼저 정한다.
 - 프로토타입: mockup이 아니라 실제 동작 가능한 surface를 빠르게 만들고, 리뷰는 그 위에서 진행한다.
 
-## 충돌
+### Block Slotting 실무 적용
+- care gap card, task row, protocol item을 위해 각기 개별 디자인 블록을 파편화해 만들지 않고, 뼈대가 되는 하나의 구조적 'Container Block'을 불변으로 유지한 상태에서 내부 slot content 영역만 도메인 맥락(labels, icons)에 맞게 주입해 시스템 복잡도를 혁신적으로 감축시킴.
 
+## 충돌
 - 전통적 디자인 시스템의 픽셀 단위 일관성과는 일부 충돌할 수 있다. 대신 intent와 review gate를 통해 진화하는 일관성을 얻는다.
 
 ## 관련 노트
-
 - [[AI 시대 디자인 시스템]]
 - [[AI 디자인 역할 맵]]
 - [[AI Experience Architect]]
