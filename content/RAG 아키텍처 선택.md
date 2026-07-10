@@ -70,6 +70,7 @@ sources:
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
   - raw/5단계 난이도로 알아보는 RAG 시스템 구축 및 구현 가이드.md
+  - raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md
 status: evergreen
 tags:
   - llm
@@ -91,6 +92,8 @@ RAG 아키텍처 선택은 데이터의 구조적 특성(사실 검색, 관계 �
 - **프로덕션 장애 차단 (Red Flags)**: 무조건 고성능 모델을 쓰거나 모든 데이터를 데이터베이스에 밀어 넣는 우를 범하지 않고, 데이터 정합성·지연시간·비용 예산에 맞추어 Fallback 메커니즘을 하네스(Harness)에 설계해야 한다.
 - Reranker의 유용성: Bi-Encoder로 빠르게 20개 내외의 후보군을 추린 후, 복잡하고 정확도가 높은 Cross-Encoder 리랭커를 적용해 최종 3개 청크를 도출한다. 이 2차 재정렬 패스로 상위 3개 중 정답 청크 포함 비율을 68%에서 89%로 향상시킬 수 있다.
 - RAG 실패 적신호 감지: 오버 엔지니어링(단순 FAQ에 에이전틱 RAG 도입), 검색 품질 방치(Recall 최적화 무시), 평가/측정 부재(RAGAS, Promptfoo 등 모니터링 부재) 등 프로덕션 전환 시 반드시 걸러내야 하는 위험 신호를 규정한다.
+- Vectorless RAG의 핵심인 PageIndex(2025년 9월 VectifyAI 발표, 23k 스타) 및 Mafin 2.5를 통한 FinanceBench 98.7% 성과.
+- 단일 아키텍처 편중을 피하고 사용자의 질문 복잡도에 따라 Standard RAG, GraphRAG, Vectorless RAG로 라우팅하는 Adaptive RAG가 프로덕션 트렌드로 부상.
 
 ## 상세
 
@@ -162,6 +165,12 @@ RAG 시스템을 프로덕션 수준으로 안정화하기 위해 극복해야 �
 - **Level 4 (Reranking)**: `ms-marco-MiniLM-L-6-v2`와 같은 Cross-Encoder 리랭커를 도입해 상위 3개 중 정답 청크 포함 비율을 68%에서 89%로 향상.
 - **Level 5 (Production RAG & Guardrails)**: 신뢰도가 임계값(`min_score` 약 0.6) 미만인 경우 답변을 거부하고, 소스가 다를 경우 `date_warning`을 표출하며, 50개 이상의 테스트케이스 회귀 평가 자동화.
 
+### GraphRAG의 데이터 규모 한계
+최근 연구에 따르면 GraphRAG의 graph traversal 기법은 코퍼스 규모가 **5M~15M 토큰**을 넘어서는 지점에 도달하면 판별 능력이 급격히 떨어지며 성능 향상이 정체(plateau)되는 한계가 존재한다.
+
+### PageIndex (Vectorless RAG)의 계층적 트리 탐색
+임베딩 벡터 검색을 전면 배제하고, PDF나 계약서 등의 문서를 `Chapter -> Section -> Subsection -> Table` 계층 구조 트리로 파싱해 둔다. LLM이 목차(TOC) 트리부터 읽고 '어느 챕터에 정답이 있을지'를 recursive/iterative하게 하향식 탐색함으로써 표의 각주, cross-reference를 100% 보존하며 탐색한다. 이는 단순 vector similarity가 문서 내 논리 구조 및 관계를 망가뜨리는 치명적인 문제를 해결한다.
+
 ## 예시
 
 - **법률 문서 대조 분석**: 법률 조항 간의 복잡한 연관 및 개정 히스토리 비교는 **GraphRAG**를 통해 개체 간 관계 노드를 분석한다. (예: Harvey AI의 법률 조항 및 판례 분석)
@@ -171,6 +180,19 @@ RAG 시스템을 프로덕션 수준으로 안정화하기 위해 극복해야 �
 ### HyDE 및 자가 검증형 RAG 실무 시나리오
 - **HyDE 예시**: 사용자가 CCPA(캘리포니아 소비자 개인정보 보호법)에 관해 모호하게 질문할 때, LLM이 CCPA 정의가 포함된 가상의 초안을 임베딩하여 실제 법전의 CCPA 법률 조항을 정확하게 인출해내는 구조.
 - **자가 검증형 CRAG 예시**: 금융 챗봇이 최신 주가를 질문받았을 때 내부 데이터 누락을 인지하고 외부 검색 API(Tavily 등)로 Fallback하여 현재 호가를 답변하는 워크플로우.
+
+### 2026년 Adaptive RAG 분기 라우팅 매트릭스
+```
+                    [User Query]
+                         │
+             [Complexity Classifier]
+             ┌───────────┼───────────┐
+             ▼           ▼           ▼
+          [Simple?]  [Complex?]  [Relationship?]
+             │           │           │
+      [Vector RAG]  [Vectorless]  [GraphRAG]
+     (Fast, Cheap)   (PageIndex)  (Multi-hop)
+```
 
 ## 충돌
 - **인프라 오버헤드 vs Vectorless RAG**: 마크다운 구조가 극도로 명확하고 계층화된 100여 개 내외의 작은 문서 볼트(Vault) 환경에서는 무거운 Vector DB와 임베딩 파이프라인을 구축(Vector RAG)하는 대신, 마크다운 트리를 직접 파싱해 LLM 컨텍스트로 컴파일하는 **Vectorless RAG**를 설계하는 것이 시스템 오버헤드를 아끼는 현명한 역발상이다.

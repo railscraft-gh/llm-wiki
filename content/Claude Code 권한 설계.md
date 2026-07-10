@@ -1,48 +1,53 @@
 ---
 aliases:
-- AI 에이전트 권한 설계
-- Permission Design
+  - AI 에이전트 권한 설계
+  - Permission Design
 core: false
 created: 2026-05-06
 sources:
-- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-- 보리스_클로드코드_실무_사용법
-- Claude-Code-실무활용법-보리스-관점-정리
-- API_Key_관리_및_Infisical_도입_가이드
-- pi-coding-agent-overview
-- cc101_axwith_ko
-- https://pi.dev/docs/latest/usage
-- raw/pi-coding-agent-overview.md
-- raw/Quartz-GitHub-Pages-Complete-Guide.md
-- raw/AI로_만든_제품이_안_팔리는_이유.md
-- raw/cc101_axwith_ko.md
-- raw/API_Key_관리_및_Infisical_도입_가이드.md
-- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-- raw/안드레_카파시_인터뷰_정리.md
-- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-- raw/Claude-Code-실무활용법-보리스-관점-정리.md
-- raw/보리스_클로드코드_실무_사용법.md
+  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+  - 보리스_클로드코드_실무_사용법
+  - Claude-Code-실무활용법-보리스-관점-정리
+  - API_Key_관리_및_Infisical_도입_가이드
+  - pi-coding-agent-overview
+  - cc101_axwith_ko
+  - 'https://pi.dev/docs/latest/usage'
+  - raw/pi-coding-agent-overview.md
+  - raw/Quartz-GitHub-Pages-Complete-Guide.md
+  - raw/AI로_만든_제품이_안_팔리는_이유.md
+  - raw/cc101_axwith_ko.md
+  - raw/API_Key_관리_및_Infisical_도입_가이드.md
+  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/안드레_카파시_인터뷰_정리.md
+  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+  - raw/보리스_클로드코드_실무_사용법.md
+  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+  - raw/보리스_클로드코드_실무_사용법
+  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
 status: evergreen
 tags:
-- llm
-- agent
-- claude-code
-- safety
+  - llm
+  - agent
+  - claude-code
+  - safety
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Claude Code 권한 설계
 
 ## 한 줄 정의
-
 Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어봐야 하는 명령, 금지해야 하는 명령을 나눠 자동화의 피해 범위를 제한하는 방식이다.
 
 ## 핵심 요지
-
 - 위험한 자동 실행 모드는 편하지만 실수 하나가 프로젝트 전체 피해로 이어질 수 있다.
 - 권한은 "허용", "확인 요청", "금지"로 나누는 편이 실무적이다.
 - 권한 설계는 [[Claude.md 운영 원칙]]과 함께 저장해야 세션이 바뀌어도 같은 규칙을 유지할 수 있다.
+- 모든 권한 확인을 건너뛰는 `--dangerously-skip-permissions` 등 자동 실행 모드는 격리된 샌드박스가 아니면 절대 지양해야 한다.
+- 신입 개발자에게 권한을 주는 방식과 동일하게, 작업의 위험도에 맞춰 권한을 세분화하여 설계하는 것이 AI 안전성의 기본이다.
+- 단순 키워드 매칭(substring check) 기반의 검증은 alias나 별도 스크립트 우회 꼼수에 쉽게 무력화되므로, 내부적으로 24가지 bash 안전 기준에 의거해 명령어 위험도를 점수화하는 별도의 Sonnet 4.6 분류 모델(classifier)을 가동하여 안전을 통제한다. (출처: raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md)
+- 보리스(Boris)는 모든 권한을 건너뛰는 loosely skip permission 모드는 실수 하나로 프로젝트 전체를 손상시킬 수 있어 사용을 전면 배제하며, 신입 개발자에게 권한을 세분화해 주듯 통제하는 것을 권장한다. (출처: raw/Claude-Code-실무활용법-보리스-관점-정리.md)
 
 ## 상세
 
@@ -53,6 +58,16 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 비밀값은 별도 권한 범위로 다룬다. [[API Key 관리 원칙]]에 따르면 Key는 코드, 로그, 클라이언트 번들에 남기지 않아야 하므로, 에이전트에게도 secret 조회, 출력, 커밋, production Key 사용을 금지하거나 확인 요청으로 묶어야 한다.
 
 [[Pi Coding Agent]]는 built-in permission popup을 제공하지 않는 대신 도구 허용 목록과 실행 환경으로 권한을 나누는 방향을 제시한다. 예를 들어 `--tools read,grep,find,ls`는 읽기 전용 리뷰에 적합하고, `--no-tools`는 도구 호출 자체를 막는다. 쓰기나 shell 권한이 필요한 작업은 container, extension, project rule로 별도 가드레일을 둔다.
+
+### 보리스 체르니의 실무 권한 가이드라인
+
+- **허용 (Allow)**: 테스트 실행, 린팅, 타입 체크와 같이 멱등성이 보장되고 되돌리기 쉬운 읽기/검증 작업.
+- **확인 요청 (Ask)**: 패키지 설치, 커밋, 마이그레이션 생성 등 저장소 상태를 변화시키는 작업.
+- **금지 (Deny)**: 프로덕션 DB 제어, 위험한 시스템 파일 삭제, API Key 등 비밀값 출력 작업.
+
+### 별도 분류기(Classifier) 기반 감시 체계
+- 에이전트 루프 내에 단순 방어막을 설계하는 대신, 모델과 위험 명령어 사이에 독립된 Sonnet 4.6 분류기를 배치합니다.
+- 24가지 bash 안전 지표를 통해 명령어가 수행할 실질적인 행동 의도를 분석하고 점수화하여 악의적인 프롬프트 인젝션(Prompt Injection) 시도나 시스템 훼손 명령을 원천 차단합니다.
 
 ## 예시
 
@@ -81,16 +96,22 @@ Claude Code는 파일을 수정하기 전에 **자동으로 스냅샷**을 저�
 
 이 옵션은 모든 권한 확인을 건neen 뛴다. 격리된 테스트 환경(컨테이너 등)이 아니면 사용하지 마세요. 실수로 시스템 파일을 수정하거나 삭제할 위험이 있다.
 
-## 충돌
+### 권한 오류 시 복구 기법
 
+Claude Code는 파일 수정 전 자동으로 스냅샷을 저장하므로, 원치 않는 수정이 발생하면 `Esc` 키를 두 번 연속 누르거나 `/rewind` 명령을 통해 이전 체크포인트 상태로 안전하게 되돌릴 수 있다.
+
+- **기초 키워드 필터링의 한계 예시**:
+  `DESTRUCTIVE_PATTERNS = ["rm -rf", "git push --force", ...]`와 같이 위험 substring을 검사하는 수준은 우회에 취약하므로, 반드시 자율 실행 모드 가동 전 별도 분류기를 통한 가드레일을 장착해야 합니다.
+
+## 충돌
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
 - [[Claude.md 운영 원칙]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[LLM을 동물 지능처럼 다루지 않기]]
 - [[API Key 관리 원칙]]
 - [[클라이언트 Secret 노출 방지]]
 - [[Pi Coding Agent]]
+- [[Agent Harness]]
 

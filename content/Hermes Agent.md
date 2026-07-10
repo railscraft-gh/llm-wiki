@@ -1,42 +1,43 @@
 ---
 aliases:
-- 헤르메스 에이전트
-- Hermes 에이전트
+  - 헤르메스 에이전트
+  - Hermes 에이전트
 core: false
 created: 2026-06-09
 sources:
-- raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
-- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-- raw/클로드 디자인은 과연 디자이너를 대체할까.md
-- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/바이브 코딩의 종말-ko.md
-- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-- raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
-- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/바이브 코딩의 종말-ko.md
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+  - raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
 status: evergreen
 tags:
-- llm
-- agent
-- open-source
+  - llm
+  - agent
+  - open-source
 type: tool
-updated: 2026-06-22
+updated: 2026-07-10
 ---
 
 # Hermes Agent
@@ -49,6 +50,7 @@ Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학
 - **3층 구조 메모리**: 단기(대화 맥락), 장기(선호도), 기술(스킬)로 메모리를 관리하며 SQLite FTS5 기반 과거 대화 검색을 지원한다.
 - **멀티 플랫폼 공유**: Telegram, Discord, Slack 등 12개 채널을 연동할 수 있고 채널 간 메모리가 통합 공유된다.
 - **100% 로컬 구동**: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: `gpt-oss:20b` 모델)로 실행할 수 있다.
+- 100% 로컬 구동: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: gpt-oss:20b 모델)로 실행할 수 있다.
 
 ## 상세
 
@@ -88,6 +90,9 @@ Hermes 에이전트 로컬 구동 시 핵심 병목인 KV 캐시의 메모리 �
 ### 7. 오픈소스 내부 도구 플랫폼과의 연동
 Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 플랫폼과 긴밀하게 연동된다. 자연어 지시를 통해 DB 스키마, UI 기획, 절차 프로세스를 구축하고 권한을 설정할 수 있으며, 이 노하우를 '스킬'로 저장해 재사용한다. 구체적인 동작 방식은 [[Hermes Agent와 오픈소스 내부 도구 연동]]을 참조한다.
 
+### 8. 자가 개선 및 세부 아키텍처
+Hermes Agent는 경험을 코드로 자산화하여 영구 스킬로 등록하고 미세 패치(`patch`) 방식으로 진화하는 독자적인 자가 학습 피드백 루프를 핵심 엔진으로 지닌다. 상세 아키텍처는 [[Hermes 에이전트 자가 개선 아키텍처]]를 참조한다.
+
 ## 예시
 - 사용자로부터 "Docker를 사용해 백엔드 서비스를 배포해줘"라는 명령을 받으면, 빌드 및 배포 명령과 설정을 실행한 후 해당 성공 흐름을 내부 `skills/` 디렉토리에 하나의 기술 코드로 저장한다. 이후 유사 요청 시 이를 로드해 활용한다.
 
@@ -102,4 +107,5 @@ Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 �
 - [[Hermes Agent와 오픈소스 내부 도구 연동]]
 - [[2026년 오픈소스 LLM 플랫폼 비교]]
 - [[GBrain]]
+- [[Hermes 에이전트 자가 개선 아키텍처]]
 

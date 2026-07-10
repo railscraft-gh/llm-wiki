@@ -115,6 +115,10 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - pydantic-ai 및 logfire의 통합: prompt 내부에 메모리를 섞는 대신 type-safe dependency injection과 pydantic schema 검증 및 Logfire 자동 tracing 스패닝을 통해 에이전트의 오작동을 기계적으로 차단한다.
 - 규칙 선언의 한계 극복: CLAUDE.md나 AGENTS.md와 같은 프롬프트 기반 계약은 강제력이 없고 세션 간 문맥이 단절된다. Harness는 Memory(진행 스냅샷 복원), Skill(워크플로우 제어), Hook(포맷팅 및 보안 감지), Feedback(기계적 검증)을 통합하여 나쁜 출력이 나오기 어려운 구조를 설계한다.
 - 컨텍스트 계층화(Layering) 전략: 프롬프트 캐싱 비용을 극단적으로 아끼기 위해 안정성에 따라 컨텍스트를 층으로 나누어 캐싱을 활성화한다 (Layer 0: System policies, Layer 1: Agent skill definitions, Layer 2: User session instructions, Layer 3: JIT-retrieved fresh outputs).
+- Anthropic Opus 4.8 출시(2026년 5월)는 검증(L4), 실행(L3), 제약(L1) 레이어가 모델 자체 가중치 및 오케스트레이션 내부로 흡수(Harness Absorption)되는 티핑 포인트다.
+- Opus 4.8은 자화자찬식 코드 결함 방관 확률을 4배 감소시켰으며, 750,000줄 Rust 코드베이스를 11일 만에 마이그레이션(테스트 통과율 99.8%)하는 동적 워크플로를 플랫폼 내재화했다.
+- 100만 토큰의 컨텍스트 창에서 장기 검색 성공률은 기존 40.3%에서 68.1%로 상승했다.
+- 독자적 해자는 이제 제약/실행/검증 인프라에서 기업 고유의 L2. 컨텍스트(Context) 및 L5. 라이프사이클(Lifecycle, Evals) 영역으로 이동한다.
 
 ## 상세
 
@@ -188,6 +192,12 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 4. **Implement**: 뼈대와 검증 경로(Validation Path)부터 점진적으로 구현.
 5. **Launch**: 예산(Step/Time/Token/Cost) 강제 여부, 주입 및 타임아웃 평가, Tracing 로그 점검 후 론칭.
 
+### Opus 4.8의 하네스 기능 내재화
+- **정직성(L4 검증)**: 모델 스스로 코드 오류를 감지해내는 자가 크리틱 가중치가 이전 4.7 대비 4배 향상.
+- **동적 워크플로(L3 실행)**: 계획-디스패치-검증-보고의 병렬 서브에이전트 제어를 Claude Code 런타임 및 API 수준에서 일괄 처리.
+- **노력 제어(L1 제약)**: `effort control`(low, high, extra, max 4단계, 기본 high)을 통해 모델 라우팅 및 비용 제어를 단순화. 빠른 모드(/fast)는 속도 2.5배 향상, 비용 3배 절감.
+- **해자의 이동**: 배관 인프라가 범용화(commodity)됨에 따라, 벤더가 탈취할 수 없는 보안 데이터, 지능형 메모리 설계(L2), 그리고 비즈니스 정의 기반 Evals/관제 파이프라인(L5)이 차별점의 핵심 보루가 된다.
+
 ## 예시
 
 - coding agent: `AGENTS.md`를 읽고, 필요한 파일만 찾고, 테스트를 돌리고, 실패 시 다시 수정하는 loop 전체가 harness다.
@@ -230,6 +240,11 @@ while not budgets.exhausted():
     else:
         break
 ```
+
+### L1/L3/L4 레이어의 리팩터링 및 걷어내기 가이드
+- **L4 검증**: 불완전 코드를 필터링하기 위해 별도로 띄웠던 크리틱 모델 게이트를 제거하고 Opus 4.8의 자체 교정 가중치를 우선 이용.
+- **L3 실행**: 직접 짠 fan-out/planner 배관 대신 플랫폼이 제공하는 동적 워크플로 위임을 검토하여 Undifferentiated heavy lifting을 차단.
+- **L1 제약**: 복잡한 라우터 코드 대신 `/fast` 스위치 및 `effort control` 옵션 활용.
 
 ## 충돌
 현재 확인된 충돌 없음.

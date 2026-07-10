@@ -1,35 +1,36 @@
 ---
 aliases:
-- HTML vs Markdown 결정 트리
-- Markdown source HTML artifact
+  - HTML vs Markdown 결정 트리
+  - Markdown source HTML artifact
 core: false
 created: 2026-05-26
 sources:
-- Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
-- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
-- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+  - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
+  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
 status: evergreen
 tags:
-- llm
-- agent
-- markdown
-- html
+  - llm
+  - agent
+  - markdown
+  - html
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI 산출물 포맷 결정 트리
 
 ## 한 줄 정의
-
 AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니라 "누가 읽고 무엇을 할 것인가"라는 독자 기준으로 고르는 실무 규칙이다.
 
 ## 핵심 요지
-
 - 사람이 브라우저에서 읽고 탐색하고 공유해야 하면 HTML이 유리하다.
 - 다른 agent가 읽고 다음 단계로 넘겨야 하면 Markdown이 더 가볍고 parse-friendly하다.
 - 사람과 agent가 둘 다 읽는 문서는 Markdown source와 HTML artifact를 분리하는 것이 가장 안정적이다.
+- Thariq Shihipar(Claude Code 엔지니어링 리드)는 'The Unreasonable Effectiveness of HTML'을 기고하고 HTML 출력을 적극 옹호했다.
+- 2,000단어 보고서 기준 Markdown(3,000 토큰) 대비 Lean HTML은 7,200 토큰(2.4배), Full HTML(CSS 포함)은 14,400 토큰(4.8배)의 오버헤드를 갖는다.
+- 보안(JS XSS), 접근성(WCAG 미준수), HTML diff의 극심한 소음이 Team HTML 진영이 마주하는 실무 장벽이다.
 
 ## 상세
 
@@ -39,6 +40,12 @@ AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니
 
 이 원칙은 [[LLM Wiki 운영 패턴]]과도 연결된다. wiki 본문은 diff와 재편집이 쉬운 Markdown source가 적합하지만, 최종 리포트나 시각화된 브리프는 HTML artifact가 더 맞을 수 있다. 또한 [[Claude.md 운영 원칙]]이나 [[Agent Harness]] 관점에서 보면, 포맷 선택 역시 agent output contract의 일부다. 어떤 독자를 상정하는지 미리 정하면 산출물 구조와 검증 기준도 함께 선명해진다.
 
+### 독자별 포맷 결정 트리
+- **사람이 읽는 경우 (PR 리뷰, 의사결정 보고서 등)**: 인터랙티브 섹션 접기, severity 색상, 공유 가능한 링크를 제공하는 **HTML**이 유리.
+- **기계(에이전트)가 읽는 경우 (파이프라인 데이터 전달 등)**: 파싱이 쉽고 가벼운 **Markdown** 사용.
+- **양쪽 다 읽는 경우 (PR 본문이자 기록용)**: Git diff 추적을 위한 source of truth는 **Markdown**으로 두고, 사람을 위한 companion **HTML** 아티팩트를 별도 생성.
+- **HTML diff 소음 제어**: template-plus-data 패턴을 도입해 HTML 템플릿은 고정하고 변경 값만 JSON payload로 교환함으로써 diff 가독성을 확보한다.
+
 ## 예시
 
 - stakeholder report: 브라우저에서 열고 공유하므로 HTML
@@ -46,12 +53,18 @@ AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니
 - 팀 문서 + 브라우저 소비: 저장은 Markdown, 배포본은 HTML
 - 개인 메모, wiki 노트: 수정과 링크가 쉬운 Markdown
 
-## 충돌
+### 실무 가동 규칙 요약
+- 팀원 배포용 PR 리뷰 -> HTML
+- 에이전트 간 중간 산출물 -> Markdown
+- stakeholder 보고서 -> HTML
+- Git으로 추적하는 소스 -> Markdown
+- 디자인 시스템 비교 및 인터랙티브 아티팩트 -> HTML
+- 개인 메모, wiki 노트 -> Markdown
 
+## 충돌
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
 - [[LLM Wiki 운영 패턴]]
 - [[Claude.md 운영 원칙]]
 - [[Agent Harness]]

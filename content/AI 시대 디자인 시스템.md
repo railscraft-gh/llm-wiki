@@ -94,6 +94,12 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
 - 행동주의적 에이전틱 디자인 시스템(Behavioral Agentic Design System, BADS) 데모: https://behavioral-agentic-design-system.vercel.app/ (비밀번호: bads2026).
 - YAML 토큰 명칭 직접 참조: 마크다운 본문이 프론트매터의 토큰 변수명({ colors.white }, {base} 등)을 직접 역참조해야 AI 에이전트가 오차 없이 렌더링을 일치시킬 수 있다.
 - Figma 디자인 시스템과 AI 에이전트 간의 정합성을 유지하기 위해 컴포넌트의 설명(Description)에 반드시 해당 요소를 '사용하지 말아야 할 때(Negative constraints)'를 포함시켜 기재하는 것이 오용 차단에 강력한 효용을 지닌다. (출처: raw/AI와 디자인 시스템 - 출판형 다듬기.md)
+- Brad Frost & Dominic Nguyen은 디자인 시스템이 개발자 문서가 아닌 기계를 위한 지시서(instructions for machines)로 진화하고 있음을 선언했다.
+- 2026년 3월 5일 오픈 베타로 출시된 Figma Slots는 named slot 구조를 제공하여 detaching(컴포넌트 해제) 문제를 원천 차단한다.
+- Figma Variables 3계층(Primitives, Semantic tokens, Component tokens) 중 Semantic token 설계는 기계가 의도(intent)를 추론하게 만드는 비협상 필수 조건이다.
+- Uber는 2026년 3월 Figma Console MCP(southleft/figma-mcp)와 AI 에이전트를 연동해 24시간 동기화되고 몇 분 만에 완전한 component spec을 빌드하는 파이프라인을 공개했다.
+- 디자인 시스템은 색상, 타이포그래피, spacing, icon style, component state를 정해 AI Slop을 줄인다.
+- DESIGN.md 운영 원칙처럼 agent-readable 형식으로 저장하면 AI가 디자인 의도를 매번 새로 추측하지 않아도 된다.
 
 ## 상세
 
@@ -191,8 +197,17 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
   *   `audit-design-system`: 현재 Figma 캔버스의 컴포넌트와 스타일이 마스터 DS 명세에서 얼마나 어긋나 작동하는지 visual drift 차이를 자동 점검 및 진단.
 - **동기화 및 2차 검증**: Figma API 및 `/schedule` 명령을 결합하여 **일일 1회** 동기화를 보장하는 스키마를 구성(Design System Sync Agent). 잦은 실시간 동기화는 토큰 낭비와 호출 제한을 초래하므로, 일일 배치 스냅샷을 생성해 `CLAUDE.md`, 토큰 JSON, 컴포넌트 룰을 갱신하고 변경 로그(Added/Updated/Deprecated)를 자동으로 저장소에 커밋한다.
 
-## 예시
+### 기계 가독형 피그마 설계 원칙
+- **Figma Slots 기능 (2026년 3월 5일 출시)**: 컴포넌트 내 분홍색 테두리로 표시되는 general/named slot을 활용해 UI를 조립(assembling, not creating)하도록 강제한다. 이는 컴포넌트를 분해(detaching)해 에이전트의 추론 구조를 깨뜨리는 행위를 차단한다.
+- **Figma Variables 3계층**: primitives(물리값 hex), semantic tokens(interactive/default 등 intent 지향), component tokens(선택)로 나누어 설계한다. Semantic tokens은 downstream의 손상 없이 브랜드 테마 전환을 지원한다.
+- **컴포넌트-코드 매핑 (Code Connect)**: PascalCase로 작성된 컴포넌트명과 description(오용 차단용 constraint 기술 필수)을 바탕으로 코드베이스와 1:1 매핑을 확보해야 에이전트의 헛생성(hallucination)을 막을 수 있다.
+- **Figma Auto Layout**: Flexbox 및 Grid 기반으로 요소를 의도적으로 정렬하고 variables spacing을 강제하여, Figma MCP가 즉각적으로 유효한 CSS 코드를 출력하게 유도한다.
 
+### 9. 추가적인 실무 기업 AI 디자인 시스템 운용 사례
+- **Meta (실행의 자동화 및 플레이북)**: Llama 모델을 기반으로 자체 AI 워크플로 지침과 플레이북을 문서화하여 내부 표준을 수립했다. 기획자(PM)가 Cursor 및 Claude 등을 활용해 직접 개념 검증을 위한 코드를 바이브 코딩으로 구현한 뒤 개발자에게 넘겨주는 등 제품 소유자(Product Owner)로서의 역량이 극대화되었다. 단, 사용자 리서치 및 UX 전략 수립은 여전히 사람이 중심이 되는 수작업을 유지한다.
+- **Faire (Fairey AI 챗봇을 이용한 UX 리서치)**: 사내 AI 챗봇 'Fairey'를 구축하여 지난 6개월간의 지원 티켓 내역 등 대규모 고객 문의 데이터로부터 사용자의 불편함을 빠르게 수집 및 UX 리서치를 대행한다. 또한 고객 인터뷰 녹취 데이터를 프롬프트 템플릿 양식에 맞춰 보안 탑재된 ChatGPT에 입력하여 깔끔한 요약 콘텐츠로 빠르게 정제한다.
+
+## 예시
 - **Oooff 웹앱 POC 사례**: 여행 계획 웹앱 Oooff를 설계할 때, 디자인 의도(Reasoning Layer)를 주입한 DESIGN.md를 활용해 에이전트가 hex 코드나 padding 규칙을 임의로 날조하지 않고 100% 일치도로 컴포넌트를 빌드하게 만들었다.
 - **컴포넌트 트리아지 파이프라인**: 신규 UI 생성이 요청되면 에이전트가 자율적으로 4가지 버킷 중 하나로 분류(Triage)한다.
   - Bucket A (재사용): 기존 것 호출 후 종료.
@@ -212,6 +227,9 @@ Figma 파일을 AI에 인풋으로 주기 전 수동 또는 자동 감사 에이
 1. **하드코딩된 값**: 원시 hex 코드나 일탈된 padding 값이 인라인으로 박힌 요소를 제거하고 토큰 변수로 치환.
 2. **중복 컴포넌트**: 동일 기능인데 여러 레이어로 파편화된 심볼 병합.
 3. **컴포넌트 오용**: 예제 목업이나 샌드박스 영역에서 컴포넌트 규칙과 어긋나게 사용된 흔적 정리.
+
+### Uber의 Figma Console MCP 적용 사례
+- **Figma Console MCP (`southleft/figma-mcp`)**: AI 에이전트가 Figma API 및 Storybook MCP를 통해 디자인 의도를 읽어들여 100% 일치하는 UI 코드를 생성한다. 하루 1회 배치 스냅샷 동기화로 토큰 낭비와 호출 제한을 예방하는 스키마를 구성한다.
 
 ## 충돌
 현재 확인된 충돌 없음.

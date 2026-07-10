@@ -1,52 +1,55 @@
 ---
 aliases:
-- Claude Code Orchestration
-- 에이전트 오케스트레이션
+  - Claude Code Orchestration
+  - 에이전트 오케스트레이션
 core: false
 created: 2026-05-06
 sources:
-- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-- 보리스_클로드코드_실무_사용법
-- Claude-Code-실무활용법-보리스-관점-정리
-- cc101_axwith_ko
-- Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
-- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
-- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-- 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
-- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
-- raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
-- raw/cc101_axwith_ko.md
-- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
-- raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
-- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
-- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-- raw/안드레_카파시_인터뷰_정리.md
-- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
-- raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
-- raw/Claude-Code-실무활용법-보리스-관점-정리.md
-- raw/보리스_클로드코드_실무_사용법.md
+  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+  - 보리스_클로드코드_실무_사용법
+  - Claude-Code-실무활용법-보리스-관점-정리
+  - cc101_axwith_ko
+  - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+  - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+  - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
+  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+  - raw/cc101_axwith_ko.md
+  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+  - raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/안드레_카파시_인터뷰_정리.md
+  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+  - raw/보리스_클로드코드_실무_사용법.md
+  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+  - raw/보리스_클로드코드_실무_사용법
+  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
 status: evergreen
 tags:
-- llm
-- agent
-- claude-code
-- orchestration
+  - llm
+  - agent
+  - claude-code
+  - orchestration
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Claude Code 오케스트레이션
 
 ## 한 줄 정의
-
 Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아니라 GitHub, Sentry, Slack, Figma, CLI, MCP 서버를 연결하는 업무 조율 도구로 쓰는 관점이다.
 
 ## 핵심 요지
-
 - Claude Code의 가치는 코드 생성만이 아니라 여러 도구 사이의 작업 흐름을 연결할 때 커진다.
 - 오케스트레이션에는 반드시 [[Claude Code 권한 설계]]가 따라야 한다.
 - 반복되는 흐름은 slash command, hook, MCP 같은 작은 자동화로 고정한다.
+- Anthropic의 npm 배포 소스 맵 유출 분석에 따르면, 전체 코드베이스의 단 1.6%만이 모델과 통신하여 다음 행동을 결정하며, 나머지 98.4%는 명령어 검증, 컨텍스트 압축, 도구 호출 라우팅 및 복구, 세션 유지 등 오케스트레이션 시스템의 몫이다. (출처: raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md)
+- 컨텍스트 임계치 도달 시 대화 맥락 유지와 토큰 절약을 위해 오래된 실행 결과 정리, 중간 대화 요약, 긴 터미널 출력 끝단 자르기 등을 수행하는 8가지 컨텍스트 압축 모드가 내장되어 작동한다. (출처: raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md)
 
 ## 상세
 
@@ -72,6 +75,10 @@ Claude Code 오케스트레이션은 Claude Code를 단순 코딩 도구가 아�
    - *스톱훅(Stop Hook)*을 활성화하여 출력이 정지되는 순간 자동으로 빌드/테스트/린팅(`npm run build && npm test && npm run lint`)을 실행하게 한다.
    - *UI/브라우저 검증* 장치(Playwright, 스크린샷 캡처 등)를 두어 디자인 준수 여부를 에이전트가 검증하게 한다.
 5. **린터와 포매터는 최종 안전장치**: AI가 작성한 코드의 스타일이나 포맷 결함이 CI/CD 파이프라인에서 터져 흐름을 끊는 것을 막기 위해, 매 세션 종료 전 린터와 포매터(`prettier`, `eslint`, `black`, `ruff`)를 사용해 마지막 10%의 코드를 정돈하게 만든다.
+
+### 98.4% 오케스트레이션 엔진의 역할
+- **컨텍스트 압축 (Context compaction)**: 파일 내용과 테스트 로그가 대화 기록에 무한히 누적되는 것을 방지하기 위해 8개 압축 모드를 가동하여 컨텍스트 윈도우 소모를 최소화합니다.
+- **회생 루프 및 예외 처리**: 도구 실행 실패 시 에이전트가 종료되지 않고 에러 결과를 루프에 태워 모델이 반응하고 복구하도록 디스패처 레이어가 제어합니다.
 
 ## 예시
 
@@ -130,12 +137,13 @@ claude_review:
 
 이러한 연동은 [[Claude Code 권한 설계]]를 통해 `--dangerously-skip-permissions` 사용을 제한하고 안전하게 실행해야 한다.
 
-## 충돌
+- **1.6% 에이전트 루프 복제본의 한계**:
+  500여 줄의 Python 코드만으로 ReAct 루프를 만드는 것은 쉽지만, 오케스트레이션 엔진(컨텍스트 압축 및 에러 회생 로직)이 결여되면 60턴 이상의 대형 프로젝트 수행 시 컨텍스트 윈도우 폭주와 세션 단절이 발생합니다.
 
+## 충돌
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
 - [[Claude Code 권한 설계]]
 - [[병렬 에이전트 세션 운영]]
 - [[Agent Native Infrastructure]]
@@ -144,4 +152,6 @@ claude_review:
 - [[Claude Code 세션 운영 명령어]]
 - [[에이전트 확장 3계층]]
 - [[AI 에이전트 런타임 역할 맵]]
+- [[Agent Harness]]
+- [[Claude.md 운영 원칙]]
 

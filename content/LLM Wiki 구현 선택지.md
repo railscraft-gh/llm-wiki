@@ -69,6 +69,9 @@ LLM Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키
 - **에이전트 협상 구현 (Agentic Markdown)**: 200개 이하 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 `AGENTS.md`와 `CLAUDE.md` 설정을 통해 에이전트를 '위키 유지관리자(Wiki Maintainer)'로 작동시킨다.
 - **마크다운 구조적 파싱 한계**: 에이전트의 자율 컴파일만으로는 헤더 중첩 에러, YAML 구문 파손, 깨진 링크 등 구조적 마크다운 오류를 제어하기 어렵다. 위키가 다른 자동화 시스템의 입력으로 연동된다면 전용 처리 레이어(`markdown-hero`)가 필수적이다.
 - Andrej Karpathy의 마크다운 지식 베이스 구상(`llm-wiki.md`)은 Cursor와 Obsidian, 그리고 단일 `CLAUDE.md` 명세의 조합으로 별도 코딩이나 서버 인프라 없이 단 30분 만에 완전 구동되는 로컬 지식 위키를 실현할 수 있다. (출처: raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md)
+- 기본 설계 패러다임: Andrej Karpathy의 llm-wiki.md 구상(2026년 4월)에 기반하여, 매 질문마다 원문을 매번 다시 읽는 RAG의 토큰 낭비를 줄이고 원문을 상호 연결된 정형 위키로 사전 컴파일한 뒤 위키를 쿼리한다.
+- 코드로 굳히는 구현 (Programmatic Package): 대규모 corpus 환경에서 토큰 비용과 환각 누적을 억제하며, 입력의 재현성과 다운스트림 자동화 연동을 최적화한다.
+- 에이전트 협상 구현 (Agentic Markdown): 200개 이하 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 AGENTS.md와 CLAUDE.md 설정을 통해 에이전트를 위키 유지관리자로 작동시킨다.
 
 ## 상세
 
@@ -116,8 +119,11 @@ balukosuri의 오픈소스 레포(`https://github.com/balukosuri/llm-wiki-karpat
 - **대화 2단계 - 아키텍처 자동 빌드**: 단일 명령으로 `raw/`, `wiki/` 폴더 구조화, `CLAUDE.md` 스키마 작성, 스타터 마스터 노트 4개(`index.md`, `log.md`, `overview.md`, `glossary.md`) 자동 생성.
 - **대화 3단계 - 옵시디언 샌드박스 연동**: Homebrew를 통해 Obsidian을 자동 호출 설치하고, `.obsidian/` 디렉토리 내 설정들(`app.json`, `appearance.json`, `graph.json`, `hotkeys.json` 등)을 사전에 세팅해 graph view 색상 태그 매핑, 단축키 바인딩, overview 자동 오픈 레이아웃을 완성하여 즉시 구동 가능한 Zero-config 상태 of Vault를 공급한다.
 
-## 예시
+### 6. 노코드 기반 대안: Constella
+Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작성, 마크다운 린트 규칙 정립 등)를 해소하기 위한 노코드 클라우드 대안으로 **Constella** 서비스가 존재한다.
+- **동작 방식**: 사용자가 소스(웹 문서, 기사 등)를 드롭하여 입력하면 AI가 지식 간의 연결망을 자동으로 형성하고, 사용자는 축적된 전용 지식 베이스를 상대로 자연어 질의응답을 할 수 있어 코드 한 줄 없이 카파시 지식 시스템을 구현하게 돕는다.
 
+## 예시
 - **개인 연구 위키**: `AGENTS.md` + `purpose.md` + `index/log` + 소스 요약
 - **팀 협업 위키**: Project Skill 등록 + 리뷰 전용 페이지 + 정기 Scheduled Lint 스크립트
 - **대형 기업 Corpus**: typed pipeline 패키지 빌드 + SHA-256 ID 부여 + `markdown-hero` 파서 연동

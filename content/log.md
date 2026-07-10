@@ -5,6 +5,225 @@
 ### Ingest
 
 - 입력:
+  - `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`
+  - `raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`
+  - `raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md`
+  - `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`
+  - `raw/How to Do Hard Things When You Have Zero Motivation.md`
+  - `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`
+  - `raw/How top companies are using AI in their design workflows.md`
+- 생성:
+  - [[Hermes 에이전트 자가 개선 아키텍처]] (신규)
+- 수정:
+  - [[Hermes Agent Google Workspace 연결]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Hermes Agent]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 세컨드 브레인]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[LLM Wiki 구현 선택지]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[동기부여 없을 때 어려운 일 해내는 법]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[늦게 나타나는 지표]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 시대 디자인 시스템]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[Hermes Agent Google Workspace 연결]], [[Hermes 에이전트 자가 개선 아키텍처]], [[Hermes Agent]], [[AI 세컨드 브레인]], [[LLM Wiki 구현 선택지]], [[동기부여 없을 때 어려운 일 해내는 법]], [[늦게 나타나는 지표]], [[AI 시대 디자인 시스템]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
+  - `raw/Design’s craft crisis. senior designers built it.md`
+  - `raw/From faster pencil to AI Experience Architect. a designer’s path.md`
+  - `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
+  - `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
+  - `raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md`
+  - `raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md`
+  - `raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md`
+  - `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`
+  - `raw/Good Design Doesn’t Happen By Default.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[DESIGN.md 워크플로우]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[디자인의 크래프트 위기]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI Experience Architect]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[GBrain]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[강한 모델로 덜 헤매기]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[GStack]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[RAG 아키텍처 선택]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Hermes Agent 24-7 운영]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[디자인 시스템 기본값]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[DESIGN.md 워크플로우]], [[디자인의 크래프트 위기]], [[AI Experience Architect]], [[GBrain]], [[강한 모델로 덜 헤매기]], [[GStack]], [[RAG 아키텍처 선택]], [[Hermes Agent 24-7 운영]], [[디자인 시스템 기본값]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!`
+  - `raw/보리스_클로드코드_실무_사용법`
+  - `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
+  - `raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md`
+  - `raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`
+  - `raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md`
+  - `raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[Claude Code 오케스트레이션]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude Code 권한 설계]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude.md 운영 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 세컨드 브레인]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Figma 에이전트 연동]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[Claude Code 오케스트레이션]], [[Claude Code 권한 설계]], [[Claude.md 운영 원칙]], [[AI 세컨드 브레인]], [[Figma 에이전트 연동]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/Building an MCP Ecosystem at Pinterest-ko.md`
+  - `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`
+  - `raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`
+  - `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`
+  - `raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md`
+  - `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md`
+  - `raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md`
+  - `raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md`
+  - `raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[Pinterest MCP]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude.md 운영 원칙]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Obsidian vault용 Slash Command 운영]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude Code 권한 설계]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[쓰라린 교훈]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[전략적 사고]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[Pinterest MCP]], [[Claude.md 운영 원칙]], [[Obsidian vault용 Slash Command 운영]], [[Claude Code 권한 설계]], [[쓰라린 교훈]], [[전략적 사고]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`
+  - `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`
+  - `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md`
+  - `raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md`
+  - `raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md`
+  - `raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md`
+  - `raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md`
+  - `raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md`
+  - `raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md`
+  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
+- 생성:
+  - [[실시간 음성 에이전트 아키텍처]] (신규)
+- 수정:
+  - [[AI 오픈소스 작업대]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 시대 디자인 시스템]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[디자인 에이전트 5종]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[에이전트 코딩 4원칙]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 산출물 포맷 결정 트리]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Agent Harness]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 하네스 최소화]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[BofA 투자자 설문과 채권 리스크 (2026년 5월)]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[멀티 에이전트 코스 빌더]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[AI 오픈소스 작업대]], [[AI 시대 디자인 시스템]], [[디자인 에이전트 5종]], [[에이전트 코딩 4원칙]], [[AI 산출물 포맷 결정 트리]], [[Agent Harness]], [[AI 하네스 최소화]], [[BofA 투자자 설문과 채권 리스크 (2026년 5월)]], [[실시간 음성 에이전트 아키텍처]], [[멀티 에이전트 코스 빌더]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
   - `raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md`
   - `raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`
   - `raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md`

@@ -81,6 +81,10 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - 저장소 이름과 세부 스펙은 빨리 바뀌므로, 이 노트는 특정 도구 추천보다 생태계 방향과 작업 표면의 이동을 읽는 데 더 적합하다.
 - 오픈소스 도구들의 실무 묶음: n8n(custom JS & self-hosting API), Ollama & Open WebUI(self-hosted ChatGPT 대시보드 구축), Dify(prompt/provider 인프라 묶음), RAGFlow(citation traceability 특화) 등으로 지형이 안정되었다.
 - 터미널 네이티브와 오픈 가중치: `npx @google/gemini-cli` 명령어어로 작동하는 terminal assistant 및 671B 파라미터(37B 활성화)와 128K context를 갖춘 DeepSeek-V3가 오픈소스 생태계 핵심 축을 담당한다.
+- NocoBase는 22.3k GitHub Stars를 기록하며 비즈니스 구조와 규칙 경계를 갖춘 시스템 위에서 AI가 작업하도록 이끄는 대표적 로우코드 플랫폼이다.
+- n8n은 187k GitHub Stars의 자동화 플랫폼으로 AI 에이전트의 실제 업무 프로세스 연결에 사용된다.
+- Qdrant(31.2k Stars)와 Outline(38.5k Stars)은 각각 장기 기억 저장소와 지식 베이스를 담당하여 AI 컨텍스트 유실 문제를 해결한다.
+- Coolify(55k Stars)와 OpenHands(73.2k+ Stars)는 각각 self-hosting 배포 관리와 엔지니어링 에이전트 런타임으로 기능한다.
 
 ## 상세
 
@@ -112,6 +116,14 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - **Google Gemini CLI**: `npx @google/gemini-cli` 명령어 기반으로 작동하며 개발자가 상주하는 터미널 환경에 밀착해 디버깅, 파일 생성, 코드 해석 등의 shell task를 terminal-native하게 지원한다.
 - **RAGFlow**: 그럴듯한 답변이 아닌 검증 가능한 답변(citation traceability, 출처 추적성)이 필수적인 법무, 의료, 금융 도메인을 위해 document ingestion부터 citation tracking까지의 RAG 파이프라인을 통제한다.
 
+### 6대 주요 오픈소스 도구 분석
+- **NocoBase**: CRM, 티켓팅, ERP 등 엔터프라이즈 시스템 구축용 AI + no-code 플랫폼. AI가 데이터 모델, 페이지, 워크플로우를 생성하면 사람은 GUI로 조정하여 시스템 경계를 고정한다.
+- **n8n**: node 로직, API 호출, 커스텀 코드를 조율하여 AI 에이전트를 실무 비즈니스 프로세스에 연동하는 시각적 자동화 계층.
+- **Qdrant**: RAG, semantic search, agent memory 구축용 고성능 벡터 DB. self-hosting 시 내부 데이터 보안 통제가 가능.
+- **Outline**: Notion/Confluence의 오픈소스 대안. PRD, 스키마, 프롬프트를 팀 위키로 관리하여 AI가 프로젝트를 이해하도록 만드는 명확한 지식 인프라.
+- **Coolify**: Vercel/Railway를 대체하는 self-hosting 배포 관리 도구. Docker, DB, 앱 런타임을 중앙 관리하여 AI 스택 운영을 간소화.
+- **OpenHands**: 코드베이스 분석, 버그 수정, DevOps를 자율 수행하는 장시간 실행 엔지니어링 에이전트.
+
 ## 예시
 
 - local assistant 실험: Ollama + Open WebUI
@@ -121,6 +133,14 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 ## 예시
 - **터미널 네이티브 어시스턴트 실행**: `npx @google/gemini-cli`를 로컬 쉘에서 구동하여 브라우저 전환 오버헤드 없이 terminal-native하게 빌드 로그 오류를 전송하고, 로컬 디버깅 및 소스 보정을 자율 수행하는 워크플로우.
+
+### Claude Code 연동 설치 명령어
+- **NocoBase**: `NocoBase CLI 설치와 초기화까지 도와줘: https://docs.nocobase.com/cn/ai/ai-quick-start.md` 프롬프트 사용.
+- **n8n**: `n8n을 Docker로 설치하고, PostgreSQL 영속 스토리지와 기본 인증까지 설정해 줘`
+- **Qdrant**: `Qdrant를 Docker로 설치하고, AI Knowledge Base용 기본 collection까지 만들어 줘`
+- **Outline**: `Outline을 Docker로 설치하고, PostgreSQL과 object storage를 설정해 줘`
+- **Coolify**: `Ubuntu 서버에 Coolify를 설치하고 기본 초기 설정까지 마무리해 줘`
+- **OpenHands**: `OpenHands를 Docker로 설치하고 기본 런타임 환경 설정까지 마무리해 줘`
 
 ## 충돌
 - 2026-05-26 확인: 저장소별 스타 수, 버전, 모델 스펙, 기능 범위는 변동성이 높다. 다만 local stack, workflow builder, grounded AI, terminal assistant로 작업 표면이 이동한다는 구조적 관찰은 개별 저장소 교체와 무관하게 유지된다.
@@ -138,4 +158,5 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [[AI 기본값 수용과 오버라이드 전략]]
 - [[Hermes Agent와 오픈소스 내부 도구 연동]]
 - [[2026년 오픈소스 LLM 플랫폼 비교]]
+- [[Hermes Agent]]
 
