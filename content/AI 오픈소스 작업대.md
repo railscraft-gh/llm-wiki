@@ -1,88 +1,86 @@
 ---
 aliases:
-- AI GitHub 생태계 신호
-- AI OSS 작업대
+  - AI GitHub 생태계 신호
+  - AI OSS 작업대
 core: false
 created: 2026-05-26
 sources:
-- 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
-- Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
-- The Complete (Honest) Guide to OpenClaw
-- 지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기
-- After Claude Code. 6 Open-Source Tools You Should Know
-- The Open-Source Agent Toolkit in 2026
-- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-- raw/클로드 디자인은 과연 디자이너를 대체할까.md
-- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- raw/AI와 디자인 시스템 - 출판형 다듬기.md
-- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
-- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-- raw/From faster pencil to AI Experience Architect. a designer’s path.md
-- raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
-- raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
-- raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
-- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
-- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-- raw/cc101_axwith_ko.html
-- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
-  For)-ko.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-- raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
-- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
-- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-- raw/The Complete (Honest) Guide to OpenClaw.md
-- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-- raw/The most important Design System in 2026 that designers missed was built by
-  a developer..md
-- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-- raw/Good Design Doesn’t Happen By Default.md
-- raw/How to write a DESIGN.md file Claude can actually use-ko.md
-- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-- raw/The Open-Source Agent Toolkit in 2026-ko.md
-- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
-- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
-- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
-- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
-- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
-- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+  - 2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가
+  - Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델
+  - The Complete (Honest) Guide to OpenClaw
+  - 지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기
+  - After Claude Code. 6 Open-Source Tools You Should Know
+  - The Open-Source Agent Toolkit in 2026
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
+  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
+  - raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md
+  - raw/더 빨리 배우고 싶다면 이 노트 정리 방식을 써라.md
+  - raw/Supertonic 3. 99M 파라미터로 31개 언어를 말하는 초경량 TTS 모델.md
+  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/cc101_axwith_ko.html
+  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md
+  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+  - raw/The Complete (Honest) Guide to OpenClaw.md
+  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/The most important Design System in 2026 that designers missed was built by
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/Good Design Doesn’t Happen By Default.md
+  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/The Open-Source Agent Toolkit in 2026-ko.md
+  - raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+  - raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+  - raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
 status: evergreen
 tags:
-- llm
-- open-source
-- agent
-- tooling
+  - llm
+  - open-source
+  - agent
+  - tooling
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI 오픈소스 작업대
 
 ## 한 줄 정의
-
 AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, workflow automation, self-hosted interface, grounded retrieval, terminal-native assistant 쪽으로 수렴한다는 관찰을 묶은 허브다.
 
 ## 핵심 요지
-
 - 중요한 변화는 단일 저장소의 스타 수보다, 어떤 작업 표면이 오픈소스로 표준화되는가에 있다.
 - 핵심 축은 local model 실행, self-hosted UI, visual workflow builder, RAG 플랫폼, terminal assistant, automation orchestration이다.
 - 저장소 이름과 세부 스펙은 빨리 바뀌므로, 이 노트는 특정 도구 추천보다 생태계 방향과 작업 표면의 이동을 읽는 데 더 적합하다.
+- 오픈소스 도구들의 실무 묶음: n8n(custom JS & self-hosting API), Ollama & Open WebUI(self-hosted ChatGPT 대시보드 구축), Dify(prompt/provider 인프라 묶음), RAGFlow(citation traceability 특화) 등으로 지형이 안정되었다.
+- 터미널 네이티브와 오픈 가중치: `npx @google/gemini-cli` 명령어어로 작동하는 terminal assistant 및 671B 파라미터(37B 활성화)와 128K context를 갖춘 DeepSeek-V3가 오픈소스 생태계 핵심 축을 담당한다.
 
 ## 상세
 
@@ -106,6 +104,14 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - 따라서 실제 도입 판단은 개별 도구 노트나 공식 README에서 하고, 이 노트는 상위 분류와 방향성 판단에 사용한다.
 - [[OpenClaw]]처럼 개별 제품 구조를 보고 싶을 때는 하위 tool note로 내려가고, [[Agent Native Infrastructure]]처럼 더 상위 개념을 보고 싶을 때는 허브 노트로 올라간다.
 
+### 3. 주요 오픈소스 도구별 핵심 스펙 및 역할
+- **n8n**: visual builder와 custom JavaScript 코드를 자유롭게 결합하고, self-hosting이 가능하여 민감한 기업 비즈니스 데이터를 외부 유출 없이 로컬 네트워크 내에서 안전하게 자동화(webhook, data transform)한다.
+- **Ollama & Open WebUI**: 로컬 환경 모델 서빙(Ollama) 위에서 Open WebUI를 대시보드로 올려 대화 관리, user role, access control, audit log, RAG 및 voice feature를 탑재한 엔터프라이즈 사내 전용 AI 플랫폼을 무료 구축한다.
+- **Dify**: 단순 챗봇 데모를 넘어 prompt/model/file provider 관리 및 monitoring, deployment 인프라를 일괄 바인딩하여 벤더 종속 없이 self-hosting 프로덕션 배포를 가능케 한다.
+- **DeepSeek-V3**: Mixture-of-Experts 구조의 총 671B 파라미터(활성화 37B), 128K context window를 지원하는 오픈 가중치 모델로 상용 폐쇄형 모델 수준의 코딩 및 추론 능력을 local stack에 제공한다.
+- **Google Gemini CLI**: `npx @google/gemini-cli` 명령어 기반으로 작동하며 개발자가 상주하는 터미널 환경에 밀착해 디버깅, 파일 생성, 코드 해석 등의 shell task를 terminal-native하게 지원한다.
+- **RAGFlow**: 그럴듯한 답변이 아닌 검증 가능한 답변(citation traceability, 출처 추적성)이 필수적인 법무, 의료, 금융 도메인을 위해 document ingestion부터 citation tracking까지의 RAG 파이프라인을 통제한다.
+
 ## 예시
 
 - local assistant 실험: Ollama + Open WebUI
@@ -113,12 +119,13 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - terminal-native coding: Gemini CLI 또는 유사 도구
 - grounded Q&A: RAGFlow 또는 Dify 계열
 
-## 충돌
+## 예시
+- **터미널 네이티브 어시스턴트 실행**: `npx @google/gemini-cli`를 로컬 쉘에서 구동하여 브라우저 전환 오버헤드 없이 terminal-native하게 빌드 로그 오류를 전송하고, 로컬 디버깅 및 소스 보정을 자율 수행하는 워크플로우.
 
+## 충돌
 - 2026-05-26 확인: 저장소별 스타 수, 버전, 모델 스펙, 기능 범위는 변동성이 높다. 다만 local stack, workflow builder, grounded AI, terminal assistant로 작업 표면이 이동한다는 구조적 관찰은 개별 저장소 교체와 무관하게 유지된다.
 
 ## 관련 노트
-
 - [[Agent Native Infrastructure]]
 - [[OpenCode]]
 - [[에이전트 확장 3계층]]

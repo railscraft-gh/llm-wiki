@@ -49,6 +49,7 @@ sources:
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
   - raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md
+  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
 status: evergreen
 tags:
   - llm
@@ -73,6 +74,8 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 - **디자이너의 의도적 판단(Reasoning Layer) 주입**: AI는 Figma 디자인 등에서 색상이나 치수 같은 "무엇(What)"은 잘 추출하지만, 제품의 목적이나 비협상적 가이드라인 같은 "왜(Why)"는 추론하거나 날조하기 때문에 인간이 직접 인터뷰 형식을 통해 "왜"에 대한 의사결정 맥락을 입력해 주어야 한다.
 - 기계 가독성을 온전히 확보하기 위해 9가지 필수 섹션을 일관성 있게 구성한다.
 - Figma 디자인 토큰과 UI 핸드오프를 코드 격차 없이 동기화하기 위한 뼈대로 작동한다.
+- 디자인 감도를 가르는 한글 텍스트 타이포그래피의 핵심 수치는 본문 기준 자간(letter-spacing) `-0.02em`, 행간(line-height) `1.5`~`1.6` 수준이며, 한글 베이스라인의 특성상 1.5 미만으로 좁아지면 가독성이 크게 답답해진다. (출처: raw/AI로_만든_제품이_안_팔리는_이유.md)
+- AI 에이전트는 컨텍스트 윈도우가 누적될수록 단기 기억 상실(약 30분 주기) 현상을 보이며 5회 중 1회꼴로 `DESIGN.md` 가이드를 어기고 임의의 패딩이나 폰트 크기를 오버라이드하여 UI를 파손하므로, 지속적인 재읽기 강제와 자동 린팅 검사 장치가 필수적이다. (출처: raw/AI로_만든_제품이_안_팔리는_이유.md)
 
 ## 상세
 
@@ -130,6 +133,14 @@ Google Stitch 프로젝트에서 최초 도입된 `DESIGN.md`는 제품의 시�
 *   **Do's and Don'ts**: "border-radius는 8px를 넘기지 않는다", "pill-shaped button 금지", "heavy headline 금지"처럼 에이전트가 plausible default(그럴듯하지만 브랜드와 어긋나는 기본값)를 선택하지 않도록 사전에 경계를 잘라낸다.
 *   **Responsive Behavior**: breakpoint, collapse 방식, touch target, mobile에서의 typography 조정, component별 responsive rule을 적어 모바일이 별도의 design context임을 명시한다.
 *   **Agent Prompt Guide**: 새 세션에서 빠르게 참고할 quick reference로 자주 쓰는 color code, component prompt, iteration checklist를 포함하여 style drift를 방지한다.
+
+### 5. 디자인 시스템 구축 및 Design.md 안착 5단계
+처음부터 방대한 규칙을 인코딩하지 않고, SML 사이즈 메뉴판처럼 극도로 단순화하여 기동한 뒤 점진 확장한다.
+1. **기본값 고정**: 브랜드 색상 5~6개, 폰트 사이즈 6단계, Spacing 8픽셀 배수 8단계 스케일로 극단적 제한.
+2. **Design.md 이식**: 상단에는 컴퓨터 가독(YAML) 토큰, 하단에는 인간 가독형 설계 이유(Why) 기술.
+3. **컴포넌트 커스터마이즈**: 검증된 오픈소스 디자인 시스템(원티드 몽타주 등)을 가져와 색상만 본인 브랜드로 교체.
+4. **아이콘 하드폴딩**: 일관성을 위해 Coolicons 등 한 작가의 통일성 있는 아이콘 리소스 30개를 엄선해 전용 폴더에 격리 저장. (Lucide React 등은 너무 흔해 AI 슬롭 느낌을 주기 쉬움)
+5. **동시 제공 및 검증**: AI 프롬프트 시작 시마다 `DESIGN.md`를 함께 제공해 지정 값 이외 오버라이드를 감시.
 
 ## 예시
 
@@ -212,6 +223,12 @@ Oooff 웹앱의 디자인 시스템 구축 시, 단순히 Figma에서 토큰을 
   2. Verify spacing matches the 8px scale.
   3. Ensure no pill-shaped components are generated.
 ```
+
+#### 클론 코딩을 통한 DESIGN.md 자동 추출 워크플로우
+1. 마음에 드는 완성도 높은 레퍼런스 사이트(Toss, Vercel, Linear 등)의 URL 또는 스크린샷 캡처 확보.
+2. 코드 클론 퀄리티가 우수한 **Antigravity(Gemini Pro 3.1 High)** 에이전트에 "이 페이지를 똑같이 클론 코딩해 줘" 지시 (30분 소요).
+3. 완성된 임시 결과물 디렉토리에서 "이 프로젝트에 적용된 디자인 규칙(색상, 폰트, 여백 등)을 DESIGN.md 포맷으로 추출해 줘"라고 요청.
+4. 추출된 DNA를 본인 브랜드 색상 및 폰트 세부값으로 커스터마이징하여 자산화함.
 
 ## 충돌
 - **Figma vs Markdown (Two Source of Truth)**: Figma 파일과 마크다운 명세 사이에 싱크가 어긋나는 순간 에이전트의 신뢰도 체계가 붕괴한다. 둘 중 하나가 갱신되면 `npx @google/design.md lint DESIGN.md` CLI 도구를 가동해 즉시 정합성(WCAG 명암비, 깨진 토큰 참조 등)을 동기화해야 한다.

@@ -1,76 +1,77 @@
 ---
 aliases:
-- 사양 기반 개발
-- Spec Driven Development
-- SDD
+  - 사양 기반 개발
+  - Spec Driven Development
+  - SDD
 core: true
 created: 2026-06-09
 sources:
-- raw/바이브 코딩의 종말-ko.md
-- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-- raw/클로드 디자인은 과연 디자이너를 대체할까.md
-- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-- raw/AI Agents. Complete Course.md
-- raw/How to Do Hard Things When You Have Zero Motivation.md
-- raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
-- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-- raw/10 Things Every Investor Should Know (but most learn too late).md
-- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-- raw/Your Wandering Mind Is Not the Enemy of Focus.md
-- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-- raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
-- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-- raw/Skills Alone Won’t Save You in the AI Economy.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md
+  - raw/바이브 코딩의 종말-ko.md
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+  - raw/AI Agents. Complete Course.md
+  - raw/How to Do Hard Things When You Have Zero Motivation.md
+  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+  - raw/10 Things Every Investor Should Know (but most learn too late).md
+  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
+  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+  - raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
+  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/Skills Alone Won’t Save You in the AI Economy.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md
 status: evergreen
 tags:
-- ai-coding
-- workflow
-- engineering
+  - ai-coding
+  - workflow
+  - engineering
+  - sdd
 type: workflow
-updated: 2026-06-22
+updated: 2026-07-10
 ---
 
 # 사양 기반 개발 (Spec Driven Development)
@@ -83,6 +84,8 @@ updated: 2026-06-22
 - **에이전트 도구 종속성 해소**: 명세서 파일이 IDE나 AI 코딩 에디터(Cursor, Claude Code 등) 바깥에 온전히 존재하며 Git으로 버전 관리되므로, 개발 도구를 전환하더라도 변치 않는 규약(Contract) 역할을 한다.
 - **오작동 표면 최소화**: '느낌 코딩(Vibe Coding)'의 고질병인 잘못 지은 변수명, edge case 누락, 잘못 전제된 조건들을 엄격한 자연어 사양서와 아키텍처 헌법으로 통제한다.
 - **유기적인 활성 문서**: 한 번 쓰고 방치하는 문서가 아니라, 제품 사정 변경에 맞춰 지속적으로 업데이트하고 Git으로 버전 변동을 관리하는 살아있는 문서로 기능해야 한다.
+- 콘텍스트 붕괴(Context Decay)와 구현 드리프트(Implementation Drift): 바이브 코딩 시 대화가 길어지면 초기 아키텍처 설계와 비즈니스 제약이 컨텍스트 창 밖으로 밀려나며 에이전트가 임의의 설계를 창작하여 요구사항과 이탈한다.
+- 양방향 명세 업데이트(Bidirectional Updating) 규칙: 구현 도중 생긴 세부 아키텍처 결정은 즉시 사양서에 동기화해야 한다. 명세 부채(Specification Debt)는 기술 부채보다 빨라 이후 주입되는 AI 입력을 오염시킨다.
 
 ## 상세
 
@@ -116,8 +119,32 @@ SDD 파이프라인의 중심을 관통하는 헌장(`.specify/memory/constituti
 - **거짓 진술 거부**: 실제 로컬 테스트를 실행해 보고 검증되지 않은 정보나 허위 사실을 PR 설명서에 기재하라는 사용자의 부적절한 지시를 에이전트가 스스로 거절(Opt-out)하는 안전제어(Fidelity boundary)가 작동해야 한다.
 - **투명한 데이터 기록**: 통과한 테스트 케이스뿐 아니라 기존 메인 브랜치에서 재현되던 내재적 실패 결함(예: 47개 성공, 4개 실패 등)까지 있는 그대로 기술하여, 기만 없이 신뢰할 수 있는 데이터를 바탕으로 PR을 전송하는 정직한 검증 프로토콜을 성립시킨다. (출처: [[케이브맨]])
 
+### SDD 4단계 모델과 인간 개입 지점 (HIP)
+1. **명세화 (Specify)**: 고수준 설명을 구조화된 기능 명세(SPEC.md)로 확장. [HIP] 인간의 아키텍처 검토 및 모호함 제거.
+2. **계획 (Plan)**: 기술 구현 계획(PLAN.md) 수립. [HIP] 기술 스택 및 제약 조건 정렬 검토.
+3. **작업 세분화 (Task Breakdown)**: 테스트 가능한 원자적 작업 목록(tasks.md) 분할. 작업의 입도는 에이전트의 1회 실행 주기 크기로 제한.
+4. **구현 및 검증 (Implement and Verify)**: 에이전트의 구현 코드를 자동 테스트 및 제3의 검증기로 검증. [HIP] 인수 기준 충족 여부 체크.
+
+### 멀티 에이전트 3대 역할 아키텍처
+- **코디네이터 에이전트 (Coordinator)**: 글로벌 뷰를 유지하고, 명세를 분할하며 구현기에 분배.
+- **구현기 에이전트 (Implementor)**: 격리된 Git 워크트리(worktree)에서 병렬로 각 작업을 구현하여 파일 경쟁을 원천 차단.
+- **검증기 에이전트 (Verifier)**: 구현 출력을 명세의 인수 기준과 대조하여 결함을 찾아내는 적대적 검증(Adversarial Verification) 수행. 코드를 직접 고치지 않고 실패 요구사항을 기록하여 보고.
+
+### SDD 성숙도 3단계 모델
+- **1단계: 선 명세 개발 (Spec-First)**: 일회성/단기 기능 개발. 구현 후 명세는 보존하나 유지하지 않음.
+- **2단계: 명세 고정 개발 (Spec-Anchored)**: 권장 기본값. 사양서와 코드가 동등한 파트너로 작동하며 양방향 업데이트 상시 실행.
+- **3단계: 명세 기반 소스 개발 (Spec-as-Source)**: 실험적 단계. 사양이 유일 소스이고 코드는 컴파일 출력. 생성할 때마다 구문이 달라지는 비결정성 문제로 프로덕션 비권장.
+
+### SDD ROI의 하류 지점 지표
+- 재작업 비율 (Rework percentage) - 40~60% 감소 효과 증명.
+- 콘텍스트 회복 시간 (Context recovery time) - 문서화된 의도가 제공되어 급감.
+- 결함 유출률 (Defect escape rate) 및 요구사항부터 프로덕션 완료까지의 시간.
+
 ## 예시
+
 - 드래그 앤 드롭이 포함된 사진 앨범 앱을 구축할 때, 기술 스택을 적지 않고 "앨범 내 개별 사진 삭제는 불가하지만 앨범 자체는 삭제 및 수정 가능" 등의 비즈니스 요구사항만 명문화하여 사양서(`spec.md`)로 에이전트에 공급하는 과정.
+
+- **MDC 설정 활용 (.mdc)**: Cursor의 마크다운-YAML 설정을 통해 규칙의 적용 범위를 특정 백엔드/프론트엔드 파일 글로브로 한정하여 불필요한 토큰 낭비를 예방.
 
 ## 충돌
 - **사소한 버그 패치에서의 비효율**: 설계 및 문서화 파이프라인이 촘촘한 특성상 코드 한두 줄 수정 등 사소한 패치 작업에서는 배보다 배꼽이 더 큰 오버헤드(overkill)가 될 수 있다. 이 경우 SDD 파이프라인을 우회하여 디버깅하는 것이 합리적이다. (출처: 바이브 코딩의 종말-ko)
@@ -130,4 +157,5 @@ SDD 파이프라인의 중심을 관통하는 헌장(`.specify/memory/constituti
 - [[Harness Engineering]]
 - [[모듈러 모놀리스]]
 - [[MEMORY.md 운영 원칙]]
+- [[Context Engineering]]
 

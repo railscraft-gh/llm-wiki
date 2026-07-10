@@ -1,44 +1,44 @@
 ---
 aliases:
-- 에이전틱 AI 엔지니어 로드맵
-- 에이전틱 AI 엔지니어 10대 기술
+  - 에이전틱 AI 엔지니어 로드맵
+  - 에이전틱 AI 엔지니어 10대 기술
 core: true
 created: 2026-06-16
 sources:
-- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-- raw/I will never walk into a backend interview without solving these 20 questions..md
-- raw/Most Developers Are Solving the Wrong Problem.md
-- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-- raw/How top companies are using AI in their design workflows.md
-- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  and What I Rejected.md
-- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-- raw/Design’s craft crisis. senior designers built it.md
-- raw/7 Coding Patterns I Stole From Senior Engineers.md
-- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+  - raw/I will never walk into a backend interview without solving these 20 questions..md
+  - raw/Most Developers Are Solving the Wrong Problem.md
+  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+  - raw/How top companies are using AI in their design workflows.md
+  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+  - raw/Design’s craft crisis. senior designers built it.md
+  - raw/7 Coding Patterns I Stole From Senior Engineers.md
+  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+  - raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md
 status: evergreen
 tags:
-- ai-agent
-- roadmap
-- software-engineering
-- engineering-stack
+  - ai-agent
+  - roadmap
+  - software-engineering
+  - engineering-stack
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # 에이전틱 AI 엔지니어 실무 로드맵 (Agentic AI Engineer Practical Roadmap)
 
 ## 한 줄 정의
-
 언어 모델이 스스로 다음 행동을 결정하고, 도구를 호출하며, 상태를 유지하고, 실패에서 스스로 복구하는 시스템을 구축하기 위해 에이전틱 AI 엔지니어가 갖춰야 할 4대 계층의 10대 핵심 기술, 2026년 표준 스택 및 의존성 기반 학습 로드맵.
 
 ## 핵심 요지
-
 - **시스템 엔지니어링으로서의 AI**: 에이전틱 AI 엔지니어는 모델을 학습(training)하거나 파인튜닝(fine-tuning)하는 연구자가 아니며, 사전 학습된 파운데이션 모델을 시스템에 안정적으로 배치하고 조율하는 시스템 엔지니어링 실무자다.
 - **2026년 표준화된 10대 기술**: 필요 역량은 4개 계층(Foundation, LLM, Agent, Production)의 10가지 기술로 정의되며, 채용 공고에 등장하는 27가지 기술의 난잡한 나열에서 진짜 실무에 필요한 지식만 추출해 명확히 정리했다.
 - **학습의 의존성 구조**: 학습 순서는 단순 달력 일정이 아니라, 기초 인프라(Phase 1) -> 단일 에이전트(Phase 2) -> 프로덕션 단일 에이전트(Phase 3) -> 멀티 에이전트 협업(Phase 4) -> 운영(Phase 5)으로 이어지는 엄격한 의존성 그래프(dependency graph) 구조를 띤다.
 - **건너뛰어야 할 기술 부채**: 프롬프트 엔지니어링 강의, 과도한 벡터 DB 비교분석, 구식 LangChain 패턴(v0.0.x의 AgentExecutor 등), 로우레벨 transformer 수학 등 4가지는 2026년 실무에서 과감히 건너뛰어야 할 요소다.
+- Durable Execution 및 멱등성: 서드파티 API 실패나 서버 재부팅(Crash) 상황에서 에이전트가 상태를 재개하도록 돕는 메시지 큐, 지수 백오프, 멱등성(Idempotency) 인프라가 Foundation Layer of the roadmap의 핵심이다.
+- 모델 벤더 티어링(Tiering): Opus 4.8, Sonnet 4.6, Haiku 4.5, Gemini 3.1 Flash, 로컬 Qwen 3 등 다양한 수준의 지능 및 비용을 결합하여 요금 폭탄을 차단하고 추론을 최적화한다.
 
 ## 상세
 
@@ -101,8 +101,19 @@ updated: '2026-06-22'
 3. **과거의 LangChain 패턴**: v0.0.x의 AgentExecutor 등 구식 아키텍처는 피하고, 최신 LangGraph 오케스트레이션에 집중한다.
 4. **로우레벨 Transformer 수학**: 원천 신경망 연구원이 아닌 이상 미적분 및 셀프 어텐션 행렬 수식을 손으로 푸는 노력은 낭비이다. 그 시간에 모니터링, 평가, MCP 연동을 깊이 파는 것이 유리하다.
 
-## 관련 노트
+### 5. 로드맵 실무 연계 레퍼런스 아티클
+- **Pure Python Agent 실증**: 프레임워크 오버헤드를 배거하고 `asyncio`, type hints, `Pydantic`만을 사용하여 HTTP Server-Sent Events 토큰 스트리밍과 JSON Schema 도구 인자 자동 파싱/검증을 구현하는 기초 단계를 다룬다. ([I Built an AI Agent in Pure Python. Here's What I Learned.](https://medium.com/p/a5b01b02ce79))
+- **도구 호출 실패(100th Tool Call Problem)**: 대규모 자동화 에이전트(CI/CD 등) 가동 시 도구 호출 인자 헛소리(misuse)를 검증하고 자가 보정하는 Tool Argument Repair 메커니즘을 적용한다. ([Safe Tool Calling for AI Agents](https://medium.com/data-science-collective/stop-trusting-your-agent-with-tool-arguments-dbe45fe158ad))
+- **Durable Checkpoints**: 에이전트가 50단계 계획 중 40단계에서 외부 API 타임아웃으로 실패할 때, 작업을 처음부터 다시 실행하지 않고 PostgreSQL/Redis의 지속성 체크포인터(Checkpointers)를 읽어 복원하는 구조를 확보한다. ([LangGraph vs Temporal for AI Agents](https://medium.com/data-science-collective/langgraph-vs-temporal-for-ai-agents-durable-execution-architecture-beyond-for-loops-a1f640d35f02))
 
+## 예시
+
+## 예시
+- **Phase 2 실전 아티팩트 빌드**: 특정 GitHub 이슈 URL을 인자로 받아 GitHub API를 호출해 이슈 스크레드 데이터를 읽어오고, LLM을 호출해 코드를 분석 및 장애 요소를 정리한 뒤, 정해진 스키마의 구조화된 JSON 데이터로 리포트를 리턴하는 단일 에이전트 스크립트 작성.
+
+## 충돌
+
+## 관련 노트
 - [[AI 에이전트 아키텍처 완전 가이드]]
 - [[Harness Engineering]]
 - [[Vibe Coding과 Agentic Engineering]]

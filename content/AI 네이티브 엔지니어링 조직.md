@@ -1,54 +1,52 @@
 ---
 aliases:
-- AI-native engineering org
-- AI 네이티브 조직 운영
+  - AI-native engineering org
+  - AI 네이티브 조직 운영
 core: false
 created: 2026-05-14
 sources:
-- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
-- raw/anthropic-boris-cherny-interview.md
-- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
-  Was-ko.md
-- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
-- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
-  Quietly Replaced All Three-ko.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/sequoia-ascent-2026-karpathy-ko.md
-- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
-- raw/강화학습-RL-초보자-가이드.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/Why senior UX designers are struggling in 2026-ko.md
-- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
-  Source)-ko.md
-- raw/im-not-ai.md
-- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
-- raw/The Best Way to Make AI Write Like You-ko.md
-- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
-- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
-- raw/evolution-of-ai-agentic-patterns.md
-- raw/Building an MCP Ecosystem at Pinterest-ko.md
+  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+  - raw/anthropic-boris-cherny-interview.md
+  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/sequoia-ascent-2026-karpathy-ko.md
+  - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+  - raw/강화학습-RL-초보자-가이드.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/Why senior UX designers are struggling in 2026-ko.md
+  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  - raw/im-not-ai.md
+  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+  - raw/The Best Way to Make AI Write Like You-ko.md
+  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+  - raw/evolution-of-ai-agentic-patterns.md
+  - raw/Building an MCP Ecosystem at Pinterest-ko.md
 status: evergreen
 tags:
-- llm
-- agent
-- engineering
-- organization
+  - llm
+  - agent
+  - engineering
+  - organization
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI 네이티브 엔지니어링 조직
 
 ## 한 줄 정의
-
 AI 네이티브 엔지니어링 조직은 코딩 처리량보다 검증, 리뷰, 보안, 제품 판단, 프로세스 폐기가 병목이 되는 환경에 맞춰 팀 규범을 다시 설계한 조직 운영 모델이다.
 
 ## 핵심 요지
-
 - AI coding agent가 구현 속도를 높이면 병목은 코딩에서 검증, 코드 리뷰, 유지보수, 보안, 제품 판단으로 이동한다.
 - 오래된 프로세스는 저절로 사라지지 않으므로 "아직 목적을 달성하는가"를 정기적으로 묻고 없애거나 자동화해야 한다.
 - 기술 논쟁은 화이트보드 토론보다 여러 구현 PR을 만들어 호출자 영향과 유지보수 비용을 비교하는 쪽이 싸질 수 있다.
 - 신뢰 경계, 법률, 보안, 제품 감각처럼 실패 비용이 큰 영역은 여전히 사람 전문가가 책임져야 한다.
+- Fiona Fung(Claude Code & Co-work 엔지니어링/제품 총괄)이 2025년 5월 22일 Anthropic 첫 개발자 컨퍼런스에서 발표한 내용을 근간으로 한다 (원본 영상: https://youtu.be/cx6yo_z6GiI).
+- 두 가지 엔지니어 프로필: 창의적 빌더(Creative Builders) + 제품 감각 vs 깊은 시스템 전문성(Deep Systems Expertise).
+- Claudify Everything: 사람이 수동으로 하는 것보다 AI가 자동화하여 처리하는 것이 낫다는 인프라적 우선순위 확립.
 
 ## 상세
 
@@ -120,6 +118,12 @@ AI 시대 제품의 핵심 설계는 시스템 프롬프트(system prompt), 평�
 - **정량 운영 지표**: PR 처리량보다 review latency, rollback, incident, test burden 같은 지표 변화
 - **조직 역할 재배치 사례**: PM, 디자이너, 매니저, 보안 담당이 agent 도입 후 무엇을 더 맡게 됐는지 설명하는 자료
 
+### AI 네이티브 조직의 풀리지 않은 4대 질문
+1. **모바일 플랫폼 조직 구조**: 엔지니어가 AI로 모바일 생태계를 종횡무진할 수 있을 때, 전통적인 iOS팀과 Android팀의 물리적 분할이 여전히 유효한가?
+2. **완전 자동화된 코드 리뷰**: 속도와 신뢰성 사이의 타협점은 어디인가? 너무 빨라서 아키텍처적 결함을 놓칠 위험은 없는가?
+3. **역할의 소멸과 재정의**: AI 증강으로 엔지니어, PM, 디자이너의 영역이 겹칠 때 모두가 생산적이고 가치 있게 느끼도록 정렬하는 방법.
+4. **모델의 발전과 검증의 경계**: 오늘 '검증'이 필요한 실패 영역이 다음 모델에서는 '신뢰' 영역이 되는 동적 재평가 속도 대응.
+
 ## 예시
 
 - API 리팩터링 논쟁에서 세 가지 PR을 만들어 호출자 변경량과 유지보수 비용을 비교한다.
@@ -127,13 +131,13 @@ AI 시대 제품의 핵심 설계는 시스템 프롬프트(system prompt), 평�
 - 코드 리뷰에서 스타일, lint, 테스트 추가는 에이전트에 맡기되 분산 시스템, 보안, 법률, 제품 감각은 사람 전문가가 본다.
 - PM이 아리아(Aria) AI 고객 상담 저장소에서 `/prompts/aria-system-prompt.txt` 파일을 직접 정독하고 수정 PR을 생성해 머지한다.
 
-## 충돌
+- **제품 취향(Taste)과 Mr. Peanut 일화**: 코드 리뷰나 UI 생성 시 스타일과 린팅은 Claude에게 맡기되, 제품 감각과 비주얼 취향은 인간이 최종 검토해야 한다. 예컨대 Claude에게 ASCII 아트 눈사람을 그려달라고 했을 때 브랜드 맥락과 다른 Mr. Peanut 캐릭터를 생성하여 인간의 최종 검토가 필요했던 사례가 대표적이다.
 
+## 충돌
 - **강한 Anthropic 내부 사례의 일반성**: 하루 수십~150개 PR, 수동 코드 전멸과 같은 극단적인 사례는 Anthropic Labs라는 특정 조직의 TypeScript/React 등 학습 데이터가 고도로 풍부한 환경에 국한될 수 있다. 타 조직이나 레거시 언어에서는 동일하게 적용하기 어려우며 "다음 모델을 기다려야" 할 수 있다. (확인 날짜: 2026-05-26)
 - **완전 자동화 코드 리뷰의 속도 vs 신뢰성**: 에이전트에 코드 리뷰를 100% 맡겼을 때 속도는 빠르지만, 중요한 설계적 맥락을 놓칠 수 있어 여전히 신뢰 경계(Trust boundaries) 설정에 대한 기술적 합의가 충돌한다.
 
 ## 관련 노트
-
 - [[Vibe Coding과 Agentic Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[AI 네이티브 사용자]]

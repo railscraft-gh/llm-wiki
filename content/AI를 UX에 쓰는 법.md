@@ -1,42 +1,41 @@
 ---
 aliases:
-- AI for UX
-- UX에서 AI 쓰는 법
+  - AI for UX
+  - UX에서 AI 쓰는 법
 core: false
 created: 2026-05-29
 sources:
-- UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
-- AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
-- AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
-- raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md
-- raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형
-  다듬기.md
-- raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
-- 'raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md'
-- 'raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md'
+  - UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
+  - 'AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기'
+  - 'AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기'
+  - raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md
+  - raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형
+  - raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
+  - 'raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md'
+  - 'raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md'
+  - raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md
 status: evergreen
 tags:
-- llm
-- ux
-- workflow
-- prompt
-- research
+  - llm
+  - ux
+  - workflow
+  - prompt
+  - research
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI를 UX에 쓰는 법
 
 ## 한 줄 정의
-
 AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스커버리 workflow를 함께 설계해 UX 실무자의 판단을 빠르게 만드는 방법이다.
 
 ## 핵심 요지
-
 - LLM은 정답 저장소라기보다 텍스트 패턴을 생성하는 시스템이므로, UX에서는 먼저 도구의 한계를 이해해야 한다.
 - 반복 설명을 줄이려면 역할, 톤, 출력 형식, 제약을 custom instruction이나 system prompt에 고정한다.
 - AI는 UX 리서치의 준비·정리·초안 작성에 강하지만, 해석과 판단은 여전히 인간의 책임이다.
 - 좋은 사용법은 AI가 답을 대신 내는 것이 아니라, 연구 질문을 정리하고 근거를 압축하고 선택지를 넓게 만드는 것이다.
+- 2026년 기준 AI 전사/기록 도구는 음성-텍스트 변환 정확도 95~98%, 테마 추출 일치도 80~85% 수준을 달성하며, 인간 연구자는 기계적인 정리 작업을 AI에 위임하고 15~20%의 미세 오류 교정 및 최종 비즈니스 타당성 해석에 집중한다. (출처: raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md)
 
 ## 상세
 
@@ -53,18 +52,38 @@ AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스
 
 이 관점은 UX를 위한 AI를 "새로운 마법 도구"로 보지 않게 만든다. 오히려 기존 UX 역량—판단, 우선순위, 사용자 맥락 이해—을 더 빠르게 작동시키는 보조 계층으로 만든다.
 
+### 4. 3단계 리서치 데이터 통합(Synthesis) 워크플로우
+대량의 인터뷰 전사본(Transcript)을 기계적으로 요약해 얕은 헛소리를 낳는 실패 모드를 우회하는 체계적 방법론이다.
+1. **1단계 - transcript 정규화**: 발화자 레이블을 `M: (moderator) / P: (participant)`로 통일하고, Filler word(um, uh, like 등)는 제거하되 본문 내용은 보존. 오독된 문맥은 `[대괄호]` 표시로 격리한다.
+2. **2단계 - 개별 테마 코딩**: 인터뷰별로 `tag(3~5단어)`, `quote(정확한 문맥)`, `timestamp`, 그리고 신뢰도를 구분하는 `confidence note (high/medium/low)`를 표로 추출. (특히 low confidence 태그를 통해 AI의 임의 해석 구역을 선제 필터링한다)
+3. **3단계 - 전체 클러스터링**: 6~10개의 마스터 테마로 묶을 때, 패턴을 부정하는 **disconfirming evidence(반대 증거)**를 필수로 요청하고, 지지자 수가 3인 미만인 패턴은 **limited evidence**로 명시해 성급한 결론 양산을 방지한다.
+
+### 5. 인사이트 전달(Delivery) 및 이중 검증 프레임워크
+- **인사이트 명세서 (Insight Statement) 구조**:
+  1. Plain language로 작성한 한 문장 headline (판단이나 의견 배제, 오직 관찰)
+  2. 사용자 행동 양상 및 대상자 수를 밝힌 "what we observed"
+  3. 비즈니스 결정 및 연구 질문의 이유를 엮은 "why it matters"
+  4. 원문 quote 2개
+  5. 한계와 지식 공백을 명시하는 "what we are still uncertain about" 메모
+  6. 다음 할 일 (전술적/전략적 Next step 분할)
+- **에이전트 자가 검증 (Critique & Skeptic Review)**:
+  - *Synthesis critique*: "가장 약한 quote는 무엇인가", "참가자가 말하지 않은 감정을 자의적으로 추론한 곳은 어디인가" 등을 스스로 비판하게 하여 정합성 확보.
+  - *Stakeholder-skeptic review*: "그건 그냥 의견 아닌가", "통계적으로 유의미하지 않다"고 공격할 **회의적인 VP of Product**의 페르소나를 AI에 투사해 공격 지점을 사전 차단하고 보고서 방어력을 높임.
+
 ## 예시
 
 - 연구 준비: 막연한 brief를 연구 질문, 방법, 참여자 기준, discussion guide로 쪼갠다.
 - 프롬프트 설정: 제품 역할, 사용자층, 톤, 출력 형식을 지속 설정으로 저장한다.
 - 리서치 통합: 인터뷰 노트를 AI로 theme별로 묶되, 결론은 사람이 근거를 대조해 확정한다.
 
-## 충돌
+#### 시스템 프롬프트 (Custom Instruction) 템플릿
+역할, 사용자층, 톤, 출력 형식, 금지 규칙을 AI 도구의 지속 설정(Custom Instructions)에 고정해 매 세션 온보딩 마찰을 예방한다:
+> *나는 B2B SaaS 시니어 UX 디자이너다. 우리 사용자는 중견 규모의 시간에 쫓기는 운영 매니저다. 톤은 전문용어와 기업식 유행어를 배제하고 평이하고 직설적이어야 한다. 카피 요청 시 바로 복사 가능한 형태의 3가지 옵션을 제시하고, 정답이 없을 땐 트레이드오프를 가진 옵션들을 리스트로 줘라. 다크 패턴은 절대 제안하지 말 것.*
 
+## 충돌
 - AI는 UX 작업을 빠르게 만들 수 있지만, 사용자 해석과 제품 판단을 대체하지는 않는다.
 
 ## 관련 노트
-
 - [[AI Experience Architect]]
 - [[AI 시대 디자인 시스템]]
 - [[Context Engineering]]

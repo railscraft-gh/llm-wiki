@@ -1,41 +1,40 @@
 ---
 aliases:
-- 컨텍스트 엔지니어링
+  - 컨텍스트 엔지니어링
 core: true
 created: 2026-05-26
 sources:
-- AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다
-- raw/cc101_axwith_ko.html
-- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
-- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-- raw/AI와 디자인 시스템 - 출판형 다듬기.md
-- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+  - AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다
+  - raw/cc101_axwith_ko.html
+  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
+  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
 status: evergreen
 tags:
-- llm
-- agent
-- context-window
-- harness-engineering
+  - llm
+  - agent
+  - context-window
+  - harness-engineering
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Context Engineering
 
 ## 한 줄 정의
-
 Context Engineering은 에이전트가 다음 단계를 제대로 수행하도록 필요한 정보만, 필요한 형식으로, 필요한 시점에 전달하는 handoff 설계다.
 
 ## 핵심 요지
-
 - Andrej Karpathy는 이를 "다음 단계를 위해 컨텍스트 윈도우를 딱 적절한 정보로만 채우는 섬세한 기술이자 과학"으로 정의했다.
 - 에이전트 시스템은 개별 단계가 아니라 단계 간의 정보 전달(**context handoff**)에서 주로 무너진다.
 - Chroma의 2025년 7월 연구(Claude 4, GPT-4.1, Gemini 2.5 등 18개 LLM 대상)에 따르면, 단순 정보 검색 과제도 컨텍스트가 길어질수록 성능이 비선형적으로 붕괴한다.
 - 2026년 설문조사에 따르면 IT 및 데이터 리더의 82%가 프롬프트 엔지니어링만으로는 프로덕션 AI에 불충분하다고 답했으며, 95%가 컨텍스트 엔지니어링 역량에 투자할 계획이다.
 - context를 **Persistent, Time-sensitive, Transient**의 세 계층으로 분류하고, 역할 기반 라우팅과 **최소 권한 컨텍스트 설계(Least-privilege context design)**를 적용해 환각과 보안 취약점(Context leak)을 예방해야 한다.
+- 어텐션은 공짜가 아니다 (Attention is not free): 입력 길이가 늘어날수록, 유한한 컨텍스트 창 내에서 중요한 토큰과 불필요한 토큰이 어텐션 경쟁을 일으켜 신뢰도가 무너진다.
 
 ## 상세
 
@@ -54,6 +53,9 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 ### 3. 컨텍스트 라우팅 (Context Routing)과 MCP
 모든 에이전트에게 전체 컨텍스트를 주입하는 방식은 비효율적이다. 각 역할에 맞는 서브셋(Subset)만 라우팅해야 한다.
 - **Model Context Protocol (MCP)**: 모든 정보를 미리 로드하는 대신 필요한 컨텍스트 소스를 구조적으로 조회하여 당겨 쓴다. (2025년 말 기준 공개 MCP 서버가 10,000개 이상 배포됨)
+
+### 컨텍스트 Handoff의 바통 터치 비유
+- 멀티 에이전트 시스템에서 에이전트의 실패는 추론 지능의 부족이 아니라, 이전 에이전트가 내린 결정과 맥락을 다음 주자에게 올바르게 전달하지 못하는 'Handoff의 붕괴'에 기인한다. 이는 계주에서 바통만 던져 주고 어느 레인인지, 앞 주자가 어디까지 왔는지 설명하지 않는 것과 같다.
 
 ## 예시
 
@@ -90,13 +92,13 @@ class ResearchAgentState(TypedDict):
 - 하위 노드(downstream)가 원시 페이로드 전체를 읽어야 하는가, 압축된 결과물만 필요한가?
 - 보안적인 맥락에서 최소 권한(Least-privilege) 원칙을 준수했는가? (프롬프트 주입을 통한 컨텍스트 유출 차단)
 
-## 충돌
+- **Specialist Context Routing**: 코드 작성 노드에는 원시 API 페이로드나 장황한 비즈니스 문서 대신, 실패 테스트 케이스와 성공 기준만을 축약해 전달하여 환각과 토큰 소모를 방지한다.
 
+## 충돌
 - **초장기/대규모 추론의 한계**: 컨텍스트 엔지니어링을 철저히 설계해도 컨텍스트 윈도우 자체가 거대해지면 어텐션 성능 저하를 완전히 막을 수 없다. 이 경우 계층적 검색(Hierarchical Retrieval), 적극적 요약(Summarization), 명시적 메모리 관리 아키텍처(Memory Architecture)를 병행해야 한다.
 - **평가 분리의 필요성**: 문맥 구조가 논리적이더라도, RAG의 검색(retrieval) 품질이 낮거나 라우팅이 잘못되면 실패한다. 따라서 검색, 메모리, 라우팅을 각각 독립적으로 검증해야 한다.
 
 ## 관련 노트
-
 - [[Harness Engineering]]
 - [[Agent Native Infrastructure]]
 - [[Context Mode]]

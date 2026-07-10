@@ -1,66 +1,64 @@
 ---
 aliases:
-- AI 세컨드 브레인 구축법
-- 개인 지식 관리 시스템
-- PKM
+  - AI 세컨드 브레인 구축법
+  - 개인 지식 관리 시스템
+  - PKM
 core: true
 created: 2026-06-07
 sources:
-- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
-- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
-  Quietly Replaced All Three-ko.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-- raw/AI Agents. Complete Course.md
-- raw/How to Do Hard Things When You Have Zero Motivation.md
-- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/Why senior UX designers are struggling in 2026-ko.md
-- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-- raw/10 Things Every Investor Should Know (but most learn too late).md
-- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
-  Source)-ko.md
-- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
-  Was-ko.md
-- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-- raw/im-not-ai.md
-- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-- raw/Your Wandering Mind Is Not the Enemy of Focus.md
-- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-- raw/The Best Way to Make AI Write Like You-ko.md
-- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
-- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-- raw/Building an MCP Ecosystem at Pinterest-ko.md
-- raw/Skills Alone Won’t Save You in the AI Economy.md
-- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-- "raw/AI 세컨드 브레인을 구축하기 전에 알았더라면 좋았을 것들.md"
+  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+  - raw/AI Agents. Complete Course.md
+  - raw/How to Do Hard Things When You Have Zero Motivation.md
+  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/Why senior UX designers are struggling in 2026-ko.md
+  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+  - raw/10 Things Every Investor Should Know (but most learn too late).md
+  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+  - raw/im-not-ai.md
+  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
+  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+  - raw/The Best Way to Make AI Write Like You-ko.md
+  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+  - raw/Building an MCP Ecosystem at Pinterest-ko.md
+  - raw/Skills Alone Won’t Save You in the AI Economy.md
+  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+  - raw/AI 세컨드 브레인을 구축하기 전에 알았더라면 좋았을 것들.md
 status: evergreen
 tags:
-- knowledge
-- agent
-- workspace
+  - knowledge
+  - agent
+  - workspace
+  - second-brain
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # AI 세컨드 브레인
@@ -74,6 +72,9 @@ AI 세컨드 브레인은 대규모 지식 노동자 및 개인이 정보의 정
 - **점진적 컨텍스트 공개 (Progressive Disclosure)**: 루트 `CLAUDE.md`로 기본 대화를 가볍게 열고, 하위 프로젝트 진입 시 해당 폴더의 세부 지침을 동적으로 로딩하여 모델의 인지 한계와 토큰 예산 낭비를 막는다.
 - **에이전트 자율 인제스천 (AI-native Ingestion)**: 사용자가 가공되지 않은 러프한 생각이나 일기, 회의록을 입력하면, 백그라운드 에이전트가 `/ingest` 및 `/compile` 파이프라인을 구동하여 지식을 정밀 요약하고 핵심 위키 노트와 상호 위키링크(`\[\[노트 제목\]\]`)로 자동 결합한다.
 - **볼트 접근 권한(Vault Access)과 가드레일**: 에이전트에게 디렉터리 읽기/쓰기 권한을 주면 생각의 복리 효과를 유도하는 강력한 강제 기제(Forcing Function)가 작동하지만, 외부 입력 차단과 샌드박싱 등의 가드레일이 수반되어야 한다.
+- Obsidian은 IDE다. LLM은 프로그래머다. 위키는 코드베이스다. (Obsidian is the IDE. LLM is the developer. The wiki is the codebase.)
+- RAG의 한계(매번 새로 시작하여 지식이 누적되지 않는 구조)를 Ingest(수집) 단계에서 문서를 선처리해 지식을 결합하는 업스트림 컴파일 방식으로 해결한다.
+- 인간-AI 협업 모델의 3단계 발전: 바이브 코딩(2025년 초) -> 에이전틱 엔지니어링(2026년 초) -> LLM 지식 베이스(2026년 4월).
 
 ## 상세
 
@@ -121,6 +122,26 @@ Claude Code를 볼트 디렉터리에서 구동하고 `.claude/commands/` 디렉
   - **하이브리드**: 로컬 디스크에 볼트를 둔 채 MCP 서버를 통해 Claude Code 등 클라우드 LLM 추론을 연동한다.
 - **관계성 환각(Hallucination)**: 소형 로컬 모델의 경우 아무런 맥락이 없는 두 엔티티를 자신 있게 엮어 가짜 관계를 설명하므로 사용자의 비판적 교차 검토가 요구된다.
 
+### AI 에이전트 통합 세컨드 브레인의 6대 구성 요소
+1. **AI 에이전트**: 터미널 CLI 제어가 가능하고 업무 루틴을 스크립트로 학습시킬 수 있는 도구 (예: Claude Code).
+2. **구조화된 옵시디언 볼트**: 에이전트 스캔 범위 지정 및 안전 가드레일을 씌우는 최상위 7대 폴더 아키텍처.
+3. **일관된 노트 연결 규칙**: Templater 등을 활용해 4대 프론트매터 필드를 엄격하게 관리하는 규칙.
+4. **에이전트 액세스 프로토콜**: CLI 환경에서 옵시디언과 통신하는 전용 드라이버 (예: obsidian-cli-skill).
+5. **에이전트 전용 볼트 색인(Vault Index)**: 전체 볼트를 스캔하여 뼈대 파일과 디바이스 환경을 에이전트 메모리에 선언해 둔 인덱스.
+6. **주기적인 유지보수 루틴**: `/sync`, `/graduate` 등 슬래시 명령어를 활용해 매주 지식을 정돈하는 주기적 작업 흐름.
+
+### 4대 프론트매터 필드와 토픽 계층 구조 관리
+- `type`(문서 분류), `topics`(주제 분류), `tags`(임시 상태), `sources`(출처 매핑)의 4대 필드를 필수적으로 관리한다.
+- 특히 `topics`는 부모 토픽 페이지에 `Up` 링크를 걸어 계층망을 형성하고, 토픽이 포화되면 에이전트에게 지시하여 1) 관련 노트를 수집하고, 2) 하위 서브 토픽을 정의하고, 3) 부모와 상향 연결한 뒤 재배치하는 워크플로우를 자동화한다.
+- JDH Wilkins의 오픈소스 [옵시디언-CLI 연동 스킬 소스코드](https://github.com/jdhwilkins/obsidian-cli-skill)를 통해 볼트의 코어 인덱스를 연동하여 검색 및 수정 효율을 극대화한다.
+
+## 예시
+
+- **커스텀 슬래시 명령어 설정**: `.claude/commands/ingest.md`를 생성하여 새로운 수집 패턴을 자동화.
+- **할 일 관리 통합**: [옵시디언과 클로드 코드로 AI 기반 할 일 관리 시스템 구축하기](https://www.jdhwilkins.com/how-i-built-an-ai-powered-task-system-with-obsidian-and-claude-code)의 데일리 크론 요약 사례.
+
+## 충돌
+
 ## 관련 노트
 - [[Claude.md 운영 원칙]]
 - [[Context Engineering]]
@@ -132,4 +153,5 @@ Claude Code를 볼트 디렉터리에서 구동하고 `.claude/commands/` 디렉
 - [[MEMORY.md 운영 원칙]]
 - [[Lethal Trifecta]]
 - [[유기적 개인 지식 시스템]]
+- [[사양 기반 개발 (Spec Driven Development)]]
 

@@ -5,6 +5,407 @@
 ### Ingest
 
 - 입력:
+  - `raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md`
+  - `raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md`
+  - `raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md`
+  - `raw/클로드 디자인은 과연 디자이너를 대체할까.md`
+  - `raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md`
+  - `raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`
+  - `raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md`
+  - `raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`
+  - `raw/단돈 100달러로 주식 투자 시작하기.md`
+  - `raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`
+  - `raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md`
+  - `raw/What Is MCP? Build a Custom MCP Server in Python-ko.md`
+  - `raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md`
+  - `raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
+  - `raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md`
+  - `raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md`
+  - `raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md`
+  - `raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md`
+  - `raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md`
+  - `raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md`
+  - `raw/우리가 초대받지 못한 새로운 AI 시대의 개막.md`
+  - `raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md`
+  - `raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md`
+  - `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
+  - `raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md`
+  - `raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md`
+  - `raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md`
+  - `raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md`
+  - `raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md`
+  - `raw/Claude Design이 디자이너를 대체할 것인가-ko.md`
+  - `raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md`
+  - `raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md`
+  - `raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md`
+  - `raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md`
+  - `raw/오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다.md`
+  - `raw/남다르게 생각하도록 뇌를 훈련하는 법.md`
+  - `raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
+  - `raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md`
+  - `raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md`
+  - `raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md`
+  - `raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md`
+  - `raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md`
+  - `raw/인생의 성공을 결정하는 5가지 핵심 자질.md`
+  - `raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md`
+  - `raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md`
+  - `raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md`
+  - `raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md`
+  - `raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md`
+  - `raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md`
+  - `Claude Design이 디자이너를 대체할 것인가`
+  - `안드레_카파시_인터뷰_정리`
+  - `꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!`
+  - `AI로_만든_제품이_안_팔리는_이유`
+  - `sequoia-ascent-2026-karpathy`
+  - `바이브 코딩의 종말`
+  - `raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md`
+  - `raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md`
+  - `raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md`
+  - `raw/sequoia-ascent-2026-karpathy-ko.md`
+  - `raw/Claude-Code-실무활용법-보리스-관점-정리.md`
+  - `raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md`
+  - `raw/1 Aviation Rule That Will Instantly Improve Your Focus.md`
+  - `raw/AI로_만든_제품이_안_팔리는_이유.md`
+  - `raw/How top companies are using AI in their design workflows.md`
+  - `raw/안드레_카파시_인터뷰_정리.md`
+  - `raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md`
+  - `raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md`
+  - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
+  - `raw/I will never walk into a backend interview without solving these 20 questions..md`
+  - `raw/Most Developers Are Solving the Wrong Problem.md`
+  - `raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md`
+  - `raw/API_Key_관리_및_Infisical_도입_가이드.md`
+  - `raw/Design’s craft crisis. senior designers built it.md`
+  - `raw/보리스_클로드코드_실무_사용법.md`
+  - `raw/어느 IT 기업의 사내 AI 사용 전면 금지령이 시사하는 것.md`
+  - `raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md`
+  - `im-not-ai`
+  - `raw/The Best Way to Make AI Write Like You-ko.md`
+  - `raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md`
+  - `raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md`
+  - `raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md`
+  - `raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md`
+  - `raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md`
+  - `raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md`
+  - `raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md`
+  - `raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md`
+  - `raw/AI Agents. Complete Course.md`
+  - `raw/How to Do Hard Things When You Have Zero Motivation.md`
+  - `raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md`
+  - `raw/좋은 삶을 만드는 것에 대한 지루한 진실.md`
+  - `raw/Why senior UX designers are struggling in 2026-ko.md`
+  - `raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md`
+  - `raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md`
+  - `raw/10 Things Every Investor Should Know (but most learn too late).md`
+  - `raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md`
+  - `raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md`
+  - `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
+  - `raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md`
+  - `raw/Claude Code 프로젝트를 위한 MEMORY.md.md`
+  - `raw/im-not-ai.md`
+  - `raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md`
+  - `raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md`
+  - `raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md`
+  - `raw/Your Wandering Mind Is Not the Enemy of Focus.md`
+  - `raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md`
+  - `raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md`
+  - `raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md`
+  - `raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md`
+  - `raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md`
+  - `raw/These 3 ETFs Created More Millionaires Than Any Stock.md`
+  - `raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md`
+  - `raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md`
+  - `raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md`
+  - `raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md`
+  - `raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md`
+  - `raw/Building an MCP Ecosystem at Pinterest-ko.md`
+  - `raw/Skills Alone Won’t Save You in the AI Economy.md`
+  - `raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md`
+  - `Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다`
+  - `Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번`
+  - `완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다`
+  - `How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)`
+  - `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`
+  - `raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md`
+  - `raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md`
+  - `raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md`
+  - `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`
+  - `raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md`
+  - `raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md`
+  - `raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md`
+  - `raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md`
+  - `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`
+  - `raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md`
+  - `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`
+  - `raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md`
+  - `raw/완성형 LLM Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md`
+  - `raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md`
+  - `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`
+  - `raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md`
+  - `raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md`
+  - `raw/How to write a DESIGN.md file Claude can actually use-ko.md`
+  - `raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md`
+  - `raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md`
+  - `raw/우리가 피그마 없이 제품을 배포하는 방법.md`
+  - `raw/The Open-Source Agent Toolkit in 2026-ko.md`
+  - `raw/How to Get Into the Top 1% in the Next 12 Months-ko.md`
+  - `raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md`
+  - `raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md`
+  - `raw/Why senior designers are doing four jobs for one salary in 2026-ko.md`
+  - `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`
+  - `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`
+  - `raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md`
+  - `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md`
+  - `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md`
+  - `raw/Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업.md`
+  - `raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md`
+  - `UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기`
+  - `AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기`
+  - `AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기`
+  - `raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md`
+  - `raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md`
+  - `raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md`
+  - `raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md`
+  - `raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md`
+  - `raw/Good Design Doesn’t Happen By Default.md`
+  - `raw/From faster pencil to AI Experience Architect. a designer’s path.md`
+  - `raw/The most important Design System in 2026 that designers missed was built by a developer..md`
+  - `raw/AI와 디자인 시스템 - 출판형 다듬기.md`
+  - `raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md`
+  - `raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md`
+  - `raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md`
+  - `raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md`
+  - `raw/cc101_axwith_ko.html`
+  - `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`
+  - `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`
+  - `raw/The Complete (Honest) Guide to OpenClaw.md`
+  - `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`
+  - `raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md`
+  - `raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md`
+  - `raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md`
+  - `raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md`
+  - `API_Key_관리_및_Infisical_도입_가이드`
+  - `Infisical_SSH_헤드리스_인증_가이드`
+  - `https://infisical.com/docs/documentation/platform/secrets-mgmt/overview`
+  - `https://infisical.com/docs/documentation/platform/identities/machine-identities`
+  - `https://infisical.com/docs/documentation/platform/identities/universal-auth`
+  - `https://github.com/Infisical/infisical`
+  - `https://infisical.com/pricing`
+  - `raw/opencode-masterclass-summary.md`
+  - `raw/Infisical_SSH_헤드리스_인증_가이드.md`
+  - `raw/Quartz-Deploy-Guide.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[Claude Cowork]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Claude Design]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Vibe Coding과 Agentic Engineering]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[한글 AI 번역투 탐지 및 윤문 워크플로]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[LLM Wiki 구현 선택지]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[DESIGN.md 운영 원칙]] (DESIGN.md 필수 9대 섹션 상세 가이드 및 뼈대 템플릿 보강, sources/updated 갱신)
+  - [[AI를 UX에 쓰는 법]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 시대 디자인 시스템]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Infisical 도입 전략]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[Claude Cowork]], [[Claude Design]], [[Vibe Coding과 Agentic Engineering]], [[한글 AI 번역투 탐지 및 윤문 워크플로]], [[LLM Wiki 구현 선택지]], [[DESIGN.md 운영 원칙]], [[AI를 UX에 쓰는 법]], [[AI 시대 디자인 시스템]], [[Infisical 도입 전략]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/AI 겨울이 시작됐다-ko.md`
+  - `raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md`
+  - `raw/AI 세컨드 브레인을 구축하기 전에 알았더라면 좋았을 것들.md`
+  - `raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md`
+  - `raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md`
+  - `raw/AI 협업 UI 디자인을 위한 DESIGN.md 작성 가이드 및 모범 사례.md`
+  - `raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md`
+  - `raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md`
+  - `raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md`
+  - `raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[AI 겨울과 경제적 조정]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 세컨드 브레인]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 네이티브 엔지니어링 조직]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 시대 디자인 시스템]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[에이전트 복리 실패의 수학]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Context Engineering]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[사양 기반 개발 (Spec Driven Development)]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 경제에서 스킬만으로는 부족하다]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[AI 겨울과 경제적 조정]], [[AI 세컨드 브레인]], [[AI 네이티브 엔지니어링 조직]], [[AI 시대 디자인 시스템]], [[에이전트 복리 실패의 수학]], [[Context Engineering]], [[사양 기반 개발 (Spec Driven Development)]], [[AI 경제에서 스킬만으로는 부족하다]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md`
+  - `raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md`
+  - `raw/5단계 난이도로 알아보는 RAG 시스템 구축 및 구현 가이드.md`
+  - `raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md`
+  - `raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md`
+  - `raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md`
+  - `raw/7 Coding Patterns I Stole From Senior Engineers.md`
+  - `raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md`
+  - `raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md`
+  - `raw/AI Agents. Complete Course.md`
+- 생성:
+  - [[TurboQuant]] (신규)
+  - [[시니어 기술 인터뷰 소통 프레임워크]] (신규)
+- 수정:
+  - [[AI 겨울과 경제적 조정]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[유기적 개인 지식 시스템]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[RAG 아키텍처 선택]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[시니어 엔지니어의 7가지 코딩 패턴]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Agent Harness]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 에이전트 아키텍처 완전 가이드]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[AI 겨울과 경제적 조정]], [[유기적 개인 지식 시스템]], [[RAG 아키텍처 선택]], [[TurboQuant]], [[시니어 기술 인터뷰 소통 프레임워크]], [[시니어 엔지니어의 7가지 코딩 패턴]], [[Agent Harness]], [[AI 에이전트 아키텍처 완전 가이드]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/2026년 반칙 수준으로 유용한 개발자 도구 6선.md`
+  - `raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md`
+  - `raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md`
+  - `raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md`
+  - `raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md`
+  - `raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md`
+  - `raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md`
+  - `raw/2026년을 지배하는 AI GitHub 저장소들, 왜 알아둬야 하는가.md`
+  - `raw/2026년의 AI 에이전트 실전 가이드-ko.md`
+  - `raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md`
+- 생성:
+  - 없음
+- 수정:
+  - [[2026년 반칙 수준으로 유용한 개발자 도구 6선]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[생성형 AI 면접 평가 축]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[에이전틱 AI 엔지니어 실무 로드맵]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[2026년 오픈소스 LLM 플랫폼 비교]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[프론트엔드 디자인 스킬]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[UI UX 디자인 AI 워크플로우]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[프론트엔드 스타일링 패러다임]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[AI 오픈소스 작업대]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[Agent Harness]] (패치 내용 병합 및 sources/updated 갱신)
+  - [[오픈소스 라이선스 갈등과 커뮤니티 역풍]] (패치 내용 병합 및 sources/updated 갱신)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[2026년 반칙 수준으로 유용한 개발자 도구 6선]], [[생성형 AI 면접 평가 축]], [[에이전틱 AI 엔지니어 실무 로드맵]], [[2026년 오픈소스 LLM 플랫폼 비교]], [[프론트엔드 디자인 스킬]], [[UI UX 디자인 AI 워크플로우]], [[프론트엔드 스타일링 패러다임]], [[AI 오픈소스 작업대]], [[Agent Harness]], [[오픈소스 라이선스 갈등과 커뮤니티 역풍]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/0xMorty_Loop_Design.md`
+- 생성:
+  - [[루프 디자인 (Loop Design)]] (신규)
+- 수정:
+  - 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 린트 체크리스트 적용
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: wiki 노트 작성 규칙에 맞춰 frontmatter를 채우고, 기존 관련 노트들과 상호 링크를 형성하여 고아 페이지가 생기지 않도록 관리함.
+
+### 결정 기록
+
+- 결정: 보강
+- 대상: [[루프 디자인 (Loop Design)]]
+- 근거: DESIGN.md 작성 가이드 및 모범 사례 패치 병합을 통해 비주얼 가이드 가드레일 정의를 구체화함.
+
+## 2026-07-10-ingest
+
+### Ingest
+
+- 입력:
   - `raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md`
 - 생성:
   - 없음

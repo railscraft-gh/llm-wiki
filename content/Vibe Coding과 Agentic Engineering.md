@@ -1,88 +1,89 @@
 ---
 aliases:
-- 바이브 코딩과 에이전틱 엔지니어링
-- Vibe Coding
-- Agentic Engineering
+  - 바이브 코딩과 에이전틱 엔지니어링
+  - Vibe Coding
+  - Agentic Engineering
 core: true
 created: 2026-05-06
 sources:
-- 안드레_카파시_인터뷰_정리
-- 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
-- AI로_만든_제품이_안_팔리는_이유
-- sequoia-ascent-2026-karpathy
-- 바이브 코딩의 종말
-- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
-- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
-- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-- raw/클로드 디자인은 과연 디자이너를 대체할까.md
-- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
-- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  and What I Rejected.md
-- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
-- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
-- raw/sequoia-ascent-2026-karpathy-ko.md
-- raw/Claude-Code-실무활용법-보리스-관점-정리.md
-- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
-- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-- raw/AI로_만든_제품이_안_팔리는_이유.md
-- raw/How top companies are using AI in their design workflows.md
-- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
-- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-- raw/안드레_카파시_인터뷰_정리.md
-- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
-- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
-- raw/7 Coding Patterns I Stole From Senior Engineers.md
-- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
-- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-- raw/I will never walk into a backend interview without solving these 20 questions..md
-- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-- raw/Most Developers Are Solving the Wrong Problem.md
-- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-- raw/API_Key_관리_및_Infisical_도입_가이드.md
-- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-- raw/Design’s craft crisis. senior designers built it.md
-- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
-- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- raw/보리스_클로드코드_실무_사용법.md
-- "raw/어느 IT 기업의 사내 AI 사용 전면 금지령이 시사하는 것.md"
+  - 안드레_카파시_인터뷰_정리
+  - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
+  - AI로_만든_제품이_안_팔리는_이유
+  - sequoia-ascent-2026-karpathy
+  - 바이브 코딩의 종말
+  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+  - raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+  - raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
+  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+  - raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  - raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+  - raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+  - raw/sequoia-ascent-2026-karpathy-ko.md
+  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
+  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/AI로_만든_제품이_안_팔리는_이유.md
+  - raw/How top companies are using AI in their design workflows.md
+  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+  - raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+  - raw/안드레_카파시_인터뷰_정리.md
+  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+  - raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+  - raw/7 Coding Patterns I Stole From Senior Engineers.md
+  - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/I will never walk into a backend interview without solving these 20 questions..md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/Most Developers Are Solving the Wrong Problem.md
+  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+  - raw/API_Key_관리_및_Infisical_도입_가이드.md
+  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+  - raw/Design’s craft crisis. senior designers built it.md
+  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - raw/보리스_클로드코드_실무_사용법.md
+  - raw/어느 IT 기업의 사내 AI 사용 전면 금지령이 시사하는 것.md
+  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md
+  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
 status: evergreen
 tags:
-- llm
-- ai-coding
-- engineering
+  - llm
+  - ai-coding
+  - engineering
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Vibe Coding과 Agentic Engineering
 
 ## 한 줄 정의
-
 Vibe Coding은 누구나 소프트웨어를 만들 수 있게 바닥을 높이는 흐름이고, Agentic Engineering은 품질 책임을 유지한 채 에이전트로 전문 개발자의 천장을 높이는 방식이다.
 
 ## 핵심 요지
-
 - Vibe Coding은 접근성의 민주화에 가깝다.
 - Agentic Engineering은 보안, 설계, 테스트, 운영 책임을 유지하는 엔지니어링 방식이다.
 - 빠르게 만들었다는 사실은 검증 책임을 면제하지 않는다.
+- AI는 개발자를 단순히 대체하기보다 인지적 마찰(디버깅, 전체 코드베이스 탐색, 수동 diff 검증)을 생략시킴으로써 개발자가 인지하지 못하는 사이에 코드를 천천히 읽는 감각과 판단 근육을 마모시키는 '변형(Deformation)'을 초래한다. (출처: raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md)
+- 과거의 지루하고 고단했던 인지적 마찰(Friction)이야말로 온전한 시스템 사고 모델과 해결 직관이 머물던 핵심 성장의 토양이었으므로, 속도를 늦추지 않더라도 검증과 사양 설계에 있어서는 마찰을 의도적으로 유지해야 한다. (출처: raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md)
 
 ## 상세
 
@@ -112,17 +113,23 @@ Sequoia Ascent 2026에서 카파시는 MenuGen 결제 버그를 예시로 들었
 
 제품 UI에서도 같은 구분이 생긴다. Vibe Coding은 화면을 빠르게 뽑아내지만, [[AI Slop]]을 피하려면 [[AI 시대 디자인 시스템]]처럼 에이전트가 따를 시각 언어와 검증 기준이 필요하다.
 
+### 4. 개발 단계/연차별 3대 변형(Deformation) 양상
+- **주니어 (1~3년 차) - 지식 형성(Formation)의 부재**: 동작하지 않는 코드를 디버깅하고 적성을 고민하던 마찰 고통 자체가 온전한 개발 직관과 끈기를 심는 과정이었으나, AI에게 매 질문마다 즉각적인 답을 구하게 되면서 교훈을 새기기도 전에 질문을 놓치고 애초에 지식의 견고한 뼈대(Formation) 자체가 형성되지 못한다.
+- **미들레벨 (5~8년 차) - 압박และ 딜레마(Squeeze)**: 신중하고 정석적인 단계별 성장을 밟아왔으나, AI를 쓰지 않아 작업 속도가 느리다는 구식 취급 압박을 받는다. 이로 인해 변화를 거부하는 꼰대로 낙인찍히거나, 혹은 트렌드에 휩쓸려 그동안 단련한 코드 리딩 근육이 약화되는 모습을 방관해야 하는 딜레마에 갇힌다.
+- **시니어 - 반복 훈련(Daily reps)의 소멸**: 일상적인 수동 디버깅과 밑바닥 설계 반복 훈련(daily reps)이 기계로 아웃소싱되면서 날카롭던 인지적 감각이 조용히 마모된다. 이로 인해 PR 변경 사항(diff) 검토 시 테스트가 통과했다는 이유만으로 리팩터링 도중 누락된 핵심 널 체크(null check) 버그 같은 결함을 잡아내지 못하고 그대로 배포하는 참사로 이어진다.
+
 ## 예시
 
 - Vibe Coding: "회의록 요약 앱 만들어줘"라고 시작해 데모를 얻는다.
 - Agentic Engineering: 인증, 권한, 데이터 보존, 테스트, 배포 체크리스트까지 명시하고 에이전트를 통해 구현한다.
 
-## 충돌
+#### 시니어 개발자의 마모 임계값 벤치마크
+- 25년 경력의 시니어 엔지니어가 평소라면 12초 만에 즉각 식별했을 리팩터링 코드 diff 내 null 체크 누락 실수를, AI 에이전트(Claude Code)의 생성 코드와 테스트 통과(Green) 결과를 맹신한 탓에 의식하지 못하고 승인/배포하게 된 사례가 보고되었다. 이는 AI 생산성 이면에 생각 근육의 마모라는 대가가 오롯이 존재함을 시사한다.
 
+## 충돌
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
 - [[AI 코딩 에이전트 검증 전략]]
 - [[Plan Mode 기반 AI 작업]]
 - [[AI 네이티브 사용자]]
