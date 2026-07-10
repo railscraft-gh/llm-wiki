@@ -134,6 +134,10 @@ macOS 환경에서 `fswatch`와 `launchd`를 활용하여 Obsidian `wiki/` 폴�
 - **테마 구조 및 폰트 변경**: `quartz.config.ts` 파일의 `theme` 블록에서 `typography` 요소를 사용해 header/body 폰트를 구글 폰트(`Noto Sans KR` 등)로 맵핑하고, code 폰트를 `IBM Plex Mono` 등으로 매핑하여 렌더링 완성도를 높인다.
 - **수식 렌더링 플러그인**: LLM 개념 및 수리 벤치마크 데이터를 브라우저에 표시하기 위해 `Plugin.Latex({ renderEngine: "katex" })`를 `transformers` 플러그인 리스트에 배치한다. 이를 통해 별도 마크업 없이도 `$$ 수식 $$` 블록이 KaTeX 엔진을 거쳐 HTML 수식으로 자동 변환된다. (출처: Quartz-Deploy-Guide.md)
 
+### 7. Quartz 테마 색상 및 텍스트 렌더링 커스터마이징
+- **테마 구조 및 폰트 변경**: `quartz.config.ts` 파일의 `theme` 블록에서 `typography` 요소를 사용해 header/body 폰트를 구글 폰트(`Noto Sans KR` 등)로 맵핑하고, code 폰트를 `IBM Plex Mono` 등으로 매핑하여 렌더링 완성도를 높인다.
+- **수식 렌더링 플러그인**: LLM 개념 및 수리 벤치마크 데이터를 브라우저에 표시하기 위해 `Plugin.Latex({ renderEngine: "katex" })`를 `transformers` 플러그인 리스트에 배치한다. 이를 통해 별도 마크업 없이도 `$$ 수식 $$` 블록이 KaTeX 엔진을 거쳐 HTML 수식으로 자동 변환된다. (출처: Quartz-Deploy-Guide.md)
+
 ## 예시
 
 1. `quartz.config.ts`에서 로케일을 `"ko-KR"`로 맞추고 Noto Sans KR 폰트를 지정한다.
@@ -150,6 +154,44 @@ macOS 환경에서 `fswatch`와 `launchd`를 활용하여 Obsidian `wiki/` 폴�
   SSH 키 인증 오류 시 `eval "$(ssh-agent -s)"`와 `ssh-add`를 사용해 키를 등록하거나 HTTPS origin URL(`https://github.com/...`)로 원격을 변경하여 대처한다.
 - **index.html 미생성 오류**:
   Quartz 빌드 에러의 주원인으로, `content/` 폴더 내에 반드시 홈 화면 역할을 할 `index.md` 파일이 존재해야 한다.
+
+### quartz.config.ts의 테마 색상 매핑 구조 예시
+```typescript
+theme: {
+  fontOrigin: "googleFonts",
+  cdnCaching: true,
+  typography: {
+    header: "Noto Sans KR",
+    body: "Noto Sans KR",
+    code: "IBM Plex Mono",
+  },
+  colors: {
+    lightMode: {
+      light: "#faf8f8",
+      lightgray: "#e5e5e5",
+      gray: "#b8b8b8",
+      darkgray: "#4e4e4e",
+      dark: "#2b2b2b",
+      secondary: "#284b63",
+      tertiary: "#84a59d",
+      highlight: "rgba(143, 159, 169, 0.15)",
+      textHighlight: "#fff23688",
+    },
+    darkMode: {
+      light: "#161618",
+      lightgray: "#393639",
+      gray: "#646464",
+      darkgray: "#d4d4d4",
+      dark: "#ebebec",
+      secondary: "#7b97aa",
+      tertiary: "#84a59d",
+      highlight: "rgba(143, 159, 169, 0.15)",
+      textHighlight: "#b3aa0288",
+    },
+  },
+}
+```
+(출처: Quartz-GitHub-Pages-Complete-Guide.md)
 
 ### quartz.config.ts의 테마 색상 매핑 구조 예시
 ```typescript

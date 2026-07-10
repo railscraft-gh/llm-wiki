@@ -254,10 +254,64 @@ flowchart LR
 - **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
 - **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
+### M5 Max 로컬 가속 셋업 및 메모리 분할 (2026년 3월 출시)
+- **M5 Max 칩셋**: GPU 32코어 전체에 Neural Accelerator가 탑재되어, 이전 세대 대비 LLM 프롬프트 처리는 최대 4배, 이미지 생성은 8배 가속함.
+- **oMLX SSD KV 캐시 단축**: oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
+- **Ollama MLX 백엔드 속도**: Ollama 0.19 버전 이상에서 int4 Qwen 구동 시 프리필 1,851 tok/s, 디코드 134 tok/s 속도를 기록함.
+- **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
+
+### 8. 로컬 코딩 모델 컨텍스트 최적화 및 STT/TTS 음성 규격
+- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, Cline 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
+- **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
+- **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+
 ## 예시
 
 - **보안 격리 코딩**: 회사 코드 노출 우려 없이 `qwen3-coder-cline` 모델을 VS Code 로컬 백엔드로 연동하여 리팩터링 diff를 로컬 환경 내에서 안전하게 생성한다.
 - **오프라인 회의록 질의**: SQLite에 sqlite-vec을 얹어 회의록 임베딩을 저장하고, 비행기나 격리망 오프라인 환경에서 NumPy Cosine Similarity 내적으로 관련 내용을 검색한 뒤 답변을 추출한다.
+
+### Whisper.cpp 및 mlx-lm LoRA 파인튜닝 로컬 실행 명령어
+- **Whisper.cpp (오프라인 STT)**:
+  ```bash
+  brew install whisper-cpp
+  whisper-cpp -m models/ggml-large-v3.bin -f meeting.wav
+  ```
+  Metal 가속 백엔드를 활용해 1시간 분량의 녹음을 1분 미만으로 받아쓰기 완료함.
+- **mlx-lm LoRA 파인튜닝**:
+  ```bash
+  mlx_lm.lora \
+    --model mlx-community/Qwen2.5-7B-Instruct-4bit \
+    --train \
+    --data ./my_data \
+    --iters 1000 \
+    --batch-size 2
+  ```
+  M5 Max 단일 노트북 기기에서 7~9B급 소형 모델을 1~2시간 만에 사용자 도메인 지식으로 미세 조정 가능.
+
+### Cline 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
+```dockerfile
+# Modelfile — cline-tuned qwen3-coder
+FROM qwen3-coder:30b
+
+# 컨텍스트 창 크기 64K 확장
+PARAMETER num_ctx 65536
+
+# 코딩 일관성을 위한 저온도 설정
+PARAMETER temperature 0.2
+
+# 대화 턴 종결 제어 토큰
+PARAMETER stop "<|im_end|>"
+```
+이 파일을 작성한 뒤 로컬에서 아래 셸 명령어를 실행하여 빌드하고 검증한다:
+```bash
+# 커스텀 모델 생성
+ollama create qwen3-coder-cline -f ./Modelfile
+
+# 컨텍스트 크기 설정값 정상 반영 여부 자가진단
+ollama show qwen3-coder-cline --parameters | grep num_ctx
+# 예상 출력: PARAMETER num_ctx 65536
+```
+(출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
 ### Whisper.cpp 및 mlx-lm LoRA 파인튜닝 로컬 실행 명령어
 - **Whisper.cpp (오프라인 STT)**:

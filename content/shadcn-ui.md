@@ -52,6 +52,11 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 2. **획일화(Homogenisation) 리스크**: 대부분의 생성형 UI 도구가 동일한 shadcn/ui 데이터셋을 활용해 개발을 가속함에 따라, 프로덕트의 개성과 다양성이 억제되고 밋밋한 UI 슬롭(AI Slop)으로 수렴하는 장기적 한계가 존재한다.
 3. **유지보수 부채(Maintenance Debt)**: 종속성 라이브러리가 아닌 복사-붙여넣기(copy-paste) 포크 모델이므로, 공식 라이브러리에 패치된 버그나 성능 개선을 자동으로 수신할 수 없으며 변경 사항을 수동으로 이식해야 하는 숨은 유지보수 비용이 발생한다.
 
+### shadcn/ui의 3대 구조적 한계 및 한계 비용
+1. **React-first 종속성**: Vue, Svelte, Solid 등의 비공식 포트가 존재하나 완성도가 제각각인 2급 적응판에 불과하여 타 프레임워크 기반 아키텍처에서는 호환 비용이 높다.
+2. **획일화(Homogenisation) 리스크**: 대부분의 생성형 UI 도구가 동일한 shadcn/ui 데이터셋을 활용해 개발을 가속함에 따라, 프로덕트의 개성과 다양성이 억제되고 밋밋한 UI 슬롭(AI Slop)으로 수렴하는 장기적 한계가 존재한다.
+3. **유지보수 부채(Maintenance Debt)**: 종속성 라이브러리가 아닌 복사-붙여넣기(copy-paste) 포크 모델이므로, 공식 라이브러리에 패치된 버그나 성능 개선을 자동으로 수신할 수 없으며 변경 사항을 수동으로 이식해야 하는 숨은 유지보수 비용이 발생한다.
+
 ## 예시
 
 - Figma Make나 v0가 만든 대시보드 초안이 shadcn-style card, dialog, spacing으로 수렴한다.
@@ -79,6 +84,10 @@ shadcn/ui는 설치형 dependency보다 복사·수정·소유를 전제로 한 
 - code copy 방식이 장점인 구간과, 중앙 업데이트가 어려워지는 구간은 어디인가.
 
 이 질문이 정리되면 shadcn-ui는 "AI가 자주 내놓는 기본 출력"에서 "의식적으로 수용한 foundation"으로 바뀐다.
+
+### MCP 서버를 통한 AI 자율 컴포넌트 관리
+shadcn/ui는 Model Context Protocol(MCP) 서버를 출시하여 AI 에이전트(Claude Code, Cursor 등)가 직접 컴포넌트를 브라우즈, 검색, 설치할 수 있도록 인프라를 제공한다.
+- 프로젝트 내 `components.json` 설정 파일을 통해 에이전트가 각 프로젝트의 컨벤션에 맞는 컴포넌트를 자율 배포 및 셋업한다.
 
 ### MCP 서버를 통한 AI 자율 컴포넌트 관리
 shadcn/ui는 Model Context Protocol(MCP) 서버를 출시하여 AI 에이전트(Claude Code, Cursor 등)가 직접 컴포넌트를 브라우즈, 검색, 설치할 수 있도록 인프라를 제공한다.

@@ -1,38 +1,37 @@
 ---
 aliases:
-- Boris Loop
-- Claude Routines
-- 클라우드 루프
+  - Boris Loop
+  - Claude Routines
+  - 클라우드 루프
 core: false
 created: 2026-05-16
 sources:
-- anthropic-boris-cherny-interview
-- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
-- raw/강화학습-RL-초보자-가이드.md
-- raw/anthropic-boris-cherny-interview.md
-- raw/evolution-of-ai-agentic-patterns.md
-- raw/sequoia-ascent-2026-karpathy-ko.md
+  - anthropic-boris-cherny-interview
+  - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+  - raw/강화학습-RL-초보자-가이드.md
+  - raw/anthropic-boris-cherny-interview.md
+  - raw/evolution-of-ai-agentic-patterns.md
+  - raw/sequoia-ascent-2026-karpathy-ko.md
 status: evergreen
 tags:
-- llm
-- agent
-- workflow
-- automation
+  - llm
+  - agent
+  - workflow
+  - automation
 type: workflow
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Loop와 Routines
 
 ## 한 줄 정의
-
 Loop와 Routines는 Cloud Code 창시자 보리스 체르니가 정의한, cron 기반 반복 에이전트 작업(Loop)과 노트북을 닫아도 서버에서 지속되는 예약 작업(Routines)을 가리키는 자동화 워크플로우다.
 
 ## 핵심 요지
-
 - Loop는 cron 표현으로 미래 시점에 에이전트 작업을 반복 예약하는 가장 단순하면서도 보리스가 "미래"라고 강조한 기능이다.
 - Routines는 서버 측에서 실행되는 반복 작업으로, 클라이언트 노트북이 꺼져도 계속 돌아간다.
 - 보리스는 2026-05-16 시점 휴대폰 Claude 앱에서 5~10개 세션 × 수백~수천 에이전트와 함께 수십 개의 Loop를 동시 운영한다.
+- 앤트로픽 4.7 모델은 데이터 변화를 스스로 감지하고 30분마다 보고서를 만들어 Slack MCP로 송신하는 자율적 Loop를 스스로 시작함 [raw/anthropic-boris-cherny-interview.md]
 
 ## 상세
 
@@ -50,18 +49,23 @@ Routines는 같은 발상의 서버 측 버전이다. 클라이언트 의존성�
 
 이 운영은 [[병렬 에이전트 세션 운영]] 원칙과 결합되어야 한다. 충돌 없는 파일 범위, 검증 명령, 권한 범위가 없으면 Loop는 자동화된 속도로 잘못된 변경을 만든다. [[Lethal Trifecta]] 관점에서도 외부 입력 처리 + 상태 변경을 동시에 가진 Loop는 sandbox에서만 실행해야 한다.
 
-## 예시
+### Loop와 Routines의 개념 및 동작 시나리오
+- **Loop (반복 루프)**: cron 표현식이나 예약 스케줄로 로컬 혹은 CLI 내에서 반복적인 에이전트 태스크를 트리거하는 기능.
+- **Routines (서버 측 루틴)**: 개발자의 로컬 환경(노트북 등)이 오프라인 상태이거나 컴퓨터가 꺼져도 서버 측(Server-side)에서 무인으로 예약된 반복 작업을 지속 실행하는 인프라.
+- **실전 3대 셋업 시나리오**:
+  1. *PR 돌봄 루프*: 주기적으로 GitHub PR을 스캔하여 CI 실패 대응 및 자동 리베이스 수행.
+  2. *CI 건강 관리 루프*: 불안정한(flaky) 테스트를 스스로 재실행하고 자동 원인 규명 및 패치 커밋.
+  3. *트위터 피드백 클러스터링 루프*: 30분 간격으로 트위터 여론 피드백을 긁어서 의미 단위로 군집화하여 트렌드 분석 보고서 적재.
 
+## 예시
 - `crontab` 또는 Anthropic Routines로 매일 09:00 `claude -p "npm outdated 확인 후 보고서 생성"` 예약.
 - PR 돌봄 Loop: 5분마다 자신의 PR 목록을 점검하고 CI 실패면 로그 분석 → 수정 커밋 → 푸시.
 - 30분마다 트위터/Slack 피드백을 수집해 토픽 클러스터링하고 Notion에 적재.
 
 ## 충돌
-
 현재 확인된 충돌 없음. 단, "루프가 미래"라는 주장은 보리스 1인의 영상 데모 기반이며 운영 비용, 실패율, 사람 개입 빈도는 실제 적용 시 검증 필요.
 
 ## 관련 노트
-
 - [[병렬 에이전트 세션 운영]]
 - [[Ralph Loop]]
 - [[Claude Code 오케스트레이션]]

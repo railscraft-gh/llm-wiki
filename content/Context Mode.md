@@ -3,30 +3,30 @@ aliases: []
 core: false
 created: 2026-05-09
 sources:
-- context-mode-README-정리
-- raw/context-mode-README-정리.md
+  - context-mode-README-정리
+  - raw/context-mode-README-정리.md
 status: needs-review
 tags:
-- ai-coding
-- context-window
-- mcp
-- sandbox
+  - ai-coding
+  - context-window
+  - mcp
+  - sandbox
 type: tool
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Context Mode
 
 ## 한 줄 정의
-
 AI 코딩 에이전트의 컨텍스트 윈도우를 최적화하는 MCP 서버. 도구 출력을 샌드박싱하여 컨텍스트 소비를 극적으로 줄인다.
 
 ## 핵심 요지
-
 - 컨텍스트 절약: 315KB → 5.4KB(98% 감소) [GitHub](https://github.com/mksglu/context-mode)
 - HN #1(570+ points), Microsoft/Google/Meta/Amazon/NVIDIA 등 다양한 기업에서 사용
 - 4가지 문제 해결: Context Saving, Session Continuity, Think in Code, Output Compression
 - 14개 플랫폼 지원: Claude Code, Gemini CLI, VS Code Copilot, Cursor, OpenCode 등
+- SQLite와 FTS5를 통해 대화 히스토리 및 파일 변경 이력을 관리하며, BM25 검색 알고리즘으로 필요한 정보만 압축/복원함 [raw/context-mode-README-정리.md]
+- ctx_insight 도구를 통해 90개 메트릭, 37개 인사이트 패턴, 4대 종합 점수(productivity, quality, delegation, context health)를 분석하여 로컬 웹 UI로 시각화함 [raw/context-mode-README-정리.md]
 
 ## 상세
 
@@ -74,6 +74,18 @@ OpenClaw에서는 `api.on()`(lifecycle/tool 훅)과 `api.registerHook()`(command
 
 Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다. 이로 인해 일부 라우팅 지시사항이 모델에게 전달되지 않을 수 있다.
 
+### OpenClaw 어댑터 및 환경 스펙
+- **설치 및 빌드**:
+  ```bash
+  git clone https://github.com/mksglu/context-mode.git
+  cd context-mode
+  npm run install:openclaw
+  # 커스텀 경로 지정 시: npm run install:openclaw -- /path/to/openclaw-state
+  ```
+  인스톨러는 `npm install` -> `npm run build` -> `better-sqlite3` 네이티브 모듈 재빌드 -> `runtime.json`에 확장 등록 -> SIGUSR1으로 게이트웨이를 재시작하는 절차를 거친다.
+- **OpenClaw 상태 디렉토리 (`OPENCLAW_STATE_DIR`)**: Docker는 `/openclaw`, 로컬은 `~/.openclaw`를 기본값으로 삼는다.
+- **동작 요건**: Node.js 18+가 필수적이며, OpenClaw 런타임의 경우 Node.js 22+ 및 최소 버전 >2026.1.29 (PR #9761 반영)을 요한다.
+
 ## 예시
 
 **파일 분석 스크립트 실행**: `ctx_execute("javascript", "const fs = require('fs'); const files = fs.readdirSync('.'); console.log(files.length);")`
@@ -86,14 +98,42 @@ Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다
 
 **통계 확인**: `ctx stats`로 도구별 컨텍스트 절약량과 토큰 소비량 확인
 
-## 충돌
+```typescript
+// initPromise 패턴 코드 스펙 예시
+register(api): void {
+  const initPromise = (async () => { /* 비동기 설정 */ })();
+  api.on("after_tool_call", async (e) => {
+    await initPromise;  // 설정 완료 대기 후 이벤트 처리
+    // ...
+  });
+}
+```
 
+### 플랫폼별 설정 파일 매핑
+- **Claude Code**: `~/.claude/settings.json` (status line)
+- **Gemini CLI**: `~/.gemini/settings.json`
+- **VS Code Copilot**: `.vscode/mcp.json` + `.github/hooks/context-mode.json`
+- **JetBrains Copilot**: Settings UI + `.github/hooks/context-mode.json`
+- **Cursor**: `.cursor/mcp.json` + `.cursor/hooks.json` + `.cursor/rules/context-mode.mdc`
+- **OpenCode**: `opencode.json` (+ `AGENTS.md`)
+- **KiloCode**: `kilo.json` (+ `~/.config/kilo/`)
+- **OpenClaw**: `runtime.json` (자동 등록)
+- **Codex CLI**: `~/.codex/config.toml` + `~/.codex/hooks.json`
+
+### OpenClaw 트러블슈팅 가이드
+- `openclaw.json` 없음: OpenClaw 최초 실행 (`openclaw gateway start`)이 누락되었는지 확인.
+- 플러그인이 설치되었으나 로드 안 됨: jiti 캐시를 삭제한다 (`rm -f /tmp/jiti/context-mode-*.cjs`).
+- `ctx_*` 도구 누락: `openclaw mcp list` 확인 후 다음으로 수동 등록:
+  ```bash
+  openclaw mcp set context-mode "{\"command\":\"node\",\"args\":[\"/절대경로/context-mode/server.bundle.mjs\"]}"
+  ```
+
+## 충돌
 - **OpenClaw**: `api.on()`과 `api.registerHook()` 구분 실수 시 조용히 실패
 - **Cursor**: `additional_context`가 모델에 표시되지 않는 제한 존재
 - **OpenCode/KiloCode**: SessionStart 훅 없음 → `system.transform`으로 대체
 
 ## 관련 노트
-
 - [[Claude.md 운영 원칙]]
 - [[병렬 에이전트 세션 운영]]
 - [[OpenCode]]

@@ -1,38 +1,37 @@
 ---
 aliases:
-- 메타 하네스
+  - 메타 하네스
 core: false
 created: 2026-05-13
 sources:
-- arxiv-2603.28052-meta-harness
-- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
-- raw/arxiv-2603.28052-meta-harness.md
-- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
-- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
-- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-status: needs-review
+  - arxiv-2603.28052-meta-harness
+  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+  - raw/arxiv-2603.28052-meta-harness.md
+  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+status: evergreen
 tags:
-- llm
-- agent
-- harness-engineering
-- meta-learning
+  - llm
+  - agent
+  - harness-engineering
+  - meta-learning
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # Meta-Harness
 
 ## 한 줄 정의
-
 Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end로 검색하고 최적화하는 외부 루프 시스템으로, 파일시스템을 통해 모든 이전 후보의 소스 코드와 실행 추적에 접근하는 에이전트 제안자를 사용한다.
 
 ## 핵심 요지
-
 - 기존 텍스트 최적화기는 피드백을 짧은 요약이나 스칼라 점수로 압축해 하네스 엔지니어링에 부적합하다.
 - Meta-Harness는 **무손실 파일시스템 접근**을 제공해 제안자가 `grep`과 `cat`으로 이전 실패의 원인을 직접 추론할 수 있게 한다.
 - 단일 평가가 최대 1,000만 토큰의 진단 정보를 생성할 수 있으며, 이는 기존 텍스트 최적화 설정의 최대 피드백 예산보다 약 1,000배 크다.
+- 모델을 제어하는 하네스 설계의 유무 및 품질에 따라 동일 모델 벤치마크 테스트에서 최대 6배의 성능 격차가 발생할 수 있음 [raw/arxiv-2603.28052-meta-harness.md]
 
 ## 상세
 
@@ -60,18 +59,26 @@ Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end
 
 어블레이션 결과, 실행 추적에 대한 전체 접근이 점수만(34.6%)이나 점수+요약(34.9%) 조건을 50.0%로 실질적으로 능가했다. 요약은 오히려 진단적으로 유용한 세부사항을 압축해 해가 될 수 있다.
 
-## 예시
+### 텍스트 최적화기 피드백 예산 및 최적화 함수
+- **피드백 압축의 한계**: 기존의 OPRO, TextGrad, GEPA 등의 텍스트 최적화기는 반복 단계당 0.002~0.026 M토큰 수준의 극히 압축된 요약이나 스칼라 점수만을 제공했다. 이와 달리 Meta-Harness는 **전체 원시 실행 추적과 점수**를 파일시스템에 노출하여 단계당 10.0 M토큰(기존 대비 1,000배 이상) 수준의 풍부한 피드백을 `grep`과 `cat`을 통해 비마코비안 방식으로 에이전트가 탐색하게 제어한다.
+```latex
+H^{*} = \operatorname*{arg\,max}_{H}\mathbb{E}_{x\sim\mathcal{X},\tau\sim p_M(H,x)}\;r(\tau,x)
+```
+- **최적화 함수 스펙**: 고정된 언어 모델 $M$, 작업 분포 \mathcal{X}, 하네스 $H$의 롤아웃 궤적 \tau 하에 보상 함수 $r$의 기댓값을 최대화하는 하네스 $H^{*}$를 자동 검색한다.
+- **텍스트 최적화기 비교 메트릭**:
+  - *Scores Only (점수만 제공)*: 검색 세트 정확도 34.6%
+  - *Scores + Summary (요약 제공)*: 검색 세트 정확도 34.9%
+  - *Meta-Harness (원시 로그 전체)*: 검색 세트 정확도 50.0%
 
+## 예시
 - 발견된 텍스트 분류 하네스: Label-Primed Query 앵커드 분류 — 유효 레이블 목록, 클래스별 대표 예제, 로컬 대조 쌍을 포함한 단일 프롬프트 구성
 - 발견된 수학 검색 하네스: 4-경로 BM25 프로그램 — 어휘 라우터가 쿼리를 조합론/기하/정수론/기본 경로에 할당
 - 발견된 TerminalBench-2 하네스: 환경 부트스트래핑 — 에이전트 루프 시작 전 샌드박스 환경 스냅샷을 수집해 초기 프롬프트에 주입
 
 ## 충돌
-
 현재 확인된 충돌 없음.
 
 ## 관련 노트
-
 - [[Harness Engineering]]
 - [[Agent Native Infrastructure]]
 - [[Software 3.0]]
