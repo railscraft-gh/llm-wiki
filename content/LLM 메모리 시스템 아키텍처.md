@@ -247,5 +247,5 @@ def answer_heartbeat(user_text: str, model, core_memory: dict, archival_store) -
 - [[Model Context Protocol]]
 - [[Claude Code 스킬 관리]]
 - [[AI 에이전트 아키텍처 완전 가이드]]
-- [[RAG 시스템 초보자부터 전문가까지의 완전 가이드]]
+- [[RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)]]
 
