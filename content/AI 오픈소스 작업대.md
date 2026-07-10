@@ -88,6 +88,8 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - Mem0와 같은 장기 기억 프레임워크는 LoCoMo 벤치마크 테스트에서 기존 전체 컨텍스트 로딩 대비 레이턴시 92% 감소, 토큰 사용량 93% 절감을 이뤄내며 14배의 비용 효율화를 달성했다.
 - Stagehand v3는 Chrome DevTools Protocol(CDP) 기반으로 런타임 엔진을 전면 리팩터링하여 Playwright 대비 44% 빠른 브라우징 속도를 보고했다.
 - 엔지니어링 코딩 에이전트 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), Cline(VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
+- 현대 개발자들은 단순히 챗봇 데모나 라이브러리를 찾는 단계를 넘어, GitHub을 통해 통째로 작동하는 AI 운영 체계와 엔지니어링 레이어를 찾아 나서고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
+- AI 인프라는 점차 범용 어시스턴트에서 벗어나 금융, 리서치, 코딩, 개인 브라우징 격리 등 전문화된 로컬/셀프호스팅 시스템으로 세분화되고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
 
 ## 상세
 
@@ -163,6 +165,23 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
 7. **Models & Inference**: PagedAttention을 창안한 **vllm**, local quantization의 기본값인 **Ollama**, GGUF 파일 포맷을 주도한 C++ 기반 **llama.cpp**, 컨텍스트 접두사 캐싱 및 스키마 강제 출력을 지원하는 **SGLang**이 인프라 하단을 지탱한다.
 
+### 개발자들이 주목하는 15대 GitHub 오픈소스 프로젝트 상세 스펙
+1. **Anthropic Financial Services (`anthropics/financial-services`)**: 금융 보고, 컴플라이언스 검토, 문서 분석 등 실제 금융 비즈니스 워크플로우를 타깃으로 승인 루프 내에 사람을 두는(HITL) 에이전틱 컬렉션.
+2. **Agent Skills (`addyosmani/agent-skills`)**: AI 에이전트를 위한 구조화된 워크플로우, 프롬프트, 테스트 패턴을 표준 소프트웨어 아키텍처 레이어로 정의한 저장소.
+3. **D-Flash (`dflash-dev/dflash`)**: 임베딩, 벡터 인출, 분산 추론 등 대규모 모델에 최적화된 고속 데이터 접근용 분산 flash 기반 저장소 인프라.
+4. **Cloak Browser (`cloakware/cloak-browser`)**: AI의 무분별한 행동 데이터 수집에 대응하여 브라우저 격리, 추적 방지, 미세 세부 설정을 지원하는 보안 연구자용 브라우저.
+5. **AI Trader (`codas-ai/ai-trader`)**: 멀티 에이전트 간의 협업적 추론과 분석 토론을 결합하여 시장 맥락을 정밀 판단하는 금융 거래 연구 프레임워크.
+6. **Local Deep Research (`dzhng/deep-research`)**: 클라우드 API를 쓰지 않고 로컬 LLM, 추론 파이프라인, 출처 분석 검색기를 결합해 기밀 정보를 보호하며 동작하는 자율 연구 워크플로우.
+7. **Lobe Hub (`lobehub/lobe-chat`)**: 다중 모델 제공사, 플러그인, 에이전트 및 지식 통합 오케스트레이션을 개인화된 AI 워크스페이스 형태로 서빙하는 플랫폼.
+8. **Hello Agents (`hello-agent/hello-agents`)**: 현대 에이전트의 핵심 구성 요소인 메모리, 계획, 도구 사용, 오케스트레이션의 실제 아키텍처 구현을 가르쳐주는 교육용 저장소.
+9. **Flutter Agent Skills (`flutter/agentic_ai`)**: 범용 조수가 아닌 Flutter 프레임워크에 특화된 재사용 가능 프롬프트와 코딩 패턴을 제공하는 에이전트 스킬 세트.
+10. **May Gray (`maygray/maygray`)**: 사이버보안 및 디지털 조사를 위해 여러 공개 플랫폼에서 username 및 공개 프로필을 자동으로 스캔하는 OSINT 도구.
+11. **Chigode (`chigode/chigode`)**: IDE를 켤 필요 없이 가벼운 코딩 스니펫과 워크플로우를 신속하게 설정하고 테스트할 수 있는 초경량 실행 환경.
+12. **Skills for Real Engineers (`mattpocock/skills-for-real-engineers`)**: Matt Pocock이 만든 저장소로, 채팅 인터페이스에서 탈피해 구조화된 프롬프트와 재사용 가능 액션으로 엔지니어링 개발 자동화 패턴을 표준화한 프로젝트.
+13. **OpenBB (`OpenBB-finance/OpenBB`)**: 과거 값비싼 기업 전용 터미널 뒤에 숨겨진 다양한 금융 시장 데이터 제공자를 단일 오픈소스 워크플로우로 끌어내린 데이터 플랫폼.
+14. **Temporal TypeScript SDK (`temporalio/sdk-typescript`)**: 분산 마이크로서비스 및 AI 오케스트레이션 파이프라인에서 재시도, 일시 실패, 장기 실행 프로세스를 durable하게 제어하는 개발자용 SDK.
+15. **Obsidian Copilot (`logancyang/obsidian-copilot`)**: 지식 베이스와 AI 레이어를 하나로 융합하여 노트 필기 내에서 요약, 브레인스토밍, 검색을 돕는 Copilot 플러그인.
+
 ## 예시
 
 - local assistant 실험: Ollama + Open WebUI
@@ -198,6 +217,17 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
   pip install mem0ai
   ```
   Mem0를 이용해 사용자의 이전 선호 데이터나 세션 정보를 로컬 또는 클라우드 DB에 분리 저장하여, Context Window 폭주로 인한 토큰 소모를 Naive full-context 방식 대비 93% 이상 기계적으로 차단하는 실무 구현.
+
+### 주요 툴킷 기동 및 설치 지침
+- **Local Deep Research 클론 및 빌드**:
+  ```bash
+  git clone https://github.com/dzhng/deep-research.git
+  cd deep-research
+  npm install
+  # 로컬 AI 모델 설정 및 실행
+  ```
+- **Agent Skills를 활용한 프롬프트 등록 패턴 예시**:
+  AI 에이전트가 `ADD_SKILL` 툴 콜을 호출하여 `~/skills` 디렉터리에 재사용 가능한 프롬프트 스키마를 저장하는 워크플로우.
 
 ## 충돌
 - 2026-05-26 확인: 저장소별 스타 수, 버전, 모델 스펙, 기능 범위는 변동성이 높다. 다만 local stack, workflow builder, grounded AI, terminal assistant로 작업 표면이 이동한다는 구조적 관찰은 개별 저장소 교체와 무관하게 유지된다.

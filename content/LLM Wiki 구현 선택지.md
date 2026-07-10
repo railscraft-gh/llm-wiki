@@ -55,7 +55,8 @@ tags:
   - wiki
   - workflow
   - agent
-type: workflow
+  - productivity
+type: concept
 updated: 2026-07-10
 ---
 
@@ -74,6 +75,8 @@ LLM Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키
 - 코드로 굳히는 구현 (Programmatic Package): 대규모 corpus 환경에서 토큰 비용과 환각 누적을 억제하며, 입력의 재현성과 다운스트림 자동화 연동을 최적화한다.
 - 에이전트 협상 구현 (Agentic Markdown): 200개 이하 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 AGENTS.md와 CLAUDE.md 설정을 통해 에이전트를 위키 유지관리자로 작동시킨다.
 - 옵시디언 CEO Steph Ango가 공개한 `kepano/obsidian-skills`는 에이전트가 위키링크, 콜아웃, 프런트매터 등의 옵시디언 고유 마크다운 형식을 깨뜨리지 않고 작성할 수 있게 돕는 스킬 세트다. (출처: raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md)
+- 4.9k 스타의 오픈소스 완성형 지식 베이스(nashsu/llm_wiki) 대비, 개인의 구체적인 마찰 지점을 해결하기 위한 경량화 아키텍처의 실용성을 대조한다.
+- 수동 제어와 자동 에이전틱 갱신을 분리하는 2단계 인제스트(2-stage Ingestion) 프로세스가 도입된다.
 
 ## 상세
 
@@ -152,6 +155,13 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
   - `obsidian-cli` — 셸 커맨드 기반의 볼트 관리 파이프라인.
   - `defuddle` — 외부 웹페이지를 수집해 광고/내비게이션 바를 제거하고 토큰 최적화 마크다운으로 변환.
 
+### 3. 경량화 LLM Wiki 구축 스펙
+- **대조군 오픈소스**: `nashsu/llm_wiki` (4.9k Stars) 프로젝트는 훌륭한 인터페이스를 가졌으나, 로컬 에이전트의 단순 참조와 리팩토링에는 무겁고 불필요한 레이어가 많음.
+- **2단계 인제스트 파이프라인**:
+  1. *분석 단계 (Analyze Phase)*: 문서를 읽고 기존 지식과 대조하여 보강점(Patches)이나 충돌 여부를 먼저 도출.
+  2. *생성 단계 (Generate Phase)*: 분석된 패치 목록을 토대로 실제 위키 노트를 갱신 또는 신규 빌드.
+- **Codex 스킬 통합**: 로컬 CLI 에이전트 환경에서 `llm-wiki-maintainer` 와 같은 커스텀 Codex 스킬을 작성해 인제스트 및 린트 검증 과정을 자동화함.
+
 ## 예시
 
 - **개인 연구 위키**: `AGENTS.md` + `purpose.md` + `index/log` + 소스 요약
@@ -170,6 +180,9 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
 
 ### 에이전트 볼트 연동 및 설치
 - **스킬 디렉토리 통합**: `kepano/obsidian-skills` 저장소를 클론하여 에이전트의 로컬 스킬 디렉토리에 통합하면, Claude Code가 볼트 내에서 임의 규격으로 작업해 구조를 망가뜨리는 문제를 방지할 수 있음.
+
+### llm-wiki-maintainer 스킬 설정 예시
+- `purpose.md` 의 전역 선언과 결합하여, `/ingest` 및 `/lint` 등의 전용 셸 래퍼(Wrapper) 명령어로 위키 린터를 즉시 가동하고 세션을 정제함.
 
 ## 충돌
 - **에이전트의 마크다운 준수 신뢰 vs 기계적 문법 오류**:

@@ -122,6 +122,14 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
 - 독자적 해자는 이제 제약/실행/검증 인프라에서 기업 고유의 L2. 컨텍스트(Context) 및 L5. 라이프사이클(Lifecycle, Evals) 영역으로 이동한다.
 - 개인용 PC의 오염/안전 리스크 격리를 위해 저전력, 상시 기동이 가능한 라즈베리 파이 4(RPi 4) 환경을 하네스 인프라로 채택. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
 - 에이전트 자율성에 따른 잘못된 연쇄 결정(비정상적 무한 루프 등)을 억제하기 위해 Obsidian 지식 베이스 및 CLAUDE.md를 활용해 세션 컨텍스트를 제한하고 장기 작업을 조율. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
+- 장기 실행 에이전트의 지속성(Durability)은 모델의 지능이 아닌 Temporal과 같은 외부 durable execution 플랫폼 백본을 통한 엔지니어링의 영역이다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
+- 에이전트 제어권을 잃지 않기 위해 실제 상태(Real state)는 Git 리포지토리와 물리적인 정형 상태 파일(체크리스트, 의사결정 로그) 형태로 컨텍스트 윈도우 바깥에 보존되어야 한다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
+- 에이전트가 예산 한도를 초과해 요금을 폭주시키지 않도록 사이클 실행 전 비용 가버너(Budget Governor)를 통해 예산 잔액을 검증해야 하며, Fareed Khan의 'lra' 패키지 실무 미션에서는 400달러 ceiling 중 178.60달러만을 사용하는 비용 가버너를 적용했다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
+- Terminal Bench 2.0 성능 격차: 모델 가중치는 그대로 두고 하네스 인프라(오케스트레이션 루프, 컨텍스트 관리, 검증 미들웨어 등)만 튜닝하여 점수를 52.8%에서 66.5%로 (+13.7포인트) 향상시켰으며, 메타 하네스로 최적화 시 76.4%를 달성함.
+- Vercel SQL 에이전트 도구 축소: 15개 이상의 마이크로 툴 중 80%를 제거하고 bash execution 1개만 남겼을 때 성공률이 80%에서 100%로 상승하고, 속도는 3.5배 빨라졌으며 토큰은 37% 절감됨.
+- 연쇄 실패의 수학 (Step Reliability): 개별 도구 호출의 신뢰도가 99%여도 10단계에서 90.4%, 50단계에 다다르면 최종 성공률이 60.5%로 수렴하여 하네스의 에러 복원력이 필수가 됨.
+- Claude Code 유출 규모: 2026년 3월 유출본 기준 1,906개 파일, 513,000줄(51.3만 줄)의 TypeScript 코드로 구성되어 있었으며, 모델 가중치 없이 오직 주변 인프라(Harness)로만 경쟁력을 형성함.
+- 자가 검증 루프(Verification Loops): 에이전트에게 자체 테스트 팩을 수행하고 실패 결과를 피드백하여 교정할 기회를 주면 최종 아웃풋 품질이 2~3배 상승함 (Boris Cherny 실무 검증).
 
 ## 상세
 
@@ -207,6 +215,22 @@ Agent Harness는 stateless LLM을 multi-step task를 수행하는 agent로 바�
   - **Claude Code**: 컨텍스트 관리가 직관적이며, 로컬 Obsidian 볼트 연동과 CLAUDE.md 스킬 제어 적합.
   - **OpenClaw / Hermes**: 터미널/파일시스템/메시징 권한 오케스트레이션 수행. Hermes가 상대적으로 더 안정적인 기동과 구성을 보여줌.
 
+### Temporal 기반 Durable Execution 백본
+일주일 이상 지속 기동되는 장기 실행 에이전트를 안정적으로 구축하려면, 에이전트 제어 루프를 Temporal 백본으로 설계하여 지속성 실행을 실현해야 합니다.
+- **워크플로우와 액티비티 격리**: 순수 비즈니스 상태 전이만을 처리하고 비결정론적 행위를 배제한 '워크플로우(Workflow)'와, 실제 파일 쓰기나 모델 API 호출 등의 불확실성을 담당하는 '액티비티(Activity)'로 코드를 격리합니다. 워크플로우의 실행 이력은 저널링(Journaling)되어 크래시 발생 시 리플레이(Replay)를 통해 100% 이전 메모리 상태로 자동 복원됩니다.
+- **지속성 있는 대기 (Durable Sleep)**: 태스크가 없거나 인간의 승인을 기다려야 하는 대기 시 분산 타이머를 작동시켜 프로세스 리소스를 0으로 유지하면서도, 가상 서버가 재부팅되어도 정확한 기상 시간을 기억해 복귀합니다.
+- **신규 실행 계속 (Continue-As-New)**: 수만 건의 이벤트 로그가 한 파일에 쌓여 메모리가 터지는 것을 막기 위해, 주기적으로 중간 요약본만 쥔 채 완전히 새 워크플로우로 리기동 (`continue_as_new`)합니다.
+- **클레임 체크 코덱 (Claim-Check Codec)**: 거대한 파일 페이로드나 상세 실행 로그는 외부 오브젝트 스토리지에 저장하고, 워크플로우 이벤트 저장소에는 영수증(조회용 키값)만 기록하여 DB 붕괴를 예방합니다.
+- **사가(Saga) 패턴**: 에이전트 작업 실패 시, 이전에 성공했던 이메일 발송 등 외부 쓰기 작업을 롤백하거나 취소하기 위해 보상 트랜잭션(Compensating Transactions)을 자동으로 실행하는 사가 엔진을 장착합니다.
+
+### 1. 하네스 인프라의 파괴력 입증 지표
+- **LangChain Terminal Bench 2.0 실험**: 모델의 성능 개량 없이 오케스트레이션, 검증 레이어, 예산 통제를 담당하는 하네스 튜닝만으로 리더보드 순위가 30위 밖(52.8%)에서 Top 5(66.5%)로 껑충 뛰어올랐다.
+- **Vercel SQL 에이전트의 툴 다이어트**: 자잘한 도구를 늘리는 것은 모델의 추론 검색 공간을 늘려 오작동을 야기한다. 툴의 80%를 도려내고 범용 bash 툴로 대체하여 성공률 100%와 3.5배 속도 향상을 이루어 냈다.
+- **Claude Code 51만 줄 TypeScript**: 2026년 3월 유출본 분석 결과, 에이전트의 압도적 프로덕션 성능은 모델 가중치가 아니라 51.3만 줄에 달하는 정교한 하네스 인프라(상태 제어, 린터 통합, git diff 추적 등)에서 기인한다.
+
+### 2. 컨텍스트의 감쇠와 Lost in the Middle
+Chroma 및 Stanford 대학의 연구에 따르면, 컨텍스트가 길어질수록 윈도우 중간에 위치한 정보 활용 신뢰도가 30% 이상 붕괴하는 현상(Context Rot)이 규명되었다. 하네스는 이를 방어하기 위해 JIT 검색, sliding-window compaction, position-aware context injection을 강제해야 한다.
+
 ## 예시
 
 - coding agent: `AGENTS.md`를 읽고, 필요한 파일만 찾고, 테스트를 돌리고, 실패 시 다시 수정하는 loop 전체가 harness다.
@@ -259,6 +283,63 @@ while not budgets.exhausted():
 ```bash
 sudo apt update && sudo apt upgrade -y
 # 각 하네스 도구 CLI 표준 curl 설치 수행
+```
+
+### LRA (Long Running Agents) 패키지 CLI 기동 예제
+
+```bash
+# 설치 및 환경 정보 출력
+uv sync  
+uv run lra version  
+uv run lra config
+  
+# 비용이 들지 않는 stub 모델을 활용해 로컬 샌드박스에서 태스크 실행
+uv run lra mission --task "hello를 출력하는 hello.py와 이에 대한 테스트 코드를 작성해라" \
+                   --workdir .lra/workspaces/demo
+```
+
+### ChecklistItem Pydantic 스키마 정의
+
+```python
+class ChecklistItem(BaseModel):  
+    id: str  
+    description: str  
+    status: Literal["todo", "in_progress", "blocked", "done"] = "todo"
+    verified_by: list[str] = Field(default_factory=list)  # 감사 추적용 검증기 ID
+    depends_on: list[str] = Field(default_factory=list)   # 의존하는 타 항목 ID
+    attempts: int = 0                                     # 시도 횟수
+    notes: str = ""
+    schema_version: int = 1  
+```
+
+- **Canonical Agentic Loop 의사코드**:
+```python
+budgets = Budgets(step=25, time=120, tokens=8000, cost=0.50)
+context = build_initial_context()
+permissions = load_permission_matrix()
+
+while not budgets.exhausted():
+    response = model.generate(context, tools=typed_tool_schemas)
+    if response.finish_reason == "stop":
+        break
+    if response.tool_calls:
+        for tool_call in response.tool_calls:
+            if not permissions.is_allowed(tool_call):
+                observation = "Permission denied: " + tool_call.name
+            else:
+                if permissions.risk(tool_call) == "external_write":
+                    approval = request_human_approval(tool_call.draft)
+                    if not approval:
+                        observation = "Human rejected: " + tool_call.name
+                    else:
+                        observation = execute_tool(tool_call)
+                else:
+                    observation = execute_tool(tool_call)
+            context.append(observation)
+        if context.token_count() > budgets.token_per_turn:
+            context = compact_context(context, preserve_approvals=True)
+    else:
+        break
 ```
 
 ## 충돌
