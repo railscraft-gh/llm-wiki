@@ -20165,3 +20165,26 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-10 09:08:06] 배포 시작
 [2026-07-10 09:08:06] wiki 동기화 완료
 [2026-07-10 09:08:07] 출처 섹션 제거 완료
+[v4 8c89fecc] Auto-deploy: sync wiki content 2026-07-10 09:08
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 37 files changed, 2427 insertions(+), 1287 deletions(-)
+ create mode 100644 content/TurboQuant.md
+ create mode 100644 "content/\353\243\250\355\224\204 \353\224\224\354\236\220\354\235\270 (Loop Design).md"
+ create mode 100644 "content/\354\213\234\353\213\210\354\226\264 \352\270\260\354\210\240 \354\235\270\355\204\260\353\267\260 \354\206\214\355\206\265 \355\224\204\353\240\210\354\236\204\354\233\214\355\201\254.md"
+[2026-07-10 09:08:10] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-10 09:08:10] symlink 복원 완료
+---
+[2026-07-10 09:08:10] 배포 시작
+[2026-07-10 09:08:10] wiki 동기화 완료
+[2026-07-10 09:08:10] 출처 섹션 제거 완료
