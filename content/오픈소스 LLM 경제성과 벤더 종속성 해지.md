@@ -90,6 +90,10 @@ updated: 2026-07-10
 - **NVIDIA NIM 모델 카탈로그**: build.nvidia.com에서 제공되는 100여 개 모델(Kimi-k2.6, MiniMax-abab6.5, GLM-4-9B, DeepSeek-V3 등)은 OpenAI와 호환되는 REST API 규격을 지원한다. 기존 OpenAI API용 스크립트나 에이전트 도구 설정의 API 베이스 주소와 API 키, 모델 이름만 변경하면 추가적인 어댑터 개발 없이 동작을 유지할 수 있다.
 - **무료 테스트 혜택 및 한계**: 계정 최초 생성 시 1,000점의 API 크레딧을 부여받으며, 간단한 미션을 수행하면 최대 5,000점까지 연장 사용이 가능하다. 결제 카드를 등록하지 않아도 분당 최대 40회 호출(RPM)이 지원되어, 개인용 백그라운드 코딩 어시스턴트나 RAG 실험에 충분히 사용 가능하다. (출처: NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md)
 
+### 4-1. NVIDIA NIM의 OpenAI 호환 규격 및 무료 크레딧 구조
+- **NVIDIA NIM 모델 카탈로그**: build.nvidia.com에서 제공되는 100여 개 모델(Kimi-k2.6, MiniMax-abab6.5, GLM-4-9B, DeepSeek-V3 등)은 OpenAI와 호환되는 REST API 규격을 지원한다. 기존 OpenAI API용 스크립트나 에이전트 도구 설정의 API 베이스 주소와 API 키, 모델 이름만 변경하면 추가적인 어댑터 개발 없이 동작을 유지할 수 있다.
+- **무료 테스트 혜택 및 한계**: 계정 최초 생성 시 1,000점의 API 크레딧을 부여받으며, 간단한 미션을 수행하면 최대 5,000점까지 연장 사용이 가능하다. 결제 카드를 등록하지 않아도 분당 최대 40회 호출(RPM)이 지원되어, 개인용 백그라운드 코딩 어시스턴트나 RAG 실험에 충분히 사용 가능하다. (출처: NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md)
+
 ## 예시
 
 ### AI 예산 탕진 사례 (Uber)
@@ -124,8 +128,26 @@ const payload = {
 ```
 OpenAI SDK를 사용하는 클라이언트 객체에서 `baseURL`을 `https://integrate.api.nvidia.com/v1`으로 수정하여 활용할 수 있다. (출처: NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md)
 
-## 충돌
+### Kimi-k2.6 모델에 대한 OpenAI 규격 API 페이로드 예시
+```javascript
+// moonshotai/kimi-k2.6 호출용 payload 예시
+const payload = {
+  "model": "moonshotai/kimi-k2.6",
+  "messages": [
+    {
+      "role": "user",
+      "content": "오픈소스 LLM 경제성 확보 전략에 대해 설명해줘."
+    }
+  ],
+  "max_tokens": 16384,
+  "temperature": 1.00,
+  "top_p": 1.00,
+  "stream": true
+};
+```
+OpenAI SDK를 사용하는 클라이언트 객체에서 `baseURL`을 `https://integrate.api.nvidia.com/v1`으로 수정하여 활용할 수 있다. (출처: NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md)
 
+## 충돌
 ## 관련 노트
 - [[AI 겨울과 경제적 조정]] : 빅테크의 과도한 CAPEX 투자 거품과 일자리 조정, 그리고 모델 다운그레이드가 맞물리는 거시 환경을 다룬다.
 - [[Vibe Coding과 Agentic Engineering]]

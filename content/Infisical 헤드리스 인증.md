@@ -48,6 +48,9 @@ Service Token은 environment/path scope와 만료를 지정할 수 있지만, 20
 ### SSH 서버 자격증명 파일 권한 제한
 - **보안 격리**: `/etc/infisical/auth.env` 파일을 생성하고 root 권한 소유자와 소유 그룹으로만 제한(chmod 600)하여 다른 유저가 인증 토큰 및 Client Secret을 탈취하지 못하게 차단함.
 
+### SSH 서버 자격증명 파일 권한 제한
+- **보안 격리**: `/etc/infisical/auth.env` 파일을 생성하고 root 권한 소유자와 소유 그룹으로만 제한(chmod 600)하여 다른 유저가 인증 토큰 및 Client Secret을 탈취하지 못하게 차단함.
+
 ## 예시
 
 1. Organization에서 `prod-api-server` Machine Identity를 만든다.
@@ -55,6 +58,36 @@ Service Token은 environment/path scope와 만료를 지정할 수 있지만, 20
 3. 서버에 `/etc/infisical/auth.env`를 만들고 root 소유, `600` 권한으로 제한한다.
 4. systemd service의 `EnvironmentFile`에서 값을 읽어 `infisical run --env=prod -- node dist/main.js`를 실행한다.
 5. Client Secret 교체 주기와 폐기 절차를 `[[API Key 관리 원칙]]`의 사고 대응 절차와 연결한다.
+
+### 실무 설정 스크립트 및 systemd 구성
+- **인증 파일 및 권한 설정**:
+  ```bash
+  sudo mkdir -p /etc/infisical
+  sudo tee /etc/infisical/auth.env > /dev/null <<EOF
+  INFISICAL_UNIVERSAL_AUTH_CLIENT_ID=your-client-id
+  INFISICAL_UNIVERSAL_AUTH_CLIENT_SECRET=your-client-secret
+  EOF
+  
+  sudo chmod 600 /etc/infisical/auth.env
+  sudo chown root:root /etc/infisical/auth.env
+  ```
+- **systemd 서비스 연동 (`/etc/systemd/system/my-app.service`)**:
+  ```ini
+  [Unit]
+  Description=My App with Infisical
+  After=network.target
+  
+  [Service]
+  Type=simple
+  User=app
+  WorkingDirectory=/var/www/my-app
+  EnvironmentFile=/etc/infisical/auth.env
+  ExecStart=/usr/local/bin/infisical run --env=prod -- node dist/main.js
+  Restart=always
+  
+  [Install]
+  WantedBy=multi-user.target
+  ```
 
 ### 실무 설정 스크립트 및 systemd 구성
 - **인증 파일 및 권한 설정**:

@@ -59,6 +59,10 @@ rubocop -P       # 병렬 실행
 - **버전 및 생태계 데이터**: v1.85.0 최신 버전(2026-02-26 릴리스) 기준으로 누적 다운로드 6억 4천만 회를 돌파했다. 개발을 주도하는 Bozhidar Batsov와 Jonas Arvidsson 등의 커뮤니티 핵심 기여자를 필두로 강력한 규칙 일치 생태계를 유지하고 있다.
 - **병렬 가속 (Parallel Execution)**: 대형 모놀리스 Ruby 프로젝트에서 루보캅 검출 속도를 높이기 위해, CLI 실행 시 `-P` 또는 `--parallel` 플래그를 추가한다. 이는 로컬 환경 및 CI 가상 머신의 다중 스레드 하드웨어 대역폭을 모두 활용하여 분석 병목을 해소한다. (출처: RuboCop - Ruby 정적 코드 분석기 완벽 정리.md)
 
+### 4. RuboCop 에코시스템 지표 및 병렬 처리 최적화
+- **버전 및 생태계 데이터**: v1.85.0 최신 버전(2026-02-26 릴리스) 기준으로 누적 다운로드 6억 4천만 회를 돌파했다. 개발을 주도하는 Bozhidar Batsov와 Jonas Arvidsson 등의 커뮤니티 핵심 기여자를 필두로 강력한 규칙 일치 생태계를 유지하고 있다.
+- **병렬 가속 (Parallel Execution)**: 대형 모놀리스 Ruby 프로젝트에서 루보캅 검출 속도를 높이기 위해, CLI 실행 시 `-P` 또는 `--parallel` 플래그를 추가한다. 이는 로컬 환경 및 CI 가상 머신의 다중 스레드 하드웨어 대역폭을 모두 활용하여 분석 병목을 해소한다. (출처: RuboCop - Ruby 정적 코드 분석기 완벽 정리.md)
+
 ## 예시
 
 Rails 프로젝트의 `.rubocop.yml` 구성:
@@ -83,6 +87,19 @@ GitHub Actions 통합:
 - name: RuboCop
   run: bundle exec rubocop --parallel
 ```
+
+### rubocop 병렬 가속 및 자동 수정 명령어 패턴
+```bash
+# 1. 멀티 코어로 루보캅 정적 검사 실행
+bundle exec rubocop --parallel
+
+# 2. 안전한 오펜스(Safe offenses)만 자동 포맷팅
+bundle exec rubocop -a --parallel
+
+# 3. 비안전 항목을 포함한 전수 자동 정정 실행
+bundle exec rubocop -A --parallel
+```
+(출처: RuboCop - Ruby 정적 코드 분석기 완벽 정리.md)
 
 ### rubocop 병렬 가속 및 자동 수정 명령어 패턴
 ```bash

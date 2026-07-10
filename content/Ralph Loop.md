@@ -46,10 +46,33 @@ Ralph Loop는 [[병렬 에이전트 세션 운영]]의 자동화된 변형으로
 - **50% 한계선**: 코딩 에이전트와의 장기 대화에서 컨텍스트 소모율이 50%가 넘어가면, 에이전트의 이전 기억 왜곡이나 툴 호출 정합성 붕괴(Context rot)가 지수함수적으로 증가한다.
 - **Headless 세션 교체**: Ralph Loop는 이 문제를 해결하기 위해 오케스트레이터 세션을 극도로 가볍게 유지(대화 사용량 10% 내외)하고, 구현에 투입되는 `claude -p` headless 세션을 매 Phase마다 새롭게 리스폰(respawn)한다. 각 Phase는 TDD 테스트 파일, 파일 범위, 실행 명령어를 명확히 제한받는다. (출처: Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md)
 
+### 4-2. 컨텍스트 로트(Context Rot) 예방을 위한 50% 분리 규칙
+- **50% 한계선**: 코딩 에이전트와의 장기 대화에서 컨텍스트 소모율이 50%가 넘어가면, 에이전트의 이전 기억 왜곡이나 툴 호출 정합성 붕괴(Context rot)가 지수함수적으로 증가한다.
+- **Headless 세션 교체**: Ralph Loop는 이 문제를 해결하기 위해 오케스트레이터 세션을 극도로 가볍게 유지(대화 사용량 10% 내외)하고, 구현에 투입되는 `claude -p` headless 세션을 매 Phase마다 새롭게 리스폰(respawn)한다. 각 Phase는 TDD 테스트 파일, 파일 범위, 실행 명령어를 명확히 제한받는다. (출처: Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md)
+
 ## 예시
 
 - greenfield 앱: GStack으로 제품 스펙을 좁힘 → GSD로 10개 이상의 phase로 분할 → Ralph Loop가 phase별 headless Claude Code 세션을 실행 → 각 세션이 테스트 작성, 구현, 검증 결과를 남김.
 - brownfield 기능 추가: 전체 loop 대신 GStack으로 범위만 좁히고, SuperPower나 기존 [[Plan Mode 기반 AI 작업]]으로 한두 phase만 실행한다.
+
+### 16개 Phase 프로젝트에 대한 Ralph Loop 실행 로그 요약
+```text
+[INFO] Starting Spectrum Development flow...
+[GStack] Speccing complete. Created 16 Phase blocks.
+[GSD] Initializing Phase queue. Context buffer clear (0%).
+[Ralph Loop] Dispatching Phase 1: setup_tdd_harness
+   └──► Spawned headless Claude Code. Context: 5% (Fresh)
+   └──► Result: PASS. Codified specs created.
+[Ralph Loop] Dispatching Phase 2: modular_auth_module
+   └──► Spawned headless Claude Code. Context: 8% (Fresh)
+   └──► Result: PASS. Auth logic implemented under TDD.
+...
+[Ralph Loop] Dispatching Phase 16: final_e2e_verification
+   └──► Spawned headless Claude Code. Context: 12% (Fresh)
+   └──► Result: PASS.
+[SUCCESS] Overnight run completed. 100+ headless sessions created. 16/16 queues done. p99 Context: 10%.
+```
+(출처: Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md)
 
 ### 16개 Phase 프로젝트에 대한 Ralph Loop 실행 로그 요약
 ```text

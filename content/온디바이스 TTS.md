@@ -52,11 +52,26 @@ Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델
 - **성능 (RTF 0.15)**: 1초 분량의 음성을 150ms 만에 생성하는 속도를 보이며, CPU 환경에서도 1.5초의 최소 대기 시간(Latency) 예산을 충족한다.
 - **메모리 및 배포**: ONNX 포맷의 경량 웨이트 변환을 지원하여 Raspberry Pi 5 및 Apple Silicon 로컬 환경에서 클라우드 왕복 네트워크 지연과 character 요금 없이 24/7 구동할 수 있다.
 
+### Supertonic 3의 핵심 아키텍처와 성능 지표
+
+Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델로, 다음과 같은 혁신적 기술들을 특징으로 한다:
+
+- **Flow-matching Latent Diffusion over Autoencoder**: 텍스트 인코더가 생성한 표현을 오토인코더 Latent 공간 상에서 흐름 매칭 잠재 확산을 통해 고음질 파형으로 복원한다.
+- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 임베딩 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
+- **Noisy Labels Self-Purification**: 데이터셋 노이즈 자가 정제 필터링 기술을 활용해 소량의 데이터 및 저품질 녹음 데이터 환경에서도 깨끗한 고품질 코퍼스를 추출하여 학습했다.
+- **라이선스**: 프로젝트는 오픈소스로 배포되며, 상업적 사용 권리를 규정하는 OpenRAIL-M 라이선스를 따른다.
+
+### 로컬 엣지 배포 조건
+- **성능 (RTF 0.15)**: 1초 분량의 음성을 150ms 만에 생성하는 속도를 보이며, CPU 환경에서도 1.5초의 최소 대기 시간(Latency) 예산을 충족한다.
+- **메모리 및 배포**: ONNX 포맷의 경량 웨이트 변환을 지원하여 Raspberry Pi 5 및 Apple Silicon 로컬 환경에서 클라우드 왕복 네트워크 지연과 character 요금 없이 24/7 구동할 수 있다.
+
 ## 예시
 
 - accessibility reader: 민감한 문서를 외부 API 없이 기기에서 바로 읽는다.
 - 사내 도구: character billing 없이 반복적인 TTS를 붙인다.
 - offline 앱: e-reader나 현장용 앱에서 airplane mode로 음성을 제공한다.
+
+- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 워크플로우.
 
 - **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 워크플로우.
 

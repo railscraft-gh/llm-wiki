@@ -182,6 +182,18 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 9. **Antigravity**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
 10. **Microsoft Clarity**: 실제 유저 행동 데이터(세션 녹화, 히트맵) 기반 디자인 보정 피드백 루프 가동.
 
+### 리서치-디자인-개발 통합 10대 AI 도구 체인
+1. **Claude**: 사전 리서치, 기능 추출 논의 및 토론 파트너.
+2. **Notion AI**: 회의록 요약, 아이디어 구조화 및 기획서 문서화.
+3. **ChatGPT + FigJam 커넥터**: 도출된 기획을 기반으로 사용자 흐름도(User Flow) 및 정보 구조(IA) 자동 변환.
+4. **Flowstep**: 초기 UI 아웃라인 및 Figma Auto Layout 가속화.
+5. **Figma AI**: 레이어 정리(Rename), 텍스트 리라이팅, 번역, 이미지 생성 및 코드 전송.
+6. **Gemini**: 무제한 무료 크레딧을 활용한 로고 시안 및 그래픽 에셋 비유 비주얼 생성.
+7. **Jitter AI**: 로딩 애니메이션 및 스플래시 화면용 모션 디자인 신속 제작.
+8. **Figma Make**: 임시 연결 웹 주소(`ngbook.figma.site`)를 이용한 간이 인터랙티브 프로토타이핑.
+9. **Antigravity**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
+10. **Microsoft Clarity**: 실제 유저 행동 데이터(세션 녹화, 히트맵) 기반 디자인 보정 피드백 루프 가동.
+
 ## 예시
 
 ### 1. 캠퍼스 도서 직거래/대여 플랫폼 구축 실무 예시
@@ -201,6 +213,11 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 
 ## 예시
 - **5시간 아티클 제작 워크플로우 벤치마크**: Perplexity 리서치(30분) -> Claude 구조 초안(20분) -> 직접 집필(3시간) -> Recraft 비주얼 생성(10분) -> LinkedIn 소셜 카피 재가공(15분)을 거쳐 정밀 편집 및 최종 릴리스 완료.
+
+### 캠퍼스 도서 거래 웹앱 개발 실무 런타임
+- **IA & User Flow**: FigJam 내 ChatGPT 커넥터 연동으로 반나절 만에 IA 조감.
+- **Clickable Prototype**: Figma Make 프로토타입 배포를 통해 사용자 2명 대상 핵심 동선 즉각 검증.
+- **Telemetry Setup**: Microsoft Clarity `Settings -> Setup -> Manual Installation` 메뉴에서 추적 스크립트를 복사하여 프로젝트 `<head>`에 붙여넣음으로써 실시간 행동 수집 시작.
 
 ### 캠퍼스 도서 거래 웹앱 개발 실무 런타임
 - **IA & User Flow**: FigJam 내 ChatGPT 커넥터 연동으로 반나절 만에 IA 조감.

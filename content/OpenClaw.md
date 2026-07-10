@@ -84,6 +84,33 @@ OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시�
 - **Cisco 공급망 분석**: ClawHub 마켓플레이스에 업로드된 44,000+개 Skill 중 약 17%가 잠재적 악성 코드를 담고 있어 공급망 보안 리스크가 매우 크다.
 - **배포 가이드라인**: 반드시 localhost 루프백으로 바인딩하며, `openclaw security audit --deep` 명령어 기반의 정기 감사, 격리된 가상 환경(NVIDIA NemoClaw 등) 또는 전용 Mac Mini M4 하드웨어(대기전력 4~8W) 단독 배포를 강력 권고한다.
 
+### 실무 환경 리소스 및 제약 (Hetzner VM 40GB)
+- **디스크 공간**: 기본 self-hosted 설치 시 약 2.1GB의 디스크를 사용하므로, 40GB VPS처럼 린(lean)한 환경에서는 타 서비스(n8n, 봇 등)와의 자원 분배가 필요함.
+- **컨텍스트 건망증 (Clawd's Amnesia)**: OpenClaw는 잦은 리셋 시 이전 맥락을 기억하지 못하고 처음부터 다시 설정해야 하는 컨텍스트 로스 현상이 발생함.
+
+### OpenClaw 아키텍처와 세 계층 확장 시스템
+
+OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시적으로 거부하고, 단일 TypeScript Gateway 프로세스(Port 18789)로 WebSocket 요청을 관리하는 심플한 설계를 지향한다.
+
+- **Gateway**: WebSocket 연결, 채널 메시지 수신, 세션 라우팅, 도구 실행을 하나의 프로세스에서 전부 처리한다.
+- **세 계층 확장 시스템**:
+  - **Tools**: 파일 읽기/쓰기, 쉘 명령어 실행, 브라우저 스크래핑 등 저수준의 동작을 수행하는 TypeScript 함수들이다.
+  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. LLM이 마크다운 문서를 직접 해석하여 실행한다.
+  - **Plugins**: npm 패키지 형태로 복잡한 전역 상태, 외부 종속성, 무거운 로직을 처리하는 공유 라이브러리다.
+- **메모리(Memory) 구조**: 복잡한 Vector DB나 임베딩 없이, 로컬 Plain Text 마크다운 파일로만 대화 기록을 관리한다 (`~/.openclaw/workspace/memory/YYYY-MM-DD.md` 및 장기 기억인 `MEMORY.md` 활용).
+- **설정 파일**: 에이전트 성격과 경계를 정의하는 `SOUL.md`(버전 제어 권장)와 대화 흐름상 장기 맥락을 수집하는 `MEMORY.md` 두 가지로 핵심 성격과 지식을 구분한다.
+
+### 생태계 및 학술 연구 성과
+- **OpenClaw-RL**: 프린스턴 연구팀의 RL 프레임워크(arXiv 2603.10165)로, Hindsight-Guided On-Policy Distillation을 적용해 대화 8~36회만에 에이전트 개인화 점수를 0.17에서 0.76으로 끌어올렸다.
+- **Lobster**: 복잡한 에이전트 파이프라인 매크로 작성을 위해 제작된 공식 로컬 지향 워크플로우 쉘 스크립트 언어다.
+- **사회적 행동 연구**: Moltbook(에이전트 전용 네트워크)에서 인간 개입 없이 AI 에이전트끼리 자치(emergent governance)를 발전시켰을 때, 댓글 Gini 계수가 인간 네트워크와 유사한 0.889에 도달함이 관측되었다 (arXiv 2602.18832).
+
+### 보안 취약점과 권장 가이드라인
+- **보안 검증 (arXiv 2603.10387)**: 47가지 적대적 공격 시나리오(adversarial scenarios) 테스트 결과 기본 방어율이 17%에 불과했다. 즉, 83%의 공격이 sandbox 외부로 우회할 수 있었다.
+- **CVE-2026-25253 (ClawJacked, CVSS 8.8)**: 외부 웹사이트가 로컬 WebSocket 스트림을 탈취해 시스템 원격 코드 실행(RCE)이 가능한 취약점이 존재했으나 v2026.2.25 버전에서 수정되었다. 그럼에도 SecurityScorecard 조사 기준 여전히 노출된 인스턴스 4만 개 중 35.4%가 취약 가능성 상태에 놓여 있다.
+- **Cisco 공급망 분석**: ClawHub 마켓플레이스에 업로드된 44,000+개 Skill 중 약 17%가 잠재적 악성 코드를 담고 있어 공급망 보안 리스크가 매우 크다.
+- **배포 가이드라인**: 반드시 localhost 루프백으로 바인딩하며, `openclaw security audit --deep` 명령어 기반의 정기 감사, 격리된 가상 환경(NVIDIA NemoClaw 등) 또는 전용 Mac Mini M4 하드웨어(대기전력 4~8W) 단독 배포를 강력 권고한다.
+
 ## 예시
 
 - 아침 7시에 unread email, calendar conflict, GitHub PR, 날씨를 확인해 Telegram으로 요약을 보낸다.
@@ -111,6 +138,16 @@ OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시�
 - 개인 assistant 실험인지, 팀/조직 운영용 runtime인지에 따라 review gate를 어떻게 둘 것인가.
 
 이 질문에 답하지 못한 상태라면, OpenClaw는 "재미있는 데모"를 넘어 "과한 권한을 가진 자동화"가 될 수 있다.
+
+### 커뮤니티 운용 동향 (Reddit 분석)
+- **Hermes 마이그레이션**: 커뮤니티 분석 결과 약 25%의 사용자가 더 안정적이고 메모리 학습이 뛰어난 Hermes Agent로 마이그레이션함.
+- **하이브리드 병렬 운용**: 약 25%의 사용자는 OpenClaw(인프라 연동 및 라우팅 전담)와 Hermes Agent(실행 및 메모리 관리 전담)를 한 서버에 띄워 병렬 운영하는 하이브리드 패턴을 채택함.
+
+- **설치 및 대몬 기동**:
+  ```bash
+  npm install -g openclaw@latest && openclaw onboard --install-daemon
+  ```
+  위 명령어로 8MB 크기의 경량 코어를 설치하고, macOS(launchd) 또는 Linux(systemd) 대몬으로 등록하여 포트 18789에서 상시 가동한다.
 
 ### 커뮤니티 운용 동향 (Reddit 분석)
 - **Hermes 마이그레이션**: 커뮤니티 분석 결과 약 25%의 사용자가 더 안정적이고 메모리 학습이 뛰어난 Hermes Agent로 마이그레이션함.
