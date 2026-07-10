@@ -85,6 +85,9 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - n8n은 187k GitHub Stars의 자동화 플랫폼으로 AI 에이전트의 실제 업무 프로세스 연결에 사용된다.
 - Qdrant(31.2k Stars)와 Outline(38.5k Stars)은 각각 장기 기억 저장소와 지식 베이스를 담당하여 AI 컨텍스트 유실 문제를 해결한다.
 - Coolify(55k Stars)와 OpenHands(73.2k+ Stars)는 각각 self-hosting 배포 관리와 엔지니어링 에이전트 런타임으로 기능한다.
+- Mem0와 같은 장기 기억 프레임워크는 LoCoMo 벤치마크 테스트에서 기존 전체 컨텍스트 로딩 대비 레이턴시 92% 감소, 토큰 사용량 93% 절감을 이뤄내며 14배의 비용 효율화를 달성했다.
+- Stagehand v3는 Chrome DevTools Protocol(CDP) 기반으로 런타임 엔진을 전면 리팩터링하여 Playwright 대비 44% 빠른 브라우징 속도를 보고했다.
+- 엔지니어링 코딩 에이전트 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), Cline(VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
 
 ## 상세
 
@@ -124,6 +127,18 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - **Coolify**: Vercel/Railway를 대체하는 self-hosting 배포 관리 도구. Docker, DB, 앱 런타임을 중앙 관리하여 AI 스택 운영을 간소화.
 - **OpenHands**: 코드베이스 분석, 버그 수정, DevOps를 자율 수행하는 장시간 실행 엔지니어링 에이전트.
 
+### 2026년 오픈소스 에이전트 툴킷의 7대 레이어 구성
+
+프로덕션 레벨 에이전트를 안정적으로 구축하고 운영하기 위한 오픈소스 스택은 7가지 책임 계층으로 표준화된다. 도구 선정 시 Latency, Audit Trail, Model Portability, Language Stack의 4대 제약 조건을 대조해야 한다.
+
+1. **Orchestration & Runtime Control**: 흐름을 제어하고 checkpointing을 관리한다. Python 생태계의 PostgresSaver 기반 **LangGraph**, 간편한 프로토타이핑 특화 **CrewAI**, Pydantic 규격을 강조하는 **Pydantic AI**, TypeScript 네이티브 환경의 **Mastra**가 핵심이다.
+2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
+3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 Model Context Protocol 표준 도구 작성이 주류를 이룬다.
+4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
+5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
+6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
+7. **Models & Inference**: PagedAttention을 창안한 **vllm**, local quantization의 기본값인 **Ollama**, GGUF 파일 포맷을 주도한 C++ 기반 **llama.cpp**, 컨텍스트 접두사 캐싱 및 스키마 강제 출력을 지원하는 **SGLang**이 인프라 하단을 지탱한다.
+
 ## 예시
 
 - local assistant 실험: Ollama + Open WebUI
@@ -142,6 +157,12 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - **Coolify**: `Ubuntu 서버에 Coolify를 설치하고 기본 초기 설정까지 마무리해 줘`
 - **OpenHands**: `OpenHands를 Docker로 설치하고 기본 런타임 환경 설정까지 마무리해 줘`
 
+- **오픈소스 장기 기억 모듈 설치 및 기동**:
+  ```bash
+  pip install mem0ai
+  ```
+  Mem0를 이용해 사용자의 이전 선호 데이터나 세션 정보를 로컬 또는 클라우드 DB에 분리 저장하여, Context Window 폭주로 인한 토큰 소모를 Naive full-context 방식 대비 93% 이상 기계적으로 차단하는 실무 구현.
+
 ## 충돌
 - 2026-05-26 확인: 저장소별 스타 수, 버전, 모델 스펙, 기능 범위는 변동성이 높다. 다만 local stack, workflow builder, grounded AI, terminal assistant로 작업 표면이 이동한다는 구조적 관찰은 개별 저장소 교체와 무관하게 유지된다.
 
@@ -159,4 +180,5 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [[Hermes Agent와 오픈소스 내부 도구 연동]]
 - [[2026년 오픈소스 LLM 플랫폼 비교]]
 - [[Hermes Agent]]
+- [[Agent Harness]]
 

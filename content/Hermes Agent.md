@@ -31,6 +31,7 @@ sources:
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
   - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
 status: evergreen
 tags:
   - llm
@@ -51,6 +52,8 @@ Nous Research가 2026년 3월에 개발한, 경험을 바탕으로 기술을 학
 - **멀티 플랫폼 공유**: Telegram, Discord, Slack 등 12개 채널을 연동할 수 있고 채널 간 메모리가 통합 공유된다.
 - **100% 로컬 구동**: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: `gpt-oss:20b` 모델)로 실행할 수 있다.
 - 100% 로컬 구동: Ollama 로컬 엔드포인트를 지정하여 클라우드 비용이나 API 키 없이 로컬 하드웨어(예: gpt-oss:20b 모델)로 실행할 수 있다.
+- Hermes Agent는 closed learning loop 기반의 자가 개선 메모리를 활용해, 수동 리셋 없이도 사용자의 프로젝트, 선호도, 작업 리듬을 점진적으로 학습한다. (출처: raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md)
+- OpenRouter 글로벌 랭킹에서 OpenClaw를 제치고 활발하게 사용되는 대표적인 오픈소스 AI 에이전트로 부상하였다. (출처: raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md)
 
 ## 상세
 
@@ -93,8 +96,17 @@ Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 �
 ### 8. 자가 개선 및 세부 아키텍처
 Hermes Agent는 경험을 코드로 자산화하여 영구 스킬로 등록하고 미세 패치(`patch`) 방식으로 진화하는 독자적인 자가 학습 피드백 루프를 핵심 엔진으로 지닌다. 상세 아키텍처는 [[Hermes 에이전트 자가 개선 아키텍처]]를 참조한다.
 
+### 자가 개선 및 실무 운용
+- **Closed Learning Loop**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
+- **OpenRouter 글로벌 랭킹**: 오픈소스 모델 허브인 OpenRouter 글로벌 랭킹에서 기존 OpenClaw를 제치고 가장 활발히 쓰이는 오픈소스 에이전트로 기록됨.
+
 ## 예시
+
 - 사용자로부터 "Docker를 사용해 백엔드 서비스를 배포해줘"라는 명령을 받으면, 빌드 및 배포 명령과 설정을 실행한 후 해당 성공 흐름을 내부 `skills/` 디렉토리에 하나의 기술 코드로 저장한다. 이후 유사 요청 시 이를 로드해 활용한다.
+
+### 커뮤니티 마이그레이션 비율
+- **단독 이전**: OpenClaw Reddit 커뮤니티의 25% 사용자가 Hermes Agent로 전향하였으며, 주된 이유는 더 나은 메모리와 손쉬운 셋업임.
+- **하이브리드 셋업**: 25% 사용자는 OpenClaw를 메신저/인프라 라우팅 게이트웨이로 쓰고, 실제 실행(execution) 및 메모리 관리는 Hermes Agent에게 위임하는 셋업을 취함.
 
 ## 충돌
 - **버전 미성숙에 따른 한계**: v0.2.0 기준 메모리 정확도가 완벽하지 않고 의도치 않은 기술 생성이 일어날 수 있어, 운영 중 실시간 수동 검증이 필요할 수 있다. (출처: Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko)

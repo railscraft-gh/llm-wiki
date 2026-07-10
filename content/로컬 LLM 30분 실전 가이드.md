@@ -1,84 +1,88 @@
 ---
 aliases:
-- 로컬 LLM 실전 가이드
-- 온디바이스 LLM
-- Ollama
-- TurboQuant
+  - 로컬 LLM 실전 가이드
+  - 온디바이스 LLM
+  - Ollama
+  - TurboQuant
 core: true
 created: 2026-06-12
 sources:
-- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
-- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-- raw/How to Do Hard Things When You Have Zero Motivation.md
-- raw/AI Agents. Complete Course.md
-- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-- raw/10 Things Every Investor Should Know (but most learn too late).md
-- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-- raw/Your Wandering Mind Is Not the Enemy of Focus.md
-- raw/How to write a DESIGN.md file Claude can actually use-ko.md
-- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-- raw/우리가 피그마 없이 제품을 배포하는 방법.md
-- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-- raw/Skills Alone Won’t Save You in the AI Economy.md
-- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-- "raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md"
-- "raw/로컬 AI 구동용 고사양 PC 구매는 돈값할까.md"
+  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+  - raw/How to Do Hard Things When You Have Zero Motivation.md
+  - raw/AI Agents. Complete Course.md
+  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+  - raw/10 Things Every Investor Should Know (but most learn too late).md
+  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
+  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
+  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
+  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+  - raw/Skills Alone Won’t Save You in the AI Economy.md
+  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md
+  - raw/로컬 AI 구동용 고사양 PC 구매는 돈값할까.md
+  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md
 status: evergreen
 tags:
-- llm
-- local-ai
-- coding-assistant
-- rag
-- tts
-- stt
-- mlx
-- apple-silicon
+  - llm
+  - local-ai
+  - coding-assistant
+  - rag
+  - tts
+  - stt
+  - mlx
+  - apple-silicon
+  - local-llm
+  - hardware
+  - benchmarks
 type: concept
-updated: '2026-06-22'
+updated: 2026-07-10
 ---
 
 # 로컬 LLM 30분 실전 가이드
@@ -91,6 +95,13 @@ updated: '2026-06-22'
 - **KV 캐시 메모리 벽 차단 (TurboQuant)**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
 - **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
 - **3대 실무 구현 경로**: IDE 코딩 어시스턴트(Cline), 콤팩트 문서 RAG(Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
+- Ollama 0.19 벤치마크에 따르면 int4 양자화 Qwen 구동 시 초당 1,851 토큰 프리필(Prefill)과 134 토큰 디코딩(Decode) 속도를 발휘한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
+- oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시) 설계를 통해 에이전트 구동 시 첫 토큰 생성 시간(TTFT)을 30~90초에서 1~3초로 크게 단축한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
+- PyTorch의 MPS 메모리 점유율 한계를 해소하기 위해 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0` 환경변수를 설정하면, 36GB 통합 메모리 내에서 35B 모델(20GB)과 Z-Image-Turbo(6GB)를 동시 적재할 수 있다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
+- Cline v3+ 등의 지능형 에이전트는 복잡한 시스템 프롬프트로 인해 시작 시점에 이미 25K~30K 토큰을 소비하므로, Ollama 기본 num_ctx(40K)를 안전하게 초과해 사용량 오류가 나는 것을 막기 위해 Modelfile 튜닝을 거쳐 65,536(여유가 있을 시 131,072)으로 수동 할당해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+- 오프라인 음성 비서 파이프라인에서 STT 모델로 CoreML 가속을 탑재한 WhisperKit(Whisper-large-v3-turbo, 1시간 음성을 90초 내 전사) 또는 Parakeet 기반 FluidAudio(평균 전사 지연 0.19초)를 기용하여 CPU 기반 whisper.cpp의 성능 지연을 극복한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+- Kokoro ONNX 엔진을 사용한 TTS 합성 시 마크다운 기호(*, - 등)를 만나면 루프 에러가 생기거나 기호 자체를 소리 내 읽는 오류가 발생하므로, 시스템 프롬프트 단에서 특수 마크다운 출력을 철저히 금지하는 가드레일을 둬야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+- Whisper STT는 16kHz 오디오 스펙으로 훈련되었으므로, 오프라인 음성 녹음 시 raw 입력 음파를 16kHz 모노 int16 포맷으로 변환(Downsampling)하여 전달해야 전사 환각 텍스트 현상을 피할 수 있다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
 ## 상세
 
@@ -221,9 +232,64 @@ flowchart LR
   - *Mac Studio 쇠사슬 풀링*: 4대의 기기를 풀링하여 초대형 모델을 올릴 수 있으나 대당 약 5,000달러의 초고비용이 발생하므로 조립 PC를 통한 수동 업그레이드 경로 제어 대비 비효율적이다.
   - *중고 구형 서버*: 저렴하고 메모리가 많아 보이지만, 서버용 RAM 속도가 느리고 CPU 추론에 크게 의존해 연산 속도가 기어가는 흉물이 될 수 있으므로 배제해야 한다. (출처: [로컬 AI 구동용 고사양 PC 구매는 돈값할까.md](file:///Users/railscraft/Obsidian/raw/%EB%A1%9C%EC%BB%AC%20AI%20%EA%B5%AC%EB%8F%99%EC%9A%A9%20%EA%B3%A0%EC%82%AC%EC%96%91%20PC%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EB%8F%88%EA%B0%92%ED%95%A0%EA%B9%8C.md))
 
+### M5 Max 로컬 가속 셋업 및 메모리 분할 (2026년 3월 출시)
+- **M5 Max 칩셋**: GPU 32코어 전체에 Neural Accelerator가 탑재되어, 이전 세대 대비 LLM 프롬프트 처리는 최대 4배, 이미지 생성은 8배 가속함.
+- **oMLX SSD KV 캐시 단축**: oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
+- **Ollama MLX 백엔드 속도**: Ollama 0.19 버전 이상에서 int4 Qwen 구동 시 프리필 1,851 tok/s, 디코드 134 tok/s 속도를 기록함.
+- **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
+
+### 8. 로컬 코딩 모델 컨텍스트 최적화 및 STT/TTS 음성 규격
+- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, Cline 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
+- **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
+- **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+
 ## 예시
+
 - **보안 격리 코딩**: 회사 코드 노출 우려 없이 `qwen3-coder-cline` 모델을 VS Code 로컬 백엔드로 연동하여 리팩터링 diff를 로컬 환경 내에서 안전하게 생성한다.
 - **오프라인 회의록 질의**: SQLite에 sqlite-vec을 얹어 회의록 임베딩을 저장하고, 비행기나 격리망 오프라인 환경에서 NumPy Cosine Similarity 내적으로 관련 내용을 검색한 뒤 답변을 추출한다.
+
+### Whisper.cpp 및 mlx-lm LoRA 파인튜닝 로컬 실행 명령어
+- **Whisper.cpp (오프라인 STT)**:
+  ```bash
+  brew install whisper-cpp
+  whisper-cpp -m models/ggml-large-v3.bin -f meeting.wav
+  ```
+  Metal 가속 백엔드를 활용해 1시간 분량의 녹음을 1분 미만으로 받아쓰기 완료함.
+- **mlx-lm LoRA 파인튜닝**:
+  ```bash
+  mlx_lm.lora \
+    --model mlx-community/Qwen2.5-7B-Instruct-4bit \
+    --train \
+    --data ./my_data \
+    --iters 1000 \
+    --batch-size 2
+  ```
+  M5 Max 단일 노트북 기기에서 7~9B급 소형 모델을 1~2시간 만에 사용자 도메인 지식으로 미세 조정 가능.
+
+### Cline 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
+```dockerfile
+# Modelfile — cline-tuned qwen3-coder
+FROM qwen3-coder:30b
+
+# 컨텍스트 창 크기 64K 확장
+PARAMETER num_ctx 65536
+
+# 코딩 일관성을 위한 저온도 설정
+PARAMETER temperature 0.2
+
+# 대화 턴 종결 제어 토큰
+PARAMETER stop "<|im_end|>"
+```
+이 파일을 작성한 뒤 로컬에서 아래 셸 명령어를 실행하여 빌드하고 검증한다:
+```bash
+# 커스텀 모델 생성
+ollama create qwen3-coder-cline -f ./Modelfile
+
+# 컨텍스트 크기 설정값 정상 반영 여부 자가진단
+ollama show qwen3-coder-cline --parameters | grep num_ctx
+# 예상 출력: PARAMETER num_ctx 65536
+```
+(출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
 ## 충돌
 - **지연 로딩(Lazy Loading)의 한계와 pread**: mmap을 사용한 지연 로딩이 메모리를 절약해 줄 것이라는 일반적인 오해는 MLX 런타임에서 첫 forward pass 시에 OOM으로 이어진다. 반드시 fcntl의 `F_NOCACHE` 플래그를 통한 OS 캐시 억제 및 `os.pread`로 활성 전문가 8개만 로드하는 수동 격리 적재가 수반되어야 한다.
@@ -235,4 +301,9 @@ flowchart LR
 - [[AI 세컨드 브레인]]
 - [[GStack]]
 - [[Claude Code 스킬 관리]]
+- [[oMLX]]
+- [[Claude Code 오케스트레이션]]
+- [[Agent Harness]]
+- [[RAG 아키텍처 선택]]
+- [[AI 코딩 에이전트 검증 전략]]
 

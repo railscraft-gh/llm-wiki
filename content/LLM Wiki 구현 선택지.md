@@ -48,6 +48,7 @@ sources:
   - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
   - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
   - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md
+  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
 status: evergreen
 tags:
   - llm
@@ -72,6 +73,7 @@ LLM Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키
 - 기본 설계 패러다임: Andrej Karpathy의 llm-wiki.md 구상(2026년 4월)에 기반하여, 매 질문마다 원문을 매번 다시 읽는 RAG의 토큰 낭비를 줄이고 원문을 상호 연결된 정형 위키로 사전 컴파일한 뒤 위키를 쿼리한다.
 - 코드로 굳히는 구현 (Programmatic Package): 대규모 corpus 환경에서 토큰 비용과 환각 누적을 억제하며, 입력의 재현성과 다운스트림 자동화 연동을 최적화한다.
 - 에이전트 협상 구현 (Agentic Markdown): 200개 이하 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 AGENTS.md와 CLAUDE.md 설정을 통해 에이전트를 위키 유지관리자로 작동시킨다.
+- 옵시디언 CEO Steph Ango가 공개한 `kepano/obsidian-skills`는 에이전트가 위키링크, 콜아웃, 프런트매터 등의 옵시디언 고유 마크다운 형식을 깨뜨리지 않고 작성할 수 있게 돕는 스킬 세트다. (출처: raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md)
 
 ## 상세
 
@@ -123,7 +125,17 @@ balukosuri의 오픈소스 레포(`https://github.com/balukosuri/llm-wiki-karpat
 Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작성, 마크다운 린트 규칙 정립 등)를 해소하기 위한 노코드 클라우드 대안으로 **Constella** 서비스가 존재한다.
 - **동작 방식**: 사용자가 소스(웹 문서, 기사 등)를 드롭하여 입력하면 AI가 지식 간의 연결망을 자동으로 형성하고, 사용자는 축적된 전용 지식 베이스를 상대로 자연어 질의응답을 할 수 있어 코드 한 줄 없이 카파시 지식 시스템을 구현하게 돕는다.
 
+### Steph Ango의 `kepano/obsidian-skills` 에이전트 스킬 통합
+- **배경**: AI 에이전트가 범용 마크다운 형식으로 작성 시 프런트매터 파괴, 잘못된 위키링크 대괄호 등의 오류를 유도해 볼트 구조가 손상되는 현상을 완화함.
+- **핵심 컴포넌트**:
+  - `obsidian-markdown` — 위키링크, 콜아웃, 프런트매터, 양방향 링크의 엄격한 문법 검증.
+  - `obsidian-bases` — 필터, 뷰, 타입을 제공하는 구조화 데이터 레이어.
+  - `json-canvas` — 시각적 노션 캔버스 구성요소 편집.
+  - `obsidian-cli` — 셸 커맨드 기반의 볼트 관리 파이프라인.
+  - `defuddle` — 외부 웹페이지를 수집해 광고/내비게이션 바를 제거하고 토큰 최적화 마크다운으로 변환.
+
 ## 예시
+
 - **개인 연구 위키**: `AGENTS.md` + `purpose.md` + `index/log` + 소스 요약
 - **팀 협업 위키**: Project Skill 등록 + 리뷰 전용 페이지 + 정기 Scheduled Lint 스크립트
 - **대형 기업 Corpus**: typed pipeline 패키지 빌드 + SHA-256 ID 부여 + `markdown-hero` 파서 연동
@@ -131,6 +143,9 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
 #### 로컬 위키 유지관리 명령어
 - **Ingest**: `raw/`에 raw 문서를 던진 뒤 `Ingest raw/my-document.pdf`라고 Cursor에 지시하면, AI가 읽기 ➡️ 소스요약 작성 ➡️ 관련 노터 자동 파생 ➡️ glossary 갱신 ➡️ index/log 마스터 기록의 전 과정을 자동 수행한다.
 - **Lint**: 주기적(`10회 ingest당 1회` 권장)으로 `Lint the wiki`를 지시하여 모순 지점, 대체된 구식 정보, 백링크 누락 고아 페이지를 탐지 및 복구한다.
+
+### 에이전트 볼트 연동 및 설치
+- **스킬 디렉토리 통합**: `kepano/obsidian-skills` 저장소를 클론하여 에이전트의 로컬 스킬 디렉토리에 통합하면, Claude Code가 볼트 내에서 임의 규격으로 작업해 구조를 망가뜨리는 문제를 방지할 수 있음.
 
 ## 충돌
 - **에이전트의 마크다운 준수 신뢰 vs 기계적 문법 오류**:
