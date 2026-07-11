@@ -1,5 +1,32 @@
 # LLM Wiki Log
 
+## 2026-07-11-번역
+
+### Ingest
+
+- 입력: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 생성: 없음
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 번역 가이드 및 Strict 윤문 가이드(quick-rules.md, ai-tell-taxonomy.md)를 적용하여 정밀 교정 및 검증을 완료함.
+
+### 결정 기록
+
+- 결정: 원천 자료(Raw) 생성 및 번역 완료
+- 대상: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 근거: UI 스페이싱 시스템(8px 그리드)에 관한 유용한 영문 기술 아티클을 한국어 개발자 맞춤형 자연스러운 격식체 톤으로 번역 및 윤문함.
+
 ## 2026-07-10-ingest
 
 ### Ingest
