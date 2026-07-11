@@ -1,3 +1,14 @@
+---
+type: concept
+status: evergreen
+core: false
+tags:
+  - log
+sources: []
+created: 2026-05-06
+updated: 2026-07-12
+---
+
 # LLM Wiki Log
 
 ## 2026-07-11-번역
