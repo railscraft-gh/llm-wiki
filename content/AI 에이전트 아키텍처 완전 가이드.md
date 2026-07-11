@@ -271,6 +271,6 @@ graph = builder.compile(checkpointer=memory, interrupt_before=["executor"])
 - [[AI 코딩 에이전트 검증 전략]] — 코딩 전용 에이전트의 검증 루프 설계
 - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] — 실전 프레임워크 툴킷 분석
 - [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 에이전틱 AI 엔지니어 역량과 스택 로드맵
-- [[AI 에이전트 작업 매뉴얼]]
+- [[Claude.md 운영 원칙]]
 - [[Vibe Coding과 Agentic Engineering]]
 
