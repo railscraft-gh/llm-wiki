@@ -4,7 +4,10 @@
 
 ### Ingest
 
-- 입력: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 입력:
+  - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md` (번역 및 정밀 윤문 완료)
+  - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md` (동일 영문 파일명 이미 존재하여 번역 생략)
+  - `raw/The Spacing System That Makes Every UI Look More Intentional.md`
 - 생성: 없음
 - 수정: 없음
 - index 업데이트: 완료
@@ -24,8 +27,14 @@
 ### 결정 기록
 
 - 결정: 원천 자료(Raw) 생성 및 번역 완료
-- 대상: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
-- 근거: UI 스페이싱 시스템(8px 그리드)에 관한 유용한 영문 기술 아티클을 한국어 개발자 맞춤형 자연스러운 격식체 톤으로 번역 및 윤문함.
+- 대상:
+  - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`
+  - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md`
+  - `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 근거:
+  - 'Testing 17 Agentic Loop...': 루프 엔지니어링 17가지 컴포넌트의 가치와 통계를 실증한 자료를 고품질 한국어로 번역 및 Strict 윤문함.
+  - 'Your Vault as a Shared Brain...': raw/ 에 동일 영문 파일명이 이미 존재하므로 번역 생략 규칙 준수.
+  - 'The Spacing System...': UI 스페이싱 시스템(8px 그리드) 아티클 번역 및 윤문 완료.
 
 ## 2026-07-10-ingest
 
