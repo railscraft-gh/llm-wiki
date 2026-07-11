@@ -1,3 +1,14 @@
+---
+type: concept
+status: evergreen
+core: false
+tags:
+  - index
+sources: []
+created: 2026-05-06
+updated: 2026-07-12
+---
+
 # LLM Wiki Index
 
 ## 핵심 노트
@@ -40,6 +51,19 @@
 | [[MEMORY.md 운영 원칙]] | 에이전트의 장기 세션 지식을 기록·보존하는 인덱스 템플릿과 운영 수칙을 정리한다. | evergreen | 2026-06-14 |
 | [[사양 기반 개발 (Spec Driven Development)]] | 바이브 코딩에서 탈피해 살아있는 자연어 명세서와 테스트를 중심으로 빌드하는 6단계 순환 주기를 정리한다. | evergreen | 2026-06-22 |
 | [[AI 에이전트 아키텍처 완전 가이드]] | 에이전트의 초급·중급·고급 설계 패턴, 작업 분해, 프로덕션 최적화 및 보안 가이드 | evergreen | 2026-06-22 |
+| [[로컬 LLM 30분 실전 가이드]] | 온디바이스 Ollama 환경 설정 및 3대 실무 경로(코딩, RAG, 음성비서) 실전 구현 가이드 | evergreen | 2026-06-22 |
+| [[AI 경제에서 스킬만으로는 부족하다]] | AI 시대 역량 자산 구축과 커리어 생존을 위한 자산화 전략을 정리한다. | evergreen | 2026-06-14 |
+| [[LLM 메모리 시스템 아키텍처]] | LLM 에이전트의 5대 메모리 계층 설계와 트레이드오프를 설명한다. | evergreen | 2026-06-14 |
+| [[RAG 아키텍처 선택]] | 데이터 복잡도와 인프라 제약 조건에 따라 9가지 RAG 디자인 패턴과 3대 검색 철학 중 최적의 경로를 분기하는 의사결정 프레임을 정리한다. | evergreen | 2026-06-22 |
+| [[인덱스 투자 원칙 10가지]] | 주식 투자의 10가지 장기 원칙과 피해야 할 15가지 치명적 실수를 다룬다. | evergreen | 2026-06-22 |
+| [[ETF 3종 투자 원칙]] | VOO, SCHD, QQQ를 이용한 장기 자산 배분과 배당 재투자 전략을 다룬다. | evergreen | 2026-06-14 |
+| [[에이전틱 AI 엔지니어 실무 로드맵]] | 2026년 에이전틱 AI 엔지니어의 4대 계층 10대 핵심 기술, 표준 스택 및 학습 의존 경로를 다룬다. | evergreen | 2026-06-16 |
+
+## Ingest 현황
+
+| 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
+| --- | --- | --- | --- | --- |
+| 2026-07-11 | `raw/13 Tiny Bash Scripts That Save Me Time Every Day.md`<br>`raw/Anthropic Just Shipped Three of the Five Harness Layers for Managed Agent, and The Other Two Are on You.md`<br>`raw/Apple Just Killed the App Store And UIUX Designers Are Panicking.md`<br>`raw/AI Prompt Writing. The Complete Guide for Non-Technical Users.md`<br>`raw/30 Core Agentic Engineering Concepts Every Developer Should Know.md`<br>`raw/Building a RAG Pipeline for 10M+ Documents With Near-Zero Hallucination.md`<br>`raw/Building an Agentic Quantum Computing System.md`<br>`raw/Building Claude Code with Harness Engineering.md`<br>`raw/Building a Week-Long Running Agentic System.md`<br>`raw/Concurrency, Parallelism, and Async. Three Ideas That Sound the Same But Aren’t.md`<br>`raw/Everyone Is “Learning AI”, But Nobody Really Understands This One Thing..md`<br>`raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md`<br>`raw/From Prompts to Loops. Building Autonomous Coding Agents.md`<br>`raw/How to Start from 0 as an Agentic AI Engineer.md`<br>`raw/Building an Agentic Security Pipeline That Finds, Proves, and Patches Vulnerabilities.md`<br>`raw/How to learn anything faster than 99% of people.md`<br>`raw/I Was Optimizing My Terminal All Wrong.md`<br>`raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md`<br>`raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md`<br>`raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md`<br>`raw/The 5-Minute Guide to Agentic AI Workflow.md`<br>`raw/The Spacing System That Makes Every UI Look More Intentional.md`<br>`raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`<br>`raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md` (중복 스킵) | [[셸 스크립트 기반 자동화 워크플로우]] (신규), [[하네스 5계층 모델]] (신규), [[포스트 앱 인터페이스]] (신규), [[프롬프트 구성 4대 요소]] (신규), [[에이전트 디자인 패턴]] (신규), [[하이브리드 검색 인덱스]] (신규), [[양자 지원 벡터 머신]] (신규), [[온디맨드 스킬 로딩]] (신규), [[사가 패턴]] (신규), [[동시성과 병렬성 및 비동기]] (신규), [[고차원 표현 공간]] (신규), [[RAG 퓨전]] (신규), [[루프 엔지니어링]] (신규), [[에이전틱 AI 엔지니어]] (신규), [[에이전틱 보안 파이프라인]] (신규), [[메타인지]] (신규), [[터미널 설정 미니멀리즘]] (신규), [[의사결정 경계선 (Decision Boundaries)]] (신규), [[NVIDIA Build (무료 AI 추론 플랫폼)]] (신규), [[비동기 메시지 큐 (Asynchronous Message Queue)]] (신규), [[에이전트 기반 AI 워크플로우 (Agentic AI Workflow)]] (신규), [[8px 그리드 시스템 (8px Grid System)]] (신규), [[메이커-체커 패턴 (Maker-Checker Pattern)]] (신규), [[영구 의미 기억 시스템 (Semantic Memory System)]] (신규), [[모델 컨텍스트 프로토콜]] (신규) | done | [[log#2026-07-11-번역]] |이전트의 초급·중급·고급 설계 패턴, 작업 분해, 프로덕션 최적화 및 보안 가이드 | evergreen | 2026-06-22 |
 | [[로컬 LLM 30분 실전 가이드]] | 온디바이스 Ollama 환경 설정 및 3대 실무 경로(코딩, RAG, 음성비서) 실전 구현 가이드 | evergreen | 2026-06-22 |
 | [[AI 경제에서 스킬만으로는 부족하다]] | AI 시대 역량 자산 구축과 커리어 생존을 위한 자산화 전략을 정리한다. | evergreen | 2026-06-14 |
 | [[LLM 메모리 시스템 아키텍처]] | LLM 에이전트의 5대 메모리 계층 설계와 트레이드오프를 설명한다. | evergreen | 2026-06-14 |
