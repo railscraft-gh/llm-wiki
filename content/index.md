@@ -1,3 +1,14 @@
+---
+type: concept
+status: evergreen
+core: false
+tags:
+  - index
+sources: []
+created: 2026-05-06
+updated: 2026-07-12
+---
+
 # LLM Wiki Index
 
 ## 핵심 노트
