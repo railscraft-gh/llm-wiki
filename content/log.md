@@ -40,7 +40,7 @@ updated: 2026-07-12
   - `raw/The Spacing System That Makes Every UI Look More Intentional.md` (번역 및 정밀 윤문 완료)
   - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md` (번역 및 정밀 윤문 완료)
   - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md` (동일 영문 파일명 이미 존재하여 번역 생략)
-- 생성: 없음
+- 생성: [[셸 스크립트 기반 자동화 워크플로우]] (신규), [[하네스 5계층 모델]] (신규), [[포스트 앱 인터페이스]] (신규), [[프롬프트 구성 4대 요소]] (신규), [[에이전트 디자인 패턴]] (신규), [[하이브리드 검색 인덱스]] (신규), [[양자 지원 벡터 머신]] (신규), [[온디맨드 스킬 로딩]] (신규), [[사가 패턴]] (신규), [[동시성과 병렬성 및 비동기]] (신규), [[고차원 표현 공간]] (신규), [[RAG 퓨전]] (신규), [[루프 엔지니어링]] (신규), [[에이전틱 AI 엔지니어]] (신규), [[에이전틱 보안 파이프라인]] (신규), [[메타인지]] (신규), [[터미널 설정 미니멀리즘]] (신규), [[의사결정 경계선 (Decision Boundaries)]] (신규), [[NVIDIA Build (무료 AI 추론 플랫폼)]] (신규), [[비동기 메시지 큐 (Asynchronous Message Queue)]] (신규), [[에이전트 기반 AI 워크플로우 (Agentic AI Workflow)]] (신규), [[8px 그리드 시스템 (8px Grid System)]] (신규), [[메이커-체커 패턴 (Maker-Checker Pattern)]] (신규), [[영구 의미 기억 시스템 (Semantic Memory System)]] (신규), [[모델 컨텍스트 프로토콜]] (신규)
 - 수정: 없음
 - index 업데이트: 완료
 - 남은 검토: 없음
