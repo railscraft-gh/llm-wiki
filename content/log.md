@@ -5,9 +5,30 @@
 ### Ingest
 
 - 입력:
+  - `raw/13 Tiny Bash Scripts That Save Me Time Every Day.md` (번역 및 정밀 윤문 완료)
+  - `raw/Anthropic Just Shipped Three of the Five Harness Layers for Managed Agent, and The Other Two Are on You.md` (번역 및 정밀 윤문 완료)
+  - `raw/Apple Just Killed the App Store And UIUX Designers Are Panicking.md` (번역 및 정밀 윤문 완료)
+  - `raw/AI Prompt Writing. The Complete Guide for Non-Technical Users.md` (번역 및 정밀 윤문 완료)
+  - `raw/30 Core Agentic Engineering Concepts Every Developer Should Know.md` (번역 및 정밀 윤문 완료)
+  - `raw/Building a RAG Pipeline for 10M+ Documents With Near-Zero Hallucination.md` (번역 및 정밀 윤문 완료)
+  - `raw/Building an Agentic Quantum Computing System.md` (번역 및 정밀 윤문 완료)
+  - `raw/Building Claude Code with Harness Engineering.md` (번역 및 정밀 윤문 완료)
+  - `raw/Building a Week-Long Running Agentic System.md` (번역 및 정밀 윤문 완료)
+  - `raw/Concurrency, Parallelism, and Async. Three Ideas That Sound the Same But Aren’t.md` (번역 및 정밀 윤문 완료)
+  - `raw/Everyone Is “Learning AI”, But Nobody Really Understands This One Thing..md` (번역 및 정밀 윤문 완료)
+  - `raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md` (번역 및 정밀 윤문 완료)
+  - `raw/From Prompts to Loops. Building Autonomous Coding Agents.md` (번역 및 정밀 윤문 완료)
+  - `raw/How to Start from 0 as an Agentic AI Engineer.md` (번역 및 정밀 윤문 완료)
+  - `raw/Building an Agentic Security Pipeline That Finds, Proves, and Patches Vulnerabilities.md` (번역 및 정밀 윤문 완료)
+  - `raw/How to learn anything faster than 99% of people.md` (번역 및 정밀 윤문 완료)
+  - `raw/I Was Optimizing My Terminal All Wrong.md` (번역 및 정밀 윤문 완료)
+  - `raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md` (번역 및 정밀 윤문 완료)
+  - `raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md` (번역 및 정밀 윤문 완료)
+  - `raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md` (번역 및 정밀 윤문 완료)
+  - `raw/The 5-Minute Guide to Agentic AI Workflow.md` (번역 및 정밀 윤문 완료)
+  - `raw/The Spacing System That Makes Every UI Look More Intentional.md` (번역 및 정밀 윤문 완료)
   - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md` (번역 및 정밀 윤문 완료)
   - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md` (동일 영문 파일명 이미 존재하여 번역 생략)
-  - `raw/The Spacing System That Makes Every UI Look More Intentional.md`
 - 생성: 없음
 - 수정: 없음
 - index 업데이트: 완료
@@ -28,9 +49,30 @@
 
 - 결정: 원천 자료(Raw) 생성 및 번역 완료
 - 대상:
-  - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`
-  - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md`
+  - `raw/13 Tiny Bash Scripts That Save Me Time Every Day.md`
+  - `raw/Anthropic Just Shipped Three of the Five Harness Layers for Managed Agent, and The Other Two Are on You.md`
+  - `raw/Apple Just Killed the App Store And UIUX Designers Are Panicking.md`
+  - `raw/AI Prompt Writing. The Complete Guide for Non-Technical Users.md`
+  - `raw/30 Core Agentic Engineering Concepts Every Developer Should Know.md`
+  - `raw/Building a RAG Pipeline for 10M+ Documents With Near-Zero Hallucination.md`
+  - `raw/Building an Agentic Quantum Computing System.md`
+  - `raw/Building Claude Code with Harness Engineering.md`
+  - `raw/Building a Week-Long Running Agentic System.md`
+  - `raw/Concurrency, Parallelism, and Async. Three Ideas That Sound the Same But Aren’t.md`
+  - `raw/Everyone Is “Learning AI”, But Nobody Really Understands This One Thing..md`
+  - `raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md`
+  - `raw/From Prompts to Loops. Building Autonomous Coding Agents.md`
+  - `raw/How to Start from 0 as an Agentic AI Engineer.md`
+  - `raw/Building an Agentic Security Pipeline That Finds, Proves, and Patches Vulnerabilities.md`
+  - `raw/How to learn anything faster than 99% of people.md`
+  - `raw/I Was Optimizing My Terminal All Wrong.md`
+  - `raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md`
+  - `raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md`
+  - `raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md`
+  - `raw/The 5-Minute Guide to Agentic AI Workflow.md`
   - `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+  - `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`
+  - `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md` (중복 스킵)
 - 근거:
   - 'Testing 17 Agentic Loop...': 루프 엔지니어링 17가지 컴포넌트의 가치와 통계를 실증한 자료를 고품질 한국어로 번역 및 Strict 윤문함.
   - 'Your Vault as a Shared Brain...': raw/ 에 동일 영문 파일명이 이미 존재하므로 번역 생략 규칙 준수.
