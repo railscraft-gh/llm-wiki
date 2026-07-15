@@ -23,6 +23,7 @@ updated: 2026-07-12
   - `raw/I Threw Out My Vector Database. RAG Got Way Better With PageIndex.md` (번역 및 Fast 윤문 완료)
   - `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md` (번역 및 Fast 윤문 완료)
   - `raw/These 10 Linux Tools Changed Everything.md` (번역 및 Fast 윤문 완료)
+  - `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md` (번역 및 Fast 윤문 완료)
 - 생성: 없음
 - 수정: 없음
 - index 업데이트: 완료
@@ -50,7 +51,8 @@ updated: 2026-07-12
   - `raw/I Threw Out My Vector Database. RAG Got Way Better With PageIndex.md`
   - `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
   - `raw/These 10 Linux Tools Changed Everything.md`
-- 근거: 39가지 인간-AI 상호작용 디자인 원칙, macOS 터미널 명령어, AI 시대 디자인 역할의 변화, 우버 시스템 디자인 면접 탈락기, 벡터 DB를 버리고 PageIndex를 이용한 RAG 극대화 기법, NVIDIA Build 무료 AI 추론 활용기, 생산성을 바꾸어 놓은 리눅스 CLI 필수 10선 아티클을 고품질 한국어로 번역 및 윤문함.
+  - `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md`
+- 근거: 39가지 인간-AI 상호작용 디자인 원칙, macOS 터미널 명령어, AI 시대 디자인 역할의 변화, 우버 시스템 디자인 면접 탈락기, 벡터 DB를 버리고 PageIndex를 이용한 RAG 극대화 기법, NVIDIA Build 무료 AI 추론 활용기, 생산성을 바꾸어 놓은 리눅스 CLI 필수 10선, macOS 27 내장 Apple Foundation Models 활용 가이드 아티클을 고품질 한국어로 번역 및 윤문함.
 
 ## 2026-07-11-번역
 
