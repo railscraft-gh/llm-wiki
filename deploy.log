@@ -21787,3 +21787,24 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-15 21:47:32] 배포 시작
 [2026-07-15 21:47:33] wiki 동기화 완료
 [2026-07-15 21:47:33] 출처 섹션 제거 완료
+[v4 88f4a61f] Auto-deploy: sync wiki content 2026-07-15 21:47
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 87 insertions(+)
+ create mode 100644 "content/\354\213\244\354\213\234\352\260\204 \354\204\234\354\247\200 \355\224\204\353\235\274\354\235\264\354\213\261 \354\213\234\354\212\244\355\205\234 (Real-time Surge Pricing System).md"
+[2026-07-15 21:47:36] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-15 21:47:36] symlink 복원 완료
+---
+[2026-07-15 21:47:39] 배포 시작
+[2026-07-15 21:47:39] wiki 동기화 완료
+[2026-07-15 21:47:40] 출처 섹션 제거 완료
