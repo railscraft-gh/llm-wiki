@@ -18,6 +18,7 @@ updated: 2026-07-12
 - 입력:
   - `raw/17 macOS Terminal Commands I Actually Use Every Week.md` (번역 및 정밀 윤문 완료)
   - `raw/39 principles for designing human-AI interaction.md` (번역 및 3차 윤문/검증 완료)
+  - `raw/How designers need to change for an AI-powered world.md` (번역 및 Fast 윤문 완료)
 - 생성: 없음
 - 수정: 없음
 - index 업데이트: 완료
@@ -25,7 +26,7 @@ updated: 2026-07-12
 
 ### Lint
 
-- 실행 방식: 수동 점검 및 에이전트 병렬 검증 (`content-fidelity-auditor`, `naturalness-reviewer`)
+- 실행 방식: 수동 점검 및 에이전트 병렬 검증 (`content-fidelity-auditor`, `naturalness-reviewer`, `humanize-monolith`)
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
 - 출처 없는 수치 문장: 0개
@@ -40,7 +41,8 @@ updated: 2026-07-12
 - 대상:
   - `raw/17 macOS Terminal Commands I Actually Use Every Week.md`
   - `raw/39 principles for designing human-AI interaction.md`
-- 근거: 39가지 인간-AI 상호작용 디자인 원칙과 macOS 터미널 명령어 자료를 고품질 한국어로 번역 및 윤문함.
+  - `raw/How designers need to change for an AI-powered world.md`
+- 근거: 39가지 인간-AI 상호작용 디자인 원칙, macOS 터미널 명령어, AI 시대 디자인 역할의 변화 아티클을 고품질 한국어로 번역 및 윤문함.
 
 ## 2026-07-11-번역
 
