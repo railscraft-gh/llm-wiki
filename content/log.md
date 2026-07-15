@@ -29,6 +29,7 @@ updated: 2026-07-12
   - [[조율된 신뢰 (Calibrated Trust)]] (핵심)
   - [[혼합 주도형 상호작용 (Mixed-Initiative Interaction)]]
   - [[스킬 인버전 (Skill Inversion)]]
+  - [[WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)]] (핵심)
   - [[PageIndex (구조형 RAG 탐색)]]
   - [[실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)]]
   - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
@@ -40,6 +41,8 @@ updated: 2026-07-12
 - 수정:
   - [[디자이너 생존 전략 (2026-2030)]]
   - [[NVIDIA Build (무료 AI 추론 플랫폼)]]
+  - [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]]
+  - [[Apple Foundation Models CLI (fm)]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
