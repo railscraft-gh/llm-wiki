@@ -26,12 +26,17 @@ updated: 2026-07-12
   - `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md` (번역 및 Fast 윤문 완료)
 - 생성:
   - [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]] (핵심)
+  - [[조율된 신뢰 (Calibrated Trust)]] (핵심)
+  - [[혼합 주도형 상호작용 (Mixed-Initiative Interaction)]]
+  - [[스킬 인버전 (Skill Inversion)]]
   - [[PageIndex (구조형 RAG 탐색)]]
   - [[실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)]]
   - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
+  - [[장애 복구 및 폴백 아키텍처 (Fallback & Failure Modes Design)]]
   - [[Apple Foundation Models CLI (fm)]]
   - [[Private Cloud Compute (Private Cloud Compute)]]
   - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
+  - [[영구 원격 세션 아키텍처 (Persistent Remote Session Architecture)]]
 - 수정:
   - [[디자이너 생존 전략 (2026-2030)]]
   - [[NVIDIA Build (무료 AI 추론 플랫폼)]]
