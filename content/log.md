@@ -11,7 +11,7 @@ updated: 2026-07-12
 
 # LLM Wiki Log
 
-## 2026-07-15-번역
+## 2026-07-15-번역 및 Ingest
 
 ### Ingest
 
@@ -24,25 +24,34 @@ updated: 2026-07-12
   - `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md` (번역 및 Fast 윤문 완료)
   - `raw/These 10 Linux Tools Changed Everything.md` (번역 및 Fast 윤문 완료)
   - `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md` (번역 및 Fast 윤문 완료)
-- 생성: 없음
-- 수정: 없음
+- 생성:
+  - [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]] (핵심)
+  - [[PageIndex (구조형 RAG 탐색)]]
+  - [[실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)]]
+  - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
+  - [[Apple Foundation Models CLI (fm)]]
+  - [[Private Cloud Compute (Private Cloud Compute)]]
+  - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
+- 수정:
+  - [[디자이너 생존 전략 (2026-2030)]]
+  - [[NVIDIA Build (무료 AI 추론 플랫폼)]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
 ### Lint
 
-- 실행 방식: 수동 점검 및 에이전트 병렬 검증 (`content-fidelity-auditor`, `naturalness-reviewer`, `humanize-monolith`)
+- 실행 방식: 수동 린터 및 에이전트 자가 검증 (깨진 링크, 고아 페이지, frontmatter, 수치 근거 출처 매핑 등 15대 체크리스트 전수 조사)
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
-- 관련 노트 2개 미만 문서: 0개
-- 고아 페이지: 0개
+- 출처 없는 수치 문장: 0개 (PageIndex 98.7% 및 H3 해상도 7 면적 5km² 등 수치 문장 끝에 출처 완료)
+- 관련 노트 2개 미만 문서: 0개 (모든 신규 위키 노트에 관련 문서 2개 이상 상호 링크 완료)
+- 고아 페이지: 0개 (모든 신규 위키가 index.md 및 상호 wikilink 구조로 긴밀하게 결합되어 고아 상태 없음)
 - 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 수동 및 에이전트 린트 체크리스트 적용하여 번역 롤백 유실 복구 및 잔존 번역투 교정 완료.
+- 조치: 수동 및 에이전트 린트 체크리스트 적용하여 번역 롤백 유실 복구, 잔존 번역투 교정 및 지식 노트를 EverGreen 등급으로 빌드 완료.
 
 ### 결정 기록
 
-- 결정: 원천 자료(Raw) 생성 및 번역 완료
+- 결정: 원천 자료(Raw) 생성, 번역 및 위키 지식 베이스 Ingest 통합 완료
 - 대상:
   - `raw/17 macOS Terminal Commands I Actually Use Every Week.md`
   - `raw/39 principles for designing human-AI interaction.md`
@@ -52,7 +61,7 @@ updated: 2026-07-12
   - `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
   - `raw/These 10 Linux Tools Changed Everything.md`
   - `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md`
-- 근거: 39가지 인간-AI 상호작용 디자인 원칙, macOS 터미널 명령어, AI 시대 디자인 역할의 변화, 우버 시스템 디자인 면접 탈락기, 벡터 DB를 버리고 PageIndex를 이용한 RAG 극대화 기법, NVIDIA Build 무료 AI 추론 활용기, 생산성을 바꾸어 놓은 리눅스 CLI 필수 10선, macOS 27 내장 Apple Foundation Models 활용 가이드 아티클을 고품질 한국어로 번역 및 윤문함.
+- 근거: 8개 번역 원문 자료로부터 총 7개의 신규 위키 개념/도구 노트를 빌드하고, 1개의 핵심 위키 노트를 추가 등록하였으며, 기존 디자인/인프라 노트를 AI 시대 트렌드(기술 역전, Cline/NIM 실무 검증 한계)에 맞춰 풍부하게 보강함.
 
 ## 2026-07-11-번역
 
