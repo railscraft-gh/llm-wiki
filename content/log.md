@@ -11,6 +11,37 @@ updated: 2026-07-12
 
 # LLM Wiki Log
 
+## 2026-07-15-번역
+
+### Ingest
+
+- 입력:
+  - `raw/17 macOS Terminal Commands I Actually Use Every Week.md` (번역 및 정밀 윤문 완료)
+  - `raw/39 principles for designing human-AI interaction.md` (번역 및 3차 윤문/검증 완료)
+- 생성: 없음
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 에이전트 병렬 검증 (`content-fidelity-auditor`, `naturalness-reviewer`)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 수동 및 에이전트 린트 체크리스트 적용하여 번역 롤백 유실 복구 및 잔존 번역투 교정 완료.
+
+### 결정 기록
+
+- 결정: 원천 자료(Raw) 생성 및 번역 완료
+- 대상:
+  - `raw/17 macOS Terminal Commands I Actually Use Every Week.md`
+  - `raw/39 principles for designing human-AI interaction.md`
+- 근거: 39가지 인간-AI 상호작용 디자인 원칙과 macOS 터미널 명령어 자료를 고품질 한국어로 번역 및 윤문함.
+
 ## 2026-07-11-번역
 
 ### Ingest
