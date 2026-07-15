@@ -60,6 +60,7 @@ updated: 2026-07-12
 | [[에이전틱 AI 엔지니어 실무 로드맵]] | 2026년 에이전틱 AI 엔지니어의 4대 계층 10대 핵심 기술, 표준 스택 및 학습 의존 경로를 다룬다. | evergreen | 2026-06-16 |
 | [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]] | 확률적이고 비결정적인 AI의 본질에 대처해 사용자의 조율된 신뢰를 돕는 실무 원칙을 정리한다. | evergreen | 2026-07-15 |
 | [[조율된 신뢰 (Calibrated Trust)]] | 사용자가 AI의 성능과 결함을 알맞은 수준으로 믿고 의사결정하도록 돕는 상호작용 설계론이다. | evergreen | 2026-07-15 |
+| [[WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)]] | 웹앱의 DOM 상태와 JS 함수를 AI 에이전트 도구로 노출해 오프라인 브라우저 루프를 구축하는 연동론이다. | evergreen | 2026-07-15 |
 
 ## Ingest 현황
 
