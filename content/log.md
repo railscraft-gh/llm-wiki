@@ -6,7 +6,7 @@ tags:
   - log
 sources: []
 created: 2026-05-06
-updated: 2026-07-12
+updated: 2026-07-16
 ---
 
 # LLM Wiki Log
@@ -35,7 +35,7 @@ updated: 2026-07-12
   - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
   - [[장애 복구 및 폴백 아키텍처 (Fallback & Failure Modes Design)]]
   - [[Apple Foundation Models CLI (fm)]]
-  - [[Private Cloud Compute (Private Cloud Compute)]]
+  - [[프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)]]
   - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
   - [[영구 원격 세션 아키텍처 (Persistent Remote Session Architecture)]]
 - 수정:
