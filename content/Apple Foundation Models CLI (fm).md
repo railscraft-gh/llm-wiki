@@ -12,7 +12,7 @@ aliases:
 sources:
   - raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Apple Foundation Models CLI (fm)
@@ -59,6 +59,6 @@ print(response.choices[0].message.content)  # -> "Hello from FM."
 ## 관련 노트
 
 - [[로컬 LLM 30분 실전 가이드]]
-- [[Private Cloud Compute (Private Cloud Compute)]]
+- [[프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)]]
 - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
 
