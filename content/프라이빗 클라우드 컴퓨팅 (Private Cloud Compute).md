@@ -15,7 +15,7 @@ created: 2026-07-15
 updated: 2026-07-15
 ---
 
-# Private Cloud Compute (Private Cloud Compute)
+# 프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)
 
 ## 한 줄 정의
 
