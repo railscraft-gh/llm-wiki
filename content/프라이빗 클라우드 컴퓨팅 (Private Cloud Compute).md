@@ -12,7 +12,7 @@ aliases:
 sources:
   - raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # 프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)
