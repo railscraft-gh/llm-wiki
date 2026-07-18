@@ -49,6 +49,7 @@ sources:
   - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
   - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법 - 출판형 다듬기.md
   - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+  - raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md
 status: evergreen
 tags:
   - llm
@@ -57,7 +58,7 @@ tags:
   - agent
   - productivity
 type: concept
-updated: 2026-07-10
+updated: 2026-07-18
 ---
 
 # LLM Wiki 구현 선택지
@@ -183,6 +184,42 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
 
 ### llm-wiki-maintainer 스킬 설정 예시
 - `purpose.md` 의 전역 선언과 결합하여, `/ingest` 및 `/lint` 등의 전용 셸 래퍼(Wrapper) 명령어로 위키 린터를 즉시 가동하고 세션을 정제함.
+
+### 7. 5대 LLM Wiki 구현체 비교 평가 (2026년 7월 실전 테스트)
+안드레이 카파시의 LLM Wiki 발표 직후 일주일 만에 GitHub에 50개 이상의 관련 저장소가 생성되었으며, 대표적인 5개 구현체의 일주일간의 실전 테스트 결과는 다음과 같다: [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+1. **engram (TypeScript CLI + Claude Code)**
+   - **특징**: CLI가 검증/색인/링크 빌드를 맡고, 에이전트가 추론을 담당하는 이분법적 아키텍처.
+   - **장점**: 독보적인 데이터 정합성. 10개의 소스를 수집하는 동안 깨진 링크나 고아 페이지 0건 기록. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+   - **단점**: CLI 환경 설정의 진입 장벽.
+   - **평가**: 개발자용 9/10점, 일반인용 4/10점. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+2. **Tome (Claude Code + Quartz)**
+   - **특징**: Quartz 렌더링 레이어를 적용해 브라우저로 훑어볼 수 있는 웹 위키(디지털 가든) 생성.
+   - **장점**: 백링크와 시각적 그래프 뷰 제공으로 반복 조회 습관 형성에 유리함.
+   - **단점**: engram 대비 수집(Ingest)의 정밀성이 낮아 핵심 사항 누락 가능성 존재.
+   - **평가**: 7.5/10점. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+3. **obsidian-llm-wiki (Obsidian Native + Cursor)**
+   - **특징**: 카파시 아키텍처를 Obsidian 및 Cursor 에이전트 스킬로 통합.
+   - **장점**: 유튜브 영상 링크를 던지면 즉시 요약 1개와 개념 노트 4개를 상호 연결해 생성해 주는 `video2wiki` 스킬 제공. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+   - **단점**: Cursor 에이전트 스킬 의존성으로 Claude Code 사용 시 직접 포팅 필요.
+   - **평가**: 8/10점. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+4. **pm-llm-wiki (도메인 특화 PM Wiki)**
+   - **특징**: 제품 관리자(PM) 직군의 업무 루틴과 의사결정/리스크/이해관계자 스키마 템플릿 최적화.
+   - **장점**: 명확하게 설계된 스키마 덕분에 범용 구현체 대비 실용적이고 예리한 답변 제공.
+   - **평가**: PM 직군 기준 8.5/10점. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+5. **jarvis-vault (자가 조직화 도구)**
+   - **특징**: 완전 자동 분류 및 링크 구성을 내세운 옵시디언 AI 세컨드 브레인.
+   - **단점**: 에이전트에 가드레일이 없어 4일 차에 원치 않는 분류 체계 강제 및 1개 X 스레드가 3개 폴더에 중복 분산되는 등의 '자신감 넘치는 혼란' 발생. 사용 5일 차에 20분 만에 삭제됨. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+   - **평가**: 5/10점. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+
+### 8. 핵심 실전 교훈
+- **스키마의 가치**: 엄격한 규칙을 강제하는 도구(engram, pm-llm-wiki)가 신뢰성이 높으며, 스키마 파일이 제품 가치의 80%를 결정한다. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+- **수집(Ingest)의 엄격함**: 화려한 검색 기교보다 요약본 1개 생성 같은 철저한 문서화 규칙을 준수한 도구만이 복합 추론 질문에 올바르게 답변한다. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+- **API 비용 리스크**: 대량 수집 시 하루 2~4달러의 API 비용이 발생할 수 있다. [raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
 
 ## 충돌
 - **에이전트의 마크다운 준수 신뢰 vs 기계적 문법 오류**:
