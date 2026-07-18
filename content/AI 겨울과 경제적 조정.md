@@ -51,13 +51,12 @@ AI 겨울은 기술 자체의 완전한 붕괴가 아니라, 기업이 지출한
 
 ## 핵심 요지
 - **경제적 불일치와 CAPEX 과열**: 2026년 하이퍼스케일러들의 AI CAPEX 지출은 6,600억~7,700억 달러로 급증했으나 전체 AI 시장 매출은 250억~500억 달러 수준에 그쳐 전례 없는 불균형이 발생한다.
-- **기업 AI 도입 ROI 증명 실패**: MIT NANDA 프로젝트 조사 결과 기업 GenAI 파일럿의 95%가 측정 가능한 ROI 증명에 실패했으며, 가트너(Gartner)에 따르면 에이전틱 AI 프로젝트 구현의 40%가 이미 중단되었다.
-- **상전이로서의 겨울**: 기하급수적 성장 가정에 의존한 스타트업과 과장된 파일럿은 도태되나, 실제 사용 가치가 있고 비용이 저렴한 실무 도구(Cursor, Claude Code 등)는 살아남는다.
+- **AI 구독 보조금의 종말**: 월 100달러 구독 요금제가 실제로는 최대 4,000달러 상당의 토큰 사용 비용을 발생시키며 적자가 누적되는 비정상적 비즈니스 모델이 한계에 직면했다 [raw/You’re not going to like what AI becomes after July 12th..md](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20not%20going%20to%20like%20what%20AI%20becomes%20after%20July%2012th..md#L35). 이에 따라 클로드 페이블(Claude Fable) 등 최상위 추론 모델들은 월 구독 혜택에서 배제되고 토큰당 유료 과금(종량제)으로 전환되는 '우버식 요금 현실화'가 강제된다 [raw/You’re not going to like what AI becomes after July 12th..md](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20not%20going%20to%20like%20what%20AI%20becomes%20after%20July%2012th..md#L29).
+- **구독형 모델의 인위적 하향(Nerfing)**: 기업들은 사용자를 개별 유료 과금(종량제)으로 밀어내기 위해 기본 제공되는 구독형 모델(Opus, Sonnet 등)의 품질을 의도적으로 저하시키고, 최상위 추론 모델만 과금제로 성능을 개선하는 '냄비 속 개구리(Boiling the Frog)' 전략을 전개한다.
+- **기업 AI 도입 ROI 증명 실패**: MIT NANDA 프로젝트 및 맥킨지(McKinsey) 조사 결과에 따르면, GenAI 파일럿의 95%가 측정 가능한 ROI 증명에 실패했고, AI 도입 기업 중 실제 재무제표상 영업이익 개선 효과를 거둔 곳은 겨우 5%에서 20% 사이에 불과하다 [raw/You’re not going to like what AI becomes after July 12th..md](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20not%20going%20to%20like%20what%20AI%20becomes%20after%20July%2012th..md#L85).
 - **고용 시장의 자본 재배치와 미드레벨 압착**: 2026년 초부터 약 15만 개 이상의 테크 일자리가 사라졌다(연간 전망 약 26만 5천 명). 이는 빅테크 기업들이 인건비를 깎아 GPU 및 데이터센터 CAPEX로 이전하려는 의도적인 자본 재배치다.
 - **커리어 패스 단절**: 단순 실행에 특화된 연봉 8만~13만 달러 수준의 미드레벨 직무(정형 보고 중심의 데이터 분석가, 단순 ETL 데이터 엔지니어 등)가 가장 먼저 자동화되며 주니어에서 시니어로 성장하는 전통적인 커리어 패스가 완전히 압착되고 있다.
-- 커리어 패스 단절: 단순 실행에 특화된 연봉 8만~13만 달러 수준의 미드레벨 직무(데이터 분석가, 데이터 엔지니어 등)가 가장 먼저 자동화되며 주니어에서 시니어로 성장하는 전통적인 커리어 패스가 완전히 압착되고 있다.
-- 도구는 싸지고 제품은 더 어려워진다. (Tools get cheaper, products get harder.)
-- 기하급수적 성장이라는 가정이 아닌 실제 능력을 보고 그 차이에 맞춰 제품을 설계하는 것이 AI 경제성의 생존 조건이다.
+- **도구는 싸지고 제품은 더 어려워진다 (Tools get cheaper, products get harder)**: 기하급수적 성장이라는 가정이 아닌 실제 성능을 보고 그 가치와 한계에 맞춰 워크플로우를 설계하는 것이 AI 경제성의 생존 조건이다.
 
 ## 상세
 
