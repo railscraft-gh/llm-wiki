@@ -4,6 +4,8 @@ aliases:
   - AI Winter
   - AI 버블
   - 경제적 상전이
+  - AI 보조금의 종말
+  - AI 구독제의 종말
 core: false
 created: 2026-06-04
 sources:
@@ -30,6 +32,7 @@ sources:
   - raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
   - raw/gajae-code_AI_코딩_하네스_분석.md
   - raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md
+  - raw/You’re not going to like what AI becomes after July 12th..md
 status: evergreen
 tags:
   - ai
@@ -38,7 +41,7 @@ tags:
   - capex
   - adjustment
 type: concept
-updated: 2026-07-10
+updated: 2026-07-18
 ---
 
 # AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)

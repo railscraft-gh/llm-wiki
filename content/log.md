@@ -11,6 +11,42 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-18-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/Designing with web standards. The playbook for this AI moment.md`
+  - `raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md`
+  - `raw/How Claude Code, Codex, and Cursor Do Loop Engineering.md`
+  - `raw/How GPT-5 is Revolutionizing Design. A Game-Changer for UIUX and Product Designers.md`
+  - `raw/How to Design a Production-Ready Dashboard with Claude Code.md`
+- 생성:
+  - [[AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)]] (신규)
+  - [[Headroom]] (신규)
+  - [[GPT-5 기반 UIUX 디자인 협업 (UIUX Design Collaboration with GPT-5)]] (신규)
+  - [[Claude Code 기반 대시보드 디자인 워크플로우 (Dashboard Design Workflow with Claude Code)]] (신규)
+- 수정:
+  - [[루프 엔지니어링]] (기본 Grader의 꼼수 우회 한계 및 Verifier/Inspector 설계 필요성 추가)
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 에이전트 자가 검증 (Frontmatter 규칙 준수, 깨진 wikilink 방지, 관련 문서 2개 이상 상호 참조 및 수치 문장 출처 링크 포함 여부 100% 점검 완료)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개 (index.md 및 상호 wikilink를 통해 전원 구조화 완료)
+- 30일 이상 미갱신 핵심 노트: 0개
+
+### 결정 기록
+
+- 결정: Ingest 및 수정 완료
+- 대상: [[AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)]], [[Headroom]], [[루프 엔지니어링]], [[GPT-5 기반 UIUX 디자인 협업 (UIUX Design Collaboration with GPT-5)]], [[Claude Code 기반 대시보드 디자인 워크플로우 (Dashboard Design Workflow with Claude Code)]]
+- 근거: 브라우저 전쟁을 바탕으로 한 AI 웹 표준 기획, 에이전트 토큰 절감 컨텍스트 압축 툴(Headroom), 루프 엔지니어링의 감시자 설계, GPT-5 협업 디자인 프로세스 및 Claude Code 대시보드 검증 등의 핵심 지식 수입 완료.
+
 ## 2026-07-15-번역 및 Ingest
 
 ### Ingest
