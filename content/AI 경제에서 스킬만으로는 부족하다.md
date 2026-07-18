@@ -116,7 +116,7 @@ AI 시대에 진짜 레버리지는 기술 습득이 아니라 가치가 복리�
 3. **제품 (Product)**: 배포 가능한 1.0버전 코드가 컴파일을 완료했는가?
 4. **파트너십 (Partnerships)**: 제휴사 서명이 담긴 계약을 맺었는가?
 5. **오디언스 (Audience)**: 내 도메인/뉴스레터 구독자 등 이탈하지 않는 소통망이 생겼는가?
-단순히 '책 한 권 분량의 프롬프트를 외웠다'거나 '수강 완료 이메일을 받았다'는 지식 수집 성격의 활동은 90일 필터링 기준에서 전면 탈락 처리한다. (출처: Skills Alone Won’t Save You in the AI Economy.md)
+단순히 '책 한 권 분량의 프롬프트를 외웠다'거나 '수강 완료 이메일을 받았다'는 지식 수집 성격의 활동은 90일 필터링 기준에서 전면 탈락 처리한다 [raw/Skills Alone Won’t Save You in the AI Economy.md#L130-L134](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md#L130-L134).
 
 
 
