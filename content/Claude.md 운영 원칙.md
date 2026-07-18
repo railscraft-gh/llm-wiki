@@ -105,6 +105,37 @@ sources:
   - raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
   - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
   - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+  - raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md
+status: evergreen
+tags:
+  - llm
+  - agent
+  - claude-code
+type: workflow
+updated: 2026-07-18
+  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+  - raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+  - raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md
+  - raw/opencode-masterclass-summary.md
+  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+  - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+  - raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+  - raw/2026년의 AI 에이전트 실전 가이드-ko.md
+  - raw/Karpathy의 LLM Wiki로 스스로 유지되는 개인 지식 베이스를 30분 만에 만들었다.md
+  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+  - raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+  - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
 status: evergreen
 tags:
   - llm
@@ -135,12 +166,39 @@ Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모�
 
 ## 상세
 
-### 1. 전역 메모리와 로컬 instructions의 결합
+### 1. 전역 메모리와 로컬 instructions의 결합 및 두 마크다운의 구성
 - **프로젝트 루트 (`CLAUDE.md`)**: 기술 스택, 빌드/테스트 명령, 프로젝트 구조, 코딩 규칙을 규정한다. context window 낭비를 줄이기 위해 60줄 이하의 핵심 지침 위주로 조립하는 것이 권장된다.
 - **전역 설정 (`~/.claude.json` / `/memory` 명령어)**: 프로젝트 범위를 넘어 전역적으로 적용할 규칙을 설정한다.
 - **`.claudeignore`**: `.gitignore`처럼 에이전트가 탐색하거나 읽지 않아야 할 파일(보안 비밀 키, 빌드 로그 등)을 지정한다.
 
-### 2. Forrest Chang의 4가지 행동 원칙 (Andrej Karpathy의 관찰 기반)
+### 2. CLAUDE.md에 넣어야 할 6가지 핵심 구성 요소
+웹/모바일 프로젝트 시 `CLAUDE.md`는 아래 내용을 60줄 내외로 함축하여 기재해야 한다[raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md](file:///Users/railscraft/Obsidian/raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md):
+1. **프로젝트 개요 (Project overview)**: Next.js, TS 등 기술 스택과 어플리케이션의 본질에 대한 짧은 요약.
+2. **명령어 (Commands)**: `dev`, `typecheck`, `lint`, `test`, `build` 등 앤트로픽이 적극 권장하는 빌드/검증 스크립트 모음.
+3. **아키텍처 및 주요 파일 경로 (Architecture)**: 에이전트가 변경할 파일이 들어갈 라우트, 컴포넌트, 공유 타입 등의 디렉토리 구조 맵.
+4. **구현 규칙 (Implementation rules)**: TypeScript 필수 적용, 자동 생성된 파일 수정 금지 등 핵심 코딩 가이드 5~10가지.
+5. **워크플로우 및 검증 (Workflow and verification)**: 변경 사항 적용 순서(기존 패턴 검토 $\rightarrow$ 최소 수정 $\rightarrow$ 로컬 테스트/타입 체크)에 따른 검증 루프 지침.
+6. **디자인 관련 운영 지침 (UI and design instructions)**: UI 작업 착수 시 `DESIGN.md`를 단일 진실 공급원으로 읽게 하는 가이드.
+
+### 3. DESIGN.md 임포트 방식과 조건부 연동 전략
+`CLAUDE.md` 내에 `@DESIGN.md`를 상시 기입하여 직접 로드하는 방식은 프로젝트 성격에 따라 비효율을 초래할 수 있다[raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md](file:///Users/railscraft/Obsidian/raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md).
+
+#### ① 무조건적인 `@DESIGN.md` 임포트
+- **사용 시점**: 프로젝트가 주로 프론트엔드 작업이나 디자인 프로토타입 위주이며 `DESIGN.md` 파일 크기가 매우 작을 때.
+- **단점**: 백엔드 로직 수정이나 단위 테스트를 실행할 때도 항상 디자인 시스템 토큰과 가이드를 컨텍스트에 불러오므로, 무관한 정보로 토큰 윈도우가 낭비된다.
+
+#### ② 조건부 지침 연동 (권장)
+- **사용 시점**: `DESIGN.md`가 매우 상세하고 길 때, 백엔드 코드가 상당량 존재할 때, 대다수 세션에서 디자인 컨텍스트가 불필요할 때.
+- **예시 지침 구조**:
+  ```markdown
+  ## Design system
+  UI, 스타일링, 인터랙션, 웹 접근성, 혹은 반응형 레이아웃을 수정하는 모든 작업의 경우:
+  1. 구현에 앞서 `DESIGN.md`를 먼저 읽는다.
+  2. 이 문서를 단일 진실 공급원으로 취급한다.
+  3. 새 컴포넌트를 짜기 전에 기존 컴포넌트 유무를 먼저 확인한다.
+  ```
+
+### 4. Forrest Chang의 4가지 행동 원칙 (Andrej Karpathy의 관찰 기반)
 에이전트가 기본적으로 보일러플레이트를 과도하게 생성하거나 무작정 파일 전체를 포맷팅하는 실패 동작을 방지하기 위한 핵심 규칙이다.
 
 1. **코딩하기 전에 먼저 생각하라 (Think before coding)**:
