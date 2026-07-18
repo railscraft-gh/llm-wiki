@@ -22479,3 +22479,24 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-18 14:11:20] 배포 시작
 [2026-07-18 14:11:20] wiki 동기화 완료
 [2026-07-18 14:11:21] 출처 섹션 제거 완료
+[v4 bdf2e32a] Auto-deploy: sync wiki content 2026-07-18 14:11
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 69 insertions(+)
+ create mode 100644 "content/UI \354\231\204\354\204\261\353\217\204\353\245\274 \353\206\222\354\235\264\353\212\224 8\352\260\200\354\247\200 \353\257\270\354\204\270\355\225\234 \353\224\224\355\205\214\354\235\274 (8 Tiny UI Fixes).md"
+[2026-07-18 14:11:24] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-18 14:11:24] symlink 복원 완료
+---
+[2026-07-18 14:11:24] 배포 시작
+[2026-07-18 14:11:24] wiki 동기화 완료
+[2026-07-18 14:11:24] 출처 섹션 제거 완료
