@@ -22713,3 +22713,24 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-18 14:11:56] 배포 시작
 [2026-07-18 14:11:56] wiki 동기화 완료
 [2026-07-18 14:11:56] 출처 섹션 제거 완료
+[v4 b988a904] Auto-deploy: sync wiki content 2026-07-18 14:11
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 135 insertions(+), 6 deletions(-)
+ create mode 100644 "content/Claude Code \352\270\260\353\260\230 \353\214\200\354\213\234\353\263\264\353\223\234 \353\224\224\354\236\220\354\235\270 \354\233\214\355\201\254\355\224\214\353\241\234\354\232\260 (Dashboard Design Workflow with Claude Code).md"
+[2026-07-18 14:11:59] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-18 14:11:59] symlink 복원 완료
+---
+[2026-07-18 14:11:59] 배포 시작
+[2026-07-18 14:11:59] wiki 동기화 완료
+[2026-07-18 14:12:00] 출처 섹션 제거 완료
