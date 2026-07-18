@@ -67,6 +67,7 @@ sources:
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
   - raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md
+  - raw/6 Ways UI_UX Designers Are Using AI.md
 status: evergreen
 tags:
   - llm
@@ -79,7 +80,7 @@ tags:
   - prototyping
   - ai
 type: workflow
-updated: 2026-07-10
+updated: 2026-07-18
 ---
 
 # UI UX 디자인 AI 워크플로우
@@ -230,6 +231,16 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 ### Vetidesk & FX Pro 디자인 검증 사례
 - **Vetidesk**: 사용자 온보딩 경험에 AI 피드백 루프를 도입하여 가입 전환율이 2.9배 향상되었으며, Fable 도구 사용 시 화면당 논리 오류율이 Opus 4.8 단독 사용 대비 30% 감소하였다.
 - **FX Pro**: 시각적 복잡성이 높은 프로 트레이딩 화면에서 AI를 활용한 대비감 및 라벨 정렬 검증을 통해 레이아웃 결함을 사전에 제거하였다.
+
+### 6. AI 실무 적용 6대 영역과 생산성 지표
+현업 디자인 팀의 65%가 인터페이스 제작 속도 향상, 가설 검증, 사용자 행동 분석에 AI를 도입했으며, UX 리서처의 80%가 연구 분석에 AI를 도입했다. [raw/6 Ways UI_UX Designers Are Using AI.md](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md) AI 도구 도입 시 작업 완료 시간은 40% 단축되고 품질은 18% 향상되는 등 실무의 주요 워크플로우에 결합되어 있다. [raw/6 Ways UI_UX Designers Are Using AI.md](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md)
+1. **와이어프레임 빌드 & 컨셉 제안**: Galileo AI (프롬프트-UI 변환), Relume (Figma/Webflow 연동 와이어프레임), Uizard (스케치-디지털 변환), v0 by Vercel (React+Tailwind 코드 생성) 등을 사용하여 초안 생성 및 탐색 루프를 가속화한다. AI 도입 에이전시의 77%는 인터페이스 디자인 시간을 36% 절감했다. [raw/6 Ways UI_UX Designers Are Using AI.md](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md)
+2. **사용자 리서치 & 데이터 종합**: Maze, Lookback, Dovetail 등을 활용해 녹음 자료 자동 녹취, 감정 점수 계산, 핵심 패턴 군집화 등을 자동화하여 데이터 분석 종합 시간을 70~90% 절약한다. [raw/6 Ways UI_UX Designers Are Using AI.md](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md)
+3. **UI 카피라이팅 & 마이크로카피**: 에러 상황, 빈 화면, 온보딩 등 감정이 고조되는 임계 영역에서 Claude, ChatGPT 및 Figma AI 텍스트 제안 기능으로 어조(톤앤매너)별 마이크로카피 시안을 즉시 생성해 검증한다.
+4. **접근성 감사 (Accessibility Auditing)**: 디자인 사후 검사 대신 Stark (Figma 플러그인) 등을 연동하여 색상 대비비, 터치 대상 규격, 탭 순서(Focus order)를 디자인 과정 중 실시간 감사하여 교정 비용을 절감한다.
+5. **개발 핸드오프 (Design-to-Code)**: Figma Dev Mode의 AI 주석(Annotations)이나 Locofy, Anima, Builder.io 등을 이용해 Figma 프레임에서 고품질 프론트엔드 코드를 추출하여 구현 일치율을 높인다.
+6. **경쟁사 분석 & 디자인 리서치**: Perplexity AI나 Claude로 분석 평가용 UX 프레임워크를 먼저 도출한 뒤 경쟁사 스크린샷의 공통 디자인 패턴을 비교·식별하고 요약 보고서를 가공한다.
+
 
 ## 예시
 
