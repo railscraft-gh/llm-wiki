@@ -85,6 +85,7 @@ sources:
   - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
   - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+  - raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams Confuse Them).md
 status: evergreen
 tags:
   - llm
@@ -92,7 +93,7 @@ tags:
   - harness-engineering
   - ai-coding
 type: concept
-updated: 2026-07-10
+updated: 2026-07-18
 ---
 
 # Harness Engineering
@@ -132,7 +133,15 @@ Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions),
     → 하네스 엔지니어링 (2026: "전체 환경을 어떻게 설계할 것인가?")
 ```
 
-### 3. 하네스 구축의 핵심 철학 및 규칙
+### 3. 하네스(Harness) vs 루프(Loop) 엔지니어링의 관계 (자동차 비유)
+- **AI 모델 = 엔진**: 강력한 동력을 제공하나 스스로 안전하게 운전하지 못함.
+- **하네스 = 안전 및 제어 시스템 (브레이크, 안전벨트, 센서 등)**: 마력을 높이지 않으나 주행 과정이 안전하게 제어되고 모니터링되도록 보장함. "이 주행이 안전하게 완료될 수 있는가?"라는 질문에 답함. [raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams Confuse Them).md](file:///Users/railscraft/Obsidian/raw/Loop%20Engineering%20vs.%20Harness%20Engineering.%20When%20to%20Use%20Each%20%28And%20Why%20Most%20Teams%20Confuse%20Them%29.md)
+- **루프 = 내비게이션 및 운전자**: 경로와 목적지를 설정하고, 언제 계속 달릴지 멈출지 결정함. "이제 목적지는 어디로 설정해야 하는가?"라는 질문에 답함. [raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams Confuse Them).md](file:///Users/railscraft/Obsidian/raw/Loop%20Engineering%20vs.%20Harness%20Engineering.%20When%20to%20Use%20Each%20%28And%20Why%20Most%20Teams%20Confuse%20Them%29.md)
+- **혼동 시 발생하는 기술적 장애**:
+  - *루프 강 + 하네스 약*: 에이전트가 통제력을 잃고 무한 루프 폭주를 하거나, 안전장치가 없어 데이터나 코드를 파괴함.
+  - *하네스 강 + 루프 약*: 단일 실행은 안전하고 철저하게 감시되지만, 여러 단계의 태스크 수행 시 인간이 매 단계를 수동으로 개입해서 시작해 주어야 함.
+
+### 4. 하네스 구축의 핵심 철학 및 규칙
 1. **Rippable (탈착 가능성)**: 하네스에 복잡한 복구 로직을 직접 짜 넣지 않는다. 다음 세대 모델(예: Claude 5.0)이 출시되면 기존 에러 복구 로직은 기술 부채로 전락한다. 불필요해진 하네스 계층을 쉽게 도려낼(Rip) 수 있게 설계해야 한다.
 2. **CLAUDE.md는 200줄 이하로**: Anthropic 공식 문서에 따르면 지침이 200줄을 초과하는 순간부터 에이전트의 규칙 준수율(Compliance)이 급락한다. 범용 행동 계약은 60줄 이하로 `CLAUDE.md`에 두고, 복잡한 템플릿과 세부 사실 정보는 `~/.claude/projects/<project>/memory/MEMORY.md`로 격리 운영한다.
 3. **가드레일과 강제성**: `CLAUDE.md`는 에이전트에게 보내는 '권고'일 뿐이다. 절대 타협 불가능한 린터, 포매팅, 보안 검사는 pre-commit hook이나 샌드박스로 강제 설계(Enforce)해야 한다.
