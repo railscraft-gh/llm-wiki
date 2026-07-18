@@ -16,18 +16,59 @@ updated: 2026-07-16
 ### Ingest
 
 - 입력:
+  - `raw/10 Figma Component Structures Used by the World’s Best Design Teams.md`
+  - `raw/12 UI Patterns Designers Copy From Top SaaS Products.md`
+  - `raw/28 Core System Design Concepts, Explained Through the Failures They Prevent.md`
+  - `raw/6 Landing Page Mistakes that Kills Signups.md`
+  - `raw/6 Ways UI_UX Designers Are Using AI.md`
+  - `raw/8 Tiny UI Fixes Most Designers Ignore.md`
+  - `raw/AI Won’t Replace Designers. But It Is Changing What Designers Get Paid For..md`
+  - `raw/Block-Level and Inline Elements. The difference between div and span.md`
+  - `raw/Building a UIUX Portfolio That Actually Gets You Hired. A Research-Backed Guide.md`
+  - `raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md`
   - `raw/Designing with web standards. The playbook for this AI moment.md`
   - `raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md`
   - `raw/How Claude Code, Codex, and Cursor Do Loop Engineering.md`
   - `raw/How GPT-5 is Revolutionizing Design. A Game-Changer for UIUX and Product Designers.md`
   - `raw/How to Design a Production-Ready Dashboard with Claude Code.md`
+  - `raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md`
+  - `raw/Linus Torvalds Said the Quiet Part Out Loud About AI and Code Quality. The Engineering Community Is Not Ready for It..md`
+  - `raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams Confuse Them).md`
+  - `raw/Stop Memorizing Design Patterns. Use This Decision Tree Instead.md`
+  - `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
+  - `raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md`
+  - `raw/The Product Designer Skill Stack for 2026. 8 Skills That Matter More Than UI Design.md`
+  - `raw/The most popular experience design trends of 2026.md`
+  - `raw/What 32 design leaders do when told to move faster.md`
+  - `raw/You’re not going to like what AI becomes after July 12th..md`
 - 생성:
+  - [[Figma 컴포넌트 아키텍처]] (신규)
+  - [[SaaS UI 패턴 모범 사례]] (신규)
+  - [[시스템 디자인 핵심 개념]] (신규)
+  - [[전환 최적화 랜딩 페이지 설계]] (신규)
+  - [[UI 완성도를 높이는 8가지 미세한 디테일 (8 Tiny UI Fixes)]] (신규)
+  - [[HTML 블록 레벨 및 인라인 요소 (Block-level and Inline Elements)]] (신규)
+  - [[디자이너 포트폴리오 구축 전략]] (신규)
   - [[AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)]] (신규)
   - [[Headroom]] (신규)
   - [[GPT-5 기반 UIUX 디자인 협업 (UIUX Design Collaboration with GPT-5)]] (신규)
   - [[Claude Code 기반 대시보드 디자인 워크플로우 (Dashboard Design Workflow with Claude Code)]] (신규)
+  - [[리누스 토발즈의 AI 코드 품질 관점]] (신규)
+  - [[디자인 패턴 의사결정 트리]] (신규)
+  - [[프로덕트 디자이너 스킬 스택]] (신규)
+  - [[2026년 경험 디자인 트렌드]] (신규)
+  - [[속도 압박에 대응하는 디자인 의사결정 전략]] (신규)
 - 수정:
-  - [[루프 엔지니어링]] (기본 Grader의 꼼수 우회 한계 및 Verifier/Inspector 설계 필요성 추가)
+  - [[UI UX 디자인 AI 워크플로우]] (Galileo AI, Relume, Stark 활용성 및 정량 지표 추가)
+  - [[디자이너 생존 전략 (2026-2030)]] (AI 파트너십 구축 및 리더 역량 보강)
+  - [[DESIGN.md 운영 원칙]] (Figma 토큰 셋업 및 CSS 바인딩 워크플로우 보강)
+  - [[Claude.md 운영 원칙]] (에이전트 권한 최소화 및 빌드 검증 루프 연동 추가)
+  - [[루프 엔지니어링]] (기본 Grader의 한계 우회 예방 및 외부 오라클 Verifier 필요성 보강)
+  - [[LLM Wiki 구현 선택지]] (5대 구현체 수치 기반 실전 7일 테스트 분석 추가)
+  - [[Harness Engineering]] (루프 폭주 제어용 브레이크 비유 및 안전벨트 격 시스 설계 보강)
+  - [[NVIDIA Build (무료 AI 추론 플랫폼)]] (외부 API 제약 및 Cursor 연동 보강)
+  - [[AI 겨울과 경제적 조정]] (AI 토큰 과금 꼼수 리스크 및 버블 교정 흐름 추가)
+  - [[AI 경제에서 스킬만으로는 부족하다]] (스킬 인버전 대응 자산 구축 전략 보강)
 - index 업데이트: 완료
 - 남은 검토: 없음
 
@@ -44,8 +85,8 @@ updated: 2026-07-16
 ### 결정 기록
 
 - 결정: Ingest 및 수정 완료
-- 대상: [[AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)]], [[Headroom]], [[루프 엔지니어링]], [[GPT-5 기반 UIUX 디자인 협업 (UIUX Design Collaboration with GPT-5)]], [[Claude Code 기반 대시보드 디자인 워크플로우 (Dashboard Design Workflow with Claude Code)]]
-- 근거: 브라우저 전쟁을 바탕으로 한 AI 웹 표준 기획, 에이전트 토큰 절감 컨텍스트 압축 툴(Headroom), 루프 엔지니어링의 감시자 설계, GPT-5 협업 디자인 프로세스 및 Claude Code 대시보드 검증 등의 핵심 지식 수입 완료.
+- 대상: 위에 언급된 16개 신규 위키 문서 및 10개 수정/보강 위키 문서
+- 근거: Figma 아키텍처, SaaS UI 패턴, 분산형 시스템 안정화, 랜딩페이지 CRO, 미세 UI 디테일, HTML 기본기, AI 시대의 의미론적 웹 표준 수용, Headroom 컨텍스트 절감, GPT-5/Claude Code 기반 대시보드 및 포트폴리오 디자인 전략, 리누스 토발즈 품질론, 디자인 패턴 트리, AI 겨울 리스크 등 총 25개 고품질 아티클의 핵심 지식 수입 완료.
 
 ## 2026-07-15-번역 및 Ingest
 
