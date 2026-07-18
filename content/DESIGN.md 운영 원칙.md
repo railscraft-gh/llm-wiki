@@ -67,15 +67,15 @@ updated: 2026-07-10
 DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관된 UI를 유지하도록 디자인 시스템의 값, 의도, 경계 규칙을 인코딩하고 제어하는 마크다운 기반의 영구 컨텍스트(Persistent context) 관리 기법이다.
 
 ## 핵심 요지
-- **CLAUDE.md vs DESIGN.md 역할 분할**: `CLAUDE.md`가 에이전트에게 **코드 작성 방식(Code Behavior)**을 가르친다면, `DESIGN.md`는 에이전트가 엉성하고 파편화된 UI를 만들지 않게 **비주얼 가이드(Visual Behavior)**를 고정한다 [출처](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md).
+- **CLAUDE.md vs DESIGN.md 역할 분할**: `CLAUDE.md`가 에이전트에게 **코드 작성 방식(Code Behavior)**을 가르친다면, `DESIGN.md`는 에이전트가 엉성하고 파편화된 UI를 만들지 않게 **비주얼 가이드(Visual Behavior)**를 고정한다 [raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md#L18](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md#L18).
 - **값-의도-경계(Value-Intent-Boundary) 매핑**: 단순한 토큰 덤프(hex 코드의 단순 나열)가 아니라, 토큰값의 구체적인 역할(Intent)과 금지/경계 구역(Boundary)을 명세한다. 모델은 산문적 제약(Prose constraints)을 가장 효과적으로 준수하기 때문이다.
 - **Do's and Don'ts(금지 규칙)의 효용성**: 시스템이 절대 취하지 않는 선택(예: 그라데이션 금지, 8px 초과 반경 금지 등)을 명문화하는 것이 토큰 종류를 늘리는 것보다 plausible default(그럴듯하지만 브랜드와 어긋나는 기본값)로의 회귀를 차단하는 데 훨씬 우수하다.
 - **디자인 인프라 격차 해소**: TypeScript generics나 아키텍처 리팩터링은 도구들의 보완책(`.cursorrules`, type check, formatter, CI) 덕분에 고정되나 디자인 일관성은 장치가 없었다. `DESIGN.md`는 이 디자인 레이어의 컨텍스트 기억 부재 문제를 해결하는 단순한 뼈대다.
 - **디자이너의 의도적 판단(Reasoning Layer) 주입**: AI는 Figma 디자인 등에서 색상이나 치수 같은 "무엇(What)"은 잘 추출하지만, 제품의 목적이나 비협상적 가이드라인 같은 "왜(Why)"는 추론하거나 날조하기 때문에 인간이 직접 인터뷰 형식을 통해 "왜"에 대한 의사결정 맥락을 입력해 주어야 한다.
 - 기계 가독성을 온전히 확보하기 위해 9가지 필수 섹션을 일관성 있게 구성한다.
 - Figma 디자인 토큰과 UI 핸드오프를 코드 격차 없이 동기화하기 위한 뼈대로 작동한다.
-- 디자인 감도를 가르는 한글 텍스트 타이포그래피의 핵심 수치는 본문 기준 자간(letter-spacing) `-0.02em`, 행간(line-height) `1.5`~`1.6` 수준이며, 한글 베이스라인의 특성상 1.5 미만으로 좁아지면 가독성이 크게 답답해진다. (출처: raw/AI로_만든_제품이_안_팔리는_이유.md)
-- AI 에이전트는 컨텍스트 윈도우가 누적될수록 단기 기억 상실(약 30분 주기) 현상을 보이며 5회 중 1회꼴로 `DESIGN.md` 가이드를 어기고 임의의 패딩이나 폰트 크기를 오버라이드하여 UI를 파손하므로, 지속적인 재읽기 강제와 자동 린팅 검사 장치가 필수적이다. (출처: raw/AI로_만든_제품이_안_팔리는_이유.md)
+- 디자인 감도를 가르는 한글 텍스트 타이포그래피의 핵심 수치는 본문 기준 자간(letter-spacing) `-0.02em`, 행간(line-height) `1.5`~`1.6` 수준이며, 한글 베이스라인의 특성상 1.5 미만으로 좁아지면 가독성이 크게 답답해진다 [raw/AI로_만든_제품이_안_팔리는_이유.md#L125-L129](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%A0%9C%ED%92%88%EC%9D%B4_%EC%95%88_%ED%8C%94%EB%A6%AC%EB%8A%94_%EC%9D%B4%EC%9C%A0.md#L125-L129).
+- AI 에이전트는 컨텍스트 윈도우가 누적될수록 단기 기억 상실(약 30분 주기) 현상을 보이며 5회 중 1회꼴로 `DESIGN.md` 가이드를 어기고 임의의 패딩이나 폰트 크기를 오버라이드하여 UI를 파손하므로, 지속적인 재읽기 강제와 자동 린팅 검사 장치가 필수적이다 [raw/AI로_만든_제품이_안_팔리는_이유.md#L142-L148](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%A0%9C%ED%92%88%EC%9D%B4_%EC%95%88_%ED%8C%94%EB%A6%AC%EB%8A%94_%EC%9D%B4%EC%9C%A0.md#L142-L148).
 
 ## 상세
 
@@ -85,7 +85,7 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 - **Style Drift**: 영구적인 디자인 참고 문서가 없어서 대화 세션마다 모서리 반경(Rounded vs Square)이나 spacing scale(8px vs 16px)을 일관성 없게 구현하는 현상.
 
 ### 2. 4가지 핵심 질문 인터뷰 프레임워크 (Figma 추출의 한계 극복)
-에이전트가 Figma에서 토큰만 파싱하게 방치하면 "무엇"은 정확해도 "왜" 즉, 제품의 본질적 의도와 비협상 항목을 임의로 날조하여 그럴듯한 추론(Plausible default)으로 채우게 된다. 따라서 문서를 구성하기 전 디자이너/개발자는 반드시 다음 4가지 핵심 질문으로 구성된 인터뷰를 통해 "왜"에 해당하는 생각을 주입해야 한다 [출처](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md).
+에이전트가 Figma에서 토큰만 파싱하게 방치하면 "무엇"은 정확해도 "왜" 즉, 제품의 본질적 의도와 비협상 항목을 임의로 날조하여 그럴듯한 추론(Plausible default)으로 채우게 된다. 따라서 문서를 구성하기 전 디자이너/개발자는 반드시 다음 4가지 핵심 질문으로 구성된 인터뷰를 통해 "왜"에 해당하는 생각을 주입해야 한다 [raw/How to write a DESIGN.md file Claude can actually use-ko.md#L77](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md#L77).
 1. *이 제품은 무엇을 하는가?*
 2. *누가 쓰는가?*
 3. *UI가 사용자를 무엇으로 도와야 하는가?* (제품 요약을 상단에 배치)
@@ -94,7 +94,7 @@ DESIGN.md 운영 원칙은 AI 코딩 에이전트가 visual drift 없이 일관�
 ---
 
 ### 3. DESIGN.md Spec과 9개 섹션 레이아웃
-2026년 4월 21일 Google은 `DESIGN.md` Spec을 공개하였고, 이후 VoltAgent의 `awesome-design-md` 아카이브는 이 형식을 따르는 **423개 브랜드의 디자인 시스템 파일**을 모아 배포했다. 이 표준 파일 레이아웃은 다음과 같이 3대 레이어, 9개 섹션으로 구성된다.
+2026년 4월 21일 Google은 `DESIGN.md` Spec을 공개하였고, 이후 VoltAgent의 `awesome-design-md` 아카이브는 이 형식을 따르는 **423개 브랜드의 디자인 시스템 파일**을 모아 배포했다 [raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md#L18-L20](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md#L18-L20). 이 표준 파일 레이아웃은 다음과 같이 3대 레이어, 9개 섹션으로 구성된다.
 1. **Foundation (브랜드를 세팅하는 층)**
    *   **Visual Theme & Atmosphere**: 숫자가 아닌 제품 미학적 톤앤매너(예: technical and luxurious 등) 규정.
    *   **Color Palette & Roles**: hex 나열 대신 색상의 역할 지정으로 Color Roulette 방지.
