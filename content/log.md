@@ -11,6 +11,44 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-20-ingest-group1
+
+### Ingest
+
+- 입력:
+  - `raw/Text vs Binary. How Dropping JSON Squeezed 5x More Throughput From Our APIs.md`
+  - `raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`
+  - `raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md`
+  - `raw/I Hired a Penetration Tester to Attack My FastAPI App. He Owned Everything in 45 Minutes.md`
+  - `raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`
+  - `raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md`
+- 생성:
+  - [[Compile-Time RAG]]
+  - [[바이너리 API 프로토콜]]
+  - [[FastAPI 보안 및 펜테스팅]]
+  - [[오픈소스 OCR 모델]]
+  - [[브라우저 파비콘 보안 취약점]]
+  - [[시스템 디자인 면접 피드백]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 (AGENTS.md 스키마 검증, 2+ Outgoing Wikilinks, 수치 문장 raw 소스 연동 출처 확인, humanize-korean 100% 만족)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+
+### 결정 기록
+
+- 결정: Group 1 (System Design & Security & RAG) 6개 raw 파일 분석 및 6개 wiki 노트 작성 완료
+- 대상: [[Compile-Time RAG]], [[바이너리 API 프로토콜]], [[FastAPI 보안 및 펜테스팅]], [[오픈소스 OCR 모델]], [[브라우저 파비콘 보안 취약점]], [[시스템 디자인 면접 피드백]]
+- 근거: AGENTS.md 및 Vault 가이드라인 수용
+
 ## 2026-07-20-ingest-group2
 
 ### Ingest
