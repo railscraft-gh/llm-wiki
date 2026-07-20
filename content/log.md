@@ -11,6 +11,51 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-20-ingest-group2
+
+### Ingest
+
+- 입력:
+  - `raw/Designers will OWN 2026–2030.md`
+  - `raw/Figma just made your design system debt everyone’s problem. Now use it..md`
+  - `raw/Rethinking Figma in an AI world.md`
+  - `raw/Fake It Until You Break It. The End Of Non-Technical Managers In Software Engineering Dawns.md`
+  - `raw/His Code Backs Up the World. Now the Internet Wants Him Flogged..md`
+  - `raw/How to Express Yourself So People Actually Listen.md`
+  - `raw/How to Start Something When No One Believes in You.md`
+- 생성:
+  - [[디자이너 소유권 (2026-2030)]]
+  - [[디자인 시스템 부채 관리]]
+  - [[AI 시대의 피그마 재정의]]
+  - [[비기술 관리자의 종료]]
+  - [[오픈소스 유지관리자의 가치와 위험]]
+  - [[소통과 영향력의 기술]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 자가 검증 (AGENTS.md 규칙, 수치 문장 출처 링크 100%, 2+ 관련 노트 상호 링크, humanize-korean 전수 검증)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+
+### 결정 기록
+
+- 결정: Group 2 Ingest 완료 (Design & Leadership/Career)
+- 대상:
+  - [[디자이너 소유권 (2026-2030)]]
+  - [[디자인 시스템 부채 관리]]
+  - [[AI 시대의 피그마 재정의]]
+  - [[비기술 관리자의 종료]]
+  - [[오픈소스 유지관리자의 가치와 위험]]
+  - [[소통과 영향력의 기술]]
+- 근거: raw/ 자료 7종에서 원자적 지식 및 주장을 추출하여 6개 신규 wiki 노트를 생성하고 index.md 및 상호 wikilink 구조를 완전화함.
+
 ## 2026-07-20-ingest
 
 ### Ingest
