@@ -37,9 +37,11 @@ updated: 2026-07-16
   - `raw/Rethinking Figma in an AI world.md`
   - `raw/You Don’t Need a Job to Make Money.md`
 - 생성:
-  - 없음 (원문 자료 번역 및 raw/ 폴더 적재 수행)
+  - [[피드백 제어기 (Feedback Controller)]]
+  - [[에이전틱 자동화 루프 패턴]]
 - 수정:
-  - 없음
+  - [[루프 엔지니어링]]
+  - [[로컬 LLM 30분 실전 가이드]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
