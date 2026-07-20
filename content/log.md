@@ -11,6 +11,44 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-20-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/Designers will OWN 2026–2030.md`
+  - `raw/How to Create Loops with Claude Code. A Practical Guide to Agentic Automation.md`
+  - `raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`
+  - `raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`
+  - `raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md`
+- 생성:
+  - 없음 (원문 자료 번역 및 raw/ 폴더 적재 수행)
+- 수정:
+  - 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 및 에이전트 자가 검증 (마크다운 포맷 유지 및 한글 윤문 규칙 준수 여부 100% 점검 완료)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+
+### 결정 기록
+
+- 결정: 원천 자료(Raw) 생성 및 번역 완료
+- 대상:
+  - `raw/Designers will OWN 2026–2030.md`
+  - `raw/How to Create Loops with Claude Code. A Practical Guide to Agentic Automation.md`
+  - `raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`
+  - `raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`
+  - `raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md`
+- 근거: 지정된 5개 영어 원문 자료에 대해 마크다운 요소(이미지 링크, 하이퍼링크, 코드블록 등)를 보존하고, `humanize-korean` 윤문 기법을 적용하여 가치 있는 한국어 원문 자료(raw/) 지식 데이터로 적재 완료.
+
 ## 2026-07-18-ingest
 
 ### Ingest
