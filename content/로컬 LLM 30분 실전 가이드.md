@@ -125,6 +125,22 @@ updated: 2026-07-10
   3. *MLX Direct (Python/Swift)*: 하드웨어 밀착 가속. llama.cpp 대비 20~30% 성능 우수. macMLX 활용 시 OpenAI API 호환 지원.
   4. *LM Studio*: 데스크톱 GUI 환경의 모델 및 API 서버 개설용.
 
+#### NVIDIA GPU vs Apple Silicon 셋업 및 트레이드오프
+
+로컬 LLM 환경을 구축할 때 대표적인 하드웨어 아키텍처 옵션인 NVIDIA 외장 GPU(예: RTX 5060 Ti 16GB, RTX 5090 32GB)와 Apple Silicon 통합 메모리(Unified Memory)는 명확한 성능상·구조상 트레이드오프를 가진다.
+
+- **VRAM 대역폭 및 CUDA 가속 vs 통합 메모리 용량**:
+  - **NVIDIA GPU**: 전용 GDDR 메모리의 방대한 대역폭(Bandwidth)과 대다수 LLM 추론 프레임워크에 최적화된 CUDA 코어를 바탕으로, VRAM 범위 내에 온전히 상주하는 모델에 대해 극도로 높은 추론 속도(TPS)와 낮은 레이턴시를 제공한다. 예를 들어 RTX 5060 Ti 16GB는 통합 메모리 용량이 더 큰 MacBook Pro/Air(예: 24GB M4 Air)보다 대역폭 우위를 바탕으로 소형/중형 모델 추론에서 더 빠른 속도를 발휘한다.
+  - **Apple Silicon**: CPU와 GPU가 대용량 통합 메모리를 공유하여 단일 소비자용 GPU의 VRAM 한계(16GB~32GB)를 훨씬 초과하는 거대 모델(70B+ 또는 120B~744B MoE)을 64GB~256GB RAM에 통째로 적재할 수 있다. 멀티 GPU 구성 없이 단일 기기에서 대형 모델을 돌릴 수 있는 고용량 메모리 효율성이 뛰어나다.
+
+- **VRAM 오프로딩 한계 및 전력 소모**:
+  - **VRAM 오프로딩 한계**: 모델 크기 및 긴 컨텍스트 윈도우(Prompt Pre-prompt 등) 사용으로 인해 메모리 요구량이 GPU VRAM 용량을 초과(예: 16GB VRAM 기기에서 12GB 이상 모델+컨텍스트 구동)할 경우, 초과분 레이어가 시스템 RAM과 CPU로 오프로딩된다. 이 경우 CPU 연산 및 PCIe/RAM 대역폭 병목으로 인해 토큰 생성 속도(TPS)가 급격히 곤두박질치고 프롬프트 전처리 시간이 늘어나 수동 코딩보다 느려지는 한계가 발생한다.
+  - **전력 소모 및 발열**: 플래그십 GPU(예: RTX 5090 32GB)는 우수한 추론 속도를 제공하지만 상당한 전력 소모와 열을 발생시킨다. 고효율 파워서플라이(Platinum/Titanium 등급 PSU)를 사용해 전력 변환 손실을 줄일 수 있으나 GPU 자체의 누진세 부하 및 발열은 불가피하다. 반면 Apple Silicon은 고효율 전력 설계로 낮은 전력 소모와 저소음·저발열 운용이 가능하다.
+
+- **출처 레퍼런스**:
+  - [7 Local LLM Families To Replace Claude_Codex (for everyday tasks)](file:///Users/railscraft/Obsidian/raw/7%20Local%20LLM%20Families%20To%20Replace%20Claude_Codex%20%28for%20everyday%20tasks%29.md)
+  - [로컬 AI 구동용 고사양 PC 구매는 돈값할까](file:///Users/railscraft/Obsidian/raw/%EB%A1%9C%EC%BB%AC%20AI%20%EA%B5%AC%EB%8F%99%EC%9A%A9%20%EA%B3%A0%EC%82%AC%EC%96%91%20PC%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EB%8F%88%EA%B0%92%ED%95%A0%EA%B9%8C.md)
+
 ---
 
 ### 2. KV 캐시 압축 기술 (TurboQuant)
