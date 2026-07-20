@@ -110,12 +110,14 @@ updated: 2026-07-10
 
 | 하드웨어 구분 | 가용 물리 RAM | 추천 모델 | STT / TTS 엔진 | 디코드 성능 및 특징 |
 | :--- | :--- | :--- | :--- | :--- |
-| **M1 / M1 Pro / Entry** | 8 ~ 16GB | 내장 Apple 파운데이션 (3B)<br>Q4 Qwen3.5-35B-A3B | WhisperKit (base/small)<br>Kokoro ONNX | 스왑 부하 방지를 위해 3B~4B 이하 모델 또는 3B active의 MoE(Qwen3.5-35B-A3B Q4) 권장 (예산 $0-300) |
+| **M1 / M1 Pro / Entry** | 8 ~ 16GB | 내장 Apple 파운데이션 (3B)<br>Q4 Qwen3.5-35B-A3B | WhisperKit (base/small)<br>Kokoro ONNX | 스왑 부하 방지용으로 3B~4B 이하 모델 또는 3B active의 MoE(Qwen3.5-35B-A3B Q4) 권장 (예산 $0-300) |
 | **M2 / M2 Pro / Mid** | 16 ~ 32GB | Qwen3.5-27B (Dense)<br>GPT-OSS-20B<br>Qwen3-Coder-30B-A3B<br>Devstral Small 2 (24B) | WhisperKit (large-v3-turbo)<br>Kokoro ONNX | 가성비 스윗스팟. 다중 파일 리팩터링 및 프로젝트 구조 분석 가능 (예산 $400-1200) |
 | **M3 Pro / M3 Max / Mid-High** | 18 ~ 128GB | Qwen3.5-27B 상주<br>GPT-OSS-120B / Qwen3.5-122B-A10B 병용 | WhisperKit (large-v3-turbo)<br>Kokoro ONNX | 다수의 모델을 메모리에 상주(Resident)시켜 즉시 전환 가능 (1인 개발 스윗스팟) |
 | **M4 Pro / M4 Max / High** | 24 ~ 128GB | DeepSeek-V3-Distill-32B<br>GLM-4.7 (32B active MoE)<br>Qwen3-Coder-480B 양자화 | WhisperKit / FluidAudio (Parakeet)<br>Kokoro ONNX | 30B급 모델 디코드 속도 60~90 tok/s 도달, 클라우드 API 수준 체감 (예산 $2000-5000) |
 | **M5 / M5 Max / High** | 32 ~ 128GB | Qwen3.5-35B-A3B (최적)<br>GLM-4.7 / Qwen3.5-122B-A10B | FluidAudio (0.19초 전사)<br>Kokoro ONNX | M5 GPU 뉴럴 엑셀러레이터 지원으로 Qwen3.5-35B 디코드 112 tok/s 돌파 |
 | **Ultra / Mac Studio Ultra** | 128 ~ 256GB | GLM-5 (744B MoE, 40B active)<br>MiniMax M2.5 (230B MoE, 10B active)<br>Kimi K2.5 (1.04T MoE, 32B active) | FluidAudio (0.19초 전사)<br>Kokoro ONNX | 초고성능 및 뛰어난 속도로 클라우드 API를 거의 대체하는 끝판왕 환경 (예산 $5000+) |
+
+※ 이 하드웨어 매핑 표의 수치와 모델 벤치마크는 [7 Local LLM Families To Replace Claude_Codex (for everyday tasks)](file:///Users/railscraft/Obsidian/raw/7%20Local%20LLM%20Families%20To%20Replace%20Claude_Codex%20%28for%20everyday%20tasks%29.md)를 기준으로 정리함.
 
 - **4대 로컬 런타임 비교**:
   1. *Apple 파운데이션 모델 (Swift)*: macOS/iOS 내장 3B 모델. `@Generable` 매크로 기반 타입 안전 구조화 출력 및 기본 도구 호출 지원.
