@@ -16,11 +16,26 @@ updated: 2026-07-16
 ### Ingest
 
 - 입력:
+  - `raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md`
+  - `raw/His Code Backs Up the World. Now the Internet Wants Him Flogged..md`
+  - `raw/How to Start Something When No One Believes in You.md`
+  - `raw/Loop Engineering Is NOT What Everybody Thinks It Is.md`
+  - `raw/Text vs Binary. How Dropping JSON Squeezed 5x More Throughput From Our APIs.md`
   - `raw/Designers will OWN 2026–2030.md`
   - `raw/How to Create Loops with Claude Code. A Practical Guide to Agentic Automation.md`
   - `raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`
   - `raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`
   - `raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md`
+  - `raw/Fake It Until You Break It. The End Of Non-Technical Managers In Software Engineering Dawns.md`
+  - `raw/How to Express Yourself So People Actually Listen.md`
+  - `raw/I Hired a Penetration Tester to Attack My FastAPI App. He Owned Everything in 45 Minutes.md`
+  - `raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md`
+  - `raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md`
+  - `raw/Figma just made your design system debt everyone’s problem. Now use it..md`
+  - `raw/How to Make Money With Claude in 2026.md`
+  - `raw/I Woke Up at 4시 30분 AM for 30 Days — The Truth Nobody Tells You.md`
+  - `raw/Rethinking Figma in an AI world.md`
+  - `raw/You Don’t Need a Job to Make Money.md`
 - 생성:
   - 없음 (원문 자료 번역 및 raw/ 폴더 적재 수행)
 - 수정:
@@ -30,7 +45,7 @@ updated: 2026-07-16
 
 ### Lint
 
-- 실행 방식: 수동 점검 및 에이전트 자가 검증 (마크다운 포맷 유지 및 한글 윤문 규칙 준수 여부 100% 점검 완료)
+- 실행 방식: 수동 점검 및 4개 분할 서브 에이전트 자가 검증 (YAML Frontmatter 유지, 코드 블록/이미지/Wikilink 구조 보존, humanize-korean 100% 점검 완료)
 - 깨진 wikilink: 0개
 - 중복 제목: 0개
 - 출처 없는 수치 문장: 0개
@@ -42,12 +57,27 @@ updated: 2026-07-16
 
 - 결정: 원천 자료(Raw) 생성 및 번역 완료
 - 대상:
+  - `raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md`
+  - `raw/His Code Backs Up the World. Now the Internet Wants Him Flogged..md`
+  - `raw/How to Start Something When No One Believes in You.md`
+  - `raw/Loop Engineering Is NOT What Everybody Thinks It Is.md`
+  - `raw/Text vs Binary. How Dropping JSON Squeezed 5x More Throughput From Our APIs.md`
   - `raw/Designers will OWN 2026–2030.md`
   - `raw/How to Create Loops with Claude Code. A Practical Guide to Agentic Automation.md`
   - `raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`
   - `raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`
   - `raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md`
-- 근거: 지정된 5개 영어 원문 자료에 대해 마크다운 요소(이미지 링크, 하이퍼링크, 코드블록 등)를 보존하고, `humanize-korean` 윤문 기법을 적용하여 가치 있는 한국어 원문 자료(raw/) 지식 데이터로 적재 완료.
+  - `raw/Fake It Until You Break It. The End Of Non-Technical Managers In Software Engineering Dawns.md`
+  - `raw/How to Express Yourself So People Actually Listen.md`
+  - `raw/I Hired a Penetration Tester to Attack My FastAPI App. He Owned Everything in 45 Minutes.md`
+  - `raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md`
+  - `raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md`
+  - `raw/Figma just made your design system debt everyone’s problem. Now use it..md`
+  - `raw/How to Make Money With Claude in 2026.md`
+  - `raw/I Woke Up at 4시 30분 AM for 30 Days — The Truth Nobody Tells You.md`
+  - `raw/Rethinking Figma in an AI world.md`
+  - `raw/You Don’t Need a Job to Make Money.md`
+- 근거: 지정된 20개 영어 원문 자료에 대해 마크다운 요소(이미지 링크, 하이퍼링크, 코드블록 등)를 보존하고, `humanize-korean` 윤문 기법을 적용하여 가치 있는 한국어 원문 자료(raw/) 지식 데이터로 적재 완료.
 
 ## 2026-07-18-ingest
 
