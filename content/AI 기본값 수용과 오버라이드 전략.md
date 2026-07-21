@@ -42,7 +42,7 @@ AI 기본값 수용과 오버라이드 전략은 AI가 먼저 밀어 넣는 foun
 ## 예시
 
 - admin UI 초안은 shadcn-style foundation으로 시작하되, spacing, copy tone, table density는 팀 규칙으로 override한다.
-- 개인 agent runtime은 OpenClaw 구조를 참고하되, shell 권한, 네트워크 바인딩, 승인 경계는 별도로 잠근다.
+- 개인 agent runtime은 [[OpenClaw]] 구조를 참고하되, shell 권한, 네트워크 바인딩, 승인 경계는 별도로 잠근다.
 - 팀은 새 도구를 평가할 때 "속도를 주는 기본값인가"와 "직접 통제해야 하는 경계인가"를 분리해 본다.
 
 ## 충돌

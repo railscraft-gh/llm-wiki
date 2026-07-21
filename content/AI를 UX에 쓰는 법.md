@@ -74,17 +74,17 @@ AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스
 
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
-2. **특화 레이어 (Specialized UX Tools - Figma Make, Claude Design, Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
 3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
-2. **특화 레이어 (Specialized UX Tools - Figma Make, Claude Design, Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
 3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
-2. **특화 레이어 (Specialized UX Tools - Figma Make, Claude Design, Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
 3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ## 예시
@@ -100,19 +100,19 @@ AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스
 ### 단계별 도입 프레임워크 (12주 로드맵)
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
-- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 Claude Design을 접목.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
 - **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ### 단계별 도입 프레임워크 (12주 로드맵)
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
-- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 Claude Design을 접목.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
 - **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ### 단계별 도입 프레임워크 (12주 로드맵)
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
-- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 Claude Design을 접목.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
 - **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ## 충돌

@@ -55,7 +55,7 @@ GStack은 Claude Code와 호환 에이전트에 제품, 설계, 리뷰, QA, 보�
 - `/codex`: OpenAI Codex CLI를 통한 독립적 코드 리뷰 (review, adversarial challenge, open consultation 모드).
 - `/guard`: `/careful` (파괴적 명령 가드) + `/freeze` (파일 편집 한정 격리) 조합.
 - **`continuous` 체크포인트 모드**: `gstack-config set checkpoint_mode continuous` 적용 시 자동으로 `[gstack-context]`가 포함된 `WIP:` 커밋을 수시로 생성해 컨텍스트 셧다운 복구력 확보. `/ship` 시 스쿼시 처리.
-- **에이전트 호환성**: Cursor, OpenCode, Factory Droid, Slate, Kiro, Hermes, GBrain 등 10개 에이전트와 `--host <agent>` 플래그로 즉각 호환.
+- **에이전트 호환성**: Cursor, [[OpenCode]], Factory Droid, Slate, Kiro, Hermes, [[GBrain]] 등 10개 에이전트와 `--host <agent>` 플래그로 즉각 호환.
 
 ## 예시
 

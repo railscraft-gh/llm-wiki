@@ -98,8 +98,8 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
 - 2026년 3월 5일 오픈 베타로 출시된 Figma Slots는 named slot 구조를 제공하여 detaching(컴포넌트 해제) 문제를 원천 차단한다.
 - Figma Variables 3계층(Primitives, Semantic tokens, Component tokens) 중 Semantic token 설계는 기계가 의도(intent)를 추론하게 만드는 비협상 필수 조건이다.
 - Uber는 2026년 3월 Figma Console MCP(southleft/figma-mcp)와 AI 에이전트를 연동해 24시간 동기화되고 몇 분 만에 완전한 component spec을 빌드하는 파이프라인을 공개했다.
-- 디자인 시스템은 색상, 타이포그래피, spacing, icon style, component state를 정해 AI Slop을 줄인다.
-- DESIGN.md 운영 원칙처럼 agent-readable 형식으로 저장하면 AI가 디자인 의도를 매번 새로 추측하지 않아도 된다.
+- 디자인 시스템은 색상, 타이포그래피, spacing, icon style, component state를 정해 [[AI Slop]]을 줄인다.
+- [[DESIGN.md 운영 원칙]]처럼 agent-readable 형식으로 저장하면 AI가 디자인 의도를 매번 새로 추측하지 않아도 된다.
 
 ## 상세
 
@@ -150,8 +150,8 @@ AI 시대 디자인 시스템은 사람이 화면을 일일이 그리는 규칙�
   - Cursor(바이브 코딩)와 Figma MCP 서버를 활용하여 자체 Figma 플러그인을 구축한다. 이를 통해 실제 운영 웹사이트의 라이브 데이터(이미지, 제품 설명, 평점 등)를 UI 컴포넌트에 실시간 긁어와 자동 정렬 및 입력함으로써, 목업이 아닌 고도로 사실적인 디자인 품질을 보장한다.
 
 - **Anthropic의 30줄 CSS 미학 선언문**:
-  - **AI Slop 방지를 위한 수렴 거부**: Inter, Roboto, Arial, Space Grotesk 등 일반적인 폰트 선택 및 흰 배경 위 보라색 그라데이션 같은 진부한 SaaS 미학의 사용을 절대 금지(Forbidden List)한다.
-  - **극단적 미학 명세**: Brutally minimal, Maximalist chaos, Retro-futuristic, Editorial/magazine 등 11가지 시각 미학 방향 중 하나를 명확히 선언하고, gradient meshes, noise textures, layered transparencies 등의 디테일 질감을 적극 수용하여 '평균적 AI Slop'을 차단한다.
+  - **[[AI Slop]] 방지를 위한 수렴 거부**: Inter, Roboto, Arial, Space Grotesk 등 일반적인 폰트 선택 및 흰 배경 위 보라색 그라데이션 같은 진부한 SaaS 미학의 사용을 절대 금지(Forbidden List)한다.
+  - **극단적 미학 명세**: Brutally minimal, Maximalist chaos, Retro-futuristic, Editorial/magazine 등 11가지 시각 미학 방향 중 하나를 명확히 선언하고, gradient meshes, noise textures, layered transparencies 등의 디테일 질감을 적극 수용하여 '평균적 [[AI Slop]]'을 차단한다.
 
 ### 7. 시스템으로서의 취향 (Taste as a System) 구축
 

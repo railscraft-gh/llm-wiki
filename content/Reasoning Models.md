@@ -33,14 +33,14 @@ Reasoning Models는 RL로 Chain-of-Thought 능력을 학습시키고 추론 시 
 ## 핵심 요지
 
 - OpenAI o1과 DeepSeek-R1이 대표 모델이며, 모두 RL로 사고 과정을 스스로 발전시켰다.
-- DeepSeek-R1은 [[LLM 정렬 기법]]의 GRPO를 사용해 Reward Model과 Critic을 모두 제거하고 학습했다.
+- DeepSeek-R1은 [[LLM 정렬 기법]]의 [[GRPO]]를 사용해 Reward Model과 Critic을 모두 제거하고 학습했다.
 - 추론 시 더 많은 계산을 허용하면 성능이 올라간다(test-time compute scaling). 비용도 토큰 수에 비례해 늘어난다.
 
 ## 상세
 
 기존 LLM은 한 번에 답을 출력하도록 학습됐다. Reasoning Models는 답하기 전에 자유롭게 사고 과정을 길게 쓰고, 그 사고가 최종 정답에 도달하면 보상을 받는 방식으로 학습된다. 사고 토큰이 길어질수록 어려운 reasoning 문제를 더 잘 풀지만 응답 시간과 비용이 늘어난다.
 
-**학습 방식:** [[LLM 정렬 기법]]에서 다루는 GRPO는 reasoning model 학습의 핵심 도구다. 동일 프롬프트에 여러 답변을 생성해 그룹 평균 보상으로 Advantage를 계산한다(Aᵢ = rᵢ - mean(r)). 정답이 채점 가능한 [[검증 가능한 도메인]](수학, 코딩)에서 특히 효과적이다. DeepSeek-R1은 이 방법으로 OpenAI o1과 경쟁할 수준의 추론 능력을 RL만으로 얻었다.
+**학습 방식:** [[LLM 정렬 기법]]에서 다루는 [[GRPO]]는 reasoning model 학습의 핵심 도구다. 동일 프롬프트에 여러 답변을 생성해 그룹 평균 보상으로 Advantage를 계산한다(Aᵢ = rᵢ - mean(r)). 정답이 채점 가능한 [[검증 가능한 도메인]](수학, 코딩)에서 특히 효과적이다. DeepSeek-R1은 이 방법으로 OpenAI o1과 경쟁할 수준의 추론 능력을 RL만으로 얻었다.
 
 **Test-Time Compute Scaling:** 추론 시 더 많은 사고 토큰을 허용하면 성능이 향상된다. o1은 응답 전에 비공개 reasoning trace를 생성하고, DeepSeek-R1은 `<think>` 토큰 사이에 사고를 노출한다. 이 방식은 사전훈련 컴퓨트 외에 추론 컴퓨트라는 새 비용 축을 만든다.
 
@@ -56,7 +56,7 @@ Reasoning Models는 RL로 Chain-of-Thought 능력을 학습시키고 추론 시 
 ## 예시
 
 - OpenAI o1, o3: 폐쇄 reasoning trace, 어려운 수학·코딩 벤치마크 SOTA.
-- DeepSeek-R1: 공개 reasoning trace, GRPO 학습, 비용 효율적.
+- DeepSeek-R1: 공개 reasoning trace, [[GRPO]] 학습, 비용 효율적.
 - 수학 올림피아드 문제 풀이, 보안 취약점 분석, 복잡한 시스템 설계 검토.
 
 ## 충돌

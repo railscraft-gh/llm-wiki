@@ -69,14 +69,14 @@ AI 기본값 구현체는 개별 팀이 의식적으로 선택하지 않아도, 
 3. **override 비용보다 채택 비용이 낮은가**
    - 팀이 완전히 새로 설계하는 것보다 일단 받아들이고 일부만 수정하는 쪽이 더 쉬운가.
 4. **생태계 언어가 되었는가**
-   - 사람끼리도 "shadcn 스타일", "OpenClaw 같은 personal agent runtime"처럼 기준점으로 부를 수 있는가.
+   - 사람끼리도 "shadcn 스타일", "[[OpenClaw]] 같은 personal agent runtime"처럼 기준점으로 부를 수 있는가.
 
 네 질문에 다수로 "예"가 나오면, 그 구현체는 단순 인기 도구를 넘어 사실상 기본값이 되었을 가능성이 높다.
 
 ## 예시
 
 - UI 프로토타입을 생성하면 의도하지 않아도 shadcn-style card, form, dialog가 반복된다.
-- self-hosted agent를 조사하면 terminal assistant를 넘어 multi-channel runtime으로 OpenClaw가 기준 사례처럼 반복 등장한다.
+- self-hosted agent를 조사하면 terminal assistant를 넘어 multi-channel runtime으로 [[OpenClaw]]가 기준 사례처럼 반복 등장한다.
 - 팀은 처음부터 blank slate에서 고르기보다 이미 널리 퍼진 기본 구현체 위에서 override 전략을 세우게 된다.
 
 ## 충돌
