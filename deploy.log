@@ -24497,3 +24497,26 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-21 17:05:27] 배포 시작
 [2026-07-21 17:05:27] wiki 동기화 완료
 [2026-07-21 17:05:28] 출처 섹션 제거 완료
+[v4 109a7d0f] Auto-deploy: sync wiki content 2026-07-21 17:05
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 154 insertions(+)
+ create mode 100644 "content/\352\260\225\355\231\224\355\225\231\354\212\265 \353\263\264\354\203\201 \355\225\264\355\202\271 (Reward Hacking in Reinforcement Learning).md"
+ create mode 100644 "content/\353\224\245\353\237\254\353\213\235 \354\212\244\354\274\200\354\235\274\353\247\201 \353\262\225\354\271\231 (Scaling Laws Carefully).md"
+ create mode 100644 "content/\355\224\204\353\241\254\355\224\204\355\212\270 \354\227\224\354\247\200\353\213\210\354\226\264\353\247\201 \355\225\265\354\213\254 \352\270\260\353\262\225 (Prompt Engineering Core Techniques).md"
+[2026-07-21 17:05:30] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-21 17:05:30] symlink 복원 완료
+---
+[2026-07-21 17:05:30] 배포 시작
+[2026-07-21 17:05:31] wiki 동기화 완료
+[2026-07-21 17:05:31] 출처 섹션 제거 완료

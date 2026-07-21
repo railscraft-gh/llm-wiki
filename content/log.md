@@ -11,6 +11,38 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-21-ingest
+
+### Ingest
+
+- 입력:
+  - `raw/Thinking about High-Quality Human Data.md`
+  - `raw/Why We Think.md`
+  - `raw/korean-public-holiday-feature-guide.md`
+- 생성:
+  - [[고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)]]
+  - [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]]
+  - [[한국 공휴일 데이터 연동 아키텍처]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 (AGENTS.md 스키마 검증, 2+ 관련 노트, No-Ask Policy 준수)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+
+### 결정 기록
+
+- 결정: Task 3 (Batch 3) Ingest 완료
+- 대상: [[고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)]], [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]], [[한국 공휴일 데이터 연동 아키텍처]]
+- 근거: AGENTS.md 및 No-Ask Policy에 따라 3개 문서를 분석 후 wiki 노트 생성, 인덱스 등록 및 로그 작성을 자율적으로 완료함.
+
 ## 2026-07-20-ingest-group1
 
 ### Ingest
