@@ -30,13 +30,13 @@ updated: 2026-07-21
 
 2. **평가자 불일치 패러다임**
    - 단일한 정답을 강요할 수 없는 주관적 영역에서는 다수의 해석을 인정하고 포용해야 한다. 
-   - **설명적(Descriptive) 패러다임**: 주관성을 권장하고 다양한 시각을 유지하지만, 품질 지표를 산출하기 까다롭다.
-   - **규범적(Prescriptive) 패러다임**: 주관성을 배제하고 하나의 신념을 따르도록 엄격히 통제한다. 관리가 수월하나 완벽한 가이드라인 구축은 현실적으로 불가능에 가깝다.
+   - **설명적(Descriptive) 패러다임**: 주석 작업자의 주관성을 권장하고 여러 신념을 모두 모델링하려고 시도합니다. 예컨대 폭력·유혈 카테고리는 동의율이 0.96으로 높았으나, 개인적인 토픽에서는 0.25로 극적인 의견 차이를 보였습니다 [raw/Thinking about High-Quality Human Data.md#L61](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61).
+   - **규범적(Prescriptive) 패러다임**: 주석 작업자의 주관성을 최대한 배제하고 오직 하나의 신념만 일관되게 적용하려 애씁니다.
 
 3. **학습 모델 동역학을 이용한 품질 필터링**
-   - **영향 함수(Influence Functions)**: 특정 데이터를 뺐을 때 파라미터 변화량을 근사하여 해당 샘플의 영향력을 측정, 노이즈를 색출한다.
-   - **데이터 맵(Data Maps)**: 학습 중 모델의 자신감과 가변성을 추적하여 라벨이 틀렸을 확률이 높은 '학습하기 어려운(Hard-to-learn)' 구간을 필터링한다.
-   - **망각(Forget)과 AUM(Area under the Margin)**: 모델이 잊어버리는 샘플이나 일반화 압력에 역행하는 샘플들을 찾아내 노이즈 데이터를 잘라낸다.
+   - **영향 함수(Influence Functions)**: 특정 데이터를 뺐을 때 파라미터 변화량을 근사하여 해당 샘플의 영향력을 측정, 노이즈를 색출합니다.
+   - **데이터 맵(Data Maps)**: 학습 중 모델의 자신감과 가변성을 추적하여 라벨이 틀렸을 확률이 높은 '학습하기 어려운(Hard-to-learn)' 구간을 필터링합니다.
+   - **망각(Forget)과 AUM(Area under the Margin)**: 모델이 잊어버리는 샘플이나 일반화 압력에 역행하는 샘플들을 찾아내 노이즈 데이터를 잘라냅니다. AUM의 경우 가짜 라벨을 씌운 임계값 샘플의 AUM 상위 99백분위수를 기준으로 삼아 진짜 노이즈 데이터를 잘라낼 수 있습니다 [raw/Thinking about High-Quality Human Data.md#L93](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L93).
 
 ## 예시
 - **배심원 학습(Jury Learning)**: 평가자들의 인구통계학적 특성 패턴을 학습하여 가상의 배심원단을 구성해 다각적인 판단을 취합하는 추천 시스템 기법.
