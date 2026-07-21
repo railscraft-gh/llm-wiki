@@ -25097,3 +25097,40 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-21 17:54:55] 배포 시작
 [2026-07-21 17:54:55] wiki 동기화 완료
 [2026-07-21 17:54:56] 출처 섹션 제거 완료
+[v4 d4506e42] Auto-deploy: sync wiki content 2026-07-21 17:54
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 22 files changed, 940 insertions(+), 62 deletions(-)
+ create mode 100644 "content/Figma \353\224\224\354\236\220\354\235\270 \354\213\234\354\212\244\355\205\234 \352\260\220\354\202\254.md"
+ create mode 100644 content/Google Stitch.md
+ create mode 100644 content/Think in Code.md
+ create mode 100644 "content/initPromise \355\214\250\355\204\264.md"
+ create mode 100644 "content/\353\223\234\353\235\274\354\235\264 \355\214\214\354\232\260\353\215\224 (Dry powder).md"
+ create mode 100644 "content/\353\225\234\354\247\210\354\213\235 \354\262\230\353\260\251.md"
+ create mode 100644 "content/\353\271\210\352\263\244 \355\224\204\353\246\254\353\257\270\354\227\204.md"
+ create mode 100644 "content/\354\213\234\354\212\244\355\205\234 \353\224\224\354\236\220\354\235\270 \353\251\264\354\240\221 \354\230\244\355\224\204\353\213\235.md"
+ create mode 100644 "content/\354\213\234\354\212\244\355\205\234 \353\251\230\355\203\210 \353\252\250\353\215\270.md"
+ create mode 100644 "content/\354\213\244\354\213\234\352\260\204 \354\225\204\355\213\260\355\214\251\355\212\270.md"
+ create mode 100644 "content/\354\233\214\355\201\254\355\224\214\353\241\234 \353\224\224\354\236\220\354\235\264\353\204\210 (Workflow Designer).md"
+ create mode 100644 "content/\354\236\220\352\260\200 \352\265\254\354\266\225 \354\247\200\354\213\235 \352\267\270\353\236\230\355\224\204.md"
+ create mode 100644 "content/\354\236\245\354\225\240 \353\214\200\354\235\221 4\353\213\250\352\263\204 \355\224\204\353\240\210\354\236\204\354\233\214\355\201\254.md"
+ create mode 100644 "content/\354\240\234\353\263\270\354\212\244\354\235\230 \354\227\255\354\204\244 (Jevons Paradox).md"
+ create mode 100644 "content/\355\201\264\353\241\234\353\223\234 \354\275\224\354\233\214\355\201\254.md"
+ create mode 100644 "content/\355\217\254\355\212\270\355\217\264\353\246\254\354\230\244 7\354\264\210 \353\262\225\354\271\231.md"
+ create mode 100644 "content/\355\217\254\355\212\270\355\217\264\353\246\254\354\230\244 Sweet Spot.md"
+[2026-07-21 17:54:59] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-21 17:54:59] symlink 복원 완료
+---
+[2026-07-21 17:54:59] 배포 시작
+[2026-07-21 17:54:59] wiki 동기화 완료
+[2026-07-21 17:55:00] 출처 섹션 제거 완료
