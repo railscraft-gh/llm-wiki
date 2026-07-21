@@ -1,109 +1,51 @@
 ---
-aliases:
-  - OMO Team Mode
-  - Oh My OpenAgent Team Mode
+type: concept
+status: draft
 core: false
-created: 2026-05-11
-sources:
-  - oh-my-openagent-team-mode
-  - raw/oh-my-openagent-team-mode.md
-status: needs-review
 tags:
-  - agent
-  - omo
+  - openagent
+  - multi-agent
   - team-mode
-type: tool
-updated: 2026-07-10
+  - agentic-engineering
+aliases:
+  - OpenAgent Team Mode
+  - OMO Team Mode
+  - Team Mode (v4.0)
+sources:
+  - raw/oh-my-openagent-team-mode.md
+created: 2026-07-21
+updated: 2026-07-21
 ---
 
 # OpenAgent Team Mode
 
 ## 한 줄 정의
-OpenAgent Team Mode는 리드 에이전트가 최대 8명(동시 4명)의 멤버를 병렬 조율하는 멀티 에이전트 시스템으로, 12개의 `team_*` 도구로 통신한다.
+Oh My OpenAgent(OMO v4.0)에서 리드 에이전트가 최대 8명의 전문화된 에이전트 멤버를 동시 통제하며 메일박스 및 공유 태스크 구조로 병렬 협업을 수행하는 멀티 에이전트 오케스트레이션 패러다임.
 
 ## 핵심 요지
-- 기본값 OFF, JSONC 설정 후 opencode 재시작으로 활성화
-- 리드(Lead)가 멤버에게 `team_send_message`(P2P 메일박스) 또는 `team_task_create`(공유 태스크)로 작업 위임
-- 내장 스킬: `hyperplan`(5명 크리틱), `security-research`(3명 헌터 + 2명 PoC 엔지니어)
-- tmux 실시간 분할 화면 시각화 지원 (선택)
-- 기본값은 OFF 상태이며, ~/.config/opencode/oh-my-openagent.jsonc 또는 프로젝트 로컬 .opencode/oh-my-openagent.jsonc에 설정을 추가하여 활성화한다.
-- 리드 에이전트가 team_send_message(P2P 메일박스)와 team_task_create(공유 태스크)를 활용해 최대 8명의 멤버를 조율하고, 동시 실행은 4명으로 제한된다.
-- 내장 Team Mode 스킬로 5명의 크리틱이 계획을 파괴적으로 검증하는 hyperplan과, 취약점 헌터 및 PoC 엔지니어팀이 작동하는 security-research를 제공한다.
+- **옵트인 멀티 에이전트 전환**: 기본값 OFF 상태에서 `oh-my-openagent.jsonc` 설정을 통해 활성화되며, 12개의 전용 `team_*` 도구를 해제하여 기존 "단일 + 서브에이전트" 관계를 독립형 P2P 팀 구조로 전환합니다.
+- **엄격한 바운더리 규격**: 팀당 전체 멤버 상한 [8명(max_members)](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L49), 동시 실행 [4명(max_parallel_members)](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L48), 메시지당 본문 최대 [32KB](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L54), 수신자 미읽음 상한 [256KB](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L55), 1회 실행당 최대 [10,000 메시지 / 120분 / 턴당 500회](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L50-L52) 한도를 강제합니다.
+- **에이전트 라우팅과 하드 리젝트(Hard-Reject)**: `sisyphus`, `atlas`, `sisyphus-junior` 등 호환 가능한 에이전트만 팀 멤버로 위임할 수 있으며, 메일박스 상태 기록이 불가능한 일부 도구(oracle, librarian 등)는 TeamSpec 파싱 시 Hard-reject 처리됩니다.
+- **협상형 라이브러리 및 고급 스킬**: `hyperplan`(5인 적대적 비판), `security-research`(3인 헌터 + 2인 PoC) 등 내장 스킬을 지원하며, 종료 요청(`team_shutdown_request`)과 승인/거부 라이프사이클을 통해 수순을 통제합니다.
 
 ## 상세
+기존 에이전트 시스템이 상재적 단일 세션에 지시를 몰아넣던 한계를 타파하기 위해, OMO Team Mode는 JSON 기반 Team Spec 구성(`~/.omo/teams/{팀이름}/config.json`)을 읽어들여 런타임 세션을 구성합니다.
 
-OMO Team Mode(v4.0)는 기존 "단일 에이전트 + 서브에이전트" 구조에서 진정한 멀티 에이전트 시스템으로 전환한다. 리드 에이전트가 팀 스펙(JSON)을 읽고 조율한다.
+12개 `team_*` API(`team_create`, `team_send_message`, `team_task_create`, `team_status` 등)를 기반으로 리드가 동시성을 제어하며, tmux 연동 시(`tmux_visualization: true`) 터미널 내 멀티 패인 그리드로 에이전트들의 실시간 추론 상태를 가시화합니다.
 
-**활성화:**
-```jsonc
-// ~/.config/opencode/oh-my-openagent.jsonc 또는 프로젝트 내 .opencode/oh-my-openagent.jsonc
-{
-  "team_mode": {
-    "enabled": true,
-    "max_parallel_members": 4,
-    "max_members": 8,
-    "tmux_visualization": false
-  }
-}
-```
-
-**팀 스펙 작성:**
-- 경로: `~/.omo/teams/{팀이름}/config.json` 또는 프로젝트 내 `.omo/teams/{팀이름}/config.json`
-- 리드 지정: `lead: { "kind": "subagent_type", "subagent_type": "sisyphus" }` 또는 멤버에 `"isLead": true`
-- 멤버 종류: `subagent_type`(직접 지정: atlas, sisyphus, sisyphus-junior) / `category`(카테고리 모델 라우팅)
-
-**사용 가능 에이전트:** sisyphus, atlas, sisyphus-junior / hephaestus는 teammate 권한 필요 / oracle, librarian, explore 등은 hard-reject
-
-**12개 team_* 도구:**
-`team_create`, `team_delete`, `team_shutdown_request`, `team_approve_shutdown`, `team_reject_shutdown`, `team_send_message`, `team_task_create`, `team_task_list`, `team_task_update`, `team_task_get`, `team_status`, `team_list`
-
-**제한:** 메시지당 최대 32KB, 수신자 미읽음 256KB, 실행 시간 120분, 멤버당 최대 500턴
-
-### 1. Team Mode 설정을 위한 11개 필드 규격
-
-| 필드 | 타입 | 기본값 | 설명 |
-|------|------|--------|------|
-| `enabled` | boolean | `false` | 팀 모드 ON/OFF 활성화 여부 |
-| `tmux_visualization` | boolean | `false` | tmux 기반 실시간 분할 화면 시각화 |
-| `max_parallel_members` | int (1~8) | `4` | 동시 실행 가능한 멤버 세션 수 |
-| `max_members` | int (1~8) | `8` | 팀 전체 멤버 상한 수 |
-| `max_messages_per_run` | int (≥1) | `10000` | 단일 실행당 교환 가능한 메시지 한도 |
-| `max_wall_clock_minutes` | int (≥1) | `120` | 팀 전체 타임아웃 제한(분 단위) |
-| `max_member_turns` | int (≥1) | `500` | 개별 멤버가 가질 수 있는 최대 턴 수 |
-| `base_dir` | string | `~/.omo` | 팀 런타임 기본 작업 디렉터리 경로 |
-| `message_payload_max_bytes` | int (≥1024) | `32768` | 단일 메시지 전송 페이로드 최대 크기 (32KB) |
-| `recipient_unread_max_bytes` | int (≥1024) | `262144` | 수신자의 미읽음 메일함 용량 임계치 (256KB) |
-| `mailbox_poll_interval_ms` | int (≥500) | `3000` | 메일박스 폴링 간격 (3초) |
+멤버 유형은 직접 지정하는 `kind: "subagent_type"`과 목적별 모델로 자동 라우팅되는 `kind: "category"`로 나뉘며, 태스크 상태 변화(claimed -> completed)를 P2P 메일박스 폴링([간격 3000ms](file:///Users/railscraft/Obsidian/raw/oh-my-openagent-team-mode.md#L56))으로 수신하여 병목을 차단합니다.
 
 ## 예시
-
-```json
-{
-  "name": "ccapi-explorers",
-  "lead": { "kind": "subagent_type", "subagent_type": "sisyphus" },
-  "members": [
-    { "kind": "category", "name": "scout-1", "category": "deep", "prompt": "Scout src/ for auth patterns." },
-    { "kind": "category", "name": "scout-2", "category": "quick", "prompt": "Scout tests for auth coverage." }
-  ]
-}
-```
-
-**라이프사이클:** `team_create` → 리드 위임(`team_send_message`/`team_task_create`) → 멤버 작업 → 종료 협상(`team_shutdown_request`/`team_approve_shutdown`) → `team_delete`
-
-## 내장 스킬
-
-- **hyperplan**: 5명 적대적 크리틱이 계획 직교적 각도에서 파괴
-- **security-research**: 3명 취약점 헌터 + 2명 PoC 엔지니어, 실제 익스플로잇 가능성 기준 심각도 보정
-
-### 2. 에이전트 분류 및 사용 제한
-- **활용 가능 에이전트**: `sisyphus`, `atlas`, `sisyphus-junior`가 상시 지원된다. `hephaestus`는 팀원 권한 `teammate: "allow"`가 설정된 경우에만 실행이 허가된다.
-- **진입 불가 에이전트 (Hard-Reject)**: `oracle`, `librarian`, `explore`, `multimodal-looker`, `metis`, `momus`, `prometheus`는 메일박스 상태 기록 미지원으로 인해 팀 스펙 로딩 단계에서 즉각 하드 리젝트된다.
+- **보안 감사 팀(security-research) 운용**: 리드 에이전트 지휘 하에 3명의 취약점 탐색 스카우트와 2명의 PoC 실증 엔지니어를 동시 구동해 32KB 제한 메시지로 익스플로잇 가능성을 종합 검증.
+- **적대적 크리틱(hyperplan) 파이프라인**: 설계 직후 코드를 작성하기 전 5명의 에이전트 멤버가 직교적 각도에서 계획의 결함을 공격해 아키텍처 수정을 유도.
 
 ## 충돌
-현재 확인된 충돌 없음.
+- **Hard-reject 에이전트의 팀 투입 오류**: `oracle`, `librarian` 등 메일박스 기록 저장이 지원되지 않는 에이전트를 TeamSpec에 지정하면 파싱 단계에서 즉시 에러(Hard-reject)가 발생하므로 전통적 `delegate-task`를 써야 합니다.
+- **미읽음 메일박스 오버플로우**: 멤버 간 메시지 전달 시 미읽음 용량이 256KB를 초과하면 통신 마찰이 생기므로 리드의 주기적 수신확인 및 정리 절차가 요구됩니다.
 
 ## 관련 노트
+- [[Team Mode]]
 - [[병렬 에이전트 세션 운영]]
 - [[Claude Code 오케스트레이션]]
-- [[AI 코딩 에이전트 검증 전략]]
+- [[AI 에이전트 아키텍처 완전 가이드]]
 
