@@ -5,8 +5,9 @@ core: false
 tags:
   - ruby
   - tooling
-aliases:
-  - RuboCop
+  - static-analysis
+  - linter
+aliases: [RuboCop]
 sources:
   - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
 created: 2026-07-21
@@ -14,23 +15,18 @@ updated: 2026-07-21
 ---
 
 ## 한 줄 정의
-Ruby 프로젝트를 위한 사실상 표준(de facto standard) 정적 코드 분석기 및 포매터.
+RuboCop은 Ruby Style Guide를 기반으로 코드를 정적 분석하고 포매팅하며 자동 수정까지 지원하는 Ruby 생태계의 사실상 표준 린터/포매터입니다.
 
 ## 핵심 요지
-RuboCop은 커뮤니티 주도의 Ruby Style Guide를 기반으로 580개 이상의 규칙(Cop)을 통해 코드 스타일, 레이아웃, 보안, 성능 등을 자동 검사하고 수정(autocorrect)한다.
+- **기능:** 580개 이상의 규칙(Cop)을 통해 스타일, 레이아웃, 버그 가능성, 보안 취약점, 복잡도 등을 정적 분석합니다.
+- **자동화:** `-a`(안전한 수정)와 `-A`(모든 수정) 옵션을 통해 코드 리뷰의 상당 부분을 자동화할 수 있습니다.
+- **유연성:** `.rubocop.yml`을 통해 모든 설정을 세밀하게 튜닝할 수 있으며, 기존 프로젝트에도 점진적으로 도입하기 쉽습니다.
+- **생태계:** `rubocop-performance`, `rubocop-rails`, `rubocop-rspec` 등 도메인별 공식 확장 플러그인을 지원합니다.
 
 ## 상세
-- **구조**: 모든 검사 규칙을 'Cop'이라 부르며, Style, Layout, Lint, Metrics 등 8개 부서로 분류됨 [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md#L61](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md#L61).
-- **자동 수정**: `-a`(Safe, 안전한 수정)와 `-A`(All, 모든 수정) 모드를 통해 코드 리뷰의 반복 작업을 자동화 가능 [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md#L159](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md#L159).
-- **점진적 도입**: 기존 프로젝트에는 `--auto-gen-config`를 사용하여 기존 위반 사항을 TODO로 처리하고 점진적으로 해결 가능 [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md#L262](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md#L262).
-
-## 예시
-프로젝트 루트의 `.rubocop.yml`을 통해 프로젝트별 스타일 규칙을 제어 [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md#L112](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md#L112).
-
-## 충돌
-`-A` 옵션은 코드의 의미를 바꿀 수 있으므로 주의하여 사용해야 함 [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md#L284](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md#L284).
+RuboCop은 Ruby 코드의 일관성을 유지하고 잠재적 버그와 보안 취약점을 사전 예방하는 데 필수적인 도구입니다. 8개의 부서(Style, Layout, Lint, Metrics 등)로 나뉜 580+ 개의 검사 항목을 통해 프로젝트의 복잡도를 관리합니다. 대규모 프로젝트에서도 병렬 실행(`-P`)을 통해 빠르게 검사할 수 있으며, `--auto-gen-config`를 사용하여 기존 코드베이스에 영향 없이 신규 코드부터 단계적으로 적용 가능합니다.
 
 ## 관련 노트
-- [[Ruby 개발 환경]]
-- [[린터 및 포매터 표준]]
+- [[2026년 반칙 수준으로 유용한 개발자 도구 6선]]
+- [[Claude_Code_실무활용법_보리스_관점_정리]]
 
