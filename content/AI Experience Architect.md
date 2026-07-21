@@ -1,0 +1,322 @@
+---
+aliases:
+- AI 경험 아키텍트
+- AI Designer to Architect
+- AI-Experience-Architect
+core: true
+created: 2026-05-26
+sources:
+- From faster pencil to AI Experience Architect. a designer’s path
+- UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
+- Why senior UX designers are struggling in 2026
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md
+- raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  and What I Rejected.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/frontend-design-skill.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/im-not-ai.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/AI 겨울이 시작됐다-ko.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+status: evergreen
+tags:
+- design
+- ai
+- workflow
+- ux
+type: concept
+updated: 2026-07-10
+---
+# AI Experience Architect
+
+## 한 줄 정의
+AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 아니라, AI의 침투로 인터페이스가 상품화되는 환경에서 전체 비즈니스 흐름, 권한 정책, 검토 지점(Approval Gates), 에러/실패 경계면, 신뢰 모델까지 총체적으로 설계하고 비즈니스 문제를 스스로 정의하는 상류(Upstream) 디자인 전략가다.
+
+## 핵심 요지
+- **인터페이스의 상품화와 가치 이동**: 에이전트가 픽셀 단위로 완성도 높은 UI를 30초 만에 생성해 내면서, 디자이너의 핵심 가치는 화면 제작 단계에서 시스템 설계 및 전략적 문제 해결의 상류층으로 완전히 이동한다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
+- **의사결정자와의 거리(Proximity) 좁히기**: 단순 시안 납품(deliverable)에서 벗어나, 문제가 정의되는 날것의 기획 회의(upstream)에 개입하여 '비즈니스 전제 조건'을 스스로 규정하고 비즈니스 파트너로서 신뢰를 회복하는 주역이다 (출처: Design’s craft crisis. senior designers built it).
+- **프레임 세팅 (Frame-setting) 역량**: 정돈된 기획서(Input)를 가공해 화면(Output)으로 변환하는 수동적인 프레임 워킹(Frame-working)에서 벗어나, 비즈니스 모호함 속에서 문제와 타깃, 지표를 직접 규정하는 프레임 세팅 역량이 필수적이다 (출처: Why senior UX designers are struggling in 2026).
+- **예측 가능성 (Predictability) 확보**: 기획서나 리서치 데이터 등 주변 서포트 인프라(보호막)가 부재한 불확실한 극한 상황(예: 슬랙 한 줄의 간략한 지시)에서도 주도적으로 문제를 헤쳐나갈 수 있는 예측 가능한 해결력이 2026년 시니어 채용 시장(56%)의 주요 기준이다 (출처: Why senior UX designers are struggling in 2026).
+- **UX 리서처의 감축과 인사이트 내재화**: 리서치 조직이 다른 직군 대비 약 3배 높은 비율로 감축되는 시장 환경에서, 디자이너는 인사이트를 직접 발굴하거나 데이터 공백 상황을 주도적으로 통제해야 한다 (출처: Why senior UX designers are struggling in 2026).
+- **조직적 위임과 아키텍처**: 조직이 어떤 범위의 의사결정을 에이전트에 자율 위임하고, 어떤 경계에서 사람의 검토와 승인을 통제할지 사회적/구조적 계약을 설계하는 역할이다.
+- 제본스의 역설(Jevons paradox)에 따라 디자인 단가가 낮아지면 디자인할 것 자체가 더 폭발적으로 늘어나 아키텍트의 필요성이 증대됨.
+- 31%의 디자이너만이 AI를 사용하고 있어 개발자(59%) 대비 격차가 크며, 97% 경영진이 AI 혜택을 느낀다고 답했으나 의미 있는 ROI를 본다는 답은 29%에 불과한 간극을 메우는 역할.
+- AI PM과 경험 아키텍트는 AI 동작을 결정짓는 핵심적인 의사결정이 모여 있는 깃허브(GitHub) 저장소의 변경 사항을 실시간으로 감시 및 검토할 책임이 있다. (출처: raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md)
+- 시스템 프롬프트, 평가 데이터셋, 설정 파일(config), 풀 리퀘스트(PR)는 단순 코드가 아닌 제품의 핵심 설계 사상이 담긴 의사결정 아티팩트다. (출처: raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md)
+- 디자이너를 가리는 보호막(Shielded)의 균열: 2015~2022년 디자인 조직의 확장에 따라 구축된 '기획서(Brief) 기반의 과보호 시스템'에서 탈피하여, 슬랙 한 줄 메시지만 있는 모호한 환경에서도 스스로 인풋과 문제 프레임을 정의하는 예측 가능성(Predictability)이 주요 역량이다.
+- 조직 내 디자인 팀 투자 지표: 2026년 기준, AI를 도입한 기업의 51%가 내부 UX 디자인 팀 규모를 늘리고 있고 66%가 외부 파트너십을 확장하여 상류 전략 아키텍트의 수요가 여전히 증가하고 있음을 보여준다.
+- AI 지능의 임금 프리미엄: 시니어 채용 시장에서 AI 협업 및 아키텍처 능력을 지닌 디자이너가 동료 대비 약 56% 더 높은 임금을 확보하고 있다.
+- UX 리서치 조직의 감축: 리서처 레이오프 비율이 일반 디자이너보다 3배 이상 높고, 구글 클라우드 등의 시니어리티 미만 리서치 팀 전체 감축 사례에서 보듯, 아키텍트가 직접 리서치 인사이트를 주도적으로 발굴해야 하는 환경에 놓여 있다.
+- 대기업과 최고의 크리에이티브 팀들은 AI에게 단순히 결과물을 요청하지 않으며, 디자인 시스템의 컴포넌트, 변수, 토큰 우선순위를 명시한 텍스트 지침 파일(Instruction file)을 통해 AI의 임의 편집을 통제한다. [출처: raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md]
+- 프로덕트 직군의 붕괴로 인해 PM이 직접 개념 검증 코드를 바이브 코딩하고 에이전트가 픽셀을 채워 넣으면서, 디자이너는 픽셀 작업자에서 시스템과 승인 게이트의 아키텍처 설계자로 전향해야 한다. [출처: raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md]
+
+## 상세
+
+### AI 시대 경험 아키텍트의 7대 핵심 역량 (Upstream Skills)
+
+1. **시스템 사고 (Systems Thinking)와 비즈니스 레버 주도**: 고립된 단일 화면을 개별 최적화하는 데 그치지 않고, 비즈니스 지표(신규 유입 activation, 잔존율 retention 등)를 책임지고 개선하기 위해 디자인 실험을 설계하고 전체 거시 생태계를 조율한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
+2. **피드백 번역 (Feedback Translation)**: "UI가 답답하다", "화면이 너무 복잡하다" 같은 정제되지 않은 이해관계자/사용자의 불만을 해석하여, 그것이 단순 레이아웃의 결함인지 아니면 AI 추천 결과에 대한 신뢰 상실(Trust Deficit)인지 그 이면의 핵심 우려를 정교하게 짚어낸다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
+3. **데이터 부재 시의 판단 (Judgment without Data)**: AI 모델은 과거 데이터 스케일링에만 의존한다. 전례가 없고 리스크가 큰 신규 도메인 설계 시, 학습 데이터가 존재하지 않는 불확실한 공백 속에서 무엇을 가설로 삼고 검증할지 판단한다.
+4. **패턴 인식과 필터링**: 수많은 사용자 기능 요청(Feature Request) 중에서 6개월 뒤 무용지물이 될 요구사항과 진짜 본질적인 제어 워크플로우에 대한 니즈를 구분하여 개발 방향을 설정한다.
+5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 에이전트 협업 설계(agent handoff)를 적용한다. 시스템이 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공하도록 인터페이스와 fallback을 설계한다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
+6. **전략적 절제 (Strategic Restraint)**: 기계적인 속도로 생성과 배포, A/B 테스트의 반복적인 사이클에 매몰되지 않고, "이 기능은 배포를 멈추고 리서치가 더 필요하다"고 제어할 줄 아는 궤도 속도 조절자 역할을 한다.
+7. **시스템으로서의 취향 (Taste as a System)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 [[AI Slop]] 아웃풋을 거부하고, Before/After 대조 캔버스를 구축하여 최종안의 시각적/기능적 우수성의 상세한 근거를 입증한다. 외부 안목 리뷰(taste review) 세션을 통해 제품 전체의 디자인 품질 기준을 격상한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
+
+### 경험 아키텍트의 인간적 우위 (The Human Edge)
+
+- **Narrative Docs**: 복잡한 시각적 화면(screens)을 보여주기 전에 문제 상황, 대안 분석, 최종 설계 방향을 스토리텔링 방식으로 풀어낸 상세 문서를 작성하여 공유함으로써 기획 초기 단계에 질문을 던지고 개발 실수를 차단한다.
+- **Micro-Alliances**: 디자인 부서 외부(PM, 개발자, CS, 영업 등)와 긴밀한 파트너십을 구축하여, 병목 문제와 사업 기회를 기록해 나가는 공유 문서(running doc)를 주도적으로 운영한다.
+
+### 업스트림 디자인 워크플로우 7단계 (Upstream Design Workflow)
+
+AI가 화면을 조립(assembly)하는 속도가 Jira 티켓을 끊는 속도보다 빨라지는 환경에서, 디자이너는 아래의 7단계 상류(upstream) 프로세스를 통해 작업을 조율한다.
+1. **Frame setting (프레임 세팅)**: 비즈니스의 극초기 모호함 속에서 진짜 해결할 가치가 있는 문제를 명명하고 지표(activation, retention 등)를 정의하여 문제 백로그(problem backlog)를 구축한다.
+2. **Narrative & Documenting (서술형 문서 작성)**: 복잡한 시각 화면(screens)을 만들기 전, 문제 정의, 대안 분석, 최종 설계 방향을 스토리텔링 방식으로 풀어낸 상세 서술 문서(Narrative Docs)를 작성해 PM/개발팀과 공유한다.
+3. **Token & Vocabulary Design (토큰 및 어휘 설계)**: Primitives(원시 값)에서 Semantic tokens(의도 기술), Component tokens로 이어지는 3단계 토큰 구조를 구축하고 네이밍 컨벤션을 코드의 props 구조와 일치시킨다.
+4. **State & Slot Modeling (상태 및 슬롯 모델링)**: 호버(hover), 에러(error), 로딩(loading), 스켈레톤(skeleton) 등 컴포넌트의 모든 상태를 variant로 설계하고, 컴포넌트 해체(detaching)를 막기 위해 named slot을 명시한다.
+5. **Auto Layout & Semantics Constraint (레이아웃 및 시맨틱 제약)**: Figma Auto Layout을 완벽히 설정하여 Flexbox/CSS Grid로 1:1 변환 가능한 코딩 가독성을 확보하고, 레이어명을 의미적으로 지정(Frame 247 배제)한다.
+6. **Code Connect Mapping (코드 커넥트 연동)**: 피그마 컴포넌트와 개발 코드베이스의 컴포넌트 카운터파트 간 1:1 매핑을 연결(Code Connect)하여 에이전트가 임의 컴포넌트를 날조하지 않고 기존 컴포넌트를 재사용하도록 강제한다.
+7. **Circadian Orchestration & Gates (서캐디안 오케스트레이션 및 게이트 검수)**: 24시간 당직 에이전트의 야간 draft PR 발의를 검수하고, 승인/반려(what you killed) 이력을 의사결정 로그(Decision Log)로 축적하여 피드백 루프를 가동한다.
+
+### 피그마 토큰 구조 매핑 (Figma Token Mapping Structure)
+
+에이전트가 디자인의 시각적 외형(appearance)에 현혹되지 않고 설계자의 의도(intent)를 정확히 읽게 하기 위해 피그마 변수(Variables)를 3단계 레이어로 설계한다.
+- **Primitives (원시 토큰)**: hex값, 간격 스케일, 기본 폰트 사이즈 등 기초 물리 값 (`blue/500 = #3B8BD4`, `space/4 = 16px`). 디자이너의 직접적인 컴포넌트 사용을 제한하도록 Figma properties panel에서 숨김 처리(`_` prefix 등)하며, 상위 세맨틱 토큰이 참조할 수 있게 둔다.
+- **Semantic Tokens (의도 토큰) [필수]**: 모양이 아닌 '사용 목적과 의미'를 정의한다 (`color/interactive/default`, `color/interactive/hover`, `color/interactive/disabled`). 색상 테마가 바뀌어도 의도 토큰이 컴포넌트와 연결되어 있으므로 에이전트 생성물이 무너지지 않는다.
+- **Component Tokens (컴포넌트 토큰)**: 개별 컴포넌트 단위의 변수 매핑 (`button/background/default` -> `color/interactive/default`). 멀티 브랜드나 복잡한 대규모 디자인 시스템에서 부분적인 커스터마이징을 제어할 때 사용한다.
+- *참고*: 피그마의 슬래시 네이밍 (`color/interactive/default`)은 코드의 dot notation (`color.interactive.default`)과 빌드 파이프라인에서 자동 매핑되도록 디자이너-개발자 간 합의가 선행되어야 한다.
+
+### 검토 게이트 체크리스트 (Approval Gate Checklist)
+
+디자인 드리프트(Design Drift)와 [[AI Slop]]의 무분별한 유입을 사전에 차단하기 위해 디자이너가 승인 게이트에서 검수해야 할 체크리스트이다.
+- [ ] **Figma Token Validation**: Primitives의 직접 노출 여부를 검증하고, 모든 컴포넌트 색상이 Semantic Token으로 올바르게 매핑되어 있는가?
+- [ ] **PascalCase Component Name**: 피그마와 코드베이스의 이름이 `ProductCard`와 같이 PascalCase로 정확히 일치하여 Code Connect 매핑이 유효한가?
+- [ ] **Component Properties Align**: 피그마 variants 이름(variant, size, state 등)이 코드 props와 대소문자까지 동일하게 설정되었는가?
+- [ ] **Zero Detaching (Slots Check)**: 컴포넌트가 임의로 깨지지(detached) 않았으며, named slot 분홍색 테두리 내에 정상적으로 drop 되었는가?
+- [ ] **Auto Layout Coverage**: 모든 컴포넌트 프레임이 Hug, Fill, Fixed 등의 의도적인 크기 제어와 variables spacing을 통해 Flexbox CSS로 무리 없이 매핑되는가?
+- [ ] **WCAG 2.2 AAA Contrast**: 대비율 7:1 이상 보장, 터치 타겟 44x44px 이상 확보, 폰트 14px 하한선이 지켜졌는가?
+
+### 앤트로픽의 30줄 CSS 미학 선언문 (Anthropic's 30-Line CSS Aesthetics Rule)
+
+Anthropic의 엔지니어 Prithvi Rajasekaran과 Alexander Bricken이 작성한 `SKILL.md` 문서(GitHub `anthropics/skills` 저장소 내 `frontend-design` 폴더)에 수록된 30줄의 실제 지시문은 AI 생성 UI의 시각적 서명인 '[[AI Slop]]'을 차단하고 독창적인 프런트엔드 미학을 강제하는 선언적 취향 기준이다.
+- **[[AI Slop]] 방지를 위한 영구 금지 규칙 (Forbidden List)**:
+  - 폰트 수렴 금지: **Inter**, **Roboto**, **Arial**, 시스템 기본 폰트, 그리고 흔히 쓰이는 **Space Grotesk**를 포함한 평범한 서체 수렴을 **절대(NEVER)** 금지한다.
+  - 흔한 색상 조합 금지: **흰색 배경에 보라색 그라데이션** 같은 판에 박힌 SaaS 랜딩 페이지 미학을 절대 배제한다.
+- **11가지 극단적인 시각적 미학 제안**:
+  - 모델에게 애매한 평균값(modern, clean 등)을 찾지 말고, **Brutally minimal**, **Maximalist chaos**, **Retro-futuristic**, **Organic/natural**, **Luxury/refined**, **Playful/toy-like**, **Editorial/magazine**, **Brutalist/raw**, **Art deco/geometric**, **Soft/pastel**, **Industrial/utilitarian**의 11가지 아트스쿨 미학적 갈래 중 입장을 명확히 정리하여 한 방향으로 깊이 있게 조립하도록 강제한다.
+- **수렴 방지와 디테일 허용**:
+  - 생성물 간의 유사성을 거부하고 어두운 테마와 밝은 테마, 질감(gradient meshes, noise textures, layered transparencies 등)을 과감히 활용하도록 격려한다.
+  - "보이지 않는 취향"을 30줄의 짧은 plain-text 마크다운 문서로 AI 런타임에 심음으로써, 277,000번 이상 개발자 도구에 설치되어 전통적인 거대 디자인 시스템보다 실질적으로 더 많은 프런트엔드 산출량의 가이드라인으로 동작하고 있다.
+
+---
+
+## 판단 질문
+
+이 역할이 실제로 필요한지 보려면 아래 질문을 던지면 된다.
+
+- AI가 만든 결과물을 누가 승인하고 어디서 되돌리는가.
+- 민감 데이터, 법무, 보안, audit trail이 걸린 흐름을 누가 설계하는가.
+- agent가 한 번 더 시도해도 되는 일과 반드시 사람에게 escalation해야 하는 일을 누가 정하는가.
+- 디자인 시스템, workflow, 권한 정책이 서로 충돌할 때 최종 우선순위를 누가 정하는가.
+- 화면 디자인이 아닌데도 우리가 지속적으로 받고 있는 시스템 신뢰 저하 피드백은 무엇인가.
+
+## 조직에서 보이는 신호
+
+- 디자이너가 Figma 컴포넌트 픽셀 배치보다 prompt, approval flow, handoff 문서, review gate, edge-case handle을 더 오래 다듬는다.
+- PM, 법무, 보안, 운영팀과 함께 "AI가 어디까지 결정해도 되는가"를 자주 협의한다.
+- DESIGN.md나 flow spec만으로는 부족해서 escalation rule, fallback, audit trail까지 별도 문서화한다.
+
+### Jevons Paradox (제본스의 역설)과 디자인
+1865년 윌리엄 스탠리 제본스가 증기기관 효율화로 인해 석탄 비용이 하락했음에도 오히려 석탄 수요가 폭발했던 현상을 목격한 데서 유래했다. 디자인 업계에서도 AI로 인해 화면 구현 단가가 낮아지자, 리더들이 디자이너를 대체(Jevons의 착각)하기보다는 오히려 다뤄야 할 디자인 영역과 수요가 늘어나 경험 아키텍트의 필요성이 부각된다.
+
+### 경험 아키텍트 4단계 성장 사다리 (Stage 1 to 4)
+1. **Stage One: 더 빠른 연필 (3~6개월 머묾)**: 기존 프로세스 하에서 30% 수준의 속도 및 생산성 향상에 만족하는 단계 (85% 개발자와 유사).
+2. **Stage Two: 워크플로우 디자이너 (3~6개월 머묾)**: 프로세스 자체를 설계하고 AI가 참여자로 개입하는 흐름(Service Design)과 White Space를 다루는 단계.
+3. **Stage Three: 시스템 사고가 (1~2년 머묾)**: 진실의 원천, 지연 시간, 대체 동작, EU AI Act 및 GDPR Article 22 같은 법적 제약을 설계하는 단계.
+4. **Stage Four: AI Experience Architect (3~7년 머묾)**: 기업 비즈니스의 운영 모델과 사회적 계약, 벤더 선정 및 트레이드오프 조율을 소유하며, 비디자이너가 92% 디자인 기본 스킬을 보유한 환경에서 조직적 역량을 설계하는 단계.
+
+### 경험 아키텍트가 검수하는 4대 깃허브(GitHub) 아티팩트
+AI 동작 방식과 페르소나를 규정하는 핵심 의사결정은 다음 4가지 아티팩트의 변화를 통해 실시간으로 추적 가능함:
+1. **시스템 프롬프트 (System Prompt)**: 제품의 행동 지침, 에스컬레이션 트리거, 어조를 규정하는 핵심 텍스트 파일(예: `aria-system-prompt.txt`).
+2. **평가 데이터셋 (Evaluation Dataset)**: 변경 사항 적용 시 응답 품질의 개선 여부를 판단하는 테스트 케이스 세트.
+3. **설정 파일 (Config File)**: 사용할 모델 버전, 타임아웃, 예외 처리 메시지 등을 정의하는 수치형 파일.
+4. **풀 리퀘스트 & 디프 (PR & Diff)**: 변경 전후의 텍스트 차이를 대조하고, 트레이드오프(예: 답변 정확도 향상 대 답변 길이 증가)를 토론하고 승인하는 공식 의사결정 게이트.
+
+### 채용 시장의 오퍼 소요 지연 및 연차의 역설
+- 어센틱 잡스(Authentic Jobs)의 2026 채용 가이드에 따르면 오퍼(Offer) 확정까지 소요되는 기간 중앙값이 전년 대비 22% 지연된 **68.5일**로 증가했다. 이는 단순 대기업 온실 속에서 매끄러운 기획서와 분업 시스템을 통해 10년의 경력을 보낸 디자이너들이, 날것의 모호함을 돌파하는 실전 아키텍트로서의 자격을 증명하지 못해 겪는 병목을 반영한다.
+
+### 경험 아키텍트가 검수하는 4대 깃허브(GitHub) 아티팩트
+AI 동작 방식과 페르소나를 규정하는 핵심 의사결정은 다음 4가지 아티팩트의 변화를 통해 실시간으로 추적 가능함:
+1. **시스템 프롬프트 (System Prompt)**: 제품의 행동 지침, 에스컬레이션 트리거, 어조를 규정하는 핵심 텍스트 파일(예: `aria-system-prompt.txt`).
+2. **평가 데이터셋 (Evaluation Dataset)**: 변경 사항 적용 시 응답 품질의 개선 여부를 판단하는 테스트 케이스 세트.
+3. **설정 파일 (Config File)**: 사용할 모델 버전, 타임아웃, 예외 처리 메시지 등을 정의하는 수치형 파일.
+4. **풀 리퀘스트 & 디프 (PR & Diff)**: 변경 전후의 텍스트 차이를 대조하고, 트레이드오프(예: 답변 정확도 향상 대 답변 길이 증가)를 토론하고 승인하는 공식 의사결정 게이트.
+
+### 채용 시장의 오퍼 소요 지연 및 연차의 역설
+- 어센틱 잡스(Authentic Jobs)의 2026 채용 가이드에 따르면 오퍼(Offer) 확정까지 소요되는 기간 중앙값이 전년 대비 22% 지연된 **68.5일**로 증가했다. 이는 단순 대기업 온실 속에서 매끄러운 기획서와 분업 시스템을 통해 10년의 경력을 보낸 디자이너들이, 날것의 모호함을 돌파하는 실전 아키텍트로서의 자격을 증명하지 못해 겪는 병목을 반영한다.
+
+### 경험 아키텍트가 검수하는 4대 깃허브(GitHub) 아티팩트
+AI 동작 방식과 페르소나를 규정하는 핵심 의사결정은 다음 4가지 아티팩트의 변화를 통해 실시간으로 추적 가능함:
+1. **시스템 프롬프트 (System Prompt)**: 제품의 행동 지침, 에스컬레이션 트리거, 어조를 규정하는 핵심 텍스트 파일(예: `aria-system-prompt.txt`).
+2. **평가 데이터셋 (Evaluation Dataset)**: 변경 사항 적용 시 응답 품질의 개선 여부를 판단하는 테스트 케이스 세트.
+3. **설정 파일 (Config File)**: 사용할 모델 버전, 타임아웃, 예외 처리 메시지 등을 정의하는 수치형 파일.
+4. **풀 리퀘스트 & 디프 (PR & Diff)**: 변경 전후의 텍스트 차이를 대조하고, 트레이드오프(예: 답변 정확도 향상 대 답변 길이 증가)를 토론하고 승인하는 공식 의사결정 게이트.
+
+### 채용 시장의 오퍼 소요 지연 및 연차의 역설
+- 어센틱 잡스(Authentic Jobs)의 2026 채용 가이드에 따르면 오퍼(Offer) 확정까지 소요되는 기간 중앙값이 전년 대비 22% 지연된 **68.5일**로 증가했다. 이는 단순 대기업 온실 속에서 매끄러운 기획서와 분업 시스템을 통해 10년의 경력을 보낸 디자이너들이, 날것의 모호함을 돌파하는 실전 아키텍트로서의 자격을 증명하지 못해 겪는 병목을 반영한다.
+
+### 최고의 기업들의 AI 디자인 워크플로우 실무 사례
+1. **Atlassian의 컴포넌트 가드레일 전략**:
+   - **컴포넌트 고정**: AI가 화면 핵심 요소를 훼손하지 않도록 페이지 상의 중요한 프라이머리 컴포넌트를 코드로 고정(pre-coded)하고, 변주가 필요한 특정 인터랙션 공간만 AI가 변형할 수 있게 제안합니다.
+   - **우선순위 재지정 지침 (Override Instructions)**: plain-text 텍스트 파일로 작성된 지침을 AI에 전달하여, CSS 프레임워크를 조율하는 과정에서도 사내 디자인 시스템 변수나 다크 모드 스위치 같은 전용 토큰을 강제 사용하도록 제어합니다.
+   - **인식 보정 (Calibration)**: AI에게 컴포넌트 이미지를 보여주고 정확히 인식하는지 질문-교정 단계를 거쳐 스크린샷-코드 변환 성능을 조율합니다.
+2. **Meta의 AI 도입 플레이북**:
+   - 디자이너가 AI를 쓸 때 지켜야 할 플레이북과 표준 제안 지침을 문서화하여 비정형 UI slop 유입을 제어합니다. 제품 직관과 사용자 리서치 전략은 수작업으로 제어하되, 화면 양산은 AI로 자동화합니다.
+3. **Tesco의 Cursor + Figma MCP 플러그인**:
+   - Cursor를 통한 바이브 코딩과 라이브 사이트 데이터 API를 연결하는 Figma MCP 서버 플러그인을 자율 제작하여, 컴포넌트 목업에 실제 운영 이미지와 가격, 평점을 실시간 자동 삽입하여 테스트 품질을 극대화합니다.
+4. **Faire의 Fairey AI 리서치 챗봇**:
+   - 사내용 UX 리서치 챗봇 'Fairey'를 구축하여 수십만 건의 고객 서비스 지원 티켓에서 특정 기능에 대한 불편 이력을 자연어로 즉시 추출하고, ChatGPT 보안 격리 환경에서 고객 인터뷰 녹취록 요약 보고서를 기계적 생성합니다.
+
+## 예시
+
+- **고객지원 서비스**: AI가 자동으로 답변 초안을 작성하여 신속하게 대기열을 처리하되, 환불/개인정보 등의 민감한 요청은 사람 승인(escalation)을 거치도록 에이전트의 제어 경계 및 폴백 UI를 설계한다.
+- **B2B SaaS 관리자 Action**: 임의의 결제 스케줄 수정 등 파괴적인 관리자 작업을 에이전트가 단독 실행하지 못하고 제안(Suggest)만 하도록 규칙을 정의하고, 이를 에이전트 CLI 또는 UI 상에 승인 게이트웨이로 연동한다.
+
+### 2026년 에이전트 도입 통계 메트릭
+- **디자이너의 AI 핵심 도구 사용률**: 31% (개발자의 59% 대비 저조)
+- **경영진의 AI 혜택 체감률**: 97% vs **조직적 유의미한 ROI 달성률**: 29%
+- **연말까지 인간 노동자를 AI로 대체할 것으로 예상하는 비즈니스 리더**: 37%
+
+### 깃허브 모니터링 가이드라인
+- **브랜치(Branch) 추적**: 실서비스 환경(`main` 브랜치)을 침해하지 않고 독립적으로 실험하는 브랜치명을 개발팀에 문의하여, 제품 배포 전 문구의 수정 내역을 선제적으로 확인한다.
+- **커밋(Commit) 로그 리뷰**: 시스템 프롬프트 파일의 'Commits' 이력을 열어 변경 근거(예: "결제 키워드 제거로 불필요 인계율 31%에서 8%로 감소")를 추적함으로써 의사결정의 이력을 관리한다.
+
+### 실전 Upstream 전향 행동 강령
+- 향후 5일 이내에 예정된 프로덕트 회의에 앞서, PM이 제시한 Brief의 전제를 무비판적으로 따르지 않고 '이 기획이 해결하려는 핵심 문제가 왜 불완전한지', '진짜 문제가 무엇인지'를 본인만의 언어로 딱 **한 문단** 미리 작성해 봄으로써 기획 단계(Upstream)로 자신의 오너십 영토를 강제로 넓혀라.
+
+### 깃허브 모니터링 가이드라인
+- **브랜치(Branch) 추적**: 실서비스 환경(`main` 브랜치)을 침해하지 않고 독립적으로 실험하는 브랜치명을 개발팀에 문의하여, 제품 배포 전 문구의 수정 내역을 선제적으로 확인한다.
+- **커밋(Commit) 로그 리뷰**: 시스템 프롬프트 파일의 'Commits' 이력을 열어 변경 근거(예: "결제 키워드 제거로 불필요 인계율 31%에서 8%로 감소")를 추적함으로써 의사결정의 이력을 관리한다.
+
+### 실전 Upstream 전향 행동 강령
+- 향후 5일 이내에 예정된 프로덕트 회의에 앞서, PM이 제시한 Brief의 전제를 무비판적으로 따르지 않고 '이 기획이 해결하려는 핵심 문제가 왜 불완전한지', '진짜 문제가 무엇인지'를 본인만의 언어로 딱 **한 문단** 미리 작성해 봄으로써 기획 단계(Upstream)로 자신의 오너십 영토를 강제로 넓혀라.
+
+### 깃허브 모니터링 가이드라인
+- **브랜치(Branch) 추적**: 실서비스 환경(`main` 브랜치)을 침해하지 않고 독립적으로 실험하는 브랜치명을 개발팀에 문의하여, 제품 배포 전 문구의 수정 내역을 선제적으로 확인한다.
+- **커밋(Commit) 로그 리뷰**: 시스템 프롬프트 파일의 'Commits' 이력을 열어 변경 근거(예: "결제 키워드 제거로 불필요 인계율 31%에서 8%로 감소")를 추적함으로써 의사결정의 이력을 관리한다.
+
+### 실전 Upstream 전향 행동 강령
+- 향후 5일 이내에 예정된 프로덕트 회의에 앞서, PM이 제시한 Brief의 전제를 무비판적으로 따르지 않고 '이 기획이 해결하려는 핵심 문제가 왜 불완전한지', '진짜 문제가 무엇인지'를 본인만의 언어로 딱 **한 문단** 미리 작성해 봄으로써 기획 단계(Upstream)로 자신의 오너십 영토를 강제로 넓혀라.
+
+### Faire의 녹취록 데이터 요약 ChatGPT 프롬프트 템플릿
+
+```text
+이 고객 인터뷰 녹취록 데이터 [paste transcript]를 읽고, 아래 세 가지 기준에 맞춰 간결히 정리해 줘:
+1. 사용자가 제품을 사용하며 겪은 가장 큰 마찰 지점(Pain points) 3가지
+2. 사용자가 제시한 가장 놀랍거나 예기치 못한 행동 패턴 (Workarounds)
+3. 기능 개선에 즉시 참고할 수 있는 정량적 지표나 사례
+
+출력 시 감정적인 수식어는 생략하고, 날것의 인터뷰 타임스탬프와 인용구(Quotes)를 근거로 붙여 줘.
+```
+
+## 충돌
+## 관련 노트
+- [[AI 시대 디자인 시스템]]
+- [[AI를 UX에 쓰는 법]]
+- [[디자인 에이전트 5종]]
+- [[DESIGN.md 운영 원칙]]
+- [[AI 코딩 에이전트 검증 전략]]
+- [[AI 디자인 역할 맵]]
+- [[AI 기본값 수용과 오버라이드 전략]]
+- [[AI 네이티브 작업 시스템]]
+- [[디자인의 크래프트 위기]]
+- [[디자이너 생존 전략 (2026-2030)]]
+- [[AI 디자인 팀 운영]]
+- [[Claude.md 운영 원칙]]
+- [[DESIGN.md 워크플로우]]
+- [[Vibe Coding과 Agentic Engineering]]
+
+## 출처
+- From faster pencil to AI Experience Architect. a designer’s path
+- UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
+- Why senior UX designers are struggling in 2026
+- Design’s craft crisis. senior designers built it.md
+- The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- [디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다](file:///Users/railscraft/Obsidian/raw/%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%20%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8%20%EC%9C%84%EA%B8%B0.%20%EC%8B%9C%EB%8B%88%EC%96%B4%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%B4%20%EC%9D%B4%EB%A5%BC%20%EA%B5%AC%EC%B6%95%ED%96%88%EB%8B%A4.md)
+- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
+- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/Obsidian/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
+- [향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법](file:///Users/railscraft/Obsidian/raw/%ED%96%A5%ED%9B%84%205%EB%85%84.%202026%EB%85%84%EC%97%90%EC%84%9C%202030%EB%85%84%20%EC%82%AC%EC%9D%B4%EC%97%90%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A1%9C%EC%84%9C%20%EC%83%9D%EC%A1%B4%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EA%B8%B0%EC%97%85%EB%93%A4%EC%9D%B4%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%97%90%20AI%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko](file:///Users/railscraft/Obsidian/raw/I%20Cancelled%20ChatGPT%2C%20Cursor%2C%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max%20Quietly%20Replaced%20All%20Three-ko.md)
+- [2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%AC%B8%EC%84%9C.%20%EB%8B%A8%2030%EC%A4%84%EC%A7%9C%EB%A6%AC%EC%98%80%EB%8B%A4.%20Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%20%EB%91%90%20%EB%AA%85%EC%9D%B4%20%EC%8D%BC%EB%8B%A4.%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%80%20%EC%95%84%EC%A7%81%20%EC%9D%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4-ko.md)
+- [My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected](file:///Users/railscraft/Obsidian/raw/My%20Complete%20Productivity%20Stack%20in%202026.%20Every%20Tool%20I%20Actually%20Use%2C%20What%20I%20Pay%2C%20and%20What%20I%20Rejected.md)
+- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
+- [한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko](file:///Users/railscraft/Obsidian/raw/%ED%95%9C%20%EB%AC%B8%EC%9E%A5%EC%9D%84%20500%EB%8B%AC%EB%9F%AC%EC%A7%9C%EB%A6%AC%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%EC%BD%94%EC%8A%A4%EB%A1%9C%20%EB%B0%94%EA%BE%B8%EB%8A%94%20%EB%A9%80%ED%8B%B0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-ko.md)
+- [The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google](file:///Users/railscraft/Obsidian/raw/The%2010%20Engineering%20Papers%20Behind%20Netflix%2C%20Uber%2C%20Amazon%20%26%20Google.md)
+- [1 Aviation Rule That Will Instantly Improve Your Focus](file:///Users/railscraft/Obsidian/raw/1%20Aviation%20Rule%20That%20Will%20Instantly%20Improve%20Your%20Focus.md)
+- [frontend-design-skill](file:///Users/railscraft/Obsidian/raw/frontend-design-skill.md)
+- [How top companies are using AI in their design workflows](file:///Users/railscraft/Obsidian/raw/How%20top%20companies%20are%20using%20AI%20in%20their%20design%20workflows.md)
+- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/Obsidian/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
+- [Why senior UX designers are struggling in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md)
+- [The Complete (Honest) Guide to OpenClaw](file:///Users/railscraft/Obsidian/raw/The%20Complete%20%28Honest%29%20Guide%20to%20[[OpenClaw]].md)
+- [Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with [[GBrain]] (Open Source)-ko](file:///Users/railscraft/Obsidian/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open%20Source%29-ko.md)
+- [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md)
+- [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko](file:///Users/railscraft/Obsidian/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch%20Was-ko.md)
+- [Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko](file:///Users/railscraft/Obsidian/raw/Claude%20900%EB%8B%AC%EB%9F%AC%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%2010%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
+- [im-not-ai](file:///Users/railscraft/Obsidian/raw/im-not-ai.md)
+- [The Signs of a Pseudo-Smart Person Are Easy To Spot](file:///Users/railscraft/Obsidian/raw/The%20Signs%20of%20a%20Pseudo-Smart%20Person%20Are%20Easy%20To%20Spot.md)
+- [The most important Design System in 2026 that designers missed was built by a developer.](file:///Users/railscraft/Obsidian/raw/The%20most%20important%20Design%20System%20in%202026%20that%20designers%20missed%20was%20built%20by%20a%20developer..md)
+- [2026년의 AI 에이전트 실전 가이드-ko](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%A4%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C-ko.md)
+- [Good Design Doesn’t Happen By Default](file:///Users/railscraft/Obsidian/raw/Good%20Design%20Doesn%E2%80%99t%20Happen%20By%20Default.md)
+- [The Best Way to Make AI Write Like You-ko](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md)
+- [7 Coding Patterns I Stole From Senior Engineers](file:///Users/railscraft/Obsidian/raw/7%20Coding%20Patterns%20I%20Stole%20From%20Senior%20Engineers.md)
+- [AI 겨울이 시작됐다-ko](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md)
+- [I will never walk into a backend interview without solving these 20 questions.](file:///Users/railscraft/Obsidian/raw/I%20will%20never%20walk%20into%20a%20backend%20interview%20without%20solving%20these%2020%20questions..md)
+- [Most Developers Are Solving the Wrong Problem](file:///Users/railscraft/Obsidian/raw/Most%20Developers%20Are%20Solving%20the%20Wrong%20Problem.md)
+- [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
+- [거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko](file:///Users/railscraft/Obsidian/raw/%EA%B1%B0%EC%9D%98%20%EB%AA%A8%EB%93%A0%20%EB%82%98%EC%81%9C%20%EA%B2%B0%EC%A0%95%EC%9D%84%20%EB%A9%88%EC%B6%94%EB%8A%94%20%EB%8B%A8%20%ED%95%98%EB%82%98%EC%9D%98%20%EC%A7%88%EB%AC%B8-ko.md)
+- [Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals](file:///Users/railscraft/Obsidian/raw/Code%20Is%20Not%20Cheap.%20How%20to%20Multiply%20Your%20AI%E2%80%99s%20Output%20With%20Software%20Fundamentals.md)
+- [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md)
+- [The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order](file:///Users/railscraft/Obsidian/raw/The%20Agentic%20AI%20Engineer%20Roadmap%20for%202026.%20Skills%2C%20Stack%2C%20and%20Order.md)
+- [Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko](file:///Users/railscraft/Obsidian/raw/Build%20a%20Real-Time%20Voice%20Agent%20in%2030%20Minutes%20%28With%20Interruption%20Handling%29-ko.md)
+- [gajae-code_AI_코딩_하네스_분석](file:///Users/railscraft/Obsidian/raw/gajae-code_AI_%EC%BD%94%EB%94%A9_%ED%95%98%EB%84%A4%EC%8A%A4_%EB%B6%84%EC%84%9D.md)
+- [Building an MCP Ecosystem at Pinterest-ko](file:///Users/railscraft/Obsidian/raw/Building%20an%20MCP%20Ecosystem%20at%20Pinterest-ko.md)
+

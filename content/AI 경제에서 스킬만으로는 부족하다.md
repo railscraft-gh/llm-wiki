@@ -1,0 +1,171 @@
+---
+aliases:
+- AI 경제 생존 전략
+- 기술보다 자산
+- AI-경제에서-스킬만으로는-부족하다
+core: true
+created: 2026-06-12
+sources:
+- raw/Skills Alone Won't Save You in the AI Economy.md
+- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+- raw/AI Agents. Complete Course.md
+- raw/How to Do Hard Things When You Have Zero Motivation.md
+- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+- raw/Your Wandering Mind Is Not the Enemy of Focus.md
+- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+- raw/Skills Alone Won’t Save You in the AI Economy.md
+- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+status: evergreen
+tags:
+- ai-economy
+- productivity
+- wealth-building
+- career
+- hustle
+- economics
+- philosophy
+type: concept
+updated: 2026-07-10
+---
+# AI 경제에서 스킬만으로는 부족하다
+
+> [!summary]
+> - AI의 발전으로 코딩 및 디자인 스킬의 한계비용이 0에 수렴하여, 단순 스킬 습득만으로는 커리어 생존과 큰 부의 창출이 불가능하다.
+> - 가치가 지속적으로 축적되고 복리로 증식하는 '자산(Assets)'을 구축하고 통제권을 획득하는 것이 중요해졌다.
+> - 구체적으로 유통 채널(Audience), 비즈니스 파트너십, 코드 기반 시스템, 지적재산권 등의 자산화에 우선 집중해야 한다.
+
+## 한 줄 정의
+AI 시대에 진짜 레버리지는 기술 습득이 아니라 가치가 복리로 증식하는 자산(비즈니스 파트너십, 실물 자산, 유통망)을 구축하고 취득하는 데 있다.
+
+## 핵심 요지
+- **학습 곡선의 정체**: AI 도구는 30분이면 설정할 수 있고, Claude 같은 고도화된 도구도 손에 익히는 데 몇 시간이면 충분하다. 활용을 집요하게 하는 것이 진짜 실무 기술이다.
+- **기술 쳇바퀴 탈출**: 기술 하나를 배우고 다음으로 넘어가는 행위는 수료증 수집용 쳇바퀴에 불과하다. 시간이 지나도 가치가 복리로 증식하는 자산을 쥐어야 한다.
+- **불평등과 격차 확대**: 역사적 패턴에 따르면 기술 혁신(인쇄기, 증기기관, 전기, 인터넷)은 부를 최상위층에 집중시켰다. 인터넷이 소매·미디어·물류 수백만 직무를 밀어냈듯, AI는 화이트칼라 직무를 밀어내며 불평등을 더욱 심화시킨다.
+- **생산성의 4가지 본질**: 실질적 경제 가치는 **시간 절약 / 비용 절약 / 수익 증대 / 리스크 감소** 중 하나 이상을 반드시 해결해야 성립한다.
+- 경제적 가치가 성립하기 위해서는 시간 절약, 비용 절약, 수익 증대, 리스크 감소라는 생산성의 4가지 본질 중 하나 이상을 확실하게 충족시켜야 비즈니스가 지속 가능하다 [raw/Skills Alone Won’t Save You in the AI Economy.md#L85-L90](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md#L85-L90).
+- AI 생성 슬롭(slop)으로 인한 콘텐츠 품질 디플레이션으로 [Fiverr 등 크리에이터 시장에서 250명의 인간 프리랜서 작가진으로 이루어진 팀이 한순간에 해고되는 기술적 실업 사태](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L27)가 실재하고 있다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L27](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L27).
+- 90일 테스트를 적용해 성과를 검증할 때는 오직 매출(Revenue), 확보된 고객(Customers), 완성된 제품(Product), 계약 완료된 파트너십, 세입자 임대 완료 부동산, 실제 반응하는 오디언스 등의 정량적 결과지표만으로 필터링한다 [raw/Skills Alone Won’t Save You in the AI Economy.md#L126-L134](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md#L126-L134).
+- 새로운 기술 환경에서 살아남기 위한 인간의 진짜 레버리지는 두 가지, 즉 치열하게 부딪쳐 길을 뚫어내는 근성(Hustle)과 극심한 혼란 속에서도 다시 일어서는 회복탄력성(Resilience)이다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L87](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L87).
+
+## 상세
+
+### 1. 기술 습득의 함정과 자산 취득 사고
+- 단순 기술 수집은 제자리걸음에 불과하다. '무엇을 배울까'가 아니라 '실질적인 결과를 내는 자산을 어떻게 만들거나 인수할까'로 사고의 축을 옮겨야 한다.
+- 신입과 1~2년 차 주니어가 수백 군데 지원서를 넣어도 답장을 받지 못하는 현실이다. 기업들은 채용 문턱을 조용히 높이고 있으며, 과거 존재했던 초보자용/진입 장벽이 낮은 일자리는 기술 대체로 인해 소멸하고 있다.
+- 경제학자들이 한 세기 넘게 연구해 온 '기술적 실업(Technological unemployment)'이 이제는 과거 안전지대로 여겨지던 화이트칼라(사무직) 일자리를 직접 겨냥하며 빠르게 전개되고 있다.
+
+### 2. 가치 복리 증식을 위한 자산의 3가지 형태
+- **비즈니스 파트너십**: 타인의 자원과 내 아이디어·인적 네트워크를 결합한다. 망해가는 사업의 지분 100%보다 성장하는 사업의 지분 50%가 낫다. 장기적 신뢰 관계는 알고리즘이 모방할 수 없다.
+- **실물 자산 취득**: 부동산, 소규모 사업체, 동네 점포의 지분. '대출과 빚은 나쁘다'는 고정관념에서 벗어나 어느 정도의 위험을 감수하고 현금 흐름을 지탱하는 실물을 인수해야 한다. 5년, 10년이 지난 후 큰 차이를 만든다.
+- **유통망 구축**: 최종 소비자와 직접 닿아 있는 오디언스나 네트워크. 유통망이 있으면 제조사(공급자)들이 스스로 파트너십을 제안해 온다. 구매자에게 이르는 길목을 쥐는 사람이 진짜 주도권(레버리지)을 쥔다.
+
+### 3. 필터링을 위한 '90일 테스트'
+- 어떤 일에 온 힘을 쏟기 전 스스로 질문한다:
+  > *"내가 여기에 90일 동안 온 힘을 쏟았을 때, 마지막에 성과를 증명할 수 있는 구체적인 결과물을 내놓을 수 있는가?"*
+- 구체적 결과물의 정의: 매출(Revenue), 확보된 고객(Customers), 완성된 제품(Product), 계약이 완료된 파트너십, 세입자가 들어찬 부동산, 실질적 반응을 보이는 오디언스.
+- 대답이 '아니오'라면 가치가 없는 일에 시간을 낭비하고 있는 것이다.
+- 90일 테스트를 통과한 성과가 나오면 복리의 마법이 작동하기 시작한다. 첫 번째 성과가 두 번째 성과를 불러오고, 두 번째 파트너십은 세 번째 기회의 문을 열며 자산 가치가 누적된다.
+
+### 4. 여전히 유효한 진입 타이밍
+- 2026년 현재는 아직 AI 경제 구조조정의 초기 단계다. 대다수가 AI에 대해 읽고 불안해하기만 할 뿐, 실제 무언가를 구축하지 않기에 기회의 공간은 충분히 열려 있다. 이 시기를 기회 삼아 실체 있는 자산을 구축하는 소수가 앞으로의 격차에서 우위를 점할 것이다.
+
+### AI를 통한 1인 학습 및 고속 피벗
+- AI 글쓰기로 인해 6년 공백의 프리랜서 글쓰기 커리어가 통째로 소멸했으나 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L77](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L77), 모르는 개념과 코드 샘플을 AI 에이전트로 초고속 학습하여 새로운 언어와 프레임워크 코딩 프로젝트를 수주, 기술 분야 기업가로 피벗에 성공한 사례가 존재한다.
+- 스킬 자체는 범용화되나, 기술과 근성을 결합해 나만의 유통망과 실질적 매출(Revenue), 완성된 제품(Product) 자산을 축적하는 속도가 앞으로의 부와 생존을 결정한다.
+
+### 5. 경제 가치의 4가지 본질과 AI 시대의 실업 실상
+- **생산성의 4가지 경제학적 축**: AI를 비즈니스에 접목할 때 스스로에게 질문해야 한다. 이것이 ① 시간 절약(Time reduction), ② 비용 절약(Cost reduction), ③ 수익 증대(Revenue increase), ④ 리스크 감소(Risk reduction) 중 무엇에 해당하는가? 이 4가지에 기여하지 못하는 단순한 흥미 위주 기술 습득은 가치가 없다.
+- **화이트칼라 실업의 물리적 임팩트**: 프리랜서 마켓플레이스인 Fiverr 등에서는 AI 요약/초안 도구의 도입으로 월별 단가가 폭락하면서, 대규모 대행사들이 인간 작가 250명으로 구성된 내부 콘텐츠 제작팀 전체를 당일 해고하고 1/100 비용의 AI-slop 자동화 피드로 전환하여 사이트를 유지하는 구조조정이 실시간으로 일어났다. 단순 '스킬 소지자'는 가격 경쟁에서 도무지 승리할 수 없다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L27](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L27).
+
+## 예시
+
+- **세탁 장비 사업 유통망**: 초기 2010년 산업용 장비 개조 판매를 시작으로 대형 브랜드 유통권을 획득하고, 제조사와 공동 제품개발 단계까지 나아갔다. 이는 최종 소비자와 직접 닿은 유통망의 레버리지 효과다 [raw/Skills Alone Won’t Save You in the AI Economy.md#L100-L104](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md#L100-L104).
+- **온라인 글쓰기 오디언스**: 2015년에 오디언스를 모으기 시작하여 축적된 독자층은 다른 플랫폼으로 이동하더라도 여전히 개인 소유의 이식 가능한 자산으로 기능한다.
+
+- **Fiverr 프리랜서 대체 일화**: 기업들이 품질보다 비용을 우선하여 250명의 작가진을 일거에 해고하고 AI 생성 슬롭으로 피드를 도배하는 등 기술적 실업의 속도가 화이트칼라 생태계 전반에서 가속화되는 현상 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L27](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L27).
+
+### 90일 자산 검증 테스트 체크리스트 (90-Day Test)
+90일간 몰입했을 때 아래의 '실체 있는 자산' 중 최소 1개 항목에 숫자가 표시되어야 한다:
+1. **매출 (Revenue)**: 직접 거래 결제가 완료되었는가?
+2. **고객 (Customers)**: 정기적으로 나를 찾는 구매자가 생겼는가?
+3. **제품 (Product)**: 배포 가능한 1.0버전 코드가 컴파일을 완료했는가?
+4. **파트너십 (Partnerships)**: 제휴사 서명이 담긴 계약을 맺었는가?
+5. **오디언스 (Audience)**: 내 도메인/뉴스레터 구독자 등 이탈하지 않는 소통망이 생겼는가?
+단순히 '책 한 권 분량의 프롬프트를 외웠다'거나 '수강 완료 이메일을 받았다'는 지식 수집 성격의 활동은 90일 필터링 기준에서 전면 탈락 처리한다 [raw/Skills Alone Won’t Save You in the AI Economy.md#L130-L134](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md#L130-L134).
+
+
+
+## 충돌
+- **AI 도구 기피론**: AI를 배울 필요가 없다는 주장이 아니다. 도구 활용 능력은 이미 기본값(Default)이며, 그 너머의 소유권(자산)을 쥐어야 한다는 점이다.
+- **리스크 감수론 vs 부채 혐오**: 부채 회피 성향은 안정성을 주지만 자산 취득 기회를 차단하므로, 장기적으로 복리 혜택을 보기 위해선 적절한 부채 기반 레버리지 투자가 필요하다.
+
+## 관련 노트
+- [[디지털 제품 생산 및 출시 워크플로우]]
+- [[Competence Debt]]
+- [[Vibe Coding과 Agentic Engineering]]
+- [[소프트웨어 민주화]]
+- [[성장 마인드셋]]
+- [[지연된 만족]]
+- [[AI 겨울과 경제적 조정]]
+
+## 출처
+- `raw/Skills Alone Won't Save You in the AI Economy.md`
+- [테일윈드의 고군분투는 무너지는 사상누각의 징조다](file:///Users/railscraft/Obsidian/raw/%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C%EC%9D%98%20%EA%B3%A0%EA%B5%B0%EB%B6%84%ED%88%AC%EB%8A%94%20%EB%AC%B4%EB%84%88%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%83%81%EB%88%84%EA%B0%81%EC%9D%98%20%EC%A7%95%EC%A1%B0%EB%8B%A4.md)
+- [AI가 내 글쓰기 커리어를 죽였다. AI 만세](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md)
+- [AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식)](file:///Users/railscraft/Obsidian/raw/AI%20%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9D%84%20%EA%B5%AC%EC%B6%95%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20%282026%EB%85%84%20%EB%B0%A9%EC%8B%9D%29.md)
+- [AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다](file:///Users/railscraft/Obsidian/raw/AI%EB%8A%94%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%9D%BC%20%EB%8D%94%20%EC%8B%AC%EA%B0%81%ED%95%9C%20%EC%9D%BC%EC%9D%84%20%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.md)
+- [모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20AI%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%2010%EA%B0%80%EC%A7%80%20LangChain%20%EB%B0%8F%20LangGraph%20%EA%B0%9C%EB%85%90.md)
+- [옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드](file:///Users/railscraft/Obsidian/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0%20-%20%EB%85%B8%ED%8A%B8%EB%A5%BC%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI로 몰래 쓴 글을 가려내는 명백한 방법들](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EB%AA%B0%EB%9E%98%20%EC%93%B4%20%EA%B8%80%EC%9D%84%20%EA%B0%80%EB%A0%A4%EB%82%B4%EB%8A%94%20%EB%AA%85%EB%B0%B1%ED%95%9C%20%EB%B0%A9%EB%B2%95%EB%93%A4.md)
+- [디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요](file:///Users/railscraft/Obsidian/raw/%EB%94%94%EC%A7%80%ED%84%B8%20%EC%A0%9C%ED%92%88%20%EC%A0%9C%EC%9E%91%EC%9D%80%20%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94.%20%EB%8C%80%EC%8B%A0%20%EC%9D%B4%EA%B2%83%EC%97%90%20%EC%A7%91%EC%A4%91%ED%95%98%EC%84%B8%EC%9A%94.md)
+- [AI Agents. Complete Course](file:///Users/railscraft/Obsidian/raw/AI%20Agents.%20Complete%20Course.md)
+- [How to Do Hard Things When You Have Zero Motivation](file:///Users/railscraft/Obsidian/raw/How%20to%20Do%20Hard%20Things%20When%20You%20Have%20Zero%20Motivation.md)
+- [Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic](file:///Users/railscraft/Obsidian/raw/Anthropic%EC%9D%B4%20Opus%204.8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EA%B2%83%20-%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%ED%9D%A1%EC%88%98%ED%95%98%EB%8A%94%20Anthropic.md)
+- [좋은 삶을 만드는 것에 대한 지루한 진실](file:///Users/railscraft/Obsidian/raw/%EC%A2%8B%EC%9D%80%20%EC%82%B6%EC%9D%84%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%A7%84%EC%8B%A4.md)
+- [Claude Code를 위한 Figma 스킬 완벽 가이드](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Figma%20%EC%8A%A4%ED%82%AC%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EB%B3%B4%EC%A1%B0%20%EC%BD%94%EB%94%A9%EC%9D%80%20%ED%95%98%EB%82%98%EC%9D%98%20%EA%B8%B0%EC%88%A0%EC%9D%B4%EB%8B%A4.%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%EC%9D%B4%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [10 Things Every Investor Should Know (but most learn too late)](file:///Users/railscraft/Obsidian/raw/10%20Things%20Every%20Investor%20Should%20Know%20%28but%20most%20learn%20too%20late%29.md)
+- [내가 Obsidian을 정리하는 방법 - 다니엘 프린디](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%EA%B0%80%20Obsidian%EC%9D%84%20%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20-%20%EB%8B%A4%EB%8B%88%EC%97%98%20%ED%94%84%EB%A6%B0%EB%94%94.md)
+- [Claude Code를 밑바닥부터 직접 구현해 보았다](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84%ED%95%B4%20%EB%B3%B4%EC%95%98%EB%8B%A4.md)
+- [Claude Code 프로젝트를 위한 MEMORY.md](file:///Users/railscraft/Obsidian/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20MEMORY.md.md)
+- [마이크로서비스 대신 [[모듈러 모놀리스]] — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들](file:///Users/railscraft/Obsidian/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%8C%80%EC%8B%A0%20%EB%AA%A8%EB%93%88%EB%9F%AC%20%EB%AA%A8%EB%86%80%EB%A6%AC%EC%8A%A4%20%E2%80%94%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EA%B0%80%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%9D%BD%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%96%88%EC%9D%84%20%EB%95%8C%20%EB%B0%94%EB%80%90%20%EA%B2%83%EB%93%A4.md)
+- [40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍](file:///Users/railscraft/Obsidian/raw/40%EC%96%B5%20%EB%8B%AC%EB%9F%AC%20%EB%8C%80%EA%B8%B0%EC%97%85%EC%9D%B4%20%EA%B9%A8%EB%9C%A8%EB%A6%B0%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%99%80%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%ED%98%91%EB%B0%95%EC%9D%98%20%EC%97%AD%ED%92%8D.md)
+- [The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks](file:///Users/railscraft/Obsidian/raw/The%20S%26P%20500%20Illusion.%20Why%20Your%20%E2%80%9CDiversified%E2%80%9D%20Index%20Is%20Really%20a%20Bet%20on%2010%20Stocks.md)
+- [Your Wandering Mind Is Not the Enemy of Focus](file:///Users/railscraft/Obsidian/raw/Your%20Wandering%20Mind%20Is%20Not%20the%20Enemy%20of%20Focus.md)
+- [BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk.](file:///Users/railscraft/Obsidian/raw/BofA%E2%80%99s%20May%20Survey%20Says%20Investors%20Are%20Back%20in%20Stocks.%20The%2030-Year%20Is%20the%20Risk..md)
+- [내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%20%EC%A3%BC%EC%9D%98%20%EC%A7%91%EC%A4%91%20%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%90%98%EB%8F%8C%EB%A0%A4%EC%A4%80%2011%EA%B0%80%EC%A7%80%20%EC%82%AC%EC%86%8C%ED%95%9C%20%EC%83%9D%ED%99%9C%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%EB%B3%80%ED%99%94.md)
+- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/LLM%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
+- [2026년을 위한 웹 디자인 및 빌드 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9B%B9%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%B0%8F%20%EB%B9%8C%EB%93%9C%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [These 3 ETFs Created More Millionaires Than Any Stock](file:///Users/railscraft/Obsidian/raw/These%203%20ETFs%20Created%20More%20Millionaires%20Than%20Any%20Stock.md)
+- [60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴](file:///Users/railscraft/Obsidian/raw/60%EC%9D%BC%EA%B0%84%2011%EB%B2%88%EC%9D%98%20%EA%B8%B0%EC%88%A0%20%EC%9D%B8%ED%84%B0%EB%B7%B0%EB%A5%BC%20%EC%B9%98%EB%A5%B4%EB%A9%B0%20%EA%B9%A8%EB%8B%AC%EC%9D%80%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%B4%EC%A3%BC%EC%A7%80%20%EC%95%8A%EB%8A%94%20%ED%8C%A8%ED%84%B4.md)
+- [Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20LLM%20in%2030%20Minutes%20%28Coding%2C%20RAG%2C%20Voice%29.md)
+- [만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다](file:///Users/railscraft/Obsidian/raw/%EB%A7%8C%EC%95%BD%20%EB%8B%A8%205%ED%8E%B8%EC%9D%98%20AI%20%EB%85%BC%EB%AC%B8%EB%A7%8C%20%EC%9D%BD%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%B0%94%EB%A1%9C%20%EC%9D%B4%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.md)
+- [AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
+- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/RAG%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
+

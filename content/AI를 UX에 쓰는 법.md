@@ -1,0 +1,136 @@
+---
+aliases:
+- AI for UX
+- UX에서 AI 쓰는 법
+- AI를-UX에-쓰는-법
+core: false
+created: 2026-05-29
+sources:
+- UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
+- 'AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기'
+- 'AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기'
+- raw/효과적인 리더십을 위한 전략적 사고를 키우는 법 - 출판형 다듬기.md
+- raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형
+- raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
+- 'raw/AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기.md'
+- 'raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md'
+- raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형
+  다듬기.md
+status: evergreen
+tags:
+- llm
+- ux
+- workflow
+- prompt
+- research
+type: workflow
+updated: 2026-07-10
+---
+# AI를 UX에 쓰는 법
+
+## 한 줄 정의
+AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스커버리 workflow를 함께 설계해 UX 실무자의 판단을 빠르게 만드는 방법이다.
+
+## 핵심 요지
+- LLM은 정답 저장소라기보다 텍스트 패턴을 생성하는 시스템이므로, UX에서는 먼저 도구의 한계를 이해해야 한다.
+- 반복 설명을 줄이려면 역할, 톤, 출력 형식, 제약을 custom instruction이나 system prompt에 고정한다.
+- AI는 UX 리서치의 준비·정리·초안 작성에 강하지만, 해석과 판단은 여전히 인간의 책임이다.
+- 좋은 사용법은 AI가 답을 대신 내는 것이 아니라, 연구 질문을 정리하고 근거를 압축하고 선택지를 넓게 만드는 것이다.
+- 2026년 기준 AI 전사/기록 도구는 음성-텍스트 변환 정확도 95~98%, 테마 추출 일치도 80~85% 수준을 달성하며, 인간 연구자는 기계적인 정리 작업을 AI에 위임하고 15~20%의 미세 오류 교정 및 최종 비즈니스 타당성 해석에 집중한다. (출처: raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md)
+- NN/g의 UX Reckoning: 2025년 닐슨 노먼 그룹이 선언한 것처럼, UX 직군이 지엽적인 디자인 툴 사용에서 탈피해 실제 사용자 가치와 맥락 주입에 AI를 통합하는 체계적 전술 재점검이 필요하다.
+- CLI 파워 레이어의 커밋 비중: 2026년 3월 기준, 전 세계 공개 GitHub 커밋의 약 4%를 Claude Code가 작성하는 등 터미널 기반 에이전트 도구가 소프트웨어 구현 흐름을 실시간 지배하고 있다.
+
+## 상세
+
+이 workflow는 세 단계로 읽으면 쉽다. 첫째, LLM과 제품 표면의 성격을 이해한다. 둘째, 자주 반복하는 맥락을 설정으로 고정한다. 셋째, 리서치와 디스커버리에서 AI를 초안 생성기이자 압박 테스트 도구로 쓴다.
+
+1. **도구를 이해한다.**  
+   LLM은 데이터베이스처럼 사실을 꺼내 주는 도구가 아니라, 대화에서 제공한 맥락과 학습한 패턴을 바탕으로 다음에 올 텍스트를 예측한다. 그래서 UX 실무자는 "AI가 무엇을 아는가"보다 "AI가 무엇을 잘 정리하는가"를 먼저 봐야 한다.
+
+2. **지속 설정을 만든다.**  
+   역할, 사용자층, 톤, 출력 형식, 금지 규칙을 매번 다시 설명하면 마찰이 쌓인다. custom instruction이나 system prompt에 "나는 어떤 사람이고 어떻게 일하는지"를 적어 두면, 매 세션이 훨씬 빨리 시작된다.
+
+3. **리서치와 디스커버리에서 쓴다.**  
+   계획, 인터뷰, 통합, 인사이트 전달 단계는 구조가 반복되므로 AI가 초안을 만들기 좋다. 다만 연구의 가치는 최종 산출물의 예쁨이 아니라 근거와 해석에 있다. 따라서 AI가 만든 초안은 항상 출처, 가정, 누락 항목을 기준으로 검토해야 한다.
+
+이 관점은 UX를 위한 AI를 "새로운 마법 도구"로 보지 않게 만든다. 오히려 기존 UX 역량—판단, 우선순위, 사용자 맥락 이해—을 더 빠르게 작동시키는 보조 계층으로 만든다.
+
+### 4. 3단계 리서치 데이터 통합(Synthesis) 워크플로우
+대량의 인터뷰 전사본(Transcript)을 기계적으로 요약해 얕은 헛소리를 낳는 실패 모드를 우회하는 체계적 방법론이다.
+1. **1단계 - transcript 정규화**: 발화자 레이블을 `M: (moderator) / P: (participant)`로 통일하고, Filler word(um, uh, like 등)는 제거하되 본문 내용은 보존. 오독된 문맥은 `[대괄호]` 표시로 격리한다.
+2. **2단계 - 개별 테마 코딩**: 인터뷰별로 `tag(3~5단어)`, `quote(정확한 문맥)`, `timestamp`, 그리고 신뢰도를 구분하는 `confidence note (high/medium/low)`를 표로 추출. (특히 low confidence 태그를 통해 AI의 임의 해석 구역을 선제 필터링한다)
+3. **3단계 - 전체 클러스터링**: 6~10개의 마스터 테마로 묶을 때, 패턴을 부정하는 **disconfirming evidence(반대 증거)**를 필수로 요청하고, 지지자 수가 3인 미만인 패턴은 **limited evidence**로 명시해 성급한 결론 양산을 방지한다.
+
+### 5. 인사이트 전달(Delivery) 및 이중 검증 프레임워크
+- **인사이트 명세서 (Insight Statement) 구조**:
+  1. Plain language로 작성한 한 문장 headline (판단이나 의견 배제, 오직 관찰)
+  2. 사용자 행동 양상 및 대상자 수를 밝힌 "what we observed"
+  3. 비즈니스 결정 및 연구 질문의 이유를 엮은 "why it matters"
+  4. 원문 quote 2개
+  5. 한계와 지식 공백을 명시하는 "what we are still uncertain about" 메모
+  6. 다음 할 일 (전술적/전략적 Next step 분할)
+- **에이전트 자가 검증 (Critique & Skeptic Review)**:
+  - *Synthesis critique*: "가장 약한 quote는 무엇인가", "참가자가 말하지 않은 감정을 자의적으로 추론한 곳은 어디인가" 등을 스스로 비판하게 하여 정합성 확보.
+  - *Stakeholder-skeptic review*: "그건 그냥 의견 아닌가", "통계적으로 유의미하지 않다"고 공격할 **회의적인 VP of Product**의 페르소나를 AI에 투사해 공격 지점을 사전 차단하고 보고서 방어력을 높임.
+
+### AI UX 도구 체인의 3대 기능적 레이어
+1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+
+### AI UX 도구 체인의 3대 기능적 레이어
+1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+
+### AI UX 도구 체인의 3대 기능적 레이어
+1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
+2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
+3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+
+## 예시
+
+- 연구 준비: 막연한 brief를 연구 질문, 방법, 참여자 기준, discussion guide로 쪼갠다.
+- 프롬프트 설정: 제품 역할, 사용자층, 톤, 출력 형식을 지속 설정으로 저장한다.
+- 리서치 통합: 인터뷰 노트를 AI로 theme별로 묶되, 결론은 사람이 근거를 대조해 확정한다.
+
+#### 시스템 프롬프트 (Custom Instruction) 템플릿
+역할, 사용자층, 톤, 출력 형식, 금지 규칙을 AI 도구의 지속 설정(Custom Instructions)에 고정해 매 세션 온보딩 마찰을 예방한다:
+> *나는 B2B SaaS 시니어 UX 디자이너다. 우리 사용자는 중견 규모의 시간에 쫓기는 운영 매니저다. 톤은 전문용어와 기업식 유행어를 배제하고 평이하고 직설적이어야 한다. 카피 요청 시 바로 복사 가능한 형태의 3가지 옵션을 제시하고, 정답이 없을 땐 트레이드오프를 가진 옵션들을 리스트로 줘라. 다크 패턴은 절대 제안하지 말 것.*
+
+### 단계별 도입 프레임워크 (12주 로드맵)
+- **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
+- **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+
+### 단계별 도입 프레임워크 (12주 로드맵)
+- **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
+- **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+
+### 단계별 도입 프레임워크 (12주 로드맵)
+- **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
+- **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
+- **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+
+## 충돌
+- AI는 UX 작업을 빠르게 만들 수 있지만, 사용자 해석과 제품 판단을 대체하지는 않는다.
+
+## 관련 노트
+- [[AI Experience Architect]]
+- [[AI 시대 디자인 시스템]]
+- [[Context Engineering]]
+- [[디자인 에이전트 5종]]
+- [[AI 네이티브 사용자]]
+
+## 출처
+- UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
+- AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
+- AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
+- [효과적인 리더십을 위한 [[전략적 사고]]를 키우는 법 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8%20%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A0%84%EB%9E%B5%EC%A0%81%20%EC%82%AC%EA%B3%A0%EB%A5%BC%20%ED%82%A4%EC%9A%B0%EB%8A%94%20%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 [[Context Engineering]] 가이드 - 출판형](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20RAG%20%EB%8C%80%20Vector%20RAG%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95)
+- [GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 [[Context Engineering]] 가이드 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20RAG%20%EB%8C%80%20Vector%20RAG%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+

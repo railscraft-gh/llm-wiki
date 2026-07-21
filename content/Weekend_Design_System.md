@@ -1,0 +1,34 @@
+---
+type: concept
+status: draft
+core: false
+tags:
+- design-system
+- frontend
+- productivity
+- css
+aliases:
+- 최소 디자인 시스템
+sources:
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+created: 2026-07-21
+updated: 2026-07-21
+---
+## 한 줄 정의
+거창한 도구(Figma Tokens, Storybook 등) 없이 CSS 변수와 기초 컴포넌트(버튼, 폼, 카드)만으로 구축하여, 1인 개발자가 의사결정 피로를 줄이고 개발 속도를 높이는 경량화된 디자인 시스템입니다.
+
+## 핵심 요지
+- **디자인 토큰(Tokens):** 색상, 간격, 폰트 등을 의미론적 변수(CSS Variables)로 관리하여 시스템 일관성 확보.
+- **최소 4대 요소:** 디자인 토큰, 타이포그래피 스케일, 간격 스케일, 컴포넌트 라이브러리(버튼, 폼, 카드).
+- **이중 레이어 설계:** 기본값(Primitive)과 의미론적 토큰(Semantic)을 분리하여 향후 테마 변경 및 다크 모드 도입 대비.
+- **문서화 도구:** 스토리북 대신 브라우저에서 직접 확인할 수 있는 단일 HTML 문서 활용.
+
+## 상세
+사이드 프로젝트가 커질수록 발생하는 UI 일관성 붕괴와 매번 똑같은 디자인 결정을 반복하는 의사결정 피로를 해결하는 것이 핵심입니다. 복잡한 워크플로우를 먼저 도입하기보다, CSS 변수로 정의된 토큰을 프로젝트의 모든 컴포넌트가 공유하게 하여 구조를 잡는 것만으로도 디자인 생산성을 40% 이상 개선할 수 있습니다.
+
+## 관련 노트
+- [[Figma_Component_Structures]]
+- [[DESIGN_md_Workflow]]
+
+## 출처
+- [raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md](file:///Users/railscraft/Obsidian/raw/1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80%20%EC%86%8C%EA%B7%9C%EB%AA%A8%20%ED%8C%80%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%A7%90%20%EC%99%84%EC%84%B1%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EB%B2%95.md)

@@ -1,0 +1,68 @@
+---
+aliases:
+- 아미 랩스
+- AMI-Labs
+core: false
+created: 2026-06-09
+sources:
+- ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
+- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+status: needs-review
+tags:
+- llm
+- startup
+- intelligence
+type: concept
+updated: '2026-06-22'
+---
+# AMI Labs
+
+## 한 줄 정의
+
+AMI Labs(Advanced Machine Intelligence Labs)는 현대 딥러닝의 거장 얀 르쿤(Yann LeCun) 교수가 2025년 11월 메타(Meta)를 사임하고 프랑스 파리에 창업한 [[세계 모델]] 및 [[JEPA]] 기반 차세대 기계 지능 연구 스타트업이다.
+
+## 핵심 요지
+
+- **창업 배경**: 메타가 Llama 4의 부진에 대응하여 140억 달러 이상을 쏟아붓고 Scale AI의 알렉산드르 왕(Alexandr Wang)을 영입하는 등 극단적인 LLM 스케일업 전략으로 선회하며 기초 연구 부서인 FAIR를 제품 양산 기지로 전락시키자, 르쿤은 메타의 투자를 전면 거부하고 독자 노선을 택했다.
+- **챗봇 배제의 철학**: "진정한 지능은 언어가 아닌 세상에서 출발한다"는 기치 아래, 챗봇 경쟁을 지엽적인 놀잇감으로 간주하고 물리 세계의 메커니즘을 정확히 시뮬레이션하는 [[세계 모델]] 개발에 주력한다.
+- **산업적 타깃 설계**: AMI Labs의 초기 1~2년 로드맵은 당장 가정용 로봇을 만드는 것이 아니라, 제트 엔진 작동, 화학 공정 제어, 전력망 운용 및 당뇨 환자 신체의 혈당 흐름 예측 등 복잡한 산업 시스템 및 생체 물리학 예측 시뮬레이터 구축을 목표로 한다.
+
+## 상세
+
+AMI Labs는 얀 르쿤 뉴욕대(NYU) 교수가 의장(Chairman)을 맡고, 그의 오랜 연구 동업자인 알렉스 르브런(Alex LeBrun)이 CEO로 경영을 총괄한다. 회사명인 'AMI'는 고급 기계 지능(Advanced Machine Intelligence)의 약자이면서 프랑스어로 '친구(ami)'를 의미한다. 
+
+얀 르쿤은 현 LLM 챗봇들이 말장난에는 뛰어나나 실제 물리 세계에서 실행할 수 있는 역량이 전혀 없다는 점을 꼬집으며, 10년의 연구 기간이 걸리더라도 근본적인 패러다임 전환이 필요함을 천명했다. 메타의 막강한 자본 우산 아래서 부와 안정을 누릴 수 있었으나, 업계 전체가 스케일링 스쿨의 막다른 골목으로 전력 질주하는 흐름 속에서 기초 과학의 실마리를 지키기 위해 독립을 선언한 결단이다.
+
+특히, 당뇨병 환자의 생체를 정교하게 모델링함으로써 혈당 예측 제어 치료 방안을 마련하고, 화학 분자 배터리 촉매 및 제트 엔진의 연소 상태를 예측하는 [[세계 모델]]을 개발하겠다는 타깃은 단순 모방 챗봇 너머의 산업적 지각 변동을 예고하고 있다.
+
+## 예시
+
+- **메타의 자본 배제**: 얀 르쿤은 2025년 12월 파리 행사에서 메타가 AMI Labs에 단 한 푼도 투자하지 않을 것임을 분명히 밝히며, 지분 관계의 얽힘 없이 10년의 독자적 물리 시뮬레이션 여정을 공고히 하겠다는 단호한 의지를 보여주었다.
+
+## 충돌
+
+## 관련 노트
+
+- [[세계 모델]]
+- [[JEPA]]
+
+## 출처
+
+- Caiwei Chen, “Yann LeCun’s new venture is a contrarian bet against large language models,” _MIT Technology Review_, January 22, 2026.
+- “Meta chief AI scientist Yann LeCun is leaving the company,” _CNBC_, November 19, 2025.
+- “AI Pioneer LeCun Says Meta Won’t Invest in ‘World Model’ Startup,” _Bloomberg_, December 4, 2025.

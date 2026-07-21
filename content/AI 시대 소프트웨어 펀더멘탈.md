@@ -1,0 +1,197 @@
+---
+aliases:
+- AI-시대-소프트웨어-펀더멘탈
+core: false
+created: 2026-05-09
+sources:
+- Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals
+- 아무도 AI를 배우고 싶어 하지 않는다
+- 오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/단돈 100달러로 주식 투자 시작하기.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+- raw/아무도 AI를 배우고 싶어 하지 않는다.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/우리가 초대받지 못한 새로운 AI 시대의 개막.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산.md
+- raw/미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/초보 투자자가 저지르는 가장 큰 투자 실수 15가지.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/The most important Design System in 2026 that designers missed was built by
+- raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md
+- raw/오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/남다르게 생각하도록 뇌를 훈련하는 법.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스.md
+status: evergreen
+tags:
+- ai-coding
+- software-engineering
+- fundamentals
+- tdd
+- ddd
+type: concept
+updated: 2026-07-10
+---
+# AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
+
+## 한 줄 정의
+AI 시대일수록 좋은 설계와 공통 이해를 바탕으로 한 소프트웨어 펀더멘탈이 더 중요해지며, AI 엔지니어링의 본질은 모델의 발명이 아닌 사전 학습된 모델을 안전하고 안정적으로 결합하여 유용하게 작동시키는 시스템 엔지니어링에 있다는 주장.
+
+## 핵심 요지
+- **Vibe Coding에서 Agentic Engineering으로**: Andrej Karpathy는 2025년 2월 "원하는 것을 말하면 AI가 코딩하고 그 코드가 존재한다는 사실조차 잊어버리는" `vibe coding` 개념을 만들었으나, 1년 뒤인 2026년에는 예술과 과학, 그리고 전문성을 강조하는 `agentic engineering`으로 입장을 선회했다. 수작업 코딩 80%에서 에이전트 코딩 80%로 전환하면서, 모델이 어려운 문제는 잘 풀지만 당연한 것에서 넘어지는 jagged(들쭉날쭉한) 특성을 지님을 발견했다.
+- **코드는 싸지 않다**: Matt Pocock은 자신의 2026년 4월 AI Engineer Conference 강연에서 "Code is not cheap. Bad code is the most expensive it's ever been"이라고 강조했다. 코드베이스를 수정하기 어렵다면 AI가 제안하는 코드를 온전히 흡수할 수 없다. AI는 아키텍처 결함을 해결하기는커녕 엔트로피를 더 빠르게 증폭시킨다. AI는 아키텍처라는 배수기(multiplier) 위에서 작동하기에, 좋은 구조는 가치를 복리로 만들고 나쁜 구조는 부패를 가속한다.
+- **버그의 폭발적 증가**: GitClear의 *2025 code quality study*에 따르면, AI가 공동 작성한 PR은 사람만 작성한 PR보다 이슈(버그)가 1.7배 더 많이 발생한다. 복사·붙여넣기된 코드의 비중은 2021년 8.3%에서 2024년 12.3%로 크게 늘었다. 한편 AI는 현재 GitHub 전체 코드의 41%를 작성하고 있으며, 유료 Copilot 구독자는 470만 명에 이른다.
+- **durable skill vs perishable skill**: 프레임워크나 API 구현 세부사항처럼 유통기한이 2~3년인 perishable skill(React hooks, 특정 에이전트 API 등)에 매몰되지 않고, 시스템 디버깅 능력, 아키텍처 판단력, 코드베이스 분석력 등 반감기가 수십 년에 달하는 durable skill을 훈련해야 [[Competence Debt]]을 피할 수 있다. 무료 온라인 강의(MOOC)의 완주율은 3%~10% 미만에 불과하며, 가트너(Gartner)에 따르면 기업 교육의 45%가 실무에 쓰이지 않는 'scrap learning'으로 낭비된다.
+- **시니어의 7가지 펀더멘탈 패턴**: AI가 코드를 빠르게 배출할수록 동료와 AI간 혼선을 줄이고 복잡성을 통제하기 위해, 조기 반환(`Return Early`), 외부 오염을 차단하는 완충 경계(`Boundary`), 무효 상태 차단, 판단과 실행의 분리 등의 펀더멘탈 패턴을 적용하여 동료의 놀라움을 예방해야 한다.
+- **잘못된 문제 진단과 소유권**: 성능 측정 없는 렌더링 최적화 맹신, API 스펙 파탄을 UI 방어 코드로 해결하는 등 잘못된 문제를 해결하는 안티패턴을 경계해야 한다. 소유권이 명확하지 않은 아키텍처는 거추장스러울 뿐이며, 처방 전 6단계의 철저한 근원 레이어 역추적 진단이 선행되어야 한다.
+- Matt Pocock의 grill-me 스킬은 깃허브 스타 13,000개 이상을 획득하며 AI 코딩 시작 전에 공동 이해(shared understanding)를 구축하는 설계 정렬(alignment) 기법으로 자리잡음 [raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md]
+
+## 상세
+
+### 1. 만들기 전에 먼저 정렬하라 (Design Concept)
+- **원인**: Karpathy가 지적한 첫 번째 에이전트 실패 모드는 "모델이 당신 대신 잘못된 가정을 하고도 확인하지 않은 채 그냥 밀고 나가는 것"이다. 이는 Frederick Brooks가 *The Design of Design*에서 다룬 **design concept**(협업자들 사이의 보이지 않는 공유 설계 이론)의 결핍에서 발생한다. AI 프롬프팅에서는 이 정신 모델의 동기화가 기본적으로 누락된다.
+- **처방**: Grill Me 스킬
+  Matt Pocock은 다음 두 줄의 지시어로 구성된 `grill-me` 스킬을 고안했다 (GitHub 스타 97,000개 이상 기록).
+  > *"이 계획의 모든 측면을 우리가 공유된 이해에 도달할 때까지 집요하게 인터뷰하라. 설계 트리의 각 가지를 따라 내려가며, 하나씩 의존성을 풀어라."*
+  이 지시를 받으면 AI는 생각을 건너뛰지 않는 적대자처럼 작동하여, 만족할 때까지 40개, 60개, 때로는 100개의 질문을 집요하게 던져 계획의 구멍과 잘못된 가정을 코딩 시작 전에 검증한다.
+
+### 2. 같은 언어를 사용하라 (Ubiquitous Language)
+- **원인**: 두 번째 실패 모드는 "10줄짜리 함수를 요청했더니 200줄짜리 장황한 엔터프라이즈 프레임워크가 나오는" 과적합 문제다. AI가 사용자의 도메인 용어를 오해하여 추측에 의존하기 때문이다. 다중 에이전트 설정에서는 용어의 소유권이 불분명할 경우 서로의 영역을 침범하고 로직을 중복하는 "context bleed"가 발생한다.
+- **처방**: Ubiquitous Language (유비쿼터스 언어)
+  Eric Evans의 *Domain-Driven Design* (2003) 핵심 개념인 Ubiquitous Language를 적용해야 한다. Evans는 2024년 InfoQ에서 "bounded context의 ubiquitous language로 LLM을 학습시키면 범용 모델보다 특정 필요에 훨씬 더 유용해진다"고 언급했다. Pocock의 `ubiquitous-language` 스킬은 코드베이스를 스캔하여 도메인 용어집을 마크다운 사전 표로 작성하고 프롬프트 자산으로 활용한다. 이를 통해 용어의 혼선과 추측을 막아 낭비되는 토큰을 크게 줄이고 구현 정확도를 높인다.
+
+### 3. 먼저 테스트하고, 작게 배포하라 (TDD)
+- **원인**: 그럴듯하지만 작동하지 않는 코드가 쏟아진다. *The Pragmatic Programmer*의 경고처럼 "자신의 헤드라이트보다 빠르게 달리기(Outrunning headlights)" 때문이다. 검증 없이 수백 줄을 한 번에 작성하는 에이전트는 엔트로피 소용돌이를 유도한다.
+- **처방**: TDD (테스트 주도 개발)
+  TDD는 AI가 작은 단계를 밟도록 규제하는 기계적 제약 장치이자 엔트로피를 막는 피드백 루프다.
+  - **Anthropic best practices**: 한 Claude가 테스트를 쓰고, 두 번째 Claude가 테스트를 통과하는 코드를 작성하는 "writer/reviewer" 패턴 권장.
+  - **OpenAI Codex**: 테스트가 외부의 진실 원천(source of truth)이며, 이것이 없으면 Codex는 자기 판단으로 검증하는 실수를 저지른다.
+  - **arXiv 연구 (2025-05)**: 에이전트가 단일 스크립트에서 다중 모듈 시스템으로 이동할수록 코드 스멜 밀도가 급증한다. 테스트 경계가 없으면 부패는 시스템 규모에 맞춰 커진다.
+
+### 4. 넓게 말고 깊게 만들어라 (Deep Modules)
+- **원인**: AI는 기능은 적고 인터페이스가 복잡한 얕은 모듈(shallow modules)을 잘 만든다. 이는 의존성을 복잡하게 얽히게 해 다음 AI 세션이 내비게이션 미로 속에서 길을 잃게 만든다. LLM은 추론 시점에 전체 아키텍처의 복잡성을 추적하지 못하며 모듈이 조각날수록 출력이 나빠진다.
+- **처방**: Deep Modules (깊은 모듈)
+  John Ousterhout의 *A Philosophy of Software Design* (2018) 개념이다. 단순한 인터페이스 뒤에 많은 기능을 숨겨 컨텍스트 윈도우 낭비를 막고, AI가 내부 구현 세부사항을 알지 못해도 입구만 보고 협업할 수 있도록 설계해야 한다. TypeScript가 2025년 8월 GitHub의 1위 언어로 복귀한 배경도 타입 구조화가 AI 보조 개발의 신뢰도를 복리로 키우기 때문이다.
+
+### 5. 인터페이스를 설계하고 구현은 위임하라 (Grey-box)
+- **처방**: Grey-box(회색 상자) 전략
+  사용자는 아키텍처, 인터페이스, 계약(contract) 설계 등 전략 레이어를 담당하고, 모듈 내부의 구체적인 구현은 전술 레이어인 AI에게 위임한다. 켄 벡(Kent Beck)은 "매일 시스템 설계에 투자하라"고 조언했다. 설계 투자 없이 프롬프트에서 코드를 다시 생성하는 일회용 specs-to-code 흐름은 위험하다. 줄 단위 코드 리뷰 대신 테스트 통과 여부로 에이전트의 완성도를 검증함으로써 인간 두뇌가 겪는 검토 피로를 극복한다. Anthropic 데이터에 따르면, 이와 같이 위임 기반의 신뢰 아키텍처를 적용한 대규모 리팩터링 작업에서 2~3배의 생산성 향상이 나타났다.
+
+### 6. AI 엔지니어의 핵심 역량: 모델 발명이 아닌 시스템 엔지니어링
+- AI 엔지니어는 새로운 모델을 설계하는 리서치 사이언티스트가 아니다. 이미 사전 학습된 파운데이션 모델을 시스템에 안정적으로 배치하고 조율하는 사람이며, 이 일은 수학보다 전통적인 소프트웨어 엔지니어링에 가깝다. AI 엔지니어 실무 로드맵은 총 8~10개월(실천 연습 시 6~9개월)의 타임라인을 갖는다.
+- **오해와 진실**:
+  - 고급 수학이나 미적분, 역전파 수식을 직접 유도할 줄 몰라도 상용 AI 시스템을 구축할 수 있다 (작동 기저의 개념적 이해만으로 충분).
+  - Kaggle 등 정제된 데이터 기반 평가지표 경쟁은 실제 프로덕션 환경의 지저분한 데이터, 불안정한 인프라, 비결정론적인 모델 동작을 다루는 엔지니어링 실무와 거리가 먼 편이다.
+
+### 7. 프로덕션 AI의 배관 작업(Plumbing)과 관찰 가능성
+- 실제 상용화된 AI 제품에서 발생하는 오류의 80%는 AI 모델 자체의 지능 문제가 아니라, 모델의 비결정론적 특성을 제어하지 못한 **시스템 배관(Plumbing) 오류**에서 기인한다.
+- **RAG/에이전트 제어**: 문서 청킹 방식 최적화, 정지 조건(Stop condition)을 통한 무한 루프 차단, Pydantic을 이용한 구조화된 출력(JSON Schema) 유효성 검사 등 견고한 로직 처리가 필수적이다.
+- **관찰 가능성(Observability) 및 evals(평가)**:
+  - LangSmith 또는 Langfuse와 같은 추적(Tracing) 도구를 적용하여 모델 호출과 도구 실행의 흐름을 시각화해야 오류 디버깅이 가능하다.
+  - 시스템 개선을 입증하기 위해, 이진 지표(예/아니오) 기반의 자동 테스트 케이스인 `evals`를 셋업하여 아키텍처를 관리한다.
+
+### 8. 실행(Ship) 중심의 학습 복리 효과
+- AI 지식을 눈으로만 담아두는 소비(Consume) 상태에 머물면 성장하지 못한다. 직접 RAG, Agent, Pydantic 스키마 등을 API로 연결하고, FastAPI로 백엔드를 구축한 뒤 Docker 컨테이너에 올려 Railway/Render 등에 직접 배포(Ship)해 깨뜨려 보는 실전 루프를 반복해야 역량 부채를 피할 수 있다.
+  > *"강의는 개념을 알려주고, 프로젝트는 부족한 구멍을 드러낸다. 배포(Ship)는 그 구멍을 메운다."*
+
+### 9. 주요 플랫폼별 원칙 매핑
+- **Anthropic (Claude Code)**: `CLAUDE.md`를 프로젝트의 정렬 계약 문서로 삼고, 독립적인 서브에이전트 아키텍처와 writer/reviewer 패턴을 활용.
+- **OpenAI (Codex)**: `AGENTS.md`를 협업 계약서로 사용하고, 에이전트의 작업 완료를 보증하는 "done when" 테스트 기준 제공.
+- **GitHub Copilot**: 저장소의 의미론적 색인을 구성하는 `agent mode`(2025 대비 검색 정확도 37.6% 향상), custom agents 및 prompt files 제공.
+
+### Matt Pocock의 6 Pitfalls & Prescriptions 매핑
+
+| 함정 (Pitfall) | 처방 (Prescription) | 설명 |
+| --- | --- | --- |
+| 1. AI와 머릿속 그림의 불일치 | **Grill Me 스킬** | 의도가 정렬될 때까지 설계 나무의 가지를 하나씩 심문하여 질문 40~100개 유도. |
+| 2. 장황하고 표현이 다른 AI 코드 | **Ubiquitous Language** | 코드베이스 용어를 스캔해 마크다운 도메인 사전을 작성하고 컨텍스트로 제공. |
+| 3. 의도대로 만들었으나 런타임 실패 | **TDD** | 피드백 속도(타입체커, 테스트)를 극대화하여 헤드라이트 거리 안쪽에서 제어. |
+| 4. 과도한 테스트 설계 복잡도 | **Deep Module 구조** | 단순한 입구(인터페이스) 뒤에 내부 아키텍처를 숨겨 미로 같은 경로 수 감소. |
+| 5. 코드 양 폭증으로 인지 과부하 | **그레이박스(Grey-box)** | 사람은 인터페이스를 직접 설계하고, 내부 구현은 에이전트에 위임 검증. |
+| 6. 시스템 엔트로피 증가 | **매일 시스템 설계 투자** | 스펙만 고쳐 다시 생성(Specs-to-code)하는 행위는 엔트로피를 극대화함. |
+
+## 예시
+
+- **Grill Me**: Matt Pocock이 공개한 `skills` 저장소를 참고하여 프롬프트 작성 단계 이전에 설계 구멍을 40~100개의 질문으로 교정.
+- **Ubiquitous Language**: 도메인 사전 markdown을 프로젝트 최상위에 배치하여 AI가 비정상적으로 긴 코드를 뱉지 않고 낭비되는 토큰을 아끼도록 함.
+- **Grey-box 모델**: FastAPI API endpoint와 스키마 명세를 먼저 타입으로 선언(인터페이스)하고, 엔드포인트 내의 DB 조회 및 전처리 로직 구현은 AI에게 위임한 채 테스트만으로 통과시킴.
+
+```text
+# 1. Grill Me 스킬 영어 텍스트
+Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one by one.
+
+# 2. Improve Codebase Architecture 스킬
+코드베이스를 스캔하여 파편화된 Shallow Module들을 찾고, 이를 하나의 단순 인터페이스를 가진 Deep Module로 묶어 에이전트 내비게이션 길찾기 비용을 낮추는 리팩토링 스킬.
+```
+
+## 충돌
+- **specs-to-code vs 아키텍처**: 단순히 자연어 사양서만 주면 코드가 튀어나올 것이라는 환상은 시스템의 엔트로피 부패를 부추겨 장기적으로 디스인베스트먼트(disinvestment)로 이어진다.
+- **자격 증명 경제 vs 실물 포트폴리오**: 자격증 취득(MOOC의 수료율은 평균 3~10% 수준)보다, 80%의 완성도라도 완성해 GitHub에 커밋하고 Railway/Render 등에 배포해 둔 3개의 작동 프로젝트가 취업 시장에서 훨씬 가치 있다.
+
+## 관련 노트
+- [[플랫폼 규제와 제품 출시 리스크]]
+- [[AI 코딩 에이전트 검증 전략]]
+- [[Vibe Coding과 Agentic Engineering]]
+- [[Claude.md 운영 원칙]]
+- [[AI Slop]]
+- [[Competence Debt]]
+- [[에이전트 코딩 4원칙]]
+- [[시니어 엔지니어의 7가지 코딩 패턴]]
+- [[개발자가 잘못된 문제를 해결하는 패턴]]
+
+## 출처
+- Matt Pocock - *Software Fundamentals Matter More Than Ever* (AI Engineer Conference, 2026년 4월)
+- GitClear - *2025 AI Assistant Code Quality Research Study*
+- arXiv - *On the Smelliness of AI-generated Code in Multi-module Systems* (2025-05)
+- The Pragmatic Programmer (Andrew Hunt, David Thomas)
+- The Design of Design / The Mythical Man-Month (Frederick P. Brooks)
+- A Philosophy of Software Design (John Ousterhout)
+- Domain-Driven Design (Eric Evans)
+- Anthropic Research - *How AI is Transforming Work at Anthropic*
+- [Code Is Not Cheap](file:///Users/railscraft/Obsidian/raw/Code%20Is%20Not%20Cheap.%20How%20to%20Multiply%20Your%20AI%E2%80%99s%20Output%20With%20Software%20Fundamentals)
+- [아무도 AI를 배우고 싶어 하지 않는다](file:///Users/railscraft/Obsidian/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4)
+- [오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다](file:///Users/railscraft/Obsidian/raw/%EC%98%A4%EB%8A%98%EB%82%A0%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EB%8C%80%EB%B6%80%EB%B6%84%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EC%A1%B4%EC%9E%AC%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%A7%81%EC%97%85%EC%9D%84%20%EC%A4%80%EB%B9%84%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4)
+- [7 Coding Patterns I Stole From Senior Engineers](file:///Users/railscraft/Obsidian/raw/7%20Coding%20Patterns%20I%20Stole%20From%20Senior%20Engineers.md)
+- [Most Developers Are Solving the Wrong Problem](file:///Users/railscraft/Obsidian/raw/Most%20Developers%20Are%20Solving%20the%20Wrong%20Problem.md)
+- [단돈 100달러로 주식 투자 시작하기](file:///Users/railscraft/Obsidian/raw/%EB%8B%A8%EB%8F%88%20100%EB%8B%AC%EB%9F%AC%EB%A1%9C%20%EC%A3%BC%EC%8B%9D%20%ED%88%AC%EC%9E%90%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.md)
+- [My Complete Productivity Stack in 2026](file:///Users/railscraft/Obsidian/raw/My%20Complete%20Productivity%20Stack%20in%202026.%20Every%20Tool%20I%20Actually%20Use%2C%20What%20I%20Pay%2C)
+- [아무도 AI를 배우고 싶어 하지 않는다](file:///Users/railscraft/Obsidian/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4.md)
+- [From faster pencil to [[AI Experience Architect]]. a designer’s path](file:///Users/railscraft/Obsidian/raw/From%20faster%20pencil%20to%20AI%20Experience%20Architect.%20a%20designer%E2%80%99s%20path.md)
+- [The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google](file:///Users/railscraft/Obsidian/raw/The%2010%20Engineering%20Papers%20Behind%20Netflix%2C%20Uber%2C%20Amazon%20%26%20Google.md)
+- [4개월 만에 사라진 15만 개의 테크 일자리 — 데이터 리더들이 차마 말하지 못하는 진실](file:///Users/railscraft/Obsidian/raw/4%EA%B0%9C%EC%9B%94%20%EB%A7%8C%EC%97%90%20%EC%82%AC%EB%9D%BC%EC%A7%84%2015%EB%A7%8C%20%EA%B0%9C%EC%9D%98%20%ED%85%8C%ED%81%AC%20%EC%9D%BC%EC%9E%90%EB%A6%AC%20%E2%80%94%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A6%AC%EB%8D%94%EB%93%A4%EC%9D%B4%20%EC%B0%A8%EB%A7%88%20%EB%A7%90%ED%95%98%EC%A7%80%20%EB%AA%BB%ED%95%98%EB%8A%94%20%EC%A7%84%EC%8B%A4.md)
+- [1 Aviation Rule That Will Instantly Improve Your Focus](file:///Users/railscraft/Obsidian/raw/1%20Aviation%20Rule%20That%20Will%20Instantly%20Improve%20Your%20Focus.md)
+- [ai-era-six-pitfalls-six-prescriptions-matt-pocock](file:///Users/railscraft/Obsidian/raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md)
+- [우리가 초대받지 못한 새로운 AI 시대의 개막](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EC%B4%88%EB%8C%80%EB%B0%9B%EC%A7%80%20%EB%AA%BB%ED%95%9C%20%EC%83%88%EB%A1%9C%EC%9A%B4%20AI%20%EC%8B%9C%EB%8C%80%EC%9D%98%20%EA%B0%9C%EB%A7%89.md)
+- [How top companies are using AI in their design workflows](file:///Users/railscraft/Obsidian/raw/How%20top%20companies%20are%20using%20AI%20in%20their%20design%20workflows.md)
+- [경제 붕괴 직전, 부자들이 미리 사두는 4가지 자산](file:///Users/railscraft/Obsidian/raw/%EA%B2%BD%EC%A0%9C%20%EB%B6%95%EA%B4%B4%20%EC%A7%81%EC%A0%84%2C%20%EB%B6%80%EC%9E%90%EB%93%A4%EC%9D%B4%20%EB%AF%B8%EB%A6%AC%20%EC%82%AC%EB%91%90%EB%8A%94%204%EA%B0%80%EC%A7%80%20%EC%9E%90%EC%82%B0.md)
+- [미룰 때마다 결제되는 알람 앱을 만들었다. 그리고 애플의 이메일 한 통에 무산되었다](file:///Users/railscraft/Obsidian/raw/%EB%AF%B8%EB%A3%B0%20%EB%95%8C%EB%A7%88%EB%8B%A4%20%EA%B2%B0%EC%A0%9C%EB%90%98%EB%8A%94%20%EC%95%8C%EB%9E%8C%20%EC%95%B1%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%95%A0%ED%94%8C%EC%9D%98%20%EC%9D%B4%EB%A9%94%EC%9D%BC%20%ED%95%9C%20%ED%86%B5%EC%97%90%20%EB%AC%B4%EC%82%B0%EB%90%98%EC%97%88%EB%8B%A4.md)
+- [The Complete (Honest) Guide to OpenClaw](file:///Users/railscraft/Obsidian/raw/The%20Complete%20%28Honest%29%20Guide%20to%20[[OpenClaw]].md)
+- [초보 투자자가 저지르는 가장 큰 투자 실수 15가지](file:///Users/railscraft/Obsidian/raw/%EC%B4%88%EB%B3%B4%20%ED%88%AC%EC%9E%90%EC%9E%90%EA%B0%80%20%EC%A0%80%EC%A7%80%EB%A5%B4%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%ED%81%B0%20%ED%88%AC%EC%9E%90%20%EC%8B%A4%EC%88%98%2015%EA%B0%80%EC%A7%80.md)
+- [The Signs of a Pseudo-Smart Person Are Easy To Spot](file:///Users/railscraft/Obsidian/raw/The%20Signs%20of%20a%20Pseudo-Smart%20Person%20Are%20Easy%20To%20Spot.md)
+- [The most important Design System in 2026 that designers missed was built by](file:///Users/railscraft/Obsidian/raw/The%20most%20important%20Design%20System%20in%202026%20that%20designers%20missed%20was%20built%20by)
+- [내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능)](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%EA%B0%80%20%EB%A7%A4%EC%A3%BC%20%EC%93%B0%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%EC%99%80%20%EC%B1%97GPT%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%2010%EC%84%A0%20%28%EC%A6%89%EC%8B%9C%20%EB%B3%B5%EC%82%AC%ED%95%98%EC%97%AC%20%EC%82%AC%EC%9A%A9%20%EA%B0%80%EB%8A%A5%29.md)
+- [오늘날 AI를 배우는 대부분의 사람들이 존재하지 않는 직업을 준비하고 있다](file:///Users/railscraft/Obsidian/raw/%EC%98%A4%EB%8A%98%EB%82%A0%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EB%8C%80%EB%B6%80%EB%B6%84%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EC%A1%B4%EC%9E%AC%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%A7%81%EC%97%85%EC%9D%84%20%EC%A4%80%EB%B9%84%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.md)
+- [Good Design Doesn’t Happen By Default](file:///Users/railscraft/Obsidian/raw/Good%20Design%20Doesn%E2%80%99t%20Happen%20By%20Default.md)
+- [남다르게 생각하도록 뇌를 훈련하는 법](file:///Users/railscraft/Obsidian/raw/%EB%82%A8%EB%8B%A4%EB%A5%B4%EA%B2%8C%20%EC%83%9D%EA%B0%81%ED%95%98%EB%8F%84%EB%A1%9D%20%EB%87%8C%EB%A5%BC%20%ED%9B%88%EB%A0%A8%ED%95%98%EB%8A%94%20%EB%B2%95.md)
+- [I will never walk into a backend interview without solving these 20 questions.](file:///Users/railscraft/Obsidian/raw/I%20will%20never%20walk%20into%20a%20backend%20interview%20without%20solving%20these%2020%20questions..md)
+- [월급을 대체하고 조기 은퇴를 실현해 줄 5가지 ETF](file:///Users/railscraft/Obsidian/raw/%EC%9B%94%EA%B8%89%EC%9D%84%20%EB%8C%80%EC%B2%B4%ED%95%98%EA%B3%A0%20%EC%A1%B0%EA%B8%B0%20%EC%9D%80%ED%87%B4%EB%A5%BC%20%EC%8B%A4%ED%98%84%ED%95%B4%20%EC%A4%84%205%EA%B0%80%EC%A7%80%20ETF.md)
+- [Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals](file:///Users/railscraft/Obsidian/raw/Code%20Is%20Not%20Cheap.%20How%20to%20Multiply%20Your%20AI%E2%80%99s%20Output%20With%20Software%20Fundamentals.md)
+- [The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer](file:///Users/railscraft/Obsidian/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md)
+- [Design’s craft crisis. senior designers built it](file:///Users/railscraft/Obsidian/raw/Design%E2%80%99s%20craft%20crisis.%20senior%20designers%20built%20it.md)
+- [The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order](file:///Users/railscraft/Obsidian/raw/The%20Agentic%20AI%20Engineer%20Roadmap%20for%202026.%20Skills%2C%20Stack%2C%20and%20Order.md)
+- [단 하루 오후 만에 디지털 상품을 출시하고 월 3,000달러 부업으로 키운 실전 프로세스](file:///Users/railscraft/Obsidian/raw/%EB%8B%A8%20%ED%95%98%EB%A3%A8%20%EC%98%A4%ED%9B%84%20%EB%A7%8C%EC%97%90%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%83%81%ED%92%88%EC%9D%84%20%EC%B6%9C%EC%8B%9C%ED%95%98%EA%B3%A0%20%EC%9B%94%203%2C000%EB%8B%AC%EB%9F%AC%20%EB%B6%80%EC%97%85%EC%9C%BC%EB%A1%9C%20%ED%82%A4%EC%9A%B4%20%EC%8B%A4%EC%A0%84%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4.md)
+

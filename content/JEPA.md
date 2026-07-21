@@ -1,0 +1,71 @@
+---
+aliases:
+- 공동 임베딩 예측 아키텍처
+core: false
+created: 2026-06-09
+sources:
+- ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명
+- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+status: draft
+tags:
+- llm
+- neural-network
+- cognition
+- algorithm
+type: concept
+updated: '2026-06-22'
+---
+# JEPA
+
+## 한 줄 정의
+
+JEPA(Joint Embedding Predictive Architecture, 공동 임베딩 예측 아키텍처)는 물리적 세계의 변화를 픽셀 단위가 아닌 추상적인 의미/개념 공간(Concept Space) 단위로 예측하여 효율적인 [[세계 모델]]을 설계하는 인공신경망 아키텍처다.
+
+## 핵심 요지
+
+- **픽셀 예측의 한계 극복**: 미래의 모든 픽셀 값을 하나하나 그리려는 방식은 두 갈래 미래의 평균값을 그려 화면이 뭉개지거나(Blur), 나뭇잎 흔들림 같은 사소한 노이즈 예측에 막대한 연산 자원을 낭비한다.
+- **의미 공간 중심 예측**: 화면 내부의 상세 노이즈를 필터링하고, 의미 있는 개념의 묶음(예: '사람이 잔을 쥐고 들어 올린다')으로 압축한 임베딩 공간에서만 미래 상태의 추이를 예측한다.
+- **표현 붕괴 방지**: 모델이 세상의 모든 장면을 1과 같은 단일한 무의미 데이터로 대충 매핑하여 일치시키는 수학적 꼼수(표현 붕괴, Representation Collapse)를 부리지 못하도록 바로우 트윈스(Barlow Twins)나 디노(DINO) 같은 일관성 제약 기술을 활용한다.
+- **실전 검증 (V-JEPA 2)**: 100만 시간 이상의 영상 데이터로 물리 세계의 연대적 흐름을 관찰 학습하고, 62시간 미만의 최소화된 로봇 제어 데이터만으로 새로운 실험실 환경에서 물체를 직접 조작하는 성능을 입증했다.
+
+## 상세
+
+JEPA는 얀 르쿤 교수가 메타(Meta) 재직 시절부터 정립한 설계 방식으로, 픽셀 전체를 예측하며 병목을 겪는 이미지/동영상 생성 기술의 한계를 우회한다. 
+
+신경망이 미래 예측을 단순 픽셀 변화로 인지하면, 우주 전체의 원자 수보다 다양하게 변화할 수 있는 초고화질 화면의 픽셀 조율 과정에서 난이도가 비약적으로 증가한다. JEPA는 장면을 의미 있는 특징적 표현(임베딩)으로 우선 압축한 다음, 그 표현들 사이의 논리적 연속성만을 예측한다. 이는 사람이 시각적으로 관찰하고 상식적인 결론을 도출할 때 잔에 반사되는 광원의 픽셀 연산을 매번 새로 계산하지 않는 직관적 매커니즘과 일치한다.
+
+또한, 연구자들을 괴롭혔던 '표현 붕괴(Representation Collapse)'를 방지하기 위해 1990년대 초 르쿤이 위조 서명 판별을 위해 개발한 시암 네트워크(Siamese Network) 구조 및 시각 뉴런의 연산 효율을 모방한 호레이스 바로우(Horace Barlow)의 60년 전 이론에 착안한 바로우 트윈스(Barlow Twins) 기법을 융합했다. 이러한 탄탄한 개념 유지 제어가 보장되어야 비로소 자율주행차나 로봇 제어 시스템이 현실의 자잘한 노이즈에 교란당하지 않고 핵심적인 움직임을 예측·제어할 수 있게 된다.
+
+## 예시
+
+- **Barlow Twins 및 DINO**: 모델이 학습을 포기하고 모든 입력값에 동일한 출력(예: 전부 1로 채워진 무의미한 결과)을 보내 "평균 합격"을 받으려는 꼼수를 원천 차단하여, 세상에 대한 내부 표현을 무의미하게 뭉개지 않고 뼈대 있고 구체적으로 유지시킨다.
+- **로봇 팔 제어 응용**: V-JEPA 2는 이 방식으로 100만 시간 시각 관찰을 한 뒤 아주 적은 실습(62시간 미만)만 거쳤음에도 처음 가본 환경에서 알아서 기민하게 물체를 집어 올렸다.
+
+## 충돌
+
+## 관련 노트
+
+- [[세계 모델]]
+- [[모라벡의 역설]]
+- [[AMI Labs]]
+
+## 출처
+
+- “Introducing the V-JEPA 2 world model and new benchmarks for physical reasoning,” _Meta AI_, June 11, 2025.
+- Mido Assran et al., “V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning,” _arXiv:2506.09985_, June 2025.
+- Caiwei Chen, “Yann LeCun’s new venture is a contrarian bet against large language models,” _MIT Technology Review_, January 22, 2026.

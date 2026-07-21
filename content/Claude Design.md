@@ -1,0 +1,158 @@
+---
+aliases:
+- 클로드 디자인
+- Claude-Design
+core: false
+created: 2026-06-09
+sources:
+- Claude Design이 디자이너를 대체할 것인가
+- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+- raw/클로드 디자인은 과연 디자이너를 대체할까.md
+- raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/완전히 기계 읽기 가능한 디자인 시스템-ko.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
+- raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
+- raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/Claude Design이 디자이너를 대체할 것인가-ko.md
+- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+- raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+- raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
+- raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/인생의 성공을 결정하는 5가지 핵심 자질.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
+- raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
+- raw/ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+status: evergreen
+tags:
+- llm
+- design
+- design-system
+- ai
+- claude
+type: concept
+updated: 2026-07-10
+---
+# Claude Design
+
+## 한 줄 정의
+Claude Design은 Anthropic이 발표한 Opus 4.7 기반의 디자인 생성 및 편집 도구로, 디자이너가 아닌 비전문가도 템플릿 형태로 프로토타입, 슬라이드, 원페이저를 쉽게 제작할 수 있게 돕는 시스템이다.
+
+## 핵심 요지
+- **Stitch와의 유사성**: 앤트로픽(Anthropic)이 2026년 6월 프로덕션 환경에 정식 배포한 Claude Design은 내부적으로 `.jsx`(React) 코드를 생성하며, 과거 구글이 발표한 [[Google Stitch]]의 디자인 생성 패러다임과 유사하다.
+- **평균적인 품질 (Average+)**: AI가 학습한 검증된 데이터베이스를 바탕으로 시각적으로 평범하고 깔끔한 수준(Average+)의 결과물을 무난하게 도출해 주어 디자인 하한선을 높인다.
+- **80% 인간 디자이너 상회**: OpenAI의 UI 특화 이미지 생성 모델 등과 결합하면서 AI 결과물의 품질은 이미 현업 디자이너 약 80%가 직접 작업하는 평균치보다 우수하며, 향후 90% 선까지 근접할 것으로 전망된다 (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md).
+- **복사본의 복사본 학습**: AI는 Dribbble 등의 보여주기용 시안을 복제 학습하여 레이아웃용 3글자 이름 예시인 'Ava'를 남발하거나 Apple의 iPhone 최초 공개 헌사 시간인 '9:41'을 통일되게 출력하는 등 고질적인 템플릿 복제 현상을 보인다 (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md).
+- **동질함의 바다**: 누구나 평범한 디자인을 쉽게 생성할 수 있게 되면서 '괜찮은 디자인(Good enough)'은 역설적으로 차별성을 잃고 식상한 기피 대상이 되며, 시장에 양산형 디자인이 범람한다.
+- **디자이너의 생존 전략**: 시스템이 스스로 디자인 시스템과 컴포넌트를 조립하는 시대에 이르렀으므로, 단순 조립식 작업자에 머무르지 않고 최종 시안 중 최선을 골라내고 조화와 위계를 가릴 수 있는 독창적 안목과 지적 호기심을 갖추어야 한다.
+- OpenAI Image 2 모델 등 UI에 특화된 정밀 이미지 생성 도구들의 출시로 AI가 생성한 UI 시안의 퀄리티는 이미 현업 디자이너 평균 80% 이상의 품질을 상회한다. (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md)
+- 대중의 안목과 유행은 고정되지 않고 끊임없이 변화하므로, AI가 모방하지 못한 미지의 안목과 본질적인 정보 구조(IA), 타이포그래피 조화 등을 선별해 70점짜리 시안을 9점 이상으로 조율하는 디자이너 고유의 역할이 강화된다. (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md)
+- 3D Globe 데모 비평: 지표면의 평평한 텍스처(flat textures on surface), 부적합한 대비감(poor contrast), 모호한 라벨 정렬(ambiguous label alignment) 등의 시각적 결함 노출.
+- 역사적 아날로지: 2000년대의 $30달러짜리 템플릿 마켓 패러다임과 유사하며, 현재 AI 구독 가격 정책과의 경제적 트레이드오프 관계를 지님.
+- 실무적 한계: 독창적인 비주얼 설계가 아닌 고정 템플릿 조립형 구조로, 인간 디자이너의 대체가 아닌 오케스트레이션 대상으로서 정의됨.
+
+## 상세
+
+Claude Design은 비전문가들을 위한 간편한 디자인 도구(Figma나 Canva와 유사한 속성 편집 기능 제공)를 표방하며, 화려한 프레젠테이션 데모를 통해 Figma의 주가에 영향을 미칠 만큼 Hype를 이끌어냈다. 그러나 실상은 사전에 정의된 템플릿 범주(예: 세리프 서체, 파란색/보라색 그라데이션, 3D 지구본 애니메이션 등)의 템플릿을 코드 내부에서 실시간으로 조합하여 출력하는 일종의 고도화된 검색 엔진에 가깝다.
+
+실제 분석에 따르면 일반 Claude Code(Opus 4.7)로 작성한 결과물과 큰 차이가 없으며, 디테일 영역(가독성, 대비, 엉성한 레이블 배치 등) 및 본문의 기계적인 톤 등에서 한계를 드러낸다. 
+
+디자인 자동화가 고도화되면서 조악한 수준의 디자인은 자취를 감추는 긍정적 평준화가 일어나지만, 이는 동시에 중간 단계의 평범한 시안들로는 차별화를 꾀할 수 없음을 의미한다. 70~80점짜리 무난한 퀄리티는 AI가 빠르게 찍어내어 가치가 하락하므로, 디자이너는 한 걸음 물러나 비즈니스의 본질을 고민하고 기존 관례를 깨부수는 참신한 사용자 경험 설계(예: 과거의 '당겨서 새로고침' 같은 혁신 패턴)로 새로운 패러다임을 제안해야 한다.
+
+### 3. AI 디자인 시스템 생성의 한계와 비효율성
+- **시제품 임시 템플릿의 한계**: [[Google Stitch]]나 Claude Design을 통해 생성된 디자인 시스템은 실제 프로덕션용 인프라가 아닌 단순 프로토타이핑을 위한 임시 템플릿 형태에 가깝다.
+- **토큰 및 시간적 낭비**: Claude Design을 사용해 뼈대 디자인 시스템을 빌드할 때 **10분 이상**의 긴 연산 시간이 소모되며, 이는 사용자 주간 토큰 쿼터(Quota)의 **약 10%**를 한 번에 탕진하는 높은 비용을 수반한다.
+- **내보내기 서식 결함**: Claude Design에서 피그마로 직접적인 익스포트가 불가능하여, Claude Design $\rightarrow$ Claude Code $\rightarrow$ Figma 단계의 번거로운 우회 경로를 밟아야 하며, 내보내진 컴포넌트(예: 입력 필드 등)에 서식 뭉개짐이나 간격 오류 등 결함이 잦아 결국 Figma에서 수작업으로 재수정해야 하는 심각한 비효율을 초래한다.
+- **대안 전략**: AI에게 디자인 시스템 자체를 밑바닥부터 창조하도록 지시하기보다, Figma에서 수동으로 기본 시스템을 정교하게 구축한 후 이를 AI 에이전트에 공급해 UI를 생성하게 하는 방향이 시간과 비용 면에서 압도적으로 유리하다.
+
+### 3D Globe 데모의 비주얼 결함 분석
+Claude Design이 선보인 3D Globe 데모는 언뜻 화려해 보이나, 세부 크래프트 관점에서는 다음과 같은 치명적인 그래픽 디테일 결함이 지적되었다.
+1. **지표면 텍스처의 한계**: 구체 표면에 평평한 단일 차원 텍스처(flat textures)가 매핑되어 입체감이 떨어짐.
+2. **저대비 가독성 문제**: 핵심 정보의 대비감(poor contrast)이 약해 접근성 가이드라인을 미준수함.
+3. **정렬 불안정**: 컴포넌트 간 경계선 및 라벨의 정렬 상태(ambiguous alignment)가 모호함.
+
+### 템플릿 시장 아날로지와 가치 평가
+과거 $30짜리 웹 템플릿이 보급되던 시기처럼, Claude Design은 개별 픽셀 조형 비용을 0으로 수렴하게 만든다. 그러나 비즈니스 맥락에 녹아든 독자적인 경험(UX) 가치를 창출하는 부분은 여전히 인간의 안목(taste)과 의사결정에 종속되어 있다.
+
+## 예시
+
+- **3D 지구본 데모**: 각 지역을 연결한 3D 지구본 회전 애니메이션 데모가 대표적이나, 전문 디자이너가 분석했을 때 선들은 표면에 납작하게 붙은 평면 텍스처 형태에 불과해 가독성과 대비가 다소 떨어졌다.
+- **Opus 4.7 Claude Code 비교**: 일반 Opus 4.7 Claude Code에 동일한 수준의 디자인 프롬프트를 넣었을 때 오히려 애니메이션이 실제로 적용된 3D 구조를 구현해 내는 등, 굳이 Claude Design 템플릿이 아니더라도 일반 코딩 에이전트로 유사하거나 더 나은 품질의 UI 생성이 가능함이 확인되었다.
+
+#### Dribbble 복제 템플릿 한계 예시
+- **복사본의 복사본 학습**: AI가 Dribbble 등 시각 중심의 보여주기용 아트워크 시안들을 대거 학습한 탓에, 이름 표기 시 레이아웃 균형에 가장 알맞은 3글자 예시인 'Ava'만을 지속적으로 남발하거나 디바이스 상단 시간대를 Apple 최초 iPhone 헌사 시간인 '9:41'로 일관되게 출력하는 등 획일화된 복제 흔적이 나타난다.
+
+- **Claude Design 프롬프트 제약**: `/design-ui --template modular-grid --restrict-palette HSL` 형태로 템플릿의 자율 범위를 물리적으로 제약하여 조립성 극대화.
+
+## 충돌
+- **디자이너 대체론과 채널 성장 지표의 상충**: AI 디자인이 활성화되면 디자이너가 무용해질 것이라는 우려와 달리, 코딩 AI 도입 후 개발자 채용이 다시 우상향을 그린 것처럼 2025년 기준 UX/UI 디자이너 역할군도 IT 시장 전체 평균보다 빠르게 성장하고 있다 (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md). 이는 70점짜리 결과물이 넘쳐나는 상황에서 기술적/미학적 차별화 장벽(Moat)을 확보하기 위해 집요하게 완성도를 9점 이상으로 끌어올릴 진짜 전문가의 가치가 커졌기 때문이다.
+
+## 관련 노트
+- [[AI 시대 디자인 시스템]]
+- [[AI Experience Architect]]
+- [[DESIGN.md 운영 원칙]]
+- [[AI 디자인 역할 맵]]
+- [[UI UX 디자인 AI 워크플로우]]
+- [[디자이너 생존 전략 (2026-2030)]]
+
+## 출처
+- Claude Design이 디자이너를 대체할 것인가
+- [Google Stitch vs Human Design Comparison](https://michalmalewicz.medium.com/human-designer-vs-google-s-vibe-design-tool-36d33cc372ce)
+- raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
+- [클로드 디자인은 과연 디자이너를 대체할까](file:///Users/railscraft/Obsidian/raw/%ED%81%B4%EB%A1%9C%EB%93%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EA%B3%BC%EC%97%B0%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%EA%B9%8C.md)
+- [2026년 AI 에이전트 워크플로우 핵심 패턴 분석](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%ED%95%B5%EC%8B%AC%20%ED%8C%A8%ED%84%B4%20%EB%B6%84%EC%84%9D.md)
+- [AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유](file:///Users/railscraft/Obsidian/raw/AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94%20%EC%A3%BD%EC%97%88%EB%8B%A4.%2088%ED%8D%BC%EC%84%BC%ED%8A%B8%EA%B0%80%20%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20%EB%8F%84%EB%8B%AC%20%EC%A0%84%EC%97%90%20%EC%8B%A4%ED%8C%A8%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
+- [완전히 기계 읽기 가능한 디자인 시스템-ko](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EC%A0%84%ED%9E%88%20%EA%B8%B0%EA%B3%84%20%EC%9D%BD%EA%B8%B0%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C-ko.md)
+- [5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정)](file:///Users/railscraft/Obsidian/raw/5%EA%B0%9C%EC%9D%98%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%EC%9E%AC%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0%20%282026%EB%85%84%20%EC%84%A4%EC%A0%95%29.md)
+- [오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라](file:///Users/railscraft/Obsidian/raw/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%AA%A8%EB%8D%B8%EB%A1%9C%EB%8F%84%20%EC%B6%A9%EB%B6%84%ED%95%98%EB%8B%A4.%20%ED%95%84%EC%9A%94%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EC%A7%80%EB%8A%A5%EC%97%90%20%EB%B9%84%EC%9A%A9%EC%9D%84%20%EA%B3%BC%EB%8B%A4%ED%95%98%EA%B2%8C%20%EC%A7%80%EC%B6%9C%ED%95%98%EC%A7%80%20%EB%A7%88%EB%9D%BC.md)
+- [완벽하게 기계 가독성을 갖춘 디자인 시스템](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C%20%EA%B8%B0%EA%B3%84%20%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84%20%EA%B0%96%EC%B6%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
+- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
+- [2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20LLM%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
+- [파이썬 AI 에이전트 프레임워크 6종 비교 분석](file:///Users/railscraft/Obsidian/raw/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%206%EC%A2%85%20%EB%B9%84%EA%B5%90%20%EB%B6%84%EC%84%9D.md)
+- [마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실](file:///Users/railscraft/Obsidian/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8%EB%8A%94%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%93%A4%EC%97%90%EA%B2%8C%20AI%20%EC%82%AC%EC%9A%A9%20%EC%A4%91%EB%8B%A8%EC%9D%84%20%EC%A7%80%EC%8B%9C%ED%96%88%EA%B3%A0%2C%20%EC%9A%B0%EB%B2%84%EB%8A%94%204%EA%B0%9C%EC%9B%94%20%EB%A7%8C%EC%97%90%20%EC%97%B0%EA%B0%84%20AI%20%EC%98%88%EC%82%B0%EC%9D%84%20%EB%AA%A8%EB%91%90%20%ED%83%95%EC%A7%84%ED%96%88%EB%8B%A4.%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%A7%84%EC%8B%A4.md)
+- [일주일 동안 지속 실행되는 에이전틱 시스템 구축하기](file:///Users/railscraft/Obsidian/raw/%EC%9D%BC%EC%A3%BC%EC%9D%BC%20%EB%8F%99%EC%95%88%20%EC%A7%80%EC%86%8D%20%EC%8B%A4%ED%96%89%EB%90%98%EB%8A%94%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8B%B1%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0.md)
+- [우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EC%88%98%EB%B0%B1%20%EA%B0%9C%EC%9D%98%20Claude%20%ED%98%91%EC%97%85%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EB%A5%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%B4%20%EB%B4%A4%EB%8B%A4.%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%9E%91%EC%97%85%EC%9D%84%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%207%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
+- [UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EA%B0%80%EC%A7%80%EC%99%80%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [Hermes Agent와 Ollama 로컬 설치 초고속 가이드](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%EC%99%80%20Ollama%20%EB%A1%9C%EC%BB%AC%20%EC%84%A4%EC%B9%98%20%EC%B4%88%EA%B3%A0%EC%86%8D%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기](file:///Users/railscraft/Obsidian/raw/%EC%9B%90%EC%8B%9C%EC%9D%B8%20%EB%AA%A8%EB%93%9C%EB%A1%9C%20%ED%86%A0%ED%81%B0%20%EC%95%84%EB%81%BC%EB%A0%A4%EB%8B%A4%206%EB%A7%8C%20%EC%8A%A4%ED%83%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%97%90%20PR%20%EB%B3%B4%EB%82%B8%20%EC%9D%B4%EC%95%BC%EA%B8%B0.md)
+- [GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라](file:///Users/railscraft/Obsidian/raw/[[GBrain]]%20-%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EC%9E%A5%EA%B8%B0%20%EA%B8%B0%EC%96%B5%20%EB%B0%8F%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B8%ED%94%84%EB%9D%BC.md)
+- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/Obsidian/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
+- [UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md)
+- [Claude Design이 디자이너를 대체할 것인가-ko](file:///Users/railscraft/Obsidian/raw/Claude%20Design%EC%9D%B4%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%20%EA%B2%83%EC%9D%B8%EA%B0%80-ko.md)
+- [느낌 코딩의 시대는 끝났다 - GitHub [[Spec Kit]]과 명세 기반 개발](file:///Users/railscraft/Obsidian/raw/%EB%8A%90%EB%82%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%8B%9C%EB%8C%80%EB%8A%94%20%EB%81%9D%EB%82%AC%EB%8B%A4%20-%20GitHub%20Spec%20Kit%EA%B3%BC%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C.md)
+- [SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다](file:///Users/railscraft/Obsidian/raw/SpaceX%EC%9D%98%20%ED%8C%8C%EA%B2%A9%EC%A0%81%EC%9D%B8%20AI%20%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%A0%84%EB%9E%B5%20-%20%EC%88%9C%EC%88%98%20C%20%EC%96%B8%EC%96%B4%EB%A1%9C%2022%EB%A7%8C%20%EB%8C%80%20GPU%EB%A5%BC%20%EC%A0%9C%EC%96%B4%ED%95%98%EB%8B%A4.md)
+- [Hermes, [[OpenClaw]], ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리](file:///Users/railscraft/Obsidian/raw/Hermes%2C%20[[OpenClaw]]%2C%20ChatGPT%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EB%B0%8F%20%EB%AF%B8%EB%9E%98%20AI%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98%20%EC%8B%A4%EC%A0%9C%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요](file:///Users/railscraft/Obsidian/raw/Claude%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%9D%B4%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%EC%9D%84%20%EB%A7%8C%EB%93%9C%EC%84%B8%EC%9A%94.md)
+- [지루한 업무를 자동화하는 [[클로드 코워크]] 프롬프트 7가지](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%97%85%EB%AC%B4%EB%A5%BC%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%20%EC%BD%94%EC%9B%8C%ED%81%AC%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%207%EA%B0%80%EC%A7%80.md)
+- [AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법](file:///Users/railscraft/Obsidian/raw/AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%20%EC%9C%A4%EB%A6%AC%2C%20%EC%A0%91%EA%B7%BC%EC%84%B1%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EA%B8%B0%EC%96%B5%EC%9D%84%20%EB%B6%80%EC%97%AC%ED%95%9C%20%EB%B0%A9%EB%B2%95.md)
+- [Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20-%20%EC%9E%90%EA%B0%80%20%EA%B0%9C%EC%84%A0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [옵시디언 AI 제2의 뇌는 기억이 아니다](file:///Users/railscraft/Obsidian/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20AI%20%EC%A0%9C2%EC%9D%98%20%EB%87%8C%EB%8A%94%20%EA%B8%B0%EC%96%B5%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%8B%A4.md)
+- [당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유](file:///Users/railscraft/Obsidian/raw/%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%EA%B0%80%20%EC%B1%97GPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
+- [DESIGN.md 워크플로우. [[Google Stitch]]와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
+- [인생의 성공을 결정하는 5가지 핵심 자질](file:///Users/railscraft/Obsidian/raw/%EC%9D%B8%EC%83%9D%EC%9D%98%20%EC%84%B1%EA%B3%B5%EC%9D%84%20%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94%205%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%9E%90%EC%A7%88.md)
+- [16GB Mac mini에서 [[Qwen 3.5]] 122B LLM 실행하기 - [[TurboQuant]]-MLX를 활용한 MoE 전문가 스트리밍](file:///Users/railscraft/Obsidian/raw/16GB%20Mac%20mini%EC%97%90%EC%84%9C%20Qwen%203.5%20122B%20LLM%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20[[TurboQuant]]-MLX%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20MoE%20%EC%A0%84%EB%AC%B8%EA%B0%80%20%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D.md)
+- [Claude Code와 Obsidian으로 [[AI 세컨드 브레인]] 구축하기](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EC%99%80%20Obsidian%EC%9C%BC%EB%A1%9C%20AI%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0.md)
+- [Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A2%8B%EC%9D%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%82%B4%EB%B6%80%20%EB%8F%84%EA%B5%AC%205%EA%B0%80%EC%A7%80.md)
+- [ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko](file:///Users/railscraft/Obsidian/raw/ChatGPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%9D%B4%EA%B2%83%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EB%A9%94%ED%83%80%EB%A5%BC%20%EA%B7%B8%EB%A7%8C%EB%91%94%20AI%20%EB%8C%80%EB%B6%80%20%EC%A4%91%20%ED%95%9C%20%EB%AA%85-ko.md)
+- [DESIGN.md 워크플로 - [[Google Stitch]]와 Claude Code가 바꾼 디자인 개발 협업](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
+
