@@ -30,10 +30,21 @@ function readFileAsData(filePath) {
   if (!fs.existsSync(filePath)) return null
   try {
     const raw = fs.readFileSync(filePath, "utf-8")
+    let parsed
     if (filePath.endsWith(".yaml") || filePath.endsWith(".yml")) {
-      return YAML.parse(raw)
+      parsed = YAML.parse(raw)
+    } else {
+      parsed = JSON.parse(raw)
     }
-    return JSON.parse(raw)
+    if (parsed && parsed.plugins && !Array.isArray(parsed.plugins)) {
+      const defaultPath = resolveDefaultConfigPath()
+      if (fs.existsSync(defaultPath)) {
+        const defaultRaw = fs.readFileSync(defaultPath, "utf-8")
+        const defaultConfig = YAML.parse(defaultRaw)
+        parsed.plugins = defaultConfig.plugins
+      }
+    }
+    return parsed
   } catch {
     return null
   }

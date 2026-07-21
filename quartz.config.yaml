@@ -1,0 +1,78 @@
+configuration:
+  pageTitle: "LLM Wiki"
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  analytics: null
+  locale: "ko-KR"
+  baseUrl: "wiki.railscraft.dev"
+  ignorePatterns:
+    - "private"
+    - "templates"
+    - ".obsidian"
+    - "_archive"
+    - ".github"
+  defaultDateType: "created"
+  theme:
+    fontOrigin: "googleFonts"
+    cdnCaching: true
+    typography:
+      header: "Noto Sans KR"
+      body: "Noto Sans KR"
+      code: "IBM Plex Mono"
+    colors:
+      lightMode:
+        light: "#faf8f8"
+        lightgray: "#e5e5e5"
+        gray: "#b8b8b8"
+        darkgray: "#4e4e4e"
+        dark: "#2b2b2b"
+        secondary: "#284b63"
+        tertiary: "#84a59d"
+        highlight: "rgba(143, 159, 169, 0.15)"
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: "rgba(143, 159, 169, 0.15)"
+        textHighlight: "#b3aa0288"
+
+plugins:
+  transformers:
+    - FrontMatter
+    - CreatedModifiedDate:
+        priority: ["frontmatter", "git", "filesystem"]
+    - SyntaxHighlighting:
+        theme:
+          light: "github-light"
+          dark: "github-dark"
+        keepBackground: false
+    - ObsidianFlavoredMarkdown:
+        enableInHtmlEmbed: false
+    - GitHubFlavoredMarkdown
+    - TableOfContents
+    - CrawlLinks:
+        markdownLinkResolution: "shortest"
+    - Description
+    - Latex:
+        renderEngine: "katex"
+  filters:
+    - RemoveDrafts
+  emitters:
+    - AliasRedirects
+    - ComponentResources
+    - ContentPage
+    - FolderPage
+    - TagPage
+    - ContentIndex:
+        enableSiteMap: true
+        enableRSS: true
+    - Assets
+    - Static
+    - Favicon
+    - NotFoundPage

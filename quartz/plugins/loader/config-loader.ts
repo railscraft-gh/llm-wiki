@@ -45,10 +45,20 @@ function readPluginsJson(): QuartzPluginsJson | null {
     return null
   }
   const raw = fs.readFileSync(configPath, "utf-8")
+  let parsed: any
   if (configPath.endsWith(".yaml") || configPath.endsWith(".yml")) {
-    return YAML.parse(raw) as QuartzPluginsJson
+    parsed = YAML.parse(raw)
+  } else {
+    parsed = JSON.parse(raw)
   }
-  return JSON.parse(raw) as QuartzPluginsJson
+  if (parsed && parsed.plugins && !Array.isArray(parsed.plugins)) {
+    if (fs.existsSync(DEFAULT_CONFIG_YAML_PATH)) {
+      const defaultRaw = fs.readFileSync(DEFAULT_CONFIG_YAML_PATH, "utf-8")
+      const defaultConfig = YAML.parse(defaultRaw)
+      parsed.plugins = defaultConfig.plugins
+    }
+  }
+  return parsed as QuartzPluginsJson
 }
 
 function extractPluginName(source: PluginSource): string {
