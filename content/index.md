@@ -65,6 +65,9 @@ updated: 2026-07-16
 | [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]] | 확률적이고 비결정적인 AI의 본질에 대처해 사용자의 조율된 신뢰를 돕는 실무 원칙을 정리한다. | evergreen | 2026-07-15 |
 | [[조율된 신뢰 (Calibrated Trust)]] | 사용자가 AI의 성능과 결함을 알맞은 수준으로 믿고 의사결정하도록 돕는 상호작용 설계론이다. | evergreen | 2026-07-15 |
 | [[WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)]] | 웹앱의 DOM 상태와 JS 함수를 AI 에이전트 도구로 노출해 오프라인 브라우저 루프를 구축하는 연동론이다. | evergreen | 2026-07-15 |
+| [[LLM 적대적 공격과 탈옥 (Adversarial Attacks on LLMs)]] | LLM의 취약점을 악용하는 적대적 공격 기법과 이를 방어하기 위한 정렬 및 검증 수단을 다룬다. | evergreen | 2026-07-21 |
+| [[LLM 외부적 환각 (Extrinsic Hallucinations in LLMs)]] | 소스 데이터나 사전 학습 지식과 일치하지 않는 외부적 환각의 원인과 실시간 완화 기법을 분석한다. | evergreen | 2026-07-21 |
+| [[자가 개선 하네스 엔지니어링 (Harness Engineering for Self-Improvement)]] | 에이전트 스스로 하네스와 코드를 평가하고 보정하여 지능을 진화시키는 아키텍처를 정리한다. | evergreen | 2026-07-21 |
 
 ## Ingest 현황
 
