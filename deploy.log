@@ -28689,3 +28689,24 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-21 21:34:06] 배포 시작
 [2026-07-21 21:34:06] wiki 동기화 완료
 [2026-07-21 21:34:07] 출처 섹션 제거 완료
+[v4 7edf9285] Auto-deploy: sync wiki content 2026-07-21 21:34
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 73 insertions(+), 16 deletions(-)
+ create mode 100644 content/Sequoia Ascent 2026.md
+[2026-07-21 21:34:10] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-21 21:34:10] symlink 복원 완료
+---
+[2026-07-21 21:34:11] 배포 시작
+[2026-07-21 21:34:11] wiki 동기화 완료
+[2026-07-21 21:34:11] 출처 섹션 제거 완료
