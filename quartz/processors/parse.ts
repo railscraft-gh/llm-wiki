@@ -25,6 +25,16 @@ export function createMdProcessor(ctx: BuildCtx): QuartzMdProcessor {
     unified()
       // base Markdown -> MD AST
       .use(remarkParse)
+      // Deduplicate leading H1 heading to prevent double titles when ArticleTitle is enabled
+      .use(() => (tree: MDRoot) => {
+        if (!tree.children || tree.children.length === 0) return
+        const firstH1Index = tree.children.findIndex(
+          (node) => node.type === "heading" && (node as any).depth === 1,
+        )
+        if (firstH1Index !== -1 && firstH1Index < 3) {
+          tree.children.splice(firstH1Index, 1)
+        }
+      })
       // MD AST -> MD AST transforms
       .use(
         transformers.flatMap((plugin) => plugin.markdownPlugins?.(ctx) ?? []),
