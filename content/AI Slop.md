@@ -22,13 +22,14 @@ sources:
 - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
 - raw/AI 겨울이 시작됐다-ko.md
 - "raw/어느 IT 기업의 사내 AI 사용 전면 금지령이 시사하는 것.md"
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
 status: evergreen
 tags:
 - llm
 - design
 - product
 type: concept
-updated: '2026-06-22'
+updated: '2026-07-21'
 ---
 
 # AI Slop
@@ -56,6 +57,7 @@ AI Slop은 [[Vibe Coding과 Agentic Engineering]]의 제품 디자인 버전으�
 2. **상투적 문구 남발**: 마케팅 문구에 무차별적으로 섞인 뻔한 AI 티 상투적 수식어(예: '혁신의 속도로 움직이는', '비즈니스의 판도를 뒤흔들 변화') 유출.
 3. **스테레오타입 이미지 생성**: '지나치게 행복해 보이는 올리비아(Overhappy Olivia)'나 '플란넬 셔츠의 프레드(Fred)' 등 기성 모델 고유의 스테레오타입 밈이 박힌 AI 생성 이미지를 대외 홍보에 그대로 활용.
 4. **리서치 환각 부작용**: AI 리서치 툴을 통해 가망 고객을 자동 발굴할 때 실존하지도 않는 폐업/유령 회사까지 제멋대로 환각(상상)해 수집하여 2025~2026년 사이 부적격 유입이 2배 폭증.
+5. **텍스트 콘텐츠 시장의 황폐화**: 많은 기업이 메시지나 가치보다 클릭수와 노출량에만 집중하여 고품질 글 대신 거저 얻는 AI 글(AI-Slop)로 피드를 채우는 현상이 발생한다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L39](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L39). 이로 인해 평범한 작가들의 틈새 일자리가 급감하고, Fiverr 등 플랫폼에서는 AI 도입을 핑계로 직원 250명을 해고하기도 했다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L27](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L27).
 
 ## 예시
 
