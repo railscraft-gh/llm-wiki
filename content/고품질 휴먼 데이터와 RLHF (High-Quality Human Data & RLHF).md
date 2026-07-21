@@ -3,19 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - rlhf
-  - data-engineering
-  - alignment
+- llm
+- rlhf
+- data-engineering
+- alignment
 aliases:
-  - 고품질 휴먼 데이터와 RLHF
-  - High-Quality Human Data
+- 고품질 휴먼 데이터와 RLHF
+- High-Quality Human Data
+- 고품질-휴먼-데이터와-RLHF-(High-Quality-Human-Data-&-RLHF)
 sources:
-  - raw/Thinking about High-Quality Human Data.md
+- raw/Thinking about High-Quality Human Data.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # 고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)
 
 ## 한 줄 정의

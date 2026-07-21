@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-engineering
-  - claudecode
+- ai-engineering
+- claudecode
 aliases:
-  - CLAUDE.md vs DESIGN.md
+- CLAUDE.md vs DESIGN.md
 sources:
-  - raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md
+- raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Claude Code 활용 시 프로젝트 운영 지침을 관리하는 `CLAUDE.md`와 디자인/사용자 경험의 단일 진실 공급원(Source of Truth)을 관리하는 `DESIGN.md`의 역할 분담 및 작성 가이드.
 

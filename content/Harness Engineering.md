@@ -1,101 +1,102 @@
 ---
 aliases:
-  - 하네스 엔지니어링
+- 하네스 엔지니어링
+- Harness-Engineering
 core: true
 created: 2026-05-13
 sources:
-  - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
-  - evolution-of-ai-agentic-patterns
-  - andrej-karpathy-skills-CLAUDE-번역
-  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
-  - 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
-  - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
-  - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
-  - 하네스를 내 것으로 만들기 - 출판형 다듬기
-  - AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-  - 'https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html'
-  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
-  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
-  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-  - raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-  - raw/sequoia-ascent-2026-karpathy-ko.md
-  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
-  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
-  - raw/cc101_axwith_ko.html
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
-  - raw/andrej-karpathy-skills-CLAUDE-번역.md
-  - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
-  - raw/How top companies are using AI in their design workflows.md
-  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
-  - raw/강화학습-RL-초보자-가이드.md
-  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
-  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
-  - raw/anthropic-boris-cherny-interview.md
-  - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
-  - raw/arxiv-2603.28052-meta-harness.md
-  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
-  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
-  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
-  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-  - raw/I will never walk into a backend interview without solving these 20 questions..md
-  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
-  - raw/Most Developers Are Solving the Wrong Problem.md
-  - raw/The Open-Source Agent Toolkit in 2026-ko.md
-  - raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
-  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
-  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
-  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
-  - raw/Design’s craft crisis. senior designers built it.md
-  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-  - raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
-  - raw/evolution-of-ai-agentic-patterns.md
-  - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
-  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-  - raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams Confuse Them).md
+- 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+- evolution-of-ai-agentic-patterns
+- andrej-karpathy-skills-CLAUDE-번역
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+- 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
+- Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
+- 하네스를 내 것으로 만들기 - 출판형 다듬기
+- AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+- raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+- raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/cc101_axwith_ko.html
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+- raw/andrej-karpathy-skills-CLAUDE-번역.md
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+- raw/arxiv-2603.28052-meta-harness.md
+- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+- raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/우리가 피그마 없이 제품을 배포하는 방법.md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+- raw/Loop Engineering vs. Harness Engineering. When to Use Each (And Why Most Teams
+  Confuse Them).md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - harness-engineering
-  - ai-coding
+- llm
+- agent
+- harness-engineering
+- ai-coding
 type: concept
 updated: 2026-07-18
 ---
-
 # Harness Engineering
 
 ## 한 줄 정의

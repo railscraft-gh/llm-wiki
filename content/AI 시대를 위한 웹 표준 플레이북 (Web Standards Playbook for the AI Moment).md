@@ -3,20 +3,20 @@ type: concept
 status: draft
 core: false
 tags:
-  - web-standards
-  - ai-ui
-  - design-systems
-  - mcp
-  - w3c
+- web-standards
+- ai-ui
+- design-systems
+- mcp
+- w3c
 aliases:
-  - AI 시대를 위한 웹 표준 플레이북
-  - Web Standards Playbook for the AI Moment
+- AI 시대를 위한 웹 표준 플레이북
+- Web Standards Playbook for the AI Moment
+- AI-시대를-위한-웹-표준-플레이북-(Web-Standards-Playbook-for-the-AI-Moment)
 sources:
-  - raw/Designing with web standards. The playbook for this AI moment.md
+- raw/Designing with web standards. The playbook for this AI moment.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)
 
 ## 한 줄 정의

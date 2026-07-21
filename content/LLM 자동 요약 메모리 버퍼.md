@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - memory
-  - summarization
+- llm
+- memory
+- summarization
 aliases:
-  - Auto-Summarization Buffer
+- Auto-Summarization Buffer
+- LLM-자동-요약-메모리-버퍼
 sources:
-  - raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md
+- raw/밑바닥부터 만드는 LLM 메모리
 created: 2026-07-21
 updated: 2026-07-21
 ---

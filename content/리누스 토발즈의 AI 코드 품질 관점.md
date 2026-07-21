@@ -3,16 +3,17 @@ type: claim
 status: draft
 core: false
 tags:
-  - ai-coding
-  - software-engineering
-  - code-quality
-aliases: []
+- ai-coding
+- software-engineering
+- code-quality
+aliases:
+- 리누스-토발즈의-AI-코드-품질-관점
 sources:
-  - "raw/Linus Torvalds Said the Quiet Part Out Loud About AI and Code Quality. The Engineering Community Is Not Ready for It..md"
+- raw/Linus Torvalds Said the Quiet Part Out Loud About AI and Code Quality. The Engineering
+  Community Is Not Ready for It..md
 created: 2026-07-18
 updated: 2026-07-18
 ---
-
 # 리누스 토발즈의 AI 코드 품질 관점 (Linus Torvalds on AI and Code Quality)
 
 ## 한 줄 정의

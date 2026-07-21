@@ -1,34 +1,34 @@
 ---
 aliases:
-  - AI 디자인 팀 빌드 방식
-  - 디자인 팀 운영 방식
+- AI 디자인 팀 빌드 방식
+- 디자인 팀 운영 방식
+- AI-디자인-팀-운영
 core: false
 created: 2026-05-29
 sources:
-  - 디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기
-  - raw/How top companies are using AI in their design workflows.md
-  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-  - raw/I will never walk into a backend interview without solving these 20 questions..md
-  - raw/Most Developers Are Solving the Wrong Problem.md
-  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-  - raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md
-  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  - raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md
-  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-  - raw/Design’s craft crisis. senior designers built it.md
-  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
-  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- 디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기
+- raw/How top companies are using AI in their design workflows.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/디자인 팀이 만드는 방식을 다시 짜기 - 출판형 다듬기.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+- raw/산만하고 과자극에 시달리던 내 뇌를 고친 7가지 - 출판형 다듬기.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
 status: evergreen
 tags:
-  - design
-  - workflow
-  - ai
-  - product
+- design
+- workflow
+- ai
+- product
 type: workflow
 updated: 2026-07-10
 ---
-
 # AI 디자인 팀 운영
 
 ## 한 줄 정의

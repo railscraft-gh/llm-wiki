@@ -3,18 +3,19 @@ type: workflow
 status: draft
 core: false
 tags:
-  - infrastructure
-  - system-design
+- infrastructure
+- system-design
 aliases:
-  - 실시간 서지 프라이싱 시스템
-  - 서지 프라이싱
-  - 동적 할증 가격 책정
+- 실시간 서지 프라이싱 시스템
+- 서지 프라이싱
+- 동적 할증 가격 책정
+- 실시간-서지-프라이싱-시스템-(Real-time-Surge-Pricing-System)
 sources:
-  - raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They Asked..md
+- raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They
+  Asked..md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # 실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)
 
 ## 한 줄 정의

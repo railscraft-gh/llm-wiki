@@ -2,6 +2,7 @@
 aliases:
 - Hermes 내부 도구 연동
 - 에이전트 내부 도구 활용
+- Hermes-Agent와-오픈소스-내부-도구-연동
 core: false
 created: 2026-06-10
 sources:
@@ -34,7 +35,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # [[Hermes Agent]]와 오픈소스 내부 도구 연동
 
 ## 한 줄 정의

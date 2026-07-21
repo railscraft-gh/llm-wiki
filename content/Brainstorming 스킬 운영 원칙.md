@@ -3,19 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - superpowers
-  - brainstorming
-  - ai-workflow
-  - prompt-engineering
+- superpowers
+- brainstorming
+- ai-workflow
+- prompt-engineering
 aliases:
-  - Brainstorming 스킬 운영 원칙
-  - superpowers-brainstorming
+- Brainstorming 스킬 운영 원칙
+- superpowers-brainstorming
+- Brainstorming-스킬-운영-원칙
 sources:
-  - raw/superpowers-brainstorming.md
+- raw/superpowers-brainstorming.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Brainstorming 스킬 운영 원칙
 
 ## 한 줄 정의

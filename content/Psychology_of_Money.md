@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - finance
-  - psychology
-  - money
-aliases: [돈의 심리학]
+- finance
+- psychology
+- money
+aliases:
+- 돈의 심리학
 sources:
-  - raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md
+- raw/돈의 심리학.pdf_by_PaddleOCR-VL-1.6.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 돈 관리는 지능보다 행동에 달려 있으며, 개인의 성장 배경과 경험이 투자 의사결정에 미치는 영향을 분석한 심리학적 금융 가이드입니다.
 

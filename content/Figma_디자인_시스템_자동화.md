@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - design
-  - automation
-  - system
+- design
+- automation
+- system
 aliases:
-  - Figma Automation
+- Figma Automation
 sources:
-  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Figma 디자인 시스템과 Claude Code를 연동하여 코드 컴포넌트와 디자인 컴포넌트 간의 일관성을 유지하고, 시각적 검토 및 구현 자동화를 구현하는 기술입니다.
 

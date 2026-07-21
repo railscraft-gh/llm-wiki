@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - ux
-  - ai-tools
-  - product-design
+- ux
+- ai-tools
+- product-design
 aliases:
-  - UX AI 3-Layer Taxonomy
+- UX AI 3-Layer Taxonomy
+- UX-실무자를-위한-3단계-AI-도구-레이어
 sources:
-  - raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
+- raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

@@ -1,23 +1,23 @@
 ---
 aliases:
-  - 4 스킬 하네스
-  - 4 agents 4 skills
-  - Bloated AI Slop Labs
+- 4 스킬 하네스
+- 4 agents 4 skills
+- Bloated AI Slop Labs
+- AI-하네스-최소화
 core: false
 created: 2026-05-28
 sources:
-  - Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
-  - raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
+- Bloated AI Slop Labs on X 2059651388901335196 한국어 번역
+- raw/Bloated AI Slop Labs on X 2059651388901335196 한국어 번역.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - harness-engineering
-  - workflow
+- llm
+- agent
+- harness-engineering
+- workflow
 type: workflow
 updated: 2026-07-10
 ---
-
 # AI 하네스 최소화
 
 ## 한 줄 정의

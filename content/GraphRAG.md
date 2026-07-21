@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - rag
-  - knowledge-graph
+- llm
+- rag
+- knowledge-graph
 aliases: []
 sources:
-  - "raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md"
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 
 텍스트의 단순 의미론적 유사성(벡터)이 아니라 엔티티(Entity) 간의 명시적인 관계(Relationship)를 탐색하고 추론하여 답변을 생성하는 검색 증강 기법.

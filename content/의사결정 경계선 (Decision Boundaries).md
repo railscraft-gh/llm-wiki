@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agentic
+- llm
+- agentic
 aliases:
-  - 의사결정 경계선
-  - Decision Boundaries
+- 의사결정 경계선
+- Decision Boundaries
+- 의사결정-경계선-(Decision-Boundaries)
 sources:
-  - "raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md"
+- raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md
 created: 2026-07-11
 updated: 2026-07-11
 ---
-
 # 의사결정 경계선 (Decision Boundaries)
 
 ## 한 줄 정의

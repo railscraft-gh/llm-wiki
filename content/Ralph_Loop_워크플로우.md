@@ -3,18 +3,17 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-agent
-  - workflow
-  - spectrum-development
+- ai-agent
+- workflow
+- spectrum-development
 aliases:
-  - Ralph Loop
-  - Spectrum Development
+- Ralph Loop
+- Spectrum Development
 sources:
-  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 코딩 에이전트의 컨텍스트 관리를 위해 프로젝트를 다단계(Phase)로 분할하고, 이를 자율적으로 오케스트레이션하여 실행하는 워크플로우 프레임워크.
 

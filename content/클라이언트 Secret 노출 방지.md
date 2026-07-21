@@ -2,6 +2,7 @@
 aliases:
 - 브라우저 Secret 노출 방지
 - Client-side API Key
+- 클라이언트-Secret-노출-방지
 core: false
 created: 2026-05-07
 sources:
@@ -16,7 +17,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # 클라이언트 Secret 노출 방지
 
 ## 한 줄 정의

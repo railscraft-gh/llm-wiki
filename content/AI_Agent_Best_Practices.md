@@ -3,18 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai
-  - agent-harness
-  - production-ready
-  - best-practices
-  - agentic-loop
-aliases: [에이전트 하네스 베스트 프랙티스]
+- ai
+- agent-harness
+- production-ready
+- best-practices
+- agentic-loop
+aliases:
+- 에이전트 하네스 베스트 프랙티스
 sources:
-  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 에이전트의 안정적인 프로덕션 운영을 위해, 예측 불가능한 LLM을 감싸고 도구 호출 및 실행을 안전하게 통제하는 독립적 런타임 환경(Harness) 설계 가이드입니다.
 

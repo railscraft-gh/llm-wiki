@@ -1,20 +1,20 @@
 ---
-aliases: []
+aliases:
+- Context-Mode
 core: false
 created: 2026-05-09
 sources:
-  - context-mode-README-정리
-  - raw/context-mode-README-정리.md
+- context-mode-README-정리
+- raw/context-mode-README-정리.md
 status: needs-review
 tags:
-  - ai-coding
-  - context-window
-  - mcp
-  - sandbox
+- ai-coding
+- context-window
+- mcp
+- sandbox
 type: tool
 updated: 2026-07-10
 ---
-
 # Context Mode
 
 ## 한 줄 정의

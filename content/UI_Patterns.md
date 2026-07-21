@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - ui-ux
-  - saas
-  - design-patterns
-aliases: [UI 패턴]
+- ui-ux
+- saas
+- design-patterns
+aliases:
+- UI 패턴
 sources:
-  - raw/12 UI Patterns Designers Copy From Top SaaS Products.md
+- raw/12 UI Patterns Designers Copy From Top SaaS Products.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Linear, Notion, Stripe 등 선두 SaaS 제품들이 사용하는, 사용자 인지 부하를 줄이고 전환율을 높이는 12가지 검증된 UI/UX 설계 패턴입니다.
 

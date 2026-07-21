@@ -3,18 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai
-  - coding
-  - productivity
-  - workflow
-  - skill
-aliases: [AI 코딩 기술, 바이브 코딩]
+- ai
+- coding
+- productivity
+- workflow
+- skill
+aliases:
+- AI 코딩 기술
+- 바이브 코딩
 sources:
-  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 단순 자동 완성을 넘어, 계획 수립·아키텍처 설계·교차 검증·사후 문서화까지 아우르는 AI 도구 운용 역량으로, 단순 생산성 향상을 넘어 현대 개발자의 필수 생존 스킬입니다.
 

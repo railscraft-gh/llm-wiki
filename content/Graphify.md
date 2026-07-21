@@ -3,18 +3,17 @@ aliases: []
 core: false
 created: 2026-05-09
 sources:
-  - graphify_정리
-  - raw/graphify_정리.md
+- graphify_정리
+- raw/graphify_정리.md
 status: evergreen
 tags:
-  - ai-coding
-  - knowledge-graph
-  - context-management
-  - vibe-coding
+- ai-coding
+- knowledge-graph
+- context-management
+- vibe-coding
 type: tool
 updated: 2026-07-10
 ---
-
 # Graphify
 
 ## 한 줄 정의

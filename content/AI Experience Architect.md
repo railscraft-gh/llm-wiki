@@ -1,65 +1,70 @@
 ---
 aliases:
-  - AI 경험 아키텍트
-  - AI Designer to Architect
+- AI 경험 아키텍트
+- AI Designer to Architect
+- AI-Experience-Architect
 core: true
 created: 2026-05-26
 sources:
-  - From faster pencil to AI Experience Architect. a designer’s path
-  - UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
-  - Why senior UX designers are struggling in 2026
-  - raw/Design’s craft crisis. senior designers built it.md
-  - raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md
-  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
-  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-  - raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md
-  - raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
-  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md
-  - raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
-  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay, and What I Rejected.md
-  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
-  - raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
-  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
-  - raw/frontend-design-skill.md
-  - raw/How top companies are using AI in their design workflows.md
-  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-  - raw/Why senior UX designers are struggling in 2026-ko.md
-  - raw/The Complete (Honest) Guide to OpenClaw.md
-  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md
-  - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
-  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch Was-ko.md
-  - raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
-  - raw/im-not-ai.md
-  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-  - raw/The most important Design System in 2026 that designers missed was built by a developer..md
-  - raw/2026년의 AI 에이전트 실전 가이드-ko.md
-  - raw/Good Design Doesn’t Happen By Default.md
-  - raw/The Best Way to Make AI Write Like You-ko.md
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
-  - raw/AI 겨울이 시작됐다-ko.md
-  - raw/I will never walk into a backend interview without solving these 20 questions..md
-  - raw/Most Developers Are Solving the Wrong Problem.md
-  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
-  - raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
-  - raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
-  - raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
-  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
-  - raw/gajae-code_AI_코딩_하네스_분석.md
-  - raw/Building an MCP Ecosystem at Pinterest-ko.md
+- From faster pencil to AI Experience Architect. a designer’s path
+- UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다
+- Why senior UX designers are struggling in 2026
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/디자인의 크래프트 위기. 시니어 디자이너들이 이를 구축했다.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/향후 5년. 2026년에서 2030년 사이에 디자이너로서 생존하는 방법.md
+- raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+  and What I Rejected.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/frontend-design-skill.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+  Was-ko.md
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/im-not-ai.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/The most important Design System in 2026 that designers missed was built by
+  a developer..md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/AI 겨울이 시작됐다-ko.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
 status: evergreen
 tags:
-  - design
-  - ai
-  - workflow
-  - ux
+- design
+- ai
+- workflow
+- ux
 type: concept
 updated: 2026-07-10
 ---
-
 # AI Experience Architect
 
 ## 한 줄 정의

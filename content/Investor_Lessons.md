@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - finance
-  - investment
-  - mindset
-aliases: [투자자가 알아야 할 10가지]
+- finance
+- investment
+- mindset
+aliases:
+- 투자자가 알아야 할 10가지
 sources:
-  - raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 주식 시장을 장기적으로 부를 일구는 도구로 활용하기 위해 개인 투자자가 반드시 명심해야 할 10가지 핵심 투자 원칙입니다.
 

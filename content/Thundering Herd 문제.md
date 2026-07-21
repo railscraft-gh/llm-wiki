@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - architecture
-  - backend
-  - performance
+- llm
+- architecture
+- backend
+- performance
 aliases:
-  - Thundering Herd
-  - Hot Key Problem
-  - 핫 키 문제
+- Thundering Herd
+- Hot Key Problem
+- 핫 키 문제
+- Thundering-Herd-문제
 sources:
-  - raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md
+- raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

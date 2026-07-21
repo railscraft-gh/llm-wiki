@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - open-source
-  - inference
-  - ai-infrastructure
-aliases: [오픈소스 LLM 플랫폼 가이드]
+- llm
+- open-source
+- inference
+- ai-infrastructure
+aliases:
+- 오픈소스 LLM 플랫폼 가이드
 sources:
-  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 로컬 셀프 호스팅부터 고속 클라우드 API까지, 2026년 기준 실무에서 활용 가능한 오픈소스 LLM 플랫폼 비교 및 구축 가이드입니다.
 

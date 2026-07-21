@@ -1,24 +1,24 @@
 ---
 aliases:
-  - Hermes Google 연결
-  - Google Workspace 연결 절차
+- Hermes Google 연결
+- Google Workspace 연결 절차
+- Hermes-Agent-Google-Workspace-연결
 core: false
 created: 2026-05-28
 sources:
-  - Hermes Agent에 구글 연결하는 초보자 매뉴얼
-  - raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
-  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+- Hermes Agent에 구글 연결하는 초보자 매뉴얼
+- raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+- raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - google-workspace
-  - oauth
-  - integration
+- llm
+- agent
+- google-workspace
+- oauth
+- integration
 type: workflow
 updated: 2026-07-10
 ---
-
 # [[Hermes Agent]] Google Workspace 연결
 
 ## 한 줄 정의

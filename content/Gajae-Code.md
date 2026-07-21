@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-agent
-  - harness-engineering
+- ai-agent
+- harness-engineering
 aliases:
-  - Gajae-Code
+- Gajae-Code
 sources:
-  - raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/gajae-code_AI_코딩_하네스_분석.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 코딩 에이전트를 위한 운영체제 수준의 하네스 프레임워크로, 모델 호출, 도구 실행, 상태 관리 및 워크플로 자동화 기능을 제공.
 

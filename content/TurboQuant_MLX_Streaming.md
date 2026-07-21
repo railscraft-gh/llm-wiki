@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - machine-learning
-  - apple-silicon
-  - quantization
-aliases: [TurboQuant-MLX, MoE 전문가 스트리밍]
+- llm
+- machine-learning
+- apple-silicon
+- quantization
+aliases:
+- TurboQuant-MLX
+- MoE 전문가 스트리밍
 sources:
-  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 애플 실리콘 환경에서 RAM 용량 제한을 극복하기 위해, Mixture-of-Experts(MoE) 모델의 활성 전문가 가중치만 SSD로부터 실시간 페이징(스트리밍)하여 거대 모델을 구동하는 최적화 기술입니다.
 

@@ -3,28 +3,28 @@ aliases: []
 core: true
 created: 2026-06-07
 sources:
-  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
-  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
-  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
-  - raw/im-not-ai.md
-  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
-  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-  - raw/Why senior UX designers are struggling in 2026-ko.md
-  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
-  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-  - raw/The Best Way to Make AI Write Like You-ko.md
-  - raw/Building an MCP Ecosystem at Pinterest-ko.md
-  - raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
-  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/im-not-ai.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+  Source)-ko.md
 status: evergreen
 tags:
-  - memory
-  - agent
-  - rag
+- memory
+- agent
+- rag
 type: tool
 updated: 2026-07-10
 ---
-
 # GBrain
 
 ## 한 줄 정의

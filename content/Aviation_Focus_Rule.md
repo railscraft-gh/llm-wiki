@@ -3,16 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - productivity
-  - psychology
-  - self-improvement
-aliases: [10,000피트 규칙, 0-1 모드]
+- productivity
+- psychology
+- self-improvement
+aliases:
+- '10'
+- 000피트 규칙
+- 0-1 모드
 sources:
-  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 항공 운항의 '10,000피트 규칙'을 일상에 적용하여, 중요한 순간에는 타협 없이 집중력에만 몰입하도록 이분법적(0 또는 1) 기준을 세우는 생산성 전략입니다.
 

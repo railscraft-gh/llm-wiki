@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - harness
-  - automation
+- llm
+- agent
+- harness
+- automation
 aliases:
-  - Ralph Loop
-  - Headless Claude Loop
+- Ralph Loop
+- Headless Claude Loop
+- Ralph-Loop
 sources:
-  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - bash
-  - automation
-  - productivity
-  - devops
-aliases: [셸 스크립트 도구]
+- bash
+- automation
+- productivity
+- devops
+aliases:
+- 셸 스크립트 도구
 sources:
-  - raw/13 Tiny Bash Scripts That Save Me Time Every Day.md
+- raw/13 Tiny Bash Scripts That Save Me Time Every Day.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 매일 반복되는 파일 백업, 압축 해제, 시스템 점검 등 단순 업무를 자동화하여 생산성을 높이는 13가지 실용적인 배시 스크립트 모음입니다.
 

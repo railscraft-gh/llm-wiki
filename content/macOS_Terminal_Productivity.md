@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - macos
-  - terminal
-  - productivity
-  - workflow
-aliases: [맥 터미널 팁]
+- macos
+- terminal
+- productivity
+- workflow
+aliases:
+- 맥 터미널 팁
 sources:
-  - raw/17 macOS Terminal Commands I Actually Use Every Week.md
+- raw/17 macOS Terminal Commands I Actually Use Every Week.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 macOS의 유료 유틸리티 앱들을 대체하거나, 복잡한 설정 과정을 단 한 줄의 터미널 명령어로 해결하여 시스템 생산성을 극대화하는 실용적인 명령어 모음입니다.
 

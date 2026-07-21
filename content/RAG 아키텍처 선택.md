@@ -3,20 +3,20 @@ type: concept
 status: draft
 core: false
 tags:
-  - rag
-  - architecture
-  - llm
-  - vector-db
-  - graphrag
+- rag
+- architecture
+- llm
+- vector-db
+- graphrag
 aliases:
-  - RAG 아키텍처 선택
-  - 9가지 RAG 아키텍처
+- RAG 아키텍처 선택
+- 9가지 RAG 아키텍처
+- RAG-아키텍처-선택
 sources:
-  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # RAG 아키텍처 선택
 
 ## 한 줄 정의

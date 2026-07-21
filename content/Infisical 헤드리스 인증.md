@@ -1,29 +1,29 @@
 ---
 aliases:
-  - Infisical SSH 인증
-  - Infisical Universal Auth
-  - Machine Identity 인증
+- Infisical SSH 인증
+- Infisical Universal Auth
+- Machine Identity 인증
+- Infisical-헤드리스-인증
 core: false
 created: 2026-05-08
 sources:
-  - Infisical_SSH_헤드리스_인증_가이드
-  - API_Key_관리_및_Infisical_도입_가이드
-  - 'https://infisical.com/docs/documentation/platform/identities/machine-identities'
-  - 'https://infisical.com/docs/documentation/platform/identities/universal-auth'
-  - 'https://infisical.com/docs/cli/commands'
-  - 'https://infisical.com/docs/cli/commands/service-token'
-  - raw/opencode-masterclass-summary.md
-  - raw/Infisical_SSH_헤드리스_인증_가이드.md
-  - raw/Quartz-Deploy-Guide.md
+- Infisical_SSH_헤드리스_인증_가이드
+- API_Key_관리_및_Infisical_도입_가이드
+- https://infisical.com/docs/documentation/platform/identities/machine-identities
+- https://infisical.com/docs/documentation/platform/identities/universal-auth
+- https://infisical.com/docs/cli/commands
+- https://infisical.com/docs/cli/commands/service-token
+- raw/opencode-masterclass-summary.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/Quartz-Deploy-Guide.md
 status: evergreen
 tags:
-  - security
-  - secret-management
-  - infrastructure
+- security
+- secret-management
+- infrastructure
 type: workflow
 updated: 2026-07-10
 ---
-
 # Infisical 헤드리스 인증
 
 ## 한 줄 정의

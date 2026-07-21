@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - productivity
-  - ai-agent
-  - knowledge-management
-  - para
-aliases: [AI 세컨드 브레인]
+- productivity
+- ai-agent
+- knowledge-management
+- para
+aliases:
+- AI 세컨드 브레인
 sources:
-  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 PARA(Projects, Areas, Resources, Archives) 방법론과 MCP([[Model Context Protocol]])를 결합하여 지식 노동자의 파편화된 업무 맥락을 구조화하고 에이전트와 공유하는 시스템입니다.
 

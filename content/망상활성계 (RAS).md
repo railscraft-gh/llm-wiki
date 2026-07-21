@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - neuroscience
-  - productivity
-  - psychology
+- llm
+- neuroscience
+- productivity
+- psychology
 aliases:
-  - Reticular Activating System
-  - RAS
-  - 망상활성계
+- Reticular Activating System
+- RAS
+- 망상활성계
+- 망상활성계-(RAS)
 sources:
-  - raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md
+- raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

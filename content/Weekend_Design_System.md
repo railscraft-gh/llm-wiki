@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - design-system
-  - frontend
-  - productivity
-  - css
-aliases: [최소 디자인 시스템]
+- design-system
+- frontend
+- productivity
+- css
+aliases:
+- 최소 디자인 시스템
 sources:
-  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 거창한 도구(Figma Tokens, Storybook 등) 없이 CSS 변수와 기초 컴포넌트(버튼, 폼, 카드)만으로 구축하여, 1인 개발자가 의사결정 피로를 줄이고 개발 속도를 높이는 경량화된 디자인 시스템입니다.
 

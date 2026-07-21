@@ -3,13 +3,13 @@ aliases: []
 core: false
 created: 2026-07-10
 sources:
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
 status: evergreen
 tags:
-  - llm
-  - quantization
-  - kv-cache
-  - apple-silicon
+- llm
+- quantization
+- kv-cache
+- apple-silicon
 type: concept
 updated: 2026-07-10
 ---

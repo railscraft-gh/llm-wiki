@@ -3,14 +3,14 @@ type: concept
 status: evergreen
 core: true
 tags:
-  - llm
-aliases: []
+- llm
+aliases:
+- Sequoia-Ascent-2026
 sources:
-  - raw/sequoia-ascent-2026-karpathy-ko.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Sequoia Ascent 2026
 
 ## 한 줄 정의

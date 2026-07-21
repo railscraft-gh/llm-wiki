@@ -3,18 +3,18 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-engineering
-  - harness-engineering
-  - claudecode
+- ai-engineering
+- harness-engineering
+- claudecode
 aliases:
-  - CLAUDE.md
-  - 하네스 엔지니어링
+- CLAUDE.md
+- 하네스 엔지니어링
+- CLAUDE.md-가이드
 sources:
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 코딩 에이전트의 반복적인 실패 패턴을 시스템적으로 방지하기 위해 저장소 루트에 배포하는 65줄 내외의 마크다운 행동 지침 파일.
 

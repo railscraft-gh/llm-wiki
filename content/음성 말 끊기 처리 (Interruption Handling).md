@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - voice
-  - audio
-  - architecture
+- llm
+- voice
+- audio
+- architecture
 aliases:
-  - Interruption Handling
-  - 음성 말 끊기 처리
-  - Playback Queue Flush
+- Interruption Handling
+- 음성 말 끊기 처리
+- Playback Queue Flush
+- 음성-말-끊기-처리-(Interruption-Handling)
 sources:
-  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

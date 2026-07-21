@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - quartz
-  - ssg
-  - obsidian
+- quartz
+- ssg
+- obsidian
 aliases:
-  - Quartz
+- Quartz
 sources:
-  - raw/Quartz-GitHub-Pages-Complete-Guide.md
+- raw/Quartz-GitHub-Pages-Complete-Guide.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Quartz
 
 ## 한 줄 정의

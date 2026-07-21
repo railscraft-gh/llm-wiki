@@ -1,6 +1,7 @@
 ---
 aliases:
 - 소프트웨어 3.0
+- Software-3.0
 core: true
 created: 2026-05-06
 sources:
@@ -23,7 +24,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Software 3.0
 
 ## 한 줄 정의

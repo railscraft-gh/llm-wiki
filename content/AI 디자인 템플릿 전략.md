@@ -3,14 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-aliases: []
+- llm
+aliases:
+- AI-디자인-템플릿-전략
 sources:
-  - raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
+- raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 사전 구축된 템플릿과 명시적 지침 파일을 통해 AI가 디자인 시스템의 규칙을 준수하도록 유도하는 방법론.
 

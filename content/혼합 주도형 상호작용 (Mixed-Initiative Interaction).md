@@ -3,19 +3,19 @@ type: concept
 status: evergreen
 core: false
 tags:
-  - llm
-  - design
-  - interaction
+- llm
+- design
+- interaction
 aliases:
-  - 혼합 주도형 상호작용
-  - Mixed-Initiative Interaction
-  - 혼합 주도형 시스템
+- 혼합 주도형 상호작용
+- Mixed-Initiative Interaction
+- 혼합 주도형 시스템
+- 혼합-주도형-상호작용-(Mixed-Initiative-Interaction)
 sources:
-  - raw/39 principles for designing human-AI interaction.md
+- raw/39 principles for designing human-AI interaction.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # 혼합 주도형 상호작용 (Mixed-Initiative Interaction)
 
 ## 한 줄 정의

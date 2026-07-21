@@ -3,18 +3,17 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-engineering
-  - second-brain
-  - para
+- ai-engineering
+- second-brain
+- para
 aliases:
-  - AI 세컨드 브레인
-  - PARA 워크스페이스
+- AI 세컨드 브레인
+- PARA 워크스페이스
 sources:
-  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 PARA(Projects, Areas, Resources, Archives) 방법론을 적용하여 AI 에이전트가 개인의 업무 맥락을 지속적으로 이해하고 구조화하도록 구축한 지식 시스템.
 

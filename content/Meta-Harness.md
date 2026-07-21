@@ -1,27 +1,26 @@
 ---
 aliases:
-  - 메타 하네스
+- 메타 하네스
 core: false
 created: 2026-05-13
 sources:
-  - arxiv-2603.28052-meta-harness
-  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
-  - raw/arxiv-2603.28052-meta-harness.md
-  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-  - raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+- arxiv-2603.28052-meta-harness
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/arxiv-2603.28052-meta-harness.md
+- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/GLM-5.1-vs-Kimi-K2.6-Coding-Comparison.md
+- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - harness-engineering
-  - meta-learning
+- llm
+- agent
+- harness-engineering
+- meta-learning
 type: concept
 updated: 2026-07-10
 ---
-
 # Meta-Harness
 
 ## 한 줄 정의

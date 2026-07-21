@@ -1,14 +1,15 @@
 ---
-aliases: []
+aliases:
+- 위대한-부의-이전-(Great-Wealth-Transfer)
 core: false
 created: 2026-07-10
 sources:
-  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
 status: evergreen
 tags:
-  - economy
-  - investment
-  - wealth-building
+- economy
+- investment
+- wealth-building
 type: concept
 updated: 2026-07-10
 ---

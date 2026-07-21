@@ -1,44 +1,44 @@
 ---
 aliases:
-  - Claude Code Orchestration
-  - 에이전트 오케스트레이션
+- Claude Code Orchestration
+- 에이전트 오케스트레이션
+- Claude-Code-오케스트레이션
 core: false
 created: 2026-05-06
 sources:
-  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-  - 보리스_클로드코드_실무_사용법
-  - Claude-Code-실무활용법-보리스-관점-정리
-  - cc101_axwith_ko
-  - Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
-  - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
-  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-  - 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
-  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
-  - raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
-  - raw/cc101_axwith_ko.md
-  - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
-  - raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
-  - raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
-  - raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
-  - raw/안드레_카파시_인터뷰_정리.md
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
-  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
-  - raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
-  - raw/Claude-Code-실무활용법-보리스-관점-정리.md
-  - raw/보리스_클로드코드_실무_사용법.md
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-  - raw/보리스_클로드코드_실무_사용법
-  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- 보리스_클로드코드_실무_사용법
+- Claude-Code-실무활용법-보리스-관점-정리
+- cc101_axwith_ko
+- Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- 메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분
+- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+- raw/메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분.md
+- raw/cc101_axwith_ko.md
+- raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
+- raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md
+- raw/AI 네이티브 엔지니어링 조직 운영하기 - Code w Claude 발표.md
+- raw/꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!.md
+- raw/안드레_카파시_인터뷰_정리.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+- raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법.md
+- raw/Claude-Code-실무활용법-보리스-관점-정리.md
+- raw/보리스_클로드코드_실무_사용법.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- raw/보리스_클로드코드_실무_사용법
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - claude-code
-  - orchestration
+- llm
+- agent
+- claude-code
+- orchestration
 type: workflow
 updated: 2026-07-10
 ---
-
 # Claude Code 오케스트레이션
 
 ## 한 줄 정의

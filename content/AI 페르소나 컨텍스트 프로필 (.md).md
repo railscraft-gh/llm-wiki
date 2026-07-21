@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - writing
-  - context
-  - prompt
+- llm
+- writing
+- context
+- prompt
 aliases:
-  - Voice Profile (.md)
-  - 글쓰기 어조 프로필
-  - AI 페르소나 프로필
+- Voice Profile (.md)
+- 글쓰기 어조 프로필
+- AI 페르소나 프로필
+- AI-페르소나-컨텍스트-프로필-(.md)
 sources:
-  - raw/The Best Way to Make AI Write Like You-ko.md
+- raw/The Best Way to Make AI Write Like You-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

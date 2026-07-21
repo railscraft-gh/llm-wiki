@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - career
-  - interview
-  - engineering
-  - system-design
-aliases: [기술 인터뷰 패턴, 시니어 엔지니어링 면접]
+- career
+- interview
+- engineering
+- system-design
+aliases:
+- 기술 인터뷰 패턴
+- 시니어 엔지니어링 면접
 sources:
-  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 시니어 백엔드 엔지니어 인터뷰에서 코딩 역량보다 중요한 것은 문제 해결을 위한 사고 과정의 구조화이며, 실패를 정량적 데이터로 분석하여 소통 패턴을 수정하는 것이 합격의 핵심입니다.
 

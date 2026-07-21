@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - open-source
-  - coding-agent
-  - terminal-cli
+- open-source
+- coding-agent
+- terminal-cli
 aliases:
-  - OpenCode Terminal Agent Architecture
+- OpenCode Terminal Agent Architecture
+- OpenCode-오픈소스-터미널-에이전틱-아키텍처
 sources:
-  - raw/opencode-masterclass-summary.md
+- raw/opencode-masterclass-summary.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

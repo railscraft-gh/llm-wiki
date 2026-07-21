@@ -3,15 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
+- llm
 aliases:
-  - 코드로 생각하기
+- 코드로 생각하기
+- Think-in-Code
 sources:
-  - raw/context-mode-README-정리.md
+- raw/context-mode-README-정리.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Think in Code는 AI 코딩 에이전트가 대량의 원시 파일들을 직접 문자열로 여러 차례 읽는(Read) 대신, 분석 스크립트를 작성·실행하여 샌드박스 내부에서 데이터를 처리하고 핵심 결과값만 반환받는 컨텍스트 최적화 패러다임이다.
 

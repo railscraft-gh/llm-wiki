@@ -3,14 +3,13 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
+- llm
 aliases: []
 sources:
-  - raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
+- raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 GLM-5는 Zhipu AI가 개발한 거대 MoE(Mixture of Experts) 언어 모델로, 리눅스 커널 수준의 복잡한 추론 및 다단계 에이전트 명령 실행을 고성능 로컬 사양에서 수행하도록 최적화되었다.
 

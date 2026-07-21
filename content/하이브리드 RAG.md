@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - rag
-  - memory
-  - architecture
+- llm
+- rag
+- memory
+- architecture
 aliases:
-  - Hybrid RAG Pipeline
-  - 하이브리드 검색 증강 생성
+- Hybrid RAG Pipeline
+- 하이브리드 검색 증강 생성
+- 하이브리드-RAG
 sources:
-  - raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md
+- raw/밑바닥부터 만드는 LLM 메모리
 created: 2026-07-21
 updated: 2026-07-21
 ---

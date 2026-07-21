@@ -3,18 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - cloud-security
+- llm
+- cloud-security
 aliases:
-  - Private Cloud Compute
-  - PCC
-  - 프라이빗 클라우드 컴퓨팅
+- Private Cloud Compute
+- PCC
+- 프라이빗 클라우드 컴퓨팅
+- 프라이빗-클라우드-컴퓨팅-(Private-Cloud-Compute)
 sources:
-  - raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
+- raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
 created: 2026-07-15
 updated: 2026-07-16
 ---
-
 # 프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)
 
 ## 한 줄 정의

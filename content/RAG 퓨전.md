@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agentic
+- llm
+- agentic
 aliases:
-  - RAG 퓨전 (RAG-Fusion)
+- RAG 퓨전 (RAG-Fusion)
+- RAG-퓨전
 sources:
-  - raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md
+- raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md
 created: 2026-07-11
 updated: 2026-07-11
 ---
-
 # RAG 퓨전 (RAG-Fusion)
 
 ## 한 줄 정의

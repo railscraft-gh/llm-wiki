@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - team-mode
-  - multi-agent
-  - openagent
+- team-mode
+- multi-agent
+- openagent
 aliases:
-  - Team Mode
+- Team Mode
+- Team-Mode
 sources:
-  - raw/oh-my-openagent-team-mode.md
+- raw/oh-my-openagent-team-mode.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Team Mode
 
 ## 한 줄 정의

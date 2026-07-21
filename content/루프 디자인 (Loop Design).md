@@ -1,14 +1,15 @@
 ---
-aliases: []
+aliases:
+- 루프-디자인-(Loop-Design)
 core: false
 created: 2026-07-10
 sources:
-  - raw/0xMorty_Loop_Design.md
+- raw/0xMorty_Loop_Design.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - workflow
+- llm
+- agent
+- workflow
 type: workflow
 updated: 2026-07-10
 ---

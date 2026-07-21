@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - rag
-  - ai
-  - system-design
-  - architecture
-aliases: [RAG 시스템 난이도, RAG 파이프라인]
+- rag
+- ai
+- system-design
+- architecture
+aliases:
+- RAG 시스템 난이도
+- RAG 파이프라인
 sources:
-  - raw/5단계 난이도로 알아보는 RAG 시스템 구축 및 구현 가이드.md
+- raw/5단계 난이도로 알아보는 RAG 시스템 구축 및 구현 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 RAG(Retrieval-Augmented Generation) 시스템의 성숙도를 5단계로 분류하여, 데모 수준을 넘어 프로덕션 환경에서 신뢰성 있는 답변을 생성하기 위한 핵심 엔지니어링 전략입니다.
 

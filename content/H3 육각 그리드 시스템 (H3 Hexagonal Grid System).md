@@ -3,18 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - infrastructure
-  - space-intelligence
+- infrastructure
+- space-intelligence
 aliases:
-  - H3 육각 그리드 시스템
-  - H3
-  - 육각 그리드
+- H3 육각 그리드 시스템
+- H3
+- 육각 그리드
+- H3-육각-그리드-시스템-(H3-Hexagonal-Grid-System)
 sources:
-  - raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They Asked..md
+- raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They
+  Asked..md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # H3 육각 그리드 시스템 (H3 Hexagonal Grid System)
 
 ## 한 줄 정의

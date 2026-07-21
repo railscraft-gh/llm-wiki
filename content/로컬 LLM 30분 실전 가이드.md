@@ -1,91 +1,92 @@
 ---
 aliases:
-  - 로컬 LLM 실전 가이드
-  - 온디바이스 LLM
-  - Ollama
-  - TurboQuant
+- 로컬 LLM 실전 가이드
+- 온디바이스 LLM
+- Ollama
+- TurboQuant
+- 로컬-LLM-30분-실전-가이드
 core: true
 created: 2026-06-12
 sources:
-  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
-  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-  - raw/How to Do Hard Things When You Have Zero Motivation.md
-  - raw/AI Agents. Complete Course.md
-  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-  - raw/10 Things Every Investor Should Know (but most learn too late).md
-  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
-  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
-  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-  - raw/Skills Alone Won’t Save You in the AI Economy.md
-  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-  - raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md
-  - raw/로컬 AI 구동용 고사양 PC 구매는 돈값할까.md
-  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md
-  - raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
+- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+- raw/How to Do Hard Things When You Have Zero Motivation.md
+- raw/AI Agents. Complete Course.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+- raw/Your Wandering Mind Is Not the Enemy of Focus.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+- raw/우리가 피그마 없이 제품을 배포하는 방법.md
+- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+- raw/Skills Alone Won’t Save You in the AI Economy.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+- raw/맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md
+- raw/로컬 AI 구동용 고사양 PC 구매는 돈값할까.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
+- raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
 status: evergreen
 tags:
-  - llm
-  - local-ai
-  - coding-assistant
-  - rag
-  - tts
-  - stt
-  - mlx
-  - apple-silicon
-  - local-llm
-  - hardware
-  - benchmarks
+- llm
+- local-ai
+- coding-assistant
+- rag
+- tts
+- stt
+- mlx
+- apple-silicon
+- local-llm
+- hardware
+- benchmarks
 type: concept
 updated: 2026-07-10
 ---
-
 # 로컬 LLM 30분 실전 가이드
 
 ## 한 줄 정의

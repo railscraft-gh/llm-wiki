@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - ruby
-  - tooling
-  - static-analysis
-  - linter
-aliases: [RuboCop]
+- ruby
+- tooling
+- static-analysis
+- linter
+aliases:
+- RuboCop
 sources:
-  - raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
+- raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 RuboCop은 Ruby Style Guide를 기반으로 코드를 정적 분석하고 포매팅하며 자동 수정까지 지원하는 Ruby 생태계의 사실상 표준 린터/포매터입니다.
 

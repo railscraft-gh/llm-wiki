@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai
-  - tools
-  - coding
+- ai
+- tools
+- coding
 aliases:
-  - Claude Code 가이드
+- Claude Code 가이드
 sources:
-  - raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
+- raw/Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Claude Code를 단순한 '코드 생성 도구'가 아닌, 스스로 검증하고 계획하는 '업무 조율 오케스트레이터'로 활용하기 위한 실전 방법론입니다.
 

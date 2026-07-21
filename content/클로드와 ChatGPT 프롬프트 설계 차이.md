@@ -1,14 +1,15 @@
 ---
-aliases: []
+aliases:
+- 클로드와-ChatGPT-프롬프트-설계-차이
 core: false
 created: 2026-07-10
 sources:
-  - raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md
+- raw/내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능).md
 status: evergreen
 tags:
-  - llm
-  - prompting
-  - productivity
+- llm
+- prompting
+- productivity
 type: concept
 updated: 2026-07-10
 ---

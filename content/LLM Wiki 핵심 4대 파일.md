@@ -1,15 +1,16 @@
 ---
-aliases: []
+aliases:
+- LLM-Wiki-핵심-4대-파일
 core: false
 created: 2026-07-10
 sources:
-  - raw/옵시디언, LLM Wiki에서 가장 중요한 파일 4가지.md
+- raw/옵시디언, LLM Wiki에서 가장 중요한 파일 4가지.md
 status: evergreen
 tags:
-  - llm
-  - wiki
-  - obsidian
-  - knowledge-management
+- llm
+- wiki
+- obsidian
+- knowledge-management
 type: workflow
 updated: 2026-07-10
 ---

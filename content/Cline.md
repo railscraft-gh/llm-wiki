@@ -3,14 +3,13 @@ type: tool
 status: draft
 core: false
 tags:
-  - llm
+- llm
 aliases: []
 sources:
-  - raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md
+- raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Cline은 VS Code 사이드바 내에서 파일 생성/편집, 터미널 명령어 실행, 오류 디버깅 등 개발 전체 주기를 자율적으로 반복 수행하는 모델 독립적(Model-agnostic) 오픈소스 AI 코딩 에이전트이다.
 

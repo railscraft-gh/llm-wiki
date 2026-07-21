@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai
-  - memory
-  - system-design
+- ai
+- memory
+- system-design
 aliases:
-  - MEMORY.md
+- MEMORY.md
 sources:
-  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 프로젝트의 역사적 맥락, 의사결정 기록, 시행착오(Dead Ends)를 누적하여 관리함으로써 Claude Code의 장기 컨텍스트 추론 능력을 극대화하는 지식 보존 시스템입니다.
 

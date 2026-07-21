@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - ux-research
-  - ai-utility
+- ux-research
+- ai-utility
 aliases:
-  - AI 리서치 워크플로우
+- AI 리서치 워크플로우
 sources:
-  - raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md
+- raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI를 UX 리서치 및 디스커버리 단계에 도입하여 업무 효율을 높이되, 인간 연구자의 전략적 판단과 데이터 검증을 결합하는 방법론.
 

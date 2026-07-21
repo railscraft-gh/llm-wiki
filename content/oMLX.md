@@ -3,20 +3,20 @@ type: concept
 status: draft
 core: false
 tags:
-  - mlx
-  - local-llm
-  - omlx
-  - apple-silicon
-  - qwen
+- mlx
+- local-llm
+- omlx
+- apple-silicon
+- qwen
 aliases:
-  - oMLX
-  - 2단계 KV 캐시
+- oMLX
+- 2단계 KV 캐시
 sources:
-  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+  Quietly Replaced All Three-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # oMLX
 
 ## 한 줄 정의

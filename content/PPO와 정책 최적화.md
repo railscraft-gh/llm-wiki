@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+- PPO와-정책-최적화
 core: false
 created: 2026-05-11
 sources:
@@ -13,7 +14,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # PPO와 정책 최적화
 
 ## 한 줄 정의

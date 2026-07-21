@@ -3,19 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - figma
-  - design
-  - ai
-  - workflow
+- figma
+- design
+- ai
+- workflow
 aliases:
-  - AI 시대의 피그마 재정의
-  - Rethinking Figma in an AI World
+- AI 시대의 피그마 재정의
+- Rethinking Figma in an AI World
+- AI-시대의-피그마-재정의
 sources:
-  - raw/Rethinking Figma in an AI world.md
+- raw/Rethinking Figma in an AI world.md
 created: 2026-07-20
 updated: 2026-07-20
 ---
-
 # AI 시대의 피그마 재정의
 
 ## 한 줄 정의

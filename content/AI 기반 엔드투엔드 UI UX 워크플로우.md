@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - ui-ux
-  - ai-tools
-  - workflow
+- ui-ux
+- ai-tools
+- workflow
 aliases:
-  - 10종 AI 도구 연계 UX 파이프라인
+- 10종 AI 도구 연계 UX 파이프라인
+- AI-기반-엔드투엔드-UI-UX-워크플로우
 sources:
-  - raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

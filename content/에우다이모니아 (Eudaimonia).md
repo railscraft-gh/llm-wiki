@@ -1,14 +1,15 @@
 ---
-aliases: []
+aliases:
+- 에우다이모니아-(Eudaimonia)
 core: false
 created: 2026-07-10
 sources:
-  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
 status: evergreen
 tags:
-  - mindset
-  - philosophy
-  - lifestyle
+- mindset
+- philosophy
+- lifestyle
 type: concept
 updated: 2026-07-10
 ---

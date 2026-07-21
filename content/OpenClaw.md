@@ -2,35 +2,35 @@
 core: false
 created: 2026-05-26
 sources:
-  - The Complete (Honest) Guide to OpenClaw
-  - I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
-  - Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
-  - raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
-  - raw/The Open-Source Agent Toolkit in 2026-ko.md
-  - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
-  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
-  - raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
-  - raw/Agentic AI, design systems & Figma. a practical guide-ko.md
-  - raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
-  - raw/The most important Design System in 2026 that designers missed was built by
-  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-  - raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
-  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
-  - raw/Good Design Doesn’t Happen By Default.md
-  - raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
-  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
-  - raw/From faster pencil to AI Experience Architect. a designer’s path.md
-  - raw/The Complete (Honest) Guide to OpenClaw.md
+- The Complete (Honest) Guide to OpenClaw
+- I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.
+- Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법
+- raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md
+- raw/The Open-Source Agent Toolkit in 2026-ko.md
+- raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/Agentic AI, design systems & Figma. a practical guide-ko.md
+- raw/Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals.md
+- raw/The most important Design System in 2026 that designers missed was built by
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Good Design Doesn’t Happen By Default.md
+- raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/From faster pencil to AI Experience Architect. a designer’s path.md
+- raw/The Complete (Honest) Guide to OpenClaw.md
 status: evergreen
 tags:
-  - agent
-  - open-source
-  - tool
-  - self-hosted
+- agent
+- open-source
+- tool
+- self-hosted
 type: tool
 updated: 2026-07-10
+aliases: []
 ---
-
 # OpenClaw
 
 ## 한 줄 정의

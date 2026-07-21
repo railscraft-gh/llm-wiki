@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - rl
-  - reinforcement-learning
-  - llm
+- rl
+- reinforcement-learning
+- llm
 aliases: []
 sources:
-  - "raw/강화학습-RL-초보자-가이드.md"
+- raw/강화학습-RL-초보자-가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 
 별도의 가치 네트워크(Critic)나 Reward Model 없이 동일한 프롬프트에 대해 여러 답변을 생성한 뒤 그룹 내 상대적 점수를 기준으로 PPO를 개선하여 학습하는 강화학습 최적화 알고리즘.

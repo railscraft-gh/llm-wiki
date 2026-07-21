@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - ux
-  - ui-design
-  - design-system
-  - best-practices
-aliases: [UI 디테일, 디자인 완성도]
+- ux
+- ui-design
+- design-system
+- best-practices
+aliases:
+- UI 디테일
+- 디자인 완성도
 sources:
-  - raw/8 Tiny UI Fixes Most Designers Ignore.md
+- raw/8 Tiny UI Fixes Most Designers Ignore.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 제품의 인지 품질(Perceived Quality)을 결정짓는 미세한 UI 디테일 8가지로, 사용자 경험을 세련되게 다듬고 완성도를 높이는 실무 디자인 가이드입니다.
 

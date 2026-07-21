@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - ux
-  - landing-page
-  - conversion
-  - design
-aliases: [랜딩페이지 최적화, 전환율 최적화]
+- ux
+- landing-page
+- conversion
+- design
+aliases:
+- 랜딩페이지 최적화
+- 전환율 최적화
 sources:
-  - raw/6 Landing Page Mistakes that Kills Signups.md
+- raw/6 Landing Page Mistakes that Kills Signups.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 방문자의 가입 전환을 저해하는 6가지 주요 랜딩 페이지 실수와 이를 극복하여 전환율을 극대화하기 위한 UI/UX 디자인 모범 사례입니다.
 

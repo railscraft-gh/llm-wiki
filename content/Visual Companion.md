@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - ui
-  - agent-interaction
-aliases: []
+- llm
+- ui
+- agent-interaction
+aliases:
+- Visual-Companion
 sources:
-  - "raw/superpowers-brainstorming.md"
+- raw/superpowers-brainstorming.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 
 AI 에이전트와 아이디어를 브레인스토밍할 때, 말로 설명하기 어려운 시각적 요소(목업, 와이어프레임, 아키텍처 다이어그램 등)를 브라우저 탭에 실시간으로 렌더링하여 보여주는 도구.

@@ -1,6 +1,7 @@
 ---
 aliases:
 - 아미 랩스
+- AMI-Labs
 core: false
 created: 2026-06-09
 sources:
@@ -29,7 +30,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # AMI Labs
 
 ## 한 줄 정의

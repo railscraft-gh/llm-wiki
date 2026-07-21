@@ -3,19 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - spec-kit
-  - sdd
-  - ai-tools
-  - github
+- spec-kit
+- sdd
+- ai-tools
+- github
 aliases:
-  - Spec Kit
-  - specify-cli
+- Spec Kit
+- specify-cli
+- Spec-Kit
 sources:
-  - raw/바이브 코딩의 종말-ko.md
+- raw/바이브 코딩의 종말-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Spec Kit
 
 ## 한 줄 정의

@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai
-  - roadmap
-  - engineering
+- ai
+- roadmap
+- engineering
 aliases:
-  - 에이전틱 AI 엔지니어링
+- 에이전틱 AI 엔지니어링
 sources:
-  - raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md
+- raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 모델을 훈련시키는 것에서 벗어나, 에이전트가 자율적으로 도구를 사용하고 상태를 관리하며 작업을 수행하는 시스템을 설계하는 엔지니어링 영역입니다.
 

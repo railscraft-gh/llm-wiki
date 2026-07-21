@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - memory
-  - hermes
+- llm
+- agent
+- memory
+- hermes
 aliases:
-  - Closed Learning Loop
-  - 자가 학습 피드백 루프
+- Closed Learning Loop
+- 자가 학습 피드백 루프
+- Closed-Learning-Loop
 sources:
-  - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
+- raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

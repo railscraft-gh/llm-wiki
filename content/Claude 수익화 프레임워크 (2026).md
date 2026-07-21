@@ -3,18 +3,19 @@ type: workflow
 status: draft
 core: false
 tags:
-  - claude
-  - monetization
-  - revenue
-  - workflow
-  - solopreneur
+- claude
+- monetization
+- revenue
+- workflow
+- solopreneur
 sources:
-  - raw/How to Make Money With Claude in 2026.md
-  - raw/You Don’t Need a Job to Make Money.md
+- raw/How to Make Money With Claude in 2026.md
+- raw/You Don’t Need a Job to Make Money.md
 created: 2026-07-20
 updated: 2026-07-20
+aliases:
+- Claude-수익화-프레임워크-(2026)
 ---
-
 # Claude 수익화 프레임워크 (2026)
 
 ## 한 줄 정의

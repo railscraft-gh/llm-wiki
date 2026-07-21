@@ -1,32 +1,32 @@
 ---
 aliases:
-  - Infisical
-  - 인피지컬
-  - Infisical Secret Manager
+- Infisical
+- 인피지컬
+- Infisical Secret Manager
+- Infisical-도입-전략
 core: false
 created: 2026-05-07
 sources:
-  - API_Key_관리_및_Infisical_도입_가이드
-  - Infisical_SSH_헤드리스_인증_가이드
-  - 'https://infisical.com/docs/documentation/platform/secrets-mgmt/overview'
-  - 'https://infisical.com/docs/documentation/platform/identities/machine-identities'
-  - 'https://infisical.com/docs/documentation/platform/identities/universal-auth'
-  - 'https://github.com/Infisical/infisical'
-  - 'https://infisical.com/pricing'
-  - raw/opencode-masterclass-summary.md
-  - raw/Infisical_SSH_헤드리스_인증_가이드.md
-  - raw/AI로_만든_제품이_안_팔리는_이유.md
-  - raw/Quartz-Deploy-Guide.md
-  - raw/API_Key_관리_및_Infisical_도입_가이드.md
+- API_Key_관리_및_Infisical_도입_가이드
+- Infisical_SSH_헤드리스_인증_가이드
+- https://infisical.com/docs/documentation/platform/secrets-mgmt/overview
+- https://infisical.com/docs/documentation/platform/identities/machine-identities
+- https://infisical.com/docs/documentation/platform/identities/universal-auth
+- https://github.com/Infisical/infisical
+- https://infisical.com/pricing
+- raw/opencode-masterclass-summary.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/AI로_만든_제품이_안_팔리는_이유.md
+- raw/Quartz-Deploy-Guide.md
+- raw/API_Key_관리_및_Infisical_도입_가이드.md
 status: needs-review
 tags:
-  - security
-  - secret-management
-  - tool
+- security
+- secret-management
+- tool
 type: tool
 updated: 2026-07-10
 ---
-
 # Infisical 도입 전략
 
 ## 한 줄 정의

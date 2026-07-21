@@ -1,16 +1,17 @@
 ---
-aliases: []
+aliases:
+- 역량-부채(Competence-Debt)
 core: false
 created: 2026-07-10
 sources:
-  - raw/아무도 AI를 배우고 싶어 하지 않는다.md
-  - raw/아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기.md
+- raw/아무도 AI를 배우고 싶어 하지 않는다.md
+- raw/아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기.md
 status: evergreen
 tags:
-  - learning
-  - productivity
-  - career
-  - software-engineering
+- learning
+- productivity
+- career
+- software-engineering
 type: concept
 updated: 2026-07-10
 ---

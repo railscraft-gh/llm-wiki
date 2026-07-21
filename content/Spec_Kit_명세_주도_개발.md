@@ -3,19 +3,18 @@ type: concept
 status: draft
 core: true
 tags:
-  - ai-engineering
-  - sdlc
-  - github
+- ai-engineering
+- sdlc
+- github
 aliases:
-  - Spec Kit
-  - SDD
-  - 명세 기반 개발
+- Spec Kit
+- SDD
+- 명세 기반 개발
 sources:
-  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
+- raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 코딩 에이전트와 페어 프로그래밍할 때, 구현 전 정밀한 요구 명세(Specification)를 먼저 작성하고 이를 소스 코드와 함께 관리하여 에이전트의 환각과 부적절한 코딩을 방지하는 개발 프레임워크.
 

@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - design
-  - ai
-  - ui-ux
-  - productivity
-aliases: [AI 디자인 워크플로우]
+- design
+- ai
+- ui-ux
+- productivity
+aliases:
+- AI 디자인 워크플로우
 sources:
-  - raw/6 Ways UI_UX Designers Are Using AI.md
+- raw/6 Ways UI_UX Designers Are Using AI.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 디자인 프로세스의 6개 핵심 영역(와이어프레임, 리서치, 카피, 접근성, 핸드오프, 경쟁 분석)에서 AI를 활용하여 작업 속도를 비약적으로 높이고 디자이너의 전략적 역량을 극대화하는 실무 방법론입니다.
 

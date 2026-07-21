@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - programming
-  - design-patterns
-  - software-engineering
-aliases: [디자인 패턴 의사결정 트리]
+- programming
+- design-patterns
+- software-engineering
+aliases:
+- 디자인 패턴 의사결정 트리
 sources:
-  - raw/Stop Memorizing Design Patterns. Use This Decision Tree Instead.md
+- raw/Stop Memorizing Design Patterns. Use This Decision Tree Instead.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 디자인 패턴을 무작정 암기하는 대신, 코드의 병목 지점(생성, 구조, 행동)을 파악하여 알맞은 해결책을 선택하는 의사결정 트리 기반의 실무 설계 가이드입니다.
 

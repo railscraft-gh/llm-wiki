@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - design-system
-  - figma
+- design-system
+- figma
 aliases:
-  - Figma 컴포넌트 구조
-  - Figma Component Architecture
+- Figma 컴포넌트 구조
+- Figma Component Architecture
+- Figma-컴포넌트-아키텍처
 sources:
-  - "raw/10 Figma Component Structures Used by the World’s Best Design Teams.md"
+- raw/10 Figma Component Structures Used by the World’s Best Design Teams.md
 created: 2026-07-18
 updated: 2026-07-18
 ---

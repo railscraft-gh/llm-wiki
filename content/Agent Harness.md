@@ -1,106 +1,106 @@
 ---
 aliases:
-  - 에이전트 하네스
+- 에이전트 하네스
+- Agent-Harness
 core: true
 created: 2026-05-26
 sources:
-  - 프로덕션 AI 에이전트를 위한 Agent Harness 구축
-  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
-  - 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
-  - 아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기
-  - 2026년의 AI 에이전트 실전 가이드
-  - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
-  - raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
-  - raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
-  - raw/What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness.md
-  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-  - raw/im-not-ai.md
-  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-  - raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
-  - raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
-  - raw/AI 겨울이 시작됐다-ko.md
-  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
-  - raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
-  - raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
-  - raw/frontend-design-skill.md
-  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-  - raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
-  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-  - raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
-  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-  - raw/The Best Way to Make AI Write Like You-ko.md
-  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-  - raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
-  - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
-  - raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
-  - raw/Building an MCP Ecosystem at Pinterest-ko.md
-  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
-  - raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
-  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-  - raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
-  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-  - raw/cc101_axwith_ko.html
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - raw/AI Agents. Complete Course.md
-  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-  - raw/Why senior UX designers are struggling in 2026-ko.md
-  - raw/10 Things Every Investor Should Know (but most learn too late).md
-  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-  - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
-  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-  - raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
-  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-  - raw/gajae-code_AI_코딩_하네스_분석.md
-  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-  - raw/Skills Alone Won’t Save You in the AI Economy.md
-  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-  - raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
-  - raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
-  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-  - raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
-  - raw/How to Do Hard Things When You Have Zero Motivation.md
-  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
-  - raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
-  - raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
-  - raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
-  - raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
-  - raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
-  - raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
-  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-  - raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
-  - raw/2026년의 AI 에이전트 실전 가이드-ko.md
-  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
-  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-  - raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
-  - raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
-  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- 프로덕션 AI 에이전트를 위한 Agent Harness 구축
+- 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+- 하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬
+- 아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기
+- 2026년의 AI 에이전트 실전 가이드
+- Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
+- raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
+- raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
+- raw/What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness.md
+- raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
+- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+- raw/im-not-ai.md
+- raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
+- raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md
+- raw/AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법.md
+- raw/AI 겨울이 시작됐다-ko.md
+- raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
+- raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
+- raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko.md
+- raw/프로덕션 AI 에이전트를 위한 Agent Harness 구축.md
+- raw/frontend-design-skill.md
+- raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
+- raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md
+- raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
+- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+- raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
+- raw/99%의 사람보다 더 나은 Harness Engineer를 만드는 법.md
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/The Best Way to Make AI Write Like You-ko.md
+- raw/These 3 ETFs Created More Millionaires Than Any Stock.md
+- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+- raw/AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko.md
+- raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
+- raw/16GB Mac mini에서 Qwen 3.5 122B LLM 실행하기 - TurboQuant-MLX를 활용한 MoE 전문가 스트리밍.md
+- raw/Building an MCP Ecosystem at Pinterest-ko.md
+- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+- raw/5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정).md
+- raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
+- raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md
+- raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
+- raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
+- raw/cc101_axwith_ko.html
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/AI Agents. Complete Course.md
+- raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
+- raw/Why senior UX designers are struggling in 2026-ko.md
+- raw/10 Things Every Investor Should Know (but most learn too late).md
+- raw/Claude Code 프로젝트를 위한 MEMORY.md.md
+- raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
+- raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+- raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
+- raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md
+- raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
+- raw/gajae-code_AI_코딩_하네스_분석.md
+- raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
+- raw/Skills Alone Won’t Save You in the AI Economy.md
+- raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
+- raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
+- raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max
+- raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
+- raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
+- raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md
+- raw/How to Do Hard Things When You Have Zero Motivation.md
+- raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
+- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+- raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md
+- raw/Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻.md
+- raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open
+- raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md
+- raw/I Sat in Engineering Meetings for Two Years Without Understanding What a Branch
+- raw/Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko.md
+- raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
+- raw/Hermes, OpenClaw, ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리.md
+- raw/2026년의 AI 에이전트 실전 가이드-ko.md
+- raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
+- raw/Your Wandering Mind Is Not the Enemy of Focus.md
+- raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
+- raw/거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko.md
+- raw/AI Agent Best Practices. Production-Ready Harness Engineering (2026 Guide)-ko.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - harness-engineering
-  - orchestration
+- llm
+- agent
+- harness-engineering
+- orchestration
 type: concept
 updated: 2026-07-10
 ---
-
 # Agent Harness
 
 ## 한 줄 정의

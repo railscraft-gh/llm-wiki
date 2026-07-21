@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - uiux
-  - career
-  - labor
+- llm
+- uiux
+- career
+- labor
 aliases:
-  - Four-for-One
-  - 직무 압축 현상
+- Four-for-One
+- 직무 압축 현상
+- Four-for-One-현상
 sources:
-  - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
+- raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - harness
-  - architecture
+- llm
+- agent
+- harness
+- architecture
 aliases:
-  - Context Compaction Strategies
-  - 반응형 대 선제형 Compaction
+- Context Compaction Strategies
+- 반응형 대 선제형 Compaction
+- Compaction-전략
 sources:
-  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

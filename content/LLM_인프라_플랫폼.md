@@ -3,16 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - infra
+- llm
+- infra
 aliases:
-  - 오픈소스 LLM 플랫폼
+- 오픈소스 LLM 플랫폼
 sources:
-  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
+- raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 2026년 기준, 오픈소스 LLM을 로컬이나 클라우드에서 비용 효율적으로 구동하기 위한 플랫폼별 특징과 실무적 선택 기준 가이드.
 

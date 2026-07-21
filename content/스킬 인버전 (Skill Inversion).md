@@ -3,19 +3,19 @@ type: concept
 status: evergreen
 core: false
 tags:
-  - llm
-  - career
-  - workflow
+- llm
+- career
+- workflow
 aliases:
-  - 스킬 인버전
-  - 기술 역전
-  - Skill Inversion
+- 스킬 인버전
+- 기술 역전
+- Skill Inversion
+- 스킬-인버전-(Skill-Inversion)
 sources:
-  - raw/How designers need to change for an AI-powered world.md
+- raw/How designers need to change for an AI-powered world.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # 스킬 인버전 (Skill Inversion)
 
 ## 한 줄 정의

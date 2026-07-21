@@ -2,6 +2,7 @@
 aliases:
 - API Key 보안
 - Secret 관리 원칙
+- API-Key-관리-원칙
 core: true
 created: 2026-05-07
 sources:
@@ -18,7 +19,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # API Key 관리 원칙 (API Key Management Principles)
 
 ## 한 줄 정의

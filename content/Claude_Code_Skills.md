@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - claude
-  - productivity
-  - tooling
-  - automation
-aliases: [Claude Code 스킬]
+- claude
+- productivity
+- tooling
+- automation
+aliases:
+- Claude Code 스킬
 sources:
-  - raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md
+- raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Claude Code의 기능을 특정 작업(슬라이드 제작, 데이터 정제, 비디오 생성, 프로젝트 관리 등)에 최적화하여 결과물의 품질을 높이는 재사용 가능한 지시사항 모음입니다.
 

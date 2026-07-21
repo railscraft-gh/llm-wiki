@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: true
 tags:
-  - figma
-  - design-system
-  - workflow
-  - ux-ui
-aliases: [피그마 컴포넌트 구조]
+- figma
+- design-system
+- workflow
+- ux-ui
+aliases:
+- 피그마 컴포넌트 구조
 sources:
-  - raw/10 Figma Component Structures Used by the World’s Best Design Teams.md
+- raw/10 Figma Component Structures Used by the World’s Best Design Teams.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Stripe, Linear, Notion 등 세계적인 디자인 팀들이 사용하는 [[Figma 컴포넌트 아키텍처]] 원칙으로, 디자인 시스템의 일관성, 확장성, 개발자 협업 효율을 극대화하는 10가지 설계 표준입니다.
 

@@ -3,18 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - apple-silicon
-  - memory-optimization
-  - kv-cache
-  - turboquant
-aliases: [KV 캐시 압축, TurboQuant]
+- llm
+- apple-silicon
+- memory-optimization
+- kv-cache
+- turboquant
+aliases:
+- KV 캐시 압축
+- TurboQuant
 sources:
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 구글 리서치가 개발한 KV 캐시 압축 알고리즘으로, 애플 실리콘 맥 환경에서 재학습 없이 KV 캐시 메모리 사용량을 4~6배 절감하여 대규모 모델과 긴 컨텍스트 처리를 가능하게 하는 기술입니다.
 

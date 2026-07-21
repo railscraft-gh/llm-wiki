@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - hallucination
-  - evaluation
+- llm
+- hallucination
+- evaluation
 aliases:
-  - Extrinsic Hallucinations in LLMs
+- Extrinsic Hallucinations in LLMs
+- LLM-외부-환각-탐지-및-완화-메커니즘
 sources:
-  - raw/Extrinsic Hallucinations in LLMs.md
+- raw/Extrinsic Hallucinations in LLMs.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

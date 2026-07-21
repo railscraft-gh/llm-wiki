@@ -1,32 +1,32 @@
 ---
 aliases:
-  - 에이전틱 AI 엔지니어 로드맵
-  - 에이전틱 AI 엔지니어 10대 기술
+- 에이전틱 AI 엔지니어 로드맵
+- 에이전틱 AI 엔지니어 10대 기술
+- 에이전틱-AI-엔지니어-실무-로드맵
 core: true
 created: 2026-06-16
 sources:
-  - raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
-  - raw/I will never walk into a backend interview without solving these 20 questions..md
-  - raw/Most Developers Are Solving the Wrong Problem.md
-  - raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
-  - raw/How top companies are using AI in their design workflows.md
-  - raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
-  - raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
-  - raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
-  - raw/Design’s craft crisis. senior designers built it.md
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
-  - raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
-  - raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md
+- raw/The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order.md
+- raw/I will never walk into a backend interview without solving these 20 questions..md
+- raw/Most Developers Are Solving the Wrong Problem.md
+- raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md
+- raw/How top companies are using AI in their design workflows.md
+- raw/The Signs of a Pseudo-Smart Person Are Easy To Spot.md
+- raw/My Complete Productivity Stack in 2026. Every Tool I Actually Use, What I Pay,
+- raw/The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google.md
+- raw/Design’s craft crisis. senior designers built it.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/1 Aviation Rule That Will Instantly Improve Your Focus.md
+- raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md
 status: evergreen
 tags:
-  - ai-agent
-  - roadmap
-  - software-engineering
-  - engineering-stack
+- ai-agent
+- roadmap
+- software-engineering
+- engineering-stack
 type: concept
 updated: 2026-07-10
 ---
-
 # [[에이전틱 AI 엔지니어]] 실무 로드맵 (Agentic AI Engineer Practical Roadmap)
 
 ## 한 줄 정의

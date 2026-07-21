@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - system-architecture
-  - caching
-  - database
+- system-architecture
+- caching
+- database
 aliases:
-  - 원자적 캐시 교체 패턴
+- 원자적 캐시 교체 패턴
+- 외부-API-캐시-원자적-교체-패턴
 sources:
-  - raw/korean-public-holiday-feature-guide.md
+- raw/korean-public-holiday-feature-guide.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

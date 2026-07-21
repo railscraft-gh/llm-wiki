@@ -3,14 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - agent
-  - feedback-loop
+- agent
+- feedback-loop
 sources:
-  - "raw/Loop Engineering Is NOT What Everybody Thinks It Is.md"
+- raw/Loop Engineering Is NOT What Everybody Thinks It Is.md
 created: 2026-07-20
 updated: 2026-07-20
+aliases:
+- 피드백-제어기-(Feedback-Controller)
 ---
-
 # [[피드백 제어기]] (Feedback Controller)
 
 ## 한 줄 정의

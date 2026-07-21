@@ -3,17 +3,16 @@ type: tool
 status: draft
 core: false
 tags:
-  - llm
-  - agent
-  - context-engineering
+- llm
+- agent
+- context-engineering
 aliases:
-  - 헤드룸
+- 헤드룸
 sources:
-  - "raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md"
+- raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md
 created: 2026-07-18
 updated: 2026-07-18
 ---
-
 # Headroom
 
 ## 한 줄 정의

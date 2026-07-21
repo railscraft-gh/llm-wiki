@@ -2,15 +2,16 @@
 core: false
 created: 2026-06-22
 sources:
-  - raw/사용성을 극대화하는 사이드바 UI UX 디자인 모범 사례.md
+- raw/사용성을 극대화하는 사이드바 UI UX 디자인 모범 사례.md
 status: evergreen
 tags:
-  - ui-ux
-  - design
+- ui-ux
+- design
 type: concept
 updated: 2026-07-10
+aliases:
+- 사이드바-UI-UX-디자인-모범사례
 ---
-
 # 사이드바 UI UX 디자인 모범사례
 
 ## 한 줄 정의

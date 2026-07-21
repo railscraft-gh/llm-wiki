@@ -3,14 +3,15 @@ type: concept
 status: draft
 core: false
 tags:
-  - design-system
-  - ui-ux
-  - saas
+- design-system
+- ui-ux
+- saas
 aliases:
-  - SaaS UI 패턴
-  - SaaS UI Patterns
+- SaaS UI 패턴
+- SaaS UI Patterns
+- SaaS-UI-패턴-모범-사례
 sources:
-  - "raw/12 UI Patterns Designers Copy From Top SaaS Products.md"
+- raw/12 UI Patterns Designers Copy From Top SaaS Products.md
 created: 2026-07-18
 updated: 2026-07-18
 ---

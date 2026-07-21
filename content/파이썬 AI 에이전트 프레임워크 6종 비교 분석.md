@@ -2,6 +2,7 @@
 aliases:
 - AI 에이전트 프레임워크 비교
 - LangGraph vs CrewAI vs PydanticAI
+- 파이썬-AI-에이전트-프레임워크-6종-비교-분석
 core: false
 created: 2026-06-10
 sources:
@@ -34,7 +35,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # 파이썬 AI 에이전트 프레임워크 6종 비교 분석
 
 ## 한 줄 정의

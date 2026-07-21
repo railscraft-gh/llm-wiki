@@ -3,15 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai
-  - industry
+- ai
+- industry
 aliases: []
 sources:
-  - raw/AI 겨울이 시작됐다-ko.md
+- raw/AI 겨울이 시작됐다-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 기술의 과도한 기대와 실질적 프로덕션 도달률의 괴리로 인해 발생하는 냉각기를 의미합니다.
 

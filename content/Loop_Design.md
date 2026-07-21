@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: true
 tags:
-  - agentic-ai
-  - loop-engineering
-  - harness-engineering
-aliases: [루프 디자인, Swarm Loop]
+- agentic-ai
+- loop-engineering
+- harness-engineering
+aliases:
+- 루프 디자인
+- Swarm Loop
 sources:
-  - raw/0xMorty_Loop_Design.md
+- raw/0xMorty_Loop_Design.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 AI 코딩 에이전트가 자율적으로 작업을 수행할 수 있도록 전략적으로 설계된 피드백 및 작업 반복 루프 구조입니다.
 

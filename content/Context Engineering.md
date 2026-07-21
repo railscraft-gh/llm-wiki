@@ -1,28 +1,28 @@
 ---
 aliases:
-  - 컨텍스트 엔지니어링
+- 컨텍스트 엔지니어링
+- Context-Engineering
 core: true
 created: 2026-05-26
 sources:
-  - AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다
-  - raw/cc101_axwith_ko.html
-  - raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
-  - raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
-  - raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
-  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
-  - raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
-  - raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
-  - raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
+- AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다
+- raw/cc101_axwith_ko.html
+- raw/하네스를 내 것으로 만들기 - 출판형 다듬기.md
+- raw/AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 Context Engineering이다.md
+- raw/Skills, MCP, Tool Calling. 에이전트 확장의 세 층.md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/Structuring Agents, Skills, and MCPs 🤖🧩.md
+- raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md
+- raw/아이디어에서 현실 시스템까지 AI 에이전트 구축하기 - 출판형 다듬기.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - context-window
-  - harness-engineering
+- llm
+- agent
+- context-window
+- harness-engineering
 type: concept
 updated: 2026-07-10
 ---
-
 # Context Engineering
 
 ## 한 줄 정의

@@ -3,15 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - uiux
-  - conversion
-  - SaaS
+- llm
+- uiux
+- conversion
+- SaaS
 aliases:
-  - Single Primary CTA Rule
-  - 단일 primary CTA 법칙
+- Single Primary CTA Rule
+- 단일 primary CTA 법칙
+- 단일-primary-CTA-법칙
 sources:
-  - raw/6 Landing Page Mistakes that Kills Signups.md
+- raw/6 Landing Page Mistakes that Kills Signups.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

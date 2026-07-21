@@ -1,27 +1,27 @@
 ---
 aliases:
-  - Boris Loop
-  - Claude Routines
-  - 클라우드 루프
+- Boris Loop
+- Claude Routines
+- 클라우드 루프
+- Loop와-Routines
 core: false
 created: 2026-05-16
 sources:
-  - anthropic-boris-cherny-interview
-  - raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
-  - raw/강화학습-RL-초보자-가이드.md
-  - raw/anthropic-boris-cherny-interview.md
-  - raw/evolution-of-ai-agentic-patterns.md
-  - raw/sequoia-ascent-2026-karpathy-ko.md
+- anthropic-boris-cherny-interview
+- raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md
+- raw/강화학습-RL-초보자-가이드.md
+- raw/anthropic-boris-cherny-interview.md
+- raw/evolution-of-ai-agentic-patterns.md
+- raw/sequoia-ascent-2026-karpathy-ko.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - workflow
-  - automation
+- llm
+- agent
+- workflow
+- automation
 type: workflow
 updated: 2026-07-10
 ---
-
 # Loop와 Routines
 
 ## 한 줄 정의

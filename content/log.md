@@ -3,12 +3,12 @@ type: concept
 status: evergreen
 core: false
 tags:
-  - log
+- log
 sources: []
 created: 2026-05-06
 updated: 2026-07-16
+aliases: []
 ---
-
 # LLM Wiki Log
 
 ## 2026-07-21

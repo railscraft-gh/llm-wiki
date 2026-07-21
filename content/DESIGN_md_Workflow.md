@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - design-system
-  - ai-agent
-  - workflow
-  - ux-ui
-aliases: [DESIGN.md]
+- design-system
+- ai-agent
+- workflow
+- ux-ui
+aliases:
+- DESIGN.md
 sources:
-  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 `DESIGN.md`는 디자인 시스템 명세(색상, 서체, 컴포넌트 등)를 마크다운 파일로 관리하여, AI 에이전트(Stitch, Claude Code 등)가 일관된 UI를 구현하도록 돕는 차세대 디자인-코드 핸드오프 워크플로우입니다.
 

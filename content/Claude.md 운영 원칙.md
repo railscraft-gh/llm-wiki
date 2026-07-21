@@ -1,40 +1,40 @@
 ---
 aliases:
-  - CLAUDE.md
-  - Claude.md
-  - AGENTS.md
+- CLAUDE.md
+- Claude.md
+- AGENTS.md
+- Claude.md-운영-원칙
 core: true
 created: 2026-05-06
 sources:
-  - Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
-  - 보리스_클로드코드_실무_사용법
-  - Claude-Code-실무활용법-보리스-관점-정리
-  - AI로_만든_제품이_안_팔리는_이유
-  - opencode-masterclass-summary
-  - pi-coding-agent-overview
-  - cc101_axwith_ko
-  - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
-  - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
-  - andrej-karpathy-skills-CLAUDE-번역
-  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-  - Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
-  - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
-  - CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
-  - AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
-  - Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
-  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - 'https://opencode.ai/docs/rules/'
-  - 'https://pi.dev/docs/latest/usage'
+- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- 보리스_클로드코드_실무_사용법
+- Claude-Code-실무활용법-보리스-관점-정리
+- AI로_만든_제품이_안_팔리는_이유
+- opencode-masterclass-summary
+- pi-coding-agent-overview
+- cc101_axwith_ko
+- 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
+- Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
+- andrej-karpathy-skills-CLAUDE-번역
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
+- 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
+- CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다
+- AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법
+- Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트
+- raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- https://opencode.ai/docs/rules/
+- https://pi.dev/docs/latest/usage
 status: evergreen
 tags:
-  - llm
-  - agent
-  - claude-code
+- llm
+- agent
+- claude-code
 type: workflow
 updated: 2026-07-18
 ---
-
 # Claude.md 운영 원칙
 
 ## 한 줄 정의

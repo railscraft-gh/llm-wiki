@@ -3,6 +3,7 @@ aliases:
 - Plan Mode
 - 플랜 모드
 - OpenCode Plan agent
+- Plan-Mode-기반-AI-작업
 core: true
 created: 2026-05-06
 sources:
@@ -39,7 +40,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # Plan Mode 기반 AI 작업
 
 ## 한 줄 정의

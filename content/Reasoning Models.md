@@ -4,6 +4,7 @@ aliases:
 - Reasoning LLM
 - o1
 - DeepSeek-R1
+- Reasoning-Models
 core: false
 created: 2026-05-16
 sources:
@@ -23,7 +24,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Reasoning Models
 
 ## 한 줄 정의

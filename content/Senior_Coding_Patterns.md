@@ -3,17 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - coding-patterns
-  - software-engineering
-  - best-practices
-  - senior-engineer
-aliases: [클린 코드, 코딩 패턴]
+- coding-patterns
+- software-engineering
+- best-practices
+- senior-engineer
+aliases:
+- 클린 코드
+- 코딩 패턴
 sources:
-  - raw/7 Coding Patterns I Stole From Senior Engineers.md
+- raw/7 Coding Patterns I Stole From Senior Engineers.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 시니어 엔지니어들이 사용하는 실무 코딩 패턴 7가지를 통해, 코드의 가독성을 높이고 운영 환경에서의 유지보수와 디버깅 효율을 극대화하는 엔지니어링 사고방식입니다.
 

@@ -2,6 +2,7 @@
 aliases:
 - 재기드 인텔리전스
 - 들쭉날쭉한 지능
+- Jagged-Intelligence
 core: true
 created: 2026-05-06
 sources:
@@ -22,7 +23,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Jagged Intelligence
 
 ## 한 줄 정의

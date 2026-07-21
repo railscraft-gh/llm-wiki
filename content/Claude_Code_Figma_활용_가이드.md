@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai
-  - figma
-  - design
+- ai
+- figma
+- design
 aliases:
-  - Claude Code Figma
+- Claude Code Figma
 sources:
-  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
+- raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Claude Code와 Figma를 연동하여 디자인 생성, FigJam 브레인스토밍, 슬라이드 덱 구성 등을 자동화하는 에이전트 스킬 활용 가이드입니다.
 

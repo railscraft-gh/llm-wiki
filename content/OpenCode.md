@@ -1,29 +1,28 @@
 ---
 aliases:
-  - OpenCode CLI
+- OpenCode CLI
 core: false
 created: 2026-05-08
 sources:
-  - opencode-masterclass-summary
-  - 'https://opencode.ai/docs/agents/'
-  - 'https://opencode.ai/docs/rules/'
-  - 'https://opencode.ai/docs/skills/'
-  - 'https://opencode.ai/docs/models/'
-  - 'https://opencode.ai/docs/config/'
-  - raw/pi-coding-agent-overview.md
-  - raw/opencode-masterclass-summary.md
-  - raw/Quartz-GitHub-Pages-Complete-Guide.md
-  - raw/Infisical_SSH_헤드리스_인증_가이드.md
-  - raw/Quartz-Deploy-Guide.md
+- opencode-masterclass-summary
+- https://opencode.ai/docs/agents/
+- https://opencode.ai/docs/rules/
+- https://opencode.ai/docs/skills/
+- https://opencode.ai/docs/models/
+- https://opencode.ai/docs/config/
+- raw/pi-coding-agent-overview.md
+- raw/opencode-masterclass-summary.md
+- raw/Quartz-GitHub-Pages-Complete-Guide.md
+- raw/Infisical_SSH_헤드리스_인증_가이드.md
+- raw/Quartz-Deploy-Guide.md
 status: needs-review
 tags:
-  - llm
-  - agent
-  - ai-coding
+- llm
+- agent
+- ai-coding
 type: tool
 updated: 2026-07-10
 ---
-
 # OpenCode
 
 ## 한 줄 정의

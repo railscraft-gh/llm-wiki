@@ -3,17 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - apple-silicon
-  - local-ai
-  - mlx
-  - ollama
-aliases: [애플 실리콘 로컬 AI 스택]
+- apple-silicon
+- local-ai
+- mlx
+- ollama
+aliases:
+- 애플 실리콘 로컬 AI 스택
 sources:
-  - raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md
+- raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Apple Silicon(M1~M5) 환경에서 로컬 LLM 및 생성형 AI 모델을 최적으로 구동하기 위한 기술 스택 및 배포 아키텍처 가이드입니다.
 

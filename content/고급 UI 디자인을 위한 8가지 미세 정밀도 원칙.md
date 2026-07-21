@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - ui-design
-  - visual-hierarchy
-  - user-experience
+- ui-design
+- visual-hierarchy
+- user-experience
 aliases:
-  - 8 Tiny UI Fixes
+- 8 Tiny UI Fixes
+- 고급-UI-디자인을-위한-8가지-미세-정밀도-원칙
 sources:
-  - raw/8 Tiny UI Fixes Most Designers Ignore.md
+- raw/8 Tiny UI Fixes Most Designers Ignore.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

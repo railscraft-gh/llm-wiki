@@ -1,14 +1,15 @@
 ---
-aliases: []
+aliases:
+- 엔터프라이즈-지식-그래프-(Enterprise-Knowledge-Graph)
 core: false
 created: 2026-07-10
 sources:
-  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
 status: evergreen
 tags:
-  - data-engineering
-  - llm
-  - knowledge-graph
+- data-engineering
+- llm
+- knowledge-graph
 type: concept
 updated: 2026-07-10
 ---

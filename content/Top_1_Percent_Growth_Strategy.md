@@ -3,16 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - productivity
-  - self-development
-  - mindset
-aliases: [상위 1% 성장 전략]
+- productivity
+- self-development
+- mindset
+aliases:
+- 상위 1% 성장 전략
 sources:
-  - raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
+- raw/How to Get Into the Top 1% in the Next 12 Months-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 결과가 아닌 정체성 변화에 집중하여 12개월 동안 꾸준한 습관을 통해 상위 1%의 성취를 달성하는 전략입니다.
 

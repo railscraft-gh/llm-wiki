@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai-infrastructure
-  - GPU
-  - C-language
+- ai-infrastructure
+- GPU
+- C-language
 aliases:
-  - SpaceX Pure C AI Infrastructure
+- SpaceX Pure C AI Infrastructure
+- SpaceX의-순수-C-언어-기반-22만-대-GPU-AI-인프라-전략
 sources:
-  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
+- raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

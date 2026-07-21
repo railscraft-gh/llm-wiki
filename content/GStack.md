@@ -3,20 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - gstack
-  - claude-code
-  - multi-agent
-  - dev-tools
-  - garry-tan
+- gstack
+- claude-code
+- multi-agent
+- dev-tools
+- garry-tan
 aliases:
-  - GStack
-  - garrytan/gstack
+- GStack
+- garrytan/gstack
 sources:
-  - raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
+- raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # GStack
 
 ## 한 줄 정의

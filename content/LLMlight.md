@@ -3,17 +3,16 @@ type: tool
 status: draft
 core: false
 tags:
-  - llm
-  - python
-  - framework
-  - local-llm
+- llm
+- python
+- framework
+- local-llm
 aliases: []
 sources:
-  - raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md
+- raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md
 created: 2026-06-22
 updated: 2026-06-22
 ---
-
 # LLMlight
 
 ## 한 줄 정의

@@ -3,6 +3,7 @@ aliases:
 - Prompt to Context to Harness
 - 프롬프트-컨텍스트-하네스 진화
 - Agentic Patterns Evolution
+- Agentic-패턴-진화
 core: true
 created: 2026-05-16
 sources:
@@ -25,7 +26,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Agentic 패턴 진화
 
 ## 한 줄 정의

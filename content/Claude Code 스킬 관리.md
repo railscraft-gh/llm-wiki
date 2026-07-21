@@ -3,44 +3,44 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - claude-code
-  - agent
+- llm
+- claude-code
+- agent
 aliases:
-  - Claude Code 스킬
-  - 클로드 코드 스킬 관리
+- Claude Code 스킬
+- 클로드 코드 스킬 관리
+- Claude-Code-스킬-관리
 sources:
-  - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
-  - raw/보리스_클로드코드_실무_사용법.md
-  - raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
-  - raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
-  - raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
-  - raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
-  - raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
-  - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
-  - raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
-  - raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
-  - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
-  - raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
-  - 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
-  - raw/How to write a DESIGN.md file Claude can actually use-ko.md
-  - raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
-  - raw/우리가 피그마 없이 제품을 배포하는 방법.md
-  - raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
-  - raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
-  - raw/Cursor에서 Superpowers 플러그인 쓰는 법 — 상세 정리-ko.md
-  - raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
-  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-  - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
-  - raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md
+- raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
+- raw/보리스_클로드코드_실무_사용법.md
+- raw/노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기.md
+- raw/지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다.md
+- raw/지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #5. 계층형 자체 관리 메모리.md'
+- 'raw/밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md'
+- raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md
+- raw/AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기.md
+- raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
+- raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md
+- raw/AI 개발자가 반드시 알아야 할 9가지 RAG 아키텍처 - 실무 예제로 배우는 완전 가이드.md
+- raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
+- raw/1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법.md
+- 'raw/애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드.md'
+- raw/How to write a DESIGN.md file Claude can actually use-ko.md
+- raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md'
+- raw/우리가 피그마 없이 제품을 배포하는 방법.md
+- raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md
+- raw/DESIGN.md 워크플로우. Google Stitch와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko.md
+- raw/Cursor에서 Superpowers 플러그인 쓰는 법 — 상세 정리-ko.md
+- raw/모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션.md
+- raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
+- 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
+- raw/100개 이상의 Claude Code 스킬 중 가장 유용한 베스트 추천 목록.md
 created: 2026-06-14
 updated: 2026-06-22
 ---
-
 # Claude Code 스킬 관리
 
 ## 한 줄 정의

@@ -3,19 +3,19 @@ type: concept
 status: draft
 core: false
 tags:
-  - ui
-  - ux
-  - saas
-  - design-system
+- ui
+- ux
+- saas
+- design-system
 aliases:
-  - SaaS UI Patterns
-  - 12가지 SaaS UI 패턴
+- SaaS UI Patterns
+- 12가지 SaaS UI 패턴
+- SaaS-UI-UX-패턴-12가지
 sources:
-  - raw/12 UI Patterns Designers Copy From Top SaaS Products.md
+- raw/12 UI Patterns Designers Copy From Top SaaS Products.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # SaaS UI UX 패턴 12가지
 
 ## 한 줄 정의

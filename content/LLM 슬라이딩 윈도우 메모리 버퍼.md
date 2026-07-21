@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - memory
-  - context-window
+- llm
+- memory
+- context-window
 aliases:
-  - Sliding Window Buffer
+- Sliding Window Buffer
+- LLM-슬라이딩-윈도우-메모리-버퍼
 sources:
-  - raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md
+- raw/밑바닥부터 만드는 LLM 메모리
 created: 2026-07-21
 updated: 2026-07-21
 ---

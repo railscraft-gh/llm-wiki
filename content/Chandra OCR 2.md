@@ -3,16 +3,17 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - ocr
-  - open-source
-  - vision
+- llm
+- ocr
+- open-source
+- vision
 aliases:
-  - Chandra OCR 2
-  - Datalab Chandra
-  - Full-page decoding OCR
+- Chandra OCR 2
+- Datalab Chandra
+- Full-page decoding OCR
+- Chandra-OCR-2
 sources:
-  - raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md
+- raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md
 created: 2026-07-21
 updated: 2026-07-21
 ---

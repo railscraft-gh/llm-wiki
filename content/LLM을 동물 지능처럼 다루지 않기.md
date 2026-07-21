@@ -2,6 +2,7 @@
 aliases:
 - LLM은 동물 지능이 아니다
 - Ghost metaphor
+- LLM을-동물-지능처럼-다루지-않기
 core: false
 created: 2026-05-06
 sources:
@@ -25,7 +26,6 @@ tags:
 type: claim
 updated: '2026-06-22'
 ---
-
 # LLM을 동물 지능처럼 다루지 않기
 
 ## 한 줄 정의

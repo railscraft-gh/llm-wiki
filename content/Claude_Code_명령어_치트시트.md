@@ -3,17 +3,16 @@ type: concept
 status: draft
 core: false
 tags:
-  - ai
-  - tools
-  - productivity
+- ai
+- tools
+- productivity
 aliases:
-  - Claude Code 명령어
+- Claude Code 명령어
 sources:
-  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기.md
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Claude Code 활용 생산성을 극대화하기 위한 14가지 필수 명령어 생태계 및 워크플로우 가이드입니다.
 

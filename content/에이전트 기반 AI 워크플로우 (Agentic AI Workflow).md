@@ -3,18 +3,18 @@ type: concept
 status: draft
 core: false
 tags:
-  - llm
-  - agentic
+- llm
+- agentic
 aliases:
-  - 에이전트 기반 AI 워크플로우
-  - Agentic AI Workflow
-  - 에이전틱 워크플로우
+- 에이전트 기반 AI 워크플로우
+- Agentic AI Workflow
+- 에이전틱 워크플로우
+- 에이전트-기반-AI-워크플로우-(Agentic-AI-Workflow)
 sources:
-  - "raw/The 5-Minute Guide to Agentic AI Workflow.md"
+- raw/The 5-Minute Guide to Agentic AI Workflow.md
 created: 2026-07-11
 updated: 2026-07-11
 ---
-
 # 에이전트 기반 AI 워크플로우 (Agentic AI Workflow)
 
 ## 한 줄 정의

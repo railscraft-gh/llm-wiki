@@ -1,23 +1,23 @@
 ---
 aliases:
-  - Claude Code 명령어 운영
-  - Claude Code power user commands
+- Claude Code 명령어 운영
+- Claude Code power user commands
+- Claude-Code-세션-운영-명령어
 core: false
 created: 2026-05-24
 sources:
-  - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-  - raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
-  - raw/cc101_axwith_ko.md
+- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- raw/Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어.md
+- raw/cc101_axwith_ko.md
 status: evergreen
 tags:
-  - llm
-  - claude-code
-  - workflow
-  - commands
+- llm
+- claude-code
+- workflow
+- commands
 type: workflow
 updated: 2026-07-10
 ---
-
 # Claude Code 세션 운영 명령어
 
 ## 한 줄 정의

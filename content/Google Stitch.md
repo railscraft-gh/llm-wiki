@@ -3,15 +3,15 @@ type: tool
 status: draft
 core: false
 tags:
-  - design
+- design
 aliases:
-  - 구글 스티치
+- 구글 스티치
+- Google-Stitch
 sources:
-  - raw/AI와 디자인 시스템 - 출판형 다듬기.md
+- raw/AI와 디자인 시스템 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Google Stitch는 웹 및 제품 프로토타이핑 단계를 가속화하기 위해 사용자의 프롬프트 지시에 따라 실시간 변경이 가능한 시각적 스타일 템플릿(임시 디자인 시스템)을 자동 생성하는 AI 디자인 도구이다.
 

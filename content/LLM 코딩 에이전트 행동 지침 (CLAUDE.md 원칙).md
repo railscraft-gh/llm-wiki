@@ -3,13 +3,14 @@ type: concept
 status: draft
 core: false
 tags:
-  - coding-agent
-  - prompt-engineering
-  - software-engineering
+- coding-agent
+- prompt-engineering
+- software-engineering
 aliases:
-  - Karpathy LLM Coding Guidelines
+- Karpathy LLM Coding Guidelines
+- LLM-코딩-에이전트-행동-지침-(CLAUDE.md-원칙)
 sources:
-  - raw/andrej-karpathy-skills-CLAUDE-번역.md
+- raw/andrej-karpathy-skills-CLAUDE-번역.md
 created: 2026-07-21
 updated: 2026-07-21
 ---

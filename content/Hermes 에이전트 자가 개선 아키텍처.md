@@ -1,16 +1,17 @@
 ---
-aliases: []
+aliases:
+- Hermes-에이전트-자가-개선-아키텍처
 core: false
 created: 2026-07-10
 sources:
-  - raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
+- raw/Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리.md
 status: evergreen
 tags:
-  - llm
-  - agent
-  - hermes-agent
-  - self-improvement
-  - architecture
+- llm
+- agent
+- hermes-agent
+- self-improvement
+- architecture
 type: workflow
 updated: 2026-07-10
 ---
