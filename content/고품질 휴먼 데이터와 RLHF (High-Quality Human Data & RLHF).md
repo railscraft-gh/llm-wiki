@@ -1,12 +1,15 @@
 ---
 type: concept
-status: evergreen
+status: draft
 core: false
 tags:
   - llm
-  - data-quality
   - rlhf
-aliases: []
+  - data-engineering
+  - alignment
+aliases:
+  - 고품질 휴먼 데이터와 RLHF
+  - High-Quality Human Data
 sources:
   - raw/Thinking about High-Quality Human Data.md
 created: 2026-07-21
@@ -16,36 +19,31 @@ updated: 2026-07-21
 # 고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)
 
 ## 한 줄 정의
-최신 딥러닝 모델, 특히 LLM 정렬(alignment) 학습을 위한 RLHF의 핵심 연료인 고품질 사람 주석 데이터를 확보하고 정제하며, 학습 과정에서 노이즈를 걸러내는 방법론.
+LLM 정렬과 분류 파이프라인의 성패를 좌우하는 라벨 수집 운영 관리 및 모델 학습 동역학 기반 노이즈 데이터 정제 체계.
 
 ## 핵심 요지
-사람이 직접 라벨링하는 데이터는 태스크 설계와 평가자 관리가 필수적이며, 평가자 간 동의(Rater Agreement) 및 불일치를 다루는 철학에 따라 설명적(Descriptive)과 규범적(Prescriptive) 패러다임으로 나뉜다. 학습 과정에서는 모델의 동역학(Training dynamics)을 활용하여 노이즈가 낀 오답 라벨을 효과적으로 걸러낼 수 있다.
+- **군중의 지혜와 평가자 동의 지표**: 크라우드소싱 기반 주석 수집 시 다수결 투표, 코헨의 카파, MACE 확률 모델링 등을 사용하여 스패머를 무력화하고 가중 참값을 복원합니다.
+- **설명적 vs 규범적 패러다임**: 유해성이나 주관적 주제에 대해 오직 단 하나의 정답만을 강제(규범적)하기보다는 인구통계적 불일치를 인정하고 주관성을 수용하는 배심원 학습(Jury Learning) 및 멀티-어노테이터 모델의 중요성이 확대되었습니다.
+- **학습 동역학 기반 품질 정제**: 모델 학습 과정에서 영향 함수(Influence Functions), Data Maps(Confidence & Variability), AUM(Area under the Margin), 망각(Unforgettable) 지표, NCV(Noisy Cross-Validation) 기법을 활용하여 오답 라벨을 수식적·동역학적으로 필터링합니다.
 
 ## 상세
-데이터 품질을 높이는 접근 방식은 인간의 주석을 수집하는 단계와 수집된 데이터로 모델을 학습시키는 단계로 나눌 수 있다.
+딥러닝 및 LLM 정렬(RLHF) 단계에서 고품질 주석 수집은 정교한 데이터 운영 절차를 요합니다. 1907년 Galton의 [Vox populi 연구](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L23) 이후 크라우드소싱 데이터 집계는 다수결이나 카파 지표를 넘어 probabilistic graph model(Zheng et al. 2017의 [17가지 진실 추론 알고리즘 비교](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L41)) 등 머신러닝 기반 정제로 발전해 왔습니다.
 
-1. **휴먼 평가자 관리와 병합 기법**
-   - **다수결 투표(Majority Voting)**, **단순 동의율(Raw agreement)**, **코헨의 카파(Cohen's Kappa)** 등 기본적인 통계 지표가 존재한다.
-   - 더 정교한 방식으로 확률적 그래프 모델(MACE 등)을 활용해 "스패머"를 식별하고 정답을 추론한다.
+주관적 NLP 태스크에서는 불일치(Disagreement)가 단순 인적 오류인지 시각 차이인지 구별해야 합니다. Wang et al. (2023)의 안전성 평가 연구에 의하면 폭력·유혈 주제는 T&S 전문가와 일반 평가자 간 동의율이 [0.96](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)에 달했으나, 개인적 주제에서는 동의율이 [0.25](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)로 크게 벌어졌습니다. 이를 해결하기 위해 개별 작업자의 일관성을 묶는 Disagreement Deconvolution 및 인구통계적 특성을 조율하는 Jury Learning이 활용됩니다.
 
-2. **평가자 불일치 패러다임**
-   - 단일한 정답을 강요할 수 없는 주관적 영역에서는 다수의 해석을 인정하고 포용해야 한다. 
-   - **설명적(Descriptive) 패러다임**: 주관성을 권장하고 다양한 시각을 유지하지만, 품질 지표를 산출하기 까다롭다.
-   - **규범적(Prescriptive) 패러다임**: 주관성을 배제하고 하나의 신념을 따르도록 엄격히 통제한다. 관리가 수월하나 완벽한 가이드라인 구축은 현실적으로 불가능에 가깝다.
-
-3. **학습 모델 동역학을 이용한 품질 필터링**
-   - **영향 함수(Influence Functions)**: 특정 데이터를 뺐을 때 파라미터 변화량을 근사하여 해당 샘플의 영향력을 측정, 노이즈를 색출한다.
-   - **데이터 맵(Data Maps)**: 학습 중 모델의 자신감과 가변성을 추적하여 라벨이 틀렸을 확률이 높은 '학습하기 어려운(Hard-to-learn)' 구간을 필터링한다.
-   - **망각(Forget)과 AUM(Area under the Margin)**: 모델이 잊어버리는 샘플이나 일반화 압력에 역행하는 샘플들을 찾아내 노이즈 데이터를 잘라낸다.
+또한 라벨링 완료 후 모델의 학습 동역학(Training Dynamics)을 관측해 노이즈 라벨을 식별합니다. 의도적으로 라벨을 [1% 오염](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L84)시킬 경우 샘플들이 Data Maps의 저-자신감/고-가변성 구역으로 밀려납니다. AUM 기법은 할당 라벨 로짓과 2순위 로짓 간의 마진(margin) 텐션을 계산하고, 임계값 샘플의 상위 [99백분위수](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L93)를 기준으로 진짜 노이즈 라벨을 제거합니다.
 
 ## 예시
-- **배심원 학습(Jury Learning)**: 평가자들의 인구통계학적 특성 패턴을 학습하여 가상의 배심원단을 구성해 다각적인 판단을 취합하는 추천 시스템 기법.
-- 기계 번역에서 전문가와 다수의 비전문가(크라우드소싱)를 조합하여, 비전문가의 2단계 필터링 결과가 전문가 번역과 높은 상관관계를 보인 사례(Callison-Burch, 2009).
+- **Jury Learning 배심원 구성**: 텍스트 유해성 라벨링 시 LGBTQ, 아프리카계 미국인 등 특정 정체성 요소를 지닌 주석 작업자 집단을 배심원단으로 샘플링하여 DCN(Deep & Cross Network)으로 다각적 예측.
+- **AUM 기반 노이즈 정제**: 학습 도중 로짓 차이(Margin)가 지속적으로 음수인 샘플 중 임계값 상위 99백분위 기준 미달 샘플을 데이터셋에서 자동 삭제.
 
 ## 충돌
-단일 진실(Single Ground Truth)을 고집하는 기존의 라벨링 접근과 주관성을 온전히 인정해야 하는 안전·윤리 도메인 간의 가치관 충돌이 존재한다. 시스템 오류는 줄여야 하나, 타당한 불일치는 유용한 정보원으로 삼아야 한다.
+- **모든 불일치를 노이즈로 처리하는 우**: 단순 규범적(Prescriptive) 패러다임으로 라벨을 강제 병합할 경우 사회적·문화적 맥락과 다양성 정보가 손실됩니다.
+- **학습 난이도가 높은 샘플 제거의 역효과**: Data Maps에서 자신감과 가변성이 동시에 높은 애매한 샘플을 노이즈로 오인하여 지우면 분포 외 일반화(OOD generalization) 성능이 도리어 하락합니다.
 
 ## 관련 노트
 - [[LLM 정렬 기법]]
-- [[AI 코딩 에이전트 검증 전략]]
+- [[PPO와 정책 최적화]]
+- [[GRPO]]
+- [[Competence Debt]]
 
