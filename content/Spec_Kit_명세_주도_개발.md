@@ -34,6 +34,6 @@ AI 코딩 에이전트와 페어 프로그래밍할 때, 구현 전 정밀한 �
 단순 오류 수정이나 핫픽스 등 소규모 작업에는 설정 과정이 과도한 오버헤드가 될 수 있음 [raw/느낌 코딩의 시대는 끝났다 - GitHub [[Spec Kit]]과 명세 기반 개발.md#L185](file:///Users/railscraft/Obsidian/raw/%EB%8A%90%EB%82%8C%20%EC%BD%94%EB%93%9C%EC%9D%98%20%EC%8B%9C%EB%8C%80%EB%8A%94%20%EB%81%9D%EB%82%AC%EB%8B%A4%20-%20GitHub%20Spec%20Kit%EA%B3%BC%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C.md#L185).
 
 ## 관련 노트
-- [[CLAUDE_md_가이드라인]]
+- [[CLAUDE.md 가이드]]
 - [[Ralph_Loop_워크플로우]]
 

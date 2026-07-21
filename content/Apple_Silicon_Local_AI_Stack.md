@@ -32,5 +32,5 @@ Apple Silicon 환경에서는 더 이상 클라우드 API에 의존할 필요가
 
 ## 관련 노트
 - [[에이전틱 AI 엔지니어 실무 로드맵]]
-- [[Hermes_Agent]]
+- [[Hermes Agent]]
 

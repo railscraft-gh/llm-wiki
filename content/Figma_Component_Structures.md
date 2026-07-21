@@ -29,5 +29,5 @@ Stripe, Linear, Notion 등 세계적인 디자인 팀들이 사용하는 [[Figma
 
 ## 관련 노트
 - [[DESIGN_md_Workflow]]
-- [[Harness_Engineering]]
+- [[Harness Engineering]]
 

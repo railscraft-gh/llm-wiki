@@ -27,6 +27,6 @@ PARA(Projects, Areas, Resources, Archives) 방법론과 MCP([[Model Context Prot
 메타에서 구축한 [[AI 세컨드 브레인]]은 6만 명 이상의 구성원들이 직면한 업무 파편화 문제를 해결합니다. 에이전트가 PARA 분류법을 이해하여 지식을 구조화하고, 사내 도구(MCP)를 통해 맥락에 맞는 실시간 데이터에 접근합니다. 사용자는 직접 만든 마크다운 기반 스킬로 반복 업무를 자동화하며, 이는 하향식 지시가 아닌 사내 구성원들의 자발적 기여로 확산되었습니다.
 
 ## 관련 노트
-- [[Harness_Engineering]]
+- [[Harness Engineering]]
 - [[Top_1_Percent_Growth_Strategy]]
 

@@ -31,6 +31,6 @@ Claude Code 활용 시 프로젝트 운영 지침을 관리하는 `CLAUDE.md`와
 `DESIGN.md`에 너무 긴 디자인 토큰 파일 전체를 붙여 넣으면 코드와 싱크가 어긋날 위험이 있으므로, 토큰 파일 경로를 참조하고 핵심 원칙 위주로 작성할 것 [raw/CLAUDE.md vs DESIGN.md. What to Put in Each for Claude Code.md#L155](file:///Users/railscraft/Obsidian/raw/CLAUDE.md%20vs%20DESIGN.md.%20What%20to%20Put%20in%20Each%20for%20Claude%20Code.md#L155).
 
 ## 관련 노트
-- [[CLAUDE_md_가이드라인]]
+- [[CLAUDE.md 가이드]]
 - [[대시보드_디자인_가이드]]
 
