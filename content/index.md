@@ -15,6 +15,9 @@ updated: 2026-07-16
 
 | 노트 | 역할 | 상태 | updated |
 | --- | --- | --- | --- |
+| [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]] | LLM을 두뇌로 삼아 계획, 기억, 도구 사용을 결합해 복잡한 문제를 해결하는 자율 시스템을 설명한다. | evergreen | 2026-07-21 |
+| [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]] | 모델 가중치 업데이트 없이 LLM의 생성 과정과 동작을 제어하고 원하는 결과를 도출하기 위한 다양한 입력 구성 기법을 정리한다. | evergreen | 2026-07-21 |
+| [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]] | 모델 크기, 데이터셋 크기, 연산량을 늘림에 따라 모델 손실이 멱법칙을 따라 감소하는 현상과 최적 자원 배분 원리를 다룬다. | evergreen | 2026-07-21 |
 | [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]] | AI 모델이 "생각할 시간"을 부여받아 복잡한 추론 능력을 폭발적으로 끌어올리는 연산 기법을 설명한다. | evergreen | 2026-07-21 |
 | [[AI 코딩 에이전트 검증 전략]] | 에이전트 결과물을 신뢰하기 위한 테스트, 린트, UI 확인, 사람 감독 기준을 정리한다. | evergreen | 2026-05-24 |
 | [[Software 3.0]] | prompt와 context window가 프로그래밍 레버가 되는 패러다임을 설명한다. | evergreen | 2026-05-24 |
@@ -67,6 +70,7 @@ updated: 2026-07-16
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-07-21 | `raw/LLM Powered Autonomous Agents.md`<br>`raw/Prompt Engineering.md`<br>`raw/Reward Hacking in Reinforcement Learning.md`<br>`raw/Scaling Laws, Carefully.md` | [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]] (신규), [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]] (신규), [[강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)]] (신규), [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]] (신규) | done | [[log#2026-07-21-ingest-batch2]] |
 | 2026-07-21 | `raw/Thinking about High-Quality Human Data.md`<br>`raw/Why We Think.md`<br>`raw/korean-public-holiday-feature-guide.md` | [[고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)]] (신규), [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]] (신규), [[한국 공휴일 데이터 연동 아키텍처]] (신규) | done | [[log#2026-07-21-ingest]] |
 | 2026-07-20 | `raw/Text vs Binary. How Dropping JSON Squeezed 5x More Throughput From Our APIs.md`<br>`raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md`<br>`raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md`<br>`raw/I Hired a Penetration Tester to Attack My FastAPI App. He Owned Everything in 45 Minutes.md`<br>`raw/I Hid an Entire Website Inside a Favicon, So Now I’m Worried About Your Browser.md`<br>`raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md` | [[Compile-Time RAG]] (신규), [[바이너리 API 프로토콜]] (신규), [[FastAPI 보안 및 펜테스팅]] (신규), [[오픈소스 OCR 모델]] (신규), [[브라우저 파비콘 보안 취약점]] (신규), [[시스템 디자인 면접 피드백]] (신규) | done | [[log#2026-07-20-ingest-group1]] |
 | 2026-07-20 | `raw/Designers will OWN 2026–2030.md`<br>`raw/Figma just made your design system debt everyone’s problem. Now use it..md`<br>`raw/Rethinking Figma in an AI world.md`<br>`raw/Fake It Until You Break It. The End Of Non-Technical Managers In Software Engineering Dawns.md`<br>`raw/His Code Backs Up the World. Now the Internet Wants Him Flogged..md`<br>`raw/How to Express Yourself So People Actually Listen.md`<br>`raw/How to Start Something When No One Believes in You.md` | [[디자이너 소유권 (2026-2030)]] (신규), [[디자인 시스템 부채 관리]] (신규), [[AI 시대의 피그마 재정의]] (신규), [[비기술 관리자의 종료]] (신규), [[오픈소스 유지관리자의 가치와 위험]] (신규), [[소통과 영향력의 기술]] (신규) | done | [[log#2026-07-20-ingest-group2]] |

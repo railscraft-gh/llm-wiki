@@ -11,6 +11,41 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
+## 2026-07-21-ingest-batch2
+
+### Ingest
+
+- 입력:
+  - `raw/LLM Powered Autonomous Agents.md`
+  - `raw/Prompt Engineering.md`
+  - `raw/Reward Hacking in Reinforcement Learning.md`
+  - `raw/Scaling Laws, Carefully.md`
+- 생성:
+  - [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]]
+  - [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]]
+  - [[강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)]]
+  - [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]]
+- 수정: 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동 점검 (AGENTS.md 규칙, No-Ask Policy 준수)
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 없음
+
+### 결정 기록
+
+- 결정: Task 2 (Batch 2) Ingest 완료
+- 대상: [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]], [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]], [[강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)]], [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]]
+- 근거: AGENTS.md 및 No-Ask Policy에 따라 4개 문서를 분석 후 wiki 노트 생성, 인덱스 등록 및 로그 작성을 자율적으로 완료함.
+
 ## 2026-07-21-ingest
 
 ### Ingest
