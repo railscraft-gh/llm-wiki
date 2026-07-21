@@ -3,63 +3,49 @@ type: concept
 status: draft
 core: false
 tags:
-  - design
-  - llm
-  - standards
+  - web-standards
+  - ai-ui
+  - design-systems
+  - mcp
+  - w3c
 aliases:
-  - AI 웹 표준
-  - 웹 표준 플레이북
+  - AI 시대를 위한 웹 표준 플레이북
+  - Web Standards Playbook for the AI Moment
 sources:
-  - "raw/Designing with web standards. The playbook for this AI moment.md"
-created: 2026-07-18
-updated: 2026-07-18
+  - raw/Designing with web standards. The playbook for this AI moment.md
+created: 2026-07-21
+updated: 2026-07-21
 ---
 
 # AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)
 
 ## 한 줄 정의
-1990년대 브라우저 전쟁 시기 제프리 젤드만이 주도한 웹 표준 운동의 역사적 교훈을 바탕으로, 오늘날 AI 인터페이스의 파편화와 사용자 락인(lock-in) 문제를 해결하기 위해 제시되는 공동 UI 표준 구축 전략이다.
+1990년대 브라우저 전쟁 시기 제프리 젤드만(Jeffrey Zeldman)이 이끈 웹 표준 운동의 교훈을 거울삼아, 파편화된 현대 AI 에이전트 및 생성형 UI 생태계에 공통 디자인 패턴, 비즈니스 설득, 마크다운 시맨틱 마크업 표준을 도입하자는 설계 프레임워크.
 
 ## 핵심 요지
-- **1999년의 데자뷔**: 현재 AI 벤더사들이 각자의 제스처, 기능, 규칙을 설계하여 파편화를 유도하는 상황은 과거 넷플스케이프와 마이크로소프트의 비표준 브라우저 전쟁과 흡사하다 [raw/Designing with web standards. The playbook for this AI moment.md#L141](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L141).
-- **의미론적 분리(Semantic Separation)**: AI 모델의 추론 과정, 출력 결과, 실행 동작을 명확히 구분하여 레이어별로 제어하고 검증할 수 있어야 한다.
-- **실리적 비즈니스 케이스**: 표준의 대중화는 도덕적 의무가 아니라 비용 절감 및 도달 범위 확장과 같은 경제적 실리에서 비롯되어야 한다.
-- **새로운 시맨틱 마크업**: 에이전트의 지침서가 된 마크다운 파일(`AGENTS.md`, `design.md`, `accessibility.md` 등)이 기계와 인간이 소통하는 새로운 시맨틱 계약(contract) 역할을 한다.
-- **개방형 프로토콜의 활용**: 이미 업계 표준으로 떠오른 [[Model Context Protocol]](MCP)을 포함하여 A2UI, Agent2Agent 등과 같은 개방형 규격을 도입해야 한다.
+- **1999년 데자뷔와 브라우저 전쟁의 재현**: Netscape와 IE의 비표준 전용 태그 파편화처럼, 현대 AI 인터페이스(ChatGPT, Claude, Gemini) 역시 추론 과정, 출처, 권한 이양(Handoff) 방식을 제각각 파편화하여 유저에게 파괴적 학습 비용을 강가하고 있습니다.
+- **웹 표준 운동의 3대 유산**: (1) 관심사의 의미론적 분리(구조·표현·동작 분리 -> AI 추론·출력·동작 분리), (2) 도덕이 아닌 비즈니스 가치(개발비 절감·소송 리스크 방지) 설득, (3) 톱다운 강제가 아닌 실무자 풀뿌리 연대.
+- **새로운 시맨틱 마크업(Markdown) 레이어**: AI 에이전트가 읽는 텍스트 가이드(`AGENTS.md`, `SKILL.md`, `design.md`, `accessibility.md`)가 새로운 시맨틱 마크업 역할을 수행하므로, 여기에 접근성(Accessibility)과 보이스·용어 기준을 사전에 주입해야 합니다.
+- **신흥 프로토콜 표준 수용**: 1년 만에 정착한 [Model Context Protocol(MCP)](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L161)을 비롯해 A2UI, Agent2Agent(A2A), W3C AI Agent Protocol 등 기존 국제 표준 기구와 연대하는 플레이북 적용.
 
 ## 상세
-과거 브라우저 전쟁 시절, 넷플스케이프의 Lou Montulli가 blink 태그를, 마이크로소프트가 marquee 태그를 독자적으로 도입하는 등 비표준 경쟁이 극에 달했다. 제프리 젤드만(Jeffrey Zeldman)이 설립한 웹 표준 프로젝트(Web Standards Project)는 업계 전체에 "동일한 페이지가 어떤 브라우저에서든 호환되어야 한다"는 공동의 신념을 전파했다. 
+1998년 Zeldman의 A List Apart와 웹 표준 프로젝트(Web Standards Project)는 브라우저 독점 장벽을 허물었습니다. 2025년 기준 ChatGPT [WAU가 8억 명](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L144)을 돌파하고 기업 직원 [75%가 AI를 활용](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L145)함에 따라, 닐슨이 언급한 "60년 만의 3세대 UI 패러다임"이 열렸으나 인터페이스 표준의 부재로 심각한 비효율이 누적되고 있습니다.
 
-오늘날 ChatGPT, Claude, Gemini, Copilot 등 다양한 LLM 도구들 역시 각자의 파편화된 방식으로 출처 표기, 추론 공개, 권한 요청을 처리하고 있으며, 이는 사용자에게 불필요한 전환 비용과 학습 곡선을 유발한다.
+2004년 Gruber와 Swartz가 고안한 [마크다운](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L215)은 에이전트 시대의 데파크토 표준 언어가 되었습니다. 사내 마크다운 콘트랙트(`design.md`, `accessibility.md`)에 색상 대비, 키보드 접근성, 대체 텍스트를 주입하지 않으면 에이전트는 무가공 텍스트 파편만 출력합니다.
 
-### 1. 관심사와 레이어의 분리
-웹 표준이 구조(HTML), 표현(CSS), 동작(JS)을 구분했듯, AI UI에서는 다음 요소들을 분리해야 한다.
-- **추론 과정**: 모델이 생각을 정리하는 과정(CoT)
-- **출력 결과**: 사용자에게 제공되는 결과 데이터
-- **실행 동작**: 도구(tool) 호출 및 외부 API 실행
-
-### 2. 마크다운 기반의 시맨틱 계약
-현대 AI 에이전트는 자연어 기반 지침서에서 규칙을 읽는다. 2004년에 존 그루버와 아론 슈워츠가 개발한 마크다운 [raw/Designing with web standards. The playbook for this AI moment.md#L215](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L215)은 에이전틱 워크플로우의 새로운 인터페이스가 되었다.
-- `design.md`: 모델이 따를 디자인 시스템 토큰과 규칙을 기술
-- `accessibility.md`: 모델이 준수해야 할 필수 접근성 표준을 포함
-- `content.md`: 브랜드 톤앤매너 및 가독성 수준을 정의
-
-### 3. 활성화되고 있는 개방형 프로토콜
-W3C 및 Linux Foundation 등에서 AI 인터페이스 표준화가 빠르게 논의되고 있다 [raw/Designing with web standards. The playbook for this AI moment.md#L241](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L241).
-- **[[Model Context Protocol]] (MCP)**: 출시 1년 만에 업계 표준으로 자리 잡은 컨텍스트 전달 프로토콜 [raw/Designing with web standards. The playbook for this AI moment.md#L161](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L161)
-- **A2UI**: 에이전트가 그릴 UI를 명세하는 선언형 프로토콜
-- **Agent2Agent (A2A)**: 서로 다른 벤더사의 에이전트 간의 상호 검색 및 협업 프로토콜
+따라서 [2025년 W3C의 Web and AI Interest Group](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L241)발족 흐름과 발맞추어, 개별 기업은 락인(lock-in)용 꼼수 대신 MCP 및 A2UI 표준을 수용하여 상호운용성(Interoperability)을 확보하는 것이 장기적 부채를 방지하는 지름길입니다.
 
 ## 예시
-- **신뢰 수준의 시각화**: 불확실한 추론 결과를 확정적 사실처럼 시각화하지 않고, 출처(Citation)와 신뢰도(Confidence)를 사용자에게 명확히 보장하여 합의된 UI 패턴으로 보여주는 구조.
-- **ChatGPT의 확산과 기업 채택**: ChatGPT는 2025년에 주간 활성 사용자 수 8억 명을 돌파했으며, 기업 설문 결과 직원의 75%가 AI 툴 덕분에 업무 효율이 향상되었다고 보고했다 [raw/Designing with web standards. The playbook for this AI moment.md#L145](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L145). 이러한 광범위한 침투 속에서 파편화된 인터페이스를 방치할 경우 대가가 복리로 가중된다.
+- **시맨틱 AI 마크다운 파일 구동**: 사내 저장소에 `AGENTS.md`와 `accessibility.md`를 비치해 AI 에이전트가 코드를 생성할 때 키보드 포커스 태그와 ARIA 라벨을 강제 삽입하도록 제약.
+- **A2UI 및 MCP 적용**: 선언형 UI 프로토콜 A2UI와 MCP 도구 서버를 도입하여 AI 비서가 특정 렌더링 프레임워크에 묶이지 않고 교체 가능하도록 설계.
 
 ## 충돌
-- **벤더사 락인(Lock-in) vs 상호운용성(Interoperability)**: 벤더사들은 자사 플랫폼에 사용자를 가두기 위해 독자적인 UI 제스처와 프로토콜을 선호하지만, 이는 장기적으로 사용자 전환 비용을 증가시키고 웹의 개방성을 해친다. 1999년의 영토 전쟁처럼 단기적 해자(Moat)가 결국에는 장기적인 부채(Liability)로 전락하게 된다 [raw/Designing with web standards. The playbook for this AI moment.md#L173](file:///Users/railscraft/Obsidian/raw/Designing%20with%20web%20standards.%20The%20playbook%20for%20this%20AI%20moment.md#L173).
+- **벤더 독점 장벽과 락인 시도**: 각 AI 플랫폼이 비표준 렌더링 제스처나 독점 플러그인 생태계로 고객을 고립시키려 하지만, 웹 역사에서 증명되었듯 표준 상호운용성 확립 시 부채로 전락합니다.
+- **접근성(Accessibility)의 사후 덧대기(Bolt-on) 시도**: 생성형 UI를 렌더링한 후 접근성을 검사하려 하면 코드가 파탄 나므로 에이전트에 마크다운 규약 형태로 사전에 주입(feeding up front)해야 합니다.
 
 ## 관련 노트
-- [[AI 시대 디자인 시스템]]
 - [[Model Context Protocol]]
-- [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]]
+- [[AI 시대의 피그마 재정의]]
 - [[완전히 기계 읽기 가능한 디자인 시스템]]
+- [[2026년 경험 디자인 트렌드]]
 
