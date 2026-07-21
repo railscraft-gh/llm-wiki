@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - 에우다이모니아-(Eudaimonia)
 core: false
 created: 2026-07-10
 sources:
@@ -11,8 +11,7 @@ tags:
   - lifestyle
 type: concept
 updated: 2026-07-10
----
-# 에우다이모니아 (Eudaimonia)
+---# 에우다이모니아 (Eudaimonia)
 
 ## 한 줄 정의
 

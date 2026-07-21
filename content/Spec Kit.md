@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +9,12 @@ tags:
 aliases:
   - Spec Kit
   - specify-cli
+  - Spec-Kit
 sources:
   - raw/바이브 코딩의 종말-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Spec Kit
 
 ## 한 줄 정의

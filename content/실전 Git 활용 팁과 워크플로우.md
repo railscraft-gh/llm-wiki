@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - 실전 Git 팁
   - 시니어 Git 워크플로우
+  - 실전-Git-활용-팁과-워크플로우
 core: false
 created: 2026-06-22
 sources:
@@ -14,7 +14,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # 실전 Git 활용 팁과 워크플로우
 
 ## 한 줄 정의

@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - AI 경제 생존 전략
   - 기술보다 자산
+  - AI-경제에서-스킬만으로는-부족하다
 core: true
 created: 2026-06-12
 sources:
@@ -51,7 +51,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # AI 경제에서 스킬만으로는 부족하다
 
 > [!summary]

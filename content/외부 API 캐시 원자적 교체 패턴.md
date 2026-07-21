@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
   - database
 aliases:
   - 원자적 캐시 교체 패턴
+  - 외부-API-캐시-원자적-교체-패턴
 sources:
   - raw/korean-public-holiday-feature-guide.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# 외부 API 캐시 원자적 교체 패턴
+---# 외부 API 캐시 원자적 교체 패턴
 
 ## 한 줄 정의
 외부 REST API 데이터를 영속 캐시(DB)에 동기화할 때, 선검증 및 Fencing Token 기반 분산 락(Lease)을 활용해 트랜잭션 내에서 데이터를 원자적(All-or-Nothing)으로 교체하는 아키텍처 패턴이다.

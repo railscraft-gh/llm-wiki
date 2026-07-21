@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - AI-native engineering org
   - AI 네이티브 조직 운영
+  - AI-네이티브-엔지니어링-조직
 core: false
 created: 2026-05-14
 sources:
@@ -33,7 +33,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # AI 네이티브 엔지니어링 조직
 
 ## 한 줄 정의

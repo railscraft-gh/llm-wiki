@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
   - terminal-cli
 aliases:
   - OpenCode Terminal Agent Architecture
+  - OpenCode-오픈소스-터미널-에이전틱-아키텍처
 sources:
   - raw/opencode-masterclass-summary.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# [[OpenCode]] 오픈소스 터미널 에이전틱 아키텍처
+---# [[OpenCode]] 오픈소스 터미널 에이전틱 아키텍처
 
 ## 한 줄 정의
 Cloud Code나 Cursor의 대안으로, 100% 오픈소스 기반 터미널 환경에서 스킬(Skills), 메모리 파일(`agents.md`), Plan/Bold 모드 이원화, 서브에이전트 병렬 위임 및 Playwright MCP 서버를 융합한 에이전틱 코딩 툴킷이다.

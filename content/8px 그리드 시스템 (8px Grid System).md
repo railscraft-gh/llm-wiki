@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ aliases:
   - 8px 그리드 시스템
   - 8px Grid System
   - 8포인트 그리드
+  - 8px-그리드-시스템-(8px-Grid-System)
 sources:
   - "raw/The Spacing System That Makes Every UI Look More Intentional.md"
 created: 2026-07-11
 updated: 2026-07-11
 ---
-
 # 8px 그리드 시스템 (8px Grid System)
 
 ## 한 줄 정의

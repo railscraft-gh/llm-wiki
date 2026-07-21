@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - AI-시대-소프트웨어-펀더멘탈
 core: false
 created: 2026-05-09
 sources:
@@ -45,7 +45,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # AI 시대 소프트웨어 펀더멘탈 (Software Fundamentals in the AI Era)
 
 ## 한 줄 정의

@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - HTML vs Markdown 결정 트리
   - Markdown source HTML artifact
+  - AI-산출물-포맷-결정-트리
 core: false
 created: 2026-05-26
 sources:
@@ -18,7 +18,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # AI 산출물 포맷 결정 트리
 
 ## 한 줄 정의

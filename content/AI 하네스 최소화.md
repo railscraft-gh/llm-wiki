@@ -1,8 +1,8 @@
----
-aliases:
+---aliases:
   - 4 스킬 하네스
   - 4 agents 4 skills
   - Bloated AI Slop Labs
+  - AI-하네스-최소화
 core: false
 created: 2026-05-28
 sources:
@@ -17,7 +17,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # AI 하네스 최소화
 
 ## 한 줄 정의

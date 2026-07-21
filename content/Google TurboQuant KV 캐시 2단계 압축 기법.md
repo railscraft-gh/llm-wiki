@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
   - apple-silicon
 aliases:
   - Google TurboQuant KV Cache Compression
+  - Google-TurboQuant-KV-캐시-2단계-압축-기법
 sources:
   - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# Google [[TurboQuant]] KV 캐시 2단계 압축 기법
+---# Google [[TurboQuant]] KV 캐시 2단계 압축 기법
 
 ## 한 줄 정의
 구글 리서치(Google Research)가 개발한 ICLR 2026 채택 KV 캐시 압축 알고리즘으로, PolarQuant와 QJL(Quantised Johnson-Lindenstrauss) 2단계 파이프라인을 통해 어텐션 품질 손실 없이 KV 캐시 크기를 4~6배 압축하여 소비자용 애플 실리콘 맥에서 32B 모델의 대용량 컨텍스트 추론을 가능하게 한 기술이다.

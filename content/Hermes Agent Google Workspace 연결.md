@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - Hermes Google 연결
   - Google Workspace 연결 절차
+  - Hermes-Agent-Google-Workspace-연결
 core: false
 created: 2026-05-28
 sources:
@@ -18,7 +18,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # [[Hermes Agent]] Google Workspace 연결
 
 ## 한 줄 정의

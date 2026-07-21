@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - Jagged-Intelligence
 - 재기드 인텔리전스
 - 들쭉날쭉한 지능
 core: true
@@ -22,7 +22,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Jagged Intelligence
 
 ## 한 줄 정의

@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +9,12 @@ tags:
 aliases:
   - Ralph Loop
   - Headless Claude Loop
+  - Ralph-Loop
 sources:
   - raw/Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# Ralph Loop
+---# Ralph Loop
 
 ## 한 줄 정의
 메인 오케스트레이터 세션이 컨텍스트 윈도우 소비를 최소화하면서 쪼개진 미션 단계(Phase)들을 독립된 Headless AI 코딩 세션에 위임하여 완결까지 밤새 자율 실행하는 반복 제어 패턴.

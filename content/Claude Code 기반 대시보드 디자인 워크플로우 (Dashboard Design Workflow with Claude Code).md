@@ -1,5 +1,4 @@
----
-type: workflow
+---type: workflow
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ tags:
   - claude-code
 aliases:
   - Claude Code 대시보드 워크플로우
+  - Claude-Code-기반-대시보드-디자인-워크플로우-(Dashboard-Design-Workflow-with-Claude-Code)
 sources:
   - "raw/How to Design a Production-Ready Dashboard with Claude Code.md"
 created: 2026-07-18
 updated: 2026-07-18
 ---
-
 # Claude Code 기반 대시보드 디자인 워크플로우 (Dashboard Design Workflow with Claude Code)
 
 ## 한 줄 정의

@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -8,11 +7,11 @@ tags:
   - self-improvement
   - workflow
 aliases: [Harness Engineering, 자가 개선 하네스]
+  - 자가-개선-하네스-엔지니어링-(Harness-Engineering-for-Self-Improvement)
 sources: [raw/Harness Engineering for Self-Improvement.md]
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # 자가 개선 하네스 엔지니어링 ([[Harness Engineering]] for Self-Improvement)
 
 ## 한 줄 정의

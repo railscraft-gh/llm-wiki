@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - MEMORY.md-운영-원칙
 - MEMORY.md
 - 에이전트 장기 기억 원칙
 core: true
@@ -71,7 +71,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # MEMORY.md 운영 원칙
 
 ## 한 줄 정의

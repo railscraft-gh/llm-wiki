@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - Thinking과-Understanding-분리
 - Thinking is outsourceable, understanding is not
 - 싱킹과 언더스탠딩
 core: false
@@ -25,7 +25,6 @@ tags:
 type: claim
 updated: '2026-06-22'
 ---
-
 # Thinking과 Understanding 분리
 
 ## 한 줄 정의

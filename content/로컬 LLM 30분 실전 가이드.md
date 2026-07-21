@@ -1,9 +1,9 @@
----
-aliases:
+---aliases:
   - 로컬 LLM 실전 가이드
   - 온디바이스 LLM
   - Ollama
   - TurboQuant
+  - 로컬-LLM-30분-실전-가이드
 core: true
 created: 2026-06-12
 sources:
@@ -85,7 +85,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # 로컬 LLM 30분 실전 가이드
 
 ## 한 줄 정의

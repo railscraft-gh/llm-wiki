@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - AI GitHub 생태계 신호
   - AI OSS 작업대
+  - AI-오픈소스-작업대
 core: false
 created: 2026-05-26
 sources:
@@ -69,7 +69,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # AI 오픈소스 작업대
 
 ## 한 줄 정의

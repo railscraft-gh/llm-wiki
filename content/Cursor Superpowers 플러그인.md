@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: needs-review
 core: false
 tags:
@@ -12,13 +11,13 @@ aliases:
   - Superpowers
   - Cursor Superpowers
   - Cursor 스킬 플러그인
+  - Cursor-Superpowers-플러그인
 sources:
   - raw/Cursor에서 Superpowers 플러그인 쓰는 법 — 상세 정리-ko.md
   - raw/superpowers-brainstorming.md
 created: 2026-06-19
 updated: 2026-06-30
 ---
-
 # Cursor Superpowers 플러그인
 
 ## 한 줄 정의

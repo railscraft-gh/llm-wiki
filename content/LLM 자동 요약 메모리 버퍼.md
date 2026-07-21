@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
   - summarization
 aliases:
   - Auto-Summarization Buffer
+  - LLM-자동-요약-메모리-버퍼
 sources:
   - raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# LLM 자동 요약 메모리 버퍼
+---# LLM 자동 요약 메모리 버퍼
 
 ## 한 줄 정의
 슬라이딩 윈도우 버퍼의 턴 한계 및 정보 단순 삭제 문제를 극복하기 위해, LLM이 기록 보관자(Archivist)로서 기존 누적 요약본(Running Summary)과 신규 턴을 실시간 합쳐 손실 압축(Lossy Compression) 형태로 정제·보존하는 외부 메모리 패턴이다.

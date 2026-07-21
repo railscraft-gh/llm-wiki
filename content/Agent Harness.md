@@ -1,6 +1,6 @@
----
-aliases:
+---aliases:
   - 에이전트 하네스
+  - Agent-Harness
 core: true
 created: 2026-05-26
 sources:
@@ -100,7 +100,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # Agent Harness
 
 ## 한 줄 정의

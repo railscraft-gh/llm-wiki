@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ tags:
   - memory
 aliases:
   - Hermes Agent Autonomous Skill Learning & 3-Layer Memory
+  - Hermes-Agent-자율-기술-학습-및-로컬-3층-메모리
 sources:
   - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# [[Hermes Agent]] 자율 기술 학습 및 로컬 3층 메모리
+---# [[Hermes Agent]] 자율 기술 학습 및 로컬 3층 메모리
 
 ## 한 줄 정의
 Nous Research가 개발한 오픈소스 에이전트 프레임워크로, 인간의 수동 개입 없이 수행한 작업 단계를 재사용 가능한 스킬(Skill)로 자동 저장·진화시키고, 3층 구조 메모리(`MEMORY.md`, `USER.md`, FTS5 세션 검색)를 통해 지속적 개인화를 구현하는 기술 아키텍처이다.

@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +9,12 @@ tags:
 aliases:
   - Block vs Inline
   - div vs span
+  - HTML-블록-레벨과-인라인-요소
 sources:
   - raw/Block-Level and Inline Elements. The difference between div and span.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # HTML 블록 레벨과 인라인 요소
 
 ## 한 줄 정의

@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: false
 tags:
@@ -7,13 +6,13 @@ tags:
   - reward-hacking
   - alignment
   - rlhf
-aliases: []
+aliases:
+  - 강화학습-보상-해킹-(Reward-Hacking-in-Reinforcement-Learning)
 sources:
   - raw/Reward Hacking in Reinforcement Learning.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # 강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)
 
 ## 한 줄 정의

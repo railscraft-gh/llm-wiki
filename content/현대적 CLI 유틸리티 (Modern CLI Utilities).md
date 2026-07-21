@@ -1,5 +1,4 @@
----
-type: tool
+---type: tool
 status: draft
 core: false
 tags:
@@ -9,13 +8,13 @@ aliases:
   - 현대적 CLI 유틸리티
   - 차세대 터미널 도구
   - 생산성 CLI
+  - 현대적-CLI-유틸리티-(Modern-CLI-Utilities)
 sources:
   - raw/These 10 Linux Tools Changed Everything.md
   - raw/17 macOS Terminal Commands I Actually Use Every Week.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # 현대적 CLI 유틸리티 (Modern CLI Utilities)
 
 ## 한 줄 정의

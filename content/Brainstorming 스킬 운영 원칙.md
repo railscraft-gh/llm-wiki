@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +9,12 @@ tags:
 aliases:
   - Brainstorming 스킬 운영 원칙
   - superpowers-brainstorming
+  - Brainstorming-스킬-운영-원칙
 sources:
   - raw/superpowers-brainstorming.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Brainstorming 스킬 운영 원칙
 
 ## 한 줄 정의

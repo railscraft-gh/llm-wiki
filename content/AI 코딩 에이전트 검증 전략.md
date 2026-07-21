@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - Verification Loop
   - 검증 루프
+  - AI-코딩-에이전트-검증-전략
 core: true
 created: 2026-05-06
 sources:
@@ -95,7 +95,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # AI 코딩 에이전트 검증 전략
 
 ## 한 줄 정의

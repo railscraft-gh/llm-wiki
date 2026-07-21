@@ -1,5 +1,4 @@
----
-type: tool
+---type: tool
 status: draft
 core: false
 tags:
@@ -13,8 +12,9 @@ sources:
   - raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md
 created: 2026-07-20
 updated: 2026-07-20
+aliases:
+  - Mac-mini-17가지-실무-활용법
 ---
-
 # Mac mini 17가지 실무 활용법
 
 ## 한 줄 정의

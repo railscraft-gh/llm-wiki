@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
 aliases:
   - AI 커리어 피벗
   - AI 시대의 전직
+  - AI-시대의-커리어-피벗
 sources:
   - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # AI 시대의 커리어 피벗 (Career Pivot in the AI Era)
 
 ## 한 줄 정의

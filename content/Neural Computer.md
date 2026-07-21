@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - Neural-Computer
 - 뉴럴 컴퓨터
 - 신경 컴퓨터
 core: false
@@ -20,7 +20,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Neural Computer
 
 ## 한 줄 정의

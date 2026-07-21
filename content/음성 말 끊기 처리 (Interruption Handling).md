@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -11,12 +10,12 @@ aliases:
   - Interruption Handling
   - 음성 말 끊기 처리
   - Playback Queue Flush
+  - 음성-말-끊기-처리-(Interruption-Handling)
 sources:
   - raw/Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# 음성 말 끊기 처리 (Interruption Handling)
+---# 음성 말 끊기 처리 (Interruption Handling)
 
 ## 한 줄 정의
 음성 비서가 답변 오디오를 출력하던 도중 사용자가 말을 끼어들었을 때(Interruption) 이를 실시간 감지하여 원격 생성과 로컬 재생 버퍼(Playback Queue)를 즉각 소각·중단시키는 기술.

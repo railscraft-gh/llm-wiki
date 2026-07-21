@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -9,12 +8,12 @@ aliases:
   - 조율된 신뢰
   - Calibrated Trust
   - 신뢰 조율
+  - 조율된-신뢰-(Calibrated-Trust)
 sources:
   - raw/39 principles for designing human-AI interaction.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # 조율된 신뢰 (Calibrated Trust)
 
 ## 한 줄 정의

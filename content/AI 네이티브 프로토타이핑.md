@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - AI-네이티브-프로토타이핑
 - AI 네이티브 프로토타이핑
 - LennyRPG 개발기
 core: false
@@ -38,7 +38,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # AI 네이티브 프로토타이핑
 
 ## 한 줄 정의

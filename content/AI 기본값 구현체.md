@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - AI-기본값-구현체
 - AI가 표준화한 기본 구현체
 - default implementation in AI era
 core: false
@@ -34,7 +34,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # AI 기본값 구현체
 
 ## 한 줄 정의

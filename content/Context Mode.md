@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - Context-Mode
 core: false
 created: 2026-05-09
 sources:
@@ -14,7 +14,6 @@ tags:
 type: tool
 updated: 2026-07-10
 ---
-
 # Context Mode
 
 ## 한 줄 정의

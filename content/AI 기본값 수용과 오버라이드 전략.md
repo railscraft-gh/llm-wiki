@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -11,6 +10,7 @@ tags:
 aliases:
   - AI 기본값 채택 전략
   - default adoption strategy in AI era
+  - AI-기본값-수용과-오버라이드-전략
 sources:
   - The most important Design System in 2026 that designers missed was built by a developer.
   - The Complete (Honest) Guide to OpenClaw
@@ -18,7 +18,6 @@ sources:
 created: 2026-05-26
 updated: 2026-05-26
 ---
-
 # AI 기본값 수용과 오버라이드 전략
 
 ## 한 줄 정의

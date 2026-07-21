@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
 aliases:
   - AI 글쓰기 탐지
   - AI 생성 글 판별
+  - AI-생성-텍스트-판별법
 sources:
   - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # AI 생성 텍스트 판별법 (AI Text Detection)
 
 ## 한 줄 정의

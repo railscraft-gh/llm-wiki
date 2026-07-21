@@ -1,8 +1,8 @@
----
-aliases:
+---aliases:
   - 바이브 코딩과 에이전틱 엔지니어링
   - Vibe Coding
   - Agentic Engineering
+  - Vibe-Coding과-Agentic-Engineering
 core: true
 created: 2026-05-06
 sources:
@@ -72,7 +72,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # Vibe Coding과 Agentic Engineering
 
 ## 한 줄 정의

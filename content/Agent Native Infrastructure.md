@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - Agent-Native-Infrastructure
 - 에이전트 네이티브 인프라
 - Agent-native docs
 core: true
@@ -68,7 +68,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # Agent Native Infrastructure
 
 ## 한 줄 정의

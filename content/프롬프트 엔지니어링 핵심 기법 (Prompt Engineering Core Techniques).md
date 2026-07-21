@@ -1,18 +1,17 @@
----
-type: workflow
+---type: workflow
 status: evergreen
 core: true
 tags:
   - llm
   - prompt-engineering
   - in-context-learning
-aliases: []
+aliases:
+  - 프롬프트-엔지니어링-핵심-기법-(Prompt-Engineering-Core-Techniques)
 sources:
   - raw/Prompt Engineering.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # 프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)
 
 ## 한 줄 정의

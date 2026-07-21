@@ -1,8 +1,8 @@
----
-aliases:
+---aliases:
   - Infisical SSH 인증
   - Infisical Universal Auth
   - Machine Identity 인증
+  - Infisical-헤드리스-인증
 core: false
 created: 2026-05-08
 sources:
@@ -23,7 +23,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # Infisical 헤드리스 인증
 
 ## 한 줄 정의

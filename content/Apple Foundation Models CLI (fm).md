@@ -1,5 +1,4 @@
----
-type: tool
+---type: tool
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ aliases:
   - Apple Foundation Models CLI
   - fm CLI
   - fm 명령어
+  - Apple-Foundation-Models-CLI-(fm)
 sources:
   - raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
 created: 2026-07-15
 updated: 2026-07-16
 ---
-
 # Apple Foundation Models CLI (fm)
 
 ## 한 줄 정의

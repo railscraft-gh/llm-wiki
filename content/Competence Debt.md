@@ -1,5 +1,5 @@
----
-aliases:
+---aliases:
+  - Competence-Debt
 - 역량 부채
 core: false
 created: 2026-05-24
@@ -18,7 +18,6 @@ tags:
 type: claim
 updated: '2026-06-22'
 ---
-
 # Competence Debt
 
 ## 한 줄 정의

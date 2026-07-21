@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - 엔터프라이즈-지식-그래프-(Enterprise-Knowledge-Graph)
 core: false
 created: 2026-07-10
 sources:
@@ -11,8 +11,7 @@ tags:
   - knowledge-graph
 type: concept
 updated: 2026-07-10
----
-# 엔터프라이즈 지식 그래프 (Enterprise Knowledge Graph)
+---# 엔터프라이즈 지식 그래프 (Enterprise Knowledge Graph)
 
 ## 한 줄 정의
 

@@ -1,16 +1,15 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
   - design
-aliases: []
+aliases:
+  - 워크플로-디자이너-(Workflow-Designer)
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 워크플로 디자이너(Workflow Designer)는 피그마 상에 화면 한 장의 정적 와이어프레임을 디자인하는 것을 넘어, 자율 AI가 참여자로 기능하는 복잡한 서비스 협업 흐름과 가드레일을 아키텍처링하는 고도화된 역할이다 [raw/From faster pencil to [[AI Experience Architect]]. a designer’s path.md#L66-L73](file:///Users/railscraft/Obsidian/raw/From%20faster%20pencil%20to%20AI%20Experience%20Architect.%20a%20designer%E2%80%99s%20path.md#L66-L73).
 

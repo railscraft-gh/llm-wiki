@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -8,11 +7,11 @@ tags:
   - adversarial
   - jailbreak
 aliases: [Adversarial Attacks, 탈옥 프롬프트]
+  - LLM-적대적-공격과-탈옥-(Adversarial-Attacks-on-LLMs)
 sources: [raw/Adversarial Attacks on LLMs.md]
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # LLM 적대적 공격과 탈옥 (Adversarial Attacks on LLMs)
 
 ## 한 줄 정의

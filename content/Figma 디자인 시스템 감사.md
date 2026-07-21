@@ -1,16 +1,15 @@
----
-type: workflow
+---type: workflow
 status: draft
 core: false
 tags:
   - design
-aliases: []
+aliases:
+  - Figma-디자인-시스템-감사
 sources:
   - raw/AI와 디자인 시스템 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 Figma 디자인 시스템 감사(Design System Audit)는 디자인 시스템 내에 존재하는 하드코딩된 원시 값, 중복 컴포넌트, 컴포넌트 결함 등을 정기적으로 걸러내어 AI 에이전트(예: Claude Code)가 거짓되거나 파편화된 규칙을 학습하지 못하게 방어하는 UI 소스 최적화 워크플로이다 [raw/AI와 디자인 시스템 - 출판형 다듬기.md#L93-L100](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L93-L100).
 

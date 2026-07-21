@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -10,6 +9,7 @@ aliases:
   - WebMCP 브라우저 클라이언트 에이전트 연동
   - WebMCP 브라우저 연동
   - WebMCP Browser-Agent Integration
+  - WebMCP-브라우저-클라이언트-에이전트-연동-(WebMCP-Browser-Agent-Integration)
 sources:
   - raw/39 principles for designing human-AI interaction.md
   - raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md
@@ -17,7 +17,6 @@ sources:
 created: 2026-07-15
 updated: 2026-07-15
 ---
-
 # WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)
 
 ## 한 줄 정의

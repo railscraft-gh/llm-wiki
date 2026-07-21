@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: evergreen
 core: true
 tags:
@@ -9,12 +8,12 @@ tags:
 aliases:
   - Test-Time Compute
   - Chain-of-Thought
+  - 테스트-타임-연산과-추론-모드-(Test-Time-Compute-&-Why-We-Think)
 sources:
   - raw/Why We Think.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # 테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)
 
 ## 한 줄 정의

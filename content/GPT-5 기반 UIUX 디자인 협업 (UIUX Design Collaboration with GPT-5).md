@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ tags:
 aliases:
   - GPT-5 디자인 협업
   - AI 크리에이티브 파트너
+  - GPT-5-기반-UIUX-디자인-협업-(UIUX-Design-Collaboration-with-GPT-5)
 sources:
   - "raw/How GPT-5 is Revolutionizing Design. A Game-Changer for UIUX and Product Designers.md"
 created: 2026-07-18
 updated: 2026-07-18
 ---
-
 # GPT-5 기반 UIUX 디자인 협업 (UIUX Design Collaboration with GPT-5)
 
 ## 한 줄 정의

@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - AI 에이전트 권한 설계
   - Permission Design
+  - Claude-Code-권한-설계
 core: false
 created: 2026-05-06
 sources:
@@ -34,7 +34,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # Claude Code 권한 설계
 
 ## 한 줄 정의

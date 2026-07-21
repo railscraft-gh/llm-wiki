@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - Pinterest-MCP
 core: false
 created: 2026-06-07
 sources:
@@ -22,7 +22,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # Pinterest MCP
 
 ## 한 줄 정의

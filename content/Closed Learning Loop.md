@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +9,12 @@ tags:
 aliases:
   - Closed Learning Loop
   - 자가 학습 피드백 루프
+  - Closed-Learning-Loop
 sources:
   - raw/I Ran OpenClaw and Hermes on the Same Server. Today I Deleted One of Them.-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# Closed Learning Loop
+---# Closed Learning Loop
 
 ## 한 줄 정의
 에이전트가 작업 완료 후 자신의 수행 과정과 결과를 스스로 분석하여 재사용 가능한 패턴을 축적하고 다음 실행에 자발적으로 반영하는 자가 진화형 기억 및 피드백 구조.

@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +7,12 @@ tags:
   - product-design
 aliases:
   - UX AI 3-Layer Taxonomy
+  - UX-실무자를-위한-3단계-AI-도구-레이어
 sources:
   - raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
----
-# UX 실무자를 위한 3단계 AI 도구 레이어
+---# UX 실무자를 위한 3단계 AI 도구 레이어
 
 ## 한 줄 정의
 NN/g가 예견한 'UX Reckoning (2025/2026)' 시대에 대응하여, UX 실무자가 활용해야 할 AI 도구를 채팅 인터페이스, 특화 UX 도구, CLI/에이전틱 도구의 3개 범주로 체계화하고 구현 격차를 해소하는 실전 가이드 프레임워크이다.

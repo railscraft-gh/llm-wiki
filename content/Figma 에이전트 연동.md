@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - Figma 에이전트 스킬
   - figma-mcp
+  - Figma-에이전트-연동
 core: false
 created: 2026-06-12
 sources:
@@ -47,7 +47,6 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-
 # Figma 에이전트 연동 (Figma Agent Integration)
 
 ## 한 줄 정의

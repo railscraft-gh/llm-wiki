@@ -1,16 +1,15 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
   - design
-aliases: []
+aliases:
+  - 포트폴리오-Sweet-Spot
 sources:
   - raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 ## 한 줄 정의
 포트폴리오 Sweet Spot은 손댄 모든 프로젝트를 무분별하게 나열하는 갤러리 방식 대신, 디자이너의 입체적 역량을 다각도로 입증하는 3~5개의 엄선된 핵심 케이스 스터디로만 포트폴리오를 구성하는 전략이다 [raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md#L43-L44](file:///Users/railscraft/Obsidian/raw/The%20Designer%E2%80%99s%20Portfolio%20Bible.%20From%20Chaotic%20Folder%20to%20Dream%20Job%20Magnet.md#L43-L44).
 

@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - 헤르메스 에이전트
   - Hermes 에이전트
+  - Hermes-Agent
 core: false
 created: 2026-06-09
 sources:
@@ -40,7 +40,6 @@ tags:
 type: tool
 updated: 2026-07-10
 ---
-
 # Hermes Agent
 
 ## 한 줄 정의

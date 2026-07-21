@@ -1,11 +1,11 @@
----
-aliases:
+---aliases:
   - AI 겨울
   - AI Winter
   - AI 버블
   - 경제적 상전이
   - AI 보조금의 종말
   - AI 구독제의 종말
+  - AI-겨울과-경제적-조정
 core: false
 created: 2026-06-04
 sources:
@@ -43,7 +43,6 @@ tags:
 type: concept
 updated: 2026-07-18
 ---
-
 # AI 겨울과 경제적 조정 (AI Winter and Economic Adjustment)
 
 ## 한 줄 정의

@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - 클로드 코워크
   - Cowork
+  - Claude-Cowork
 core: false
 created: 2026-06-09
 sources:
@@ -66,7 +66,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # Claude Cowork
 
 ## 한 줄 정의

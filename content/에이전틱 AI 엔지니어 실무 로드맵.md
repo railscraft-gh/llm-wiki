@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - 에이전틱 AI 엔지니어 로드맵
   - 에이전틱 AI 엔지니어 10대 기술
+  - 에이전틱-AI-엔지니어-실무-로드맵
 core: true
 created: 2026-06-16
 sources:
@@ -26,7 +26,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # [[에이전틱 AI 엔지니어]] 실무 로드맵 (Agentic AI Engineer Practical Roadmap)
 
 ## 한 줄 정의

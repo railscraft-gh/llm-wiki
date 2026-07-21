@@ -1,8 +1,8 @@
----
-aliases:
+---aliases:
   - UIUX 디자인 AI 도구 체인
   - UI 디자인 AI 도구 체인
   - 2026 실무 AI 디자인 워크플로우
+  - UI-UX-디자인-AI-워크플로우
 core: false
 created: 2026-06-09
 sources:
@@ -82,7 +82,6 @@ tags:
 type: workflow
 updated: 2026-07-18
 ---
-
 # UI UX 디자인 AI 워크플로우
 
 ## 한 줄 정의

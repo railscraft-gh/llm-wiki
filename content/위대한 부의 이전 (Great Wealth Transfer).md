@@ -1,5 +1,5 @@
----
-aliases: []
+---aliases:
+  - 위대한-부의-이전-(Great-Wealth-Transfer)
 core: false
 created: 2026-07-10
 sources:
@@ -11,8 +11,7 @@ tags:
   - wealth-building
 type: concept
 updated: 2026-07-10
----
-# 위대한 부의 이전 (Great Wealth Transfer)
+---# 위대한 부의 이전 (Great Wealth Transfer)
 
 ## 한 줄 정의
 

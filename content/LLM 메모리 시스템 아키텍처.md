@@ -1,7 +1,7 @@
----
-aliases:
+---aliases:
   - LLM Memory System Architecture
   - 에이전트 메모리 계층
+  - LLM-메모리-시스템-아키텍처
 core: true
 created: 2026-06-14
 sources:
@@ -39,7 +39,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # LLM 메모리 시스템 아키텍처
 
 ## 한 줄 정의

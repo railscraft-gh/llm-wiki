@@ -1,5 +1,4 @@
----
-type: tool
+---type: tool
 status: draft
 core: false
 tags:
@@ -8,13 +7,13 @@ tags:
 aliases:
   - NVIDIA Build
   - NVIDIA NIM
+  - NVIDIA-Build-(무료-AI-추론-플랫폼)
 sources:
   - "raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md"
   - "raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md"
 created: 2026-07-11
 updated: 2026-07-18
 ---
-
 # NVIDIA Build (무료 AI 추론 플랫폼)
 
 ## 한 줄 정의

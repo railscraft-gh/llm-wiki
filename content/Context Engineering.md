@@ -1,6 +1,6 @@
----
-aliases:
+---aliases:
   - 컨텍스트 엔지니어링
+  - Context-Engineering
 core: true
 created: 2026-05-26
 sources:
@@ -22,7 +22,6 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
-
 # Context Engineering
 
 ## 한 줄 정의

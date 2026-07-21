@@ -1,5 +1,4 @@
----
-type: concept
+---type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +8,12 @@ tags:
 aliases:
   - 컴파일 타임 RAG
   - Compile-Time RAG
+  - Compile-Time-RAG
 sources:
   - raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
-
 # Compile-Time RAG
 
 ## 한 줄 정의
