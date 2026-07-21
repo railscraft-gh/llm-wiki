@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - AI 에이전트 완전 가이드
   - 에이전트 아키텍처
   - 멀티 에이전트 시스템
-  - AI-에이전트-아키텍처-완전-가이드
 core: true
 created: 2026-06-12
 sources:
@@ -63,6 +63,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # AI 에이전트 아키텍처 완전 가이드
 
 > [!summary]

@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: evergreen
 core: false
 tags:
@@ -6,11 +7,11 @@ tags:
   - diffusion
   - video-generation
 aliases: [Video Diffusion Models]
-  - 비디오-생성-확산-모델-(Diffusion-Models-for-Video-Generation)
 sources: [raw/Diffusion Models for Video Generation.md]
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # 비디오 생성 확산 모델 (Diffusion Models for Video Generation)
 
 ## 한 줄 정의

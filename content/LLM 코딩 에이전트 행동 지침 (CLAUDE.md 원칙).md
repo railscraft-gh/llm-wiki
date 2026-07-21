@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - software-engineering
 aliases:
   - Karpathy LLM Coding Guidelines
-  - LLM-코딩-에이전트-행동-지침-(CLAUDE.md-원칙)
 sources:
   - raw/andrej-karpathy-skills-CLAUDE-번역.md
 created: 2026-07-21
 updated: 2026-07-21
----# LLM 코딩 에이전트 행동 지침 (CLAUDE.md 원칙)
+---
+# LLM 코딩 에이전트 행동 지침 (CLAUDE.md 원칙)
 
 ## 한 줄 정의
 안드레이 카파시(Andrej Karpathy) 등의 엔지니어링 실무에서 도출된 가이드라인으로, LLM 코딩 에이전트의 속도보다 신중함과 검증 루프에 중점을 두어 과도한 오버엔지니어링과 불필요한 코드 수정을 억제하는 4대 행동 규범 체계이다.

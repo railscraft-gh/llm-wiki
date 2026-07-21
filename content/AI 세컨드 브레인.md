@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - AI 세컨드 브레인 구축법
   - 개인 지식 관리 시스템
   - PKM
-  - AI-세컨드-브레인
 core: true
 created: 2026-06-07
 sources:
@@ -61,6 +61,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # AI 세컨드 브레인
 
 ## 한 줄 정의

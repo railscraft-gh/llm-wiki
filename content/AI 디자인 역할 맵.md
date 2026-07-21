@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - AI 디자인 계층 맵
   - AI 디자인 운영 계층
-  - AI-디자인-역할-맵
 core: true
 created: 2026-05-26
 sources:
@@ -36,6 +36,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # AI 디자인 역할 맵
 
 ## 한 줄 정의

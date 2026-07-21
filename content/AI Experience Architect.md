@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - AI 경험 아키텍트
   - AI Designer to Architect
-  - AI-Experience-Architect
 core: true
 created: 2026-05-26
 sources:
@@ -59,6 +59,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # AI Experience Architect
 
 ## 한 줄 정의

@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ tags:
 aliases:
   - SaaS UI 패턴
   - SaaS UI Patterns
-  - SaaS-UI-패턴-모범-사례
 sources:
   - "raw/12 UI Patterns Designers Copy From Top SaaS Products.md"
 created: 2026-07-18
 updated: 2026-07-18
----# SaaS UI 패턴 모범 사례 (SaaS UI Patterns)
+---
+# SaaS UI 패턴 모범 사례 (SaaS UI Patterns)
 
 ## 한 줄 정의
 사용자 인지 부하를 낮추고 제품 사용 시의 행동 마찰을 해소하여 전환율과 사용자 경험을 향상시키기 위해, 선두 SaaS 제품들(Notion, Linear, Stripe 등)이 공통적으로 모방하고 활용하는 12가지 검증된 인터페이스 구조 설계 방식이다.

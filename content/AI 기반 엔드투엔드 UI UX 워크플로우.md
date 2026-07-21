@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - workflow
 aliases:
   - 10종 AI 도구 연계 UX 파이프라인
-  - AI-기반-엔드투엔드-UI-UX-워크플로우
 sources:
   - raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----# AI 기반 엔드투엔드 UI UX 워크플로우
+---
+# AI 기반 엔드투엔드 UI UX 워크플로우
 
 ## 한 줄 정의
 단일 AI 도구에 의존하지 않고 리서치, 와이어프레이밍, 에셋 생성, 인터랙티브 프로토타이핑, 코드 생성, 유저 행동 분석의 5개 단계별 특화 AI 도구 10종을 매끄럽게 연결한 고효율 제품 개발 파이프라인이다.

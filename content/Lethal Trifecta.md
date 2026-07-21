@@ -1,5 +1,5 @@
----aliases:
-  - Lethal-Trifecta
+---
+aliases:
 - 치명적 삼위일체
 - Rule of Two
 core: true
@@ -65,6 +65,7 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
+
 # Lethal Trifecta
 
 ## 한 줄 정의

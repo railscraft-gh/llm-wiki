@@ -1,4 +1,5 @@
----type: workflow
+---
+type: workflow
 status: draft
 core: false
 tags:
@@ -12,9 +13,8 @@ sources:
   - raw/You Don’t Need a Job to Make Money.md
 created: 2026-07-20
 updated: 2026-07-20
-aliases:
-  - Claude-수익화-프레임워크-(2026)
 ---
+
 # Claude 수익화 프레임워크 (2026)
 
 ## 한 줄 정의

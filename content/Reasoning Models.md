@@ -1,5 +1,5 @@
----aliases:
-  - Reasoning-Models
+---
+aliases:
 - 추론 모델
 - Reasoning LLM
 - o1
@@ -23,6 +23,7 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
+
 # Reasoning Models
 
 ## 한 줄 정의

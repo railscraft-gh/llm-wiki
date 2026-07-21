@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - OpenAgent Team Mode
   - OMO Team Mode
   - Team Mode (v4.0)
-  - OpenAgent-Team-Mode
 sources:
   - raw/oh-my-openagent-team-mode.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # OpenAgent [[Team Mode]]
 
 ## 한 줄 정의

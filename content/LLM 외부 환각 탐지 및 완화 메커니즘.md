@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - evaluation
 aliases:
   - Extrinsic Hallucinations in LLMs
-  - LLM-외부-환각-탐지-및-완화-메커니즘
 sources:
   - raw/Extrinsic Hallucinations in LLMs.md
 created: 2026-07-21
 updated: 2026-07-21
----# LLM 외부 환각 탐지 및 완화 메커니즘
+---
+# LLM 외부 환각 탐지 및 완화 메커니즘
 
 ## 한 줄 정의
 LLM 출력이 제공된 인컨텍스트 소스 및 외부 세상의 사실(Knowledge Base)과 불일치하거나 알지 못하는 지식에 대해 억지로 답을 꾸며내는 외부 환각(Extrinsic Hallucination) 현상을 정량적으로 평가하고 방어하는 기술 체계이다.

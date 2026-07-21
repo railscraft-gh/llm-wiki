@@ -1,5 +1,5 @@
----aliases:
-  - Hermes-에이전트-자가-개선-아키텍처
+---
+aliases: []
 core: false
 created: 2026-07-10
 sources:
@@ -13,7 +13,8 @@ tags:
   - architecture
 type: workflow
 updated: 2026-07-10
----# Hermes 에이전트 자가 개선 아키텍처
+---
+# Hermes 에이전트 자가 개선 아키텍처
 
 ## 한 줄 정의
 

@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - Chandra OCR 2
   - Datalab Chandra
   - Full-page decoding OCR
-  - Chandra-OCR-2
 sources:
   - raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md
 created: 2026-07-21
 updated: 2026-07-21
----# Chandra OCR 2
+---
+# Chandra OCR 2
 
 ## 한 줄 정의
 Datalab이 개발한 4B(40억) 파라미터 경량 모델로, 상용 API(GPT-4o, Gemini 2.5 Flash)를 능가하는 SOTA 벤치마크 성과를 기록한 오픈 가중치 문서 지능(OCR) 모델.

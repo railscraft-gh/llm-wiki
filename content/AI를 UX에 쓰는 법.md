@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - AI for UX
   - UX에서 AI 쓰는 법
-  - AI를-UX에-쓰는-법
 core: false
 created: 2026-05-29
 sources:
@@ -24,6 +24,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # AI를 UX에 쓰는 법
 
 ## 한 줄 정의

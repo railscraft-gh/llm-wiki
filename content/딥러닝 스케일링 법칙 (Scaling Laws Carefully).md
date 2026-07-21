@@ -1,17 +1,18 @@
----type: concept
+---
+type: concept
 status: evergreen
 core: true
 tags:
   - llm
   - scaling-laws
   - pretraining
-aliases:
-  - 딥러닝-스케일링-법칙-(Scaling-Laws-Carefully)
+aliases: []
 sources:
   - raw/Scaling Laws, Carefully.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # 딥러닝 스케일링 법칙 (Scaling Laws Carefully)
 
 ## 한 줄 정의

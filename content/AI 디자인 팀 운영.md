@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - AI 디자인 팀 빌드 방식
   - 디자인 팀 운영 방식
-  - AI-디자인-팀-운영
 core: false
 created: 2026-05-29
 sources:
@@ -28,6 +28,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # AI 디자인 팀 운영
 
 ## 한 줄 정의

@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - Claude Code Orchestration
   - 에이전트 오케스트레이션
-  - Claude-Code-오케스트레이션
 core: false
 created: 2026-05-06
 sources:
@@ -38,6 +38,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # Claude Code 오케스트레이션
 
 ## 한 줄 정의

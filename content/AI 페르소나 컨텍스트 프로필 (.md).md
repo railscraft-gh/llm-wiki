@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - Voice Profile (.md)
   - 글쓰기 어조 프로필
   - AI 페르소나 프로필
-  - AI-페르소나-컨텍스트-프로필-(.md)
 sources:
   - raw/The Best Way to Make AI Write Like You-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----# AI 페르소나 컨텍스트 프로필 (.md)
+---
+# AI 페르소나 컨텍스트 프로필 (.md)
 
 ## 한 줄 정의
 AI가 뻔하고 평균적인 텍스트([[AI Slop]])를 출력하는 대신 개인 고유의 문체, 거부 단어, 구조적 선호도를 정확히 모방하여 초안을 생성하도록 돕는 단일 마크다운 컨텍스트 규격.

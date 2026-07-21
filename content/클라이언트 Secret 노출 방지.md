@@ -1,5 +1,5 @@
----aliases:
-  - 클라이언트-Secret-노출-방지
+---
+aliases:
 - 브라우저 Secret 노출 방지
 - Client-side API Key
 core: false
@@ -16,6 +16,7 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
+
 # 클라이언트 Secret 노출 방지
 
 ## 한 줄 정의

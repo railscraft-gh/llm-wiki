@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - 사양 기반 개발
   - Spec Driven Development
   - SDD
-  - 사양-기반-개발-(Spec-Driven-Development)
 sources:
   - raw/바이브 코딩의 종말-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # 사양 기반 개발 (Spec Driven Development)
 
 ## 한 줄 정의

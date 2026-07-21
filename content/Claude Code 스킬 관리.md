@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -8,7 +9,6 @@ tags:
 aliases:
   - Claude Code 스킬
   - 클로드 코드 스킬 관리
-  - Claude-Code-스킬-관리
 sources:
   - raw/2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬.md
   - raw/보리스_클로드코드_실무_사용법.md
@@ -40,6 +40,7 @@ sources:
 created: 2026-06-14
 updated: 2026-06-22
 ---
+
 # Claude Code 스킬 관리
 
 ## 한 줄 정의

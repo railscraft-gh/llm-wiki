@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - Obsidian slash command 운영
   - AI 세컨드 브레인 명령어 운영
-  - Obsidian-vault용-Slash-Command-운영
 core: false
 created: 2026-05-24
 sources:
@@ -16,6 +16,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # Obsidian vault용 Slash Command 운영
 
 ## 한 줄 정의

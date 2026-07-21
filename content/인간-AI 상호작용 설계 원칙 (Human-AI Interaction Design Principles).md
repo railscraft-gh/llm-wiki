@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: evergreen
 core: true
 tags:
@@ -7,13 +8,13 @@ tags:
 aliases:
   - 인간-AI 상호작용 설계 원칙
   - AI 디자인 원칙
-  - 인간-AI-상호작용-설계-원칙-(Human-AI-Interaction-Design-Principles)
 sources:
   - raw/39 principles for designing human-AI interaction.md
   - raw/How designers need to change for an AI-powered world.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
+
 # 인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)
 
 ## 한 줄 정의

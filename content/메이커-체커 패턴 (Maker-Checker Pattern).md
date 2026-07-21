@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ aliases:
   - 메이커-체커 패턴
   - Maker-Checker Pattern
   - Maker & Checker
-  - 메이커-체커-패턴-(Maker-Checker-Pattern)
 sources:
   - "raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md"
 created: 2026-07-11
 updated: 2026-07-11
 ---
+
 # 메이커-체커 패턴 (Maker-Checker Pattern)
 
 ## 한 줄 정의

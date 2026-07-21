@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
 aliases:
   - Figma 컴포넌트 구조
   - Figma Component Architecture
-  - Figma-컴포넌트-아키텍처
 sources:
   - "raw/10 Figma Component Structures Used by the World’s Best Design Teams.md"
 created: 2026-07-18
 updated: 2026-07-18
----# Figma 컴포넌트 아키텍처 (Figma Component Architecture)
+---
+# Figma 컴포넌트 아키텍처 (Figma Component Architecture)
 
 ## 한 줄 정의
 디자인 시스템의 지속 가능성과 일관성을 극대화하기 위해, Figma 내에서 컴포넌트를 설계하고 관리할 때 적용하는 구조화 및 명명 방식의 베스트 프랙티스 모음이다.

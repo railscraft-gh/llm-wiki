@@ -1,4 +1,5 @@
----core: false
+---
+core: false
 created: 2026-06-22
 sources:
   - raw/반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md
@@ -9,9 +10,8 @@ tags:
   - tool
 type: tool
 updated: 2026-07-10
-aliases:
-  - 오픈소스-OSINT-도구-14선
 ---
+
 # 오픈소스 OSINT 도구 14선
 
 ## 한 줄 정의

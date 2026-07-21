@@ -1,9 +1,9 @@
----aliases:
+---
+aliases:
   - DESIGN.md workflow
   - 디자인 핸드오프 워크플로우
   - 프로토타입 우선 디자인
   - 피그마 프리 워크플로우
-  - DESIGN.md-워크플로우
 core: true
 created: 2026-06-09
 sources:
@@ -98,6 +98,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # DESIGN.md 워크플로우
 
 ## 한 줄 정의

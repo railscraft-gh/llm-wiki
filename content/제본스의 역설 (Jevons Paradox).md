@@ -1,16 +1,17 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - economics
 aliases:
   - Jevons Paradox
-  - 제본스의-역설-(Jevons-Paradox)
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 제본스의 역설(Jevons Paradox)은 특정 자원의 사용 효율성이 증가하여 비용이 감소할 때, 자원의 소모량이 오히려 감소하지 않고 새로운 사용처의 탄생으로 인해 소비가 급속히 폭발하는 경제학적 역설이다 [raw/From faster pencil to [[AI Experience Architect]]. a designer’s path.md#L22-L24](file:///Users/railscraft/Obsidian/raw/From%20faster%20pencil%20to%20AI%20Experience%20Architect.%20a%20designer%E2%80%99s%20path.md#L22-L24).
 

@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: evergreen
 core: true
 tags:
@@ -7,11 +8,11 @@ tags:
   - RAG
   - evaluation
 aliases: [Extrinsic Hallucinations, LLM 환각]
-  - LLM-외부적-환각-(Extrinsic-Hallucinations-in-LLMs)
 sources: [raw/Extrinsic Hallucinations in LLMs.md]
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # LLM 외부적 환각 (Extrinsic Hallucinations in LLMs)
 
 ## 한 줄 정의

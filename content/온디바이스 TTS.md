@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - On-device TTS
   - 로컬 TTS
   - Supertonic 3
-  - 온디바이스-TTS
 core: false
 created: 2026-05-26
 sources:
@@ -17,6 +17,7 @@ tags:
 type: tool
 updated: 2026-07-10
 ---
+
 # 온디바이스 TTS
 
 ## 한 줄 정의

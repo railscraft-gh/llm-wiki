@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ aliases:
   - 비동기 메시지 큐
   - Asynchronous Message Queue
   - 메시지 큐
-  - 비동기-메시지-큐-(Asynchronous-Message-Queue)
 sources:
   - "raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md"
 created: 2026-07-11
 updated: 2026-07-11
 ---
+
 # 비동기 메시지 큐 (Asynchronous Message Queue)
 
 ## 한 줄 정의

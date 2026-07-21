@@ -1,5 +1,5 @@
----aliases:
-  - AI-엔지니어-필수-논문
+---
+aliases:
 - AI 엔지니어 필수 논문 5선
 - 필수 AI 논문
 core: false
@@ -59,6 +59,7 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
+
 # AI 엔지니어 필수 논문 (Essential AI Papers)
 
 ## 한 줄 정의

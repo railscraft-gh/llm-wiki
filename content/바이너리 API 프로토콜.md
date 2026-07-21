@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -11,9 +12,8 @@ sources:
   - "raw/Text vs Binary. How Dropping JSON Squeezed 5x More Throughput From Our APIs.md"
 created: 2026-07-20
 updated: 2026-07-20
-aliases:
-  - 바이너리-API-프로토콜
 ---
+
 # 바이너리 API 프로토콜
 
 ## 한 줄 정의

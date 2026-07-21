@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - Pi
   - 라즈베리 파이 에이전트 하네스
-  - Pi-Coding-Agent
 core: false
 created: 2026-05-08
 sources:
@@ -48,6 +48,7 @@ tags:
 type: tool
 updated: 2026-07-10
 ---
+
 # Pi Coding Agent
 
 ## 한 줄 정의

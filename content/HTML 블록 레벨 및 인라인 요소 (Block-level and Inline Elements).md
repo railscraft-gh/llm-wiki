@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +10,12 @@ aliases:
   - 블록 레벨 요소
   - 인라인 요소
   - Block-level and Inline Elements
-  - HTML-블록-레벨-및-인라인-요소-(Block-level-and-Inline-Elements)
 sources:
   - "raw/Block-Level and Inline Elements. The difference between div and span.md"
 created: 2026-07-18
 updated: 2026-07-18
 ---
+
 # HTML 블록 레벨 및 인라인 요소 (Block-level and Inline Elements)
 
 ## 한 줄 정의

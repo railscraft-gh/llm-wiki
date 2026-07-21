@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - 오픈소스 LLM 경제성
   - 벤더 종속성 해지
   - si vis pacem, para bellum
-  - 오픈소스-LLM-경제성과-벤더-종속성-해지
 core: true
 created: 2026-06-11
 sources:
@@ -38,6 +38,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # 오픈소스 LLM 경제성과 벤더 종속성 해지
 
 ## 한 줄 정의

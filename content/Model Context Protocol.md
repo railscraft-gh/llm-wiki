@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - MCP
   - 모델 컨텍스트 프로토콜
-  - Model-Context-Protocol
 core: true
 created: 2026-06-10
 sources:
@@ -38,6 +38,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # Model Context Protocol ([[모델 컨텍스트 프로토콜]])
 
 ## 한 줄 정의

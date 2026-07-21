@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - Vectorless RAG
   - PageIndex
   - 구조형 RAG 탐색
-  - Vectorless-RAG-(PageIndex)
 sources:
   - raw/GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기.md
 created: 2026-07-21
 updated: 2026-07-21
----# Vectorless RAG (PageIndex)
+---
+# Vectorless RAG (PageIndex)
 
 ## 한 줄 정의
 청킹(Chunking)과 임베딩(Embedding) 및 벡터 DB를 완전히 배제하고, 문서 고유의 목차 및 트리 구조를 LLM 추론으로 연속 탐색하여 특정 구역으로 직접 이동해 정밀 답을 추출하는 RAG 아키텍처.

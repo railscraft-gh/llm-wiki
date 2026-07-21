@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - C-language
 aliases:
   - SpaceX Pure C AI Infrastructure
-  - SpaceX의-순수-C-언어-기반-22만-대-GPU-AI-인프라-전략
 sources:
   - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
 created: 2026-07-21
 updated: 2026-07-21
----# SpaceX의 순수 C 언어 기반 22만 대 GPU AI 인프라 전략
+---
+# SpaceX의 순수 C 언어 기반 22만 대 GPU AI 인프라 전략
 
 ## 한 줄 정의
 PyTorch나 CUDA 파이썬 wrapper 대신 순수 C 언어로 학습 및 추론 스택을 직접 구축하여 22만 대의 NVIDIA Blackwell Ultra GB300 GPU 클러스터와 800G 네트워크 토폴로지를 1:1 하드코딩 매핑(Exact-mapping)함으로써 JAX 대비 10배의 통신 및 연산 성과를 달성한 극단적 시스템 인프라 접근법이다.

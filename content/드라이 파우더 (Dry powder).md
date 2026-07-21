@@ -1,15 +1,16 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - finance
-aliases:
-  - 드라이-파우더-(Dry-powder)
+aliases: []
 sources:
   - raw/부자들이 현금을 보유하는 진짜 이유와 금융 업계의 거짓말.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 드라이 파우더(Dry Powder)는 자산 시장의 대폭락 또는 알짜 투자 기회 발생 시 즉각적으로 사냥에 나서기 위해 인위적으로 확보해 둔 투자용 현금 실탄 전략을 뜻한다.
 

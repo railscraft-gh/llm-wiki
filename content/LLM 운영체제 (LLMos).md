@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ tags:
 aliases:
   - LLM OS
   - LLM 운영체제
-  - LLM-운영체제-(LLMos)
 sources:
   - raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md
 created: 2026-06-22
 updated: 2026-06-22
 ---
+
 # LLM 운영체제 (LLMos)
 
 ## 한 줄 정의

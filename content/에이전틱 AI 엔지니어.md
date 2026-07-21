@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -6,12 +7,12 @@ tags:
   - agentic
 aliases:
   - 에이전틱 AI 엔지니어 (Agentic AI Engineer)
-  - 에이전틱-AI-엔지니어
 sources:
   - raw/How to Start from 0 as an Agentic AI Engineer.md
 created: 2026-07-11
 updated: 2026-07-11
 ---
+
 # 에이전틱 AI 엔지니어 (Agentic AI Engineer)
 
 ## 한 줄 정의

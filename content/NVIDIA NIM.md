@@ -1,15 +1,16 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - llm
-aliases:
-  - NVIDIA-NIM
+aliases: []
 sources:
   - raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 NVIDIA NIM(NVIDIA Inference Microservices)은 엔비디아가 제공하는 고성능 추론용 마이크로서비스 인프라로, 다양한 오픈소스 및 상용 AI 모델을 손쉽게 엔터프라이즈 환경 및 IDE 등에 통합할 수 있게 지원하는 클라우드 호스팅 서비스이다.
 

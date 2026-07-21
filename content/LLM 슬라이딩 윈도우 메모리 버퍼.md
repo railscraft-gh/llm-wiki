@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - context-window
 aliases:
   - Sliding Window Buffer
-  - LLM-슬라이딩-윈도우-메모리-버퍼
 sources:
   - raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md
 created: 2026-07-21
 updated: 2026-07-21
----# LLM 슬라이딩 윈도우 메모리 버퍼
+---
+# LLM 슬라이딩 윈도우 메모리 버퍼
 
 ## 한 줄 정의
 추론 시 가중치가 고정된 LLM(매개변수 메모리)의 한계를 극복하기 위해, 최근 K개의 대화 턴(Turn)을 선입선출(FIFO) 버퍼 구조로 관리하여 프롬프트 예산(Prompt Budget) 내에 입력하는 가장 기본적인 외부 비매개변수(Non-parametric) 메모리 패턴이다.

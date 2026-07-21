@@ -1,4 +1,5 @@
----type: tool
+---
+type: tool
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ aliases:
   - PageIndex
   - 구조형 RAG
   - 계층형 트리 RAG
-  - PageIndex-(구조형-RAG-탐색)
 sources:
   - raw/I Threw Out My Vector Database. RAG Got Way Better With PageIndex.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
+
 # PageIndex (구조형 RAG 탐색)
 
 ## 한 줄 정의

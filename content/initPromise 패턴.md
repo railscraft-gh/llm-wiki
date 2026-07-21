@@ -1,16 +1,17 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - llm
 aliases:
   - initPromise Pattern
-  - initPromise-패턴
 sources:
   - raw/context-mode-README-정리.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 initPromise 패턴은 비동기 register 런타임을 대기시키지 않는 에이전트 게이트웨이 플랫폼에서, 동기 함수 내에 비동기 초기화(async config) 프로미스를 감싸고 개별 훅 수신 시 이 프로미스의 해결(resolve)을 명시적으로 await하여 실행 순서를 제어하는 개발 디자인 패턴이다.
 

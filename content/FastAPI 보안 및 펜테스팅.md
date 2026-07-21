@@ -1,4 +1,5 @@
----type: workflow
+---
+type: workflow
 status: draft
 core: false
 tags:
@@ -11,9 +12,8 @@ sources:
   - "raw/I Hired a Penetration Tester to Attack My FastAPI App. He Owned Everything in 45 Minutes.md"
 created: 2026-07-20
 updated: 2026-07-20
-aliases:
-  - FastAPI-보안-및-펜테스팅
 ---
+
 # FastAPI 보안 및 펜테스팅
 
 ## 한 줄 정의

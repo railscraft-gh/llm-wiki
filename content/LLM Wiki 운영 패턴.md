@@ -1,5 +1,5 @@
----aliases:
-  - LLM-Wiki-운영-패턴
+---
+aliases:
 - Karpathy의 LLM Wiki
 - LLM Wiki
 - 파일 캐비닛 아키텍처
@@ -65,6 +65,7 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
+
 # LLM Wiki 운영 패턴
 
 ## 한 줄 정의

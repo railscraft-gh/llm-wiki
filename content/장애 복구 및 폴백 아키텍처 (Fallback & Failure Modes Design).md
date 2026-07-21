@@ -1,4 +1,5 @@
----type: workflow
+---
+type: workflow
 status: draft
 core: false
 tags:
@@ -8,12 +9,12 @@ aliases:
   - 장애 복구 및 폴백 아키텍처
   - 폴백 설계
   - Fallback & Failure Modes Design
-  - 장애-복구-및-폴백-아키텍처-(Fallback-&-Failure-Modes-Design)
 sources:
   - raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They Asked..md
 created: 2026-07-15
 updated: 2026-07-15
 ---
+
 # 장애 복구 및 폴백 아키텍처 (Fallback & Failure Modes Design)
 
 ## 한 줄 정의

@@ -1,5 +1,5 @@
----aliases:
-  - 역량-부채(Competence-Debt)
+---
+aliases: []
 core: false
 created: 2026-07-10
 sources:
@@ -13,7 +13,8 @@ tags:
   - software-engineering
 type: concept
 updated: 2026-07-10
----# 역량 부채([[Competence Debt]])
+---
+# 역량 부채([[Competence Debt]])
 
 ## 한 줄 정의
 

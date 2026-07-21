@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - VOO SCHD QQQ
   - ETF 투자
   - 배당 성장 ETF
-  - ETF-3종-투자-원칙
 core: true
 created: 2026-06-12
 sources:
@@ -59,6 +59,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # ETF 3종 투자 원칙
 
 > [!summary]

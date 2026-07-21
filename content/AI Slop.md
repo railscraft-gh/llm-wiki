@@ -1,17 +1,18 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - llm
   - design
   - ai-slop
-aliases:
-  - AI-Slop
+aliases: []
 sources:
   - "raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md"
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 
 AI가 생성한 프런트엔드 UI/UX 디자인에서 흔히 나타나는, 훈련 데이터의 평균값으로 수렴하여 만들어지는 창의성 없고 평범한 시각적 결과물.

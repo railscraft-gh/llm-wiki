@@ -13,11 +13,6 @@ updated: 2026-07-16
 
 ## 2026-07-21
 
-### Lint & Repair
-
-- **일괄 별칭(Alias) 점검 및 보강**: 하이픈(`-`) 기반 문서 링크/검색 호환성 강화를 위해 공백명이 포함된 332개 지식 노트의 `aliases` frontmatter에 하이픈 변환 별칭을 전면 자동 등록함.
-- **깨진 wikilink**: 0개 확인.
-
 ### Ingest
 
 - 입력: `raw/0xMorty_Loop_Design.md`

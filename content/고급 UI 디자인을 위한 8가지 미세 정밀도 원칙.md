@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - user-experience
 aliases:
   - 8 Tiny UI Fixes
-  - 고급-UI-디자인을-위한-8가지-미세-정밀도-원칙
 sources:
   - raw/8 Tiny UI Fixes Most Designers Ignore.md
 created: 2026-07-21
 updated: 2026-07-21
----# 고급 UI 디자인을 위한 8가지 미세 정밀도 원칙
+---
+# 고급 UI 디자인을 위한 8가지 미세 정밀도 원칙
 
 ## 한 줄 정의
 디지털 제품의 만듦새를 결정짓는 요인은 거창한 트렌드가 아니라 대다수 디자이너가 간과하는 8가지 미세 디테일(시각적 위계, 여백, 일관된 라디우스, 보이지 않는 정렬, 컬러 절제, 목적성 모션, 지연 시간 설계, 요소 덜어내기)에 달렸다는 디자인 품질 원칙이다.

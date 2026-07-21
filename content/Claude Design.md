@@ -1,6 +1,6 @@
----aliases:
+---
+aliases:
   - 클로드 디자인
-  - Claude-Design
 core: false
 created: 2026-06-09
 sources:
@@ -52,6 +52,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # Claude Design
 
 ## 한 줄 정의

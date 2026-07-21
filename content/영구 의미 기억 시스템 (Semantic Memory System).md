@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +10,12 @@ aliases:
   - Semantic Memory System
   - 의미 기억 시스템
   - 영구 의미 기억
-  - 영구-의미-기억-시스템-(Semantic-Memory-System)
 sources:
   - raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md
 created: 2026-07-12
 updated: 2026-07-12
 ---
+
 # 영구 의미 기억 시스템 (Semantic Memory System)
 
 ## 한 줄 정의

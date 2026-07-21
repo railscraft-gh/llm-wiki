@@ -1,15 +1,16 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - llm
-aliases:
-  - Qwen-3.5
+aliases: []
 sources:
   - raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 Qwen 3.5는 알리바바 Qwen 팀이 개발한 대형 언어 모델 패밀리로, MoE(Mixture of Experts)와 Dense 변형 아키텍처를 제공하며 특히 로컬 고성능 코딩 및 일반 추론에서 뛰어난 효율을 보여준다.
 

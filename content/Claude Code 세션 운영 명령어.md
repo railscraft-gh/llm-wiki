@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - Claude Code 명령어 운영
   - Claude Code power user commands
-  - Claude-Code-세션-운영-명령어
 core: false
 created: 2026-05-24
 sources:
@@ -17,6 +17,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # Claude Code 세션 운영 명령어
 
 ## 한 줄 정의

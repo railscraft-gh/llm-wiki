@@ -1,15 +1,16 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
   - llm
-aliases:
-  - Claude-Code-바이브코딩
+aliases: []
 sources:
   - raw/cc101_axwith_ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 ## 한 줄 정의
 코드를 직접 작성하지 않고 AI 에이전트(Claude Code)에게 자연어로 기획과 요구사항을 지시하여 소프트웨어를 개발하는 방식.
 

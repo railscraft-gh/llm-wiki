@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - AI-native design system
   - AI 디자인 시스템
   - 에이전트용 디자인 시스템
-  - AI-시대-디자인-시스템
 core: true
 created: 2026-05-07
 sources:
@@ -76,6 +76,7 @@ tags:
 type: concept
 updated: 2026-07-10
 ---
+
 # AI 시대 디자인 시스템
 
 ## 한 줄 정의

@@ -1,5 +1,5 @@
----aliases:
-  - 루프-디자인-(Loop-Design)
+---
+aliases: []
 core: false
 created: 2026-07-10
 sources:
@@ -11,7 +11,8 @@ tags:
   - workflow
 type: workflow
 updated: 2026-07-10
----# 루프 디자인 (Loop Design)
+---
+# 루프 디자인 (Loop Design)
 
 ## 한 줄 정의
 

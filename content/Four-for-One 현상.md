@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +10,12 @@ tags:
 aliases:
   - Four-for-One
   - 직무 압축 현상
-  - Four-for-One-현상
 sources:
   - raw/Why senior designers are doing four jobs for one salary in 2026-ko.md
 created: 2026-07-21
 updated: 2026-07-21
----# Four-for-One 현상
+---
+# Four-for-One 현상
 
 ## 한 줄 정의
 AI 도구 도입으로 생산성이 비약적으로 상승함에 따라 기존 3~4개의 전문 직무(UX Researcher, Design System Lead, Product Designer, Front-End Specialist 등)가 개별 연봉 인상 없이 시니어 1인의 단일 몸값으로 통합 압축되는 인력 시장 현상.

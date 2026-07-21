@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - Infisical
   - 인피지컬
   - Infisical Secret Manager
-  - Infisical-도입-전략
 core: false
 created: 2026-05-07
 sources:
@@ -26,6 +26,7 @@ tags:
 type: tool
 updated: 2026-07-10
 ---
+
 # Infisical 도입 전략
 
 ## 한 줄 정의

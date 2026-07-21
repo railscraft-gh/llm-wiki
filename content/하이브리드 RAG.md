@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +10,12 @@ tags:
 aliases:
   - Hybrid RAG Pipeline
   - 하이브리드 검색 증강 생성
-  - 하이브리드-RAG
 sources:
   - raw/밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md
 created: 2026-07-21
 updated: 2026-07-21
----# 하이브리드 RAG
+---
+# 하이브리드 RAG
 
 ## 한 줄 정의
 의미론적 뉘앙스를 파악하는 밀집 벡터(Dense) 검색과 고유명사·코드의 정밀 매칭을 담당하는 희소 키워드(Sparse) 검색을 결합하고 크로스 인코더 리랭킹으로 최종 후보를 선별하는 RAG 파이프라인.

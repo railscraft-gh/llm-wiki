@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -9,12 +10,12 @@ tags:
 aliases:
   - Single Primary CTA Rule
   - 단일 primary CTA 법칙
-  - 단일-primary-CTA-법칙
 sources:
   - raw/6 Landing Page Mistakes that Kills Signups.md
 created: 2026-07-21
 updated: 2026-07-21
----# 단일 primary CTA 법칙
+---
+# 단일 primary CTA 법칙
 
 ## 한 줄 정의
 랜딩 페이지에서 사용자의 의사결정 마비(Hick's Law)를 예방하기 위해 상충하는 복수의 버튼 대신 명확한 단 하나의 기본 행동(Primary CTA)만을 강조 배치하여 전환율을 극대화하는 규칙.

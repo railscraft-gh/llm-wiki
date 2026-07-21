@@ -1,4 +1,5 @@
----type: workflow
+---
+type: workflow
 status: draft
 core: false
 tags:
@@ -8,13 +9,13 @@ aliases:
   - 영구 원격 세션 아키텍처
   - 원격 세션 관리
   - Persistent Remote Session Architecture
-  - 영구-원격-세션-아키텍처-(Persistent-Remote-Session-Architecture)
 sources:
   - raw/These 10 Linux Tools Changed Everything.md
   - raw/17 macOS Terminal Commands I Actually Use Every Week.md
 created: 2026-07-15
 updated: 2026-07-15
 ---
+
 # 영구 원격 세션 아키텍처 (Persistent Remote Session Architecture)
 
 ## 한 줄 정의

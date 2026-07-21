@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - CLAUDE.md
   - Claude.md
   - AGENTS.md
-  - Claude.md-운영-원칙
 core: true
 created: 2026-05-06
 sources:
@@ -34,6 +34,7 @@ tags:
 type: workflow
 updated: 2026-07-18
 ---
+
 # Claude.md 운영 원칙
 
 ## 한 줄 정의

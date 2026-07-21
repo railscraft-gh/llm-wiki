@@ -1,6 +1,6 @@
----aliases:
+---
+aliases:
   - 하네스 엔지니어링
-  - Harness-Engineering
 core: true
 created: 2026-05-13
 sources:
@@ -95,6 +95,7 @@ tags:
 type: concept
 updated: 2026-07-18
 ---
+
 # Harness Engineering
 
 ## 한 줄 정의

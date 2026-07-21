@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -7,12 +8,12 @@ tags:
   - wiki
 aliases:
   - Karpathy LLM Wiki Architecture
-  - Karpathy-지식-시스템
 sources:
   - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # Karpathy 지식 시스템
 
 ## 한 줄 정의

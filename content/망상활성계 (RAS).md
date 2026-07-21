@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - Reticular Activating System
   - RAS
   - 망상활성계
-  - 망상활성계-(RAS)
 sources:
   - raw/결국 해내는 사람들의 원칙.pdf_by_PaddleOCR-VL-1.6.md
 created: 2026-07-21
 updated: 2026-07-21
----# 망상활성계 (RAS)
+---
+# 망상활성계 (RAS)
 
 ## 한 줄 정의
 뇌간에 위치하여 감각 데이터에서 99.9999%의 불필요한 신호를 차단하고, 개인이 명시적으로 설정한 신념과 목표에 부합하는 정밀 유의미 데이터만 의식으로 통과시키는 여과 신경망.

@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ tags:
 aliases:
   - Quartz로 Obsidian Wiki 배포하기
   - Quartz GitHub Pages 배포 가이드
-  - Quartz로-Obsidian-Wiki-배포하기
 sources:
   - raw/Quartz-GitHub-Pages-Complete-Guide.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # [[Quartz]]로 Obsidian Wiki 배포하기
 
 ## 한 줄 정의

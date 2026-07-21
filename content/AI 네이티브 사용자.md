@@ -1,5 +1,5 @@
----aliases:
-  - AI-네이티브-사용자
+---
+aliases:
 - AI-native user
 - AI 네이티브 개발자
 core: true
@@ -36,6 +36,7 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
+
 # AI 네이티브 사용자 (AI-Native User)
 
 ## 한 줄 정의

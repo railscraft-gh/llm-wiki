@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ aliases:
   - Thundering Herd
   - Hot Key Problem
   - 핫 키 문제
-  - Thundering-Herd-문제
 sources:
   - raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md
 created: 2026-07-21
 updated: 2026-07-21
----# Thundering Herd 문제
+---
+# Thundering Herd 문제
 
 ## 한 줄 정의
 수많은 동시 요청이나 애플리케이션 노드가 특정 바이럴 이벤트로 인해 캐시/데이터베이스의 단일 핫 키(Hot Key)나 공유 리소스로 일시에 몰려 병목 및 시스템 마비를 일으키는 현상.

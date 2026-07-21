@@ -1,7 +1,7 @@
----aliases:
+---
+aliases:
   - LLM Wiki app vs skill
   - purpose.md 운영
-  - LLM-Wiki-구현-선택지
 core: false
 created: 2026-05-26
 sources:
@@ -60,6 +60,7 @@ tags:
 type: concept
 updated: 2026-07-18
 ---
+
 # LLM Wiki 구현 선택지
 
 ## 한 줄 정의

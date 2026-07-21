@@ -1,8 +1,8 @@
----aliases:
+---
+aliases:
   - Boris Loop
   - Claude Routines
   - 클라우드 루프
-  - Loop와-Routines
 core: false
 created: 2026-05-16
 sources:
@@ -21,6 +21,7 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
+
 # Loop와 Routines
 
 ## 한 줄 정의

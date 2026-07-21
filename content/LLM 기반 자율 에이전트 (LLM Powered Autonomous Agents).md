@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: evergreen
 core: true
 tags:
@@ -6,13 +7,13 @@ tags:
   - agent
   - planning
   - memory
-aliases:
-  - LLM-기반-자율-에이전트-(LLM-Powered-Autonomous-Agents)
+aliases: []
 sources:
   - raw/LLM Powered Autonomous Agents.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)
 
 ## 한 줄 정의

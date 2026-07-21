@@ -1,4 +1,5 @@
----type: concept
+---
+type: concept
 status: draft
 core: false
 tags:
@@ -10,12 +11,12 @@ tags:
 aliases:
   - AI 시대를 위한 웹 표준 플레이북
   - Web Standards Playbook for the AI Moment
-  - AI-시대를-위한-웹-표준-플레이북-(Web-Standards-Playbook-for-the-AI-Moment)
 sources:
   - raw/Designing with web standards. The playbook for this AI moment.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
+
 # AI 시대를 위한 웹 표준 플레이북 (Web Standards Playbook for the AI Moment)
 
 ## 한 줄 정의
