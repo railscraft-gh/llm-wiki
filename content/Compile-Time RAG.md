@@ -3,70 +3,47 @@ type: concept
 status: draft
 core: false
 tags:
-  - rag
-  - ai-architecture
   - llm
-  - optimization
+  - rag
+  - architecture
+aliases:
+  - 컴파일 타임 RAG
+  - Compile-Time RAG
 sources:
-  - "raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md"
-created: 2026-07-20
-updated: 2026-07-20
+  - raw/RAG is a knowledge interpreter. Time for a compiler — Compile-Time RAG.md
+created: 2026-07-21
+updated: 2026-07-21
 ---
 
 # Compile-Time RAG
 
 ## 한 줄 정의
-
-Compile-Time RAG는 요청 경로(request path) 밖에서 지식 텍스트를 미리 해석·구조화해 태스크 최적화 아티팩트(artifact)로 구워두고 서빙하는 사전 컴파일 아키텍처 패턴이다.
+런타임에 날것의 텍스트 청크를 매번 검색·해석하는 대신, 질문 수신 전 사전 컴파일 단계에서 태스크 최적화 아티팩트(Artifact)를 단 한 번 빌드하여 서빙 경로의 오버헤드를 최소화하는 RAG 아키텍처 패러다임.
 
 ## 핵심 요지
-
-- 기존 런타임 RAG는 요청이 올 때마다 날것의 텍스트 청크를 임베딩·검색·주입하는 지식 인터프리터 방식으로 구동된다.
-- 자율 에이전트 루프가 지속되면 매 단계 대화 맥락이 불어나 입력 토큰 소비가 기하급수적으로 폭증하는 '에이전트 루프세(loop tax)'가 발생한다.
-- Compile-Time RAG는 질의 도달 전 지식 결합 및 구조화를 단 한 번 수행해 정형화된 아티팩트를 만들고 런타임에는 가볍게 서빙만 수행한다.
-- 벤치마크상 약 90% 수준의 토큰 소비 절감 효과를 기대할 수 있지만, 아티팩트 사전 빌드(컴파일) 비용과 데이터 최신성(freshness) 동기화 리스크를 수반한다.
+- **런타임 검색의 인터프리터적 비효율성 극복**: 기존 RAG는 요청 경로 내에서 문서를 청크로 분할하고 매 쿼리마다 임베딩·검색·해석을 반복하여 차가운 재시작(cold start)과 연산 오버헤드를 발생시킵니다.
+- **에이전트 루프세(Loop Tax) 제거**: 다단계 추론 에이전트는 누적 입력 토큰 폭증으로 연산 비용의 [80~90%](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L50)를 추론 비용으로 소비하는데, 사전 가공 아티팩트를 제공해 추론 단계와 토큰 소모를 대폭 줄입니다.
+- **Compile-Index-Serve 3단계 분리**: 사전 컴파일(Compile), 검증 아티팩트의 인덱싱(Index), 정형 객체 단기 제공(Serve)으로 역할을 분리하여 처리합니다.
+- **상쇄 비용과 데이터 최신성 수용**: 사전 빌드 단계로 비용이 이동하므로, 동적·권한 중심 데이터는 실시간 RAG를 유지하고 정적 문서(정책, 서식, 재무 보고서 등) 위주로 사전 컴파일하는 하이브리드 전략이 필수적입니다.
 
 ## 상세
+기존 런타임 RAG는 쿼리 도달 시 매번 유사 청크를 끌어오는 인터프리터 방식을 취합니다. 단발성 대화에서는 이 오버헤드가 단 1회 발생하여 큰 부담이 없으나, 다단계 내부 추론을 반복하는 루프형 에이전트 환경에서는 과거 대화 히스토리 및 컨텍스트 누적으로 인해 입력 토큰이 비선형적으로 증폭됩니다. 자기 반성(reflection) 루프를 10회 진행할 경우 토큰 소모가 [5배~30배](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L50) 폭증하는 문제가 일어납니다. 동시 사용자가 [50명에서 500명, 700명](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L6)으로 늘어날 때 프로젝트가 좌초되는 까닭은 모델의 성능 부족이 아닌 매 단계 밑바닥부터 해석을 재실행한 아키텍처적 결함 때문입니다.
 
-### 인터프리터 방식(런타임 RAG)의 한계와 에이전트 루프세
+컴파일 타임 RAG는 '청크(Chunk)' 대신 문서 간 관계와 맥락을 특정 태스크용으로 사전 조립한 '아티팩트(Artifact)'를 생성합니다. 파인콘 KRAFTBench 실험에 따르면, 10-K 기업 보고서 검증 시 기존 RAG 평균 소비 토큰은 약 [49,000 토큰](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L119)에 달했으나 컴파일 타임 RAG는 약 [6,700 토큰](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L119)으로 [약 7배(90% 가까운)](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L10) 비용 절감을 보였습니다. 처리 시간 역시 37.9초에서 [22.7초로 약 1.7배](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L125) 개선되었습니다.
 
-클래식 RAG는 매 요청마다 5단계(청킹 → 임베딩 → 벡터 DB 로드 → 쿼리 임베딩 → 탑-K 프롬프트 주입)를 반복한다. 단발성 챗봇에서는 일회성 오버헤드에 그치지만, 스스로 추론과 도구 호출을 반복하는 루프형 에이전트 환경에서는 오버헤드가 누적된다.
-
-추론 루프가 진행될수록 이전 추론 궤적과 검색 파편이 프롬프트에 불어나며, 에이전트 운영 예산의 [80~90%가 입력 토큰 추론 비용](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L50)으로 소비된다. 10-K 기업 보고서 대상 비교 검색 벤치마크에서 기존 에이전트 RAG의 정확도는 [약 0.41](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L32) 수준에 그치는데, 원거리 텍스트 조각 간의 유기적 관계(join)를 런타임 시맨틱 검색만으로 연결하지 못하기 때문이다.
-
-### 청크 대 아티팩트(Artifact)
-
-- **단순 청크**: 바이트나 글자 수 단위로 기계 분할한 가공되지 않은 텍스트 덩어리다.
-- **아티팩트**: 재무 수익성 대조표나 규정 디펜던시 맵처럼 수많은 연관 문서를 분석하여 특정 태스크 수행에 최적화되도록 맥락과 엔티티 관계를 미리 해결(resolve in advance)한 정형 데이터 구조다.
-
-검증 루프 없이 기계적으로 구워낸 아티팩트는 [최대 53~60%의 데이터 유실율](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L72)을 보인다. 원본 대조 및 피드백 보정 루프를 거쳐야 데이터 품질이 약 80% 수준으로 안정화된다.
-
-### Compile-Index-Serve 파이프라인
-
-1. **Compile**: 컨텍스트 컴파일러 에이전트가 평가지표(eval set) 질문과 소스 문서를 바탕으로 아티팩트를 생성하고 반복 검증한다.
-2. **Index**: 검증된 아티팩트 객체를 시맨틱·키워드 하이브리드 인덱스 저장소에 구워둔다.
-3. **Serve**: 질문 수신 시 에이전트에게 팩트와 출처가 명시된 정형 객체를 즉시 서빙한다. (예: KnowQL 선언형 쿼리, LLM Wiki 마크다운 노트 빌드).
-
-### 경제성 실체와 기회 비용
-
-파인콘의 KRAFTBench 실험에 따르면 10-K 보고서 검증 시 기존 RAG는 평균 [약 49,000 토큰](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L119)을 소비한 반면, Compile-Time RAG는 [약 6,700 토큰](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L119)만 소모해 대략 7배(약 86~90%)의 토큰 절감을 기록했다. 응답 지연 시간의 경우 기존 RAG 37.9초 대비 [22.7초로 약 1.7배 향상](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L125)되었다.
-
-실시간 토큰 비용 절감은 사전에 아티팩트를 생성하는 컴파일 단계로 연산 비용이 수평 이동한 결과다. 원본 정보가 빈번하게 변경되어 아티팩트 재빌드가 끊임없이 일어난다면 컴파일 빌드 예산이 런타임 절약분을 초과할 위험이 있다.
+다만 검증 없는 사전 빌드는 위험합니다. 학술 연구(WiCER)에 의하면 검증 없는 기계적 아티팩트 생성은 데이터 유실율이 [53~60%](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L72)에 이르고, 검증·보정 피드백 루프를 적용해야 [80% 수준](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L72)의 품질이 확보됩니다.
 
 ## 예시
-
-- **사전 컴파일 적합**: 변경 주기가 긴 사규, 표준 계약서 서식, 릴리스된 기술 사양서, 연말 재무 보고서.
-- **실시간 런타임 검색 적합**: 실시간 상담 티켓, 재고 및 가변 단가표, 유저별 조회 권한 통제가 필요한 보안 문서.
+- **기업 내규 및 연례 보고서 최적화**: 매 분기 갱신되는 10-K 보고서나 사내 표준 정책 문서를 '수익성 대조표 아티팩트', '규정 맵 아티팩트' 형태로 사전 컴파일하여 에이전트 질문 시 즉시 결합 서빙.
+- **LLM Wiki 패턴**: 안드레 카파시의 LLM 위키처럼 주기적 컴파일러가 마크다운 파일들로부터 정리된 구조화 지식 노트를 생성·저장하여 런타임 쿼리 비용을 제거하는 아키텍처.
 
 ## 충돌
-
-사전 컴파일 방식을 극단적으로 적용해 모든 문서 아티팩트화를 추진할 경우, 원본 문서 변경 시 재빌드 스케줄러 오작동으로 인해 시스템이 오래된 아티팩트 스냅샷을 기반으로 매끄럽고 설득력 있는 환각(hallucination)을 생성할 위험이 커진다.
+- **모든 지식의 컴파일 시도 시 배보다 배꼽이 더 커짐**: 1분 단위로 변하는 동적 데이터(실시간 재고, 상담 티켓)나 유저별 보안 권한 통제가 필요한 정보는 컴파일 시 빌드 비용 폭증과 환각/노후화 리스크(stale data)를 유발합니다.
+- **복잡한 다중 관계 비교 질문**: 시맨틱 검색 단독 적용 시 다중 연결 질문 정확도가 [0.41](file:///Users/railscraft/Obsidian/raw/RAG%20is%20a%20knowledge%20interpreter.%20Time%20for%20a%20compiler%20%E2%80%94%20Compile-Time%20RAG.md#L32)에 불과하던 한계를 컴파일 타임 아티팩트의 사전 조인(Materialized View 개념)으로 보완해야 합니다.
 
 ## 관련 노트
-
 - [[RAG 아키텍처 선택]]
-- [[PageIndex (구조형 RAG 탐색)]]
-- [[RAG 퓨전]]
-- [[하이브리드 검색 인덱스]]
-- [[LLM Wiki 구현 선택지]]
+- [[GraphRAG]]
+- [[Context Engineering]]
+- [[LLM 메모리 시스템 아키텍처]]
 
