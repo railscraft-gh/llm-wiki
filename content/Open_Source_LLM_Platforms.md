@@ -34,6 +34,6 @@ updated: 2026-07-21
 - **하이브리드 패턴:** 개발은 로컬 Ollama, 테스트는 OpenRouter의 무료 모델, 운영은 Groq의 고속 엔드포인트를 사용하여 인프라 전환 비용을 최소화합니다.
 
 ## 관련 노트
-- [[Apple_Silicon_Local_AI_Stack]]
-- Claude_Code_실무활용법_보리스_관점_정리
+- [[AI 코딩 에이전트 검증 전략]]
+- [[LLM Wiki 운영 패턴]]
 

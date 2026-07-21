@@ -33,6 +33,6 @@ PARA(Projects, Areas, Resources, Archives) 방법론을 적용하여 AI 에이�
 단순 지식 저장소가 아니라 시스템(인프라 레이어)과의 연동이 없다면 단순 챗봇에 머물게 됨 [raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md#L38](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md#L38).
 
 ## 관련 노트
-- [[CLAUDE_md_가이드라인]]
-- PARA 방법론
+- [[AI 코딩 에이전트 검증 전략]]
+- [[LLM Wiki 운영 패턴]]
 

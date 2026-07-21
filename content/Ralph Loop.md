@@ -38,6 +38,6 @@ updated: 2026-07-21
 - **Brown Field 프로젝트 오버킬**: 신규 구축(Green Field)이 아닌 기존 코드베이스의 소규모 수정에서는 3대 프레임워크 풀 통합 및 Ralph Loop 적용 시 관리 오버헤드가 과도할 수 있음.
 
 ## 관련 노트
-- [[Agent Harness]]
-- subagent-driven-development
+- [[AI 코딩 에이전트 검증 전략]]
+- [[LLM Wiki 운영 패턴]]
 

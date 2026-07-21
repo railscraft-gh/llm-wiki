@@ -1,5 +1,5 @@
 ---
-type: role
+type: concept
 status: draft
 core: false
 tags:

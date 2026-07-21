@@ -33,6 +33,6 @@ AI 코딩의 정확도를 유지하기 위해 '컨텍스트 로트(Context Rot, 
 단순한 기능 수정이나 소규모 변경에 전체 통합 워크플로우를 적용하는 것은 오버엔지니어링이 될 수 있음 [raw/[[Ralph Loop]] - AI 코딩 자율 워크플로우 Spectrum Development 통합.md#L137](file:///Users/railscraft/Obsidian/raw/Ralph%20Loop%20-%20AI%20%EC%BD%94%EB%93%A9%20%EC%9E%90%EC%9C%A8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20Spectrum%20Development%20%ED%86%B5%ED%95%A9.md#L137).
 
 ## 관련 노트
-- AI 에이전트 워크플로우
-- [[하네스_엔지니어링]]
+- [[AI 코딩 에이전트 검증 전략]]
+- [[LLM Wiki 운영 패턴]]
 

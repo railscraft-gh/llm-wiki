@@ -41,6 +41,6 @@ updated: 2026-07-21
 - **멀티홉 추론(Multi-Hop Reasoning) 한계**: 유사도 기반 검색 특성상 "앨리스의 남동생이 일하는 회사"처럼 복잡한 관계망을 여러 단계 징검다리로 엮어야 하는 암시적 정보 추적에는 실패함 ([[GraphRAG]] 필요).
 
 ## 관련 노트
-- [[대화 쌍 저장 전략]]
-- GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기
+- [[AI 코딩 에이전트 검증 전략]]
+- [[LLM Wiki 운영 패턴]]
 
