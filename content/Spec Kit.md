@@ -38,14 +38,14 @@ sources:
   - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
   - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
   - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-status: evergreen
+status: draft
 tags:
   - ai-coding
   - open-source
   - tool
   - github
 type: tool
-updated: 2026-07-21
+updated: 2026-07-10
 ---
 
 # Spec Kit

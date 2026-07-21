@@ -70,7 +70,7 @@ tags:
   - ai-coding
   - engineering
 type: concept
-updated: 2026-07-21
+updated: 2026-07-10
 ---
 
 # Vibe Coding과 Agentic Engineering

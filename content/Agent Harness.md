@@ -98,7 +98,7 @@ tags:
   - harness-engineering
   - orchestration
 type: concept
-updated: 2026-07-21
+updated: 2026-07-10
 ---
 
 # Agent Harness

@@ -3,7 +3,6 @@ aliases:
   - 하네스 엔지니어링
 core: true
 created: 2026-05-13
-updated: 2026-07-21
 sources:
   - 하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유
   - evolution-of-ai-agentic-patterns
