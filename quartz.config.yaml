@@ -169,6 +169,29 @@ plugins:
     options:
       links:
         GitHub: https://github.com/railscraft-gh/llm-wiki
+  - source: github:quartz-community/bases-page
+    enabled: true
+  - source: github:quartz-community/note-properties
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
+  - source: github:quartz-community/encrypted-pages
+    enabled: true
+    options:
+      iterations: 600000
+      passwordField: password
+      unlistWhenEncrypted: false
+      outputPath: static/encryptedContentIndex.json
 layout:
   groups:
     toolbar:
