@@ -26582,3 +26582,24 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-21 18:12:47] 배포 시작
 [2026-07-21 18:12:47] wiki 동기화 완료
 [2026-07-21 18:12:47] 출처 섹션 제거 완료
+[v4 66f3f6c4] Auto-deploy: sync wiki content 2026-07-21 18:12
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 80 insertions(+)
+ create mode 100644 "content/Google TurboQuant KV \354\272\220\354\213\234 2\353\213\250\352\263\204 \354\225\225\354\266\225 \352\270\260\353\262\225.md"
+[2026-07-21 18:12:50] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-21 18:12:50] symlink 복원 완료
+---
+[2026-07-21 18:12:50] 배포 시작
+[2026-07-21 18:12:50] wiki 동기화 완료
+[2026-07-21 18:12:51] 출처 섹션 제거 완료
