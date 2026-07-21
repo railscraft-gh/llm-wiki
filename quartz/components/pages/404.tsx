@@ -19,27 +19,38 @@ const NotFound: QuartzComponent = ({ cfg, ctx }: QuartzComponentProps) => {
               if (basePath.length > 1 && basePath.endsWith("/")) {
                 basePath = basePath.slice(0, -1);
               }
-              var pathname = window.location.pathname;
-              var hasBasePrefix = basePath.length > 1 && pathname.startsWith(basePath);
+              var rawPath = window.location.pathname;
+              var decoded = rawPath;
+              try { decoded = decodeURIComponent(rawPath); } catch (e) {}
+              
+              var hasBasePrefix = basePath.length > 1 && decoded.startsWith(basePath);
               if (hasBasePrefix) {
-                pathname = pathname.slice(basePath.length);
+                decoded = decoded.slice(basePath.length);
               }
-              if (pathname.startsWith("/")) {
-                pathname = pathname.slice(1);
+              if (decoded.startsWith("/")) {
+                decoded = decoded.slice(1);
               }
-              if (pathname.endsWith("/")) {
-                pathname = pathname.slice(0, -1);
+              if (decoded.endsWith("/")) {
+                decoded = decoded.slice(0, -1);
               }
-              if (pathname.endsWith(".html")) {
-                pathname = pathname.slice(0, -5);
+              if (decoded.endsWith(".html")) {
+                decoded = decoded.slice(0, -5);
               }
-              if (pathname.endsWith("/index")) {
-                pathname = pathname.slice(0, -6);
+              if (decoded.endsWith("/index")) {
+                decoded = decoded.slice(0, -6);
               }
-              var lowered = pathname.toLowerCase();
-              if (lowered !== pathname && index[lowered] != null) {
+              
+              var lowered = decoded.toLowerCase();
+              var matchKey = index[decoded] ? decoded : (index[lowered] ? lowered : null);
+              if (!matchKey) {
+                var hyphed = decoded.replace(/\s+/g, "-");
+                if (index[hyphed]) matchKey = hyphed;
+                else if (index[hyphed.toLowerCase()]) matchKey = hyphed.toLowerCase();
+              }
+
+              if (matchKey) {
                 var prefix = hasBasePrefix ? basePath : "";
-                var target = prefix + (prefix.endsWith("/") ? "" : "/") + lowered;
+                var target = prefix + (prefix.endsWith("/") ? "" : "/") + matchKey + ".html";
                 window.location.replace(target);
               }
             });
