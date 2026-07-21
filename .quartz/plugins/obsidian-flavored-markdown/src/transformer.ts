@@ -581,7 +581,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<
             (node) => node.type === "heading" && (node as Heading).depth === 1,
           );
 
-          if (firstH1Index !== -1 && firstH1Index < 3) {
+          if (firstH1Index !== -1) {
             tree.children.splice(firstH1Index, 1);
           }
         };
