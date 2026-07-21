@@ -28,7 +28,7 @@ AI 기술의 과도한 기대와 실질적 프로덕션 도달률의 괴리로 �
 
 ## 충돌
 - [AI 에이전트는 죽었다](file:///Users/railscraft/Obsidian/raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md)
-- [Harness Engineering](file:///Users/railscraft/Obsidian/raw/Harness Engineering for Self-Improvement.md)
+- [Harness Engineering](file:///Users/railscraft/Obsidian/raw/[[Harness Engineering]] for Self-Improvement.md)
 
 ## 관련 노트
 - [[AI 에이전트 워크플로우 패턴]]

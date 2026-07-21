@@ -167,8 +167,8 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
    - **단점**: CLI 환경 설정의 진입 장벽.
    - **평가**: 개발자용 9/10점, 일반인용 4/10점[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L43](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L43).
 
-2. **Tome (Claude Code + Quartz)**
-   - **특징**: Quartz 렌더링 레이어를 적용해 브라우저로 훑어볼 수 있는 웹 위키(디지털 가든) 생성.
+2. **Tome (Claude Code + [[Quartz]])**
+   - **특징**: [[Quartz]] 렌더링 레이어를 적용해 브라우저로 훑어볼 수 있는 웹 위키(디지털 가든) 생성.
    - **장점**: 백링크와 시각적 그래프 뷰 제공으로 반복 조회 습관 형성에 유리함.
    - **단점**: engram 대비 수집(Ingest)의 정밀성이 낮아 핵심 사항 누락 가능성 존재.
    - **평가**: 7.5/10점[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L55](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L55).

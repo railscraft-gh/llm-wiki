@@ -26,7 +26,7 @@ Google Stitch는 웹 및 제품 프로토타이핑 단계를 가속화하기 위
 - **Stitch 스타일 생성 루프**: 프롬프트 창을 통해 "SaaS용 대시보드 스타일의 심플한 오렌지 톤 템플릿 생성"을 요청하고, 실시간 반응 렌더러를 모니터링하며 디자인 시안을 가볍게 선별하는 방식 [raw/AI와 디자인 시스템 - 출판형 다듬기.md#L35](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L35).
 
 ## 충돌
-- Claude Design 등 타 AI 프로토타이핑 도구와 비슷하게, 템플릿 가중치를 Figma 등으로 내보내거나 커스텀 다듬기를 진행할 때 상당량의 사용량 쿼터나 토큰 낭비를 유발하며, 서식 오류가 잦아 Figma에서 수동으로 처음부터 만드는 것보다 시간 손실이 더 생길 수 있다 [raw/AI와 디자인 시스템 - 출판형 다듬기.md#L51-L56](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L51-L56).
+- [[Claude Design]] 등 타 AI 프로토타이핑 도구와 비슷하게, 템플릿 가중치를 Figma 등으로 내보내거나 커스텀 다듬기를 진행할 때 상당량의 사용량 쿼터나 토큰 낭비를 유발하며, 서식 오류가 잦아 Figma에서 수동으로 처음부터 만드는 것보다 시간 손실이 더 생길 수 있다 [raw/AI와 디자인 시스템 - 출판형 다듬기.md#L51-L56](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L51-L56).
 
 ## 관련 노트
 - [[AI 시대 디자인 시스템]]
