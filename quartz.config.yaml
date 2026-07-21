@@ -100,6 +100,8 @@ plugins:
       enableRSS: true
   - source: github:quartz-community/favicon
     enabled: true
+  - source: github:quartz-community/cname
+    enabled: true
   - source: github:quartz-community/content-page
     enabled: true
   - source: github:quartz-community/folder-page
