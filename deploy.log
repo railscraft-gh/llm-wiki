@@ -24432,3 +24432,26 @@ After doing this, you may fix the identity used for this commit with:
 [2026-07-21 17:05:01] 배포 시작
 [2026-07-21 17:05:01] wiki 동기화 완료
 [2026-07-21 17:05:02] 출처 섹션 제거 완료
+[v4 9af26118] Auto-deploy: sync wiki content 2026-07-21 17:05
+ Committer: railscraft <railscraft@Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 179 insertions(+)
+ create mode 100644 "content/\352\263\240\355\222\210\354\247\210 \355\234\264\353\250\274 \353\215\260\354\235\264\355\204\260\354\231\200 RLHF (High-Quality Human Data & RLHF).md"
+ create mode 100644 "content/\355\205\214\354\212\244\355\212\270 \355\203\200\354\236\204 \354\227\260\354\202\260\352\263\274 \354\266\224\353\241\240 \353\252\250\353\223\234 (Test-Time Compute & Why We Think).md"
+ create mode 100644 "content/\355\225\234\352\265\255 \352\263\265\355\234\264\354\235\274 \353\215\260\354\235\264\355\204\260 \354\227\260\353\217\231 \354\225\204\355\202\244\355\205\215\354\262\230.md"
+[2026-07-21 17:05:05] 배포 완룝: https://railscraft-gh.github.io/llm-wiki
+[2026-07-21 17:05:05] symlink 복원 완료
+---
+[2026-07-21 17:05:20] 배포 시작
+[2026-07-21 17:05:20] wiki 동기화 완료
+[2026-07-21 17:05:21] 출처 섹션 제거 완료
