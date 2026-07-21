@@ -4,7 +4,8 @@ status: draft
 core: false
 tags:
   - llm
-aliases: []
+aliases:
+  - Qwen-3.5
 sources:
   - raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md
 created: 2026-07-21

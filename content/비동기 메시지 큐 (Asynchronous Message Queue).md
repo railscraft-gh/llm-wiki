@@ -6,6 +6,7 @@ tags:
   - llm
   - agentic
 aliases:
+  - 비동기-메시지-큐-(Asynchronous-Message-Queue)
   - 비동기 메시지 큐
   - Asynchronous Message Queue
   - 메시지 큐

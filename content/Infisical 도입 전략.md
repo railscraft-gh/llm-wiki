@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Infisical-도입-전략
   - Infisical
   - 인피지컬
   - Infisical Secret Manager

@@ -6,6 +6,7 @@ tags:
   - llm
   - career
 aliases:
+  - AI-시대의-커리어-피벗
   - AI 커리어 피벗
   - AI 시대의 전직
 sources:

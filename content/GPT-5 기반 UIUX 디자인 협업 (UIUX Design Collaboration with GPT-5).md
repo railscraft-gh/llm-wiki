@@ -7,6 +7,7 @@ tags:
   - llm
   - ui-ux
 aliases:
+  - GPT-5-기반-UIUX-디자인-협업-(UIUX-Design-Collaboration-with-GPT-5)
   - GPT-5 디자인 협업
   - AI 크리에이티브 파트너
 sources:

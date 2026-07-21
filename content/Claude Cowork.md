@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Claude-Cowork
   - 클로드 코워크
   - Cowork
 core: false

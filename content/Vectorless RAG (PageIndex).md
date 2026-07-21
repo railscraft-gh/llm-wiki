@@ -8,6 +8,7 @@ tags:
   - architecture
   - context
 aliases:
+  - Vectorless-RAG-(PageIndex)
   - Vectorless RAG
   - PageIndex
   - 구조형 RAG 탐색

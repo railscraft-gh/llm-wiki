@@ -4,7 +4,8 @@ status: evergreen
 core: true
 tags:
   - llm
-aliases: []
+aliases:
+  - Sequoia-Ascent-2026
 sources:
   - raw/sequoia-ascent-2026-karpathy-ko.md
 created: 2026-07-21

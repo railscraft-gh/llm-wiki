@@ -9,6 +9,8 @@ sources:
   - "raw/Loop Engineering Is NOT What Everybody Thinks It Is.md"
 created: 2026-07-20
 updated: 2026-07-20
+aliases:
+  - 피드백-제어기-(Feedback-Controller)
 ---
 
 # [[피드백 제어기]] (Feedback Controller)

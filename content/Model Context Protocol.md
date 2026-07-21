@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Model-Context-Protocol
   - MCP
   - 모델 컨텍스트 프로토콜
 core: true

@@ -8,6 +8,7 @@ tags:
   - memory
   - hermes
 aliases:
+  - Closed-Learning-Loop
   - Closed Learning Loop
   - 자가 학습 피드백 루프
 sources:

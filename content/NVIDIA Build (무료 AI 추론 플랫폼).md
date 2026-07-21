@@ -6,6 +6,7 @@ tags:
   - llm
   - agentic
 aliases:
+  - NVIDIA-Build-(무료-AI-추론-플랫폼)
   - NVIDIA Build
   - NVIDIA NIM
 sources:

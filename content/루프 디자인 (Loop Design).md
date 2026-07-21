@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - 루프-디자인-(Loop-Design)
 core: false
 created: 2026-07-10
 sources:

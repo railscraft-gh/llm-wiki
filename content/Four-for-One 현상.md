@@ -8,6 +8,7 @@ tags:
   - career
   - labor
 aliases:
+  - Four-for-One-현상
   - Four-for-One
   - 직무 압축 현상
 sources:

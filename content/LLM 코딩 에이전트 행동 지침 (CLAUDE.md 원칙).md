@@ -7,6 +7,7 @@ tags:
   - prompt-engineering
   - software-engineering
 aliases:
+  - LLM-코딩-에이전트-행동-지침-(CLAUDE.md-원칙)
   - Karpathy LLM Coding Guidelines
 sources:
   - raw/andrej-karpathy-skills-CLAUDE-번역.md

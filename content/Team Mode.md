@@ -7,6 +7,7 @@ tags:
   - multi-agent
   - openagent
 aliases:
+  - Team-Mode
   - Team Mode
 sources:
   - raw/oh-my-openagent-team-mode.md

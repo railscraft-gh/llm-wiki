@@ -6,6 +6,7 @@ tags:
   - llm
   - cloud-security
 aliases:
+  - 프라이빗-클라우드-컴퓨팅-(Private-Cloud-Compute)
   - Private Cloud Compute
   - PCC
   - 프라이빗 클라우드 컴퓨팅

@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AMI-Labs
 - 아미 랩스
 core: false
 created: 2026-06-09

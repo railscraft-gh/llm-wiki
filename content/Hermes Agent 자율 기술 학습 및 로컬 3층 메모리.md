@@ -8,6 +8,7 @@ tags:
   - local-ai
   - memory
 aliases:
+  - Hermes-Agent-자율-기술-학습-및-로컬-3층-메모리
   - Hermes Agent Autonomous Skill Learning & 3-Layer Memory
 sources:
   - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md

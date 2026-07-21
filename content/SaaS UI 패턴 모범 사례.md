@@ -7,6 +7,7 @@ tags:
   - ui-ux
   - saas
 aliases:
+  - SaaS-UI-패턴-모범-사례
   - SaaS UI 패턴
   - SaaS UI Patterns
 sources:

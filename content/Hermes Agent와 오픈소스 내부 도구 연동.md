@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Hermes-Agent와-오픈소스-내부-도구-연동
 - Hermes 내부 도구 연동
 - 에이전트 내부 도구 활용
 core: false

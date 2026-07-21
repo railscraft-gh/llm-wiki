@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-기본값-구현체
 - AI가 표준화한 기본 구현체
 - default implementation in AI era
 core: false

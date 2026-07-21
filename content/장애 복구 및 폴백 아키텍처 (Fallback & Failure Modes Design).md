@@ -6,6 +6,7 @@ tags:
   - infrastructure
   - system-design
 aliases:
+  - 장애-복구-및-폴백-아키텍처-(Fallback-&-Failure-Modes-Design)
   - 장애 복구 및 폴백 아키텍처
   - 폴백 설계
   - Fallback & Failure Modes Design

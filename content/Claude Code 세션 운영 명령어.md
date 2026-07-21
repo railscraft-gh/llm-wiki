@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Claude-Code-세션-운영-명령어
   - Claude Code 명령어 운영
   - Claude Code power user commands
 core: false

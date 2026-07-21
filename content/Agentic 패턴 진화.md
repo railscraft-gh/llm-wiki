@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Agentic-패턴-진화
 - Prompt to Context to Harness
 - 프롬프트-컨텍스트-하네스 진화
 - Agentic Patterns Evolution

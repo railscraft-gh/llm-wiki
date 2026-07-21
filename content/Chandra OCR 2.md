@@ -8,6 +8,7 @@ tags:
   - open-source
   - vision
 aliases:
+  - Chandra-OCR-2
   - Chandra OCR 2
   - Datalab Chandra
   - Full-page decoding OCR

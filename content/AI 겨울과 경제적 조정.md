@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-겨울과-경제적-조정
   - AI 겨울
   - AI Winter
   - AI 버블

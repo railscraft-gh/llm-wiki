@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-네이티브-작업-시스템
 - AI-native work system
 - 에이전트 시대 작업 시스템
 core: true

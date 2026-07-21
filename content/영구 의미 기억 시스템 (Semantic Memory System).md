@@ -7,6 +7,7 @@ tags:
   - agent-architecture
   - obsidian
 aliases:
+  - 영구-의미-기억-시스템-(Semantic-Memory-System)
   - Semantic Memory System
   - 의미 기억 시스템
   - 영구 의미 기억

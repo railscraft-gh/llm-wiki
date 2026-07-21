@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Andrew-Ng-4-에이전틱-디자인-패턴
 - 4 Agentic Design Patterns
 - Andrew Ng 4가지 패턴
 - AI 에이전트 워크플로우 5대 핵심 패턴

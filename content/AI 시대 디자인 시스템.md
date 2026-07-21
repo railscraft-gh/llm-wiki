@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-시대-디자인-시스템
   - AI-native design system
   - AI 디자인 시스템
   - 에이전트용 디자인 시스템

@@ -8,6 +8,7 @@ tags:
   - data-engineering
   - alignment
 aliases:
+  - 고품질-휴먼-데이터와-RLHF-(High-Quality-Human-Data-&-RLHF)
   - 고품질 휴먼 데이터와 RLHF
   - High-Quality Human Data
 sources:

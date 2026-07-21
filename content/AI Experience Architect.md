@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-Experience-Architect
   - AI 경험 아키텍트
   - AI Designer to Architect
 core: true

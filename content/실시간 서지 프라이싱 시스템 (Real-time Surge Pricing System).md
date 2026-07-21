@@ -6,6 +6,7 @@ tags:
   - infrastructure
   - system-design
 aliases:
+  - 실시간-서지-프라이싱-시스템-(Real-time-Surge-Pricing-System)
   - 실시간 서지 프라이싱 시스템
   - 서지 프라이싱
   - 동적 할증 가격 책정

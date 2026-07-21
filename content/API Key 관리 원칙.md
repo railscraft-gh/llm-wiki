@@ -1,5 +1,6 @@
 ---
 aliases:
+  - API-Key-관리-원칙
 - API Key 보안
 - Secret 관리 원칙
 core: true

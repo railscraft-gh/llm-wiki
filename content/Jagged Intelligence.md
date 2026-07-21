@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Jagged-Intelligence
 - 재기드 인텔리전스
 - 들쭉날쭉한 지능
 core: true

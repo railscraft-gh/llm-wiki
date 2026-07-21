@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Pi-Coding-Agent
   - Pi
   - 라즈베리 파이 에이전트 하네스
 core: false

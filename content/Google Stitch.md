@@ -5,6 +5,7 @@ core: false
 tags:
   - design
 aliases:
+  - Google-Stitch
   - 구글 스티치
 sources:
   - raw/AI와 디자인 시스템 - 출판형 다듬기.md

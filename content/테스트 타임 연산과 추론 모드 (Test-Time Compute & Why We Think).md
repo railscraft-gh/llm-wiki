@@ -7,6 +7,7 @@ tags:
   - reasoning
   - test-time-compute
 aliases:
+  - 테스트-타임-연산과-추론-모드-(Test-Time-Compute-&-Why-We-Think)
   - Test-Time Compute
   - Chain-of-Thought
 sources:

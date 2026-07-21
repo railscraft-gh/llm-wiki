@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Lethal-Trifecta
 - 치명적 삼위일체
 - Rule of Two
 core: true

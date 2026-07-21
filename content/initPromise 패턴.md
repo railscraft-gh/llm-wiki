@@ -5,6 +5,7 @@ core: false
 tags:
   - llm
 aliases:
+  - initPromise-패턴
   - initPromise Pattern
 sources:
   - raw/context-mode-README-정리.md

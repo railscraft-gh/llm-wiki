@@ -6,7 +6,8 @@ tags:
   - llm
   - ui
   - agent-interaction
-aliases: []
+aliases:
+  - Visual-Companion
 sources:
   - "raw/superpowers-brainstorming.md"
 created: 2026-07-21

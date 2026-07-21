@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-오픈소스-작업대
   - AI GitHub 생태계 신호
   - AI OSS 작업대
 core: false

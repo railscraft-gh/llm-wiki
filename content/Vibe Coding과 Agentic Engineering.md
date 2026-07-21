@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Vibe-Coding과-Agentic-Engineering
   - 바이브 코딩과 에이전틱 엔지니어링
   - Vibe Coding
   - Agentic Engineering

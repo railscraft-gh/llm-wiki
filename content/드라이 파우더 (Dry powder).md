@@ -4,7 +4,8 @@ status: draft
 core: false
 tags:
   - finance
-aliases: []
+aliases:
+  - 드라이-파우더-(Dry-powder)
 sources:
   - raw/부자들이 현금을 보유하는 진짜 이유와 금융 업계의 거짓말.md
 created: 2026-07-21

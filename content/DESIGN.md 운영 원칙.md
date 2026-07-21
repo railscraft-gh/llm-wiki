@@ -9,6 +9,7 @@ tags:
   - ai-slop
   - design-systems
 aliases:
+  - DESIGN.md-운영-원칙
   - DESIGN.md 운영 원칙
   - Anthropic frontend-design SKILL.md
 sources:

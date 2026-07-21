@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Neural-Computer
 - 뉴럴 컴퓨터
 - 신경 컴퓨터
 core: false

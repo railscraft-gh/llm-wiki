@@ -1,5 +1,6 @@
 ---
 aliases:
+  - 로컬-LLM-30분-실전-가이드
   - 로컬 LLM 실전 가이드
   - 온디바이스 LLM
   - Ollama

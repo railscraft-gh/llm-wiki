@@ -8,6 +8,7 @@ tags:
   - conversion
   - SaaS
 aliases:
+  - 단일-primary-CTA-법칙
   - Single Primary CTA Rule
   - 단일 primary CTA 법칙
 sources:

@@ -9,6 +9,7 @@ tags:
   - llm-wiki
   - static-site-generator
 aliases:
+  - Quartz로-Obsidian-Wiki-배포하기
   - Quartz로 Obsidian Wiki 배포하기
   - Quartz GitHub Pages 배포 가이드
 sources:

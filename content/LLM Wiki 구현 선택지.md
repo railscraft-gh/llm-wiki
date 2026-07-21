@@ -1,5 +1,6 @@
 ---
 aliases:
+  - LLM-Wiki-구현-선택지
   - LLM Wiki app vs skill
   - purpose.md 운영
 core: false

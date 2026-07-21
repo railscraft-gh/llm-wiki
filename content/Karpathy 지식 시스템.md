@@ -7,6 +7,7 @@ tags:
   - pkm
   - wiki
 aliases:
+  - Karpathy-지식-시스템
   - Karpathy LLM Wiki Architecture
 sources:
   - raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md

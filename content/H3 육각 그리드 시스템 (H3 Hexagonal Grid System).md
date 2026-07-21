@@ -6,6 +6,7 @@ tags:
   - infrastructure
   - space-intelligence
 aliases:
+  - H3-육각-그리드-시스템-(H3-Hexagonal-Grid-System)
   - H3 육각 그리드 시스템
   - H3
   - 육각 그리드

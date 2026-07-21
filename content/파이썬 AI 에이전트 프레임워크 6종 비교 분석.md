@@ -1,5 +1,6 @@
 ---
 aliases:
+  - 파이썬-AI-에이전트-프레임워크-6종-비교-분석
 - AI 에이전트 프레임워크 비교
 - LangGraph vs CrewAI vs PydanticAI
 core: false

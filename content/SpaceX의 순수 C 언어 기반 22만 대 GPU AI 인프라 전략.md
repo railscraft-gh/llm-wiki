@@ -7,6 +7,7 @@ tags:
   - GPU
   - C-language
 aliases:
+  - SpaceX의-순수-C-언어-기반-22만-대-GPU-AI-인프라-전략
   - SpaceX Pure C AI Infrastructure
 sources:
   - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md

@@ -1,5 +1,6 @@
 ---
 aliases:
+  - DESIGN.md-워크플로우
   - DESIGN.md workflow
   - 디자인 핸드오프 워크플로우
   - 프로토타입 우선 디자인

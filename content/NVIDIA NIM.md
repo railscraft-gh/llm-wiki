@@ -4,7 +4,8 @@ status: draft
 core: false
 tags:
   - llm
-aliases: []
+aliases:
+  - NVIDIA-NIM
 sources:
   - raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md
 created: 2026-07-21

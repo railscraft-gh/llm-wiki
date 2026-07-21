@@ -6,6 +6,7 @@ tags:
   - llm
   - agentic
 aliases:
+  - 에이전트-기반-AI-워크플로우-(Agentic-AI-Workflow)
   - 에이전트 기반 AI 워크플로우
   - Agentic AI Workflow
   - 에이전틱 워크플로우

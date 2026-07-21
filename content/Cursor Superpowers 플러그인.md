@@ -9,6 +9,7 @@ tags:
   - skill
   - harness-engineering
 aliases:
+  - Cursor-Superpowers-플러그인
   - Superpowers
   - Cursor Superpowers
   - Cursor 스킬 플러그인

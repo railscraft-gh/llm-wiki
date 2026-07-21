@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Obsidian-vault용-Slash-Command-운영
   - Obsidian slash command 운영
   - AI 세컨드 브레인 명령어 운영
 core: false

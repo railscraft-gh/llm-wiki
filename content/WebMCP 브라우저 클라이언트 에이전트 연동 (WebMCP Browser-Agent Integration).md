@@ -7,6 +7,7 @@ tags:
   - webmcp
   - design
 aliases:
+  - WebMCP-브라우저-클라이언트-에이전트-연동-(WebMCP-Browser-Agent-Integration)
   - WebMCP 브라우저 클라이언트 에이전트 연동
   - WebMCP 브라우저 연동
   - WebMCP Browser-Agent Integration

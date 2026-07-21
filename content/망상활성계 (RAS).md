@@ -8,6 +8,7 @@ tags:
   - productivity
   - psychology
 aliases:
+  - 망상활성계-(RAS)
   - Reticular Activating System
   - RAS
   - 망상활성계

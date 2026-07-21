@@ -10,6 +10,8 @@ tags:
   - tool
 type: tool
 updated: 2026-07-10
+aliases:
+  - 오픈소스-OSINT-도구-14선
 ---
 
 # 오픈소스 OSINT 도구 14선

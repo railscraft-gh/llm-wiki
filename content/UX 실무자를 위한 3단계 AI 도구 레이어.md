@@ -7,6 +7,7 @@ tags:
   - ai-tools
   - product-design
 aliases:
+  - UX-실무자를-위한-3단계-AI-도구-레이어
   - UX AI 3-Layer Taxonomy
 sources:
   - raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md

@@ -4,7 +4,8 @@ status: draft
 core: false
 tags:
   - design
-aliases: []
+aliases:
+  - 포트폴리오-Sweet-Spot
 sources:
   - raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md
 created: 2026-07-21

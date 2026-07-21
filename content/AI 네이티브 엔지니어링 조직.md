@@ -1,5 +1,6 @@
 ---
 aliases:
+  - AI-네이티브-엔지니어링-조직
   - AI-native engineering org
   - AI 네이티브 조직 운영
 core: false

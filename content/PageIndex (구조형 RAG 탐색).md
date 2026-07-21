@@ -6,6 +6,7 @@ tags:
   - llm
   - RAG
 aliases:
+  - PageIndex-(구조형-RAG-탐색)
   - PageIndex
   - 구조형 RAG
   - 계층형 트리 RAG

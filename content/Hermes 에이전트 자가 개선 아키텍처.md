@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - Hermes-에이전트-자가-개선-아키텍처
 core: false
 created: 2026-07-10
 sources:

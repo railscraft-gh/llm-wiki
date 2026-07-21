@@ -1,5 +1,6 @@
 ---
 aliases:
+  - 클라이언트-Secret-노출-방지
 - 브라우저 Secret 노출 방지
 - Client-side API Key
 core: false

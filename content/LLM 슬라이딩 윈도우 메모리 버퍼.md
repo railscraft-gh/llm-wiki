@@ -7,6 +7,7 @@ tags:
   - memory
   - context-window
 aliases:
+  - LLM-슬라이딩-윈도우-메모리-버퍼
   - Sliding Window Buffer
 sources:
   - raw/밑바닥부터 만드는 LLM 메모리 #1. 슬라이딩 윈도우 버퍼.md

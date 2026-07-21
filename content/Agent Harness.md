@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Agent-Harness
   - 에이전트 하네스
 core: true
 created: 2026-05-26

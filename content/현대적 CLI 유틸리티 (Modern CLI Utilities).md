@@ -6,6 +6,7 @@ tags:
   - tools
   - developer-productivity
 aliases:
+  - 현대적-CLI-유틸리티-(Modern-CLI-Utilities)
   - 현대적 CLI 유틸리티
   - 차세대 터미널 도구
   - 생산성 CLI

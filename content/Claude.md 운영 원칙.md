@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Claude.md-운영-원칙
   - CLAUDE.md
   - Claude.md
   - AGENTS.md

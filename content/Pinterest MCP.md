@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - Pinterest-MCP
 core: false
 created: 2026-06-07
 sources:

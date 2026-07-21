@@ -6,6 +6,7 @@ tags:
   - llm
   - agentic
 aliases:
+  - 메이커-체커-패턴-(Maker-Checker-Pattern)
   - 메이커-체커 패턴
   - Maker-Checker Pattern
   - Maker & Checker

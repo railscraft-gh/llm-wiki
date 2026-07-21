@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - 한글-AI-번역투-탐지-및-윤문-워크플로
 core: false
 created: 2026-06-07
 sources:

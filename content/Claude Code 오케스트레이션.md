@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Claude-Code-오케스트레이션
   - Claude Code Orchestration
   - 에이전트 오케스트레이션
 core: false

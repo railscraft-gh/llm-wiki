@@ -7,6 +7,7 @@ tags:
   - rag
   - architecture
 aliases:
+  - Compile-Time-RAG
   - 컴파일 타임 RAG
   - Compile-Time RAG
 sources:

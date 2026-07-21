@@ -9,6 +9,7 @@ tags:
   - vector-db
   - graphrag
 aliases:
+  - RAG-아키텍처-선택
   - RAG 아키텍처 선택
   - 9가지 RAG 아키텍처
 sources:

@@ -8,6 +8,7 @@ tags:
   - saas
   - design-system
 aliases:
+  - SaaS-UI-UX-패턴-12가지
   - SaaS UI Patterns
   - 12가지 SaaS UI 패턴
 sources:

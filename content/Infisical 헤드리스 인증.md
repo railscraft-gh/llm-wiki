@@ -1,5 +1,6 @@
 ---
 aliases:
+  - Infisical-헤드리스-인증
   - Infisical SSH 인증
   - Infisical Universal Auth
   - Machine Identity 인증

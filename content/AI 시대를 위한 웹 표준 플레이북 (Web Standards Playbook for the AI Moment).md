@@ -9,6 +9,7 @@ tags:
   - mcp
   - w3c
 aliases:
+  - AI-시대를-위한-웹-표준-플레이북-(Web-Standards-Playbook-for-the-AI-Moment)
   - AI 시대를 위한 웹 표준 플레이북
   - Web Standards Playbook for the AI Moment
 sources:

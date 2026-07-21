@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - LLM-정렬-기법
 core: false
 created: 2026-05-11
 sources:

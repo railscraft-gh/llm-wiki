@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - AI-시대-소프트웨어-펀더멘탈
 core: false
 created: 2026-05-09
 sources:

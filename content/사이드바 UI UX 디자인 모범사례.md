@@ -9,6 +9,8 @@ tags:
   - design
 type: concept
 updated: 2026-07-10
+aliases:
+  - 사이드바-UI-UX-디자인-모범사례
 ---
 
 # 사이드바 UI UX 디자인 모범사례
