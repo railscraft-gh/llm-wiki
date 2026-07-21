@@ -2,6 +2,7 @@
 aliases:
 - SpaceX AI 인프라 전략
 - C 언어 기반 AI 인프라 최적화
+- SpaceX-C-언어-기반-AI-인프라-전략
 core: false
 created: 2026-06-10
 sources:
@@ -47,7 +48,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # SpaceX C 언어 기반 AI 인프라 전략
 
 ## 한 줄 정의

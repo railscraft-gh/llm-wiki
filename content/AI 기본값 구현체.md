@@ -2,6 +2,7 @@
 aliases:
 - AI가 표준화한 기본 구현체
 - default implementation in AI era
+- AI-기본값-구현체
 core: false
 created: 2026-05-26
 sources:
@@ -34,7 +35,6 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-
 # AI 기본값 구현체
 
 ## 한 줄 정의

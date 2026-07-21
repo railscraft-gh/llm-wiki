@@ -2,6 +2,7 @@
 aliases:
 - 에이전트 런타임 계층 맵
 - agent runtime role map
+- AI-에이전트-런타임-역할-맵
 core: true
 created: 2026-05-26
 sources:
@@ -34,7 +35,6 @@ tags:
 type: workflow
 updated: '2026-06-22'
 ---
-
 # AI 에이전트 런타임 역할 맵
 
 ## 한 줄 정의
