@@ -31,6 +31,6 @@ AI 기술의 과도한 기대와 실질적 프로덕션 도달률의 괴리로 �
 - [Harness Engineering](file:///Users/railscraft/Obsidian/raw/[[Harness Engineering]] for Self-Improvement.md)
 
 ## 관련 노트
-- [[AI 에이전트 워크플로우 패턴]]
-- [[시스템 엔지니어링]]
+- [[에이전트_워크플로우_패턴]]
+- [[루프 엔지니어링]]
 

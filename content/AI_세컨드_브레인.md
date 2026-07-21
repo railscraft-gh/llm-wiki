@@ -34,5 +34,5 @@ PARA(Projects, Areas, Resources, Archives) 방법론을 적용하여 AI 에이�
 
 ## 관련 노트
 - [[CLAUDE_md_가이드라인]]
-- [[PARA 방법론]]
+- PARA 방법론
 

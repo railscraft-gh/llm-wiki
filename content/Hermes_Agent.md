@@ -30,6 +30,6 @@ updated: 2026-07-21
 - **메모리 복구:** "지난주 Nginx 설정 기억나?"라고 물으면 세션 검색을 통해 과거 맥락을 복구하여 답변합니다.
 
 ## 관련 노트
-- [[2026년 에이전틱 AI 엔지니어 로드맵]]
-- [[AI Agent Best Practices. Production-Ready Harness Engineering]]
+- [[에이전틱 AI 엔지니어 실무 로드맵]]
+- AI Agent Best Practices. Production-Ready Harness Engineering
 

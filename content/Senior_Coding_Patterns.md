@@ -30,6 +30,6 @@ updated: 2026-07-21
 훌륭한 코드는 화려한 문법이 아니라, 동료가 코드를 수정하거나 장애 상황에서 디버깅할 때의 인지 부하를 줄여주는 설계에서 나옵니다. 시니어 엔지니어들의 패턴은 코드 그 자체보다 '다음에 이 코드를 볼 개발자에게 짐을 덜 넘겨주려는' 의사결정 방식에 본질이 있습니다.
 
 ## 관련 노트
-- [[Clean_Code_Principles]]
-- [[System_Maintainability]]
+- Clean_Code_Principles
+- System_Maintainability
 

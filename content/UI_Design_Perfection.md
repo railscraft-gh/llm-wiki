@@ -31,6 +31,6 @@ updated: 2026-07-21
 사용자는 제품의 완성도를 직관적으로 감지합니다. 이 디테일은 거창한 리디자인이나 화려한 효과가 아니라, 집요하고 강박적인 사소한 결정에서 나옵니다. 세련됨은 추가하는 것이 아니라 덜어내고 다듬는 과정에서 완성됩니다.
 
 ## 관련 노트
-- [[Design_Consistency_Rules]]
-- [[UI_UX_Best_Practices]]
+- Design_Consistency_Rules
+- [[AI_Agent_Best_Practices]]
 

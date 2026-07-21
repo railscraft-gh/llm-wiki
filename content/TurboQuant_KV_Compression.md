@@ -30,5 +30,5 @@ updated: 2026-07-21
 
 ## 관련 노트
 - [[Apple_Silicon_Local_AI_Stack]]
-- [[KV_Cache_Optimization]]
+- KV_Cache_Optimization
 

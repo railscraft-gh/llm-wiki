@@ -26,5 +26,5 @@ AI 코딩 에이전트가 자율적으로 작업을 수행할 수 있도록 전�
 
 ## 관련 노트
 - [[Harness_Engineering]]
-- [[Claude_Code_실무활용법_보리스_관점_정리]]
+- Claude_Code_실무활용법_보리스_관점_정리
 

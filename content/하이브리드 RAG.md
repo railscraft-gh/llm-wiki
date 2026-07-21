@@ -42,5 +42,5 @@ updated: 2026-07-21
 
 ## 관련 노트
 - [[대화 쌍 저장 전략]]
-- [[GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기]]
+- GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 Context Engineering 가이드 - 출판형 다듬기
 

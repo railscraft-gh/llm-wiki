@@ -39,5 +39,5 @@ updated: 2026-07-21
 
 ## 관련 노트
 - [[요청 병합]]
-- [[속도 제한 및 속도 제어 (Rate Limiting & Throttling)]]
+- 속도 제한 및 속도 제어 (Rate Limiting & Throttling)
 

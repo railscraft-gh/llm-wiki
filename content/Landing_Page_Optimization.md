@@ -29,6 +29,6 @@ updated: 2026-07-21
 랜딩 페이지는 SaaS 비즈니스의 첫인상이자 가입 전환의 핵심입니다. 제작자 관점에서 익숙한 제품 설명보다, 방문자의 관점에서 의구심을 제거하고 명확한 가치를 제안하는 것이 전환율의 핵심입니다. 시각적 무게, 정보 계층 구조를 단순화하고 방문자가 즉각 행동하도록 설득력 있는 디자인을 적용해야 합니다.
 
 ## 관련 노트
-- [[Conversion_Rate_Optimization]]
-- [[User_Experience_Design]]
+- Conversion_Rate_Optimization
+- User_Experience_Design
 

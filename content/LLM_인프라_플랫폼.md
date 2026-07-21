@@ -33,6 +33,6 @@ updated: 2026-07-21
 플랫폼별 속도/가용량 차이로 인한 로직 오류를 방지하기 위해 공급자 로테이터(Provider Rotator) 구현 필요 [raw/[[2026년 오픈소스 LLM 플랫폼 비교]] 가이드 - Ollama, OpenRouter, Groq, [[NVIDIA NIM]].md#L431](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20LLM%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama,%20OpenRouter,%20Groq,%20NVIDIA%20NIM.md#L431).
 
 ## 관련 노트
-- [[하네스 엔지니어링]]
-- [[LLM 인프라 설계 패턴]]
+- [[하네스_엔지니어링]]
+- LLM 인프라 설계 패턴
 

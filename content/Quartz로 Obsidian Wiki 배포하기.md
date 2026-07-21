@@ -29,7 +29,7 @@ Karpathy의 LLM Wiki 패턴으로 축적된 Obsidian 마크다운 지식베이�
 - **실시간 로컬 감시 및 자동 배포**: macOS `fswatch`와 `launchd` 데몬 서비스를 활용해 Obsidian 파일 변경 시 `deploy.sh`를 자동 트리거.
 
 ## 상세
-[[Quartz]]는 위키링크(`[[노트]]`), 다크모드, 백링크(Backlinks), 인터랙티브 그래프 뷰(Graph View), LaTeX 수학식을 기본 지원하는 정적 사이트 생성기입니다. [2025년 5월 v4.5.2 기준](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md#L759) `v4` 브랜치를 기본 메인 브랜치로 사양화하고 있습니다.
+[[Quartz]]는 위키링크(`노트`), 다크모드, 백링크(Backlinks), 인터랙티브 그래프 뷰(Graph View), LaTeX 수학식을 기본 지원하는 정적 사이트 생성기입니다. [2025년 5월 v4.5.2 기준](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md#L759) `v4` 브랜치를 기본 메인 브랜치로 사양화하고 있습니다.
 
 배포 시 `quartz.config.ts`에서 `baseUrl`과 `ignorePatterns`(`.obsidian`, `private`, `templates` 등)를 지정하고, `quartz.layout.ts`로 뷰 구조를 정렬합니다. 로컬 테스트는 [8080 포트](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md#L305)(`npx quartz build --serve`)에서 수행됩니다.
 

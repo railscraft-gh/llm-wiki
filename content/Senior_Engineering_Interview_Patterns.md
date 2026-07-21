@@ -27,6 +27,6 @@ updated: 2026-07-21
 시니어 엔지니어 면접은 단순한 기술 퀴즈쇼가 아닙니다. 지식을 나열하는 것이 아니라, 불확실한 문제 상황에서 어떻게 사고를 구조화하고 의사결정을 내려 합리적 동료임을 증명하느냐의 과정입니다. 반복되는 면접 실패 패턴을 구조화된 소통 프레임워크로 개선하는 과정이 곧 경력의 병목을 해결하는 길입니다.
 
 ## 관련 노트
-- [[System_Design_Fundamentals]]
-- [[Professional_Growth_for_Engineers]]
+- System_Design_Fundamentals
+- Professional_Growth_for_Engineers
 

@@ -31,6 +31,6 @@ Gajae-Code는 단순한 챗봇이 아니라, '질문-계획-승인-실행-검증
 상태 관리가 파일 기반으로 이루어지므로, 시스템의 파일 권한 및 저장 공간 관리가 필수적임 [raw/gajae-code_AI_코딩_하네스_분석.md#L68](file:///Users/railscraft/Obsidian/raw/gajae-code_AI_%EC%BD%94%EB%93%9C_AI_%EC%BD%94%EB%93%9C_%ED%95%98%EB%84%A4%EC%8A%A4_%EB%B6%84%EC%84%9D.md#L68).
 
 ## 관련 노트
-- [[하네스 엔지니어링]]
+- [[하네스_엔지니어링]]
 - [[Ralph_Loop_워크플로우]]
 

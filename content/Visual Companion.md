@@ -43,6 +43,6 @@ AI 에이전트와 아이디어를 브레인스토밍할 때, 말로 설명하�
 
 ## 관련 노트
 
-- [[디자인 씽킹 (Design Thinking)]]
-- [[Claude Code]]
+- 디자인 씽킹 (Design Thinking)
+- [[Claude Code 스킬 관리]]
 

@@ -29,6 +29,6 @@ AI 에이전트의 불확실성을 통제하고 지속 가능한 운영 환경�
 단순히 프롬프트를 정교하게 작성하는 것으로는 대규모 AI 코딩 작업의 품질을 유지할 수 없습니다. 하네스 엔지니어링은 에이전트의 실패를 상수로 받아들이고, 이를 다시 복구하거나 실행 전후에 검증 장치를 배치하여 자동화 시스템의 신뢰성을 확보하는 구조적 접근법입니다.
 
 ## 관련 노트
-- [[Agentic_Engineering]]
-- [[Claude_Code_Best_Practices]]
+- [[Vibe Coding과 Agentic Engineering]]
+- Claude_Code_Best_Practices
 

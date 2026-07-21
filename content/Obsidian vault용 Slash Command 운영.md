@@ -60,7 +60,7 @@ Obsidian vault용 Slash Command 운영은 Claude Code를 vault 루트에서 실�
 
 ```markdown
 # [핵심 주장 제목]
-**Graduated from**: [[주간_노트_링크]]
+**Graduated from**: 주간_노트_링크
 **Date**: YYYY-MM-DD
 **Status**: Seedling
 

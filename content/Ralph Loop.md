@@ -39,5 +39,5 @@ updated: 2026-07-21
 
 ## 관련 노트
 - [[Agent Harness]]
-- [[subagent-driven-development]]
+- subagent-driven-development
 

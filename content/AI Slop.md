@@ -39,6 +39,6 @@ LLM은 본질적으로 학습 데이터의 확률적 평균을 추구하는 특�
 
 ## 관련 노트
 
-- [[frontend-design 스킬]]
-- [[Claude Code]]
+- frontend-design 스킬
+- [[Claude Code 스킬 관리]]
 
