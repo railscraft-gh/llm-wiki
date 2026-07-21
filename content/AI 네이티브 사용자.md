@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-네이티브-사용자
 - AI-native user
 - AI 네이티브 개발자
 core: true

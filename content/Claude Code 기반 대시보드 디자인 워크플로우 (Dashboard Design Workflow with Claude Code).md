@@ -8,7 +8,6 @@ tags:
   - workflow
   - claude-code
 aliases:
-  - Claude-Code-기반-대시보드-디자인-워크플로우-(Dashboard-Design-Workflow-with-Claude-Code)
   - Claude Code 대시보드 워크플로우
 sources:
   - "raw/How to Design a Production-Ready Dashboard with Claude Code.md"

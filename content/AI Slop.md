@@ -6,8 +6,7 @@ tags:
   - llm
   - design
   - ai-slop
-aliases:
-  - AI-Slop
+aliases: []
 sources:
   - "raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md"
 created: 2026-07-21

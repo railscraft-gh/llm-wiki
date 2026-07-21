@@ -8,7 +8,6 @@ tags:
   - software-engineering
   - spec-kit
 aliases:
-  - 사양-기반-개발-(Spec-Driven-Development)
   - 사양 기반 개발
   - Spec Driven Development
   - SDD

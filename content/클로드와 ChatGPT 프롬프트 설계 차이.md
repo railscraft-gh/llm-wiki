@@ -1,6 +1,5 @@
 ---
-aliases:
-  - 클로드와-ChatGPT-프롬프트-설계-차이
+aliases: []
 core: false
 created: 2026-07-10
 sources:

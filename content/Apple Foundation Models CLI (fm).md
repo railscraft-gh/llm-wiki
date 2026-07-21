@@ -6,7 +6,6 @@ tags:
   - llm
   - macos
 aliases:
-  - Apple-Foundation-Models-CLI-(fm)
   - Apple Foundation Models CLI
   - fm CLI
   - fm 명령어

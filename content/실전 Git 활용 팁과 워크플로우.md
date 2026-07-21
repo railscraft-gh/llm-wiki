@@ -1,6 +1,5 @@
 ---
 aliases:
-  - 실전-Git-활용-팁과-워크플로우
   - 실전 Git 팁
   - 시니어 Git 워크플로우
 core: false

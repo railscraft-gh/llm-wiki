@@ -1,6 +1,5 @@
 ---
-aliases:
-  - PPO와-정책-최적화
+aliases: []
 core: false
 created: 2026-05-11
 sources:

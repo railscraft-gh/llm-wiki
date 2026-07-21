@@ -7,7 +7,6 @@ tags:
   - design
   - interaction
 aliases:
-  - 혼합-주도형-상호작용-(Mixed-Initiative-Interaction)
   - 혼합 주도형 상호작용
   - Mixed-Initiative Interaction
   - 혼합 주도형 시스템

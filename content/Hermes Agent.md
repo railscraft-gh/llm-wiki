@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Hermes-Agent
   - 헤르메스 에이전트
   - Hermes 에이전트
 core: false

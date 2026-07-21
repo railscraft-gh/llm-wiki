@@ -4,8 +4,7 @@ status: draft
 core: false
 tags:
   - llm
-aliases:
-  - AI-디자인-템플릿-전략
+aliases: []
 sources:
   - raw/최고의 기업들이 디자인 워크플로우에 AI를 활용하는 방법.md
 created: 2026-07-21

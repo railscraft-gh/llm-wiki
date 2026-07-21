@@ -7,7 +7,6 @@ tags:
   - kv-cache
   - apple-silicon
 aliases:
-  - Google-TurboQuant-KV-캐시-2단계-압축-기법
   - Google TurboQuant KV Cache Compression
 sources:
   - raw/5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 TurboQuant, 애플 실리콘 상륙.md

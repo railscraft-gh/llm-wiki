@@ -7,7 +7,6 @@ tags:
   - architecture
   - computing
 aliases:
-  - LLM-운영체제-(LLMos)
   - LLM OS
   - LLM 운영체제
 sources:

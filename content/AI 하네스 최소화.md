@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-하네스-최소화
   - 4 스킬 하네스
   - 4 agents 4 skills
   - Bloated AI Slop Labs

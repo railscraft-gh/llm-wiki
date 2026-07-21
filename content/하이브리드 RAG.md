@@ -8,7 +8,6 @@ tags:
   - memory
   - architecture
 aliases:
-  - 하이브리드-RAG
   - Hybrid RAG Pipeline
   - 하이브리드 검색 증강 생성
 sources:

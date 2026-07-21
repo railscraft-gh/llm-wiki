@@ -8,7 +8,6 @@ tags:
   - web
   - frontend
 aliases:
-  - HTML-블록-레벨과-인라인-요소
   - Block vs Inline
   - div vs span
 sources:

@@ -7,7 +7,6 @@ tags:
   - hallucination
   - evaluation
 aliases:
-  - LLM-외부-환각-탐지-및-완화-메커니즘
   - Extrinsic Hallucinations in LLMs
 sources:
   - raw/Extrinsic Hallucinations in LLMs.md

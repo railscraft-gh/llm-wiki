@@ -1,6 +1,5 @@
 ---
-aliases:
-  - 엔터프라이즈-지식-그래프-(Enterprise-Knowledge-Graph)
+aliases: []
 core: false
 created: 2026-07-10
 sources:

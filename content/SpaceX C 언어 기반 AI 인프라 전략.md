@@ -1,6 +1,5 @@
 ---
 aliases:
-  - SpaceX-C-언어-기반-AI-인프라-전략
 - SpaceX AI 인프라 전략
 - C 언어 기반 AI 인프라 최적화
 core: false

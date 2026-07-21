@@ -8,7 +8,6 @@ tags:
   - ai-workflow
   - prompt-engineering
 aliases:
-  - Brainstorming-스킬-운영-원칙
   - Brainstorming 스킬 운영 원칙
   - superpowers-brainstorming
 sources:

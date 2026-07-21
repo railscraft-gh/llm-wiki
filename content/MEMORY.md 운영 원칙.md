@@ -1,6 +1,5 @@
 ---
 aliases:
-  - MEMORY.md-운영-원칙
 - MEMORY.md
 - 에이전트 장기 기억 원칙
 core: true

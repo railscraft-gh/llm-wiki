@@ -6,7 +6,6 @@ tags:
   - llm
   - agentic
 aliases:
-  - 8px-그리드-시스템-(8px-Grid-System)
   - 8px 그리드 시스템
   - 8px Grid System
   - 8포인트 그리드

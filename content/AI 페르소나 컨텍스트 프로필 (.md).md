@@ -8,7 +8,6 @@ tags:
   - context
   - prompt
 aliases:
-  - AI-페르소나-컨텍스트-프로필-(.md)
   - Voice Profile (.md)
   - 글쓰기 어조 프로필
   - AI 페르소나 프로필

@@ -6,7 +6,6 @@ tags:
   - llm
   - agentic
 aliases:
-  - 의사결정-경계선-(Decision-Boundaries)
   - 의사결정 경계선
   - Decision Boundaries
 sources:

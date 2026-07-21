@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Hermes-Agent-Google-Workspace-연결
   - Hermes Google 연결
   - Google Workspace 연결 절차
 core: false

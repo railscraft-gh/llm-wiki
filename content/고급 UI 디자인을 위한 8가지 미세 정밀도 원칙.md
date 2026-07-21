@@ -7,7 +7,6 @@ tags:
   - visual-hierarchy
   - user-experience
 aliases:
-  - 고급-UI-디자인을-위한-8가지-미세-정밀도-원칙
   - 8 Tiny UI Fixes
 sources:
   - raw/8 Tiny UI Fixes Most Designers Ignore.md

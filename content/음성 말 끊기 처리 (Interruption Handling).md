@@ -8,7 +8,6 @@ tags:
   - audio
   - architecture
 aliases:
-  - 음성-말-끊기-처리-(Interruption-Handling)
   - Interruption Handling
   - 음성 말 끊기 처리
   - Playback Queue Flush

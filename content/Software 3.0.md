@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Software-3.0
 - 소프트웨어 3.0
 core: true
 created: 2026-05-06

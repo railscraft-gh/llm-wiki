@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Context-Engineering
   - 컨텍스트 엔지니어링
 core: true
 created: 2026-05-26

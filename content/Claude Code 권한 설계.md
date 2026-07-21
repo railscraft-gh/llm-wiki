@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Claude-Code-권한-설계
   - AI 에이전트 권한 설계
   - Permission Design
 core: false

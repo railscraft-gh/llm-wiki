@@ -4,8 +4,7 @@ status: draft
 core: false
 tags:
   - design
-aliases:
-  - Figma-디자인-시스템-감사
+aliases: []
 sources:
   - raw/AI와 디자인 시스템 - 출판형 다듬기.md
 created: 2026-07-21

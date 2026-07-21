@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Competence-Debt
 - 역량 부채
 core: false
 created: 2026-05-24

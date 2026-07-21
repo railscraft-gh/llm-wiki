@@ -7,7 +7,6 @@ tags:
   - caching
   - database
 aliases:
-  - 외부-API-캐시-원자적-교체-패턴
   - 원자적 캐시 교체 패턴
 sources:
   - raw/korean-public-holiday-feature-guide.md

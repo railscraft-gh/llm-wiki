@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - claudecode
 aliases:
-  - CLAUDE.md-가이드
   - CLAUDE.md
   - 하네스 엔지니어링
 sources:

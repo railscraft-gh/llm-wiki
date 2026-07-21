@@ -6,7 +6,6 @@ tags:
   - design-system
   - figma
 aliases:
-  - Figma-컴포넌트-아키텍처
   - Figma 컴포넌트 구조
   - Figma Component Architecture
 sources:

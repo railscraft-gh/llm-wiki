@@ -8,7 +8,6 @@ tags:
   - harness
   - automation
 aliases:
-  - Ralph-Loop
   - Ralph Loop
   - Headless Claude Loop
 sources:

@@ -4,8 +4,7 @@ status: draft
 core: false
 tags:
   - llm
-aliases:
-  - Claude-Code-바이브코딩
+aliases: []
 sources:
   - raw/cc101_axwith_ko.md
 created: 2026-07-21

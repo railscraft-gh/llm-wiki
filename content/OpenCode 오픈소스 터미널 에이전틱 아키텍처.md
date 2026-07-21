@@ -7,7 +7,6 @@ tags:
   - coding-agent
   - terminal-cli
 aliases:
-  - OpenCode-오픈소스-터미널-에이전틱-아키텍처
   - OpenCode Terminal Agent Architecture
 sources:
   - raw/opencode-masterclass-summary.md

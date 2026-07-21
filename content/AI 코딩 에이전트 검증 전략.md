@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-코딩-에이전트-검증-전략
   - Verification Loop
   - 검증 루프
 core: true

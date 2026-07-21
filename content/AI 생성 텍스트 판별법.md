@@ -6,7 +6,6 @@ tags:
   - llm
   - ai-writing
 aliases:
-  - AI-생성-텍스트-판별법
   - AI 글쓰기 탐지
   - AI 생성 글 판별
 sources:

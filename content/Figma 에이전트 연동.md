@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Figma-에이전트-연동
   - Figma 에이전트 스킬
   - figma-mcp
 core: false

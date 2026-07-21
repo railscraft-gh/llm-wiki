@@ -9,7 +9,6 @@ tags:
   - design-system
   - agent
 aliases:
-  - AI-기본값-수용과-오버라이드-전략
   - AI 기본값 채택 전략
   - default adoption strategy in AI era
 sources:

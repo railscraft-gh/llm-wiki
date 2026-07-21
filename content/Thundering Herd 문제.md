@@ -8,7 +8,6 @@ tags:
   - backend
   - performance
 aliases:
-  - Thundering-Herd-문제
   - Thundering Herd
   - Hot Key Problem
   - 핫 키 문제

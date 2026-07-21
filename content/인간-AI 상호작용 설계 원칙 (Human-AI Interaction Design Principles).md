@@ -6,7 +6,6 @@ tags:
   - llm
   - design
 aliases:
-  - 인간-AI-상호작용-설계-원칙-(Human-AI-Interaction-Design-Principles)
   - 인간-AI 상호작용 설계 원칙
   - AI 디자인 원칙
 sources:

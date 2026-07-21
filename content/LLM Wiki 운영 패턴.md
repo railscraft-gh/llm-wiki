@@ -1,6 +1,5 @@
 ---
 aliases:
-  - LLM-Wiki-운영-패턴
 - Karpathy의 LLM Wiki
 - LLM Wiki
 - 파일 캐비닛 아키텍처

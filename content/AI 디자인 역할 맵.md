@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-디자인-역할-맵
   - AI 디자인 계층 맵
   - AI 디자인 운영 계층
 core: true

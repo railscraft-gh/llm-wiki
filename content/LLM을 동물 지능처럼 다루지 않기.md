@@ -1,6 +1,5 @@
 ---
 aliases:
-  - LLM을-동물-지능처럼-다루지-않기
 - LLM은 동물 지능이 아니다
 - Ghost metaphor
 core: false

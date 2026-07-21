@@ -8,7 +8,6 @@ tags:
   - ai
   - workflow
 aliases:
-  - AI-시대의-피그마-재정의
   - AI 시대의 피그마 재정의
   - Rethinking Figma in an AI World
 sources:

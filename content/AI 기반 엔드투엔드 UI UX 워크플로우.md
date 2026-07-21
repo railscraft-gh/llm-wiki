@@ -7,7 +7,6 @@ tags:
   - ai-tools
   - workflow
 aliases:
-  - AI-기반-엔드투엔드-UI-UX-워크플로우
   - 10종 AI 도구 연계 UX 파이프라인
 sources:
   - raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md

@@ -6,7 +6,6 @@ tags:
   - ui
   - design
 aliases:
-  - UI-완성도를-높이는-8가지-미세한-디테일-(8-Tiny-UI-Fixes)
   - 8 Tiny UI Fixes
 sources:
   - "raw/8 Tiny UI Fixes Most Designers Ignore.md"

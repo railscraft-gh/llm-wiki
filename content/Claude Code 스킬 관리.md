@@ -7,7 +7,6 @@ tags:
   - claude-code
   - agent
 aliases:
-  - Claude-Code-스킬-관리
   - Claude Code 스킬
   - 클로드 코드 스킬 관리
 sources:

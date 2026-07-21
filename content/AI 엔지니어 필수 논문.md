@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-엔지니어-필수-논문
 - AI 엔지니어 필수 논문 5선
 - 필수 AI 논문
 core: false

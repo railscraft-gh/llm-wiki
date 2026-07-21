@@ -10,8 +10,6 @@ sources:
   - raw/Claude Code를 활용한 브랜드 로고 디자인 가이드.md
 created: 2026-06-22
 updated: 2026-06-22
-aliases:
-  - Claude-Code-브랜드-로고-디자인-워크플로우
 ---
 
 # Claude Code 브랜드 로고 디자인 워크플로우

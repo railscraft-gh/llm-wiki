@@ -6,7 +6,6 @@ tags:
   - llm
   - agentic
 aliases:
-  - RAG-퓨전
   - RAG 퓨전 (RAG-Fusion)
 sources:
   - raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md

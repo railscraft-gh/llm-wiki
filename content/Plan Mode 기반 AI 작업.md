@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Plan-Mode-기반-AI-작업
 - Plan Mode
 - 플랜 모드
 - OpenCode Plan agent

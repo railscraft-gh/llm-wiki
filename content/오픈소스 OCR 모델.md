@@ -12,8 +12,6 @@ sources:
   - "raw/RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md"
 created: 2026-07-20
 updated: 2026-07-20
-aliases:
-  - 오픈소스-OCR-모델
 ---
 
 # 오픈소스 OCR 모델

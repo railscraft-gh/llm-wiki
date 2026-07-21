@@ -1,6 +1,5 @@
 ---
 aliases:
-  - 오픈소스-LLM-경제성과-벤더-종속성-해지
   - 오픈소스 LLM 경제성
   - 벤더 종속성 해지
   - si vis pacem, para bellum

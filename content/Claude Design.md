@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Claude-Design
   - 클로드 디자인
 core: false
 created: 2026-06-09

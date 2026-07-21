@@ -6,7 +6,6 @@ tags:
   - llm
   - design
 aliases:
-  - 조율된-신뢰-(Calibrated-Trust)
   - 조율된 신뢰
   - Calibrated Trust
   - 신뢰 조율

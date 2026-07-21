@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Thinking과-Understanding-분리
 - Thinking is outsourceable, understanding is not
 - 싱킹과 언더스탠딩
 core: false

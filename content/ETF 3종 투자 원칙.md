@@ -1,6 +1,5 @@
 ---
 aliases:
-  - ETF-3종-투자-원칙
   - VOO SCHD QQQ
   - ETF 투자
   - 배당 성장 ETF

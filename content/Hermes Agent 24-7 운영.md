@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Hermes-Agent-24-7-운영
   - Hermes Agent 24/7 운영
   - Hermes 24/7 운영
   - Hermes Agent 운영

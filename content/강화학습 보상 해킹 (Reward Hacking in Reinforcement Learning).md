@@ -7,8 +7,7 @@ tags:
   - reward-hacking
   - alignment
   - rlhf
-aliases:
-  - 강화학습-보상-해킹-(Reward-Hacking-in-Reinforcement-Learning)
+aliases: []
 sources:
   - raw/Reward Hacking in Reinforcement Learning.md
 created: 2026-07-21

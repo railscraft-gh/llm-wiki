@@ -1,6 +1,5 @@
 ---
 aliases:
-  - 온디바이스-TTS
   - On-device TTS
   - 로컬 TTS
   - Supertonic 3

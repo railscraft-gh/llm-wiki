@@ -7,7 +7,6 @@ tags:
   - web-standards
   - css
 aliases:
-  - HTML-블록-레벨-및-인라인-요소-(Block-level-and-Inline-Elements)
   - 블록 레벨 요소
   - 인라인 요소
   - Block-level and Inline Elements

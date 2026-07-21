@@ -5,7 +5,6 @@ core: false
 tags:
   - economics
 aliases:
-  - 제본스의-역설-(Jevons-Paradox)
   - Jevons Paradox
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md

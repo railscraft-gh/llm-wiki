@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-에이전트-런타임-역할-맵
 - 에이전트 런타임 계층 맵
 - agent runtime role map
 core: true

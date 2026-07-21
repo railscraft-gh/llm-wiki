@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI를-UX에-쓰는-법
   - AI for UX
   - UX에서 AI 쓰는 법
 core: false

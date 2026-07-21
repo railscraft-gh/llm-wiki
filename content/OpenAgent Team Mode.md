@@ -8,7 +8,6 @@ tags:
   - team-mode
   - agentic-engineering
 aliases:
-  - OpenAgent-Team-Mode
   - OpenAgent Team Mode
   - OMO Team Mode
   - Team Mode (v4.0)

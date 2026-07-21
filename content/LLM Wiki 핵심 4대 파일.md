@@ -1,6 +1,5 @@
 ---
-aliases:
-  - LLM-Wiki-핵심-4대-파일
+aliases: []
 core: false
 created: 2026-07-10
 sources:

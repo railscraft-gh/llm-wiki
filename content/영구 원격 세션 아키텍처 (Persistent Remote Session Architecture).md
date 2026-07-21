@@ -6,7 +6,6 @@ tags:
   - tools
   - developer-productivity
 aliases:
-  - 영구-원격-세션-아키텍처-(Persistent-Remote-Session-Architecture)
   - 영구 원격 세션 아키텍처
   - 원격 세션 관리
   - Persistent Remote Session Architecture

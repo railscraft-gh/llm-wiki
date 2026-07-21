@@ -8,7 +8,6 @@ tags:
   - ai-tools
   - github
 aliases:
-  - Spec-Kit
   - Spec Kit
   - specify-cli
 sources:

@@ -5,7 +5,6 @@ core: false
 tags:
   - llm
 aliases:
-  - Think-in-Code
   - 코드로 생각하기
 sources:
   - raw/context-mode-README-정리.md

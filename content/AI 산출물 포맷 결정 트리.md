@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-산출물-포맷-결정-트리
   - HTML vs Markdown 결정 트리
   - Markdown source HTML artifact
 core: false

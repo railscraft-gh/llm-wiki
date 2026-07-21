@@ -1,6 +1,5 @@
 ---
-aliases:
-  - 에우다이모니아-(Eudaimonia)
+aliases: []
 core: false
 created: 2026-07-10
 sources:

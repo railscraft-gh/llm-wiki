@@ -1,6 +1,5 @@
 ---
 aliases:
-  - LLM-메모리-시스템-아키텍처
   - LLM Memory System Architecture
   - 에이전트 메모리 계층
 core: true

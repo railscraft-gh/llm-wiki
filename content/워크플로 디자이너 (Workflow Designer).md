@@ -4,8 +4,7 @@ status: draft
 core: false
 tags:
   - design
-aliases:
-  - 워크플로-디자이너-(Workflow-Designer)
+aliases: []
 sources:
   - raw/From faster pencil to AI Experience Architect. a designer’s path.md
 created: 2026-07-21

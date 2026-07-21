@@ -7,7 +7,6 @@ tags:
   - career
   - workflow
 aliases:
-  - 스킬-인버전-(Skill-Inversion)
   - 스킬 인버전
   - 기술 역전
   - Skill Inversion

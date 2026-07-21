@@ -8,7 +8,6 @@ tags:
   - harness
   - architecture
 aliases:
-  - Compaction-전략
   - Context Compaction Strategies
   - 반응형 대 선제형 Compaction
 sources:

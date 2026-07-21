@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Harness-Engineering
   - 하네스 엔지니어링
 core: true
 created: 2026-05-13

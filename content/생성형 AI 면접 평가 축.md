@@ -1,6 +1,5 @@
 ---
 aliases:
-  - 생성형-AI-면접-평가-축
   - GenAI 면접 평가 축
   - LLM 엔지니어 면접 질문 축
 core: false

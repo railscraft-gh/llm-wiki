@@ -1,6 +1,5 @@
 ---
 aliases:
-  - AI-네이티브-프로토타이핑
 - AI 네이티브 프로토타이핑
 - LennyRPG 개발기
 core: false

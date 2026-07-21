@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Reasoning-Models
 - 추론 모델
 - Reasoning LLM
 - o1

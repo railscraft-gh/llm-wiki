@@ -1,6 +1,5 @@
 ---
 aliases:
-  - Loop와-Routines
   - Boris Loop
   - Claude Routines
   - 클라우드 루프

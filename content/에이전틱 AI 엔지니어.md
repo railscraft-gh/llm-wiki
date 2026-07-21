@@ -6,7 +6,6 @@ tags:
   - llm
   - agentic
 aliases:
-  - 에이전틱-AI-엔지니어
   - 에이전틱 AI 엔지니어 (Agentic AI Engineer)
 sources:
   - raw/How to Start from 0 as an Agentic AI Engineer.md
