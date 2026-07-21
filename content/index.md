@@ -238,3 +238,14 @@ updated: 2026-07-16
 | --- | --- | --- |
 | [[Agentic 패턴 진화]] | KV-cache 비용, Copilot 점유율, Manus 사례 등 일부 숫자는 시점 의존적이다. | 모델/벤치마크/가격 변동 시 보강 |
 | [[AI 시대 소프트웨어 펀더멘탈]] | 개념 프레임은 안정적이지만 일부 사례와 수치는 발표 시점 의존적이다. | 수치보다 판단 프레임 중심으로 유지, 후속 fundamentals raw 누적 시 보강 |
+
+
+## 기타 지식 노트
+- [[Design_Patterns_Decision_Tree]]
+- [[Figma_디자인_시스템_자동화]]
+- [[LLM_인프라_플랫폼]]
+- [[Investor_Lessons]]
+- [[AI_Assisted_Coding_Skills]]
+- [[TurboQuant_MLX_Streaming]]
+- [[UI_Patterns]]
+- [[macOS_Terminal_Productivity]]
