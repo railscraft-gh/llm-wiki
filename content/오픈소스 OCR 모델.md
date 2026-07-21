@@ -22,7 +22,7 @@ updated: 2026-07-20
 
 ## 핵심 요지
 
-- 브루클린의 AI 스타트업 Datalab(창업자 Vik Paruchuri)이 공개한 **Chandra OCR 2**는 4B(40억) 파라미터 기반 multimodal 엔드투엔드 모델이다.
+- 브루클린의 AI 스타트업 Datalab(창업자 Vik Paruchuri)이 공개한 **[[Chandra OCR 2]]**는 4B(40억) 파라미터 기반 multimodal 엔드투엔드 모델이다.
 - AllenAI의 독립 olmOCR 벤치마크에서 **85.9%** 점수로 빅테크 상용 모델을 제치고 SOTA(업계 최고 성능)를 달성했다. (참고: GPT-4o 69.9%).
 - 90개 언어 다국어 벤치마크 및 남아시아 문자 인식률에서도 고성능을 발휘하며, 단일 H100 GPU 기준 초당 약 2페이지 처리 속도를 보여준다.
 - 문서 청킹 및 파싱 실패로 인한 RAG 시스템의 환각 현상을 사전 차단하는 상류 데이터 가공 도구로 활용된다.
@@ -37,9 +37,9 @@ updated: 2026-07-20
 
 ### 벤치마크 성능 수치
 
-- **olmOCR 벤치마크 (AllenAI 독립 측정)**: Chandra OCR 2는 [85.9% 점수를 받아 GPT-4o (69.9%)를 16%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L31-L32).
-- **90개 언어 다국어 벤치마크**: Chandra OCR 2는 [72.7% 점수를 기록해 Gemini 2.5 Flash (60.8%)를 12%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L47).
-- **주요 43개 언어 벤치마크**: Chandra OCR 2는 [77.8%를 기록해 GPT-5 Mini (60.5%)를 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55).
+- **olmOCR 벤치마크 (AllenAI 독립 측정)**: [[Chandra OCR 2]]는 [85.9% 점수를 받아 GPT-4o (69.9%)를 16%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L31-L32).
+- **90개 언어 다국어 벤치마크**: [[Chandra OCR 2]]는 [72.7% 점수를 기록해 Gemini 2.5 Flash (60.8%)를 12%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L47).
+- **주요 43개 언어 벤치마크**: [[Chandra OCR 2]]는 [77.8%를 기록해 GPT-5 Mini (60.5%)를 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55).
 - **이전 Chandra 1(9B) 대비 향상 수치**: 4B로 모델 크기를 절반 이하로 줄였음에도 처리 속도가 2배 늘어났으며, [칸나다어 +42.6%p, 말라얄람어 +46.2%p, 텔루구어 +39.1%p 성능이 향상](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55)되었다.
 - **처리 속도**: 단일 NVIDIA H100 GPU 기준 [초당 약 2페이지를 처리](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L79)한다.
 

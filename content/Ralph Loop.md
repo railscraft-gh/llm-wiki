@@ -23,11 +23,11 @@ updated: 2026-07-21
 ## 핵심 요지
 - **오케스트레이터의 컨텍스트 보존**: 메인 세션은 오직 위임 및 완료 상태 트래킹만 수행하여 [컨텍스트 윈도우의 10% 이하만 소비](file:///Users/railscraft/Obsidian/raw/Ralph%20Loop%20-%20AI%20%EC%BD%94%EB%94%A9%20%EC%9E%90%EC%9C%A8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20Spectrum%20Development%20%ED%86%B5%ED%95%A9.md#L98-L101).
 - **Headless 신선한 컨텍스트(Fresh Context)**: 각 작업 Phase는 `claude -p "프롬프트"` 명령어 기반 독립 백그라운드 세션으로 실행되어 컨텍스트 오염 및 [50% 초과 시 발생하는 Context Rot(정확도 저하) 전면 방지](file:///Users/railscraft/Obsidian/raw/Ralph%20Loop%20-%20AI%20%EC%BD%94%EB%94%A9%20%EC%9E%90%EC%9C%A8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20Spectrum%20Development%20%ED%86%B5%ED%95%A9.md#L49-L52).
-- **의사결정 자동화 연동**: 디자인/구조 선택 등 판단 필요 시 GStack 다중 역할(CEO, 디자이너, 엔지니어) 투표 시스템에 위임해 인간 개입 0% 자율화 달성.
+- **의사결정 자동화 연동**: 디자인/구조 선택 등 판단 필요 시 [[GStack]] 다중 역할(CEO, 디자이너, 엔지니어) 투표 시스템에 위임해 인간 개입 0% 자율화 달성.
 
 ## 상세
 - **Spectrum Development 3대 통합 흐름**:
-  1. GStack: 브레인스토밍 및 역할 기반 스펙 명확화
+  1. [[GStack]]: 브레인스토밍 및 역할 기반 스펙 명확화
   2. GSD (Get Stuff Done): 스펙을 50% 미만 토큰 분량의 Phase들로 분할
   3. SuperPower + Ralph Loop: TDD 백본과 Headless Loop를 통한 밤샘 자율 구축
 

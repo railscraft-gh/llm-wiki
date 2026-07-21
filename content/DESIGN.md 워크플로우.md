@@ -102,7 +102,7 @@ updated: 2026-07-10
 # DESIGN.md 워크플로우
 
 ## 한 줄 정의
-DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프로토타입에서 도출된 시각 토큰과 레이아웃 명세를 `DESIGN.md` 파일로 고정하고, AI 에이전트 오케스트레이션을 통해 디자인-코드 간 핸드오프 마찰과 일탈(Drift)을 완전히 제거하는 에이전틱 개발 프로세스다.
+DESIGN.md 워크플로우는 Figma/[[Google Stitch]] 캔버스 또는 실코드 프로토타입에서 도출된 시각 토큰과 레이아웃 명세를 `DESIGN.md` 파일로 고정하고, AI 에이전트 오케스트레이션을 통해 디자인-코드 간 핸드오프 마찰과 일탈(Drift)을 완전히 제거하는 에이전틱 개발 프로세스다.
 
 ## 핵심 요지
 - **단일 기준점(Source of Truth) 확립**: 프로젝트 루트의 `DESIGN.md` 평문 마크다운 파일에 색상, 타이포그래피, 여백, 컴포넌트 규칙을 명세화하여 Stitch, Claude Code, Cursor, v0 등 상이한 AI 에이전트들이 일관된 UI를 유지하도록 강제한다.
@@ -117,8 +117,8 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
 
 ### 1. 두 가지 협업 경로 (Stitch 경로 vs Figma-Free 경로)
 
-#### 경로 A: Google Stitch & Figma 연동 경로 (시각 캔버스 중심)
-1. **Google Stitch 캔버스 구동**: `stitch.withgoogle.com`에서 Gemini 기반의 대화형 에이전트, 에이전트 매니저(Agent Manager)를 사용하여 자연어, 스크린샷 등으로 다채로운 화면 UI를 생성.
+#### 경로 A: [[Google Stitch]] & Figma 연동 경로 (시각 캔버스 중심)
+1. **[[Google Stitch]] 캔버스 구동**: `stitch.withgoogle.com`에서 Gemini 기반의 대화형 에이전트, 에이전트 매니저(Agent Manager)를 사용하여 자연어, 스크린샷 등으로 다채로운 화면 UI를 생성.
 2. **양방향 동기화**: 캔버스를 분석해 생성된 `DESIGN.md` 문서를 하향식(텍스트 편집) 혹은 상향식(프롬프트 조율)으로 수정하여 캔버스와 DESIGN.md를 일치시킴.
 3. **코드베이스 적용 및 MCP 연동**: `DESIGN.md`를 프로젝트 루트에 복사하고, `claude mcp add stitch` 명령으로 Stitch API를 Claude Code에 활성화.
 4. **에이전트 구현**: Claude Code가 `DESIGN.md` 규격과 Stitch MCP를 결합하여 공통 테마 파일 (`theme.ts`) 및 개별 React Native 컴포넌트를 빌드.
@@ -131,7 +131,7 @@ DESIGN.md 워크플로우는 Figma/Google Stitch 캔버스 또는 실코드 프�
 ---
 
 ### 2. 10단계 핵심 워크플로우 (Stitch 경로 기준)
-1. **Google Stitch 열기** (`stitch.withgoogle.com`)
+1. **[[Google Stitch]] 열기** (`stitch.withgoogle.com`)
 2. **초기 디자인 생성 또는 가져오기** (자연어 프롬프트, 스크린샷 활용)
 3. **Stitch가 캔버스를 분석해 DESIGN.md 자동 생성**
 4. **디자인 반복 수정** (색상 팔레트, 서체, 컴포넌트 조율)

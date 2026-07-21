@@ -23,7 +23,7 @@ AI 코딩 에이전트의 컨텍스트 윈도우를 최적화하는 MCP 서버. 
 ## 핵심 요지
 - 컨텍스트 절약: 315KB → 5.4KB(98% 감소) [GitHub](https://github.com/mksglu/context-mode)
 - HN #1(570+ points), Microsoft/Google/Meta/Amazon/NVIDIA 등 다양한 기업에서 사용
-- 4가지 문제 해결: Context Saving, Session Continuity, Think in Code, Output Compression
+- 4가지 문제 해결: Context Saving, Session Continuity, [[Think in Code]], Output Compression
 - 14개 플랫폼 지원: Claude Code, Gemini CLI, VS Code Copilot, Cursor, [[OpenCode]] 등
 - SQLite와 FTS5를 통해 대화 히스토리 및 파일 변경 이력을 관리하며, BM25 검색 알고리즘으로 필요한 정보만 압축/복원함 [raw/context-mode-README-정리.md]
 - ctx_insight 도구를 통해 90개 메트릭, 37개 인사이트 패턴, 4대 종합 점수(productivity, quality, delegation, context health)를 분석하여 로컬 웹 UI로 시각화함 [raw/context-mode-README-정리.md]
@@ -38,7 +38,7 @@ MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문�
 
 컨텍스트 압축(compaction) 시 에이전트가 작업을 잊어버리는 문제를 SQLite + FTS5로 추적한다. 파일 편집, git 작업, 태스크, 에러, 사용자 결정을 모두 기록한다. BM25 검색으로 필요한 것만 조회해 compaction 후에도 정확히 이어서 작업한다. `--continue` 없으면 이전 세션 데이터를 즉시 삭제해 깨끗한 슬레이트를 유지한다.
 
-### Think in Code
+### [[Think in Code]]
 
 LLM을 데이터 프로세서가 아닌 코드 생성기로 취급한다. 50개 파일을 읽어 함수 수를 세는 대신 스크립트를 작성하고 `console.log()` 결과만 반환한다. `ctx_execute` 한 번으로 47회 `Read()` 대체 가능(700KB → 3.6KB). 14개 모든 플랫폼에서 필수 패러다임이다.
 
@@ -64,11 +64,11 @@ LLM을 데이터 프로세서가 아닌 코드 생성기로 취급한다. 50개 
 
 **네이티브 게이트웨이 플러그인**: [[OpenClaw]]/Pi Agent - 별도 MCP 서버 없이 게이트웨이 런타임에 직접 등록, 라우팅 완전 자동
 
-**기타**: Codex CLI, Windsurf, Cline, Roo Code, Augment Code, Amazon Q Developer CLI, Antigravity
+**기타**: Codex CLI, Windsurf, [[Cline]], Roo Code, Augment Code, Amazon Q Developer CLI, Antigravity
 
 ### [[OpenClaw]] 어댑터 특징
 
-[[OpenClaw]]에서는 `api.on()`(lifecycle/tool 훅)과 `api.registerHook()`(command 훅)을 구분해야 한다. 잘못 사용하면 조용히 실패한다. 예를 들어 `api.registerHook("before_tool_call", ...)`는 등록되지만 절대 실행되지 않는다. async register도 작동하지 않으므로 initPromise 패턴을 사용해야 한다. 최소 버전은 >2026.1.29(PR #9761 필요)다.
+[[OpenClaw]]에서는 `api.on()`(lifecycle/tool 훅)과 `api.registerHook()`(command 훅)을 구분해야 한다. 잘못 사용하면 조용히 실패한다. 예를 들어 `api.registerHook("before_tool_call", ...)`는 등록되지만 절대 실행되지 않는다. async register도 작동하지 않으므로 [[initPromise 패턴]]을 사용해야 한다. 최소 버전은 >2026.1.29(PR #9761 필요)다.
 
 ### Cursor 제한
 

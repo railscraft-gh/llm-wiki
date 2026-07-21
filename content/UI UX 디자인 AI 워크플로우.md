@@ -98,7 +98,7 @@ UI UX 디자인 AI 워크플로우는 기획안 리서치, 가설 검증, 유저
 - **포트폴리오의 의사결정 궤적(Decision Trail)화**: 화면 중심 포트폴리오에서 벗어나, 디자인 제약조건, 타협점, 그리고 반려한 시안을 왜 폐기(what you killed)했는지 기록하는 의사결정 이력(decision log) 중심의 워크플로우 관리가 요구된다.
 - Recraft AI 스타일 고정: 이미지 생성 시 스타일 편차가 크고 프롬프트가 복잡한 Midjourney 대신, 내 캐릭터 얼굴 사진(레퍼런스)과 손그림 에디토리얼 일러스트 스타일 및 원샷 프롬프트 세팅을 고정시킬 수 있는 Recraft AI를 결합해 시각 그래픽 시간을 2시간에서 10분으로 단축한다.
 - 의사결정의 이분화: AI는 옵션의 무한 생성을 담당하고 인간은 '선택과 전략(Taste & Judgment)'을 담당하여, 도구가 인지 부하(cognitive load)를 높이는 주체가 되지 않도록 통제한다.
-- Flowstep의 오토 레이아웃 보존력: Google Stitch 등의 기존 도구 체인이 Figma로 화면을 복제할 때 Auto Layout이 붕괴하는 것과 달리, Flowstep은 정갈한 레이아웃 보존과 우수한 프런트엔드 코드를 보장한다.
+- Flowstep의 오토 레이아웃 보존력: [[Google Stitch]] 등의 기존 도구 체인이 Figma로 화면을 복제할 때 Auto Layout이 붕괴하는 것과 달리, Flowstep은 정갈한 레이아웃 보존과 우수한 프런트엔드 코드를 보장한다.
 - Clarity 행동 데이터 교차 검증: 배포 후 사용성 분석이 방치되는 현상을 극복하기 위해, Microsoft Clarity의 추적 코드를 `index.html` 내 `<head>` 영역에 수동 삽입하여 실시간 세션 녹화 및 히트맵을 10% 비율로 수동 검수하는 장치를 포함한다. [raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md#L73](file:///Users/railscraft/Obsidian/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md#L73)
 - 디자이너와 개발자 사이의 핸드오프 단계에서 프로젝트 50%가 좌초되는 현상을 극복하기 위해 번역 레이어를 원천 제거한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L7-L9](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L7-L9)
 - 개발자의 75%가 2026년 말까지 코드를 직접 작성하는 대신 오케스트레이션하게 됨에 따라, 디자이너도 프로토타입 코드를 직접 오케스트레이션해야 한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L42](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L42)
@@ -246,7 +246,7 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 
 ### 1. 캠퍼스 도서 직거래/대여 플랫폼 구축 실무 예시
 1. **리서치 및 IA 설계**: Claude와 비정형 인터뷰 설계를 논의해 기능 목록을 뽑고, Notion AI에 문서화함. FigJam 커넥터로 유저 흐름과 정보 구조를 명확히 조감함.
-2. **시각화 및 자산 제작**: Flowstep으로 생성된 UI 화면을 오토 레이아웃 상태로 Figma에 내보낸 후 Figma AI로 다듬음. (Flowstep은 오토 레이아웃 구조가 깨지지 않게 변환하여 Google Stitch 등 기존 도구 대비 우수한 코드 품질을 보임). Gemini로 다양한 브랜드 로고 시안을 뽑고, Jitter AI로 로딩 화면에 입힐 스플래시 애니메이션을 적용함.
+2. **시각화 및 자산 제작**: Flowstep으로 생성된 UI 화면을 오토 레이아웃 상태로 Figma에 내보낸 후 Figma AI로 다듬음. (Flowstep은 오토 레이아웃 구조가 깨지지 않게 변환하여 [[Google Stitch]] 등 기존 도구 대비 우수한 코드 품질을 보임). Gemini로 다양한 브랜드 로고 시안을 뽑고, Jitter AI로 로딩 화면에 입힐 스플래시 애니메이션을 적용함.
 3. **프로토타이핑 및 1차 검증**: Figma Make으로 임시 연결 사이트(`ngbook.figma.site`)를 개설해 타겟 사용자 2명과 인터랙션을 간이 테스트함. (이 시안들은 디바이스 시간 표시가 `9:41`로 통합되는 등 업계의 표준 형식을 따름).
 4. **개발 및 행동 데이터 교차 검증**: Antigravity를 활용하여 소스 코드를 생성한 후 GitHub과 Vercel을 연동해 라이브 사이트 배포. Microsoft Clarity에서 새 프로젝트를 만들고 Settings의 Setup 메뉴에서 수동 설치 추적 코드를 복사하여 `index.html` 내 `<head>`에 삽입. 배포 후 유저들의 세션 녹화와 클릭 마찰을 분석하여 UI 배치를 최종 보정함 [출처](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%95%84%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L248).
 

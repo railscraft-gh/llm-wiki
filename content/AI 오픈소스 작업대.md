@@ -87,7 +87,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - Coolify(55k Stars)와 OpenHands(73.2k+ Stars)는 각각 self-hosting 배포 관리와 엔지니어링 에이전트 런타임으로 기능한다.
 - Mem0와 같은 장기 기억 프레임워크는 LoCoMo 벤치마크 테스트에서 기존 전체 컨텍스트 로딩 대비 레이턴시 92% 감소, 토큰 사용량 93% 절감을 이뤄내며 14배의 비용 효율화를 달성했다.
 - Stagehand v3는 Chrome DevTools Protocol(CDP) 기반으로 런타임 엔진을 전면 리팩터링하여 Playwright 대비 44% 빠른 브라우징 속도를 보고했다.
-- 엔지니어링 코딩 에이전트 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), Cline(VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
+- 엔지니어링 코딩 에이전트 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), [[Cline]](VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
 - 현대 개발자들은 단순히 챗봇 데모나 라이브러리를 찾는 단계를 넘어, GitHub을 통해 통째로 작동하는 AI 운영 체계와 엔지니어링 레이어를 찾아 나서고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
 - AI 인프라는 점차 범용 어시스턴트에서 벗어나 금융, 리서치, 코딩, 개인 브라우징 격리 등 전문화된 로컬/셀프호스팅 시스템으로 세분화되고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
 
@@ -137,7 +137,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
 3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
-5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
+5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **[[Cline]]**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
 7. **Models & Inference**: PagedAttention을 창안한 **vllm**, local quantization의 기본값인 **Ollama**, GGUF 파일 포맷을 주도한 C++ 기반 **llama.cpp**, 컨텍스트 접두사 캐싱 및 스키마 강제 출력을 지원하는 **SGLang**이 인프라 하단을 지탱한다.
 
@@ -149,7 +149,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
 3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
-5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
+5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **[[Cline]]**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
 7. **Models & Inference**: PagedAttention을 창안한 **vllm**, local quantization의 기본값인 **Ollama**, GGUF 파일 포맷을 주도한 C++ 기반 **llama.cpp**, 컨텍스트 접두사 캐싱 및 스키마 강제 출력을 지원하는 **SGLang**이 인프라 하단을 지탱한다.
 
@@ -161,7 +161,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
 3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
-5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
+5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **[[Cline]]**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
 7. **Models & Inference**: PagedAttention을 창안한 **vllm**, local quantization의 기본값인 **Ollama**, GGUF 파일 포맷을 주도한 C++ 기반 **llama.cpp**, 컨텍스트 접두사 캐싱 및 스키마 강제 출력을 지원하는 **SGLang**이 인프라 하단을 지탱한다.
 

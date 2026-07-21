@@ -33,19 +33,19 @@ updated: 2026-07-21
   6. **Fusion RAG**: [3~5가지 유사 질문 확장](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20RAG%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md#L193) 및 상호 순위 융합(RRF)
   7. **HyDE**: 가상 답변 초안을 먼저 생성 후 실제 문서 백터 검색
   8. **Agentic RAG**: 자율 에이전트가 리서치 시나리오를 세워 도구를 다단계 호출
-  9. **GraphRAG**: 엔티티와 연관 관계망을 지식 그래프로 구축하여 인과 추론 ([99% 정확도](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20RAG%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md#L323) 달성)
+  9. **[[GraphRAG]]**: 엔티티와 연관 관계망을 지식 그래프로 구축하여 인과 추론 ([99% 정확도](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20RAG%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md#L323) 달성)
 - **하이브리드 결합과 5단계 가이드**: 표준 RAG로 출발하여 필요성이 검증될 때 복잡도를 점진 추가(95% 표준 + 5% CRAG Fallback 등).
 
 ## 상세
 RAG 선택의 핵심은 단순 학술 논문 수치([2024년 1,200편 이상 발표](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20RAG%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md#L422))가 아니라, 비즈니스 오버헤드와 지연시간(Latency)의 타협에 있습니다.
 
-의미론적 유사도 기반의 시맨틱 벡터 검색과 키워드 매칭(BM25)을 결합한 하이브리드 검색이 기본 골격을 이루며, 엔티티 간 관계망 분석이 필수적인 도메인(법률, 의학, 금융 연쇄 구조)에서는 GraphRAG를 채택하여 설명 가능성(Explainability)을 확보합니다.
+의미론적 유사도 기반의 시맨틱 벡터 검색과 키워드 매칭(BM25)을 결합한 하이브리드 검색이 기본 골격을 이루며, 엔티티 간 관계망 분석이 필수적인 도메인(법률, 의학, 금융 연쇄 구조)에서는 [[GraphRAG]]를 채택하여 설명 가능성(Explainability)을 확보합니다.
 
 복잡한 질의가 요구되더라도 단순 FAQ 서비스에 Agentic RAG를 대입하는 오버 엔지니어링을 피하고, 1단계 표준 RAG 튜닝부터 출발하는 적진호(Red Flags) 경계 원칙이 강조됩니다.
 
 ## 예시
 - **하이브리드 패턴 (Standard + CRAG)**: 대부분의 일상 질의는 1초 미만의 Standard RAG로 즉각 반환하고, 신뢰도 스코어가 낮을 때만 Corrective RAG 관문을 거쳐 외부 API 검색을 수행.
-- **GraphRAG 인과관계 탐색**: "미연준 금리 결정 -> VC 자금 감소 -> 스타트업 밸류에이션 하락"으로 연결되는 지식 그래프 Multi-hop 경로를 따라 추론 답변을 구동.
+- **[[GraphRAG]] 인과관계 탐색**: "미연준 금리 결정 -> VC 자금 감소 -> 스타트업 밸류에이션 하락"으로 연결되는 지식 그래프 Multi-hop 경로를 따라 추론 답변을 구동.
 
 ## 충돌
 - **오버 엔지니어링과 비용 폭증**: 단순 챗봇에 무작정 Self-RAG나 에이전틱 RAG를 적용하면 불필요한 성찰 토큰 연산과 API 연동으로 3~5배 이상의 토큰 비용 및 지연이 발생합니다.

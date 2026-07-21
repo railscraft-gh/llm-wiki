@@ -18,7 +18,7 @@ updated: 2026-07-21
 Claude Code와 Figma를 연동하여 디자인 생성, FigJam 브레인스토밍, 슬라이드 덱 구성 등을 자동화하는 에이전트 스킬 활용 가이드입니다.
 
 ## 핵심 요지
-- **플러그인 기반 연동**: `claude mcp add figma`를 통해 Claude Code와 Figma를 MCP(Model Context Protocol)로 연동하여 디자인 파일을 직접 제어합니다.
+- **플러그인 기반 연동**: `claude mcp add figma`를 통해 Claude Code와 Figma를 MCP([[Model Context Protocol]])로 연동하여 디자인 파일을 직접 제어합니다.
 - **주요 자동화 스킬**:
   - `figma-generate-design`: 디자인 요구사항을 바탕으로 프레임 생성.
   - `figma-use-figjam`: SWOT 분석, 플로우차트 등 브레인스토밍 보드 생성.

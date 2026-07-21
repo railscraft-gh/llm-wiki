@@ -13,7 +13,7 @@ sources:
 created: 2026-07-21
 updated: 2026-07-21
 ---
-# Google TurboQuant KV 캐시 2단계 압축 기법
+# Google [[TurboQuant]] KV 캐시 2단계 압축 기법
 
 ## 한 줄 정의
 구글 리서치(Google Research)가 개발한 ICLR 2026 채택 KV 캐시 압축 알고리즘으로, PolarQuant와 QJL(Quantised Johnson-Lindenstrauss) 2단계 파이프라인을 통해 어텐션 품질 손실 없이 KV 캐시 크기를 4~6배 압축하여 소비자용 애플 실리콘 맥에서 32B 모델의 대용량 컨텍스트 추론을 가능하게 한 기술이다.
@@ -27,7 +27,7 @@ updated: 2026-07-21
 ## 상세
 로컬 LLM 추론 시 128K~256K 컨텍스트를 돌릴 때 메모리 고갈의 원인은 가중치가 아니라 KV 캐시다.
 
-TurboQuant 알고리즘 구조:
+[[TurboQuant]] 알고리즘 구조:
 1. **PolarQuant (AISTATS 2026)**:
    - Walsh-Hadamard Transform을 적용해 아웃라이어를 전 차원에 골고루 분산시킴.
    - 직교 좌표계를 극좌표계(방향각 + 반지름 크기)로 변환.
@@ -39,12 +39,12 @@ TurboQuant 알고리즘 구조:
 
 MLX 애플 실리콘 3대 오픈소스 구현체:
 - `sharpner/turboquant-mlx`: V2 (속도 최적화, mx.quantized_matmul) & V3 (Lloyd-Max 코드북, 최고 품질).
-- `flovflo/turboquant-mlx-qwen35-kv`: Qwen 3.5 특화 backend (프롬프트 679 tok/s, 생성 44.8 tok/s).
+- `flovflo/turboquant-mlx-qwen35-kv`: [[Qwen 3.5]] 특화 backend (프롬프트 679 tok/s, 생성 44.8 tok/s).
 - `arozanov/turboquant-mlx`: 커스텀 Fused Metal 커널 적용. M4 Pro 48GB에서 Qwen2.5-32B 16K 컨텍스트 KV 캐시를 4.2GB -> 897MB로 감소시킴 (4.6배 압축, FP16 속도 98% 유지).
 
 ## 예시
 - **Gemma 4 31B 128K 컨텍스트 수치**: Prince Canuma의 실측 결과, KV 캐시 메모리 소모량이 13.3GB에서 4.9GB로 63% 급감했으며, 피크 메모리도 75.2GB에서 65.8GB로 하락.
-- **256K 컨텍스트 초고속 TTFT 수치**: John T Davies 사례에서 75페이지 PDF(30K 토큰) 문서를 256K KV 캐시 상에 Pre-fill하고 TurboQuant 압축 적용 시, 첫 토큰 생성 시간(TTFT) 150ms 미만 달성.
+- **256K 컨텍스트 초고속 TTFT 수치**: John T Davies 사례에서 75페이지 PDF(30K 토큰) 문서를 256K KV 캐시 상에 Pre-fill하고 [[TurboQuant]] 압축 적용 시, 첫 토큰 생성 시간(TTFT) 150ms 미만 달성.
 - **Llama 3.2 3B / Gemma 3 4B 펄플렉시티 개선**: Llama 3.2 3B V2 4비트 회전 적용 시 정규화 효과로 FP16 원본 대비 펄플렉시티 -0.8% 개선 (오히려 우수). Gemma 3 4B(D=256) 역시 3비트 rot+QJL 시 -1.1% 개선.
 
 ## 충돌

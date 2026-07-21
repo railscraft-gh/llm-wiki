@@ -97,15 +97,15 @@ Hermes Agent는 NocoBase, Appsmith, Budibase, Directus, Baserow와 같은 5대 �
 Hermes Agent는 경험을 코드로 자산화하여 영구 스킬로 등록하고 미세 패치(`patch`) 방식으로 진화하는 독자적인 자가 학습 피드백 루프를 핵심 엔진으로 지닌다. 상세 아키텍처는 [[Hermes 에이전트 자가 개선 아키텍처]]를 참조한다.
 
 ### 자가 개선 및 실무 운용
-- **Closed Learning Loop**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
+- **[[Closed Learning Loop]]**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
 - **OpenRouter 글로벌 랭킹**: 오픈소스 모델 허브인 OpenRouter 글로벌 랭킹에서 기존 [[OpenClaw]]를 제치고 가장 활발히 쓰이는 오픈소스 에이전트로 기록됨.
 
 ### 자가 개선 및 실무 운용
-- **Closed Learning Loop**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
+- **[[Closed Learning Loop]]**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
 - **OpenRouter 글로벌 랭킹**: 오픈소스 모델 허브인 OpenRouter 글로벌 랭킹에서 기존 [[OpenClaw]]를 제치고 가장 활발히 쓰이는 오픈소스 에이전트로 기록됨.
 
 ### 자가 개선 및 실무 운용
-- **Closed Learning Loop**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
+- **[[Closed Learning Loop]]**: Hermes Agent(Lollie 등)는 작업 완료 시마다 단계를 스스로 분석하여 재사용 가능한 패턴을 추출하므로, 인스턴스가 리셋되더라도 사용자의 작업 흐름과 선호도를 안정적으로 유지함.
 - **OpenRouter 글로벌 랭킹**: 오픈소스 모델 허브인 OpenRouter 글로벌 랭킹에서 기존 [[OpenClaw]]를 제치고 가장 활발히 쓰이는 오픈소스 에이전트로 기록됨.
 
 ## 예시

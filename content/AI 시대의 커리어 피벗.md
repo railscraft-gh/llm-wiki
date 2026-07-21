@@ -26,7 +26,7 @@ AI 시대의 커리어 피벗은 인공지능에 의해 기존 직무 영역(예
 
 ## 상세
 ### AI가 야기하는 고용 시장 격변
-- 전통적인 프리랜서 작가나 마케터 등은 검색엔진 최적화(SEO)용 키워드 반복 비율(예: 2.5% 이상 키워드 주입 등 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L67](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L67))을 강요당하는 기계적 글쓰기를 해왔으나, 이러한 저품질 텍스트(AI Slop) 영역은 완전히 자동화되었다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L39](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L39).
+- 전통적인 프리랜서 작가나 마케터 등은 검색엔진 최적화(SEO)용 키워드 반복 비율(예: 2.5% 이상 키워드 주입 등 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L67](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L67))을 강요당하는 기계적 글쓰기를 해왔으나, 이러한 저품질 텍스트([[AI Slop]]) 영역은 완전히 자동화되었다 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L39](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L39).
 - 그러나 이에 머무르지 않고 본인의 기존 강점(예: 23년째 코더 경력 등의 기술적 맥락 [raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md#L65](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md#L65))을 결합하여, AI가 열어주는 다른 기회(기술 창업, 신규 프레임워크 전환)로 기민하게 도망치거나 피벗하는 능력이 비즈니스의 생명줄이 된다.
 
 ## 예시

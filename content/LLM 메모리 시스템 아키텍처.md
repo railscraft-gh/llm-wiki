@@ -74,7 +74,7 @@ LLM 메모리 시스템 아키텍처는 LLM 에이전트가 단기 대화 맥락
 
 #### ③ 벡터 메모리 (Vector Memory)
 - **개념**: 대화 내용이나 단편 정보를 일정 청크 단위로 쪼개어 임베딩한 후, 벡터 데이터베이스에 저장하고 의미론적 유사도 검색(Semantic Search)을 통해 관련 맥락을 인출한다.
-- **구조 (도서관 비유)**: 필요할 때 인덱스를 보고 책의 한 문단만 읽는 구조다. 의미론적 검색을 담당하는 Dense Vector(밀집) 검색(예: ChromaDB + `all-MiniLM-L6-v2`)과 특정 식별자나 고유 키워드를 정확히 잡는 Sparse Vector(희소) 검색(BM25)을 결합하고, 크로스 인코더(Cross-Encoder, 예: `ms-marco-MiniLM-L-6-v2`) 리랭커를 배치하여 연관도 점수를 측정하는 하이브리드 RAG 파이프라인으로 튜닝한다.
+- **구조 (도서관 비유)**: 필요할 때 인덱스를 보고 책의 한 문단만 읽는 구조다. 의미론적 검색을 담당하는 Dense Vector(밀집) 검색(예: ChromaDB + `all-MiniLM-L6-v2`)과 특정 식별자나 고유 키워드를 정확히 잡는 Sparse Vector(희소) 검색(BM25)을 결합하고, 크로스 인코더(Cross-Encoder, 예: `ms-marco-MiniLM-L-6-v2`) 리랭커를 배치하여 연관도 점수를 측정하는 [[하이브리드 RAG]] 파이프라인으로 튜닝한다.
 - **인덱싱 전략**: 사용자의 질문과 AI의 답변을 따로 저장하면 의미 맥락이 손실되므로, 반드시 **상호작용 쌍(Interaction Pair - `User: {q}\nAssistant: {a}`)** 단위로 묶어서 저장한다.
 - **한계**: 두 정보가 다리로 연결되어 추론되어야 하는 멀티홉(Multi-Hop) 관계 추론(예: 'Alice -> sister_of -> Bob', 'Bob -> works_at -> Google' 상황에서 'Alice의 가족 중 IT 분야에 일하는 사람이 있는가?'의 탐색)은 벡터의 단순 거리 측정만으로는 해결할 수 없다.
 
@@ -136,7 +136,7 @@ LLM 메모리 시스템 아키텍처는 LLM 에이전트가 단기 대화 맥락
 
 3. **벡터 메모리 (Vector Memory)**:
    - **특징**: DB 도서관 방식. 의미론적 유사도를 기준으로 한 청크 RAG 조회. (출처: 밑바닥부터 만드는 LLM 메모리 #3. 벡터 메모리.md)
-   - **구조**: Dense 벡터 인덱스(ChromaDB)와 Sparse 키워드 인덱스(rank_bm25)를 결합한 하이브리드 RAG에 교차 인코더(Cross-Encoder) 기반 리랭커(ms-marco-MiniLM-L-6-v2)를 얹어 최종 상위 K개 문서를 리랭킹 수집하는 파이프라인.
+   - **구조**: Dense 벡터 인덱스(ChromaDB)와 Sparse 키워드 인덱스(rank_bm25)를 결합한 [[하이브리드 RAG]]에 교차 인코더(Cross-Encoder) 기반 리랭커(ms-marco-MiniLM-L-6-v2)를 얹어 최종 상위 K개 문서를 리랭킹 수집하는 파이프라인.
 
 4. **지식 그래프 메모리 (Knowledge Graph Memory)**:
    - **특징**: 도시 지도 방식. 정보를 `(Subject) --[Relation]--> (Object)`의 트리플렛으로 구조화하여 그래프를 탐색. (출처: 밑바닥부터 만드는 LLM 메모리 #4. 지식 그래프 메모리.md)

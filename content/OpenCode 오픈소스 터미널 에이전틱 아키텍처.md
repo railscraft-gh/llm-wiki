@@ -13,7 +13,7 @@ sources:
 created: 2026-07-21
 updated: 2026-07-21
 ---
-# OpenCode 오픈소스 터미널 에이전틱 아키텍처
+# [[OpenCode]] 오픈소스 터미널 에이전틱 아키텍처
 
 ## 한 줄 정의
 Cloud Code나 Cursor의 대안으로, 100% 오픈소스 기반 터미널 환경에서 스킬(Skills), 메모리 파일(`agents.md`), Plan/Bold 모드 이원화, 서브에이전트 병렬 위임 및 Playwright MCP 서버를 융합한 에이전틱 코딩 툴킷이다.
@@ -25,11 +25,11 @@ Cloud Code나 Cursor의 대안으로, 100% 오픈소스 기반 터미널 환경�
 - **Playwright MCP 기반 자율 e2e 테스트**: `opencode.json`을 통해 Playwright MCP 서버를 연결함으로써 에이전트가 브라우저를 직접 열어 UI 필드 입력, 클릭 테스트 및 문제 수정을 자동 수행한다.
 
 ## 상세
-OpenCode는 터미널 `curl` 한 줄로 설치되는 100% 오픈소스 개발도구다.
+[[OpenCode]]는 터미널 `curl` 한 줄로 설치되는 100% 오픈소스 개발도구다.
 
 핵심 아키텍처 및 설정 구조:
 1. **프로바이더 연동 (`/connect`)**:
-   - OpenCode Zen: 오픈소스 무료 모델 게이트웨이 제공 (BigPikko, HY3, Minimax 2.5, Nvidia NemoTron3Super).
+   - [[OpenCode]] Zen: 오픈소스 무료 모델 게이트웨이 제공 (BigPikko, HY3, Minimax 2.5, Nvidia NemoTron3Super).
    - 유료 프로바이더: OpenAI, Anthropic, Gemini, OpenRouter 등 API Key 또는 구독 연동.
    - `/models` 및 `/variants` 명령어로 추론 노력(reasoning effort: medium -> high) 제어.
 2. **에이전트 스킬 확장 (`skills.sh`)**:

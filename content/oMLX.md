@@ -37,7 +37,7 @@ Apple Silicon의 Unified Memory는 CPU, GPU, Neural Engine이 동종 메모리 �
 - **RAG 백엔드 오프라인 통합**: oMLX 내에 메인 에이전트 모델과 `bge-m3` 임베딩, `bge-reranker-v2-m3` 모델을 병렬 기동하여 외부 통신이 차단된 로컬 RAG 파이프라인 형성.
 
 ## 충돌
-- **Anthropic API 도구 호출 스키마 차이**: Qwen 3.6은 OpenAI 스타일의 `function_call`을 사용하므로, 하네스(Cline, OpenHands)가 중간 어댑팅을 지원하거나 oMLX의 엔드포인트 에뮬레이션을 매칭시켜야 합니다.
+- **Anthropic API 도구 호출 스키마 차이**: Qwen 3.6은 OpenAI 스타일의 `function_call`을 사용하므로, 하네스([[Cline]], OpenHands)가 중간 어댑팅을 지원하거나 oMLX의 엔드포인트 에뮬레이션을 매칭시켜야 합니다.
 - **36GB 메모리 초과 시 VRAM 경합**: 35B 풀 모델과 오리지널 24GB Precision Flux 모델을 동시에 적재하면 메모리 경합이 일어나므로 이미지 생성 시에는 LLM 인스턴스를 잠시 언로드하는 전략이 필요합니다.
 
 ## 관련 노트

@@ -17,7 +17,7 @@ created: 2026-07-21
 updated: 2026-07-21
 ---
 
-# OpenAgent Team Mode
+# OpenAgent [[Team Mode]]
 
 ## 한 줄 정의
 Oh My OpenAgent(OMO v4.0)에서 리드 에이전트가 최대 8명의 전문화된 에이전트 멤버를 동시 통제하며 메일박스 및 공유 태스크 구조로 병렬 협업을 수행하는 멀티 에이전트 오케스트레이션 패러다임.
@@ -29,7 +29,7 @@ Oh My OpenAgent(OMO v4.0)에서 리드 에이전트가 최대 8명의 전문화�
 - **협상형 라이브러리 및 고급 스킬**: `hyperplan`(5인 적대적 비판), `security-research`(3인 헌터 + 2인 PoC) 등 내장 스킬을 지원하며, 종료 요청(`team_shutdown_request`)과 승인/거부 라이프사이클을 통해 수순을 통제합니다.
 
 ## 상세
-기존 에이전트 시스템이 상재적 단일 세션에 지시를 몰아넣던 한계를 타파하기 위해, OMO Team Mode는 JSON 기반 Team Spec 구성(`~/.omo/teams/{팀이름}/config.json`)을 읽어들여 런타임 세션을 구성합니다.
+기존 에이전트 시스템이 상재적 단일 세션에 지시를 몰아넣던 한계를 타파하기 위해, OMO [[Team Mode]]는 JSON 기반 Team Spec 구성(`~/.omo/teams/{팀이름}/config.json`)을 읽어들여 런타임 세션을 구성합니다.
 
 12개 `team_*` API(`team_create`, `team_send_message`, `team_task_create`, `team_status` 등)를 기반으로 리드가 동시성을 제어하며, tmux 연동 시(`tmux_visualization: true`) 터미널 내 멀티 패인 그리드로 에이전트들의 실시간 추론 상태를 가시화합니다.
 

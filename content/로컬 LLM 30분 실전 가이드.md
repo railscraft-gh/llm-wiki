@@ -95,11 +95,11 @@ updated: 2026-07-10
 - **엔진 진화 (Ollama-MLX)**: Ollama 0.19(2026년 3월 30일 출시)부터 애플 실리콘의 백엔드가 MLX로 교체되면서 M5 Max 환경 기준 Prefill 57%(1,810 tok/s), Decode 93%(112 tok/s) 수준의 비약적인 속도 성능 향상을 달성했다.
 - **KV 캐시 메모리 벽 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
 - **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
-- **3대 실무 구현 경로**: IDE 코딩 어시스턴트(Cline), 콤팩트 문서 RAG(Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
+- **3대 실무 구현 경로**: IDE 코딩 어시스턴트([[Cline]]), 콤팩트 문서 RAG(Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
 - Ollama 0.19 벤치마크에 따르면 int4 양자화 Qwen 구동 시 초당 1,851 토큰 프리필(Prefill)과 134 토큰 디코딩(Decode) 속도를 발휘한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
 - [[oMLX]]의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시) 설계를 통해 에이전트 구동 시 첫 토큰 생성 시간(TTFT)을 30~90초에서 1~3초로 크게 단축한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
 - PyTorch의 MPS 메모리 점유율 한계를 해소하기 위해 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0` 환경변수를 설정하면, 36GB 통합 메모리 내에서 35B 모델(20GB)과 Z-Image-Turbo(6GB)를 동시 적재할 수 있다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
-- Cline v3+ 등의 지능형 에이전트는 복잡한 시스템 프롬프트로 인해 시작 시점에 이미 25K~30K 토큰을 소비하므로, Ollama 기본 num_ctx(40K)를 안전하게 초과해 사용량 오류가 나는 것을 막기 위해 Modelfile 튜닝을 거쳐 65,536(여유가 있을 시 131,072)으로 수동 할당해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
+- [[Cline]] v3+ 등의 지능형 에이전트는 복잡한 시스템 프롬프트로 인해 시작 시점에 이미 25K~30K 토큰을 소비하므로, Ollama 기본 num_ctx(40K)를 안전하게 초과해 사용량 오류가 나는 것을 막기 위해 Modelfile 튜닝을 거쳐 65,536(여유가 있을 시 131,072)으로 수동 할당해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 - 오프라인 음성 비서 파이프라인에서 STT 모델로 CoreML 가속을 탑재한 WhisperKit(Whisper-large-v3-turbo, 1시간 음성을 90초 내 전사) 또는 Parakeet 기반 FluidAudio(평균 전사 지연 0.19초)를 기용하여 CPU 기반 whisper.cpp의 성능 지연을 극복한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 - Kokoro ONNX 엔진을 사용한 TTS 합성 시 마크다운 기호(*, - 등)를 만나면 루프 에러가 생기거나 기호 자체를 소리 내 읽는 오류가 발생하므로, 시스템 프롬프트 단에서 특수 마크다운 출력을 철저히 금지하는 가드레일을 둬야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 - Whisper STT는 16kHz 오디오 스펙으로 훈련되었으므로, 오프라인 음성 녹음 시 raw 입력 음파를 16kHz 모노 int16 포맷으로 변환(Downsampling)하여 전달해야 전사 환각 텍스트 현상을 피할 수 있다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
@@ -115,7 +115,7 @@ updated: 2026-07-10
 | **M3 Pro / M3 Max / Mid-High** | 18 ~ 128GB | Qwen3.5-27B 상주<br>GPT-OSS-120B / Qwen3.5-122B-A10B 병용 | WhisperKit (large-v3-turbo)<br>Kokoro ONNX | 다수의 모델을 메모리에 상주(Resident)시켜 즉시 전환 가능 (1인 개발 스윗스팟) |
 | **M4 Pro / M4 Max / High** | 24 ~ 128GB | DeepSeek-V3-Distill-32B<br>GLM-4.7 (32B active MoE)<br>Qwen3-Coder-480B 양자화 | WhisperKit / FluidAudio (Parakeet)<br>Kokoro ONNX | 30B급 모델 디코드 속도 60~90 tok/s 도달, 클라우드 API 수준 체감 (예산 $2000-5000) |
 | **M5 / M5 Max / High** | 32 ~ 128GB | Qwen3.5-35B-A3B (최적)<br>GLM-4.7 / Qwen3.5-122B-A10B | FluidAudio (0.19초 전사)<br>Kokoro ONNX | M5 GPU 뉴럴 엑셀러레이터 지원으로 Qwen3.5-35B 디코드 112 tok/s 돌파 |
-| **Ultra / Mac Studio Ultra** | 128 ~ 256GB | GLM-5 (744B MoE, 40B active)<br>MiniMax M2.5 (230B MoE, 10B active)<br>Kimi K2.5 (1.04T MoE, 32B active) | FluidAudio (0.19초 전사)<br>Kokoro ONNX | 초고성능 및 뛰어난 속도로 클라우드 API를 거의 대체하는 끝판왕 환경 (예산 $5000+) |
+| **Ultra / Mac Studio Ultra** | 128 ~ 256GB | [[GLM-5]] (744B MoE, 40B active)<br>MiniMax M2.5 (230B MoE, 10B active)<br>Kimi K2.5 (1.04T MoE, 32B active) | FluidAudio (0.19초 전사)<br>Kokoro ONNX | 초고성능 및 뛰어난 속도로 클라우드 API를 거의 대체하는 끝판왕 환경 (예산 $5000+) |
 
 ※ 이 하드웨어 매핑 표의 수치와 모델 벤치마크는 [7 Local LLM Families To Replace Claude_Codex (for everyday tasks)](file:///Users/railscraft/Obsidian/raw/7%20Local%20LLM%20Families%20To%20Replace%20Claude_Codex%20%28for%20everyday%20tasks%29.md)를 기준으로 정리함.
 
@@ -175,9 +175,9 @@ flowchart LR
 
 ### 4. 3대 실무 구현 가이드
 
-#### ① 경로 A: 로컬 코딩 어시스턴트 (VS Code + Cline)
+#### ① 경로 A: 로컬 코딩 어시스턴트 (VS Code + [[Cline]])
 - **추천 모델**: `qwen3-coder:30b` (30B MoE, 3B 활성화) / 저사양 노트북 `qwen2.5-coder:7b`.
-- **Modelfile 튜닝**: Cline은 시스템 프롬프트만 25K 토큰을 초과하므로 num_ctx 65536으로 튜닝하여 diff 서식 유실 및 환각을 차단한다.
+- **Modelfile 튜닝**: [[Cline]]은 시스템 프롬프트만 25K 토큰을 초과하므로 num_ctx 65536으로 튜닝하여 diff 서식 유실 및 환각을 차단한다.
   ```dockerfile
   FROM qwen3-coder:30b
   PARAMETER num_ctx 65536
@@ -259,7 +259,7 @@ flowchart LR
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 
 ### 8. 로컬 코딩 모델 컨텍스트 최적화 및 STT/TTS 음성 규격
-- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, Cline 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
+- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, [[Cline]] 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
 - **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
 - **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
@@ -270,7 +270,7 @@ flowchart LR
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 
 ### 8. 로컬 코딩 모델 컨텍스트 최적화 및 STT/TTS 음성 규격
-- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, Cline 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
+- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, [[Cline]] 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
 - **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
 - **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
@@ -281,7 +281,7 @@ flowchart LR
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 
 ### 8. 로컬 코딩 모델 컨텍스트 최적화 및 STT/TTS 음성 규격
-- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, Cline 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
+- **Ollama 컨텍스트 파라미터 튜닝**: Ollama에서 제공하는 Qwen 3/2.5 Coder 모델의 기본 컨텍스트 창 크기는 40K로 설정되어 있으나, [[Cline]] 에이전트의 자체 시스템 프롬프트 부하(25K~30K)와 사용자 소스 파일이 결합되면 즉시 범위를 초과한다. 안전한 작업 수행을 위한 하한선은 65,536이며, RAM 용량이 64GB 이상으로 충분하다면 131,072까지 확장하여 프리필 병목을 피하도록 커스텀 Modelfile을 빌드해야 한다.
 - **음성 인터페이스 전사 규격**: Whisper STT 모델의 음성 신호 전처리는 반드시 16kHz 모노 int16 포맷으로 정규화해야 한다. 포맷 불일치 상태로 입력이 들어가면 음성 비서가 정적 상황에서 무한한 환각(Hallucinations) 텍스트를 연쇄 생성한다.
 - **TTS 텍스트 기호 필터링**: Kokoro ONNX 등 경량 TTS 서버는 마크다운 스타일의 별표(`*`)나 하이픈(`-`), 샵(`#`) 기호를 필터링하지 못하고 소리로 발음하려는 경향을 보인다. 따라서 로컬 LLM의 출력을 음성 합성 엔진에 넘겨주기 전 정규식으로 마크다운 특수문자를 제거하거나, 모델에 Plain text 출력을 지시해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 
@@ -308,7 +308,7 @@ flowchart LR
   ```
   M5 Max 단일 노트북 기기에서 7~9B급 소형 모델을 1~2시간 만에 사용자 도메인 지식으로 미세 조정 가능.
 
-### Cline 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
+### [[Cline]] 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
 ```dockerfile
 # Modelfile — cline-tuned qwen3-coder
 FROM qwen3-coder:30b
@@ -351,7 +351,7 @@ ollama show qwen3-coder-cline --parameters | grep num_ctx
   ```
   M5 Max 단일 노트북 기기에서 7~9B급 소형 모델을 1~2시간 만에 사용자 도메인 지식으로 미세 조정 가능.
 
-### Cline 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
+### [[Cline]] 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
 ```dockerfile
 # Modelfile — cline-tuned qwen3-coder
 FROM qwen3-coder:30b
@@ -394,7 +394,7 @@ ollama show qwen3-coder-cline --parameters | grep num_ctx
   ```
   M5 Max 단일 노트북 기기에서 7~9B급 소형 모델을 1~2시간 만에 사용자 도메인 지식으로 미세 조정 가능.
 
-### Cline 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
+### [[Cline]] 전용 로컬 Qwen 모델 튜닝을 위한 Modelfile 설정
 ```dockerfile
 # Modelfile — cline-tuned qwen3-coder
 FROM qwen3-coder:30b

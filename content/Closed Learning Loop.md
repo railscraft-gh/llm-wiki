@@ -26,12 +26,12 @@ updated: 2026-07-21
 - **안정성 중심 실무 인프라**: 디버깅과 리셋 손실이 잦은 오픈소스 에이전트 구조 대비, 조용하고 일관된 자동화 성능 보장.
 
 ## 상세
-- **Hermes Agent 구현 특성**:
+- **[[Hermes Agent]] 구현 특성**:
   - Closed Learning Loop 적용으로 사용자의 작업 성향, 코드 스타일, 협업 패턴을 자연스럽게 내재화.
   - Multi-agent 구성 시 리드 에이전트가 서브 에이전트 팀원들에게 패턴 축적 정보를 전파.
 
 ## 예시
-- 40GB Hetzner VM에서 [Hermes Agent가 5개 에이전트 팀의 자율 오케스트레이션과 메모리 학습을 조용하게 완수](file:///Users/railscraft/Obsidian/raw/I%20Ran%20OpenClaw%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md#L39-L43)하여 OpenClaw를 대체함.
+- 40GB Hetzner VM에서 [Hermes Agent가 5개 에이전트 팀의 자율 오케스트레이션과 메모리 학습을 조용하게 완수](file:///Users/railscraft/Obsidian/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md#L39-L43)하여 [[OpenClaw]]를 대체함.
 
 ## 충돌
 - **투명성 감소**: 파일 기반 메모리에 비해 에이전트 내부에서 학습한 내용의 개별 노드를 사람이 육안으로 즉시 감사(Audit)하거나 부분 삭제하기 상대적으로 까다로움.
