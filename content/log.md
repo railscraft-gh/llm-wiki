@@ -11,72 +11,311 @@ updated: 2026-07-16
 
 # LLM Wiki Log
 
-## 2026-07-21-ingest-batch2
+## 2026-07-21
 
 ### Ingest
 
-- 입력:
-  - `raw/LLM Powered Autonomous Agents.md`
-  - `raw/Prompt Engineering.md`
-  - `raw/Reward Hacking in Reinforcement Learning.md`
-  - `raw/Scaling Laws, Carefully.md`
+- 입력: `raw/12 UI Patterns Designers Copy From Top SaaS Products.md`
+- 입력: `raw/13 Tiny Bash Scripts That Save Me Time Every Day.md`
+- 입력: `raw/17 macOS Terminal Commands I Actually Use Every Week.md`
+- 입력: `raw/30 Core Agentic Engineering Concepts Every Developer Should Know.md`
+- 입력: `raw/39 principles for designing human-AI interaction.md`
+- 입력: `raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md`
+- 입력: `raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md`
+- 입력: `raw/AI Prompt Writing. The Complete Guide for Non-Technical Users.md`
+- 입력: `raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md`
+- 입력: `raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md`
+- 입력: `raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md`
+- 입력: `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md`
+- 입력: `raw/AI와 디자인 시스템 - 출판형 다듬기.md`
+- 입력: `raw/Anthropic Just Shipped Three of the Five Harness Layers for Managed Agent, and The Other Two Are on You.md`
+- 입력: `raw/Apple Just Killed the App Store And UIUX Designers Are Panicking.md`
+- 입력: `raw/Block-Level and Inline Elements. The difference between div and span.md`
+- 입력: `raw/Building Claude Code with Harness Engineering.md`
+- 입력: `raw/Building a RAG Pipeline for 10M+ Documents With Near-Zero Hallucination.md`
+- 입력: `raw/Building a Week-Long Running Agentic System.md`
+- 입력: `raw/Building an Agentic Quantum Computing System.md`
+- 입력: `raw/Building an Agentic Security Pipeline That Finds, Proves, and Patches Vulnerabilities.md`
+- 입력: `raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md`
+- 입력: `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기.md`
+- 입력: `raw/Concurrency, Parallelism, and Async. Three Ideas That Sound the Same But Aren’t.md`
+- 입력: `raw/Everyone Is “Learning AI”, But Nobody Really Understands This One Thing..md`
+- 입력: `raw/From Prompts to Loops. Building Autonomous Coding Agents.md`
+- 입력: `raw/From faster pencil to AI Experience Architect. a designer’s path.md`
+- 입력: `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
+- 입력: `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
+- 입력: `raw/Good Design Doesn’t Happen By Default.md`
+- 입력: `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`
+- 입력: `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`
+- 입력: `raw/How designers need to change for an AI-powered world.md`
+- 입력: `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`
+- 입력: `raw/How to Start from 0 as an Agentic AI Engineer.md`
+- 입력: `raw/How to learn anything faster than 99% of people.md`
+- 입력: `raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They Asked..md`
+- 입력: `raw/I Threw Out My Vector Database. RAG Got Way Better With PageIndex.md`
+- 입력: `raw/I Was Optimizing My Terminal All Wrong.md`
+- 입력: `raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md`
+- 입력: `raw/Linus Torvalds Said the Quiet Part Out Loud About AI and Code Quality. The Engineering Community Is Not Ready for It..md`
+- 입력: `raw/Loop Engineering Is NOT What Everybody Thinks It Is.md`
+- 입력: `raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md`
+- 입력: `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
+- 입력: `raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md`
+- 입력: `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`
+- 입력: `raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md`
+- 입력: `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`
+- 입력: `raw/The 5-Minute Guide to Agentic AI Workflow.md`
+- 입력: `raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md`
+- 입력: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 입력: `raw/These 10 Linux Tools Changed Everything.md`
+- 입력: `raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md`
+- 입력: `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md`
+- 입력: `raw/context-mode-README-정리.md`
+- 입력: `raw/evolution-of-ai-agentic-patterns.md`
+- 입력: `raw/im-not-ai.md`
+- 입력: `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md`
+- 입력: `raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md`
+- 입력: `raw/넷플릭스, 우버, 아마존, 구글의 뒤에 있는 10가지 엔지니어링 논문.md`
+- 입력: `raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md`
+- 입력: `raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
+- 입력: `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`
+- 입력: `raw/바이브 코딩의 종말-ko.md`
+- 입력: `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md`
+- 입력: `raw/부자들이 현금을 보유하는 진짜 이유와 금융 업계의 거짓말.md`
+- 입력: `raw/사용성을 극대화하는 사이드바 UI UX 디자인 모범 사례.md`
+- 입력: `raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`
+- 입력: `raw/좋은 삶을 만드는 것에 대한 지루한 진실.md`
+- 입력: `raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md`
+- 입력: `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
 - 생성:
-  - [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]]
-  - [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]]
-  - [[강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)]]
-  - [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]]
-- 수정: 없음
+    - [[AI 시대의 커리어 피벗]]
+    - [[Figma 디자인 시스템 감사]]
+    - [[GLM-5]]
+    - [[Google Stitch]]
+    - [[Qwen 3.5]]
+    - [[Think in Code]]
+    - [[initPromise 패턴]]
+    - [[검증 센서]]
+    - [[드라이 파우더 (Dry powder)]]
+    - [[땜질식 처방]]
+    - [[분산 모놀리스]]
+    - [[빈곤 프리미엄]]
+    - [[시스템 디자인 면접 오프닝]]
+    - [[시스템 멘탈 모델]]
+    - [[실시간 아티팩트]]
+    - [[워크플로 디자이너 (Workflow Designer)]]
+    - [[장애 대응 4단계 프레임워크]]
+    - [[제본스의 역설 (Jevons Paradox)]]
+    - [[컨텍스트 경제학]]
+    - [[클로드 코워크]]
+    - [[포트폴리오 7초 법칙]]
+    - [[포트폴리오 Sweet Spot]]
+    - [[피드백 제어기]]
+- 수정:
+    - [[8px 그리드 시스템 (8px Grid System)]]
+    - [[AI Slop]]
+    - [[AI 생성 텍스트 판별법]]
+    - [[Apple Foundation Models CLI (fm)]]
+    - [[Cline]]
+    - [[GBrain]]
+    - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
+    - [[Hermes Agent 24-7 운영]]
+    - [[NVIDIA Build (무료 AI 추론 플랫폼)]]
+    - [[NVIDIA NIM]]
+    - [[PageIndex (구조형 RAG 탐색)]]
+    - [[RAG 퓨전]]
+    - [[SaaS UI 패턴 모범 사례]]
+    - [[WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)]]
+    - [[고차원 표현 공간]]
+    - [[동시성과 병렬성 및 비동기]]
+    - [[디자이너 생존 전략 (2026-2030)]]
+    - [[디자인 시스템 기본값]]
+    - [[루프 엔지니어링]]
+    - [[메이커-체커 패턴 (Maker-Checker Pattern)]]
+    - [[메타인지]]
+    - [[모델 컨텍스트 프로토콜]]
+    - [[모듈러 모놀리스]]
+    - [[비동기 메시지 큐 (Asynchronous Message Queue)]]
+    - [[사가 패턴]]
+    - [[셸 스크립트 기반 자동화 워크플로우]]
+    - [[스킬 인버전 (Skill Inversion)]]
+    - [[실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)]]
+    - [[양자 지원 벡터 머신]]
+    - [[에우다이모니아 (Eudaimonia)]]
+    - [[에이전트 기반 AI 워크플로우 (Agentic AI Workflow)]]
+    - [[에이전트 디자인 패턴]]
+    - [[에이전틱 AI 엔지니어]]
+    - [[에이전틱 보안 파이프라인]]
+    - [[영구 원격 세션 아키텍처 (Persistent Remote Session Architecture)]]
+    - [[영구 의미 기억 시스템 (Semantic Memory System)]]
+    - [[온디맨드 스킬 로딩]]
+    - [[의사결정 경계선 (Decision Boundaries)]]
+    - [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]]
+    - [[장애 복구 및 폴백 아키텍처 (Fallback & Failure Modes Design)]]
+    - [[조율된 신뢰 (Calibrated Trust)]]
+    - [[터미널 설정 미니멀리즘]]
+    - [[포스트 앱 인터페이스]]
+    - [[프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)]]
+    - [[프롬프트 구성 4대 요소]]
+    - [[하네스 5계층 모델]]
+    - [[하이브리드 검색 인덱스]]
+    - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
+    - [[혼합 주도형 상호작용 (Mixed-Initiative Interaction)]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
-### Lint
 
-- 실행 방식: 수동 점검 (AGENTS.md 규칙, No-Ask Policy 준수)
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
-- 관련 노트 2개 미만 문서: 0개
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 없음
-
-### 결정 기록
-
-- 결정: Task 2 (Batch 2) Ingest 완료
-- 대상: [[LLM 기반 자율 에이전트 (LLM Powered Autonomous Agents)]], [[프롬프트 엔지니어링 핵심 기법 (Prompt Engineering Core Techniques)]], [[강화학습 보상 해킹 (Reward Hacking in Reinforcement Learning)]], [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]]
-- 근거: AGENTS.md 및 No-Ask Policy에 따라 4개 문서를 분석 후 wiki 노트 생성, 인덱스 등록 및 로그 작성을 자율적으로 완료함.
-
-## 2026-07-21-ingest
+## 2026-07-21
 
 ### Ingest
 
-- 입력:
-  - `raw/Thinking about High-Quality Human Data.md`
-  - `raw/Why We Think.md`
-  - `raw/korean-public-holiday-feature-guide.md`
+- 입력: `raw/12 UI Patterns Designers Copy From Top SaaS Products.md`
+- 입력: `raw/13 Tiny Bash Scripts That Save Me Time Every Day.md`
+- 입력: `raw/17 macOS Terminal Commands I Actually Use Every Week.md`
+- 입력: `raw/30 Core Agentic Engineering Concepts Every Developer Should Know.md`
+- 입력: `raw/39 principles for designing human-AI interaction.md`
+- 입력: `raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md`
+- 입력: `raw/7 Local LLM Families To Replace Claude_Codex (for everyday tasks).md`
+- 입력: `raw/AI Prompt Writing. The Complete Guide for Non-Technical Users.md`
+- 입력: `raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md`
+- 입력: `raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md`
+- 입력: `raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md`
+- 입력: `raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 LLM Wiki로 만든 방법.md`
+- 입력: `raw/AI와 디자인 시스템 - 출판형 다듬기.md`
+- 입력: `raw/Anthropic Just Shipped Three of the Five Harness Layers for Managed Agent, and The Other Two Are on You.md`
+- 입력: `raw/Apple Just Killed the App Store And UIUX Designers Are Panicking.md`
+- 입력: `raw/Block-Level and Inline Elements. The difference between div and span.md`
+- 입력: `raw/Building Claude Code with Harness Engineering.md`
+- 입력: `raw/Building a RAG Pipeline for 10M+ Documents With Near-Zero Hallucination.md`
+- 입력: `raw/Building a Week-Long Running Agentic System.md`
+- 입력: `raw/Building an Agentic Quantum Computing System.md`
+- 입력: `raw/Building an Agentic Security Pipeline That Finds, Proves, and Patches Vulnerabilities.md`
+- 입력: `raw/Building the Entire RAG Ecosystem and Optimizing Every Component.md`
+- 입력: `raw/Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법 - 출판형 다듬기.md`
+- 입력: `raw/Concurrency, Parallelism, and Async. Three Ideas That Sound the Same But Aren’t.md`
+- 입력: `raw/Everyone Is “Learning AI”, But Nobody Really Understands This One Thing..md`
+- 입력: `raw/From Prompts to Loops. Building Autonomous Coding Agents.md`
+- 입력: `raw/From faster pencil to AI Experience Architect. a designer’s path.md`
+- 입력: `raw/GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라.md`
+- 입력: `raw/Give Your AI Agent 36 Superpowers. Long‑Term Memory in Minutes with GBrain (Open Source)-ko.md`
+- 입력: `raw/Good Design Doesn’t Happen By Default.md`
+- 입력: `raw/Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko.md`
+- 입력: `raw/Hermes Agent에 구글 연결하는 초보자 매뉴얼.md`
+- 입력: `raw/How designers need to change for an AI-powered world.md`
+- 입력: `raw/How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko.md`
+- 입력: `raw/How to Start from 0 as an Agentic AI Engineer.md`
+- 입력: `raw/How to learn anything faster than 99% of people.md`
+- 입력: `raw/I Failed Uber’s System Design Interview Last Month. Here’s Every Question They Asked..md`
+- 입력: `raw/I Threw Out My Vector Database. RAG Got Way Better With PageIndex.md`
+- 입력: `raw/I Was Optimizing My Terminal All Wrong.md`
+- 입력: `raw/I Work With AI Agents Every Day — Here Are 5 Lessons Nobody Tells You.md`
+- 입력: `raw/Linus Torvalds Said the Quiet Part Out Loud About AI and Code Quality. The Engineering Community Is Not Ready for It..md`
+- 입력: `raw/Loop Engineering Is NOT What Everybody Thinks It Is.md`
+- 입력: `raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md`
+- 입력: `raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md`
+- 입력: `raw/Stop Paying $20month. Use NVIDIA Build. 80+ Free AI Models.md`
+- 입력: `raw/Structuring Agents, Skills, and MCPs 🤖🧩.md`
+- 입력: `raw/System Design Interview. How Would You Send 1 Million Notifications Without Overwhelming Your Servers.md`
+- 입력: `raw/Testing 17 Agentic Loop Engineering Techniques for Reliable AI Agents.md`
+- 입력: `raw/The 5-Minute Guide to Agentic AI Workflow.md`
+- 입력: `raw/The Designer’s Portfolio Bible. From Chaotic Folder to Dream Job Magnet.md`
+- 입력: `raw/The Spacing System That Makes Every UI Look More Intentional.md`
+- 입력: `raw/These 10 Linux Tools Changed Everything.md`
+- 입력: `raw/UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko.md`
+- 입력: `raw/Your Vault as a Shared Brain — Obsidian. Multi-Agent with Claude Octopus, Codex, and Gemini.md`
+- 입력: `raw/context-mode-README-정리.md`
+- 입력: `raw/evolution-of-ai-agentic-patterns.md`
+- 입력: `raw/im-not-ai.md`
+- 입력: `raw/macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It.md`
+- 입력: `raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md`
+- 입력: `raw/넷플릭스, 우버, 아마존, 구글의 뒤에 있는 10가지 엔지니어링 논문.md`
+- 입력: `raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md`
+- 입력: `raw/마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실.md`
+- 입력: `raw/마흔에 읽는 소펜하우어.pdf_by_PaddleOCR-VL-1.6.md`
+- 입력: `raw/바이브 코딩의 종말-ko.md`
+- 입력: `raw/부의 추월차선.pdf_by_PaddleOCR-VL-1.6.md`
+- 입력: `raw/부자들이 현금을 보유하는 진짜 이유와 금융 업계의 거짓말.md`
+- 입력: `raw/사용성을 극대화하는 사이드바 UI UX 디자인 모범 사례.md`
+- 입력: `raw/오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라.md`
+- 입력: `raw/좋은 삶을 만드는 것에 대한 지루한 진실.md`
+- 입력: `raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md`
+- 입력: `raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md`
 - 생성:
-  - [[고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)]]
-  - [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]]
-  - [[한국 공휴일 데이터 연동 아키텍처]]
-- 수정: 없음
+    - [[AI 시대의 커리어 피벗]]
+    - [[Figma 디자인 시스템 감사]]
+    - [[GLM-5]]
+    - [[Google Stitch]]
+    - [[Qwen 3.5]]
+    - [[Think in Code]]
+    - [[initPromise 패턴]]
+    - [[검증 센서]]
+    - [[드라이 파우더 (Dry powder)]]
+    - [[땜질식 처방]]
+    - [[분산 모놀리스]]
+    - [[빈곤 프리미엄]]
+    - [[시스템 디자인 면접 오프닝]]
+    - [[시스템 멘탈 모델]]
+    - [[실시간 아티팩트]]
+    - [[워크플로 디자이너 (Workflow Designer)]]
+    - [[장애 대응 4단계 프레임워크]]
+    - [[제본스의 역설 (Jevons Paradox)]]
+    - [[컨텍스트 경제학]]
+    - [[클로드 코워크]]
+    - [[포트폴리오 7초 법칙]]
+    - [[포트폴리오 Sweet Spot]]
+    - [[피드백 제어기]]
+- 수정:
+    - [[8px 그리드 시스템 (8px Grid System)]]
+    - [[AI Slop]]
+    - [[AI 생성 텍스트 판별법]]
+    - [[Apple Foundation Models CLI (fm)]]
+    - [[Cline]]
+    - [[GBrain]]
+    - [[H3 육각 그리드 시스템 (H3 Hexagonal Grid System)]]
+    - [[Hermes Agent 24-7 운영]]
+    - [[NVIDIA Build (무료 AI 추론 플랫폼)]]
+    - [[NVIDIA NIM]]
+    - [[PageIndex (구조형 RAG 탐색)]]
+    - [[RAG 퓨전]]
+    - [[SaaS UI 패턴 모범 사례]]
+    - [[WebMCP 브라우저 클라이언트 에이전트 연동 (WebMCP Browser-Agent Integration)]]
+    - [[고차원 표현 공간]]
+    - [[동시성과 병렬성 및 비동기]]
+    - [[디자이너 생존 전략 (2026-2030)]]
+    - [[디자인 시스템 기본값]]
+    - [[루프 엔지니어링]]
+    - [[메이커-체커 패턴 (Maker-Checker Pattern)]]
+    - [[메타인지]]
+    - [[모델 컨텍스트 프로토콜]]
+    - [[모듈러 모놀리스]]
+    - [[비동기 메시지 큐 (Asynchronous Message Queue)]]
+    - [[사가 패턴]]
+    - [[셸 스크립트 기반 자동화 워크플로우]]
+    - [[스킬 인버전 (Skill Inversion)]]
+    - [[실시간 서지 프라이싱 시스템 (Real-time Surge Pricing System)]]
+    - [[양자 지원 벡터 머신]]
+    - [[에우다이모니아 (Eudaimonia)]]
+    - [[에이전트 기반 AI 워크플로우 (Agentic AI Workflow)]]
+    - [[에이전트 디자인 패턴]]
+    - [[에이전틱 AI 엔지니어]]
+    - [[에이전틱 보안 파이프라인]]
+    - [[영구 원격 세션 아키텍처 (Persistent Remote Session Architecture)]]
+    - [[영구 의미 기억 시스템 (Semantic Memory System)]]
+    - [[온디맨드 스킬 로딩]]
+    - [[의사결정 경계선 (Decision Boundaries)]]
+    - [[인간-AI 상호작용 설계 원칙 (Human-AI Interaction Design Principles)]]
+    - [[장애 복구 및 폴백 아키텍처 (Fallback & Failure Modes Design)]]
+    - [[조율된 신뢰 (Calibrated Trust)]]
+    - [[터미널 설정 미니멀리즘]]
+    - [[포스트 앱 인터페이스]]
+    - [[프라이빗 클라우드 컴퓨팅 (Private Cloud Compute)]]
+    - [[프롬프트 구성 4대 요소]]
+    - [[하네스 5계층 모델]]
+    - [[하이브리드 검색 인덱스]]
+    - [[현대적 CLI 유틸리티 (Modern CLI Utilities)]]
+    - [[혼합 주도형 상호작용 (Mixed-Initiative Interaction)]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
-### Lint
-
-- 실행 방식: 수동 점검 (AGENTS.md 스키마 검증, 2+ 관련 노트, No-Ask Policy 준수)
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
-- 관련 노트 2개 미만 문서: 0개
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-
-### 결정 기록
-
-- 결정: Task 3 (Batch 3) Ingest 완료
-- 대상: [[고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)]], [[테스트 타임 연산과 추론 모드 (Test-Time Compute & Why We Think)]], [[한국 공휴일 데이터 연동 아키텍처]]
-- 근거: AGENTS.md 및 No-Ask Policy에 따라 3개 문서를 분석 후 wiki 노트 생성, 인덱스 등록 및 로그 작성을 자율적으로 완료함.
 
 ## 2026-07-20-ingest-group1
 
