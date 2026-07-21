@@ -10,6 +10,7 @@ import type {
   Literal,
   Image,
   Link,
+  Heading,
 } from "mdast";
 import type { Node } from "unist";
 import type { PluggableList } from "unified";
@@ -571,6 +572,20 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<
           };
         });
       }
+
+      plugins.push(() => {
+        return (tree: Root) => {
+          if (!tree.children || tree.children.length === 0) return;
+
+          const firstH1Index = tree.children.findIndex(
+            (node) => node.type === "heading" && (node as Heading).depth === 1,
+          );
+
+          if (firstH1Index !== -1 && firstH1Index < 3) {
+            tree.children.splice(firstH1Index, 1);
+          }
+        };
+      });
 
       return plugins;
     },

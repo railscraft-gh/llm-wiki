@@ -25238,6 +25238,17 @@ var ObsidianFlavoredMarkdown = (userOpts) => {
           };
         });
       }
+      plugins.push(() => {
+        return (tree) => {
+          if (!tree.children || tree.children.length === 0) return;
+          const firstH1Index = tree.children.findIndex(
+            (node) => node.type === "heading" && node.depth === 1
+          );
+          if (firstH1Index !== -1 && firstH1Index < 3) {
+            tree.children.splice(firstH1Index, 1);
+          }
+        };
+      });
       return plugins;
     },
     htmlPlugins() {
