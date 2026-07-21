@@ -38,7 +38,7 @@ updated: 2026-07-18
 # Claude.md 운영 원칙
 
 ## 한 줄 정의
-Claude.md는 Claude Code, OpenCode 또는 Claude 데스크톱 앱의 Cowork 모드 같은 에이전트에게 프로젝트 구조, 제약 조건, 거부 기준을 명시하여 반복되는 온보딩 과정 없이 답변 품질을 극대화하는 AI 행동 계약(Behavioral Contract) 문서다.
+Claude.md는 Claude Code, [[OpenCode]] 또는 Claude 데스크톱 앱의 Cowork 모드 같은 에이전트에게 프로젝트 구조, 제약 조건, 거부 기준을 명시하여 반복되는 온보딩 과정 없이 답변 품질을 극대화하는 AI 행동 계약(Behavioral Contract) 문서다.
 
 ## 핵심 요지
 - **행동 계약(Behavioral Contract)으로서의 본질**: 설정 파일이라기보다 새 팀원에게 주는 업무 매뉴얼에 가깝다. 복잡한 추상화 레이어를 겹겹이 쌓는 대신, 저장소 루트의 평범한 영어 문장만으로 에이전트가 묵시적 가정이나 과잉 엔지니어링을 피하도록 강제할 수 있다.

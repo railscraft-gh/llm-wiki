@@ -96,7 +96,7 @@ Secret 관리도 agent-native 전환의 좋은 예다. [[Infisical 도입 전략
 
 Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를 분리하고 index와 log를 유지하면, 지식 정리 작업 자체가 사람이 폴더를 뒤지며 기억을 더듬는 과정이 아니라 에이전트가 읽고 갱신할 수 있는 텍스트 기반 인프라가 된다.
 
-Hermes Agent의 Google Workspace 연결도 같은 결이다. OAuth client JSON, `setup.py --check`, `--auth-url`, `--auth-code`, `google_api.py calendar list`처럼 클릭 대신 명령과 파일로 외부 서비스를 연결해야 에이전트가 재현 가능한 방식으로 작업을 이어갈 수 있다. 특히 `AUTHENTICATED (partial)`처럼 scope가 빠진 상태를 분리해서 보는 점이 agent-native 문서의 핵심이다.
+[[Hermes Agent]]의 Google Workspace 연결도 같은 결이다. OAuth client JSON, `setup.py --check`, `--auth-url`, `--auth-code`, `google_api.py calendar list`처럼 클릭 대신 명령과 파일로 외부 서비스를 연결해야 에이전트가 재현 가능한 방식으로 작업을 이어갈 수 있다. 특히 `AUTHENTICATED (partial)`처럼 scope가 빠진 상태를 분리해서 보는 점이 agent-native 문서의 핵심이다.
 
 [[Pi Coding Agent]]는 agent-native 인프라를 "프리미티브를 조립하는 하네스" 방향으로 밀어붙인다. `AGENTS.md`/`CLAUDE.md` context file, JSON/RPC mode, extension, skill, Pi package를 통해 사람이 클릭하는 UI 대신 파일과 프로토콜로 agent workflow를 정의한다. 다만 package와 extension은 시스템 접근 권한으로 실행될 수 있으므로 신뢰 경계를 문서화해야 한다.
 이 레이어 구분은 [[에이전트 확장 3계층]]으로 다시 읽을 수 있다.
@@ -108,7 +108,7 @@ Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이�
 1. **마크다운 문서 (Markdown docs)**: 복사해 즉시 이식 가능한 텍스트 지침.
 2. **CLI**: 에이전트가 바로 쉘을 통해 트리거 가능한 명령줄.
 3. **API**: 클릭이 배제된 직접 호출 인터페이스.
-4. **MCP 서버 (Model Context Protocol)**: 에이전트에 로컬 디스크 및 컨텍스트를 서빙하는 표준 통신 스펙.
+4. **MCP 서버 ([[Model Context Protocol]])**: 에이전트에 로컬 디스크 및 컨텍스트를 서빙하는 표준 통신 스펙.
 5. **구조화된 로그 (Structured logs)**: 에러 분석이 쉬운 JSON 기반 로그 출력.
 6. **기계 판독 가능 스키마 (Machine-readable schemas)**: Pydantic 등 규격화된 타입 보장 계약.
 7. **복사-붙여넣기 가능한 에이전트 명령어**: 에이전트에 입력하기 쉬운 단발성 매크로 코드 조각.

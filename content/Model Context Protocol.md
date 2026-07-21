@@ -39,7 +39,7 @@ type: concept
 updated: 2026-07-10
 ---
 
-# Model Context Protocol (모델 컨텍스트 프로토콜)
+# Model Context Protocol ([[모델 컨텍스트 프로토콜]])
 
 ## 한 줄 정의
 Model Context Protocol(MCP)은 AI 클라이언트(Claude Code, Cursor, Copilot 등)와 데이터 소스 또는 백엔드 도구 간에 컨텍스트, 리소스, 실행 권한을 주고받기 위한 합의된 오픈소스 통신 표준 프로토콜이다.

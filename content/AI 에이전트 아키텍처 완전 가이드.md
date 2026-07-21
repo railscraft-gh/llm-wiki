@@ -90,7 +90,7 @@ AI 에이전트(Agent)는 단순 일회성 프롬프트-응답 구조를 넘어,
 - **반자율 에이전트 (Semi-Autonomous)**: 정의된 도구 목록과 가드레일 내에서 모델이 판단하여 도구를 동적으로 기용한다. 현업의 대부분 프로덕션 시스템이 이 영역에 속한다.
 - **고도 자율 에이전트 (Highly Autonomous)**: 모델이 수행 경로, 도구 사용 여부, 검색 방식 등을 스스로 전적으로 결정한다. 심지어 임시 코드를 직접 작성해 실행하기도 한다. 강력하지만 통제가 어렵다.
 
-### 1.3 컨텍스트 엔지니어링 (Context Engineering)
+### 1.3 컨텍스트 엔지니어링 ([[Context Engineering]])
 에이전트의 지능은 모델 단독으로 나오지 않으며, 모델을 둘러싼 **컨텍스트 환경 설계**에 의존한다.
 - 작업의 배경 지식 및 목표 명세
 - 페르소나 및 역할 정의
@@ -140,7 +140,7 @@ LLM이 외부 시스템과 상호작용하도록 백엔드 함수 명세(API, DB
 1. **Foundation Layer**: 비동기 Python(asyncio/Pydantic), SSE(Server-Sent Events) 스트리밍, message queues와 지수 백오프 등을 활용한 분산 영속 실행(durable execution).
 2. **LLM Layer**: Structured outputs 강제(JSON Schema), 모델 선택 및 비용 제어(Opus, Sonnet, Haiku, Gemini, 로컬 Qwen/Llama 등 모델 간 티어링), prompt design 및 캐싱.
 3. **Agent Layer**: LangGraph 기반 그래프 제어 및 메모리 관리(작업 memory, 일화 memory, 의미 memory). sqlite-vec(로컬), Qdrant(오픈소스 프로덕션), Turbopuffer(서버리스) 등의 2026 표준 데이터 스택 활용.
-4. **Production Layer**: 격리된 샌드박스 내부 코드 실행 및 MCP(Model Context Protocol) 표준 연동.
+4. **Production Layer**: 격리된 샌드박스 내부 코드 실행 및 MCP([[Model Context Protocol]]) 표준 연동.
 
 ### 2.6 LLM 운영체제와 고급 오케스트레이션
 LLM을 컴퓨터의 핵심 CPU 연산 코어, 토큰을 바이트, 컨텍스트 윈도우를 RAM, RAG 검색/벡터 DB를 보조 하드디스크에 매핑하는 안드레 카파시의 'LLM 운영체제(LLMos)' 패러다임이 2026년 에이전트 아키텍처 설계의 기본 뼈대로 공고화되었다. 단일 모놀리식 프롬프트의 덫(컨텍스트 포화, 작업 엉킴, 불투명한 블랙박스)을 탈피하기 위해 태스크를 세분화하여 격리하는 방식이 필수적이다.
@@ -270,7 +270,7 @@ graph = builder.compile(checkpointer=memory, interrupt_before=["executor"])
 - [[AI 에이전트 런타임 역할 맵]] — 실시간 에이전트 오케스트레이션 역할 정의
 - [[AI 코딩 에이전트 검증 전략]] — 코딩 전용 에이전트의 검증 루프 설계
 - [[파이썬 AI 에이전트 프레임워크 6종 비교 분석]] — 실전 프레임워크 툴킷 분석
-- [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 에이전틱 AI 엔지니어 역량과 스택 로드맵
+- [[에이전틱 AI 엔지니어 실무 로드맵]] — 2026 [[에이전틱 AI 엔지니어]] 역량과 스택 로드맵
 - [[Claude.md 운영 원칙]]
 - [[Vibe Coding과 Agentic Engineering]]
 

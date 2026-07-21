@@ -37,7 +37,7 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 - 어텐션은 공짜가 아니다 (Attention is not free): 입력 길이가 늘어날수록, 유한한 컨텍스트 창 내에서 중요한 토큰과 불필요한 토큰이 어텐션 경쟁을 일으켜 신뢰도가 무너진다.
 - Big Tech의 하네스 인프라 경쟁: OpenAI(Workspace agents, Agents SDK, Frontier), Anthropic(Claude Code, Cowork, Design), MS(Copilot 시스템화, Agent 365), Google(Gemini Enterprise Agent Platform) 등이 일급 객체로서 하네스 레이어를 소유하기 위해 경쟁 중임.
 - Claude Code Compaction (반응형): 효과적인 컨텍스트 크기 한계에서 13,000 토큰(수동은 3,000 토큰) 이내로 토큰이 차오르면 비로소 자동 압축 작동. 413 에러(prompt_too_long) 발생 시 reactive fallback 구동.
-- OpenClaw Compaction (선제형): 매 호출 전 비용 추정 후 1.2배 안전 마진을 적용해 선제적 압축(Eviction/Pruning) 전략 수행. 창의 90% 도달 시 overflow 가드로 자동 에러 차단.
+- [[OpenClaw]] Compaction (선제형): 매 호출 전 비용 추정 후 1.2배 안전 마진을 적용해 선제적 압축(Eviction/Pruning) 전략 수행. 창의 90% 도달 시 overflow 가드로 자동 에러 차단.
 - cached microcompact: Claude Code는 API 독점 권한인 cache_edits 기능을 이용해, 로컬 메시지는 유지하되 서버 캐시 내 오래된 tool result만 외과적으로 eviction 처리하여 cache hit율을 보존함. 사용자 Idle 60분 초과 시 시간 기반 eviction 단행.
 
 ## 상세
@@ -56,14 +56,14 @@ Context Engineering은 에이전트가 다음 단계를 제대로 수행하도�
 
 ### 3. 컨텍스트 라우팅 (Context Routing)과 MCP
 모든 에이전트에게 전체 컨텍스트를 주입하는 방식은 비효율적이다. 각 역할에 맞는 서브셋(Subset)만 라우팅해야 한다.
-- **Model Context Protocol (MCP)**: 모든 정보를 미리 로드하는 대신 필요한 컨텍스트 소스를 구조적으로 조회하여 당겨 쓴다. (2025년 말 기준 공개 MCP 서버가 10,000개 이상 배포됨)
+- **[[Model Context Protocol]] (MCP)**: 모든 정보를 미리 로드하는 대신 필요한 컨텍스트 소스를 구조적으로 조회하여 당겨 쓴다. (2025년 말 기준 공개 MCP 서버가 10,000개 이상 배포됨)
 
 ### 컨텍스트 Handoff의 바통 터치 비유
 - 멀티 에이전트 시스템에서 에이전트의 실패는 추론 지능의 부족이 아니라, 이전 에이전트가 내린 결정과 맥락을 다음 주자에게 올바르게 전달하지 못하는 'Handoff의 붕괴'에 기인한다. 이는 계주에서 바통만 던져 주고 어느 레인인지, 앞 주자가 어디까지 왔는지 설명하지 않는 것과 같다.
 
-### Claude Code 대 OpenClaw 컨텍스트 압축 아키텍처 상세
+### Claude Code 대 [[OpenClaw]] 컨텍스트 압축 아키텍처 상세
 
-| 비교 항목 | Claude Code (반응형 / Reactive) | OpenClaw (선제형 / Predictive) |
+| 비교 항목 | Claude Code (반응형 / Reactive) | [[OpenClaw]] (선제형 / Predictive) |
 | :--- | :--- | :--- |
 | **트리거 시점** | 창 한계 직전 (남은 용량 13,000 토큰) | 매 turn 실행 전 토큰 비용 예측 및 안전 마진 1.2배 검증 |
 | **초저비용 Pruning** | `cache_edits`로 캐시 무효화 없이 특정 tool result만 지우는 `cached microcompact` 수행 | 개별 툴 결과가 창의 50% 초과 시 잘라내고, 고아 결과를 복구하는 `tool-pair repair` 수행 |
@@ -108,7 +108,7 @@ class ResearchAgentState(TypedDict):
 
 - **Specialist Context Routing**: 코드 작성 노드에는 원시 API 페이로드나 장황한 비즈니스 문서 대신, 실패 테스트 케이스와 성공 기준만을 축약해 전달하여 환각과 토큰 소모를 방지한다.
 
-- **OpenClaw Merge Summary Prompt 보존 규격**:
+- **[[OpenClaw]] Merge Summary Prompt 보존 규격**:
 ```text
 MUST PRESERVE:
 - Active tasks and their current status

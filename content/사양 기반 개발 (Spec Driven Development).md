@@ -86,7 +86,7 @@ updated: 2026-07-10
 - **유기적인 활성 문서**: 한 번 쓰고 방치하는 문서가 아니라, 제품 사정 변경에 맞춰 지속적으로 업데이트하고 Git으로 버전 변동을 관리하는 살아있는 문서로 기능해야 한다.
 - 콘텍스트 붕괴(Context Decay)와 구현 드리프트(Implementation Drift): 바이브 코딩 시 대화가 길어지면 초기 아키텍처 설계와 비즈니스 제약이 컨텍스트 창 밖으로 밀려나며 에이전트가 임의의 설계를 창작하여 요구사항과 이탈한다.
 - 양방향 명세 업데이트(Bidirectional Updating) 규칙: 구현 도중 생긴 세부 아키텍처 결정은 즉시 사양서에 동기화해야 한다. 명세 부채(Specification Debt)는 기술 부채보다 빨라 이후 주입되는 AI 입력을 오염시킨다.
-- GitHub의 Spec Kit은 에이전트 개발이 실패하는 주된 원인이 AI 한계보다 개발자의 일회성 명령 방식에 있음을 지적하며, SDD 프로세스를 오픈소스로 대중화시켰다. (GitHub 90,000+ stars, 8,000+ forks) (출처: 바이브 코딩의 종말-ko.md)
+- GitHub의 [[Spec Kit]]은 에이전트 개발이 실패하는 주된 원인이 AI 한계보다 개발자의 일회성 명령 방식에 있음을 지적하며, SDD 프로세스를 오픈소스로 대중화시켰다. (GitHub 90,000+ stars, 8,000+ forks) (출처: 바이브 코딩의 종말-ko.md)
 - SDD 워크플로우는 헌장(constitution) ➡️ 사양(spec) ➡️ 명확화(clarify) ➡️ 계획(plan) ➡️ 작업 분할(tasks) ➡️ 구현(implement)의 선형 인과 관계적 6단계 파이프라인으로 제어된다.
 
 ## 상세
@@ -142,7 +142,7 @@ SDD 파이프라인의 중심을 관통하는 헌장(`.specify/memory/constituti
 - 콘텍스트 회복 시간 (Context recovery time) - 문서화된 의도가 제공되어 급감.
 - 결함 유출률 (Defect escape rate) 및 요구사항부터 프로덕션 완료까지의 시간.
 
-### Spec Kit의 핵심 CLI 설치 및 구성 정보
+### [[Spec Kit]]의 핵심 CLI 설치 및 구성 정보
 
 1. **CLI 설치 및 초기화**:
    - 파이썬 3.11 이상이 필요하며, 패키지 도구 `uv`를 통해 글로벌 설치할 것이 권장된다. (출처: 바이브 코딩의 종말-ko.md)
@@ -168,7 +168,7 @@ SDD 파이프라인의 중심을 관통하는 헌장(`.specify/memory/constituti
 
 - **MDC 설정 활용 (.mdc)**: Cursor의 마크다운-YAML 설정을 통해 규칙의 적용 범위를 특정 백엔드/프론트엔드 파일 글로브로 한정하여 불필요한 토큰 낭비를 예방.
 
-### Spec Kit의 슬래시 명령어 세부 체계
+### [[Spec Kit]]의 슬래시 명령어 세부 체계
 
 #### 6가지 핵심 워크플로 제어 명령
 - `/speckit.constitution`: 개발 가이드라인이자 프로젝트 아키텍처 불변의 십계명인 `.specify/memory/constitution.md` 헌장을 수립한다. (출처: 바이브 코딩의 종말-ko.md)

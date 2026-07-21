@@ -185,7 +185,7 @@ Karpathy식 LLM Wiki의 구축 오버헤드(터미널 제어, 스크립트 작�
    - **평가**: PM 직군 기준 8.5/10점[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L79](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L79).
 
 5. **jarvis-vault (자가 조직화 도구)**
-   - **특징**: 완전 자동 분류 및 링크 구성을 내세운 옵시디언 AI 세컨드 브레인.
+   - **특징**: 완전 자동 분류 및 링크 구성을 내세운 옵시디언 [[AI 세컨드 브레인]].
    - **단점**: 에이전트에 가드레일이 없어 4일 차에 원치 않는 분류 체계 강제 및 1개 X 스레드가 3개 폴더에 중복 분산되는 등의 '자신감 넘치는 혼란' 발생[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L95](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L95). 사용 5일 차에 20분 만에 삭제됨[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L97](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L97).
    - **평가**: 5/10점[raw/I Tested 5 ‘LLM Wiki’ Implementations So You Don’t Have To.md#L99](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98LLM%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L99).
 

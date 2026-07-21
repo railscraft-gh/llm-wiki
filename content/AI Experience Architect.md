@@ -93,7 +93,7 @@ AI Experience Architect는 화면(UI 픽셀)을 더 빨리 만드는 사람이 �
 4. **패턴 인식과 필터링**: 수많은 사용자 기능 요청(Feature Request) 중에서 6개월 뒤 무용지물이 될 요구사항과 진짜 본질적인 제어 워크플로우에 대한 니즈를 구분하여 개발 방향을 설정한다.
 5. **신뢰와 한계 설계 (Trust & Edge Interface)**: AI의 부정확성이나 실패를 수용하고, 시스템이 한계에 직면했을 때 에이전트 협업 설계(agent handoff)를 적용한다. 시스템이 한계를 시인하고 사용자에게 사람 개입(Escalation)이나 실행 되돌리기(Undo/Cancel) 등 안전하고 투명한 복구 경계를 제공하도록 인터페이스와 fallback을 설계한다 (출처: UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다).
 6. **전략적 절제 (Strategic Restraint)**: 기계적인 속도로 생성과 배포, A/B 테스트의 반복적인 사이클에 매몰되지 않고, "이 기능은 배포를 멈추고 리서치가 더 필요하다"고 제어할 줄 아는 궤도 속도 조절자 역할을 한다.
-7. **시스템으로서의 취향 (Taste as a System)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 AI Slop 아웃풋을 거부하고, Before/After 대조 캔버스를 구축하여 최종안의 시각적/기능적 우수성의 상세한 근거를 입증한다. 외부 안목 리뷰(taste review) 세션을 통해 제품 전체의 디자인 품질 기준을 격상한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
+7. **시스템으로서의 취향 (Taste as a System)**: 훈련 데이터의 평균으로 회귀하여 개성 없고 밋밋하게 수렴하는 [[AI Slop]] 아웃풋을 거부하고, Before/After 대조 캔버스를 구축하여 최종안의 시각적/기능적 우수성의 상세한 근거를 입증한다. 외부 안목 리뷰(taste review) 세션을 통해 제품 전체의 디자인 품질 기준을 격상한다 (출처: The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer).
 
 ### 경험 아키텍트의 인간적 우위 (The Human Edge)
 
@@ -121,7 +121,7 @@ AI가 화면을 조립(assembly)하는 속도가 Jira 티켓을 끊는 속도보
 
 ### 검토 게이트 체크리스트 (Approval Gate Checklist)
 
-디자인 드리프트(Design Drift)와 AI Slop의 무분별한 유입을 사전에 차단하기 위해 디자이너가 승인 게이트에서 검수해야 할 체크리스트이다.
+디자인 드리프트(Design Drift)와 [[AI Slop]]의 무분별한 유입을 사전에 차단하기 위해 디자이너가 승인 게이트에서 검수해야 할 체크리스트이다.
 - [ ] **Figma Token Validation**: Primitives의 직접 노출 여부를 검증하고, 모든 컴포넌트 색상이 Semantic Token으로 올바르게 매핑되어 있는가?
 - [ ] **PascalCase Component Name**: 피그마와 코드베이스의 이름이 `ProductCard`와 같이 PascalCase로 정확히 일치하여 Code Connect 매핑이 유효한가?
 - [ ] **Component Properties Align**: 피그마 variants 이름(variant, size, state 등)이 코드 props와 대소문자까지 동일하게 설정되었는가?
@@ -131,8 +131,8 @@ AI가 화면을 조립(assembly)하는 속도가 Jira 티켓을 끊는 속도보
 
 ### 앤트로픽의 30줄 CSS 미학 선언문 (Anthropic's 30-Line CSS Aesthetics Rule)
 
-Anthropic의 엔지니어 Prithvi Rajasekaran과 Alexander Bricken이 작성한 `SKILL.md` 문서(GitHub `anthropics/skills` 저장소 내 `frontend-design` 폴더)에 수록된 30줄의 실제 지시문은 AI 생성 UI의 시각적 서명인 'AI Slop'을 차단하고 독창적인 프런트엔드 미학을 강제하는 선언적 취향 기준이다.
-- **AI Slop 방지를 위한 영구 금지 규칙 (Forbidden List)**:
+Anthropic의 엔지니어 Prithvi Rajasekaran과 Alexander Bricken이 작성한 `SKILL.md` 문서(GitHub `anthropics/skills` 저장소 내 `frontend-design` 폴더)에 수록된 30줄의 실제 지시문은 AI 생성 UI의 시각적 서명인 '[[AI Slop]]'을 차단하고 독창적인 프런트엔드 미학을 강제하는 선언적 취향 기준이다.
+- **[[AI Slop]] 방지를 위한 영구 금지 규칙 (Forbidden List)**:
   - 폰트 수렴 금지: **Inter**, **Roboto**, **Arial**, 시스템 기본 폰트, 그리고 흔히 쓰이는 **Space Grotesk**를 포함한 평범한 서체 수렴을 **절대(NEVER)** 금지한다.
   - 흔한 색상 조합 금지: **흰색 배경에 보라색 그라데이션** 같은 판에 박힌 SaaS 랜딩 페이지 미학을 절대 배제한다.
 - **11가지 극단적인 시각적 미학 제안**:

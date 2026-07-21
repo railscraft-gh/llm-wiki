@@ -130,7 +130,7 @@ allowed-tools: Bash(git diff *) Bash(gh pr *)
 *   **`skill-creator`**: 새로운 스킬을 위한 YAML 프론트매터 및 실행 로직을 정의하며, 스킬에서 가장 중요한 '설명(description) 필드'의 트리거 범위가 겹치지 않게 조율하는 전제 조건 메타 스킬이다.
 *   **`document-skills`**: PDF, XLSX, DOCX, PPTX 생성을 단일 명령어로 처리하는 플러그인 세트(Plugin Set)다. 로컬 Python 스크립트 및 바이너리를 사용해 변환을 처리하므로, 파일 파싱을 위해 개별적으로 구동하던 비대한 JSON 스키마 기반 MCP 서버 4개를 대체해 컨텍스트 세금을 대폭 아낀다.
 *   **`webapp-testing`**: CLI에서 Playwright 헤드리스 브라우저 세션을 오케스트레이션하여 폼 전송, 버튼 클릭 등의 스모크 테스트를 실행한다. 단순 스크린샷 캡처에 그치지 않고 DOM 접근성 트리(Accessibility Tree)를 추출하여 컨텍스트에 공급하므로, z-index 이슈로 UI 요소가 가려져 클릭이 실패하는 등의 접근성 레이아웃 버그를 에이전트가 탐지하고 수정하게 돕는다.
-*   **`mcp-builder`**: 자연어 요건 설명에 맞춘 전용 초경량 MCP(Model Context Protocol) 서버와 API 인증 보일러플레이트를 자동 생성한다. 이를 통해 에이전트 실행 즉시 5만 토큰 가량의 JSON 스키마를 올리는 비대한 기성 MCP 서버 의존을 탈피한다.
+*   **`mcp-builder`**: 자연어 요건 설명에 맞춘 전용 초경량 MCP([[Model Context Protocol]]) 서버와 API 인증 보일러플레이트를 자동 생성한다. 이를 통해 에이전트 실행 즉시 5만 토큰 가량의 JSON 스키마를 올리는 비대한 기성 MCP 서버 의존을 탈피한다.
 *   **`theme-factory`**: 미적 방향성을 입력받아 Tailwind CSS 구성이나 CSS 변수를 세부 생성한다.
 
 ### 커뮤니티 및 외부 개발 스킬

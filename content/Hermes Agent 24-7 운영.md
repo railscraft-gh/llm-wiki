@@ -30,10 +30,10 @@ type: workflow
 updated: 2026-07-10
 ---
 
-# Hermes Agent 24-7 운영
+# [[Hermes Agent]] 24-7 운영
 
 ## 한 줄 정의
-Hermes Agent 24/7 운영은 에이전트를 늘 켜 둔 상태로 두되, sandbox, skills, curator, memory, 권한 경계로 안전성을 확보하는 장기 실행 workflow다.
+[[Hermes Agent]] 24/7 운영은 에이전트를 늘 켜 둔 상태로 두되, sandbox, skills, curator, memory, 권한 경계로 안전성을 확보하는 장기 실행 workflow다.
 
 ## 핵심 요지
 - 24/7로 돌릴수록 "좋아 보이는 데모"보다 안전한 운영 경계가 중요해진다.

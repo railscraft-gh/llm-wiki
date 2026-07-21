@@ -38,7 +38,7 @@ Software 3.0은 명시적 코드를 쓰는 대신 prompt와 context window로 �
 
 ## 상세
 
-카파시 자료의 대표 예시는 OpenClaw 설치와 MenuGen이다. OpenClaw 설치에서 예전 방식은 macOS, Ubuntu, Windows 분기를 bash script에 직접 넣는 것이지만, Software 3.0 방식은 설치 설명 텍스트를 에이전트에게 주고 환경 탐색과 디버깅을 맡기는 것이다.
+카파시 자료의 대표 예시는 [[OpenClaw]] 설치와 MenuGen이다. [[OpenClaw]] 설치에서 예전 방식은 macOS, Ubuntu, Windows 분기를 bash script에 직접 넣는 것이지만, Software 3.0 방식은 설치 설명 텍스트를 에이전트에게 주고 환경 탐색과 디버깅을 맡기는 것이다.
 
 MenuGen 사례는 더 극단적이다. 원래는 메뉴판 사진에서 OCR로 항목을 추출하고 이미지 생성 API로 음식 이미지를 만든 뒤 앱으로 배포해야 했다. 그러나 Software 3.0 관점에서는 메뉴판 이미지를 모델에 주고 음식 이미지를 메뉴 위에 오버레이하라고 지시하는 한 번의 신경망 호출로 해결될 수 있다. 이 경우 기존 앱 전체가 불필요해질 수 있다는 점이 중요하다.
 

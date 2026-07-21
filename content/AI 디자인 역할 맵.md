@@ -91,7 +91,7 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 
 - onboarding 개편: 기본값 층에서 form spacing과 validation tone을 고정하고, task layer에서 UX flow agent로 happy path와 edge case를 설계한다.
 - B2B SaaS 재설계: DESIGN.md로 density와 table rule을 고정하고, architect layer에서 어떤 화면까지 AI가 초안 생성하고 어디서 사람이 승인할지 정한다.
-- 디자인 조직 운영: 디자이너 주니어는 기본값과 DESIGN.md를 관리하고, 시니어는 task agent prompt를 다듬고, 리드는 AI Experience Architect 관점에서 권한과 review gate를 조정한다.
+- 디자인 조직 운영: 디자이너 주니어는 기본값과 DESIGN.md를 관리하고, 시니어는 task agent prompt를 다듬고, 리드는 [[AI Experience Architect]] 관점에서 권한과 review gate를 조정한다.
 
 ### 비디자이너 디자인 보편화 시기의 포지셔닝
 - 경영진 92%가 기대하는 기초 픽셀 배치 및 템플릿 조립 능력은 누구나 사용할 수 있는 AI의 등장으로 한계 비용이 0에 수렴한다.

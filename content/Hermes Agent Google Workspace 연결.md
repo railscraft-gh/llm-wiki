@@ -19,10 +19,10 @@ type: workflow
 updated: 2026-07-10
 ---
 
-# Hermes Agent Google Workspace 연결
+# [[Hermes Agent]] Google Workspace 연결
 
 ## 한 줄 정의
-Hermes Agent Google Workspace 연결은 OAuth client를 등록하고 토큰을 발급받아 Gmail, Calendar, Drive, Sheets, Docs를 에이전트가 읽고 쓰게 만드는 절차다.
+[[Hermes Agent]] Google Workspace 연결은 OAuth client를 등록하고 토큰을 발급받아 Gmail, Calendar, Drive, Sheets, Docs를 에이전트가 읽고 쓰게 만드는 절차다.
 
 ## 핵심 요지
 - 이 연결은 단순 로그인보다 **scope 기반 권한 부여**에 가깝다.
@@ -68,7 +68,7 @@ Hermes Agent Google Workspace 연결은 OAuth client를 등록하고 토큰을 �
   `python ~/.hermes/skills/productivity/google-workspace/scripts/google_api.py calendar list --start 2026-06-06T00:00:00+09:00 --end 2026-06-06T23:59:59+09:00`
 
 ## 충돌
-- 2026-05-28 확인: 이 note는 Hermes Agent의 Google Workspace skill 경로와 setup script에 강하게 의존한다. 경로나 지원 scope가 바뀌면 절차를 다시 확인해야 한다.
+- 2026-05-28 확인: 이 note는 [[Hermes Agent]]의 Google Workspace skill 경로와 setup script에 강하게 의존한다. 경로나 지원 scope가 바뀌면 절차를 다시 확인해야 한다.
 
 ## 관련 노트
 - [[Agent Native Infrastructure]]

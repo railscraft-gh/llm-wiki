@@ -77,7 +77,7 @@ AI 에이전트가 코딩의 장벽을 낮춤에 따라 채용 평가의 초점�
 - **에이전트 오케스트레이션**: ReAct 루프 제어, 멱등성(Idempotency), Durable Execution(지속성 실행) 및 루프 탈출 조건 설계.
 - **파인튜닝 및 정렬**: LoRA/QLoRA 매커니즘, RLHF/DPO의 실무 도입 분기점 및 모델 한계 극복 판단.
 - **평가 및 Observability**: Offline/Online Eval, LLM-as-judge 편향 제거, Latency 및 Token 가버닝.
-- **보안 및 가드레일**: 멀티테넌트 RAG 테넌트 격리, Lethal Trifecta 위험 통제, 슬롭스쿼팅 방어 방침.
+- **보안 및 가드레일**: 멀티테넌트 RAG 테넌트 격리, [[Lethal Trifecta]] 위험 통제, 슬롭스쿼팅 방어 방침.
 
 ### 3. 실무 GenAI 시스템 심층 검증 영역
 - **RAG 및 컨텍스트 엔지니어링**: RAG 튜닝 시 단순 벡터 검색(Vector-only)의 한계를 극복하기 위해 Dense retrieval과 BM25/TF-IDF 기반 Sparse retrieval을 결합하는 하이브리드 검색(Hybrid Search) 설계 여부, bi-encoder 기반 대형 검색 후 cross-encoder reranker를 사용한 top-k 재정렬, 그리고 Lost in the middle을 우회하기 위한 청킹(chunking) 및 context compaction 제어를 정밀 확인한다.

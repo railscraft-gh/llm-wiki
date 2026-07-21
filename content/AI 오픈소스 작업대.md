@@ -93,7 +93,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 ## 상세
 
-원문에 등장하는 저장소들은 결국 몇 가지 묶음으로 정리된다. **local AI stack**에는 Ollama, Open WebUI, open-weight model이 있다. 이는 private code와 문서를 cloud 밖에서 다루려는 수요와 연결된다. 각 로컬 호스팅 플랫폼 및 클라우드/하드웨어 추론 환경별 비교는 [[2026년 오픈소스 LLM 플랫폼 비교]]에서 상세히 다룬다. **workflow automation**에는 n8n이 있고, 이는 business workflow와 AI reasoning을 연결하는 층을 보여 준다. **agent/runtime tooling**에는 OpenClaw, Gemini CLI, LangChain ecosystem이 있다. 이는 AI가 채팅창에서 terminal·shell·앱 workflow로 이동하는 흐름을 상징한다. 특히 [[OpenClaw]]는 multi-channel personal agent, markdown memory, SKILL.md, self-hosted runtime을 한 덩어리로 보여 주는 사례다. **visual AI pipeline tooling**에는 Langflow가 있고, 이는 RAG와 multi-agent flow를 block 단위로 실험하는 표면이다. **grounded enterprise AI**에는 Dify와 RAGFlow가 있다. 이는 retrieval, citation, self-hosting, provider switching을 제품화하는 방향을 보여 준다.
+원문에 등장하는 저장소들은 결국 몇 가지 묶음으로 정리된다. **local AI stack**에는 Ollama, Open WebUI, open-weight model이 있다. 이는 private code와 문서를 cloud 밖에서 다루려는 수요와 연결된다. 각 로컬 호스팅 플랫폼 및 클라우드/하드웨어 추론 환경별 비교는 [[2026년 오픈소스 LLM 플랫폼 비교]]에서 상세히 다룬다. **workflow automation**에는 n8n이 있고, 이는 business workflow와 AI reasoning을 연결하는 층을 보여 준다. **agent/runtime tooling**에는 [[OpenClaw]], Gemini CLI, LangChain ecosystem이 있다. 이는 AI가 채팅창에서 terminal·shell·앱 workflow로 이동하는 흐름을 상징한다. 특히 [[OpenClaw]]는 multi-channel personal agent, markdown memory, SKILL.md, self-hosted runtime을 한 덩어리로 보여 주는 사례다. **visual AI pipeline tooling**에는 Langflow가 있고, 이는 RAG와 multi-agent flow를 block 단위로 실험하는 표면이다. **grounded enterprise AI**에는 Dify와 RAGFlow가 있다. 이는 retrieval, citation, self-hosting, provider switching을 제품화하는 방향을 보여 준다.
 후속 TTS raw를 보면 이 작업 표면이 텍스트를 넘어 speech layer로도 확장된다. 즉 local runtime과 open-weight 흐름은 코딩·검색·문서 요약뿐 아니라 음성 출력까지 온디바이스화하는 쪽으로 확장되고 있다.
 
 `raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`는 같은 지형을 한 번 더 스냅샷처럼 보여 준다. 단일 저장소 소개보다 중요한 것은, local stack, workflow automation, RAG platform, terminal assistant가 여전히 반복되는 작업 표면이라는 점이다.
@@ -135,7 +135,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 1. **Orchestration & Runtime Control**: 흐름을 제어하고 checkpointing을 관리한다. Python 생태계의 PostgresSaver 기반 **LangGraph**, 간편한 프로토타이핑 특화 **CrewAI**, Pydantic 규격을 강조하는 **Pydantic AI**, TypeScript 네이티브 환경의 **Mastra**가 핵심이다.
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
-3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 Model Context Protocol 표준 도구 작성이 주류를 이룬다.
+3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
 5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
@@ -147,7 +147,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 1. **Orchestration & Runtime Control**: 흐름을 제어하고 checkpointing을 관리한다. Python 생태계의 PostgresSaver 기반 **LangGraph**, 간편한 프로토타이핑 특화 **CrewAI**, Pydantic 규격을 강조하는 **Pydantic AI**, TypeScript 네이티브 환경의 **Mastra**가 핵심이다.
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
-3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 Model Context Protocol 표준 도구 작성이 주류를 이룬다.
+3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
 5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.
@@ -159,7 +159,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 1. **Orchestration & Runtime Control**: 흐름을 제어하고 checkpointing을 관리한다. Python 생태계의 PostgresSaver 기반 **LangGraph**, 간편한 프로토타이핑 특화 **CrewAI**, Pydantic 규격을 강조하는 **Pydantic AI**, TypeScript 네이티브 환경의 **Mastra**가 핵심이다.
 2. **Memory & State**: **Mem0** (48k+ stars, 하이브리드 벡터+그래프 검색, user/session/agent 다층 구조), **Zep/Graphiti** (시계열 텍스트 및 개체 해석 특화), **Letta** (운영체제의 virtual memory 구조처럼 RAM/Disk 분할 처리)를 결합한다.
-3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 Model Context Protocol 표준 도구 작성이 주류를 이룬다.
+3. **Protocols & Tools**: **FastMCP** (async-first 파이선 MCP 서버 데코레이터 빌더) 및 **mcp-agent**를 통한 [[Model Context Protocol]] 표준 도구 작성이 주류를 이룬다.
 4. **Browsers & Computer Use**: DOM 파싱 계열의 **Browser Use**(50k+ stars), Playwright 기반 **Stagehand v3**(CDP 적용으로 44% 가속), 비주얼 좌표 픽셀 클릭 계열의 **Skyvern**(WebVoyager 2.0 성공률 85.85%, 단 일반 작업은 DOM-driven 대비 비용 4~8배 상승)이 포진한다.
 5. **Coding Agents & Sandboxes**: Docker 격리 및 이벤트 스트림 구조인 **OpenHands**(72k+ stars), git 형상관리 자동 커밋을 융합해 편집-기획 모드를 분리한 **Aider**(35k+ stars), VS Code 내에서 계획(Plan)-수행(Act) 단계를 수동 격리 통제하는 **Cline**(38k+ stars)이 경쟁한다.
 6. **Evals & Observability**: 오픈소스 로깅 표준인 **Langfuse**, 오픈텔레메트리 연동이 강력한 **Arize Phoenix**, 영국 AI Security Institute의 평가 스위트인 **Inspect AI**로 디버깅 신뢰성을 보완한다.

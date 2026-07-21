@@ -28,7 +28,7 @@ Ralph Loop는 Spectrum Development의 브레인스토밍, 단계 분할, TDD 실
 
 ## 핵심 요지
 - Spectrum Development는 "Plan before Doing" 원칙으로 브레인스토밍 → 계획 → 실행 → 리뷰와 검증을 분리한다.
-- GStack은 의도 명확화와 의사결정, GSD는 phase 분할과 context 관리, SuperPower는 TDD 실행 백본, Ralph Loop는 phase 실행 큐를 맡는다.
+- [[GStack]]은 의도 명확화와 의사결정, GSD는 phase 분할과 context 관리, SuperPower는 TDD 실행 백본, Ralph Loop는 phase 실행 큐를 맡는다.
 - 오케스트레이터는 모든 작업 내용을 품지 않고 phase 상태와 결과만 추적해 context 소모를 줄인다.
 - greenfield 대형 프로젝트에는 전체 통합이 유용할 수 있지만, brownfield 기능 추가에는 부분 적용이 더 현실적이다.
 - LLM 컨텍스트 윈도우 사용률이 50%를 초과할 경우 정보 손실 및 누락(Context rot)으로 인한 에이전트 정확도 급락 현상이 유발되므로, 대형 작업을 GSD 기반의 개별 Phase로 분할한 뒤 각 Phase별로 독립적인 무상태(stateless) headless 세션을 새롭게 구동하여 오케스트레이터의 윈도우 사용률을 10% 이하로 제어한다. (출처: Ralph Loop - AI 코딩 자율 워크플로우 Spectrum Development 통합.md)
@@ -56,8 +56,8 @@ Ralph Loop는 [[병렬 에이전트 세션 운영]]의 자동화된 변형으로
 
 ## 예시
 
-- greenfield 앱: GStack으로 제품 스펙을 좁힘 → GSD로 10개 이상의 phase로 분할 → Ralph Loop가 phase별 headless Claude Code 세션을 실행 → 각 세션이 테스트 작성, 구현, 검증 결과를 남김.
-- brownfield 기능 추가: 전체 loop 대신 GStack으로 범위만 좁히고, SuperPower나 기존 [[Plan Mode 기반 AI 작업]]으로 한두 phase만 실행한다.
+- greenfield 앱: [[GStack]]으로 제품 스펙을 좁힘 → GSD로 10개 이상의 phase로 분할 → Ralph Loop가 phase별 headless Claude Code 세션을 실행 → 각 세션이 테스트 작성, 구현, 검증 결과를 남김.
+- brownfield 기능 추가: 전체 loop 대신 [[GStack]]으로 범위만 좁히고, SuperPower나 기존 [[Plan Mode 기반 AI 작업]]으로 한두 phase만 실행한다.
 
 ### 16개 Phase 프로젝트에 대한 Ralph Loop 실행 로그 요약
 ```text

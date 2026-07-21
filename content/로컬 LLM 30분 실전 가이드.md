@@ -89,15 +89,15 @@ updated: 2026-07-10
 # 로컬 LLM 30분 실전 가이드
 
 ## 한 줄 정의
-로컬 LLM 실전 가이드는 외부 API 요금 결제나 인터넷 개인정보 유출 우려 없이 개인 기기(PC/Mac)에서 최신 MLX 엔진 기반 Ollama, KV 캐시 압축 기술(TurboQuant) 및 디스크 스트리밍 기법을 융합하여 고성능 모델을 온디바이스로 초고속 구동하는 실무 기술 명세서다.
+로컬 LLM 실전 가이드는 외부 API 요금 결제나 인터넷 개인정보 유출 우려 없이 개인 기기(PC/Mac)에서 최신 MLX 엔진 기반 Ollama, KV 캐시 압축 기술([[TurboQuant]]) 및 디스크 스트리밍 기법을 융합하여 고성능 모델을 온디바이스로 초고속 구동하는 실무 기술 명세서다.
 
 ## 핵심 요지
 - **엔진 진화 (Ollama-MLX)**: Ollama 0.19(2026년 3월 30일 출시)부터 애플 실리콘의 백엔드가 MLX로 교체되면서 M5 Max 환경 기준 Prefill 57%(1,810 tok/s), Decode 93%(112 tok/s) 수준의 비약적인 속도 성능 향상을 달성했다.
-- **KV 캐시 메모리 벽 차단 (TurboQuant)**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
+- **KV 캐시 메모리 벽 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
 - **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
 - **3대 실무 구현 경로**: IDE 코딩 어시스턴트(Cline), 콤팩트 문서 RAG(Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
 - Ollama 0.19 벤치마크에 따르면 int4 양자화 Qwen 구동 시 초당 1,851 토큰 프리필(Prefill)과 134 토큰 디코딩(Decode) 속도를 발휘한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
-- oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시) 설계를 통해 에이전트 구동 시 첫 토큰 생성 시간(TTFT)을 30~90초에서 1~3초로 크게 단축한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
+- [[oMLX]]의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시) 설계를 통해 에이전트 구동 시 첫 토큰 생성 시간(TTFT)을 30~90초에서 1~3초로 크게 단축한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
 - PyTorch의 MPS 메모리 점유율 한계를 해소하기 위해 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0` 환경변수를 설정하면, 36GB 통합 메모리 내에서 35B 모델(20GB)과 Z-Image-Turbo(6GB)를 동시 적재할 수 있다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
 - Cline v3+ 등의 지능형 에이전트는 복잡한 시스템 프롬프트로 인해 시작 시점에 이미 25K~30K 토큰을 소비하므로, Ollama 기본 num_ctx(40K)를 안전하게 초과해 사용량 오류가 나는 것을 막기 위해 Modelfile 튜닝을 거쳐 65,536(여유가 있을 시 131,072)으로 수동 할당해야 한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
 - 오프라인 음성 비서 파이프라인에서 STT 모델로 CoreML 가속을 탑재한 WhisperKit(Whisper-large-v3-turbo, 1시간 음성을 90초 내 전사) 또는 Parakeet 기반 FluidAudio(평균 전사 지연 0.19초)를 기용하여 CPU 기반 whisper.cpp의 성능 지연을 극복한다. (출처: Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md)
@@ -143,9 +143,9 @@ updated: 2026-07-10
 
 ---
 
-### 2. KV 캐시 압축 기술 (TurboQuant)
+### 2. KV 캐시 압축 기술 ([[TurboQuant]])
 
-로컬 추론의 크리티컬 병목은 컨텍스트 시퀀스 길이에 비례해 비대해지는 **KV 캐시**다. TurboQuant(arXiv:2504.19874, ICLR 2026 채택)는 재학습 없이 정확도를 보존하며 캐시를 4~6배 압축한다.
+로컬 추론의 크리티컬 병목은 컨텍스트 시퀀스 길이에 비례해 비대해지는 **KV 캐시**다. [[TurboQuant]](arXiv:2504.19874, ICLR 2026 채택)는 재학습 없이 정확도를 보존하며 캐시를 4~6배 압축한다.
 
 ```mermaid
 flowchart LR
@@ -235,12 +235,12 @@ flowchart LR
   - Q2/Q3 수준으로 극단적 양자화 적용 (정확도 붕괴 유발. Q4 8B가 Q2 14B보다 대부분의 작업에서 우수).
   - 로컬 모델에 클라우드급 Opus 추론 능력을 맹신하고 라우터 설계 없이 작업을 넘기는 태도.
 
-### 6. 애플 실리콘 맥북 oMLX 실전 가속 벤치마크 데이터
-- **롱 컨텍스트 프리필 병목과 oMLX 개선 성능**:
+### 6. 애플 실리콘 맥북 [[oMLX]] 실전 가속 벤치마크 데이터
+- **롱 컨텍스트 프리필 병목과 [[oMLX]] 개선 성능**:
   - 64GB 통합 메모리를 활용해 Qwen3.6-35B MoE 모델(21GB)을 구동하고 8,700토큰의 코드베이스를 읽는 프리필 실험에서, 순수 MLX는 M1 Max에서 20.35초(초당 579토큰)가 걸리는 중대한 지연 병목이 존재했습니다.
-  - 이를 continuous batching 및 계층형 KV 캐싱을 탑재한 oMLX 서버로 전환하여 구동한 결과, 프리필 지연 시간이 **M1 Max에서 2.95초(초당 2,975토큰, 5.1배 성능 향상)**, **M4 Max에서 1.01초(초당 8,664토큰, 5.7배 성능 향상)**로 획기적으로 개선되었습니다.
+  - 이를 continuous batching 및 계층형 KV 캐싱을 탑재한 [[oMLX]] 서버로 전환하여 구동한 결과, 프리필 지연 시간이 **M1 Max에서 2.95초(초당 2,975토큰, 5.1배 성능 향상)**, **M4 Max에서 1.01초(초당 8,664토큰, 5.7배 성능 향상)**로 획기적으로 개선되었습니다.
 - **실시간 로컬 AI 에이전트 하이하이브리드 결합**:
-  - 32GB 이상 통합 메모리를 가진 맥북에 oMLX 추론 백엔드와 OpenAI 호환 API(`http://localhost:8000/v1`)를 조합하면, Claude Code 등의 AI 에이전트가 롱 컨텍스트 코드베이스를 RAM(Hot) 및 SSD(Cold) 계층에 캐싱해두며 오프라인 환경에서 비용 및 지연 오버헤드 없이 프로덕션 실무를 수행할 수 있게 됩니다. (출처: [맥북 로컬 AI 에이전트 구동을 위한 oMLX 벤치마크 및 활용기.md](file:///Users/railscraft/Obsidian/raw/%EB%A7%A5%EB%B6%81%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EA%B5%AC%EB%8F%99%EC%9D%84%20%EC%9C%84%ED%95%9C%20oMLX%20%EB%B2%A4%EC%B9%98%EB%A7%88%ED%81%AC%20%EB%B0%8F%20%ED%99%9C%EC%9A%A9%EA%B8%B0.md))
+  - 32GB 이상 통합 메모리를 가진 맥북에 [[oMLX]] 추론 백엔드와 OpenAI 호환 API(`http://localhost:8000/v1`)를 조합하면, Claude Code 등의 AI 에이전트가 롱 컨텍스트 코드베이스를 RAM(Hot) 및 SSD(Cold) 계층에 캐싱해두며 오프라인 환경에서 비용 및 지연 오버헤드 없이 프로덕션 실무를 수행할 수 있게 됩니다. (출처: [맥북 로컬 AI 에이전트 구동을 위한 [[oMLX]] 벤치마크 및 활용기.md](file:///Users/railscraft/Obsidian/raw/%EB%A7%A5%EB%B6%81%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EA%B5%AC%EB%8F%99%EC%9D%84%20%EC%9C%84%ED%95%9C%20[[oMLX]]%20%EB%B2%A4%EC%B9%98%EB%A7%88%ED%81%AC%20%EB%B0%8F%20%ED%99%9C%EC%9A%A9%EA%B8%B0.md))
 
 ### 7. 로컬 구동을 위한 x86/윈도우 조립 PC 하드웨어 분석
 로컬 AI 구동을 위해서는 Apple Silicon 통합 메모리 외에도 CUDA 코어 기반 외장 GPU의 특성을 명확히 이해해야 한다.
@@ -254,7 +254,7 @@ flowchart LR
 
 ### M5 Max 로컬 가속 셋업 및 메모리 분할 (2026년 3월 출시)
 - **M5 Max 칩셋**: GPU 32코어 전체에 Neural Accelerator가 탑재되어, 이전 세대 대비 LLM 프롬프트 처리는 최대 4배, 이미지 생성은 8배 가속함.
-- **oMLX SSD KV 캐시 단축**: oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
+- **[[oMLX]] SSD KV 캐시 단축**: [[oMLX]]의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
 - **Ollama MLX 백엔드 속도**: Ollama 0.19 버전 이상에서 int4 Qwen 구동 시 프리필 1,851 tok/s, 디코드 134 tok/s 속도를 기록함.
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 
@@ -265,7 +265,7 @@ flowchart LR
 
 ### M5 Max 로컬 가속 셋업 및 메모리 분할 (2026년 3월 출시)
 - **M5 Max 칩셋**: GPU 32코어 전체에 Neural Accelerator가 탑재되어, 이전 세대 대비 LLM 프롬프트 처리는 최대 4배, 이미지 생성은 8배 가속함.
-- **oMLX SSD KV 캐시 단축**: oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
+- **[[oMLX]] SSD KV 캐시 단축**: [[oMLX]]의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
 - **Ollama MLX 백엔드 속도**: Ollama 0.19 버전 이상에서 int4 Qwen 구동 시 프리필 1,851 tok/s, 디코드 134 tok/s 속도를 기록함.
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 
@@ -276,7 +276,7 @@ flowchart LR
 
 ### M5 Max 로컬 가속 셋업 및 메모리 분할 (2026년 3월 출시)
 - **M5 Max 칩셋**: GPU 32코어 전체에 Neural Accelerator가 탑재되어, 이전 세대 대비 LLM 프롬프트 처리는 최대 4배, 이미지 생성은 8배 가속함.
-- **oMLX SSD KV 캐시 단축**: oMLX의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
+- **[[oMLX]] SSD KV 캐시 단축**: [[oMLX]]의 2단계 KV 캐시(RAM 핫 캐시 + SSD 콜드 캐시)를 활성화하면 프로젝트 컨텍스트를 디바이스 디스크에서 즉시 복구하여 TTFT를 30~90초에서 1~3초 수준으로 줄임.
 - **Ollama MLX 백엔드 속도**: Ollama 0.19 버전 이상에서 int4 Qwen 구동 시 프리필 1,851 tok/s, 디코드 134 tok/s 속도를 기록함.
 - **High Watermark Ratio 설정**: PyTorch가 사용하지 않는 유휴 메모리를 움켜쥐지 않도록 `export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0`을 설정하면, 36GB 가용 RAM 중 Qwen 3.6-35B-A3B-4bit(약 20GB)와 이미지 생성 모델 Z-Image-Turbo(약 6GB)를 안정적으로 동시 유지할 수 있음.
 

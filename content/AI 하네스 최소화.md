@@ -27,8 +27,8 @@ AI 하네스 최소화는 비대한 agent harness를 줄이고, 의도 명확화
 - 하네스가 커질수록 agent, skill, hook, detector, orchestrator가 늘어나고 실제로는 일부만 쓰게 된다.
 - 원문은 결국 중요한 건 “토큰 maxing”이 아니라 deep interview, pre-mortem, 병렬 실행, verification loop라고 본다.
 - 이 관점에서는 스킬 수를 늘리는 것보다, 적은 수의 재사용 가능한 workflow를 battle-tested하게 만드는 게 더 중요하다.
-- Oh-my-Codex(3만 stars), Oh-my-Claudecode(3.5만 stars), Claw-code(19만 stars) 등 비대화된 하네스는 플러그인 크기가 20만 LOC를 초과하며 유지보수 불능(AI Slop)으로 흐르는 경향이 있다.
-- Bloated AI Slop Labs는 복잡함을 걷어내고 4개의 스킬과 4개의 에이전트로 압축하여 오작동을 차단하는 'GAJAE' PoC를 공유했다.
+- Oh-my-Codex(3만 stars), Oh-my-Claudecode(3.5만 stars), Claw-code(19만 stars) 등 비대화된 하네스는 플러그인 크기가 20만 LOC를 초과하며 유지보수 불능([[AI Slop]])으로 흐르는 경향이 있다.
+- Bloated [[AI Slop]] Labs는 복잡함을 걷어내고 4개의 스킬과 4개의 에이전트로 압축하여 오작동을 차단하는 'GAJAE' PoC를 공유했다.
 
 ## 상세
 
