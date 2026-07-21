@@ -1,198 +1,51 @@
 ---
+type: concept
+status: draft
+core: false
+tags:
+  - sdd
+  - ai-coding
+  - software-engineering
+  - spec-kit
 aliases:
   - 사양 기반 개발
   - Spec Driven Development
   - SDD
-core: true
-created: 2026-06-09
 sources:
   - raw/바이브 코딩의 종말-ko.md
-  - raw/느낌 코딩의 시대는 끝났다 - GitHub Spec Kit과 명세 기반 개발.md
-  - raw/AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드.md
-  - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
-  - raw/클로드 디자인은 과연 디자이너를 대체할까.md
-  - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-  - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
-  - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
-  - raw/완벽하게 기계 가독성을 갖춘 디자인 시스템.md
-  - raw/What Is MCP? Build a Custom MCP Server in Python-ko.md
-  - raw/AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다.md
-  - raw/모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념.md
-  - raw/2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM.md
-  - raw/파이썬 AI 에이전트 프레임워크 6종 비교 분석.md
-  - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
-  - raw/AI로 몰래 쓴 글을 가려내는 명백한 방법들.md
-  - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
-  - raw/디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요.md
-  - raw/AI Agents. Complete Course.md
-  - raw/How to Do Hard Things When You Have Zero Motivation.md
-  - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
-  - raw/Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic.md
-  - raw/UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우.md
-  - raw/좋은 삶을 만드는 것에 대한 지루한 진실.md
-  - raw/Hermes Agent와 Ollama 로컬 설치 초고속 가이드.md
-  - raw/원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기.md
-  - raw/Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko.md
-  - raw/Claude Code를 위한 Figma 스킬 완벽 가이드.md
-  - raw/2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법.md
-  - raw/10 Things Every Investor Should Know (but most learn too late).md
-  - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
-  - raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md
-  - raw/Claude Code 프로젝트를 위한 MEMORY.md.md
-  - raw/마이크로서비스 대신 모듈러 모놀리스 — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들.md
-  - raw/40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍.md
-  - raw/SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다.md
-  - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md
-  - raw/The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks.md
-  - raw/Your Wandering Mind Is Not the Enemy of Focus.md
-  - raw/BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk..md
-  - raw/지루한 업무를 자동화하는 클로드 코워크 프롬프트 7가지.md
-  - raw/내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화.md
-  - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
-  - raw/옵시디언 AI 제2의 뇌는 기억이 아니다.md
-  - raw/당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유.md
-  - raw/2026년을 위한 웹 디자인 및 빌드 워크플로우.md
-  - raw/RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션).md
-  - raw/These 3 ETFs Created More Millionaires Than Any Stock.md
-  - raw/60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴.md
-  - raw/Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice).md
-  - raw/인생의 성공을 결정하는 5가지 핵심 자질.md
-  - raw/케이브맨을 써보고 장벽에 부딪혀 결국 65k 스타 저장소에 Pull Request를 보낸 이야기-ko.md
-  - raw/만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다.md
-  - raw/Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기.md
-  - raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md
-  - raw/Skills Alone Won’t Save You in the AI Economy.md
-  - raw/DESIGN.md 워크플로 - Google Stitch와 Claude Code가 바꾼 디자인 개발 협업.md
-  - raw/집중력을 즉각적으로 향상시키는 1가지 비행 규칙.md
-status: evergreen
-tags:
-  - ai-coding
-  - workflow
-  - engineering
-  - sdd
-type: workflow
-updated: 2026-07-10
+created: 2026-07-21
+updated: 2026-07-21
 ---
 
 # 사양 기반 개발 (Spec Driven Development)
 
 ## 한 줄 정의
-일회성 프롬프팅에 의존하는 개발 방식에서 벗어나, 기술 스택을 배제하고 요구사항만 담은 '살아있는 사양서(spec)'를 구축하고 AI 에이전트를 코드 렌더러로 삼아 구현을 완성해 나가는 구조화된 에이전틱 개발 패러다임이다. (출처: 바이브 코딩의 종말-ko)
+직관이나 임시 프롬프트에 기댄 바이브 코딩(Vibe Coding)을 탈피하여, 살아있는 기술 사양(Spec)과 아키텍처 헌장을 단일 진실 공급원(Source of Truth)으로 삼아 AI 코딩 에이전트의 개발을 정밀 통제하는 개발 패러다임.
 
 ## 핵심 요지
-- **코드가 사양을 지배**: 사양(Source of Truth)이 단순히 개발 전 초안이 아닌 최상위 설계도로 작동한다. 기획 의도와 핵심 내용(What & Why)을 기재한 뒤 에이전트가 그에 맞춰 코드를 유도해 내는 구조다.
-- **에이전트 도구 종속성 해소**: 명세서 파일이 IDE나 AI 코딩 에디터(Cursor, Claude Code 등) 바깥에 온전히 존재하며 Git으로 버전 관리되므로, 개발 도구를 전환하더라도 변치 않는 규약(Contract) 역할을 한다.
-- **오작동 표면 최소화**: '느낌 코딩(Vibe Coding)'의 고질병인 잘못 지은 변수명, edge case 누락, 잘못 전제된 조건들을 엄격한 자연어 사양서와 아키텍처 헌법으로 통제한다.
-- **유기적인 활성 문서**: 한 번 쓰고 방치하는 문서가 아니라, 제품 사정 변경에 맞춰 지속적으로 업데이트하고 Git으로 버전 변동을 관리하는 살아있는 문서로 기능해야 한다.
-- 콘텍스트 붕괴(Context Decay)와 구현 드리프트(Implementation Drift): 바이브 코딩 시 대화가 길어지면 초기 아키텍처 설계와 비즈니스 제약이 컨텍스트 창 밖으로 밀려나며 에이전트가 임의의 설계를 창작하여 요구사항과 이탈한다.
-- 양방향 명세 업데이트(Bidirectional Updating) 규칙: 구현 도중 생긴 세부 아키텍처 결정은 즉시 사양서에 동기화해야 한다. 명세 부채(Specification Debt)는 기술 부채보다 빨라 이후 주입되는 AI 입력을 오염시킨다.
-- GitHub의 [[Spec Kit]]은 에이전트 개발이 실패하는 주된 원인이 AI 한계보다 개발자의 일회성 명령 방식에 있음을 지적하며, SDD 프로세스를 오픈소스로 대중화시켰다. (GitHub 90,000+ stars, 8,000+ forks) (출처: 바이브 코딩의 종말-ko.md)
-- SDD 워크플로우는 헌장(constitution) ➡️ 사양(spec) ➡️ 명확화(clarify) ➡️ 계획(plan) ➡️ 작업 분할(tasks) ➡️ 구현(implement)의 선형 인과 관계적 6단계 파이프라인으로 제어된다.
+- **사양과 코드의 관계 역전**: 기존 방식과 달리 코드가 사양을 따르도록 설계하며, 사양서(Spec)가 프로젝트의 하위 구현을 자동으로 생성·재생성하는 소스코드가 됩니다.
+- **Spec Kit 워크플로우**: GitHub이 오픈소스로 공개한 Spec Kit은 별도 [9만 개 이상, 포크 8천 개 이상](file:///Users/railscraft/Obsidian/raw/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%A2%85%EB%A7%90-ko.md#L7)의 관심과 함께 SDD 표준 도구로 부상했으며, Python 3.11+ 기반 `specify` CLI 및 [29개 이상 상용 에이전트](file:///Users/railscraft/Obsidian/raw/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%A2%85%EB%A7%90-ko.md#L134) 연동을 지원합니다.
+- **파이프라인 단계**: 헌장(constitution) -> 사양(specify) -> 명확화/체크리스트(clarify/checklist) -> 계획(plan) -> 작업/분석(tasks/analyze) -> 구현(implement)으로 이어지는 선형적 인과 흐름.
+- **벤더 종속 해제**: 사양이 리포지토리 내 마크다운으로 영속 관리되므로, 특정 LLM이나 IDE 벤더에 종속되지 않고 언제든 에이전트 도구(Claude Code, Copilot, Cursor 등)를 교체할 수 있습니다.
 
 ## 상세
+바이브 코딩은 AI 에이전트를 검색엔진처럼 다루어 정상 경로(happy path) 위주의 불안정한 코드 생성을 야기합니다. SDD는 에이전트를 융통성 없는 주니어 페어 프로그래머로 정의하고 기술 스택을 배제한 고차원 사양서와 양보 불가능한 지배 원칙인 '헌장(constitution)'을 주입합니다.
 
-### 1. 사양 기반 개발의 6단계 실행 템플릿 (Implementation Cycle)
-SDD 워크플로우는 전형적인 선형 인과 관계에 따라 움직이며, 각 단계는 이전 단계의 산출물을 입력으로 받아 실행된다.
-1. **헌장 (Constitution)**: 프로젝트 전반에 걸친 아키텍처 규칙 및 코드 스타일, 테스트 가이드라인 등 양보할 수 없는 지배 원칙(`.specify/memory/constitution.md`)을 확립한다.
-2. **사양 (Spec)**: 구체적인 기술 스택과 구현 세부사항은 철저히 배제하고, 구현하고자 하는 비즈니스 목표와 기획 요구사항(What & Why)만을 작성한 사양서(`.specify/specs/*/spec.md`)를 작성한다. 이와 동시에 작업을 격리할 Git 기능 브랜치가 생성된다.
-3. **명확화 및 체크리스트 (Clarify & Checklist)**: 에이전트와 수동/자동 질의응답을 거쳐 사양서의 모호함을 걷어내고, 사양의 완전성을 검증할 맞춤형 품질 체크리스트를 도출한다. 이는 자연어로 작성된 명세에 대한 '자연어 유닛 테스트'로 작동한다.
-4. **계획 (Plan)**: 채택할 구체적인 기술 스택을 바탕으로 구현 설계서(`plan.md`), 데이터베이스 데이터 모델(`data-model.md`), 최신 정보 및 패키지 버전을 조사한 리서치 로그(`research.md`), 로컬 빌드 가이드(`quickstart.md`)의 4대 아키텍처 문서를 생성한다.
-5. **작업 및 분석 (Tasks & Analyze)**: 기술 구현 계획을 의존성에 맞게 정렬한 세부 작업 목록(`tasks.md`)을 도출하고, 최초 사양과 구현 설계, 작업 간에 누락이나 오차가 없는지 정적 분석을 거쳐 무결성을 입증한다. 병렬 처리가 가능한 작업은 `[P]` 마커가 붙고, 각 작업 끝에는 기능 동작을 검증할 체크포인트가 마련된다.
-6. **구현 (Implement)**: 설정된 모든 명세, 설계서, 작업 목록 및 헌장을 바탕으로 에이전트가 로컬 컴파일러와 패키지 도구들을 구동해 실제 기능 코드를 완성하고, 테스트 및 빌드 오류를 실시간으로 처리한다.
+Spec Kit의 `specify` CLI는 [v0.8.4 버전](file:///Users/railscraft/Obsidian/raw/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%A2%85%EB%A7%90-ko.md#L36) 표준 체계에서 [6가지 핵심 명령과 3가지 품질 검증 명령](file:///Users/railscraft/Obsidian/raw/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%A2%85%EB%A7%90-ko.md#L47-L58)을 제공하며, 레거시 정적 분석 기능을 대용하는 `/speckit.analyze`와 명확성 질문을 던지는 `/speckit.clarify`를 통해 섣부른 구현 실수를 예방합니다. 커뮤니티 카탈로그는 Jira 연동 등 [70종 이상의 플러그인 생태계](file:///Users/railscraft/Obsidian/raw/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%A2%85%EB%A7%90-ko.md#L147)를 갖추고 있습니다.
 
-### 2. 컴파일러 방식의 닮은꼴 구조와 렌더러화
-SDD는 사람이 고수준 언어로 구현하면 컴파일러가 이를 기계어로 변환하는 흐름과 닮아 있다. 자연어로 작성된 명세와 헌법이 최상위 언어(Source of truth)라면, 에이전트가 출력해 내는 소스 코드는 하위 산출물에 불과하다. 
-이로 인해 개발자는 사용하는 도구(Cursor, Claude Code, Gemini CLI 등)에 구속되지 않고, 도구를 언제든지 교환할 수 있는 독립성을 얻는다. 에이전트는 단지 명세라는 표준 설계도를 해석해 기계적으로 결과물을 내놓는 '코드 렌더러'로만 작동하기 때문이다.
-
-### 3. 경직성 경계와 고이코 아지치(Gojko Adzic)의 지적
-애자일 방법론 전문가 고이코 아지치는 한 번 결정된 기획 사양을 경직되게 고수할 경우, 과거 수십 년간 극복하려 했던 '문서화 우선의 폭포수(Waterfall) 모델'의 폐해를 재부활시킬 위험이 있다고 경고한다. 
-따라서 사양서는 유기적으로 살아있는 생명체처럼 다루어야 한다. 개발 과정의 피드백이나 비즈니스 변동에 따라 사양서를 유연하게 편집하고, 변경 이력을 Git으로 추적하며, 헌법 조항들도 점진적으로 업데이트해 나가는 유연한 애자일식 운영이 병행되어야 한다.
-
-### 4. 시나리오별 개발 환경 대응 패턴
-- **그린필드 (Greenfield - 신규)**: 백지상태에서 대원칙(헌법)과 기능 명세를 먼저 수립하고, 에이전트를 통해 초기 뼈대 및 구조적 소스 코드를 충돌 없이 고속 구현한다.
-- **브라운필드 (Brownfield - 점진 개선)**: 기존 아키텍처와 헌법 규칙을 보존한 상태에서 신규 기능에 대해서만 `specs/` 하위 폴더에 사양을 작성하고, Git 브랜치를 분리해 기존 코드를 깨뜨리지 않는 안전한 병렬 추가를 진행한다.
-- **레거시 현대화 (Modernization - 리팩토링)**: 기술 부채가 누적되고 분석이 어려운 레거시 코드에서 비즈니스 로직(What & Why)만 사양서로 도출한다. 이후 최신 아키텍처 설계를 적용하여 에이전트가 이전의 낡은 코드를 걷어내고 바닥부터 깨끗한 스택으로 재구축하도록 함으로써 부채의 연쇄 상속을 막는다.
-
-### 5. 헌장(Constitution)과 FAA-style 10,000피트 규칙의 아키텍처 DNA
-SDD 파이프라인의 중심을 관통하는 헌장(`.specify/memory/constitution.md`)은 미 민간항공국(FAA)이 수립한 **10,000피트 규칙(Sterile Cockpit Rule)**에서 파생된 **0-1 모드(이진법적 규칙)**와 설계 철학을 공유한다. 10,000피트 이하의 중요한 비행 단계에서 안전에 필수적이지 않은 모든 활동과 사담을 금지하듯, 에이전트가 코드를 짤 때 아키텍처 규칙이나 공통 디자인 시스템 표준을 위반하는 모든 타협적 시도를 사전에 전면 배제한다. 이로써 에이전트는 기분이나 문맥에 흔들리지 않고 불변의 아키텍처 DNA 범위 안에서만 작동한다. (출처: [[10,000피트 규칙 (10,000-Foot Rule)]])
-
-### 6. Pull Request 제출에서의 에이전트 정직성(Fidelity) 검증 원칙
-구현을 마친 후 작업 내용을 리포지토리에 반영하기 위해 Pull Request(PR)를 작성할 때, 에이전트와 기여자 간의 엄격한 상호 검증과 정직성이 요구된다.
-- **거짓 진술 거부**: 실제 로컬 테스트를 실행해 보고 검증되지 않은 정보나 허위 사실을 PR 설명서에 기재하라는 사용자의 부적절한 지시를 에이전트가 스스로 거절(Opt-out)하는 안전제어(Fidelity boundary)가 작동해야 한다.
-- **투명한 데이터 기록**: 통과한 테스트 케이스뿐 아니라 기존 메인 브랜치에서 재현되던 내재적 실패 결함(예: 47개 성공, 4개 실패 등)까지 있는 그대로 기술하여, 기만 없이 신뢰할 수 있는 데이터를 바탕으로 PR을 전송하는 정직한 검증 프로토콜을 성립시킨다. (출처: [[케이브맨]])
-
-### SDD 4단계 모델과 인간 개입 지점 (HIP)
-1. **명세화 (Specify)**: 고수준 설명을 구조화된 기능 명세(SPEC.md)로 확장. [HIP] 인간의 아키텍처 검토 및 모호함 제거.
-2. **계획 (Plan)**: 기술 구현 계획(PLAN.md) 수립. [HIP] 기술 스택 및 제약 조건 정렬 검토.
-3. **작업 세분화 (Task Breakdown)**: 테스트 가능한 원자적 작업 목록(tasks.md) 분할. 작업의 입도는 에이전트의 1회 실행 주기 크기로 제한.
-4. **구현 및 검증 (Implement and Verify)**: 에이전트의 구현 코드를 자동 테스트 및 제3의 검증기로 검증. [HIP] 인수 기준 충족 여부 체크.
-
-### 멀티 에이전트 3대 역할 아키텍처
-- **코디네이터 에이전트 (Coordinator)**: 글로벌 뷰를 유지하고, 명세를 분할하며 구현기에 분배.
-- **구현기 에이전트 (Implementor)**: 격리된 Git 워크트리(worktree)에서 병렬로 각 작업을 구현하여 파일 경쟁을 원천 차단.
-- **검증기 에이전트 (Verifier)**: 구현 출력을 명세의 인수 기준과 대조하여 결함을 찾아내는 적대적 검증(Adversarial Verification) 수행. 코드를 직접 고치지 않고 실패 요구사항을 기록하여 보고.
-
-### SDD 성숙도 3단계 모델
-- **1단계: 선 명세 개발 (Spec-First)**: 일회성/단기 기능 개발. 구현 후 명세는 보존하나 유지하지 않음.
-- **2단계: 명세 고정 개발 (Spec-Anchored)**: 권장 기본값. 사양서와 코드가 동등한 파트너로 작동하며 양방향 업데이트 상시 실행.
-- **3단계: 명세 기반 소스 개발 (Spec-as-Source)**: 실험적 단계. 사양이 유일 소스이고 코드는 컴파일 출력. 생성할 때마다 구문이 달라지는 비결정성 문제로 프로덕션 비권장.
-
-### SDD ROI의 하류 지점 지표
-- 재작업 비율 (Rework percentage) - 40~60% 감소 효과 증명.
-- 콘텍스트 회복 시간 (Context recovery time) - 문서화된 의도가 제공되어 급감.
-- 결함 유출률 (Defect escape rate) 및 요구사항부터 프로덕션 완료까지의 시간.
-
-### [[Spec Kit]]의 핵심 CLI 설치 및 구성 정보
-
-1. **CLI 설치 및 초기화**:
-   - 파이썬 3.11 이상이 필요하며, 패키지 도구 `uv`를 통해 글로벌 설치할 것이 권장된다. (출처: 바이브 코딩의 종말-ko.md)
-   ```bash
-   # uv를 활용한 CLI 설치
-   uv tool install specify-cli --from git+https://github.com/github/spec-kit.git@v0.8.4
-   
-   # 지정 에이전트(예: claude) 연동과 함께 새 프로젝트 초기화
-   specify init my-project --integration claude
-   ```
-   - 초기화가 완료되면 리포지토리에 `.specify/` 디렉토리가 생성되고, 하위에 `memory/` (헌장 보관), `scripts/` (자동화 쉘 스크립트), `specs/` (기능별 사양), `templates/` (프롬프트 템플릿)의 4개 필수 하위 폴더 레이아웃이 빌드된다.
-
-2. **4대 아키텍처 문서 산출물 (Plan Stage)**:
-   - 사양이 수립되면 `/speckit.plan` 명령을 실행해 구체적인 설계 파일 4종을 자동 생산한다.
-     - `plan.md`: 기술 스택 및 구조 계획.
-     - `data-model.md`: 데이터 모델 및 스키마 설계.
-     - `research.md`: 라이브러리 및 API 버전 등 외재적 팩트 리서치 로그.
-     - `quickstart.md`: 빌드 및 빠른 시작 가이드.
+신규(greenfield) 프로젝트뿐만 아니라 기존(brownfield) 서비스 확장 및 낡은 소스 분석이 필요한 레거시(modernization) 영역에서도 소스 코드 분석 결과를 살아있는 사양서로 치환하여 안전한 전환을 가능케 합니다.
 
 ## 예시
-
-- 드래그 앤 드롭이 포함된 사진 앨범 앱을 구축할 때, 기술 스택을 적지 않고 "앨범 내 개별 사진 삭제는 불가하지만 앨범 자체는 삭제 및 수정 가능" 등의 비즈니스 요구사항만 명문화하여 사양서(`spec.md`)로 에이전트에 공급하는 과정.
-
-- **MDC 설정 활용 (.mdc)**: Cursor의 마크다운-YAML 설정을 통해 규칙의 적용 범위를 특정 백엔드/프론트엔드 파일 글로브로 한정하여 불필요한 토큰 낭비를 예방.
-
-### [[Spec Kit]]의 슬래시 명령어 세부 체계
-
-#### 6가지 핵심 워크플로 제어 명령
-- `/speckit.constitution`: 개발 가이드라인이자 프로젝트 아키텍처 불변의 십계명인 `.specify/memory/constitution.md` 헌장을 수립한다. (출처: 바이브 코딩의 종말-ko.md)
-- `/speckit.specify`: 기술 스택 언급을 일절 차단하고 비즈니스 사양(`.specify/specs/*/spec.md`)을 기술 요구 조건으로 수집한다.
-- `/speckit.plan`: 명시된 요구 조건과 선택한 스택을 합성하여 4대 아키텍처 문서를 생성한다.
-- `/speckit.tasks`: 구현 로드맵이자 의존성 기반의 `tasks.md` 작업 목록을 쪼개고 병렬 `[P]` 마커 및 테스트 체크포인트를 부착한다.
-- `/speckit.taskstoissues`: 도출된 작업들을 GitHub Issues 보드로 자동 매핑하고 변환한다.
-- `/speckit.implement`: 작업 목록의 의존성에 따라 컴파일 에러를 로컬 빌드 도구로 추적하며 점진적으로 코드를 구현한다.
-
-#### 3가지 선택적 품질 관리 명령
-- `/speckit.clarify`: 구현 계획 수립 이전에 질의응답을 거쳐 사양의 빈틈(Edge Cases)을 심층 취조하고 명확화 단락을 추가 보완한다.
-- `/speckit.analyze`: 사양, 계획, 데이터 모델, 작업 목록의 정합성을 비교하여 구조적 정적 에러를 사전에 차단한다.
-- `/speckit.checklist`: 사양을 검증하기 위한 자연어 기반 유닛 테스트 격인 사양 검수 체크리스트를 형성한다.
+- **독립 라이브러리 우선 추상화 헌장**: `.specify/memory/constitution.md`에 "모든 신규 기능은 독립형 라이브러리로 추상화하여 시작한다"는 규칙을 명시해 에이전트가 하드코딩하는 현상 원천 차단.
+- **기술 스택이 분리된 Spec 프롬프트**: `/speckit.specify`를 사용해 "사진 앨범 날짜별 드래그앤드롭 정리 App" 요구사항을 기술(Vite, SQLite 등) 언급 없이 기록한 뒤, `/speckit.plan` 단계에서 스택을 선택·결합.
 
 ## 충돌
-- **사소한 버그 패치에서의 비효율**: 설계 및 문서화 파이프라인이 촘촘한 특성상 코드 한두 줄 수정 등 사소한 패치 작업에서는 배보다 배꼽이 더 큰 오버헤드(overkill)가 될 수 있다. 이 경우 SDD 파이프라인을 우회하여 디버깅하는 것이 합리적이다. (출처: 바이브 코딩의 종말-ko)
+- **단순 버그 패치에서의 오버헤드**: 한 줄 코드 수정이나 긴급 패치 상황에 6단계 파이프라인 전체를 밟는 것은 불필요한 비효율을 유발합니다.
+- **고정된 폭포수(Waterfall) 모델로의 퇴보 위험**: 사양서를 한번 작성 후 수정 불가능한 유물로 묵혀둘 경우 past waterfall 관료주의가 재생산되므로 git으로 지속 관리되는 '살아있는 문서'로 다뤄야 합니다.
 
 ## 관련 노트
 - [[Spec Kit]]
 - [[Vibe Coding과 Agentic Engineering]]
 - [[AI 코딩 에이전트 검증 전략]]
-- [[Claude.md 운영 원칙]]
-- [[Harness Engineering]]
-- [[모듈러 모놀리스]]
-- [[MEMORY.md 운영 원칙]]
-- [[Context Engineering]]
+- [[AI 네이티브 프로토타이핑]]
 
