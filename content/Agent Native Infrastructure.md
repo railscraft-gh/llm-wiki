@@ -103,7 +103,7 @@ Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를
 
 `raw/The Open-Source Agent Toolkit in 2026-ko.md`는 이 레이어 구분을 더 실전적인 선택지로 풀어 준다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 층은 "어떤 도구를 넣을까"가 아니라 "어느 층이 비어 있나"를 먼저 묻게 만든다. 이 관점이 있어야 agent-native 문서, CLI, API, sandbox, 브라우저 제어가 한 묶음으로 보인다.
 
-Sequoia Ascent 2026에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대표하여 센서와 액추에이터를 사용하는 에이전트들이 네트워킹된 구조다.
+[[Sequoia Ascent 2026]]에서 카파시는 이를 **센서(sensor)와 액추에이터(actuator)**의 관점으로 재프레이밍했다. 센서는 세계의 상태를 디지털 정보로 변환하고, 액추에이터는 에이전트가 무언가를 변경할 수 있게 한다. 미래의 스택은 사람과 조직을 대표하여 센서와 액추에이터를 사용하는 에이전트들이 네트워킹된 구조다.
 에이전트가 작동하기 편리한 **에이전트 네이티브 표면(Agent-native Surfaces)의 10대 요구사항**은 다음과 같다.
 1. **마크다운 문서 (Markdown docs)**: 복사해 즉시 이식 가능한 텍스트 지침.
 2. **CLI**: 에이전트가 바로 쉘을 통해 트리거 가능한 명령줄.
