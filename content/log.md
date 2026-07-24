@@ -37,7 +37,7 @@ aliases: []
 - 생성:
     - [[10-80-10 법칙(10-80-10 Rule)]]
     - [[AI 협업 글쓰기(AI Collaborative Writing)]]
-    - [[COG(huytieu/COG-second-brain)]]
+    - [[COG(huytieu-COG-second-brain)]]
     - [[Claude Code(클로드 코드)]]
     - [[Codex(코덱스)]]
     - [[lat.md(Agent Lattice)]]

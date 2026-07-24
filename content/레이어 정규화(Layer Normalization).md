@@ -68,6 +68,8 @@ $$ y_i = \gamma_i \hat{x}_i + \beta_i $$
 - [[레이어 정규화는 배치 전체가 아닌 토큰 단위로 작동한다]]
 - [[딥러닝 스케일링 법칙 (Scaling Laws Carefully)]]
 - [[LLM 메모리 시스템 아키텍처]]
+- [[배치 정규화]]
+- [[잔차 연결]]
 
 ## 출처
 - raw/Understanding Transformers (Part 5). The final layers doing some heavy lifting.md (Understanding Transformers (Part 5))

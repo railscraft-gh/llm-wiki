@@ -15,7 +15,7 @@ created: 2026-07-24
 updated: 2026-07-24
 ---
 
-# COG(huytieu/COG-second-brain)
+# COG(huytieu-COG-second-brain)
 
 ## 한 줄 정의
 

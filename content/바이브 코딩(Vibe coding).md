@@ -53,6 +53,7 @@ updated: 2026-07-24
 - [[사양 기반 개발 (Spec Driven Development)]]
 - [[Spec Kit]]
 - [[Plan Mode 기반 AI 작업]]
+- [[엔시티피케이션(Enshittification)]]
 
 ## 출처
 - `raw/Andrej Karpathy Stopped Using AI to Write Code. He’s Using It to Build a Second Brain Instead.md`
