@@ -11,6 +11,36 @@ aliases: []
 ---
 # LLM Wiki Log
 
+## 2026-07-24
+
+### Ingest
+
+- 입력: `raw/AI is NOT the reason for the mass layoffs..md`
+- 입력: `raw/Andrej Karpathy Stopped Using AI to Write Code. He’s Using It to Build a Second Brain Instead.md`
+- 입력: `raw/Build a Second Brain in 15 Minutes Just Markdown, Git, and an AI Agent.md`
+- 입력: `raw/How to Use lat.md. Turn Any Folder Into a Validated Knowledge Graph.md`
+- 입력: `raw/I Built a Full SaaS App on AWS for $1.50_month — Here’s the Architecture.md`
+- 입력: `raw/Is Life Actually Worse, or Are We Just More Anxious.md`
+- 입력: `raw/I’m a Neuroscientist & I Do These 3 Overlooked Exercises Daily to Age Better.md`
+- 입력: `raw/Palantir CEO Says Only Two Types Will Survive AI (And Elite Degrees Aren’t One of Them)!.md`
+- 입력: `raw/Steve Jobs’s 10–80–10 Rule Is Even More Useful in the AI Era.md`
+- 입력: `raw/The shortest boom in history. why the “AI Era” will end sooner than you think..md`
+- 입력: `raw/This is Why Nobody Can Tell I Used ChatGPT.md`
+- 입력: `raw/Understanding Transformers (Part 1). Why RNNs are nearly impossible to train.md`
+- 입력: `raw/Understanding Transformers (Part 2). How LSTMs fixed Recurrent Networks (mostly).md`
+- 입력: `raw/Understanding Transformers (Part 3). Positional encodings and word embeddings.md`
+- 입력: `raw/Understanding Transformers (Part 4). Attention is just a few matrices.md`
+- 입력: `raw/Understanding Transformers (Part 5). The final layers doing some heavy lifting.md`
+- 입력: `raw/Want To Be A Great Writer Don’t Focus On Writing.md`
+- 입력: `raw/What is an API A Simple Guide for Beginners (With Real Examples).md`
+- 입력: `raw/You don’t need thinking levels in Claude Code. You need Planning and Goal modes..md`
+- 생성:
+    - 없음
+- 수정:
+    - 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
 ## 2026-07-21
 
 ### Ingest
