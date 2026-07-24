@@ -35,7 +35,7 @@ aliases: []
 - 입력: `raw/What is an API A Simple Guide for Beginners (With Real Examples).md`
 - 입력: `raw/You don’t need thinking levels in Claude Code. You need Planning and Goal modes..md`
 - 생성:
-    - 없음
+    - [[인코더-디코더 어텐션(Encoder-Decoder Attention)]]
 - 수정:
     - 없음
 - index 업데이트: 완료
