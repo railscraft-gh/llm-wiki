@@ -35,11 +35,31 @@ aliases: []
 - 입력: `raw/What is an API A Simple Guide for Beginners (With Real Examples).md`
 - 입력: `raw/You don’t need thinking levels in Claude Code. You need Planning and Goal modes..md`
 - 생성:
+    - [[10-80-10 법칙(10-80-10 Rule)]]
+    - [[AI 협업 글쓰기(AI Collaborative Writing)]]
+    - [[COG(huytieu/COG-second-brain)]]
+    - [[Claude Code(클로드 코드)]]
+    - [[Codex(코덱스)]]
+    - [[lat.md(Agent Lattice)]]
+    - [[계획 모드(Planning Mode)]]
+    - [[고정된 메모리 뱅크(Frozen Memory Bank)]]
+    - [[레이어 정규화(Layer Normalization)]]
+    - [[레이어 정규화는 배치 전체가 아닌 토큰 단위로 작동한다]]
+    - [[멀티헤드 어텐션(Multi-Head Attention)]]
+    - [[선 요약 강제 원칙(Summary-first rule)]]
+    - [[순환 신경망(RNN, Recurrent Neural Networks)]]
+    - [[스토아철학(Stoicism)]]
+    - [[안드레 카파시의 LLM Wiki 워크플로우(Andrej Karpathy's LLM Wiki Workflow)]]
     - [[인코더-디코더 어텐션(Encoder-Decoder Attention)]]
+    - [[자가 어텐션(Self-Attention)]]
+    - [[잔차 연결은 그래디언트 흐름을 유지하고 학습 선택권을 부여한다]]
+    - [[장단기 메모리(LSTM, Long Short-Term Memory)]]
+    - [[피드포워드 신경망(Feed-Forward Networks)]]
 - 수정:
     - 없음
 - index 업데이트: 완료
 - 남은 검토: 없음
+
 
 ## 2026-07-21
 
