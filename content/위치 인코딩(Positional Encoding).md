@@ -33,7 +33,7 @@ updated: 2026-07-24
 ## 상세
 
 ### 트랜스포머의 한계와 위치 주입의 당위성
-트랜스포머 아키텍처는 모든 단어 토큰을 동시에 집어삼키는 일괄 처리(Simultaneous processing)를 수행하여 대단히 유용한 학습 병렬성(Parallel computing)을 확보했다. 그러나 이 일방통행 및 동시 처리 특성상 "소파 위의 개(dog sat on couch)"와 "개 위의 소파(couch sat on dog)"가 지니는 의미적·구조적 차이를 스스로 식별해내지 못한다.
+[[트랜스포머 아키텍처]]는 모든 단어 토큰을 동시에 집어삼키는 일괄 처리(Simultaneous processing)를 수행하여 대단히 유용한 학습 병렬성(Parallel computing)을 확보했다. 그러나 이 일방통행 및 동시 처리 특성상 "소파 위의 개(dog sat on couch)"와 "개 위의 소파(couch sat on dog)"가 지니는 의미적·구조적 차이를 스스로 식별해내지 못한다.
 
 이를 해결하기 위해 최초 인코더/디코더 입력부에서 단어 고유의 의미 정보를 조밀하게 압축한 **단어 임베딩(Word Embedding)** 벡터 위에 **위치 인코딩(Positional Encoding)** 벡터를 1:1로 단순 합산(Sum)하여 신경망에 주입한다.
 
