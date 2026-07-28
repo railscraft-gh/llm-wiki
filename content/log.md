@@ -11,6 +11,27 @@ aliases: []
 ---
 # LLM Wiki Log
 
+## 2026-07-29
+
+### Ingest
+
+- 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
+- 생성: [[NotebookLM]]
+- 수정:
+- index 업데이트: 완료
+- 남은 검토: 없음
+
+### Lint
+
+- 실행 방식: 수동
+- 깨진 wikilink: 0개
+- 중복 제목: 0개
+- 출처 없는 수치 문장: 0개
+- 관련 노트 2개 미만 문서: 0개
+- 고아 페이지: 0개
+- 30일 이상 미갱신 핵심 노트: 0개
+- 조치: 없음
+
 ## 2026-07-24
 
 ### Ingest
