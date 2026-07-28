@@ -16,8 +16,8 @@ aliases: []
 ### Ingest
 
 - 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
-- 생성: [[NotebookLM]]
-- 수정:
+- 생성: [[연구 파트너 (Research Partner)]]
+- 수정: [[NotebookLM]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
