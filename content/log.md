@@ -16,7 +16,7 @@ aliases: []
 ### Ingest
 
 - 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
-- 생성: [[연구 파트너 (Research Partner)]], [[역발상 오해 검증]], [[회의주의자의 시선 (The skeptic's pass)]]
+- 생성: [[연구 파트너 (Research Partner)]], [[역발상 오해 검증]], [[회의주의자의 시선 (The skeptic's pass)]], [[그래서 어쩌라고 필터 (The so what filter)]]
 - 수정: [[NotebookLM]], [[연구 파트너 (Research Partner)]]
 - index 업데이트: 완료
 - 남은 검토: 없음
