@@ -17,7 +17,7 @@ aliases: []
 
 - 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
 - 입력: `raw/Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md`
-- 생성: [[연구 파트너 (Research Partner)]], [[역발상 오해 검증]], [[회의주의자의 시선 (The skeptic's pass)]], [[핵심 전제 분석(Load-bearing assumption)]], [[그래서 어쩌라고 필터 (The so what filter)]], [[교차 분석 (Cross-analysis)]], [[확증 편향 탈피 검증 (The what would change my mind prompt)]], [[microGPT]], [[안드레 카파시(Andrej Karpathy)]], [[자동 미분(autograd)]], [[역전파(backpropagation)]], [[토크나이저(tokenizer)]], [[어텐션 메커니즘]]
+- 생성: [[연구 파트너 (Research Partner)]], [[역발상 오해 검증]], [[회의주의자의 시선 (The skeptic's pass)]], [[핵심 전제 분석(Load-bearing assumption)]], [[그래서 어쩌라고 필터 (The so what filter)]], [[교차 분석 (Cross-analysis)]], [[확증 편향 탈피 검증 (The what would change my mind prompt)]], [[microGPT]], [[안드레 카파시(Andrej Karpathy)]], [[자동 미분(autograd)]], [[역전파(backpropagation)]], [[토크나이저(tokenizer)]], [[어텐션 메커니즘]], [[Adam 옵티마이저 (Adam Optimizer)]]
 - 수정: [[NotebookLM]], [[연구 파트너 (Research Partner)]], [[잔차 연결]]
 - index 업데이트: 완료
 - 남은 검토: 없음
