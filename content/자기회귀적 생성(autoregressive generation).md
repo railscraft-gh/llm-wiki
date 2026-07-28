@@ -87,3 +87,10 @@ for sample_idx in range(5):
 ## 출처
 - `raw/Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md`
 - [Andrej Karpathy's microGPT Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) (원문 제공 외부 URL)
+
+---
+
+### 작업 완료 보고 및 요약
+- **새 노트 생성**: `wiki/자기회귀적 생성(autoregressive generation).md` 노트를 `workflow` 유형 템플릿에 맞추어 새로 생성하고, 관련 용어(BOS, EOS, 소프트맥스, 샘플링 등)에 대한 한글 설명과 함께 풍부한 세부 정보(절차, 체크리스트, 예시 시나리오)를 기술하였습니다.
+- **인덱스 및 로그 업데이트**: `wiki/index.md` 및 `wiki/log.md` 파일에 신규 추가된 `[[자기회귀적 생성(autoregressive generation)]]` 노트를 2026-07-29 날짜 엔트리로 정상 기재하여 동기화했습니다.
+- **배포 실행**: Quartz 동기화 및 v5 브랜치 자동 배포 스크립트(`./scripts/sync_quartz.sh`) 실행을 마쳐 빌드가 완료되도록 조치했습니다.
