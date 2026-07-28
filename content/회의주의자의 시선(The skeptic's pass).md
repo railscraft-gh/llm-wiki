@@ -15,7 +15,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# 회의주의자의 시선 (The skeptic's pass)
+# [[회의주의자의 시선 (The skeptic's pass)]]
 
 ## 한 줄 정의
 주어진 자료나 주장을 무비판적으로 수용하지 않고, LLM을 비판적인 동료 검토자(Peer Reviewer)로 설정하여 논증의 허점, 취약한 전제, 누락된 맹점을 능동적으로 발굴하는 검증 워크플로우(Workflow).

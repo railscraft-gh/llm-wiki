@@ -15,7 +15,7 @@ updated: 2026-07-29
 
 ## 한 줄 정의
 
-인공신경망 학습에서 수치적 연산 그래프(computation graph)를 구축하고 미적분학의 연쇄 법칙(chain rule)을 활용해 역전파(backpropagation) 과정에서 가중치들의 기울기(gradient)를 역방향으로 자동 계산해 주는 알고리즘입니다.
+인공신경망 학습에서 수치적 연산 그래프(computation graph)를 구축하고 미적분학의 연쇄 법칙(chain rule)을 활용해 [[역전파(backpropagation)]] 과정에서 가중치들의 기울기(gradient)를 역방향으로 자동 계산해 주는 알고리즘입니다.
 
 ## 핵심 요지
 
@@ -27,7 +27,7 @@ updated: 2026-07-29
 
 자동 미분(autograd) 엔진은 인공신경망(neural network) 학습에 필수적인 역전파 알고리즘의 핵심 요소입니다.
 
-안드레 카파시(Andrej Karpathy)는 `microGPT`의 핵심으로 PyTorch의 autograd 동작 원리를 약 40줄의 순수 파이썬(Python) 코드로 압축해 `Value` 클래스로 직접 구현했습니다.
+[[안드레 카파시(Andrej Karpathy)]]는 `microGPT`의 핵심으로 PyTorch의 autograd 동작 원리를 약 40줄의 순수 파이썬(Python) 코드로 압축해 `Value` 클래스로 직접 구현했습니다.
 
 ### 1. Value 클래스의 기본 구조
 자동 미분 엔진에서 모든 가중치와 수치 데이터는 `Value` 객체로 감싸집니다. 이 클래스는 다음과 같은 주요 인자들을 추적합니다.

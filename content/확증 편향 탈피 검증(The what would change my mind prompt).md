@@ -16,7 +16,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# 확증 편향 탈피 검증 (The what would change my mind prompt)
+# [[확증 편향 탈피 검증 (The what would change my mind prompt)]]
 
 ## 한 줄 정의
 
