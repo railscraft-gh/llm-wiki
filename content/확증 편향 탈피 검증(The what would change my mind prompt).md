@@ -16,7 +16,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# [[확증 편향 탈피 검증 (The what would change my mind prompt)]]
+# 확증 편향 탈피 검증 (The what would change my mind prompt)
 
 ## 한 줄 정의
 
@@ -57,8 +57,8 @@ updated: 2026-07-29
 
 ## 관련 노트
 
-- [[역발상 오해 검증]]
-- [[회의주의자의 시선 (The skeptic's pass)]]
+- [[역발상 오해 검증(The explain it back to me wrong check)]]
+- [[회의주의자의 시선(The skeptic's pass)]]
 - [[핵심 전제 분석(Load-bearing assumption)]]
 - [[NotebookLM]]
 

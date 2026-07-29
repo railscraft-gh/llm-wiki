@@ -16,7 +16,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# [[역발상 오해 검증]] (The "explain it back to me wrong" check)
+# 역발상 오해 검증 (The "explain it back to me wrong" check)
 
 ## 한 줄 정의
 
@@ -58,7 +58,7 @@ updated: 2026-07-29
 ## 관련 노트
 
 - [[NotebookLM]]
-- [[연구 파트너 (Research Partner)]]
+- [[연구 파트너(Research Partner)]]
 - [[AI 코딩 에이전트 검증 전략]]
 - [[선 요약 강제 원칙(Summary-first rule)]]
 

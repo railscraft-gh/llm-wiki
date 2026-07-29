@@ -31,7 +31,7 @@ updated: 2026-07-29
    - [[NotebookLM]] 등의 RAG 기반 도구의 단일 프로젝트(노트북) 내에 준비된 자료들을 결합하여 컨텍스트를 바인딩한다.
 3. **교차 분석 프롬프트 설계 및 적용**:
    - 문서 간의 관계를 도출하는 20가지 실무 탐색 프롬프트 중 적절한 유형을 선정하여 실행한다.
-   - 예: 두 문서 간의 논리적 충돌을 추적하는 [[회의주의자의 시선 (The skeptic's pass)]], 시장 통념과의 비교 분석, [[핵심 전제 분석(Load-bearing assumption)]] 등.
+   - 예: 두 문서 간의 논리적 충돌을 추적하는 [[회의주의자의 시선(The skeptic's pass)]], 시장 통념과의 비교 분석, [[핵심 전제 분석(Load-bearing assumption)]] 등.
 4. **결과물 포맷(Schema) 명시**:
    - "표 형식으로 비교해 줘", "5가지 불릿 포인트로 대조해 줘" 등 아웃풋 포맷을 구체적으로 제한하여 실무 활용성을 극대화한다.
 5. **핑퐁식 반복 정제(Back-and-forth)**:
@@ -55,9 +55,9 @@ updated: 2026-07-29
 
 ## 관련 노트
 - [[NotebookLM]]
-- [[연구 파트너 (Research Partner)]]
+- [[연구 파트너(Research Partner)]]
 - [[핵심 전제 분석(Load-bearing assumption)]]
-- [[회의주의자의 시선 (The skeptic's pass)]]
+- [[회의주의자의 시선(The skeptic's pass)]]
 
 ## 출처
 - `raw/20 Things NotebookLM Can Do That Most People Never Try.md`

@@ -16,23 +16,106 @@ aliases: []
 ### Ingest
 
 - 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
+- 입력: `raw/AI is NOT the reason for the mass layoffs..md`
 - 입력: `raw/Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md`
+- 입력: `raw/Andrej Karpathy Stopped Using AI to Write Code. He’s Using It to Build a Second Brain Instead.md`
+- 입력: `raw/Build a Second Brain in 15 Minutes Just Markdown, Git, and an AI Agent.md`
 - 입력: `raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md`
-- 생성: [[연구 파트너 (Research Partner)]], [[역발상 오해 검증]], [[회의주의자의 시선 (The skeptic's pass)]], [[핵심 전제 분석(Load-bearing assumption)]], [[그래서 어쩌라고 필터 (The so what filter)]], [[교차 분석 (Cross-analysis)]], [[확증 편향 탈피 검증 (The what would change my mind prompt)]], [[microGPT]], [[안드레 카파시(Andrej Karpathy)]], [[자동 미분(autograd)]], [[역전파(backpropagation)]], [[토크나이저(tokenizer)]], [[어텐션 메커니즘]], [[Adam 옵티마이저 (Adam Optimizer)]], [[자기회귀적 생성(autoregressive generation)]], [[옵시디언(Obsidian)]], [[브레인덤프]], [[일일 브리핑]]
-- 수정: [[NotebookLM]], [[연구 파트너 (Research Partner)]], [[잔차 연결]], [[COG(huytieu-COG-second-brain)]]
+- 입력: `raw/How to Use lat.md. Turn Any Folder Into a Validated Knowledge Graph.md`
+- 입력: `raw/I Built a Full SaaS App on AWS for $1.50_month — Here’s the Architecture.md`
+- 입력: `raw/Is Life Actually Worse, or Are We Just More Anxious.md`
+- 입력: `raw/I’ll Instantly Know A Writer Used ChatGPT When I See This.md`
+- 입력: `raw/I’m a Neuroscientist & I Do These 3 Overlooked Exercises Daily to Age Better.md`
+- 입력: `raw/Once You Get Money, Upgrade These Things Immediately.md`
+- 입력: `raw/Palantir CEO Says Only Two Types Will Survive AI (And Elite Degrees Aren’t One of Them)!.md`
+- 입력: `raw/Steve Jobs’s 10–80–10 Rule Is Even More Useful in the AI Era.md`
+- 입력: `raw/The shortest boom in history. why the “AI Era” will end sooner than you think..md`
+- 입력: `raw/This is Why Nobody Can Tell I Used ChatGPT.md`
+- 입력: `raw/Understanding Transformers (Part 1). Why RNNs are nearly impossible to train.md`
+- 입력: `raw/Understanding Transformers (Part 2). How LSTMs fixed Recurrent Networks (mostly).md`
+- 입력: `raw/Understanding Transformers (Part 3). Positional encodings and word embeddings.md`
+- 입력: `raw/Understanding Transformers (Part 4). Attention is just a few matrices.md`
+- 입력: `raw/Understanding Transformers (Part 5). The final layers doing some heavy lifting.md`
+- 입력: `raw/Want To Be A Great Writer Don’t Focus On Writing.md`
+- 입력: `raw/What is an API A Simple Guide for Beginners (With Real Examples).md`
+- 입력: `raw/You don’t need thinking levels in Claude Code. You need Planning and Goal modes..md`
+- 생성:
+    - [[10-80-10 법칙(10-80-10 Rule)]]
+    - [[AI 글쓰기 흔적(AI Writing Signatures)]]
+    - [[AI 탐지기(AI Detector)]]
+    - [[AI 협업 글쓰기(AI Collaborative Writing)]]
+    - [[Adam 옵티마이저(Adam optimizer)]]
+    - [[COG]]
+    - [[COG(huytieu-COG-second-brain)]]
+    - [[Claude Code(클로드 코드)]]
+    - [[Codex(코덱스)]]
+    - [[GPTZero]]
+    - [[NotebookLM]]
+    - [[ZeroGPT]]
+    - [[lat.md(Agent Lattice)]]
+    - [[microGPT]]
+    - [[계획 모드(Planning Mode)]]
+    - [[고정된 메모리 뱅크(Frozen Memory Bank)]]
+    - [[관계 투자(Investing in Relationships)]]
+    - [[교차 분석(Cross-analysis)]]
+    - [[그래서 어쩌라고 필터(The so what filter)]]
+    - [[금융 인프라(Financial Infrastructure)]]
+    - [[데이터 소유권(Data Ownership)]]
+    - [[레이어 정규화(Layer Normalization)]]
+    - [[레이어 정규화는 배치 전체가 아닌 토큰 단위로 작동한다]]
+    - [[멀티헤드 어텐션(Multi-Head Attention)]]
+    - [[바이브 코딩(Vibe coding)]]
+    - [[브레인덤프(Braindump)]]
+    - [[사고 노력 설정(Thinking Effort Setting)]]
+    - [[생체 리듬(Circadian Rhythm)]]
+    - [[서버리스 아키텍처(Serverless Architecture)]]
+    - [[선 요약 강제 원칙(Summary-first rule)]]
+    - [[성찰 루프(Reflection Loop)]]
+    - [[세스 고딘(Seth Godin)]]
+    - [[수면 인프라(Sleep Infrastructure)]]
+    - [[순환 신경망(RNN, Recurrent Neural Networks)]]
+    - [[스토아철학(Stoicism)]]
+    - [[시간 구매(Buying Time)]]
+    - [[신체 및 정신 자산화]]
+    - [[안드레 카파시(Andrej Karpathy)]]
+    - [[안드레 카파시의 LLM Wiki 워크플로우(Andrej Karpathy's LLM Wiki Workflow)]]
+    - [[어텐션 메커니즘(attention mechanism)]]
+    - [[에이전트 중심의 개발 수명 주기(Agentic SDLC)]]
+    - [[엔시티피케이션(Enshittification)]]
+    - [[역발상 오해 검증(The explain it back to me wrong check)]]
+    - [[역전파(backpropagation)]]
+    - [[연구 파트너(Research Partner)]]
+    - [[옵시디언(Obsidian)]]
+    - [[우버(Uber)]]
+    - [[워커 에이전트(Worker Agent)]]
+    - [[위치 인코딩(Positional Encoding)]]
+    - [[음성 인식(STT, Speech-to-Text)]]
+    - [[인간 창작 인증 마크(Human-crafted Certification Mark)]]
+    - [[인코더-디코더 어텐션(Encoder-Decoder Attention)]]
+    - [[일일 브리핑(Daily Brief)]]
+    - [[자가 어텐션(Self-Attention)]]
+    - [[자기 기술 투자(Skill Investment)]]
+    - [[자기회귀적 생성(autoregressive generation)]]
+    - [[자동 미분(autograd)]]
+    - [[잔차 연결(residual connection)]]
+    - [[잔차 연결은 그래디언트 흐름을 유지하고 학습 선택권을 부여한다]]
+    - [[장단기 메모리(LSTM, Long Short-Term Memory)]]
+    - [[진정성(Authenticity)]]
+    - [[추론 시점 계산 곡선(Test-time Compute Curve)]]
+    - [[토크나이저(tokenizer)]]
+    - [[평가기 메커니즘(Evaluator Mechanism)]]
+    - [[피드포워드 신경망(Feed-Forward Networks)]]
+    - [[한 발로 서기 훈련(Standing on One Foot Exercise)]]
+    - [[핵심 전제 분석(Load-bearing assumption)]]
+    - [[헤드 에이전트(Head Agent)]]
+    - [[확증 편향 탈피 검증(The what would change my mind prompt)]]
+    - [[회의주의자의 시선(The skeptic's pass)]]
+    - [[후각 훈련(Olfactory Training)]]
+- 수정:
+    - 없음
 - index 업데이트: 완료
 - 남은 검토: 없음
 
-### Lint
-
-- 실행 방식: 수동
-- 깨진 wikilink: 0개
-- 중복 제목: 0개
-- 출처 없는 수치 문장: 0개
-- 관련 노트 2개 미만 문서: 0개
-- 고아 페이지: 0개
-- 30일 이상 미갱신 핵심 노트: 0개
-- 조치: 없음
 
 ## 2026-07-24
 
