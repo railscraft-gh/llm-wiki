@@ -224,7 +224,7 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 - **사가(Saga) 패턴**: 에이전트 작업 실패 시, 이전에 성공했던 이메일 발송 등 외부 쓰기 작업을 롤백하거나 취소하기 위해 보상 트랜잭션(Compensating Transactions)을 자동으로 실행하는 사가 엔진을 장착합니다.
 
 ### 1. 하네스 인프라의 파괴력 입증 지표
-- **LangChain Terminal Bench 2.0 실험**: 모델의 성능 개량 없이 오케스트레이션, 검증 레이어, 예산 통제를 담당하는 하네스 튜닝만으로 리더보드 순위가 30위 밖(52.8%)에서 Top 5(66.5%)로 껑충 뛰어올랐다.
+- **LangChain Terminal Bench 2.0 실험**: 모델의 성능 개량 없이 오케스트레이션, [[검증 레이어]], 예산 통제를 담당하는 하네스 튜닝만으로 리더보드 순위가 30위 밖(52.8%)에서 Top 5(66.5%)로 껑충 뛰어올랐다.
 - **Vercel SQL 에이전트의 툴 다이어트**: 자잘한 도구를 늘리는 것은 모델의 추론 검색 공간을 늘려 오작동을 야기한다. 툴의 80%를 도려내고 범용 bash 툴로 대체하여 성공률 100%와 3.5배 속도 향상을 이루어 냈다.
 - **Claude Code 51만 줄 TypeScript**: 2026년 3월 유출본 분석 결과, 에이전트의 압도적 프로덕션 성능은 모델 가중치가 아니라 51.3만 줄에 달하는 정교한 하네스 인프라(상태 제어, 린터 통합, git diff 추적 등)에서 기인한다.
 
@@ -424,7 +424,7 @@ while not budgets.exhausted():
 - [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
 - [Run a Useful Local [[LLM]] in 30 Minutes (Coding, [[RAG]], Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20[[LLM]]%20in%2030%20Minutes%20%28Coding%2C%20[[RAG]]%2C%20Voice%29.md)
 - [gajae-code_AI_코딩_하네스_분석](file:///Users/railscraft/Obsidian/raw/gajae-code_AI_%EC%BD%94%EB%94%A9_%ED%95%98%EB%84%A4%EC%8A%A4_%EB%B6%84%EC%84%9D.md)
-- [AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI [[코딩 에이전트]]와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
 - [테일윈드의 고군분투는 무너지는 사상누각의 징조다](file:///Users/railscraft/Obsidian/raw/%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C%EC%9D%98%20%EA%B3%A0%EA%B5%B0%EB%B6%84%ED%88%AC%EB%8A%94%20%EB%AC%B4%EB%84%88%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%83%81%EB%88%84%EA%B0%81%EC%9D%98%20%EC%A7%95%EC%A1%B0%EB%8B%A4.md)
 - [AI가 내 글쓰기 커리어를 죽였다. AI 만세](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md)
@@ -436,7 +436,7 @@ while not budgets.exhausted():
 - [How to Do Hard Things When You Have Zero Motivation](file:///Users/railscraft/Obsidian/raw/How%20to%20Do%20Hard%20Things%20When%20You%20Have%20Zero%20Motivation.md)
 - [Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic](file:///Users/railscraft/Obsidian/raw/Anthropic%EC%9D%B4%20Opus%204.8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EA%B2%83%20-%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%ED%9D%A1%EC%88%98%ED%95%98%EB%8A%94%20Anthropic.md)
 - [AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 [[Context Engineering]]이다](file:///Users/railscraft/Obsidian/raw/AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C%20Prompt%20Engineering%EC%9D%80%20%EC%A3%BD%EC%97%88%EB%8B%A4.%20%EC%9D%B4%EC%A0%9C%20%EC%A7%84%EC%A7%9C%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%80%20Context%20Engineering%EC%9D%B4%EB%8B%A4.md)
-- [Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
 - [Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻](file:///Users/railscraft/Obsidian/raw/Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%84%20%EB%B2%84%EB%A6%AC%EB%9D%BC%EA%B3%A0%20%EB%A7%90%ED%96%88%EB%8B%A4.%20%EA%B7%B8%20%EB%A7%90%EC%9D%98%20%EC%A7%84%EC%A7%9C%20%EB%9C%BB.md)
 - [Give Your AI Agent 36 Superpowers](file:///Users/railscraft/Obsidian/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open)
 - [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md)

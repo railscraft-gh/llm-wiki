@@ -24,12 +24,12 @@ Graphify는 프로젝트 코드와 문서를 지식 그래프로 변환하는 Cl
 - **멀티모달 통합**: 코드, PDF 논문, 이미지, 영상을 하나의 그래프로 연결
 - **신뢰도 투명화**: 모든 관계가 `EXTRACTED`/`INFERRED`/`AMBIGUOUS` 태그로 구분됨
 - **지속적 메모리**: `graph.json`과 `GRAPH_REPORT.md`가 세션 간 맥락을 유지
-- AST(tree-sitter) 및 호출 그래프 분석을 활용하여 28개 언어의 코드를 API 비용 없이 로컬에서 파싱함 [raw/graphify_정리.md]
+- AST([[tree-sitter]]) 및 호출 그래프 분석을 활용하여 28개 언어의 코드를 API 비용 없이 로컬에서 파싱함 [raw/graphify_정리.md]
 - Karpathy 저장소 + 5개 논문 + 4개 이미지의 52개 파일 코퍼스 기준, 71.5배 적은 토큰으로 동일 정보를 검색 가능함 [raw/graphify_정리.md]
 
 ## 상세
 
-Graphify는 프로젝트 평더를 입력받아 지식 그래프를 생성한다. 코드는 tree-sitter AST를 이용해 로컬에서만 처리하므로 API 비용이 들지 않는다. 문서와 이미지만 Claude API를 통해 개념을 추출한다.
+Graphify는 프로젝트 평더를 입력받아 지식 그래프를 생성한다. 코드는 [[tree-sitter]] AST를 이용해 로컬에서만 처리하므로 API 비용이 들지 않는다. 문서와 이미지만 Claude API를 통해 개념을 추출한다.
 
 **주요 출력물** (`graphify-out/` 평더):
 - `graph.html`: 인터랙티브 시각화
@@ -46,7 +46,7 @@ Graphify는 프로젝트 평더를 입력받아 지식 그래프를 생성한다
 15개 이상 플랫폼 지원: Claude Code, Codex, [[OpenCode]], Cursor, GitHub Copilot, Aider 등.
 
 ### 지원 파일 형식 및 플랫폼 설정
-- **코드 파싱 (28개 언어)**: `.py .ts .js .jsx .tsx .go .rs .java .c .cpp .rb .cs .kt .scala .php .swift .lua .zig .ps1 .ex .m .jl .vue .svelte .sql` 등. tree-sitter AST 및 호출 그래프를 로컬에서만 분석하므로 API 토큰 비용이 발생하지 않는다.
+- **코드 파싱 (28개 언어)**: `.py .ts .js .jsx .tsx .go .rs .java .c .cpp .rb .cs .kt .scala .php .swift .lua .zig .ps1 .ex .m .jl .vue .svelte .sql` 등. [[tree-sitter]] AST 및 호출 그래프를 로컬에서만 분석하므로 API 토큰 비용이 발생하지 않는다.
 - **오피스 및 워크스페이스**: `.docx .xlsx` (pip install graphifyy[office] 필요), `.gdoc .gsheet .gslides` (gws CLI 인증 후 `--google-workspace` 적용).
 - **미디어**: PDF 논문 (인용 마이닝), 이미지 (`.png .jpg .webp .gif`, Claude Vision OCR 활용), 영상/음성 (`.mp4 .mov .mp3 .wav`, pip install graphifyy[video] 필요).
 - **플랫폼별 설정**:

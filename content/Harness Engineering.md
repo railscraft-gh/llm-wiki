@@ -100,7 +100,7 @@ updated: 2026-07-18
 # Harness Engineering
 
 ## 한 줄 정의
-Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions), 검증 도구(Hooks), 커스텀 스킬, 메모리, 관찰 피드백 루프를 시스템적으로 설계하여, 모델 본연의 한계를 외부 제약 환경을 통해 보완하고 정합성 높은 결과물을 얻어내는 에이전트 인프라 구축 기술이다.
+Harness Engineering은 AI [[코딩 에이전트]]를 둘러싼 규칙(Instructions), 검증 도구(Hooks), 커스텀 스킬, 메모리, 관찰 피드백 루프를 시스템적으로 설계하여, 모델 본연의 한계를 외부 제약 환경을 통해 보완하고 정합성 높은 결과물을 얻어내는 에이전트 인프라 구축 기술이다.
 
 ## 핵심 요지
 - **용어의 기원 (Mitchell Hashimoto)**: 2026년 초[raw/하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬.md#L26](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.%20%EB%8B%A8%EC%95%BC%20%EB%AA%A8%EB%8D%B8%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%EC%BD%94%EB%93%9C%20%EC%8A%A4%ED%82%AC.md#L26) Terraform 창시자인 **Mitchell Hashimoto가 주창한 개념**으로, 에이전트의 오작동 시 매번 채팅 세션 내에서 일회성으로 가이드하는 대신 동일 오류가 다신 재발하지 않도록 모델 바깥의 실행 인프라와 제약 환경(Harness)을 영구적으로 엔지니어링하는 것을 가리킨다.
@@ -108,7 +108,7 @@ Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions),
 - **Andrej Karpathy의 65줄 기적**: Forrest Chang이 Karpathy의 에이전트 실패 관찰을 토대로 제작한 65줄짜리 `CLAUDE.md` 파일(GitHub 10만 스타 돌파)은 프롬프트나 미들웨어 튜닝보다 저장소 루트에 두는 기계 가독 행동 계약(Behavioral Contract)이 훨씬 강력함을 실증했다[raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md#L11](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md#L11).
 - **점진적 압축과 자아 비평**: Forrest Chang은 에이전트를 시켜 최초 800줄짜리 규칙 스키마를 작성하게 한 뒤, **에이전트가 자기 자신을 스스로 리뷰하게 만들어** 65줄의 고농도 지침으로 압축했다[raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md#L57](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md#L57).
 - **매주 금요일 5분 루틴**: 일주일 동안 에이전트가 저지른 실수 패턴을 모아 매주 하네스(규칙, 훅, 스킬)에 한 줄씩 반영하는 정기 튜닝을 통해 시스템이 점진적으로 지능화된다.
-- **Andrej Karpathy의 워크플로우 통계**: 2026년 1월에는 코드의 80%를 직접 썼으나 2월에는 20%만 직접 쓰고 80%는 에이전트 환경에 위임하여 자율 코딩 비중을 반전시킴[raw/Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나.md#L28](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%93%9C%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md#L28) (2026년 3월 26일 X 공유).
+- **Andrej Karpathy의 워크플로우 통계**: 2026년 1월에는 코드의 80%를 직접 썼으나 2월에는 20%만 직접 쓰고 80%는 에이전트 환경에 위임하여 자율 코딩 비중을 반전시킴[raw/Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나.md#L28](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%93%9C%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md#L28) (2026년 3월 26일 X 공유).
 - **실무 벤치마크 지표**:
   1) LangChain: 하네스 튜닝만으로 Terminal Bench 2.0 점수 52.8% ➡️ 66.5%로 향상[raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md#L301](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md#L301).
   2) Hashline: 라인별 해시 편집 포맷 적용 후 Grok Code Fast 1 6.7% ➡️ 68.3%로 향상 및 출력 토큰 20% 절감[raw/하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유.md#L302](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md#L302).
@@ -149,7 +149,7 @@ Harness Engineering은 AI 코딩 에이전트를 둘러싼 규칙(Instructions),
 5. **격리된 샌드박스 실행 강제**: 에이전트가 코드를 임의로 생성 및 구동할 때 호스트가 파괴되거나 메모리가 고갈되지 않도록, `E2B`, `Modal Sandbox`, `Daytona` 등의 ephemeral 샌드박스를 제공하여 실행 통제 가드레일을 얹어야 한다.
 6. **MCP 표준 도구 연동**: 에이전트의 도구 확장성을 확보하기 위해 [[Model Context Protocol]](MCP) 서버를 사용하여 도구 목록과 스펙을 표준화해 서빙한다.
 
-### 1. Karpathy의 코딩 에이전트 3대 실패 패턴
+### 1. Karpathy의 [[코딩 에이전트]] 3대 실패 패턴
 - **묵시적 가정 (Silent Assumptions)**: 불확실한 지점에서 질문하지 않고 독단적으로 해석하여 그릇된 구현을 시작함.
 - **과도한 엔지니어링 (Overcomplication)**: 불필요한 추상화 레이어를 만들고 코드를 10배 가량 부풀림.
 - **부수적 피해 (Collateral Damage)**: 엉뚱한 주석을 지우거나 무관한 주변 로직을 리팩토링해 PR 변경 범위를 확대함.
@@ -249,7 +249,7 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy
 - [How top companies are using AI in their design workflows](file:///Users/railscraft/Obsidian/raw/How%20top%20companies%20are%20using%20AI%20in%20their%20design%20workflows.md)
 - [AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 [[Context Engineering]]이다](file:///Users/railscraft/Obsidian/raw/AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C%20Prompt%20Engineering%EC%9D%80%20%EC%A3%BD%EC%97%88%EB%8B%A4.%20%EC%9D%B4%EC%A0%9C%20%EC%A7%84%EC%A7%9C%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%80%20Context%20Engineering%EC%9D%B4%EB%8B%A4.md)
 - [강화학습-RL-초보자-가이드](file:///Users/railscraft/Obsidian/raw/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-RL-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
 - [AI 개발자가 반드시 알아야 할 9가지 [[RAG]] 아키텍처 - 실무 예제로 배우는 완전 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20[[RAG]]%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻](file:///Users/railscraft/Obsidian/raw/Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%84%20%EB%B2%84%EB%A6%AC%EB%9D%BC%EA%B3%A0%20%EB%A7%90%ED%96%88%EB%8B%A4.%20%EA%B7%B8%20%EB%A7%90%EC%9D%98%20%EC%A7%84%EC%A7%9C%20%EB%9C%BB.md)
 - [anthropic-boris-cherny-interview](file:///Users/railscraft/Obsidian/raw/anthropic-boris-cherny-interview.md)

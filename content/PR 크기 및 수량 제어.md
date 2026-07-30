@@ -21,7 +21,7 @@ updated: 2026-07-30
 AI 에이전트의 고속 코드 생산으로 인해 발생하는 [[코드 리뷰 대기열 병목]]과 시니어 엔지니어의 번아웃을 방지하기 위해, 개별 Pull Request(PR)의 라인 수(크기)를 제한하고 처리 중인 PR의 총량(수량)을 통제하는 개발 프로세스 제어 전략이다.
 
 ## 핵심 요지
-* **리뷰 하중의 인지적 비용**: 코드 리뷰는 개발 주기 전체에서 인지적 비용이 가장 막대하게 드는 고강도 노동이다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md). AI 코딩 도구를 전면 도입한 이후 코드 리뷰에 소요되는 시간은 200%g량 증가했다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
+* **리뷰 하중의 [[인지적 비용]]**: 코드 리뷰는 개발 주기 전체에서 [[인지적 비용]]이 가장 막대하게 드는 고강도 노동이다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md). AI 코딩 도구를 전면 도입한 이후 코드 리뷰에 소요되는 시간은 200%가량 증가했다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
 * **피상적 리뷰(면죄부 발행) 방지**: 지친 시니어 엔지니어가 시간에 쫓겨 11분 만에 훑어보고 넘기는 대량의 에이전트 코드는 정상적인 리뷰가 아니다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md). 이는 잠재적 장애 요인에 미리 승인 도장을 찍어주는 면죄부 발행에 불과하다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
 * **속도와 안정성의 균형**: PR의 크기를 더 작게, 총 개수를 더 적게 조정하면 개발 지표상의 속도(Velocity)는 다소 무뎌질 수 있으나, 보이지 않는 조직의 회복 탄력성과 프로덕션 안정성은 단단해진다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
 * **리뷰 하중(Review Load)의 균등 분산**: 리뷰를 자연스레 해결되는 공짜 작업으로 간주하지 않고, 리뷰 하중을 정량적 지표로 관리하여 특정 시니어의 책상에만 부하가 집중되지 않도록 의무 분산한다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
@@ -37,7 +37,7 @@ AI 에이전트는 피로를 모르고 수백~수천 라인의 코드를 한 번
 
 ### 3. 직무 설계와 1대1 피드백 루프 구축
 시니어 엔지니어의 핵심 가치는 에이전트가 유발하는 대형 장애를 막는 것뿐만 아니라, 시스템 전체의 아키텍처를 설계하는 창작(Building) 활동에 있다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md). PR 제어를 통해 여유를 확보하고, 시니어들에게 창의적인 아키텍처 구현 업무를 재할당해야 한다.
-또한, 매니저는 일대일 미팅을 통해 시니어가 단순 검증 레이어로 전락하여 느끼는 근원적인 무력감을 사전에 조기 진단해야 한다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
+또한, 매니저는 일대일 미팅을 통해 시니어가 단순 [[검증 레이어]]로 전락하여 느끼는 근원적인 무력감을 사전에 조기 진단해야 한다 (raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md).
 
 ## 예시
 ### 1. GitHub Actions를 이용한 PR 크기 자동 통제 예시

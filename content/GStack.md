@@ -19,7 +19,7 @@ updated: 2026-07-21
 # GStack
 
 ## 한 줄 정의
-Y Combinator CEO Garry Tan이 공개한 오픈소스(MIT) 슬래시 커맨드 툴킷으로, Claude Code 등 10개 AI 코딩 에이전트를 23명의 가상 전문가 및 8개 파워 도구로 이루어진 완전한 엔지니어링 조직으로 변환하는 소프트웨어 팩토리 프레임워크.
+Y Combinator CEO Garry Tan이 공개한 오픈소스(MIT) 슬래시 커맨드 툴킷으로, Claude Code 등 10개 AI [[코딩 에이전트]]를 23명의 가상 전문가 및 8개 파워 도구로 이루어진 완전한 엔지니어링 조직으로 변환하는 소프트웨어 팩토리 프레임워크.
 
 ## 핵심 요지
 - **엔지니어링 팀 프레임워크 구축**: 단순 코딩 보조(Copilot)를 넘어 `Think -> Plan -> Build -> Review -> Test -> Ship -> Reflect` 7단계 수명주기를 슬래시 커맨드로 오케스트레이션합니다.

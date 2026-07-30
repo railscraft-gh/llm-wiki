@@ -96,16 +96,16 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-# AI 코딩 에이전트 검증 전략
+# AI [[코딩 에이전트]] 검증 전략
 
 ## 한 줄 정의
-AI 코딩 에이전트 검증 전략은 에이전트에게 단순 코드 생성을 넘어 테스트 팩(Test Pack) 검사, 린터 구동, 브라우저/UI 검토, 그리고 오류 발생 시의 자율 디버깅 및 자가 수정(Self-Correction)의 전 과정을 책임지게 만드는 엔지니어링 워크플로우다.
+AI [[코딩 에이전트]] 검증 전략은 에이전트에게 단순 코드 생성을 넘어 테스트 팩(Test Pack) 검사, 린터 구동, 브라우저/UI 검토, 그리고 오류 발생 시의 자율 디버깅 및 자가 수정(Self-Correction)의 전 과정을 책임지게 만드는 엔지니어링 워크플로우다.
 
 ## 핵심 요지
 - **기능 개발과 검증의 동시성**: 모든 기능 명세 지시는 "코드를 작성하라"에서 끝나지 않고, "해당 명세를 입증할 테스트 코드를 함께 작성하고, 린트와 테스트가 100% 통과할 때까지 자율 디버깅을 반복하여 결과를 제출하라"는 완료 조건(DoD)을 명시해야 한다.
 - **결정론적 검증 체계 (Deterministic Verification)**: [[LLM]]의 비결정론적이고 들쭉날쭉한 지능([[Jagged Intelligence]])을 통제하기 위해, 사람이 짠 테스트 프레임워크나 정적 린터 같은 객관적이고 기계적인 채점 시스템을 검증 수단으로 제공한다.
 - **AI 보조 코딩 마스터링 3대 핵심축**: AI 코딩을 단순 바이브 코딩에서 전문 엔지니어링 기술로 승격시키기 위해 컨텍스트 정합성(Alignment) 관리, 테스트 팩을 통한 기계적 검증, 정량적 피드백 루프를 철저히 조율한다.
-- AI 코딩 에이전트를 코드 작성뿐만 아니라 보안 감사, 아키텍처 의사결정, 문서화, 성능 프로파일링 등 사후 검증 단계에 적극 배치해야 함 [raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md]
+- AI [[코딩 에이전트]]를 코드 작성뿐만 아니라 보안 감사, 아키텍처 의사결정, 문서화, 성능 프로파일링 등 사후 검증 단계에 적극 배치해야 함 [raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md]
 
 ## 상세
 
@@ -313,7 +313,7 @@ git add -p
 - [모든 DESIGN](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98)
 - [You’re Using AI to Write Code. You’re Not Using It to Review Code](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.)
 - [2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EB%B3%B4%EC%A1%B0%20%EC%BD%94%EB%94%A9%EC%9D%80%20%ED%95%98%EB%82%98%EC%9D%98%20%EA%B8%B0%EC%88%A0%EC%9D%B4%EB%8B%A4.%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%EC%9D%B4%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
-- [AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI [[코딩 에이전트]]와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [테일윈드의 고군분투는 무너지는 사상누각의 징조다](file:///Users/railscraft/Obsidian/raw/%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C%EC%9D%98%20%EA%B3%A0%EA%B5%B0%EB%B6%84%ED%88%AC%EB%8A%94%20%EB%AC%B4%EB%84%88%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%83%81%EB%88%84%EA%B0%81%EC%9D%98%20%EC%A7%95%EC%A1%B0%EB%8B%A4.md)
 - [AI가 내 글쓰기 커리어를 죽였다. AI 만세](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md)
 - [AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식)](file:///Users/railscraft/Obsidian/raw/AI%20%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9D%84%20%EA%B5%AC%EC%B6%95%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20%282026%EB%85%84%20%EB%B0%A9%EC%8B%9D%29.md)
@@ -332,7 +332,7 @@ git add -p
 - [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
 - [좋은 삶을 만드는 것에 대한 지루한 진실](file:///Users/railscraft/Obsidian/raw/%EC%A2%8B%EC%9D%80%20%EC%82%B6%EC%9D%84%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%A7%84%EC%8B%A4.md)
 - [Quartz-Deploy-Guide](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-Deploy-Guide.md)
-- [Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
 - [arxiv-2603.28052-meta-harness](file:///Users/railscraft/Obsidian/raw/arxiv-2603.28052-meta-harness.md)
 - [Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업](file:///Users/railscraft/Obsidian/raw/Agentic%20Product%20Design.%20%EC%98%A4%EB%8A%98%20%EB%B0%94%EB%A1%9C%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%205%EA%B0%80%EC%A7%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85.md)
 - [Claude Code를 위한 Figma 스킬 완벽 가이드](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Figma%20%EC%8A%A4%ED%82%AC%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)

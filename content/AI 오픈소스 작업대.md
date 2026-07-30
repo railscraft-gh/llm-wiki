@@ -87,7 +87,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - Coolify(55k Stars)와 OpenHands(73.2k+ Stars)는 각각 self-hosting 배포 관리와 엔지니어링 에이전트 런타임으로 기능한다.
 - Mem0와 같은 장기 기억 프레임워크는 LoCoMo 벤치마크 테스트에서 기존 전체 컨텍스트 로딩 대비 레이턴시 92% 감소, 토큰 사용량 93% 절감을 이뤄내며 14배의 비용 효율화를 달성했다.
 - Stagehand v3는 Chrome DevTools Protocol(CDP) 기반으로 런타임 엔진을 전면 리팩터링하여 Playwright 대비 44% 빠른 브라우징 속도를 보고했다.
-- 엔지니어링 코딩 에이전트 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), [[Cline]](VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
+- 엔지니어링 [[코딩 에이전트]] 영역에서는 OpenHands(SWE-bench Verified 53~72%), Aider(git 내장형, Architect/Editor 모드로 30~40% 비용 절감), [[Cline]](VS Code 네이티브 분리 실행) 등 3대 오픈소스 도구들이 주도적인 스택을 점유했다.
 - 현대 개발자들은 단순히 챗봇 데모나 라이브러리를 찾는 단계를 넘어, GitHub을 통해 통째로 작동하는 AI 운영 체계와 엔지니어링 레이어를 찾아 나서고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
 - AI 인프라는 점차 범용 어시스턴트에서 벗어나 금융, 리서치, 코딩, 개인 브라우징 격리 등 전문화된 로컬/셀프호스팅 시스템으로 세분화되고 있다. [출처: raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md]
 

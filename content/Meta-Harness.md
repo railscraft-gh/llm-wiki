@@ -34,7 +34,7 @@ Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end
 
 ## 상세
 
-하네스 엔지니어링은 모델 가중치를 바꾸지 않고 모델이 보는 정보를 결정하는 코드(프롬프트 구성, 검색, 메모리, 오케스트레이션)를 개선하는 작업이다. 기존에는 인간 엔지니어가 실패를 검사하고 휴리스틱을 조정하는 수작업이었으나, Meta-Harness는 이 과정을 코딩 에이전트 제안자에게 위임한다.
+하네스 엔지니어링은 모델 가중치를 바꾸지 않고 모델이 보는 정보를 결정하는 코드(프롬프트 구성, 검색, 메모리, 오케스트레이션)를 개선하는 작업이다. 기존에는 인간 엔지니어가 실패를 검사하고 휴리스틱을 조정하는 수작업이었으나, Meta-Harness는 이 과정을 [[코딩 에이전트]] 제안자에게 위임한다.
 
 후속 raw 기준으로 보면 Meta-Harness는 [[Agent Harness]] 자체를 다시 탐색하는 상위 루프다. 즉 개별 agent의 orchestration loop, memory, context management, verification 구조를 사람이 직접 손보는 대신, 다른 agent가 하네스 후보를 생성하고 평가하는 셈이다.
 
@@ -89,7 +89,7 @@ H^{*} = \operatorname*{arg\,max}_{H}\mathbb{E}_{x\sim\mathcal{X},\tau\sim p_M(H,
 - arxiv-2603.28052-meta-harness
 - [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/Obsidian/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95)
 - [RuboCop - Ruby 정적 코드 분석기 완벽 정리](file:///Users/railscraft/Obsidian/raw/[[RuboCop]]%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md)
-- [Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
 - [하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
 - [GLM-5.1-vs-Kimi-K2.6-Coding-Comparison](file:///Users/railscraft/Obsidian/raw/[[GLM-5]].1-vs-Kimi-K2.6-Coding-Comparison.md)
 - [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/Obsidian/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95.md)

@@ -94,7 +94,7 @@ updated: 2026-07-10
 
 ## 핵심 요지
 - **엔진 진화 (Ollama-MLX)**: Ollama 0.19(2026년 3월 30일 출시)부터 애플 실리콘의 백엔드가 MLX로 교체되면서 M5 Max 환경 기준 Prefill 57%(1,810 tok/s), Decode 93%(112 tok/s) 수준의 비약적인 속도 성능 향상을 달성했다.
-- **KV 캐시 메모리 벽 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
+- **KV 캐시 [[메모리 벽]] 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
 - **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
 - **3대 실무 구현 경로**: IDE 코딩 어시스턴트([[Cline]]), 콤팩트 문서 [[RAG]](Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
 - Ollama 0.19 벤치마크에 따르면 int4 양자화 Qwen 구동 시 초당 1,851 토큰 프리필(Prefill)과 134 토큰 디코딩(Decode) 속도를 발휘한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
@@ -493,7 +493,7 @@ ollama show qwen3-coder-cline --parameters | grep num_ctx
 - [DESIGN.md 워크플로우. [[Google Stitch]]와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
 - [모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
 - [만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다](file:///Users/railscraft/Obsidian/raw/%EB%A7%8C%EC%95%BD%20%EB%8B%A8%205%ED%8E%B8%EC%9D%98%20AI%20%EB%85%BC%EB%AC%B8%EB%A7%8C%20%EC%9D%BD%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%B0%94%EB%A1%9C%20%EC%9D%B4%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.md)
-- [AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI [[코딩 에이전트]]와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
 - [DESIGN.md 워크플로 - [[Google Stitch]]와 Claude Code가 바꾼 디자인 개발 협업](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
 - [밑바닥부터 만드는 [[LLM]] 메모리 #2. 자동 요약 버퍼](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%232.%20%EC%9E%90%EB%8F%99%20%EC%9A%94%EC%95%BD%20%EB%B2%84%ED%8D%BC.md)

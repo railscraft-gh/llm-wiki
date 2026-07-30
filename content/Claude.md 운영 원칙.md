@@ -230,7 +230,7 @@ black . && ruff check --fix .
 - Claude Code + Obsidian으로 AI 기반 세컨드 브레인을 만든 방법
 - andrej-karpathy-skills-CLAUDE-번역
 - Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-- Andrej Karpathy가 AI 코딩 에이전트의 고질병을 고치는 방법. 마크다운 파일 하나
+- Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나
 - 99%의 사람보다 더 나은 Harness Engineer를 만드는 법
 - raw/CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다.md
 - raw/Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요.md

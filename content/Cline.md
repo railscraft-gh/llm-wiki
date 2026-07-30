@@ -11,7 +11,7 @@ created: 2026-07-21
 updated: 2026-07-21
 ---
 ## 한 줄 정의
-Cline은 VS Code 사이드바 내에서 파일 생성/편집, 터미널 명령어 실행, 오류 디버깅 등 개발 전체 주기를 자율적으로 반복 수행하는 모델 독립적(Model-agnostic) 오픈소스 AI 코딩 에이전트이다.
+Cline은 VS Code 사이드바 내에서 파일 생성/편집, 터미널 명령어 실행, 오류 디버깅 등 개발 전체 주기를 자율적으로 반복 수행하는 모델 독립적(Model-agnostic) 오픈소스 AI [[코딩 에이전트]]이다.
 
 ## 핵심 요지
 - Cline은 다운로드 수 500만 건 이상, 깃허브 스타 6만 1천 개 이상을 획득하며 인기를 얻은 개발 에이전트 툴이다 [raw/NVIDIA Build로 월 20달러 아끼는 무료 AI 모델 활용 가이드.md#L118](file:///Users/railscraft/Obsidian/raw/NVIDIA%20Build%EB%A1%9C%20%EC%9B%94%2020%EB%8B%AC%EB%9F%AC%20%EC%95%84%EB%81%BC%EB%8A%94%20%EB%AC%B4%EB%A3%8C%20AI%20%EB%AA%A8%EB%8D%B8%20%ED%99%9C%EC%9A%A9%20%EA%B0%80%EC%9D%B4%EB%93%9C.md#L118).
