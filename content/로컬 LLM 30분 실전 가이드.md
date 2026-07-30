@@ -94,7 +94,7 @@ updated: 2026-07-10
 
 ## 핵심 요지
 - **엔진 진화 (Ollama-MLX)**: Ollama 0.19(2026년 3월 30일 출시)부터 애플 실리콘의 백엔드가 MLX로 교체되면서 M5 Max 환경 기준 Prefill 57%(1,810 tok/s), Decode 93%(112 tok/s) 수준의 비약적인 속도 성능 향상을 달성했다.
-- **KV 캐시 [[메모리 벽]] 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
+- **KV 캐시 메모리 벽 차단 ([[TurboQuant]])**: 32B 이상 모델 구동 시 최대 병목인 KV 캐시를 PolarQuant와 QJL 2단계 파이프라인으로 압축하여 품질 손실 없이 4.6배 이상의 압축률과 디코드 속도 105%를 달성한다.
 - **물리 RAM 한계 극복 (Expert Streaming)**: 256개 전문가 MoE 아키텍처의 희소성을 이용하여 매 토큰 연산 시 활성화되는 소수의 전문가 가중치만 Contiguous 바이트 오프셋에서 `pread`(`F_NOCACHE` 설정)로 적재함으로써 16GB Mac mini에서 54GB 크기의 122B 모델 구동에 성공했다.
 - **3대 실무 구현 경로**: IDE 코딩 어시스턴트([[Cline]]), 콤팩트 문서 [[RAG]](Ollama+NumPy), 실시간 오프라인 음성 비서(WhisperKit+Kokoro ONNX)의 네이티브 구축 파이프라인을 다룬다.
 - Ollama 0.19 벤치마크에 따르면 int4 양자화 Qwen 구동 시 초당 1,851 토큰 프리필(Prefill)과 134 토큰 디코딩(Decode) 속도를 발휘한다. (출처: raw/I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max Quietly Replaced All Three-ko.md)
