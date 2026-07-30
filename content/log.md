@@ -6,10 +6,20 @@ tags:
 - log
 sources: []
 created: 2026-05-06
-updated: 2026-07-29
+updated: 2026-07-30
 aliases: []
 ---
 # LLM Wiki Log
+
+## 2026-07-30
+
+### Ingest
+
+- 입력: `raw/What Makes Us Human.md`
+- 생성:
+    - [[복내측 전전두엽 피질]]
+- index 업데이트: 완료
+- 남은 검토: 없음
 
 ## 2026-07-29
 
