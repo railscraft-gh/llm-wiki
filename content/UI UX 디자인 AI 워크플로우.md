@@ -69,6 +69,7 @@ sources:
 - 'raw/밑바닥부터 만드는 LLM 메모리 #2. 자동 요약 버퍼.md'
 - raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md
 - raw/6 Ways UI_UX Designers Are Using AI.md
+- raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md
 status: evergreen
 tags:
 - llm
@@ -81,7 +82,7 @@ tags:
 - prototyping
 - ai
 type: workflow
-updated: 2026-07-18
+updated: 2026-07-30
 ---
 # UI UX 디자인 AI 워크플로우
 
@@ -284,6 +285,13 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 - 번역 레이어가 제거되어 단 2명이서 8명의 생산성을 상회함.
 
 - **AI 디자인 검증 절차**: 시안 내보내기 ➡️ Fable/Opus 검증기 작동 ➡️ 대비 및 논리적 배치 자동 검사 ➡️ 피드백 반영 리팩토링
+
+### 3. Moonchild AI 기반 식당 관리 MVP 구축 사례
+- 인도 라우르켈라(Rourkela) 식당의 현장 조사를 토대로 3가지 웹앱 포털(고객용, 직원용, 관리자용)을 구축했다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
+- **1단계: 기획 (ChatGPT)**: 사용자 흐름(User Flow)을 확정하고 예외 상황(Edge Case)을 식별한 뒤 FigJam에 가시화했다.
+- **2단계: 디자인 ([[Moonchild AI]])**: Mobbin의 음식 카테고리 레퍼런스를 참조하여 미니 디자인 시스템을 구축 및 게시한 뒤, ChatGPT가 정제한 마스터 프롬프트를 주입해 일관된 UI 화면을 도출했다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
+- **3단계: 개발 (Google Antigravity)**: 최신 Gemini 모델의 비주얼 분석 능력을 탑재한 Antigravity로 Moonchild AI가 설계한 UI 구조를 프론트엔드 코드로 변환 및 구현했다.
+- **성과**: 챗 모드 기반의 정밀 이터레이션과 에이전트 연동을 통해 MVP 개발 기간을 기존 대비 **10분의 1로 단축**하고 10배 빠르게 빌드하는 성과를 냈다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
 
 ## 충돌
 - **의사결정 대행 vs 판단의 독점**: '대신 생각해주겠다'는 만능 도구(Thinking AI)는 디자이너의 고유 영역인 미학적/전략적 판단(Taste & Strategy)까지 외주화하려 하므로 충돌한다. 성공적인 워크플로우는 오직 '실행'만을 AI에 아웃소싱하고 최종 결정권은 사람이 독점하는 형태다. 예컨대 AI가 3글자 이름('Ava')이 레이아웃 상 시각적 균형에 가장 예쁘다고 해서 기계적으로 추천하더라도, 실제 긴 이름을 입력했을 때 레이아웃이 깨지는 실질적인 구조 문제(Implementation details)를 판단하고 해결하는 주체는 사람이어야 한다.

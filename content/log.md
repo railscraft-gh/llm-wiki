@@ -11,6 +11,205 @@ aliases: []
 ---
 # LLM Wiki Log
 
+## 2026-07-31
+
+### Ingest
+
+- 입력: `raw/20 Things NotebookLM Can Do That Most People Never Try.md`
+- 입력: `raw/26 Rules to Be a Better Thinker in 2026.md`
+- 입력: `raw/AI is NOT the reason for the mass layoffs..md`
+- 입력: `raw/AI makes you way less productive unless.md`
+- 입력: `raw/Andrej Karpathy Asked for a Tool. 48 Hours Later, Graphify Went Viral..md`
+- 입력: `raw/Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md`
+- 입력: `raw/Andrej Karpathy Stopped Using AI to Write Code. He’s Using It to Build a Second Brain Instead.md`
+- 입력: `raw/Andrej Karpathy’s Fix for LLM Memory Works on Code Too.md`
+- 입력: `raw/Build a Second Brain in 15 Minutes Just Markdown, Git, and an AI Agent.md`
+- 입력: `raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md`
+- 입력: `raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md`
+- 입력: `raw/FORGET Loop Engineering. Graph Engineering is about THIS.md`
+- 입력: `raw/Getting Started with Andrej Karpathy’s “autoresearch” — Full Guide.md`
+- 입력: `raw/How to Become Ridiculously More Creative.md`
+- 입력: `raw/How to Design a Production-Ready RAG System (Architecture + Tradeoffs).md`
+- 입력: `raw/How to Use CodeGraph. Turn Any Folder Into a Knowledge Graph.md`
+- 입력: `raw/How to Use Graphify. Turn Any Folder Into a Knowledge Graph.md`
+- 입력: `raw/How to Use lat.md. Turn Any Folder Into a Validated Knowledge Graph.md`
+- 입력: `raw/How to use your mornings like the most productive 1%.md`
+- 입력: `raw/I Built a Full SaaS App on AWS for $1.50_month — Here’s the Architecture.md`
+- 입력: `raw/Is Life Actually Worse, or Are We Just More Anxious.md`
+- 입력: `raw/I’ll Instantly Know A Writer Used ChatGPT When I See This.md`
+- 입력: `raw/I’m a Neuroscientist & I Do These 3 Overlooked Exercises Daily to Age Better.md`
+- 입력: `raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`
+- 입력: `raw/Learn Transformers (LLMs) in 5 Minutes.md`
+- 입력: `raw/Mac Mini M4 vs RTX 5090 vs Cloud GPUs for Local AI in 2026.md`
+- 입력: `raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md`
+- 입력: `raw/Nothing is going to be the same after this. AI is changing fast..md`
+- 입력: `raw/Once You Get Money, Upgrade These Things Immediately.md`
+- 입력: `raw/Palantir CEO Says Only Two Types Will Survive AI (And Elite Degrees Aren’t One of Them)!.md`
+- 입력: `raw/Popular design trends that destroy conversion.md`
+- 입력: `raw/Steve Jobs’s 10–80–10 Rule Is Even More Useful in the AI Era.md`
+- 입력: `raw/The 4 Books That Taught Me More Than My College Degree.md`
+- 입력: `raw/The AI Productivity Argument Is Over.md`
+- 입력: `raw/The shortest boom in history. why the “AI Era” will end sooner than you think..md`
+- 입력: `raw/This is Why Nobody Can Tell I Used ChatGPT.md`
+- 입력: `raw/Understanding Transformers (Part 1). Why RNNs are nearly impossible to train.md`
+- 입력: `raw/Understanding Transformers (Part 2). How LSTMs fixed Recurrent Networks (mostly).md`
+- 입력: `raw/Understanding Transformers (Part 3). Positional encodings and word embeddings.md`
+- 입력: `raw/Understanding Transformers (Part 4). Attention is just a few matrices.md`
+- 입력: `raw/Understanding Transformers (Part 5). The final layers doing some heavy lifting.md`
+- 입력: `raw/Want To Be A Great Writer Don’t Focus On Writing.md`
+- 입력: `raw/What Makes Us Human.md`
+- 입력: `raw/What is an API A Simple Guide for Beginners (With Real Examples).md`
+- 입력: `raw/Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army. The Guy With 190K GitHub Stars Just Proved Me Right..md`
+- 입력: `raw/You Don’t Need More Time. You Need Better Constraints..md`
+- 입력: `raw/You don’t need thinking levels in Claude Code. You need Planning and Goal modes..md`
+- 입력: `raw/You’re still designing for an architecture that no longer exists.md`
+- 입력: `raw/my AI-generated apps earn $1,000_mo. here is how you can too.md`
+- 생성:
+    - [[10-80-10 법칙(10-80-10 Rule)]]
+    - [[AI 글쓰기 흔적(AI Writing Signatures)]]
+    - [[AI 상호 리뷰의 한계]]
+    - [[AI 탐지기(AI Detector)]]
+    - [[AI 협업 글쓰기(AI Collaborative Writing)]]
+    - [[AI 환각 현상]]
+    - [[Adam 옵티마이저(Adam optimizer)]]
+    - [[Antigravity]]
+    - [[COG]]
+    - [[COG(huytieu-COG-second-brain)]]
+    - [[Claude Code(클로드 코드)]]
+    - [[Codex(코덱스)]]
+    - [[GPTZero]]
+    - [[GTD 방법론]]
+    - [[Kimi K3]]
+    - [[LangGraph]]
+    - [[MVP 3단계 개발 프로세스]]
+    - [[MXFP4]]
+    - [[Moonchild AI]]
+    - [[NotebookLM]]
+    - [[PR 크기 및 수량 제어]]
+    - [[RAG 의사결정 프레임워크]]
+    - [[ZeroGPT]]
+    - [[autoresearch]]
+    - [[code-review-graph]]
+    - [[codegraph]]
+    - [[lat.md(Agent Lattice)]]
+    - [[microGPT]]
+    - [[tree-sitter]]
+    - [[가치 쌓기 전략]]
+    - [[감각 운동적 수반성]]
+    - [[감정적 보상 시각화를 통한 모방 심리 자극]]
+    - [[검증 레이어]]
+    - [[계획 모드(Planning Mode)]]
+    - [[고유한 지식]]
+    - [[고정된 메모리 뱅크(Frozen Memory Bank)]]
+    - [[공개 가중치 모델]]
+    - [[관계 투자(Investing in Relationships)]]
+    - [[교차 분석(Cross-analysis)]]
+    - [[그래서 어쩌라고 필터(The so what filter)]]
+    - [[그래프 엔지니어링]]
+    - [[금융 인프라(Financial Infrastructure)]]
+    - [[기만적인 디자인]]
+    - [[기보 체계]]
+    - [[데이터 소유권(Data Ownership)]]
+    - [[디자인 시스템 우선 접근 방식]]
+    - [[랜딩 페이지 메시지 전달 4단계 워크플로우]]
+    - [[레이어 정규화(Layer Normalization)]]
+    - [[레이어 정규화는 배치 전체가 아닌 토큰 단위로 작동한다]]
+    - [[리뷰 하중 지표화]]
+    - [[마음의 계산 이론]]
+    - [[멀티헤드 어텐션(Multi-Head Attention)]]
+    - [[메멘토 모리]]
+    - [[메모리 벽]]
+    - [[무한 레버리지]]
+    - [[미니 디자인 시스템]]
+    - [[미적 사용성 효과]]
+    - [[바이브 코딩(Vibe coding)]]
+    - [[복내측 전전두엽 피질]]
+    - [[브레인덤프(Braindump)]]
+    - [[비정동적 사고의 부재]]
+    - [[사고 노력 설정(Thinking Effort Setting)]]
+    - [[생산성 지렛대로서의 책임과 긴장감]]
+    - [[생성주의]]
+    - [[생체 리듬(Circadian Rhythm)]]
+    - [[서버리스 아키텍처(Serverless Architecture)]]
+    - [[선 요약 강제 원칙(Summary-first rule)]]
+    - [[성찰 루프(Reflection Loop)]]
+    - [[세스 고딘(Seth Godin)]]
+    - [[수면 인프라(Sleep Infrastructure)]]
+    - [[순환 신경망(RNN, Recurrent Neural Networks)]]
+    - [[숫자 기반 설득 패턴]]
+    - [[스퀘어블랙 블루프린트 방법론]]
+    - [[스토아철학(Stoicism)]]
+    - [[습관 자동화]]
+    - [[시간 구매(Buying Time)]]
+    - [[시간 제약과 생산성 고양]]
+    - [[신체 및 정신 자산화]]
+    - [[안드레 카파시(Andrej Karpathy)]]
+    - [[안드레 카파시의 LLM Wiki 워크플로우(Andrej Karpathy's LLM Wiki Workflow)]]
+    - [[안드레이 카파시의 지식 컴파일]]
+    - [[야부스 안구 운동 추적]]
+    - [[어텐션 메커니즘]]
+    - [[어텐션 메커니즘(attention mechanism)]]
+    - [[어포던스]]
+    - [[에너지 기반 일정 설계]]
+    - [[에이전트 중심의 개발 수명 주기(Agentic SDLC)]]
+    - [[엔시티피케이션(Enshittification)]]
+    - [[역발상 오해 검증(The explain it back to me wrong check)]]
+    - [[역전파(backpropagation)]]
+    - [[연구 파트너(Research Partner)]]
+    - [[옵시디언(Obsidian)]]
+    - [[우버(Uber)]]
+    - [[우선순위 기반 업무 단순화 워크플로우]]
+    - [[워커 에이전트(Worker Agent)]]
+    - [[위치 인코딩(Positional Encoding)]]
+    - [[음성 인식(STT, Speech-to-Text)]]
+    - [[의도 기반 디자인]]
+    - [[인간 창작 인증 마크(Human-crafted Certification Mark)]]
+    - [[인지적 비용]]
+    - [[인코더-디코더 어텐션(Encoder-Decoder Attention)]]
+    - [[일일 브리핑(Daily Brief)]]
+    - [[임베딩]]
+    - [[자가 어텐션(Self-Attention)]]
+    - [[자기 기술 투자(Skill Investment)]]
+    - [[자기회귀적 생성(autoregressive generation)]]
+    - [[자동 미분(autograd)]]
+    - [[자동 조종 모드]]
+    - [[자동 조종 모드 해제]]
+    - [[자아 고갈 이론]]
+    - [[잔차 연결(residual connection)]]
+    - [[잔차 연결은 그래디언트 흐름을 유지하고 학습 선택권을 부여한다]]
+    - [[장단기 메모리(LSTM, Long Short-Term Memory)]]
+    - [[전문가 혼합 아키텍처]]
+    - [[주의력 배터리]]
+    - [[지속 가능한 단시간 운동 루틴]]
+    - [[지식 증류]]
+    - [[진정성(Authenticity)]]
+    - [[챗 모드 디자인 이터레이션]]
+    - [[추론 시점 계산 곡선(Test-time Compute Curve)]]
+    - [[코드 리뷰 대기열 병목]]
+    - [[코드 변경 영향 범위 분석]]
+    - [[코드 위키]]
+    - [[코딩 에이전트]]
+    - [[키 비주얼 연관성 분석 그래프]]
+    - [[텐서 병렬 처리]]
+    - [[토크나이저(tokenizer)]]
+    - [[토큰화]]
+    - [[트랜스포머]]
+    - [[트레드밀 데스크 기반 작업 환경]]
+    - [[평가기 메커니즘(Evaluator Mechanism)]]
+    - [[풀 리퀘스트 위험도 산정]]
+    - [[피드포워드 신경망(Feed-Forward Networks)]]
+    - [[한 발로 서기 훈련(Standing on One Foot Exercise)]]
+    - [[핵심 전제 분석(Load-bearing assumption)]]
+    - [[헤드 에이전트(Head Agent)]]
+    - [[확증 편향 탈피 검증(The what would change my mind prompt)]]
+    - [[회의주의자의 시선(The skeptic's pass)]]
+    - [[후각 훈련(Olfactory Training)]]
+    - [[희소 모델 라우팅 실패]]
+- 수정:
+    - 없음
+- index 업데이트: 완료
+- 남은 검토: 없음
+
 ## 2026-07-30
 
 ### Ingest
@@ -6752,4 +6951,27 @@ aliases: []
 - 실행 방식: `status: needs-review` 노트 24개가 모두 `## 충돌`을 갖추었는지 재확인하고, index의 현재 점검 상태에 반영
 - 결과: needs-review 충돌 섹션 누락 0개
 - 조치: 검토 대기 노트의 스코프/가정/치환 가능성 메타데이터가 모두 기록된 상태로 정규화됨
+
+## 2026-07-30 (Sync 8 — Moonchild AI Ingest)
+
+### Ingest
+
+- 입력: `raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md`
+- 생성: [[Moonchild AI]]
+- 수정: [[AI 기반 엔드투엔드 UI UX 워크플로우]], [[UI UX 디자인 AI 워크플로우]], `wiki/index.md`
+- index 업데이트: 완료
+- 남은 검토: 없음. [[Moonchild AI]]는 신규 draft로 잘 정의되었으며, 기존 워크플로우에 연동됨.
+
+### 결정 기록
+
+- 결정: 신규 생성 및 연동
+- 대상: [[Moonchild AI]]
+- 근거: 디자인 시스템 우선(System-first) 설계와 챗 모드를 이용한 MVP 빌드 및 크레딧 절약 워크플로우를 체계적으로 정리하기 위함. 기존의 ChatGPT ➡️ Moonchild AI ➡️ Antigravity의 3단계 협업 프로세스를 [[AI 기반 엔드투엔드 UI UX 워크플로우]] 및 [[UI UX 디자인 AI 워크플로우]]에 연계하여 도구 체인의 완성도를 높임.
+
+### Lint
+
+- 실행 방식: `wiki-lint.py`를 실행하여 frontmatter 정합성, broken wikilink, 관련 노트 수, 고아 페이지 등을 검사
+- 결과: 오류 0개, 경고 0개, 고아 페이지 0개
+- 조치: 신규 생성된 [[Moonchild AI]]에 대해 linter 검사를 통과함
+
 

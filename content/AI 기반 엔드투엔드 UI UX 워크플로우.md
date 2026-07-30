@@ -11,8 +11,9 @@ aliases:
 - AI-기반-엔드투엔드-UI-UX-워크플로우
 sources:
 - raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md
+- raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-30
 ---
 # AI 기반 엔드투엔드 UI UX 워크플로우
 
@@ -34,6 +35,7 @@ updated: 2026-07-21
 2. **디자인 & 에셋 생성**:
    - **Flowstep AI**: 리서치 맥락 기반 초기 UI 레이아웃 및 고품질 코드 생성.
    - **Figma AI**: 레이어 정리(`Rename layers`), 마이크로카피 재작성(`Rewrite this`), 에셋 일괄 교체 (`Replace content`).
+   - **[[Moonchild AI]]**: 디자인 시스템 사전 정의 및 글로벌 라이브러리 연동 기반의 일관성 있는 프로덕션급 UI 및 프로토타입 설계. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
    - **Gemini**: 이미지 에셋 및 로고 베리에이션 대량 생성.
    - **Jitter AI**: 스플래시 화면 및 로딩 모션 애니메이션 신속 생성.
 3. **프로토타이핑 & 구현 & 테스트**:
