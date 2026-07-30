@@ -78,6 +78,7 @@ aliases: []
 
 | 날짜 | raw 자료 | 생성/수정 노트 | 상태 | 로그 |
 | --- | --- | --- | --- | --- |
+| 2026-07-30 | `raw/Popular design trends that destroy conversion.md` | [[스퀘어블랙 블루프린트 방법론]] (신규) | done | [[log#2026-07-30]] |
 | 2026-07-30 | `raw/You Don’t Need More Time. You Need Better Constraints..md` | [[메멘토 모리]] (신규), [[자동 조종 모드 해제]] (신규) | done | [[log#2026-07-30]] |
 | 2026-07-30 | `raw/What Makes Us Human.md` | [[복내측 전전두엽 피질]] (신규), [[감각 운동적 수반성]] (신규), [[기보 체계]] (신규), [[생성주의]] (신규), [[야부스 안구 운동 추적]] (신규), [[어포던스]] (신규), [[마음의 계산 이론]] (신규), [[체화된 인지]] (신규), [[인공지능 에이전트]] (신규) | done | [[log#2026-07-30]] |
 | 2026-07-30 | `raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md` | [[검증 레이어]] (신규), [[리뷰 하중 지표화]] (신규) | done | [[log#2026-07-30]] |

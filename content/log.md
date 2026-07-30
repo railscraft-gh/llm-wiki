@@ -15,10 +15,12 @@ aliases: []
 
 ### Ingest
 
+- 입력: `raw/Popular design trends that destroy conversion.md`
 - 입력: `raw/You Don’t Need More Time. You Need Better Constraints..md`
 - 입력: `raw/What Makes Us Human.md`
 - 입력: `raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md`
 - 생성:
+    - [[스퀘어블랙 블루프린트 방법론]]
     - [[메멘토 모리]]
     - [[자동 조종 모드 해제]]
     - [[복내측 전전두엽 피질]]
