@@ -17,6 +17,7 @@ aliases: []
 
 - 입력: `raw/You Don’t Need More Time. You Need Better Constraints..md`
 - 입력: `raw/What Makes Us Human.md`
+- 입력: `raw/My Best Senior Engineer Quit Last Month. Her Exit Interview Was Scheduled for Forty Minutes. The Last Five Changed How I Run My Team..md`
 - 생성:
     - [[메멘토 모리]]
     - [[자동 조종 모드 해제]]
@@ -29,6 +30,7 @@ aliases: []
     - [[마음의 계산 이론]]
     - [[체화된 인지]]
     - [[인공지능 에이전트]]
+    - [[검증 레이어]]
 - index 업데이트: 완료
 - 남은 검토: 없음
 
