@@ -20,11 +20,11 @@ updated: 2026-07-21
 
 - 2024년 DeepSeek-R1 논문에서 소개되었으며, PPO가 필요로 하던 막대한 메모리와 계산 비용을 크게 절감했다.
 - 정답이나 오답이 명확한 작업(수학 문제, 코드 실행 등)에서 스스로 사고(Reasoning)하는 능력을 극대화하는 데 탁월한 효과를 보였다.
-- LLM의 추론 성능을 강화학습만으로 OpenAI o1 수준으로 끌어올린 일등 공신 기술이다.
+- [[LLM]]의 추론 성능을 강화학습만으로 OpenAI o1 수준으로 끌어올린 일등 공신 기술이다.
 
 ## 상세
 
-일반적인 강화학습(특히 PPO)에서는 행동을 평가하기 위해 가치 함수를 측정하는 Critic 네트워크를 동원해야 한다. 이는 대규모 언어 모델(LLM) 환경에서 막대한 추가 메모리와 연산 리소스를 요구한다. GRPO(Group Relative Policy Optimization)는 이 Critic을 과감히 제거했다. 대신, 모델이 하나의 질문에 대해 여러 개(G개)의 답변 그룹을 생성하고, [룰 기반 평가나 정답 확인](file:///Users/railscraft/Obsidian/raw/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-RL-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C.md#L400)을 거쳐 이 그룹 내부의 '상대적 점수(Advantage)'를 바탕으로 PPO의 클리핑 목적함수를 업데이트한다.
+일반적인 강화학습(특히 PPO)에서는 행동을 평가하기 위해 가치 함수를 측정하는 Critic 네트워크를 동원해야 한다. 이는 대규모 언어 모델([[LLM]]) 환경에서 막대한 추가 메모리와 연산 리소스를 요구한다. GRPO(Group Relative Policy Optimization)는 이 Critic을 과감히 제거했다. 대신, 모델이 하나의 질문에 대해 여러 개(G개)의 답변 그룹을 생성하고, [룰 기반 평가나 정답 확인](file:///Users/railscraft/Obsidian/raw/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-RL-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C.md#L400)을 거쳐 이 그룹 내부의 '상대적 점수(Advantage)'를 바탕으로 PPO의 클리핑 목적함수를 업데이트한다.
 
 ## 예시
 

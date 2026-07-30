@@ -28,11 +28,11 @@ updated: 2026-07-29
 - **최신성 보장**: 데이터의 유효성을 보장하기 위해 리포트에 담기는 모든 정보는 최근 7일 이내의 정보로 엄격히 한정한다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L78](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L78).
 - **신뢰도 등급 명시**: 개별 정보에 대한 에이전트 자체 평가 신뢰도 등급(Confidence Level)을 표기하여 왜곡 없는 정보 판단을 돕는다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L78](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L78).
 - **점진적 성능 저하(Degrade Gracefully) 지원**: GitHub, Linear, Slack, PostHog 등 외부 협업 MCP 및 API 연동 인프라가 미비할 경우, 점진적 성능 저하(Degrade Gracefully) 정책에 따라 로컬 단일 채널(예: GitHub CLI)만 활용하여 최선의 리포트를 발행한다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L112](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L112).
-- **워커 에이전트(Worker Agent) 위임**: 리포트 작성을 위한 대용량 I/O 및 데이터 가공 작업은 하위 경량 워커 에이전트(Worker Agent)들에게 위임하여 메인 대화 컨텍스트 비용 낭비를 절감한다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L120](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L120).
+- **[[워커 에이전트(Worker Agent)]] 위임**: 리포트 작성을 위한 대용량 I/O 및 데이터 가공 작업은 하위 경량 [[워커 에이전트(Worker Agent)]]들에게 위임하여 메인 대화 컨텍스트 비용 낭비를 절감한다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L120](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L120).
 
 ## 절차
 
-COG 프레임워크 내에서 일일 브리핑이 수립되는 단계별 워크플로우는 다음과 같다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L78](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L78):
+[[COG]] 프레임워크 내에서 일일 브리핑이 수립되는 단계별 워크플로우는 다음과 같다 [raw/Build a Second Brain in 15 Minutes. Just Markdown, Git, and an AI Agent.md#L78](file:///Users/railscraft/Obsidian/raw/Build%20a%20Second%20Brain%20in%2015%20Minutes.%20Just%20Markdown,%20Git,%20and%20an%20AI%20Agent.md#L78):
 
 1. **브리핑 요청 입력**: 사용자가 에이전트에게 `Give me my daily brief` 명령어를 입력하여 브리핑 절차를 트리거한다.
 2. **역할군 및 프로필 조회**: 에이전트가 온보딩 시 생성된 사용자 프로필 문서를 열고, 현재 사용자의 역할(PM, 엔지니어, 디자이너 등)에 할당된 관심 키워드 및 우선순위를 파악한다.

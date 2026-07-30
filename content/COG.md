@@ -16,7 +16,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# COG(huytieu-COG-second-brain)
+# [[COG(huytieu-COG-second-brain)]]
 
 ## 한 줄 정의
 
@@ -27,7 +27,7 @@ Git, Obsidian, 그리고 AI 에이전트(Agent) 환경을 기반으로 동작하
 - **3대 핵심 기둥**: 인지(Cognition, AI 인지), 옵시디언(Obsidian, 마크다운 시각화), 깃(Git, 버전 제어 및 롤백)을 결합하여 영구적인 로컬 지식 기반을 제공한다.
 - **저장 계층 분리**: 시스템 구동 프레임워크(스킬, 코어 스크립트)와 사용자 데이터(노트, 프로필)의 저장 영역을 철저히 격리하여 안전한 업데이트가 가능하다.
 - **고난도 추론과 I/O 작업 분리**: 의사결정은 고성능 헤드 에이전트(Opus)가 조율하고, 파일 입출력 및 세부 수작업은 6개의 경량 워커 에이전트(Worker Agent, 작업자 에이전트)에 위임해 API 비용을 최소화한다.
-- **성찰 루프(Reflection Loop)**: 브레인덤프(Braindump) 수집, 주간 분석(Weekly review), 월간 데이터 통합(Consolidate)으로 이어지는 순환 피드백 구조를 지원한다.
+- **[[성찰 루프(Reflection Loop)]]**: [[브레인덤프(Braindump)]] 수집, 주간 분석(Weekly review), 월간 데이터 통합(Consolidate)으로 이어지는 순환 피드백 구조를 지원한다.
 - **확장성**: `SKILL.md` 마크다운 파일 정의만으로 코어 수정 없이 새로운 에이전트 협업 스킬을 추가할 수 있다.
 
 ## 설치/실행

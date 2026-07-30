@@ -77,7 +77,7 @@ AI의 고질적인 문맥 유실(건망증)을 해결하기 위해 세 가지 �
 Hermes 에이전트 로컬 구동 시 핵심 병목인 KV 캐시의 메모리 사용량을 해결하기 위해 구글 리서치(ICLR 2026 채택, arXiv:2504.19874)의 **[[TurboQuant]]** 캐시 압축 기술을 백엔드에 장착할 수 있다.
 - **작동 원리**: 아웃라이어 이상치를 가우시안으로 고르게 펴주는 폴라퀀트(PolarQuant) 1단계 압축과 잔차 오차를 차원당 1비트로 보정하는 QJL(Quantised Johnson-Lindenstrauss) 2단계 결합 구조로 캐시 정밀도를 무손실 유지한다.
 - **정량적 메모리 효과**: 48GB Unified Memory를 갖춘 M4 Pro 기기에서 `arozanov/turboquant-mlx` 모듈을 연동해 Qwen2.5-32B-Instruct-4bit로 16K 컨텍스트를 돌릴 때, KV 캐시 공간이 4.2GB에서 897MB로 **4.6배** 급감한다. M4 Max 64GB 기기에서 Gemma 4 31B 128K 구동 시 KV 캐시를 13.3GB에서 4.9GB로 줄이며 피크 메모리를 75.2GB에서 65.8GB로 낮춘다.
-- **통합 생태계**: `mlx-vlm` v0.4.3에서 Gemma 4 출시 당일(day-zero) 지원과 [[TurboQuant]] 통합을 완료했으며, SwiftLM 라이브러리를 통해 네이티브 iOS 연동 및 Swift LLM 서버로도 활용된다.
+- **통합 생태계**: `mlx-vlm` v0.4.3에서 Gemma 4 출시 당일(day-zero) 지원과 [[TurboQuant]] 통합을 완료했으며, SwiftLM 라이브러리를 통해 네이티브 iOS 연동 및 Swift [[LLM]] 서버로도 활용된다.
 
 ### 5. 주요 설정 지표 (Agent Settings)
 - `max iterations`: 도구 호출 최대 반복 횟수 (기본값: 60)
@@ -146,7 +146,7 @@ Hermes Agent는 경험을 코드로 자산화하여 영구 스킬로 등록하�
 - [2026년 AI 에이전트 워크플로우 핵심 패턴 분석](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%ED%95%B5%EC%8B%AC%20%ED%8C%A8%ED%84%B4%20%EB%B6%84%EC%84%9D.md)
 - [완벽하게 기계 가독성을 갖춘 디자인 시스템](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C%20%EA%B8%B0%EA%B3%84%20%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84%20%EA%B0%96%EC%B6%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
 - [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
-- [2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20LLM%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
+- [2026년 오픈소스 [[LLM]] 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20[[LLM]]%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
 - [파이썬 AI 에이전트 프레임워크 6종 비교 분석](file:///Users/railscraft/Obsidian/raw/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%206%EC%A2%85%20%EB%B9%84%EA%B5%90%20%EB%B6%84%EC%84%9D.md)
 - [AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EC%9D%98%2080%ED%8D%BC%EC%84%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md)
 - [UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EA%B0%80%EC%A7%80%EC%99%80%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)

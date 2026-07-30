@@ -68,7 +68,7 @@ AI 에이전트 런타임 역할 맵은 agent 시스템을 확장 층, 실행 �
 
 ### 4. 생태계 층
 
-네 번째는 [[AI 오픈소스 작업대]]다. local model runtime, RAG platform, workflow builder, terminal assistant처럼 어떤 작업 표면이 오픈소스로 표준화되고 있는지 읽는다. 이 층은 "요즘 agent들은 어떤 공개 작업대 위에서 조립되는가"를 본다.
+네 번째는 [[AI 오픈소스 작업대]]다. local model runtime, [[RAG]] platform, workflow builder, terminal assistant처럼 어떤 작업 표면이 오픈소스로 표준화되고 있는지 읽는다. 이 층은 "요즘 agent들은 어떤 공개 작업대 위에서 조립되는가"를 본다.
 
 ### 5. 제품 층
 

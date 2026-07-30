@@ -23,10 +23,10 @@ updated: 2026-07-21
 
 ## 핵심 요지
 - **반응형(Reactive) Compaction**:
-  - Claude Code 방식: 윈도우 한계 직전까지 컨텍스트를 뜨겁게 유지하다가 [잔여 13,000 토큰 이내로 좁혀질 때 단일 스트리밍 LLM 요약 발동](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L55).
+  - Claude Code 방식: 윈도우 한계 직전까지 컨텍스트를 뜨겁게 유지하다가 [잔여 13,000 토큰 이내로 좁혀질 때 단일 스트리밍 [[LLM]] 요약 발동](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L55).
   - 정상 경로에서 고속 실행 및 프롬프트 캐시 재사용 이점 극대화.
 - **선제형(Predictive) Compaction**:
-  - [[OpenClaw]] 방식: 매 LLM 호출 전에 요청 토큰을 예측하고 [1.2배 안전 마진을 적용](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L57)하여 단계별(도구 결과 자르기 $\rightarrow$ 요약 $\rightarrow$ 병합) 방어막 가동.
+  - [[OpenClaw]] 방식: 매 [[LLM]] 호출 전에 요청 토큰을 예측하고 [1.2배 안전 마진을 적용](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L57)하여 단계별(도구 결과 자르기 $\rightarrow$ 요약 $\rightarrow$ 병합) 방어막 가동.
   - API 제공자에 상관없이 토큰 폭발 오버플로우 방지.
 
 ## 상세

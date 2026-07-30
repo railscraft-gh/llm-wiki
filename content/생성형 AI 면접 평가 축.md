@@ -54,13 +54,13 @@ updated: 2026-07-10
 # 생성형 AI 면접 평가 축
 
 ## 한 줄 정의
-생성형 AI 면접 평가 축은 GenAI·LLM 엔지니어 및 범용 소프트웨어 엔지니어 채용 시, AI 에이전트의 보급으로 인해 암기식 코딩 테스트에서 탈피하여 시스템 아키텍처 설계, AI 페어 프로그래밍 실무, 슬롭(Slop) 탐지 및 코드 비평(Critique) 능력을 검증하는 다차원 평가 프레임이다.
+생성형 AI 면접 평가 축은 GenAI·[[LLM]] 엔지니어 및 범용 소프트웨어 엔지니어 채용 시, AI 에이전트의 보급으로 인해 암기식 코딩 테스트에서 탈피하여 시스템 아키텍처 설계, AI 페어 프로그래밍 실무, 슬롭(Slop) 탐지 및 코드 비평(Critique) 능력을 검증하는 다차원 평가 프레임이다.
 
 ## 핵심 요지
 - **AI 페어 프로그래밍 실무 검증**: LeetCode식 손코딩의 변별력 상실로 인해, 면접관이 실제 에이전트 환경(Cursor, Claude Code 등)을 제공하고 제한된 시간(예: 30분) 내에 마이크로서비스를 구현·테스트하게 하는 실무 중심 과제가 주류를 이룬다.
 - **슬롭(Slop) 탐지와 코드 비평**: 에이전트가 자동 생성한 코드의 결함(보안 취약점, 쿼리 비효율, 예외 처리 누락, 슬롭스쿼팅 등)을 날카롭게 포착하고 리팩토링 방향을 지휘하는 시니어 리뷰어로서의 역량을 평가한다.
-- **시스템 trade-off 및 실패 복구 검증**: 단순 프레임워크 사용법보다 RAG 튜닝, 에이전트 교착 상태(Deadlock) 해결, observability 추적, 비용 가버너 설계 등 운영 중 겪은 실패와 트레이드오프 판단을 깊게 묻는다.
-- RAGAS 평가지표 검증: 단순 데이터 검색을 넘어 RAGAS 프레임워크의 4대 핵심 평가지표(Faithfulness, Answer Relevance, Context Precision, Context Recall)를 정량적으로 분석하고, lost in the middle 병목을 우회하는 아키텍처 능력을 평가한다.
+- **시스템 trade-off 및 실패 복구 검증**: 단순 프레임워크 사용법보다 [[RAG]] 튜닝, 에이전트 교착 상태(Deadlock) 해결, observability 추적, 비용 가버너 설계 등 운영 중 겪은 실패와 트레이드오프 판단을 깊게 묻는다.
+- [[RAG]]AS 평가지표 검증: 단순 데이터 검색을 넘어 [[RAG]]AS 프레임워크의 4대 핵심 평가지표(Faithfulness, Answer Relevance, Context Precision, Context Recall)를 정량적으로 분석하고, lost in the middle 병목을 우회하는 아키텍처 능력을 평가한다.
 - 오케스트레이션 및 ReAct 한계 제어: ReAct 루프의 무한 루프 차단(Max steps), LoRA/QLoRA 기반의 자원 효율적 파인튜닝 분기점, 그리고 PPO/DPO를 결합한 alignment 전략에 대한 엔지니어링 trade-off 지식을 확인한다.
 
 ## 상세
@@ -73,26 +73,26 @@ AI 에이전트가 코딩의 장벽을 낮춤에 따라 채용 평가의 초점�
 
 ### 2. GenAI 시스템 엔지니어링 6대 평가 축
 - **모델·추론 기초**: 어텐션(Attention) 제곱 비용 한계, 컨텍스트 윈도우 한계 및 Lost in the middle 극복 원리.
-- **RAG 및 컨텍스트 엔지니어링**: RAG 튜닝(청킹, 하이브리드 검색, 리랭커), 벡터 데이터베이스 튜닝, 평가 지표(Faithfulness, Answer Relevance).
+- **[[RAG]] 및 컨텍스트 엔지니어링**: [[RAG]] 튜닝(청킹, 하이브리드 검색, 리랭커), 벡터 데이터베이스 튜닝, 평가 지표(Faithfulness, Answer Relevance).
 - **에이전트 오케스트레이션**: ReAct 루프 제어, 멱등성(Idempotency), Durable Execution(지속성 실행) 및 루프 탈출 조건 설계.
 - **파인튜닝 및 정렬**: LoRA/QLoRA 매커니즘, RLHF/DPO의 실무 도입 분기점 및 모델 한계 극복 판단.
-- **평가 및 Observability**: Offline/Online Eval, LLM-as-judge 편향 제거, Latency 및 Token 가버닝.
-- **보안 및 가드레일**: 멀티테넌트 RAG 테넌트 격리, [[Lethal Trifecta]] 위험 통제, 슬롭스쿼팅 방어 방침.
+- **평가 및 Observability**: Offline/Online Eval, [[LLM]]-as-judge 편향 제거, Latency 및 Token 가버닝.
+- **보안 및 가드레일**: 멀티테넌트 [[RAG]] 테넌트 격리, [[Lethal Trifecta]] 위험 통제, 슬롭스쿼팅 방어 방침.
 
 ### 3. 실무 GenAI 시스템 심층 검증 영역
-- **RAG 및 컨텍스트 엔지니어링**: RAG 튜닝 시 단순 벡터 검색(Vector-only)의 한계를 극복하기 위해 Dense retrieval과 BM25/TF-IDF 기반 Sparse retrieval을 결합하는 하이브리드 검색(Hybrid Search) 설계 여부, bi-encoder 기반 대형 검색 후 cross-encoder reranker를 사용한 top-k 재정렬, 그리고 Lost in the middle을 우회하기 위한 청킹(chunking) 및 context compaction 제어를 정밀 확인한다.
+- **[[RAG]] 및 컨텍스트 엔지니어링**: [[RAG]] 튜닝 시 단순 벡터 검색(Vector-only)의 한계를 극복하기 위해 Dense retrieval과 BM25/TF-IDF 기반 Sparse retrieval을 결합하는 하이브리드 검색(Hybrid Search) 설계 여부, bi-encoder 기반 대형 검색 후 cross-encoder reranker를 사용한 top-k 재정렬, 그리고 Lost in the middle을 우회하기 위한 청킹(chunking) 및 context compaction 제어를 정밀 확인한다.
 - **에이전트 루프 제어**: ReAct 루프 가동 시 동일 상태가 기계적으로 반복되어 무한 루프에 빠지는 현상이나 비용 폭주(Runaway costs)를 제어하기 위한 가버너(Governor), Allowlist 도구 지정, Egress default-deny 정책 기반 가드레일 설계 능력을 점검한다.
 - **파인튜닝 및 alignment**: LoRA/QLoRA의 저차원 적응 행렬 메커니즘 차이점, reward hacking 및 collapse 한계를 지닌 PPO 기반 RLHF의 대안으로 DPO(Direct Preference Optimization)를 도입하는 실제적 기준을 묻는다.
 - **추론 지연(Latency) 최적화**: 프로덕션 챗봇의 지연 시간을 최소화하기 위한 speculative decoding(작은 draft model로 다량 생성 후 큰 target model로 검증) 도입 검토 유무와 prompt caching 활용법을 다룬다.
 
 ## 예시
 
-- **RAG 설계 질문**: "단순 Vector Search보다 검색 정확도를 30% 높인 하이브리드 검색과 리랭커 튜닝, 그리고 Lost in the Middle 현상을 예방하기 위한 컨텍스트 엔지니어링 설계를 설명해 보십시오."
+- **[[RAG]] 설계 질문**: "단순 Vector Search보다 검색 정확도를 30% 높인 하이브리드 검색과 리랭커 튜닝, 그리고 Lost in the Middle 현상을 예방하기 위한 컨텍스트 엔지니어링 설계를 설명해 보십시오."
 - **코드 비평 질문**: "AI가 임의로 구현한 결제 연동 코드에서 슬롭 API 호출과 트랜잭션 롤백 누락 결함을 지적해 보십시오."
 - **에이전트 조율 질문**: "장기 실행 에이전트의 무한 재시도로 인한 비용 폭주와 API Rate Limit 도달 문제를 방지하기 위해 가버너(Governor)와 루프 탐지기를 설계한 경험을 말씀해 보십시오."
 
 ## 예시
-- **RAG 설계 면접 질문 예시**: "RAGAS의 4가지 평가 축을 기준으로 삼아 RAG 파이프라인의 faithfulness를 보장하고, 롱 컨텍스트 하에서 lost in the middle 문제를 해결하기 위해 hybrid search와 cross-encoder reranker를 조립해 성능을 최적화한 실무 경험을 설명하십시오."
+- **[[RAG]] 설계 면접 질문 예시**: "[[RAG]]AS의 4가지 평가 축을 기준으로 삼아 [[RAG]] 파이프라인의 faithfulness를 보장하고, 롱 컨텍스트 하에서 lost in the middle 문제를 해결하기 위해 hybrid search와 cross-encoder reranker를 조립해 성능을 최적화한 실무 경험을 설명하십시오."
 
 ## 충돌
 
@@ -133,12 +133,12 @@ AI 에이전트가 코딩의 장벽을 낮춤에 따라 채용 평가의 초점�
 - [Your Wandering Mind Is Not the Enemy of Focus](file:///Users/railscraft/Obsidian/raw/Your%20Wandering%20Mind%20Is%20Not%20the%20Enemy%20of%20Focus.md)
 - [BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk.](file:///Users/railscraft/Obsidian/raw/BofA%E2%80%99s%20May%20Survey%20Says%20Investors%20Are%20Back%20in%20Stocks.%20The%2030-Year%20Is%20the%20Risk..md)
 - [내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%20%EC%A3%BC%EC%9D%98%20%EC%A7%91%EC%A4%91%20%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%90%98%EB%8F%8C%EB%A0%A4%EC%A4%80%2011%EA%B0%80%EC%A7%80%20%EC%82%AC%EC%86%8C%ED%95%9C%20%EC%83%9D%ED%99%9C%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%EB%B3%80%ED%99%94.md)
-- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/LLM%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
+- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
 - [2026년을 위한 웹 디자인 및 빌드 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9B%B9%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%B0%8F%20%EB%B9%8C%EB%93%9C%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
 - [These 3 ETFs Created More Millionaires Than Any Stock](file:///Users/railscraft/Obsidian/raw/These%203%20ETFs%20Created%20More%20Millionaires%20Than%20Any%20Stock.md)
-- [Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20LLM%20in%2030%20Minutes%20%28Coding%2C%20RAG%2C%20Voice%29.md)
+- [Run a Useful Local [[LLM]] in 30 Minutes (Coding, [[RAG]], Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20[[LLM]]%20in%2030%20Minutes%20%28Coding%2C%20[[RAG]]%2C%20Voice%29.md)
 - [만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다](file:///Users/railscraft/Obsidian/raw/%EB%A7%8C%EC%95%BD%20%EB%8B%A8%205%ED%8E%B8%EC%9D%98%20AI%20%EB%85%BC%EB%AC%B8%EB%A7%8C%20%EC%9D%BD%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%B0%94%EB%A1%9C%20%EC%9D%B4%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.md)
 - [AI 코딩 에이전트와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
-- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/RAG%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
+- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/[[RAG]]%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
 

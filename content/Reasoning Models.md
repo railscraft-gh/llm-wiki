@@ -28,7 +28,7 @@ updated: '2026-06-22'
 
 ## 한 줄 정의
 
-Reasoning Models는 RL로 Chain-of-Thought 능력을 학습시키고 추론 시 더 긴 사고 시간(test-time compute)을 허용해 어려운 문제를 풀어내는 LLM 계열이다.
+Reasoning Models는 RL로 Chain-of-Thought 능력을 학습시키고 추론 시 더 긴 사고 시간(test-time compute)을 허용해 어려운 문제를 풀어내는 [[LLM]] 계열이다.
 
 ## 핵심 요지
 
@@ -38,7 +38,7 @@ Reasoning Models는 RL로 Chain-of-Thought 능력을 학습시키고 추론 시 
 
 ## 상세
 
-기존 LLM은 한 번에 답을 출력하도록 학습됐다. Reasoning Models는 답하기 전에 자유롭게 사고 과정을 길게 쓰고, 그 사고가 최종 정답에 도달하면 보상을 받는 방식으로 학습된다. 사고 토큰이 길어질수록 어려운 reasoning 문제를 더 잘 풀지만 응답 시간과 비용이 늘어난다.
+기존 [[LLM]]은 한 번에 답을 출력하도록 학습됐다. Reasoning Models는 답하기 전에 자유롭게 사고 과정을 길게 쓰고, 그 사고가 최종 정답에 도달하면 보상을 받는 방식으로 학습된다. 사고 토큰이 길어질수록 어려운 reasoning 문제를 더 잘 풀지만 응답 시간과 비용이 늘어난다.
 
 **학습 방식:** [[LLM 정렬 기법]]에서 다루는 [[GRPO]]는 reasoning model 학습의 핵심 도구다. 동일 프롬프트에 여러 답변을 생성해 그룹 평균 보상으로 Advantage를 계산한다(Aᵢ = rᵢ - mean(r)). 정답이 채점 가능한 [[검증 가능한 도메인]](수학, 코딩)에서 특히 효과적이다. DeepSeek-R1은 이 방법으로 OpenAI o1과 경쟁할 수준의 추론 능력을 RL만으로 얻었다.
 

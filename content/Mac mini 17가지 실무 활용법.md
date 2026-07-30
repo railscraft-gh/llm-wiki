@@ -24,7 +24,7 @@ aliases:
 ## 핵심 요지
 - Mac mini는 저렴한 초기 구입 비용에도 불구하고 24시간 365일 무소음 상시 가동이 가능한 물리 서버 자산이다.
 - 아이들링(Idle) 시 약 7W 수준의 저전력만 소비하므로 연간 운용 전력비 부담이 극히 적다. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L20)
-- Apple Silicon의 통합 메모리(Unified Memory) 아키텍처 덕분에 고가의 독립 VRAM 카드 없이도 16GB RAM 환경에서 대용량 로컬 LLM을 프라이빗하게 상시 구동할 수 있다. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L64)
+- Apple Silicon의 통합 메모리(Unified Memory) 아키텍처 덕분에 고가의 독립 VRAM 카드 없이도 16GB RAM 환경에서 대용량 로컬 [[LLM]]을 프라이빗하게 상시 구동할 수 있다. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L64)
 - 17가지 활용 레시피는 인프라/보안, 개인용 AI/클라우드, 스마트홈, 미디어/아카이빙, 생활 편의 영역으로 나뉘며, 단일 Mac mini 환경에서 멀티 프로세스로 동시 운용이 가능하다.
 
 ## 상세
@@ -32,7 +32,7 @@ aliases:
 ### 17가지 실무 활용 분류
 
 1. **프라이빗 AI & 클라우드 맥 환경**
-   - **온디바이스 LLM 서버**: Ollama, Enchanted, Tailscale 조합을 활용해 외부 클라우드 전송 없이 100% 프라이빗한 개인 전용 ChatGPT를 구동. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L54-L58)
+   - **온디바이스 [[LLM]] 서버**: Ollama, Enchanted, Tailscale 조합을 활용해 외부 클라우드 전송 없이 100% 프라이빗한 개인 전용 ChatGPT를 구동. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L54-L58)
    - **원격 개발 및 워크스테이션**: Jump Desktop 접속으로 외부에서 iPad/iPhone을 통해 접속하며, 무거운 백그라운드 빌드 연산이나 Claude Code 세션을 상시 실행. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L77-L81)
    - **사설 클라우드 & 로컬 금고**: Nextcloud, Immich(사진 자동 동기화 및 AI 얼굴 인식), Vaultwarden(Bitwarden 호환 사설 암호 서버)을 구축해 유료 빅테크 클라우드 구독을 해지. [raw/The 17 Unexpected Uses of Mac mini Most People Don’t Know About.md](file:///Users/railscraft/Obsidian/raw/The%2017%20Unexpected%20Uses%20of%20Mac%20mini%20Most%20People%20Don%E2%80%99t%20Know%20About.md#L222-L274)
 

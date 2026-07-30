@@ -38,7 +38,7 @@ Obsidian vault용 Slash Command 운영은 Claude Code를 vault 루트에서 실�
 
 이 workflow는 [[Claude Code 오케스트레이션]]의 개인 지식 버전으로 볼 수 있다. 개발 저장소에서는 `/test`, `/review`, `/deploy-check` 같은 명령어가 반복 업무를 줄였다면, vault에서는 `/connect`가 orphan note와 브리지 노트를 찾고 `/graduate`가 주간 노트의 미완성 생각을 seed 노트로 분리한다. 즉 slash command는 "프롬프트 단축"이 아니라 자주 쓰는 사고 절차를 이름 붙인 운영 인터페이스다.
 
-또한 이 패턴은 [[LLM Wiki 운영 패턴]]과도 상보적이다. LLM Wiki가 raw를 evergreen wiki로 바꾸는 지식 베이스 운영이라면, Obsidian slash command 운영은 이미 쌓인 vault 안에서 검색, 연결, 분류, 반박, 아이디어 발굴을 자동화하는 상호작용 계층이다.
+또한 이 패턴은 [[LLM Wiki 운영 패턴]]과도 상보적이다. [[LLM]] Wiki가 raw를 evergreen wiki로 바꾸는 지식 베이스 운영이라면, Obsidian slash command 운영은 이미 쌓인 vault 안에서 검색, 연결, 분류, 반박, 아이디어 발굴을 자동화하는 상호작용 계층이다.
 
 ### 커스텀 슬래시 커맨드 상세 작동 원리
 

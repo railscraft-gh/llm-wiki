@@ -16,22 +16,22 @@ tags:
 type: concept
 updated: '2026-06-22'
 ---
-# LLM 정렬 기법
+# [[LLM]] 정렬 기법
 
 ## 한 줄 정의
 
-LLM 정렬 기법은 사전학습된 LLM을 인간의 취향과 의도에 맞게 조정하는 RL 기반 방법들로, RLHF에서 DPO, [[GRPO]]로 진화하고 있다.
+[[LLM]] 정렬 기법은 사전학습된 [[LLM]]을 인간의 취향과 의도에 맞게 조정하는 RL 기반 방법들로, RLHF에서 DPO, [[GRPO]]로 진화하고 있다.
 
 ## 핵심 요지
 
-- 기본 파이프라인: Pretrained LLM → SFT → RLHF → Aligned LLM
+- 기본 파이프라인: Pretrained [[LLM]] → SFT → RLHF → Aligned [[LLM]]
 - RLHF는 Reward Model 학습 + PPO로 정책 최적화하지만 복잡하고 불안정하다.
 - DPO는 Reward Model 없이 선호도 데이터로 직접 학습해 단순화했다.
 - [[GRPO]]는 Critic 네트워크까지 제거하고 그룹 내 상대적 보상으로 DeepSeek-R1 수준의 추론 능력을 달성했다.
 
 ## 상세
 
-**RLHF**는 두 단계로 구성된다. 먼저 인간 라벨러가 여러 답변을 선호도 순으로 정렬한 데이터로 Reward Model(RM)을 학습한다. 그 다음 PPO로 LLM을 업데이트하는데, RM이 준 보상을 최대화하면서 원래 모델과의 KL 발산 패널티로 언어 능력 저하를 방지한다. 하지만 RM 자체가 불완전할 수 있고(Reward Hacking), 인간 라벨링 비용이 크다.
+**RLHF**는 두 단계로 구성된다. 먼저 인간 라벨러가 여러 답변을 선호도 순으로 정렬한 데이터로 Reward Model(RM)을 학습한다. 그 다음 PPO로 [[LLM]]을 업데이트하는데, RM이 준 보상을 최대화하면서 원래 모델과의 KL 발산 패널티로 언어 능력 저하를 방지한다. 하지만 RM 자체가 불완전할 수 있고(Reward Hacking), 인간 라벨링 비용이 크다.
 
 **DPO**(Direct Preference Optimization, 2023, Stanford)는 Reward Model을 명시적으로 학습하지 않는다. Reward Model과 정책 사이의 관계를 수학적으로 유도해 PPO 없이 Closed-form 솔루션을 증명했다. 메모리 절약과 학습 단순화라는 장점이 있지만, 정책과 참조 모델이 너무 달라지면 성능이 저하될 수 있다.
 

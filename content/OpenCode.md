@@ -29,7 +29,7 @@ updated: 2026-07-10
 OpenCode는 터미널에서 provider, model, agent, skill, MCP 설정을 조합해 코딩 작업을 수행하는 오픈소스 AI coding agent다.
 
 ## 핵심 요지
-- OpenCode는 Claude Code류 터미널 agent workflow를 여러 LLM provider와 모델 선택 위에서 구현한다.
+- OpenCode는 Claude Code류 터미널 agent workflow를 여러 [[LLM]] provider와 모델 선택 위에서 구현한다.
 - Plan agent와 Build agent를 분리하면 [[Plan Mode 기반 AI 작업]]과 구현 권한을 도구 설정으로 나눌 수 있다.
 - `AGENTS.md`, skill, subagent, MCP는 반복 지시와 외부 도구 연결을 repo 안에 고정하는 장치다.
 - 모델, 무료 gateway, provider, keybinding, config schema는 빠르게 바뀌므로 실무 적용 전 공식 문서를 확인한다.
@@ -49,7 +49,7 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 ### 1. 세션 제어 및 CLI 명령어 활용
 - **`/new`**: 대화 컨텍스트를 초기화하여 이전 대화의 토큰 소음을 완벽히 제거한 새 세션을 기동한다.
 - **`/sessions`**: 이전 작업 이력 목록을 호출하고 특정 세션을 선택해 복구한다.
-- **`/models`**: 현재 활성화된 LLM 모델을 전환한다.
+- **`/models`**: 현재 활성화된 [[LLM]] 모델을 전환한다.
 - **`/variants`**: 추론 노력(reasoning effort)의 수준을 조절하여 난이도에 맞는 연산을 선택한다.
 - **스킬 로드**: `skills.sh` 웹사이트에서 복사한 스킬을 `.agents/skills/` 폴더에 로드하여 에이전트 지시를 확장한다.
 - **서브에이전트 모니터링**: 메인 에이전트가 작업을 백그라운드 서브에이전트에게 분할 위임한 상태에서 **Ctrl+X -> 아래 방향키** 단축키로 병렬 작업 현황을 실시간 파악한다.

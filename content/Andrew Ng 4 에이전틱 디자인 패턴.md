@@ -110,4 +110,4 @@ Andrew Ng의 에이전틱 디자인 패턴은 모델 자체를 변경하지 않�
 
 - evolution-of-ai-agentic-patterns
 - raw/2026년 AI 에이전트 워크플로우 핵심 패턴 분석.md
-- Andrew Ng, "How Agents Can Improve LLM Performance — 4 Agentic Design Patterns" (Sequoia AI Ascent + The Batch), 2024.03
+- Andrew Ng, "How Agents Can Improve [[LLM]] Performance — 4 Agentic Design Patterns" (Sequoia AI Ascent + The Batch), 2024.03

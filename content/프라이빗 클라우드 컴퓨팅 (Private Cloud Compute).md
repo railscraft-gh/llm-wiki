@@ -55,4 +55,4 @@ $ fm chat
 ## 출처
 
 - Apple Security Research Blog (PCC Architecture Analysis) [Apple Security](https://security.apple.com/blog/private-cloud-compute/)
-- "macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It." (Medium, 2026-07-15)
+- "macOS 27 Has a Hidden [[LLM]] Inside — 10 (Amazing) Things You Can Do With It." (Medium, 2026-07-15)

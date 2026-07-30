@@ -34,7 +34,7 @@ updated: 2026-07-10
 
 ## 핵심 요지
 - **시스템 엔지니어링으로서의 AI**: [[에이전틱 AI 엔지니어]]는 모델을 학습(training)하거나 파인튜닝(fine-tuning)하는 연구자가 아니며, 사전 학습된 파운데이션 모델을 시스템에 안정적으로 배치하고 조율하는 시스템 엔지니어링 실무자다.
-- **2026년 표준화된 10대 기술**: 필요 역량은 4개 계층(Foundation, LLM, Agent, Production)의 10가지 기술로 정의되며, 채용 공고에 등장하는 27가지 기술의 난잡한 나열에서 진짜 실무에 필요한 지식만 추출해 명확히 정리했다.
+- **2026년 표준화된 10대 기술**: 필요 역량은 4개 계층(Foundation, [[LLM]], Agent, Production)의 10가지 기술로 정의되며, 채용 공고에 등장하는 27가지 기술의 난잡한 나열에서 진짜 실무에 필요한 지식만 추출해 명확히 정리했다.
 - **학습의 의존성 구조**: 학습 순서는 단순 달력 일정이 아니라, 기초 인프라(Phase 1) -> 단일 에이전트(Phase 2) -> 프로덕션 단일 에이전트(Phase 3) -> 멀티 에이전트 협업(Phase 4) -> 운영(Phase 5)으로 이어지는 엄격한 의존성 그래프(dependency graph) 구조를 띤다.
 - **건너뛰어야 할 기술 부채**: 프롬프트 엔지니어링 강의, 과도한 벡터 DB 비교분석, 구식 LangChain 패턴(v0.0.x의 AgentExecutor 등), 로우레벨 transformer 수학 등 4가지는 2026년 실무에서 과감히 건너뛰어야 할 요소다.
 - Durable Execution 및 멱등성: 서드파티 API 실패나 서버 재부팅(Crash) 상황에서 에이전트가 상태를 재개하도록 돕는 메시지 큐, 지수 백오프, 멱등성(Idempotency) 인프라가 Foundation Layer of the roadmap의 핵심이다.
@@ -59,7 +59,7 @@ updated: 2026-07-10
 - **2. HTTP, 스트리밍, 구조화된 출력**: SSE(Server-Sent Events)를 통한 실시간 스트리밍 제어, JSON Schema 및 OpenAPI 스펙을 활용한 도구 정의 및 인자(arguments) 매핑.
 - **3. 분산 시스템 기초**: 에이전트의 장시간(10초 이상) 실행 및 네트워크 실패 복구를 위해 Message Queue, Background Worker, 재시도 로직, 멱등성(Idempotency), 지수 백오프(Exponential Backoff)를 활용해 기존 상태를 복원(Durable Execution)한다.
 
-#### LLM Layer (LLM 계층)
+#### [[LLM]] Layer ([[LLM]] 계층)
 - **4. Structured outputs & tool calling**: 프롬프트에 포맷을 맞춰달라고 애걸하는 대신, SDK를 통해 JSON Schema를 강제하고 모델의 도구 호출 결정과 매개변수 전송을 확실하게 처리한다.
 - **5. 모델 선택 및 비용 관리**: Opus 4.8, Sonnet 4.6, Haiku 4.5, Gemini 2.5/3.1 Flash, 로컬 모델(Qwen 3, Llama 4 Scout) 등 태스크에 적합한 비용/지연 속도의 모델을 결합(Tiering)하여 운용한다.
 - **6. 프롬프트 디자인 (Prompt Design)**: 컨텍스트 창(Context Window)을 제어하고, 시스템 프롬프트 작성, Few-shot 예시, CoT(생각의 사슬) 활성화 및 프롬프트 캐싱을 사용하여 입력 토큰 비용을 최소화한다.
@@ -70,16 +70,16 @@ updated: 2026-07-10
 
 #### Production Layer (프로덕션 계층)
 - **9. 샌드박스 내 코드 실행 (Sandboxed Code Execution)**: 에이전트가 생성한 불완전한 코드가 호스트를 파괴하지 않도록 E2B, Modal Sandbox, Daytona 등의 격리된 일시적 샌드박스 환경에서 실행을 제어한다.
-- **10. MCP ([[Model Context Protocol]]) 연동**: [[Model Context Protocol]]을 사용해 외부 도구가 LLM에 노출되는 방식을 표준화한다.
+- **10. MCP ([[Model Context Protocol]]) 연동**: [[Model Context Protocol]]을 사용해 외부 도구가 [[LLM]]에 노출되는 방식을 표준화한다.
 
 ---
 
 ### 2. 2026년 표준 기술 스택 (The Stack)
 
-- **Cloud LLM**: Anthropic(Opus 4.8, Sonnet 4.6, Haiku 4.5), Google(Gemini 3.1 Pro/Flash), OpenAI(GPT-5.5/Instant) 3대 강자 활용. 코딩/도구 호출은 Claude, 대량 처리는 Gemini, 음성 서비스는 OpenAI를 주로 결합하여 멀티 벤더로 설계한다.
-- **Local LLM**: Ollama 환경에서 `Qwen3-Coder` 모델 제품군을 구동해 보안 요건이나 대규모 로컬 백그라운드 처리를 대체한다.
+- **Cloud [[LLM]]**: Anthropic(Opus 4.8, Sonnet 4.6, Haiku 4.5), Google(Gemini 3.1 Pro/Flash), OpenAI(GPT-5.5/Instant) 3대 강자 활용. 코딩/도구 호출은 Claude, 대량 처리는 Gemini, 음성 서비스는 OpenAI를 주로 결합하여 멀티 벤더로 설계한다.
+- **Local [[LLM]]**: Ollama 환경에서 `Qwen3-Coder` 모델 제품군을 구동해 보안 요건이나 대규모 로컬 백그라운드 처리를 대체한다.
 - **Orchestration**: Python 환경은 **LangGraph**가 사실상의 오케스트레이션 표준으로 자리잡았다. (JS/TS 환경은 Vercel AI SDK 병행)
-- **Evaluation**: RAGAS(RAG 평가), Promptfoo(범용 검증), LLM-as-a-judge 기법의 자체 평가 스크립트 작성.
+- **Evaluation**: [[RAG]]AS([[RAG]] 평가), Promptfoo(범용 검증), [[LLM]]-as-a-judge 기법의 자체 평가 스크립트 작성.
 - **Vector DB & Retrieval**: 로컬 임베디드 메모리는 `sqlite-vec`으로 종결되었으며, 오픈소스 프로덕션 배포에는 `Qdrant`, 서버리스 클라우드 고속 처리에는 `Turbopuffer`, PostgreSQL 결합 환경은 `pgvector`를 적용한다.
 
 ---
@@ -109,7 +109,7 @@ updated: 2026-07-10
 ## 예시
 
 ## 예시
-- **Phase 2 실전 아티팩트 빌드**: 특정 GitHub 이슈 URL을 인자로 받아 GitHub API를 호출해 이슈 스크레드 데이터를 읽어오고, LLM을 호출해 코드를 분석 및 장애 요소를 정리한 뒤, 정해진 스키마의 구조화된 JSON 데이터로 리포트를 리턴하는 단일 에이전트 스크립트 작성.
+- **Phase 2 실전 아티팩트 빌드**: 특정 GitHub 이슈 URL을 인자로 받아 GitHub API를 호출해 이슈 스크레드 데이터를 읽어오고, [[LLM]]을 호출해 코드를 분석 및 장애 요소를 정리한 뒤, 정해진 스키마의 구조화된 JSON 데이터로 리포트를 리턴하는 단일 에이전트 스크립트 작성.
 
 ## 충돌
 

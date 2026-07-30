@@ -21,7 +21,7 @@ updated: 2026-07-18
 NVIDIA가 자체 DGX Cloud 인프라를 활용하여 다양한 오픈소스 및 상용 AI 모델을 무상으로 테스트하고 연동할 수 있도록 지원하는 고성능 추론 API 플랫폼이다.
 
 ## 핵심 요지
-1. **풍부한 카탈로그**: MiniMax, Kimi, DeepSeek, GLM, Gemma 등 100여 개 이상의 풍부한 최신 LLM 및 비전 모델을 무료로 제공한다. [raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md#L11](file:///Users/railscraft/Obsidian/raw/Stop%20Paying%20$20_month.%20Use%20NVIDIA%20Build.%2080+%20Free%20AI%20Models.md#L11)
+1. **풍부한 카탈로그**: MiniMax, Kimi, DeepSeek, GLM, Gemma 등 100여 개 이상의 풍부한 최신 [[LLM]] 및 비전 모델을 무료로 제공한다. [raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md#L11](file:///Users/railscraft/Obsidian/raw/Stop%20Paying%20$20_month.%20Use%20NVIDIA%20Build.%2080+%20Free%20AI%20Models.md#L11)
 2. **OpenAI 규격 호환**: 모든 모델이 표준 OpenAI API 형식을 지원하므로, 설정 파일의 엔드포인트 URL(`https://integrate.api.nvidia.com/v1`)과 API 키 수정만으로 기존 시스템에 즉시 대치할 수 있다.
 3. **진입 장벽 완화**: 신용카드 등록 없이 이메일/번호 인증만으로 계정을 생성하여 1,000~5,000회의 무료 추론 크레딧을 즉시 얻을 수 있다. (분당 요청 횟수 40회 제한) [raw/Stop Paying $20_month. Use NVIDIA Build. 80+ Free AI Models.md#L158](file:///Users/railscraft/Obsidian/raw/Stop%20Paying%20$20_month.%20Use%20NVIDIA%20Build.%2080+%20Free%20AI%20Models.md#L158)
 

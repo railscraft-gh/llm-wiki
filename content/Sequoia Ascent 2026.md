@@ -24,7 +24,7 @@ Andrej Karpathy가 Sequoia Ascent 2026 행사에서 발표한 AI 에이전트 �
 자세한 내용은 원문 [raw/sequoia-ascent-2026-karpathy-ko.md](file:///Users/railscraft/Obsidian/raw/sequoia-ascent-2026-karpathy-ko.md)를 참고합니다.
 
 ## 예시
-- Karpathy의 지식 시스템 구축 및 LLM Wiki 아키텍처.
+- Karpathy의 지식 시스템 구축 및 [[LLM]] Wiki 아키텍처.
 
 ## 충돌
 없음.

@@ -23,7 +23,7 @@ updated: 2026-07-21
 음성 비서가 답변 오디오를 출력하던 도중 사용자가 말을 끼어들었을 때(Interruption) 이를 실시간 감지하여 원격 생성과 로컬 재생 버퍼(Playback Queue)를 즉각 소각·중단시키는 기술.
 
 ## 핵심 요지
-- **직렬 파이프라인(STT-LLM-TTS Cascade) 한계 극복**: 직렬 연결 시 로컬 VAD 상태와 원격 LLM 생성 상태가 파편화되어 무시하고 밀어붙이거나(Bulldozer) 헛기침에도 반응하는(Neurotic) 오작동 발생.
+- **직렬 파이프라인(STT-[[LLM]]-TTS Cascade) 한계 극복**: 직렬 연결 시 로컬 VAD 상태와 원격 [[LLM]] 생성 상태가 파편화되어 무시하고 밀어붙이거나(Bulldozer) 헛기침에도 반응하는(Neurotic) 오작동 발생.
 - **네이티브 양방향 모델 구조**: Gemini Live처럼 오디오 입출력을 네이티브하게 양방향 전송하는 모델 세션에서 서버 VAD(`automatic_activity_detection`)가 유저 발화를 수신 시 즉시 `server_content.interrupted=True` 전송.
 - **클라이언트 큐 플러시(Queue Flush)**: 중단 이벤트를 전송받는 즉시 `speaker_queue` 내 미재생 PCM 버퍼 데이터를 소각하여 오디오 지연 및 겹침을 방지.
 

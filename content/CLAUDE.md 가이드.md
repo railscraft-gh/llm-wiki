@@ -19,7 +19,7 @@ updated: 2026-07-21
 AI 코딩 에이전트의 반복적인 실패 패턴을 시스템적으로 방지하기 위해 저장소 루트에 배포하는 65줄 내외의 마크다운 행동 지침 파일.
 
 ## 핵심 요지
-하네스 엔지니어링의 핵심 구성 요소로, Andrej Karpathy가 지적한 LLM의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 행동 원칙(Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution)으로 해결하는 실무적 인프라이다.
+하네스 엔지니어링의 핵심 구성 요소로, Andrej Karpathy가 지적한 [[LLM]]의 3대 실패 패턴(묵시적 가정, 과도한 엔지니어링, 부수적 피해)을 4가지 행동 원칙(Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution)으로 해결하는 실무적 인프라이다.
 
 ## 상세
 - **Think Before Coding**: 코딩 전 가정을 명시하고 애매한 것은 질문할 것.

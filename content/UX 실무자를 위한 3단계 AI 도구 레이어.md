@@ -20,7 +20,7 @@ updated: 2026-07-21
 NN/g가 예견한 'UX Reckoning (2025/2026)' 시대에 대응하여, UX 실무자가 활용해야 할 AI 도구를 채팅 인터페이스, 특화 UX 도구, CLI/에이전틱 도구의 3개 범주로 체계화하고 구현 격차를 해소하는 실전 가이드 프레임워크이다.
 
 ## 핵심 요지
-- **LLM의 본질은 패턴 완성 엔진**: 사실 저장 DB가 아니라 맥락 기반 패턴 예측기이므로, 맥락 주입과 비판적 검토(Curated taste)가 디자이너의 핵심 경쟁력이 된다.
+- **[[LLM]]의 본질은 패턴 완성 엔진**: 사실 저장 DB가 아니라 맥락 기반 패턴 예측기이므로, 맥락 주입과 비판적 검토(Curated taste)가 디자이너의 핵심 경쟁력이 된다.
 - **AI 도구 3대 레이어 구분**:
   1. **대화형 레이어 (Chat)**: ChatGPT, Claude, Gemini. 유연한 아이데이션 및 카피 작성.
   2. **특화 레이어 (Specialized UX)**: Dovetail, Looppanel, Figma Make, [[Claude Design]]. 전사, 분석 및 디자인 시스템 프로토타이핑.
@@ -54,7 +54,7 @@ NN/g의 2025/2026년 리포트에 따르면 AI 시대의 UX 담당자는 도구 
 - [[Claude Code 바이브코딩]]
 
 ## 출처
-- UX Reckoning 및 LLM 패턴 예측기 정의: [raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md#L15-L54](file:///Users/railscraft/Obsidian/raw/UX%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EB%A8%BC%EC%A0%80%20%EC%9D%BD%EC%97%88%EC%96%B4%EC%95%BC%20%ED%95%A0%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L15-L54)
+- UX Reckoning 및 [[LLM]] 패턴 예측기 정의: [raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md#L15-L54](file:///Users/railscraft/Obsidian/raw/UX%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EB%A8%BC%EC%A0%80%20%EC%9D%BD%EC%97%88%EC%96%B4%EC%95%BC%20%ED%95%A0%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L15-L54)
 - 3가지 AI 도구 범주 분류: [raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md#L55-L103](file:///Users/railscraft/Obsidian/raw/UX%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EB%A8%BC%EC%A0%80%20%EC%9D%BD%EC%97%88%EC%96%B4%EC%95%BC%20%ED%95%A0%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L55-L103)
 - CLI 도구의 필요성 및 4% GitHub 커밋 지표: [raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md#L93-L124](file:///Users/railscraft/Obsidian/raw/UX%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EB%A8%BC%EC%A0%80%20%EC%9D%BD%EC%97%88%EC%96%B4%EC%95%BC%20%ED%95%A0%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L93-L124)
 - 도입 프레임워크 (1주차~3개월차): [raw/UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기.md#L143-L154](file:///Users/railscraft/Obsidian/raw/UX%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%EB%A8%BC%EC%A0%80%20%EC%9D%BD%EC%97%88%EC%96%B4%EC%95%BC%20%ED%95%A0%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md#L143-L154)

@@ -56,7 +56,7 @@ updated: 2026-07-29
 
 ## 예시 시나리오
 
-안드레 카파시(Andrej Karpathy)가 빌드한 `microGPT`의 수치 연산 및 오토그라드 엔진을 기반으로 수동 역전파가 흐르는 과정의 예시입니다.
+[[안드레 카파시(Andrej Karpathy)]]가 빌드한 `microGPT`의 수치 연산 및 오토그라드 엔진을 기반으로 수동 역전파가 흐르는 과정의 예시입니다.
 
 ```python
 # 1. 가중치 매개변수 및 입력 데이터 정의 (초기화)
@@ -120,7 +120,7 @@ x.grad += w.data * u.grad  # 0.5 * 1.0 = 0.5 누적
 * **정합성 린트(Lint) 및 정제 작업**:
   * `wiki-autolink.py`를 실행하여 새로 작성된 역전파 문서와 기존 문서들 간의 상호 참조를 위한 위키링크를 자동 연동했습니다.
   * `wiki-lint.py` 검사 도중 발견된 오염된 중복 파일들(`연구 파트너(Research Partner).md`, `교차 분석(Cross-analysis).md`)을 삭제하여 린트 오류를 차단했습니다.
-  * 또한, 본문 내용 대신 결과 보고서 형태의 텍스트가 덮어씌워져 frontmatter 누락 및 broken link를 유발하던 [wiki/안드레 카파시(Andrej Karpathy).md](file:///Users/railscraft/Obsidian/wiki/안드레%20카파시(Andrej%20Karpathy).md) 파일을 올바른 `type: person` 형식의 지식 정보로 덮어써 복구했으며, 그 결과 역전파 노트 내부의 린트 에러를 완전히 해결했습니다.
-* **Quartz 동기화 및 자동 배포 완료**:
+  * 또한, 본문 내용 대신 결과 보고서 형태의 텍스트가 덮어씌워져 frontmatter 누락 및 broken link를 유발하던 [wiki/[[안드레 카파시(Andrej Karpathy)]].md](file:///Users/railscraft/Obsidian/wiki/안드레%20카파시(Andrej%20Karpathy).md) 파일을 올바른 `type: person` 형식의 지식 정보로 덮어써 복구했으며, 그 결과 역전파 노트 내부의 린트 에러를 완전히 해결했습니다.
+* **[[Quartz]] 동기화 및 자동 배포 완료**:
   * `sync_quartz.sh` 스크립트를 최종 구동하여 빌드 대상인 `content/` 디렉터리에 노트를 동기화했습니다.
-  * Quartz 깃 저장소의 `v5` 배포 브랜치에 동기화 내역을 커밋하고 원격 푸시를 성공적으로 완료하여 CI/CD 파이프라인 배포를 트리거했습니다.
+  * [[Quartz]] 깃 저장소의 `v5` 배포 브랜치에 동기화 내역을 커밋하고 원격 푸시를 성공적으로 완료하여 CI/CD 파이프라인 배포를 트리거했습니다.

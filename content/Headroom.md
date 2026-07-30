@@ -16,11 +16,11 @@ updated: 2026-07-18
 # Headroom
 
 ## 한 줄 정의
-에이전트와 LLM 사이에서 작동하여 가역적 압축(CCR)과 출력 제어를 통해 토큰 낭비를 절감하고 비용을 절약하는 넷플릭스 오픈소스 컨텍스트 압축(Context Compression) 레이어 도구이다.
+에이전트와 [[LLM]] 사이에서 작동하여 가역적 압축(CCR)과 출력 제어를 통해 토큰 낭비를 절감하고 비용을 절약하는 넷플릭스 오픈소스 컨텍스트 압축(Context Compression) 레이어 도구이다.
 
 ## 핵심 요지
 - **높은 토큰 절감률**: 실제 워크로드 테스트 결과 SRE 장애 디버깅에서 92% 토큰 절감, GitHub 이슈 분류에서 73% 절감, 코드 검색에서 92% 절감을 달성했다 [raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md#L13](file:///Users/railscraft/Obsidian/raw/Headroom.%20The%20Netflix%20Tool%20That%20Makes%20AI%20Agents%2010x%20Cheaper.md#L13).
-- **가역적 압축 (CCR, Cache-Compress-Retrieve)**: 정보를 요약·압축하되 원본은 로컬 캐시에 저장하여, LLM이 세부 정보가 필요할 때 `headroom_retrieve` 툴을 호출해 다시 복원할 수 있도록 지원한다.
+- **가역적 압축 (CCR, Cache-Compress-Retrieve)**: 정보를 요약·압축하되 원본은 로컬 캐시에 저장하여, [[LLM]]이 세부 정보가 필요할 때 `headroom_retrieve` 툴을 호출해 다시 복원할 수 있도록 지원한다.
 - **출력 토큰 절감**: 입력 토큰 압축뿐만 아니라 장황도 제어(Verbosity Steering) 및 연산 노력 라우팅(Effort Routing)을 통해 Opus급 모델 기준 입력 대비 5배 단가에 달하는 출력 토큰 낭비를 차단한다 [raw/Headroom. The Netflix Tool That Makes AI Agents 10x Cheaper.md#L38](file:///Users/railscraft/Obsidian/raw/Headroom.%20The%20Netflix%20Tool%20That%20Makes%20AI%20Agents%2010x%20Cheaper.md#L38).
 - **자가 피드백 시스템 (`headroom learn`)**: 실패한 세션을 스스로 분석하여 `CLAUDE.md`, `AGENTS.md` 등의 파일에 개선사항을 직접 기록하고 사용자의 선호 장황도 레벨을 파악한다.
 
@@ -28,7 +28,7 @@ updated: 2026-07-18
 
 ### 1. 처리 파이프라인 (Pipeline)
 Headroom은 다음과 같은 구조로 유입 콘텐츠를 필터링하고 압축한다:
-1. **CacheAligner**: 프롬프트 접두사(prefix)를 안정화해 LLM의 KV cache 히트율을 극대화한다.
+1. **CacheAligner**: 프롬프트 접두사(prefix)를 안정화해 [[LLM]]의 KV cache 히트율을 극대화한다.
 2. **ContentRouter**: 콘텐츠의 유형(JSON, 코드, 일반 텍스트 등)에 따라 최적의 압축 모듈을 라우팅한다.
    - **SmartCrusher**: JSON 배열 및 중첩 객체 압축
    - **CodeCompressor**: AST(추상 구문 트리) 파싱을 적용하여 소스 코드 압축

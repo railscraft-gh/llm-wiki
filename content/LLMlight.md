@@ -13,7 +13,7 @@ sources:
 created: 2026-06-22
 updated: 2026-06-22
 ---
-# LLMlight
+# [[LLM]]light
 
 ## 한 줄 정의
 의존성을 최소화하고 순수 파이썬 코드를 기반으로 로컬 언어 모델의 API 호출과 텍스트 분할, 시맨틱 검색, 컨텍스트 압축, 다단계 에이전트 토론 파이프라인을 매개변수화하여 통제하도록 돕는 초경량 프레임워크다.
@@ -31,7 +31,7 @@ updated: 2026-06-22
 - **Context Strategies**: `None` (로컬 청크 단순 취합), `chunk-wise` (개별 청크 필터링 검증), `global-reasoning` (청크 간 인과관계 계층 병합 요약) 옵션을 제공해 에이전트의 인지 과부하를 분산한다.
 
 ### 2. MemVid 아키텍처 연동
-LLMlight는 오프라인 기기 간 휴대성을 극대화하기 위해 수백만 개의 고차원 임베딩 벡터 정보를 **단 한 편의 MP4 비디오 파일**로 고밀도 압축하여 보관 및 복사할 수 있는 독특한 벡터 스토어 포맷인 **MemVid** 백엔드를 연동하여 활용할 수 있다.
+[[LLM]]light는 오프라인 기기 간 휴대성을 극대화하기 위해 수백만 개의 고차원 임베딩 벡터 정보를 **단 한 편의 MP4 비디오 파일**로 고밀도 압축하여 보관 및 복사할 수 있는 독특한 벡터 스토어 포맷인 **MemVid** 백엔드를 연동하여 활용할 수 있다.
 
 ## 예시
 ### 로컬 클라이언트 구동 코드
@@ -67,4 +67,4 @@ print(response)
 - [[RAG 아키텍처 선택]]
 
 ## 出처
-- raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md (LLMlight GitHub repository, MemVid software documentation)
+- raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md ([[LLM]]light GitHub repository, MemVid software documentation)

@@ -19,7 +19,7 @@ updated: 2026-07-21
 # 고품질 휴먼 데이터와 RLHF (High-Quality Human Data & RLHF)
 
 ## 한 줄 정의
-LLM 정렬과 분류 파이프라인의 성패를 좌우하는 라벨 수집 운영 관리 및 모델 학습 동역학 기반 노이즈 데이터 정제 체계.
+[[LLM]] 정렬과 분류 파이프라인의 성패를 좌우하는 라벨 수집 운영 관리 및 모델 학습 동역학 기반 노이즈 데이터 정제 체계.
 
 ## 핵심 요지
 - **군중의 지혜와 평가자 동의 지표**: 크라우드소싱 기반 주석 수집 시 다수결 투표, 코헨의 카파, MACE 확률 모델링 등을 사용하여 스패머를 무력화하고 가중 참값을 복원합니다.
@@ -27,7 +27,7 @@ LLM 정렬과 분류 파이프라인의 성패를 좌우하는 라벨 수집 운
 - **학습 동역학 기반 품질 정제**: 모델 학습 과정에서 영향 함수(Influence Functions), Data Maps(Confidence & Variability), AUM(Area under the Margin), 망각(Unforgettable) 지표, NCV(Noisy Cross-Validation) 기법을 활용하여 오답 라벨을 수식적·동역학적으로 필터링합니다.
 
 ## 상세
-딥러닝 및 LLM 정렬(RLHF) 단계에서 고품질 주석 수집은 정교한 데이터 운영 절차를 요합니다. 1907년 Galton의 [Vox populi 연구](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L23) 이후 크라우드소싱 데이터 집계는 다수결이나 카파 지표를 넘어 probabilistic graph model(Zheng et al. 2017의 [17가지 진실 추론 알고리즘 비교](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L41)) 등 머신러닝 기반 정제로 발전해 왔습니다.
+딥러닝 및 [[LLM]] 정렬(RLHF) 단계에서 고품질 주석 수집은 정교한 데이터 운영 절차를 요합니다. 1907년 Galton의 [Vox populi 연구](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L23) 이후 크라우드소싱 데이터 집계는 다수결이나 카파 지표를 넘어 probabilistic graph model(Zheng et al. 2017의 [17가지 진실 추론 알고리즘 비교](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L41)) 등 머신러닝 기반 정제로 발전해 왔습니다.
 
 주관적 NLP 태스크에서는 불일치(Disagreement)가 단순 인적 오류인지 시각 차이인지 구별해야 합니다. Wang et al. (2023)의 안전성 평가 연구에 의하면 폭력·유혈 주제는 T&S 전문가와 일반 평가자 간 동의율이 [0.96](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)에 달했으나, 개인적 주제에서는 동의율이 [0.25](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)로 크게 벌어졌습니다. 이를 해결하기 위해 개별 작업자의 일관성을 묶는 Disagreement Deconvolution 및 인구통계적 특성을 조율하는 Jury Learning이 활용됩니다.
 

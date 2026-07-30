@@ -34,7 +34,7 @@ updated: 2026-07-29
 - **`<EOS>`**: 텍스트 생성의 종료 조건이 되며, 모델이 이 토큰을 뱉으면 추론(inference) 루프를 종료하도록 제어하여 무한 생성을 예방한다.
 
 ### Subword 토크나이저와의 비교
-현대 상용 LLM은 보통 BPE(Byte Pair Encoding)나 WordPiece 등 하위 단어(subword) 단위 토크나이저를 사용한다. 이는 자주 붙어서 나타나는 문자들의 묶음(예: `ing`, `the` 등)을 단일 토큰으로 정의함으로써, 시퀀스 길이를 대폭 줄이고 데이터 인코딩의 압축률을 극대화하여 연산 효율을 높이는 방식이다. 그러나 핵심적인 변환 원리인 "텍스트 ↔ 숫자 매핑"은 동일하게 [stoi](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L27) 및 [itos](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L28) 기반 딕셔너리로 이루어진다.
+현대 상용 [[LLM]]은 보통 BPE(Byte Pair Encoding)나 WordPiece 등 하위 단어(subword) 단위 토크나이저를 사용한다. 이는 자주 붙어서 나타나는 문자들의 묶음(예: `ing`, `the` 등)을 단일 토큰으로 정의함으로써, 시퀀스 길이를 대폭 줄이고 데이터 인코딩의 압축률을 극대화하여 연산 효율을 높이는 방식이다. 그러나 핵심적인 변환 원리인 "텍스트 ↔ 숫자 매핑"은 동일하게 [stoi](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L27) 및 [itos](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L28) 기반 딕셔너리로 이루어진다.
 
 ## 예시
 
@@ -61,4 +61,4 @@ itos = { i:ch for i, ch in enumerate(chars) }
 ## 출처
 
 - [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md)
-- [안드레 카파시의 microGPT GitHub Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)
+- [안드레 카파시의 [[microGPT]] GitHub Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)

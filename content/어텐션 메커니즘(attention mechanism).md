@@ -46,17 +46,17 @@ updated: 2026-07-29
 3. **소프트맥스(Softmax)**: 스코어 분포를 합이 1이 되는 확률 분포(어텐션 가중치)로 변환합니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L157](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L157).
 4. **밸류 혼합**: 획득한 어텐션 가중치를 각 토큰의 밸류 벡터 $v$에 곱해 최종 출력 벡터를 구합니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L157](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L157).
 
-### 3. 멀티헤드 어텐션(Multi-Head Attention)으로의 확장
+### 3. [[멀티헤드 어텐션(Multi-Head Attention)]]으로의 확장
 어텐션을 단일 채널로 수행하지 않고, 독립적인 여러 개의 헤드(Head)로 나누어 병렬 처리합니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L163](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L163).
 - 예컨대 [[microGPT]]에서는 16차원 임베딩을 4개의 헤드가 각자 4차원씩 담당하여 연산합니다.
 - 각 어텐션 헤드는 모음에 집중하는 법, 최근 등장한 글자에 집중하는 법 등 각기 다른 문맥적 특징이나 관계성을 독립적으로 수집하며, 최종적으로 이 결과를 접합(Concatenate)하여 풍부한 고차원 문맥을 완성합니다.
 
-### 4. 잔차 연결(Residual Connection)과의 시너지
+### 4. [[잔차 연결]](Residual Connection)과의 시너지
 어텐션 메커니즘을 통과한 출력 벡터는 그대로 다음 레이어로 넘어가지 않고, 원래 입력 벡터와 더해지는 [[잔차 연결]] 과정을 거칩니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L167](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L167). 이는 어텐션이 새로 학습한 정보를 기존 지식에 더하는 고속도로 역할을 하며, 모델 깊이가 깊어져도 그래디언트 소실 없이 안정적으로 학습할 수 있는 기반을 제공합니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L171](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L171).
 
 ## 예시
 
-### microGPT에서의 순수 파이썬 어텐션 구현
+### [[microGPT]]에서의 순수 파이썬 어텐션 구현
 [[안드레 카파시(Andrej Karpathy)]]의 [[microGPT]]에서는 외부 프레임워크의 추상화를 모두 걷어내고 순수 파이썬 루프와 리스트 컴프리헨션만으로 다음과 같이 어텐션을 계산합니다 [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md:L141-155](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%20Just%20Built%20an%20Entire%20GPT%20in%20243%20Lines%20of%20Python.md#L141-155).
 
 ```python
@@ -79,7 +79,7 @@ head_out = [sum(attn_weights[t] * v_h[t][j] for t in range(len(v_h)))
 
 ## 충돌
 
-- **인코더-디코더 정렬 vs 자가 어텐션**: 최초의 어텐션 메커니즘(Bahdanau attention 등)은 인코더와 디코더 사이의 소스 토큰과 타깃 토큰 간의 정렬(Alignment)을 위해 제안되었습니다. 그러나 트랜스포머 아키텍처에 이르러서는 동일한 시퀀스 내부 토큰 간의 관계를 분석하는 [[자가 어텐션(Self-Attention)]]으로 패러다임이 시프트하였습니다.
+- **인코더-디코더 정렬 vs 자가 어텐션**: 최초의 어텐션 메커니즘(Bahdanau attention 등)은 인코더와 디코더 사이의 소스 토큰과 타깃 토큰 간의 정렬(Alignment)을 위해 제안되었습니다. 그러나 [[트랜스포머 아키텍처]]에 이르러서는 동일한 시퀀스 내부 토큰 간의 관계를 분석하는 [[자가 어텐션(Self-Attention)]]으로 패러다임이 시프트하였습니다.
 - **알고리즘의 본질 vs 대규모 최적화**: 1조 개의 매개변수 스케일을 학습하기 위해 PyTorch, CUDA, 분산 프레임워크 등의 복잡한 인프라가 필수적이지만, 어텐션 메커니즘을 구동하는 핵심 알고리즘의 본질 자체는 추가적인 외부 의존성 없이 순수 파이썬 수십 줄 내외로 축약될 만큼 단순한 수학적 원리입니다.
 
 ## 관련 노트
@@ -94,4 +94,4 @@ head_out = [sum(attn_weights[t] * v_h[t][j] for t in range(len(v_h)))
 ## 출처
 
 - `raw/Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python.md`
-- [Andrej Karpathy - microGPT Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)
+- [Andrej Karpathy - [[microGPT]] Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)

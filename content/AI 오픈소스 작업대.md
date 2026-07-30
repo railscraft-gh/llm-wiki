@@ -77,9 +77,9 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 ## 핵심 요지
 - 중요한 변화는 단일 저장소의 스타 수보다, 어떤 작업 표면이 오픈소스로 표준화되는가에 있다.
-- 핵심 축은 local model 실행, self-hosted UI, visual workflow builder, RAG 플랫폼, terminal assistant, automation orchestration이다.
+- 핵심 축은 local model 실행, self-hosted UI, visual workflow builder, [[RAG]] 플랫폼, terminal assistant, automation orchestration이다.
 - 저장소 이름과 세부 스펙은 빨리 바뀌므로, 이 노트는 특정 도구 추천보다 생태계 방향과 작업 표면의 이동을 읽는 데 더 적합하다.
-- 오픈소스 도구들의 실무 묶음: n8n(custom JS & self-hosting API), Ollama & Open WebUI(self-hosted ChatGPT 대시보드 구축), Dify(prompt/provider 인프라 묶음), RAGFlow(citation traceability 특화) 등으로 지형이 안정되었다.
+- 오픈소스 도구들의 실무 묶음: n8n(custom JS & self-hosting API), Ollama & Open WebUI(self-hosted ChatGPT 대시보드 구축), Dify(prompt/provider 인프라 묶음), [[RAG]]Flow(citation traceability 특화) 등으로 지형이 안정되었다.
 - 터미널 네이티브와 오픈 가중치: `npx @google/gemini-cli` 명령어어로 작동하는 terminal assistant 및 671B 파라미터(37B 활성화)와 128K context를 갖춘 DeepSeek-V3가 오픈소스 생태계 핵심 축을 담당한다.
 - NocoBase는 22.3k GitHub Stars를 기록하며 비즈니스 구조와 규칙 경계를 갖춘 시스템 위에서 AI가 작업하도록 이끄는 대표적 로우코드 플랫폼이다.
 - n8n은 187k GitHub Stars의 자동화 플랫폼으로 AI 에이전트의 실제 업무 프로세스 연결에 사용된다.
@@ -93,16 +93,16 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 ## 상세
 
-원문에 등장하는 저장소들은 결국 몇 가지 묶음으로 정리된다. **local AI stack**에는 Ollama, Open WebUI, open-weight model이 있다. 이는 private code와 문서를 cloud 밖에서 다루려는 수요와 연결된다. 각 로컬 호스팅 플랫폼 및 클라우드/하드웨어 추론 환경별 비교는 [[2026년 오픈소스 LLM 플랫폼 비교]]에서 상세히 다룬다. **workflow automation**에는 n8n이 있고, 이는 business workflow와 AI reasoning을 연결하는 층을 보여 준다. **agent/runtime tooling**에는 [[OpenClaw]], Gemini CLI, LangChain ecosystem이 있다. 이는 AI가 채팅창에서 terminal·shell·앱 workflow로 이동하는 흐름을 상징한다. 특히 [[OpenClaw]]는 multi-channel personal agent, markdown memory, SKILL.md, self-hosted runtime을 한 덩어리로 보여 주는 사례다. **visual AI pipeline tooling**에는 Langflow가 있고, 이는 RAG와 multi-agent flow를 block 단위로 실험하는 표면이다. **grounded enterprise AI**에는 Dify와 RAGFlow가 있다. 이는 retrieval, citation, self-hosting, provider switching을 제품화하는 방향을 보여 준다.
+원문에 등장하는 저장소들은 결국 몇 가지 묶음으로 정리된다. **local AI stack**에는 Ollama, Open WebUI, open-weight model이 있다. 이는 private code와 문서를 cloud 밖에서 다루려는 수요와 연결된다. 각 로컬 호스팅 플랫폼 및 클라우드/하드웨어 추론 환경별 비교는 [[2026년 오픈소스 LLM 플랫폼 비교]]에서 상세히 다룬다. **workflow automation**에는 n8n이 있고, 이는 business workflow와 AI reasoning을 연결하는 층을 보여 준다. **agent/runtime tooling**에는 [[OpenClaw]], Gemini CLI, LangChain ecosystem이 있다. 이는 AI가 채팅창에서 terminal·shell·앱 workflow로 이동하는 흐름을 상징한다. 특히 [[OpenClaw]]는 multi-channel personal agent, markdown memory, SKILL.md, self-hosted runtime을 한 덩어리로 보여 주는 사례다. **visual AI pipeline tooling**에는 Langflow가 있고, 이는 [[RAG]]와 multi-agent flow를 block 단위로 실험하는 표면이다. **grounded enterprise AI**에는 Dify와 [[RAG]]Flow가 있다. 이는 retrieval, citation, self-hosting, provider switching을 제품화하는 방향을 보여 준다.
 후속 TTS raw를 보면 이 작업 표면이 텍스트를 넘어 speech layer로도 확장된다. 즉 local runtime과 open-weight 흐름은 코딩·검색·문서 요약뿐 아니라 음성 출력까지 온디바이스화하는 쪽으로 확장되고 있다.
 
-`raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`는 같은 지형을 한 번 더 스냅샷처럼 보여 준다. 단일 저장소 소개보다 중요한 것은, local stack, workflow automation, RAG platform, terminal assistant가 여전히 반복되는 작업 표면이라는 점이다.
+`raw/지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기.md`는 같은 지형을 한 번 더 스냅샷처럼 보여 준다. 단일 저장소 소개보다 중요한 것은, local stack, workflow automation, [[RAG]] platform, terminal assistant가 여전히 반복되는 작업 표면이라는 점이다.
 
 `raw/After Claude Code. 6 Open-Source Tools You Should Know-ko.md`는 이 지형을 도구 묶음으로 다시 보여 준다. NocoBase, n8n, Qdrant, Outline, Coolify, OpenHands는 각각 app builder, automation, vector store, knowledge base, deployment, agent runtime이라는 서로 다른 표면을 대표한다. 즉 "오픈소스 작업대"는 하나의 앱이 아니라, 서로 다른 문제를 해결하는 작업 표면들의 묶음이다. 특히 `raw/Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지.md`에서 나타나듯, NocoBase 외에도 Appsmith, Budibase, Directus, Baserow와 같은 5대 로우코드/노코드 도구들은 셀프 호스팅 에이전트인 [[Hermes Agent]]와 연동되어 데이터 스키마 설계, 승인 워크플로우 구성, 데이터 가공 등의 작업 표면을 구축한다. 구체적인 연동 가이드는 [[Hermes Agent와 오픈소스 내부 도구 연동]]에서 다룬다.
 
 `raw/The Open-Source Agent Toolkit in 2026-ko.md`는 같은 흐름을 stack layer로 재배치한다. orchestration/runtime control, memory/state, protocols/tools, browsers/computer use, coding agents/sandboxes, evals/observability, models/inference라는 7개 레이어는 어떤 저장소를 먼저 보아야 하는지 결정하는 체크리스트가 된다. 이 노트의 생태계 관찰은 결국 이 레이어 선택 문제로 수렴한다.
 
-이 묶음은 [[Agent Native Infrastructure]]와 이어진다. 클릭 기반 SaaS가 아니라, self-hosted runtime·CLI·workflow builder·RAG platform이 에이전트용 작업 표면을 만든다는 뜻이기 때문이다. 또한 [[에이전트 확장 3계층]] 관점에서 보면 이들 저장소는 Skill/MCP/tool의 구분을 구현체 수준에서 다르게 조합한 사례로 볼 수 있다.
+이 묶음은 [[Agent Native Infrastructure]]와 이어진다. 클릭 기반 SaaS가 아니라, self-hosted runtime·CLI·workflow builder·[[RAG]] platform이 에이전트용 작업 표면을 만든다는 뜻이기 때문이다. 또한 [[에이전트 확장 3계층]] 관점에서 보면 이들 저장소는 Skill/MCP/tool의 구분을 구현체 수준에서 다르게 조합한 사례로 볼 수 있다.
 
 
 ## 읽는 법
@@ -115,16 +115,16 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 
 ### 3. 주요 오픈소스 도구별 핵심 스펙 및 역할
 - **n8n**: visual builder와 custom JavaScript 코드를 자유롭게 결합하고, self-hosting이 가능하여 민감한 기업 비즈니스 데이터를 외부 유출 없이 로컬 네트워크 내에서 안전하게 자동화(webhook, data transform)한다.
-- **Ollama & Open WebUI**: 로컬 환경 모델 서빙(Ollama) 위에서 Open WebUI를 대시보드로 올려 대화 관리, user role, access control, audit log, RAG 및 voice feature를 탑재한 엔터프라이즈 사내 전용 AI 플랫폼을 무료 구축한다.
+- **Ollama & Open WebUI**: 로컬 환경 모델 서빙(Ollama) 위에서 Open WebUI를 대시보드로 올려 대화 관리, user role, access control, audit log, [[RAG]] 및 voice feature를 탑재한 엔터프라이즈 사내 전용 AI 플랫폼을 무료 구축한다.
 - **Dify**: 단순 챗봇 데모를 넘어 prompt/model/file provider 관리 및 monitoring, deployment 인프라를 일괄 바인딩하여 벤더 종속 없이 self-hosting 프로덕션 배포를 가능케 한다.
 - **DeepSeek-V3**: Mixture-of-Experts 구조의 총 671B 파라미터(활성화 37B), 128K context window를 지원하는 오픈 가중치 모델로 상용 폐쇄형 모델 수준의 코딩 및 추론 능력을 local stack에 제공한다.
 - **Google Gemini CLI**: `npx @google/gemini-cli` 명령어 기반으로 작동하며 개발자가 상주하는 터미널 환경에 밀착해 디버깅, 파일 생성, 코드 해석 등의 shell task를 terminal-native하게 지원한다.
-- **RAGFlow**: 그럴듯한 답변이 아닌 검증 가능한 답변(citation traceability, 출처 추적성)이 필수적인 법무, 의료, 금융 도메인을 위해 document ingestion부터 citation tracking까지의 RAG 파이프라인을 통제한다.
+- **[[RAG]]Flow**: 그럴듯한 답변이 아닌 검증 가능한 답변(citation traceability, 출처 추적성)이 필수적인 법무, 의료, 금융 도메인을 위해 document ingestion부터 citation tracking까지의 [[RAG]] 파이프라인을 통제한다.
 
 ### 6대 주요 오픈소스 도구 분석
 - **NocoBase**: CRM, 티켓팅, ERP 등 엔터프라이즈 시스템 구축용 AI + no-code 플랫폼. AI가 데이터 모델, 페이지, 워크플로우를 생성하면 사람은 GUI로 조정하여 시스템 경계를 고정한다.
 - **n8n**: node 로직, API 호출, 커스텀 코드를 조율하여 AI 에이전트를 실무 비즈니스 프로세스에 연동하는 시각적 자동화 계층.
-- **Qdrant**: RAG, semantic search, agent memory 구축용 고성능 벡터 DB. self-hosting 시 내부 데이터 보안 통제가 가능.
+- **Qdrant**: [[RAG]], semantic search, agent memory 구축용 고성능 벡터 DB. self-hosting 시 내부 데이터 보안 통제가 가능.
 - **Outline**: Notion/Confluence의 오픈소스 대안. PRD, 스키마, 프롬프트를 팀 위키로 관리하여 AI가 프로젝트를 이해하도록 만드는 명확한 지식 인프라.
 - **Coolify**: Vercel/Railway를 대체하는 self-hosting 배포 관리 도구. Docker, DB, 앱 런타임을 중앙 관리하여 AI 스택 운영을 간소화.
 - **OpenHands**: 코드베이스 분석, 버그 수정, DevOps를 자율 수행하는 장시간 실행 엔지니어링 에이전트.
@@ -171,7 +171,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 3. **D-Flash (`dflash-dev/dflash`)**: 임베딩, 벡터 인출, 분산 추론 등 대규모 모델에 최적화된 고속 데이터 접근용 분산 flash 기반 저장소 인프라.
 4. **Cloak Browser (`cloakware/cloak-browser`)**: AI의 무분별한 행동 데이터 수집에 대응하여 브라우저 격리, 추적 방지, 미세 세부 설정을 지원하는 보안 연구자용 브라우저.
 5. **AI Trader (`codas-ai/ai-trader`)**: 멀티 에이전트 간의 협업적 추론과 분석 토론을 결합하여 시장 맥락을 정밀 판단하는 금융 거래 연구 프레임워크.
-6. **Local Deep Research (`dzhng/deep-research`)**: 클라우드 API를 쓰지 않고 로컬 LLM, 추론 파이프라인, 출처 분석 검색기를 결합해 기밀 정보를 보호하며 동작하는 자율 연구 워크플로우.
+6. **Local Deep Research (`dzhng/deep-research`)**: 클라우드 API를 쓰지 않고 로컬 [[LLM]], 추론 파이프라인, 출처 분석 검색기를 결합해 기밀 정보를 보호하며 동작하는 자율 연구 워크플로우.
 7. **Lobe Hub (`lobehub/lobe-chat`)**: 다중 모델 제공사, 플러그인, 에이전트 및 지식 통합 오케스트레이션을 개인화된 AI 워크스페이스 형태로 서빙하는 플랫폼.
 8. **Hello Agents (`hello-agent/hello-agents`)**: 현대 에이전트의 핵심 구성 요소인 메모리, 계획, 도구 사용, 오케스트레이션의 실제 아키텍처 구현을 가르쳐주는 교육용 저장소.
 9. **Flutter Agent Skills (`flutter/agentic_ai`)**: 범용 조수가 아닌 Flutter 프레임워크에 특화된 재사용 가능 프롬프트와 코딩 패턴을 제공하는 에이전트 스킬 세트.
@@ -187,7 +187,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - local assistant 실험: Ollama + Open WebUI
 - business automation: n8n + AI step
 - terminal-native coding: Gemini CLI 또는 유사 도구
-- grounded Q&A: RAGFlow 또는 Dify 계열
+- grounded Q&A: [[RAG]]Flow 또는 Dify 계열
 
 ## 예시
 - **터미널 네이티브 어시스턴트 실행**: `npx @google/gemini-cli`를 로컬 쉘에서 구동하여 브라우저 전환 오버헤드 없이 terminal-native하게 빌드 로그 오류를 전송하고, 로컬 디버깅 및 소스 보정을 자율 수행하는 워크플로우.
@@ -263,7 +263,7 @@ AI 오픈소스 작업대는 2026년 AI GitHub 생태계가 local execution, wor
 - [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
 - [완벽하게 기계 가독성을 갖춘 디자인 시스템](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C%20%EA%B8%B0%EA%B3%84%20%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84%20%EA%B0%96%EC%B6%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
 - [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
-- [2026년 오픈소스 LLM 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20LLM%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
+- [2026년 오픈소스 [[LLM]] 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20[[LLM]]%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
 - [파이썬 AI 에이전트 프레임워크 6종 비교 분석](file:///Users/railscraft/Obsidian/raw/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%206%EC%A2%85%20%EB%B9%84%EA%B5%90%20%EB%B6%84%EC%84%9D.md)
 - [From faster pencil to [[AI Experience Architect]]. a designer’s path](file:///Users/railscraft/Obsidian/raw/From%20faster%20pencil%20to%20AI%20Experience%20Architect.%20a%20designer%E2%80%99s%20path.md)
 - [2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%83%9D%EC%84%B1%ED%98%95%20AI%20%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%2040%EC%84%A0%EA%B3%BC%20%EB%8B%B5%EB%B3%80.md)

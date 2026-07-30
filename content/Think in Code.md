@@ -17,7 +17,7 @@ Think in Code는 AI 코딩 에이전트가 대량의 원시 파일들을 직접 
 
 ## 핵심 요지
 - 거대한 데이터를 AI의 컨텍스트 윈도우에 그대로 밀어 넣으면 토큰을 순식간에 채워 세션 연속성이 망가지는 컨텍스트 부패를 유발한다 [raw/context-mode-README-정리.md#L21-L24](file:///Users/railscraft/Obsidian/raw/context-mode-README-%EC%A0%95%EB%A6%AC.md#L21-L24).
-- LLM을 단순 문자열 파싱이나 데이터 집계기(processor)가 아닌 고부가가치의 '코드 생성기(code generator)'로 올바르게 포지셔닝하여 연산 가치를 높인다 [raw/context-mode-README-정리.md#L32-L34](file:///Users/railscraft/Obsidian/raw/context-mode-README-%EC%A0%95%EB%A6%AC.md#L32-L34).
+- [[LLM]]을 단순 문자열 파싱이나 데이터 집계기(processor)가 아닌 고부가가치의 '코드 생성기(code generator)'로 올바르게 포지셔닝하여 연산 가치를 높인다 [raw/context-mode-README-정리.md#L32-L34](file:///Users/railscraft/Obsidian/raw/context-mode-README-%EC%A0%95%EB%A6%AC.md#L32-L34).
 
 ## 상세
 - **샌드박스 실행 효율**: 예컨대 디렉터리 내 50개의 개별 파일을 열고 닫으며 특정 함수 빈도를 세는 식의 단순 Read 루프 대신, 단 한 번의 `ctx_execute`를 사용해 Node.js나 Python 셸 스크립트를 밀어 넣고 `console.log()`의 통계 수치만 반환받는다 [raw/context-mode-README-정리.md#L34](file:///Users/railscraft/Obsidian/raw/context-mode-README-%EC%A0%95%EB%A6%AC.md#L34).

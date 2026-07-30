@@ -29,10 +29,10 @@ updated: 2026-07-10
 # AI를 UX에 쓰는 법
 
 ## 한 줄 정의
-AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스커버리 workflow를 함께 설계해 UX 실무자의 판단을 빠르게 만드는 방법이다.
+AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·디스커버리 workflow를 함께 설계해 UX 실무자의 판단을 빠르게 만드는 방법이다.
 
 ## 핵심 요지
-- LLM은 정답 저장소라기보다 텍스트 패턴을 생성하는 시스템이므로, UX에서는 먼저 도구의 한계를 이해해야 한다.
+- [[LLM]]은 정답 저장소라기보다 텍스트 패턴을 생성하는 시스템이므로, UX에서는 먼저 도구의 한계를 이해해야 한다.
 - 반복 설명을 줄이려면 역할, 톤, 출력 형식, 제약을 custom instruction이나 system prompt에 고정한다.
 - AI는 UX 리서치의 준비·정리·초안 작성에 강하지만, 해석과 판단은 여전히 인간의 책임이다.
 - 좋은 사용법은 AI가 답을 대신 내는 것이 아니라, 연구 질문을 정리하고 근거를 압축하고 선택지를 넓게 만드는 것이다.
@@ -42,10 +42,10 @@ AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스
 
 ## 상세
 
-이 workflow는 세 단계로 읽으면 쉽다. 첫째, LLM과 제품 표면의 성격을 이해한다. 둘째, 자주 반복하는 맥락을 설정으로 고정한다. 셋째, 리서치와 디스커버리에서 AI를 초안 생성기이자 압박 테스트 도구로 쓴다.
+이 workflow는 세 단계로 읽으면 쉽다. 첫째, [[LLM]]과 제품 표면의 성격을 이해한다. 둘째, 자주 반복하는 맥락을 설정으로 고정한다. 셋째, 리서치와 디스커버리에서 AI를 초안 생성기이자 압박 테스트 도구로 쓴다.
 
 1. **도구를 이해한다.**  
-   LLM은 데이터베이스처럼 사실을 꺼내 주는 도구가 아니라, 대화에서 제공한 맥락과 학습한 패턴을 바탕으로 다음에 올 텍스트를 예측한다. 그래서 UX 실무자는 "AI가 무엇을 아는가"보다 "AI가 무엇을 잘 정리하는가"를 먼저 봐야 한다.
+   [[LLM]]은 데이터베이스처럼 사실을 꺼내 주는 도구가 아니라, 대화에서 제공한 맥락과 학습한 패턴을 바탕으로 다음에 올 텍스트를 예측한다. 그래서 UX 실무자는 "AI가 무엇을 아는가"보다 "AI가 무엇을 잘 정리하는가"를 먼저 봐야 한다.
 
 2. **지속 설정을 만든다.**  
    역할, 사용자층, 톤, 출력 형식, 금지 규칙을 매번 다시 설명하면 마찰이 쌓인다. custom instruction이나 system prompt에 "나는 어떤 사람이고 어떻게 일하는지"를 적어 두면, 매 세션이 훨씬 빨리 시작된다.
@@ -131,6 +131,6 @@ AI를 UX에 쓰는 법은 LLM의 작동 원리, 지속 설정, 리서치·디스
 - AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
 - AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
 - [효과적인 리더십을 위한 [[전략적 사고]]를 키우는 법 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8%20%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A0%84%EB%9E%B5%EC%A0%81%20%EC%82%AC%EA%B3%A0%EB%A5%BC%20%ED%82%A4%EC%9A%B0%EB%8A%94%20%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 [[Context Engineering]] 가이드 - 출판형](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20RAG%20%EB%8C%80%20Vector%20RAG%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95)
-- [GraphRAG 대 Vectorless RAG 대 Vector RAG - 2026 고급 [[Context Engineering]] 가이드 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20RAG%20%EB%8C%80%20Vector%20RAG%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95)
+- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
 

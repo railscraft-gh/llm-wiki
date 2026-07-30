@@ -20,7 +20,7 @@ updated: 2026-07-21
 # [[Quartz]]로 Obsidian Wiki 배포하기
 
 ## 한 줄 정의
-Karpathy의 LLM Wiki 패턴으로 축적된 Obsidian 마크다운 지식베이스를 [[Quartz]] SSG와 GitHub Pages CI/CD 파이프라인을 통해 정적 웹사이트로 무료 게시하는 배포 아키텍처.
+Karpathy의 [[LLM]] Wiki 패턴으로 축적된 Obsidian 마크다운 지식베이스를 [[Quartz]] SSG와 GitHub Pages CI/CD 파이프라인을 통해 정적 웹사이트로 무료 게시하는 배포 아키텍처.
 
 ## 핵심 요지
 - **요구 환경**: Node.js [v22 이상](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md#L16), npm [v10.9.2+](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md#L17) 및 GitHub Actions 배포 권한.

@@ -16,13 +16,13 @@ sources:
 created: 2026-07-21
 updated: 2026-07-21
 ---
-# LLM 외부적 환각 (Extrinsic Hallucinations in LLMs)
+# [[LLM]] 외부적 환각 (Extrinsic Hallucinations in [[LLM]]s)
 
 ## 한 줄 정의
-LLM이 외부 세계 지식이나 사전 학습 데이터에 기반하지 않은, 사실과 다르거나 꾸며낸 정보를 사실인 것처럼 생성하는 현상.
+[[LLM]]이 외부 세계 지식이나 사전 학습 데이터에 기반하지 않은, 사실과 다르거나 꾸며낸 정보를 사실인 것처럼 생성하는 현상.
 
 ## 핵심 요지
-모델이 새로운 지식을 파인튜닝(Fine-tuning)을 통해 주입받을 때 환각 경향성이 오히려 증가할 수 있다. 외부 환각을 줄이고 모델의 사실성을 높이기 위해 검색 증강 생성(RAG), 다단계 검증(Chain of Verification), 사실성 중심 정렬 튜닝(Factuality tuning)과 같은 기법이 적용된다.
+모델이 새로운 지식을 파인튜닝(Fine-tuning)을 통해 주입받을 때 환각 경향성이 오히려 증가할 수 있다. 외부 환각을 줄이고 모델의 사실성을 높이기 위해 검색 증강 생성([[RAG]]), 다단계 검증(Chain of Verification), 사실성 중심 정렬 튜닝(Factuality tuning)과 같은 기법이 적용된다.
 
 ## 상세
 - **환각의 원인**: 방대하지만 부정확한 인터넷 사전 학습 데이터의 암기, 그리고 파인튜닝(SFT/RLHF) 단계에서 모델이 기존에 잘 알지 못하는(Unknown) 새로운 지식을 무리하게 학습(fitting)하려 할 때 발생.
@@ -30,7 +30,7 @@ LLM이 외부 세계 지식이나 사전 학습 데이터에 기반하지 않은
   - 검색 증강 평가: FActScore, SAFE, FacTool 등은 생성된 텍스트를 원자적 사실(atomic facts)로 분해한 뒤, 위키피디아나 구글 검색 같은 외부 출처를 이용해 각 사실의 지지 여부를 검증한다.
   - 샘플링 기반: SelfCheckGPT처럼 여러 번의 생성 샘플 간의 일관성을 측정하여 환각 여부를 판단.
 - **완화 기법 (Anti-Hallucination)**:
-  - RAG 기반 편집: RARR, FAVA 방식처럼 외부 문서를 검색해 기존 생성물의 오류를 소급해 편집 및 출처 표기.
+  - [[RAG]] 기반 편집: RARR, FAVA 방식처럼 외부 문서를 검색해 기존 생성물의 오류를 소급해 편집 및 출처 표기.
   - 동작 사슬 (Chain of Actions): CoVe(Chain-of-Verification)를 통해 초안을 생성 후 스스로 검증 질문을 만들어 교차 검증 및 수정 수행.
   - 사실성 튜닝: 생성물의 주장 진실성을 평가한 뒤 이를 보상 모델로 삼아 DPO 등으로 정렬 튜닝(FLAME, Factuality tuning).
 

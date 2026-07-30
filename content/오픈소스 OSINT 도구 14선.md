@@ -22,7 +22,7 @@ aliases:
 - **조사의 차별성 확보**: 대중적인 보안 도구(NMap 등)를 넘어 특정 문제를 해결하는 작고 전문화된 도구들을 통해 남들이 놓치기 쉬운 신호를 포착한다.
 - **다양한 영역의 도구**: URL 안전도 및 웹사이트 분석(CyScan, Recox, DNSDumpster, Website Informer), 멀티미디어 분석(Filmot, Find Pic Location), 온라인 신원 및 발자국 추적(What's My Name, haveibeensquattəd, OSINT Investigator’s Toolkit, Antipublic, ShareTrace, Searchall), 특정 커뮤니티 정보 복원(Telegram Spoiler Decoder), 다크웹 검색(Robin) 등으로 구성된다.
 - 유출 데이터 세트 계정 정보 조회 시 haveibeenpwned 사이트의 훌륭한 무료 대안으로 antipublic.net 플랫폼을 활용할 수 있다. (출처: 반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선.md)
-- 다크웹 검색 자동화 및 LLM 요약을 포함하는 에이전틱 OSINT 조사 도구로 robin(github.com/apurvsinghgautam/robin) 프로젝트가 존재한다.
+- 다크웹 검색 자동화 및 [[LLM]] 요약을 포함하는 에이전틱 OSINT 조사 도구로 robin(github.com/apurvsinghgautam/robin) 프로젝트가 존재한다.
 
 ## 상세
 
@@ -38,7 +38,7 @@ aliases:
 10. **Antipublic**: 유출된 로그인 기록 데이터베이스를 기반으로 이메일이나 비밀번호가 유출되었는지 점검할 수 있는 검색 플랫폼.
 11. **DNSDumpster**: 대상 도메인의 DNS 레코드 및 서브도메인을 조회하고 이를 시각적 맵으로 표현해 주는 패시브 DNS 정찰 도구.
 12. **Website Informer**: WHOIS 정보, IP, 호스팅 서버, 트래픽 등 임의의 도메인에 대한 정보 리포트를 신속하게 제공하는 웹사이트 인텔리전스 도구.
-13. **Robin**: 다크웹 검색 정제, Tor를 통한 페이지 스크래핑 및 LLM 요약을 지원하는 AI 기반 다크웹 OSINT CLI/웹 도구.
+13. **Robin**: 다크웹 검색 정제, Tor를 통한 페이지 스크래핑 및 [[LLM]] 요약을 지원하는 AI 기반 다크웹 OSINT CLI/웹 도구.
 14. **ShareTrace**: 사용자명, 이메일 등의 식별자가 존재하는 공개 플랫폼을 스캔하여 개인의 디지털 발자국을 추적하는 통합 도구.
 *   **Searchall**: 검색어 하나로 여러 검색 엔진, AI 챗봇, 소셜 네트워크를 동시에 검색할 수 있는 메타 검색 플랫폼.
 
@@ -56,7 +56,7 @@ aliases:
 10. **Antipublic** ([antipublic.net](https://antipublic.net/)): 과거 수집된 유출 로그인 크리덴셜 데이터베이스 검색 사이.
 11. **DNSDumpster** ([dnsdumpster.com](https://dnsdumpster.com/)): 패시브 DNS 인프라 시각적 맵 추출 도구.
 12. **Website Informer** ([website.informer.com](https://website.informer.com/)): WHOIS 레코드, 트래픽, 보안 평판 대시보드 리포팅 도구.
-13. **Robin** ([github.com/apurvsinghgautam/robin](https://github.com/apurvsinghgautam/robin)): 다크웹 AI 스크래핑 및 LLM 인텔리전스 요약 CLI 도구.
+13. **Robin** ([github.com/apurvsinghgautam/robin](https://github.com/apurvsinghgautam/robin)): 다크웹 AI 스크래핑 및 [[LLM]] 인텔리전스 요약 CLI 도구.
 14. **ShareTrace**: 개인의 흩어진 디지털 발자국 프로파일 통합 스캐너.
 - **Searchall** ([searchall.net](https://searchall.net/)): 하나의 키워드로 다수 검색 엔진, 소셜 미디어, AI 챗봇을 한눈에 조회하는 올인원 메타 검색 엔진.
 

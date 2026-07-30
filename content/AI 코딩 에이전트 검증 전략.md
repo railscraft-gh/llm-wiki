@@ -103,7 +103,7 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 단순 코드 생성�
 
 ## 핵심 요지
 - **기능 개발과 검증의 동시성**: 모든 기능 명세 지시는 "코드를 작성하라"에서 끝나지 않고, "해당 명세를 입증할 테스트 코드를 함께 작성하고, 린트와 테스트가 100% 통과할 때까지 자율 디버깅을 반복하여 결과를 제출하라"는 완료 조건(DoD)을 명시해야 한다.
-- **결정론적 검증 체계 (Deterministic Verification)**: LLM의 비결정론적이고 들쭉날쭉한 지능([[Jagged Intelligence]])을 통제하기 위해, 사람이 짠 테스트 프레임워크나 정적 린터 같은 객관적이고 기계적인 채점 시스템을 검증 수단으로 제공한다.
+- **결정론적 검증 체계 (Deterministic Verification)**: [[LLM]]의 비결정론적이고 들쭉날쭉한 지능([[Jagged Intelligence]])을 통제하기 위해, 사람이 짠 테스트 프레임워크나 정적 린터 같은 객관적이고 기계적인 채점 시스템을 검증 수단으로 제공한다.
 - **AI 보조 코딩 마스터링 3대 핵심축**: AI 코딩을 단순 바이브 코딩에서 전문 엔지니어링 기술로 승격시키기 위해 컨텍스트 정합성(Alignment) 관리, 테스트 팩을 통한 기계적 검증, 정량적 피드백 루프를 철저히 조율한다.
 - AI 코딩 에이전트를 코드 작성뿐만 아니라 보안 감사, 아키텍처 의사결정, 문서화, 성능 프로파일링 등 사후 검증 단계에 적극 배치해야 함 [raw/You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko.md]
 
@@ -136,7 +136,7 @@ AI 코딩 에이전트 검증 전략은 에이전트에게 단순 코드 생성�
 
 ### 3. 보리스 & 카파시 관점의 검증 루프
 - **보리스 관점**: Claude Code, Gemini CLI 같은 도구를 단순 코드 생성기가 아니라 "자기 작업을 확인하고 실패하면 다시 고치는 에이전트"로 다룬다. 검증 수단은 프로젝트에 이미 존재하는 `npm test`, `ruff check`, 빌드 명령, CI 등 실행 가능한 기준이어야 한다.
-- **카파시의 [[Jagged Intelligence]]**: LLM은 검증 가능한 영역(예: 컴파일 통과, 린트 오류 없음)에서는 강하지만, 모호한 도메인 판단에서는 취약하다. 따라서 [[Vibe Coding과 Agentic Engineering]]을 구분하는 핵심은 속도가 아니라 검증 책임을 에이전트에게 지속적으로 쥐어주는가이다.
+- **카파시의 [[Jagged Intelligence]]**: [[LLM]]은 검증 가능한 영역(예: 컴파일 통과, 린트 오류 없음)에서는 강하지만, 모호한 도메인 판단에서는 취약하다. 따라서 [[Vibe Coding과 Agentic Engineering]]을 구분하는 핵심은 속도가 아니라 검증 책임을 에이전트에게 지속적으로 쥐어주는가이다.
 - `raw/andrej-karpathy-skills-CLAUDE-번역.md`는 이를 더 짧은 규칙으로 압축한다. [[에이전트 코딩 4원칙]]의 Goal-Driven Execution은 작업 목적을 모호한 버그 수정이 아니라 실패 가능한 테스트와 확인 방법으로 명시할 것을 요구한다.
 
 ### 4. 세션 운영 및 UI 검증 장치
@@ -349,7 +349,7 @@ git add -p
 - [하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
 - [BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk.](file:///Users/railscraft/Obsidian/raw/BofA%E2%80%99s%20May%20Survey%20Says%20Investors%20Are%20Back%20in%20Stocks.%20The%2030-Year%20Is%20the%20Risk..md)
 - [내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%20%EC%A3%BC%EC%9D%98%20%EC%A7%91%EC%A4%91%20%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%90%98%EB%8F%8C%EB%A0%A4%EC%A4%80%2011%EA%B0%80%EC%A7%80%20%EC%82%AC%EC%86%8C%ED%95%9C%20%EC%83%9D%ED%99%9C%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%EB%B3%80%ED%99%94.md)
-- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/LLM%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
+- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
 - [2026년을 위한 웹 디자인 및 빌드 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9B%B9%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%B0%8F%20%EB%B9%8C%EB%93%9C%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
 - [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/Obsidian/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
 - [Infisical_SSH_헤드리스_인증_가이드](file:///Users/railscraft/Obsidian/raw/Infisical_SSH_%ED%97%A4%EB%93%9C%EB%A6%AC%EC%8A%A4_%EC%9D%B8%EC%A6%9D_%EA%B0%80%EC%9D%B4%EB%93%9C.md)
@@ -357,7 +357,7 @@ git add -p
 - [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/Obsidian/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
 - [These 3 ETFs Created More Millionaires Than Any Stock](file:///Users/railscraft/Obsidian/raw/These%203%20ETFs%20Created%20More%20Millionaires%20Than%20Any%20Stock.md)
 - [60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴](file:///Users/railscraft/Obsidian/raw/60%EC%9D%BC%EA%B0%84%2011%EB%B2%88%EC%9D%98%20%EA%B8%B0%EC%88%A0%20%EC%9D%B8%ED%84%B0%EB%B7%B0%EB%A5%BC%20%EC%B9%98%EB%A5%B4%EB%A9%B0%20%EA%B9%A8%EB%8B%AC%EC%9D%80%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%B4%EC%A3%BC%EC%A7%80%20%EC%95%8A%EB%8A%94%20%ED%8C%A8%ED%84%B4.md)
-- [Run a Useful Local LLM in 30 Minutes (Coding, RAG, Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20LLM%20in%2030%20Minutes%20%28Coding%2C%20RAG%2C%20Voice%29.md)
+- [Run a Useful Local [[LLM]] in 30 Minutes (Coding, [[RAG]], Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20[[LLM]]%20in%2030%20Minutes%20%28Coding%2C%20[[RAG]]%2C%20Voice%29.md)
 - [API_Key_관리_및_Infisical_도입_가이드](file:///Users/railscraft/Obsidian/raw/API_Key_%EA%B4%80%EB%A6%AC_%EB%B0%8F_Infisical_%EB%8F%84%EC%9E%85_%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 - [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
 - [모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
@@ -365,5 +365,5 @@ git add -p
 - [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
 - [GLM-5.1-vs-Kimi-K2.6-Coding-Comparison](file:///Users/railscraft/Obsidian/raw/[[GLM-5]].1-vs-Kimi-K2.6-Coding-Comparison.md)
 - [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
-- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/RAG%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
+- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/[[RAG]]%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
 

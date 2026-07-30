@@ -64,5 +64,5 @@ print(response.choices[0].message.content)  # -> "Hello from FM."
 
 ## 출처
 
-- "macOS 27 Has a Hidden LLM Inside — 10 (Amazing) Things You Can Do With It." (Medium, 2026-07-15)
+- "macOS 27 Has a Hidden [[LLM]] Inside — 10 (Amazing) Things You Can Do With It." (Medium, 2026-07-15)
 - Apple Developer Documentation - Foundation Models Framework

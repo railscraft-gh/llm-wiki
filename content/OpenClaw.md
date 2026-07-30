@@ -34,7 +34,7 @@ aliases: []
 # OpenClaw
 
 ## 한 줄 정의
-OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우저, API 작업을 실제로 수행하게 하는 self-hosted personal agent runtime이다.
+OpenClaw는 여러 메시징 채널과 [[LLM]]을 연결해 shell, 파일, 브라우저, API 작업을 실제로 수행하게 하는 self-hosted personal agent runtime이다.
 
 ## 핵심 요지
 - 핵심은 reasoning demo가 아니라 "내 환경에서 실제 행동을 수행하는 agent"라는 점이다.
@@ -49,7 +49,7 @@ OpenClaw는 여러 메시징 채널과 LLM을 연결해 shell, 파일, 브라우
 
 ## 상세
 
-원문 기준 OpenClaw는 WhatsApp, Telegram, Slack, Discord 등 50개+ 채널에서 들어온 요청을 하나의 Gateway가 받아 chosen LLM으로 보내고, 다시 tool 실행으로 연결한다. memory는 vector DB보다 markdown file 중심이며, `SOUL.md`가 행동 규칙을, `MEMORY.md`가 장기 맥락을 담당한다. 이 조합은 [[에이전트 확장 3계층]]에서 말하는 tool·skill·외부 연결을 제품 수준에서 묶은 사례다.
+원문 기준 OpenClaw는 WhatsApp, Telegram, Slack, Discord 등 50개+ 채널에서 들어온 요청을 하나의 Gateway가 받아 chosen [[LLM]]으로 보내고, 다시 tool 실행으로 연결한다. memory는 vector DB보다 markdown file 중심이며, `SOUL.md`가 행동 규칙을, `MEMORY.md`가 장기 맥락을 담당한다. 이 조합은 [[에이전트 확장 3계층]]에서 말하는 tool·skill·외부 연결을 제품 수준에서 묶은 사례다.
 
 중요한 점은 capability만이 아니다. 보안이 같이 따라온다. 원문은 악성 skill, 과도한 권한, localhost가 아닌 공개 바인딩, prompt injection 내성 부족을 핵심 리스크로 본다. 따라서 OpenClaw는 강력한 runtime이지만, "항상 켜져 있고 실제 권한을 가진 agent"를 어떻게 격리할지 함께 설계해야 한다는 교훈을 준다.
 
@@ -68,7 +68,7 @@ OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시�
 - **Gateway**: WebSocket 연결, 채널 메시지 수신, 세션 라우팅, 도구 실행을 하나의 프로세스에서 전부 처리한다.
 - **세 계층 확장 시스템**:
   - **Tools**: 파일 읽기/쓰기, 쉘 명령어 실행, 브라우저 스크래핑 등 저수준의 동작을 수행하는 TypeScript 함수들이다.
-  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. LLM이 마크다운 문서를 직접 해석하여 실행한다.
+  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. [[LLM]]이 마크다운 문서를 직접 해석하여 실행한다.
   - **Plugins**: npm 패키지 형태로 복잡한 전역 상태, 외부 종속성, 무거운 로직을 처리하는 공유 라이브러리다.
 - **메모리(Memory) 구조**: 복잡한 Vector DB나 임베딩 없이, 로컬 Plain Text 마크다운 파일로만 대화 기록을 관리한다 (`~/.openclaw/workspace/memory/YYYY-MM-DD.md` 및 장기 기억인 `MEMORY.md` 활용).
 - **설정 파일**: 에이전트 성격과 경계를 정의하는 `SOUL.md`(버전 제어 권장)와 대화 흐름상 장기 맥락을 수집하는 `MEMORY.md` 두 가지로 핵심 성격과 지식을 구분한다.
@@ -95,7 +95,7 @@ OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시�
 - **Gateway**: WebSocket 연결, 채널 메시지 수신, 세션 라우팅, 도구 실행을 하나의 프로세스에서 전부 처리한다.
 - **세 계층 확장 시스템**:
   - **Tools**: 파일 읽기/쓰기, 쉘 명령어 실행, 브라우저 스크래핑 등 저수준의 동작을 수행하는 TypeScript 함수들이다.
-  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. LLM이 마크다운 문서를 직접 해석하여 실행한다.
+  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. [[LLM]]이 마크다운 문서를 직접 해석하여 실행한다.
   - **Plugins**: npm 패키지 형태로 복잡한 전역 상태, 외부 종속성, 무거운 로직을 처리하는 공유 라이브러리다.
 - **메모리(Memory) 구조**: 복잡한 Vector DB나 임베딩 없이, 로컬 Plain Text 마크다운 파일로만 대화 기록을 관리한다 (`~/.openclaw/workspace/memory/YYYY-MM-DD.md` 및 장기 기억인 `MEMORY.md` 활용).
 - **설정 파일**: 에이전트 성격과 경계를 정의하는 `SOUL.md`(버전 제어 권장)와 대화 흐름상 장기 맥락을 수집하는 `MEMORY.md` 두 가지로 핵심 성격과 지식을 구분한다.
@@ -122,7 +122,7 @@ OpenClaw의 아키텍처는 복잡한 Planner Tree나 Agent Hierarchy를 명시�
 - **Gateway**: WebSocket 연결, 채널 메시지 수신, 세션 라우팅, 도구 실행을 하나의 프로세스에서 전부 처리한다.
 - **세 계층 확장 시스템**:
   - **Tools**: 파일 읽기/쓰기, 쉘 명령어 실행, 브라우저 스크래핑 등 저수준의 동작을 수행하는 TypeScript 함수들이다.
-  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. LLM이 마크다운 문서를 직접 해석하여 실행한다.
+  - **Skills**: JSON/Python 대신 마크다운 문서 `SKILL.md`를 통해 에이전트의 트리거 조건(예: `cron 0 7 * * *`)과 단계적 행동 지침을 정의하는 선언형 계층이다. [[LLM]]이 마크다운 문서를 직접 해석하여 실행한다.
   - **Plugins**: npm 패키지 형태로 복잡한 전역 상태, 외부 종속성, 무거운 로직을 처리하는 공유 라이브러리다.
 - **메모리(Memory) 구조**: 복잡한 Vector DB나 임베딩 없이, 로컬 Plain Text 마크다운 파일로만 대화 기록을 관리한다 (`~/.openclaw/workspace/memory/YYYY-MM-DD.md` 및 장기 기억인 `MEMORY.md` 활용).
 - **설정 파일**: 에이전트 성격과 경계를 정의하는 `SOUL.md`(버전 제어 권장)와 대화 흐름상 장기 맥락을 수집하는 `MEMORY.md` 두 가지로 핵심 성격과 지식을 구분한다.
