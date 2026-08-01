@@ -11,6 +11,7 @@ sources:
 - raw/내가 Obsidian을 정리하는 방법 - 다니엘 프린디.md
 - raw/AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식).md
 - raw/옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드.md
+- raw/How to Turn Your Obsidian Vault Into an AI Second Brain.md
 - raw/LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md
 - raw/테일윈드의 고군분투는 무너지는 사상누각의 징조다.md
 - raw/AI가 내 글쓰기 커리어를 죽였다. AI 만세.md
@@ -145,7 +146,7 @@ Claude Code를 볼트 디렉터리에서 구동하고 `.claude/commands/` 디렉
 - **/ingest**: `raw/` 폴더의 신규 원천 데이터를 스캔하여 고유명사와 수치를 보존한 채 `wiki/` 개념 노트를 승격하고 양방향 위키링크(`링크`)로 자동 매핑합니다.
 - **/query**: 자연어로 볼트 내 지식을 탐색하며 신뢰도 높은 근거 출처(라인 번호 포함)를 동반해 보고합니다.
 - **/lint**: 끊어지거나 고립된 링크, frontmatter 누락 등을 정기 감사(Audit)합니다.
-- **/log**: 분류되지 않는 아이디어를 타임스탬프와 함께 일일 일지에 즉시 기록합니다.
+- **/log**: 분류되지 않는 아이디어를 타임스탬프와 함께 일일 일지에 즉시 기록하거나, 에이전트가 백그라운드에서 활동한 요약 내역을 `logs/` 폴더에 일일 브리핑 형태로 생성하여 변화를 추적합니다.
 
 ### 7. 메타(Meta)의 4대 기본 탑재 에이전트 스킬
 메타 전사 63,000명 이상이 사용하는 AI 세컨드 브레인은 PARA 워크스페이스 구조 위에 아래 4대 기본 슬래시 명령어를 결합하여 온보딩 마찰을 해소하고 지식 노동의 복리 효과를 창출한다.
@@ -271,4 +272,4 @@ AI 에이전트(예: Claude Code)와의 안전하고 일관된 통합을 실현�
 - [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
 - [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/[[RAG]]%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
 - [Claude Code와 Obsidian으로 AI 세컨드 브레인 구축하기](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EC%99%80%20Obsidian%EC%9C%BC%EB%A1%9C%20AI%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0.md)
-
+- [How to Turn Your Obsidian Vault Into an AI Second Brain](file:///Users/railscraft/Obsidian/raw/How%20to%20Turn%20Your%20Obsidian%20Vault%20Into%20an%20AI%20Second%20Brain.md)

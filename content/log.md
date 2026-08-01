@@ -6,10 +6,39 @@ tags:
 - log
 sources: []
 created: 2026-05-06
-updated: 2026-07-30
+updated: 2026-08-01
 aliases: []
 ---
 # LLM Wiki Log
+
+## 2026-08-01
+
+### Ingest
+
+- 입력: `raw/12 Copy-Paste AI Image Prompts That Make Your Product Look Like It Has a $5,000 Design Team.md`
+- 입력: `raw/A YouTuber Just Did More for Self-Hosted AI Than a Decade of Open Source.md`
+- 입력: `raw/AI Agents Don't Need Vector Search Anymore. Inside the Agentic Search Stack Replacing RAG in 2026.md`
+- 입력: `raw/Agent Journey Map. Designing Software for AI Agents.md`
+- 입력: `raw/Beyond UI Design. 3 Things You Can Create with Claude Design.md`
+- 입력: `raw/Building a Personal AI Agent in a couple of Hours.md`
+- 입력: `raw/Claude Code + Figma = 💛.md`
+- 입력: `raw/Do These 5 Things First After Installing Hermes Agent.md`
+- 입력: `raw/Harness Engineering vs Loop Engineering vs Graph Engineering. Why AI Agents Actually Fail.md`
+- 입력: `raw/How I Design UI with Help of AI Tool, Without Ending up With Slop.md`
+- 입력: `raw/How Netflix Handles 260 Million Concurrent Streams Without Buffering.md`
+- 입력: `raw/How to Turn Your Obsidian Vault Into an AI Second Brain.md`
+- 입력: `raw/How to Write Technical Emails Like a Senior Engineer.md`
+- 입력: `raw/I Tried Every "Second Brain" App. The Concept Is the Problem, Not the Tools..md`
+- 입력: `raw/I Turned My 16GB Mac Mini Into an AI Powerhouse — Here's How LM Studio Link Changed Everything.md`
+- 입력: `raw/I Was Ready to Return My DGX Spark. Then NVIDIA's January Update Changed Everything..md`
+- 입력: `raw/Management Ideas I Still Believe After Twenty Years of Leading Teams.md`
+- 입력: `raw/Qwen3.6–35B Runs on a 16 GB M4 Mac mini — Fully in Memory, No Tricks.md`
+- 입력: `raw/The Architecture of Guilt. How Duolingo Weaponized Negative Emotion to Build a Design System.md`
+- 입력: `raw/What Freelancers and Small Companies Should Do Right Now That Big Companies Can't.md`
+- 생성: [[7블록 AI 이미지 프롬프트 구조]], [[Odysseus (AI 워크스페이스)]], [[로컬 LLM 메모리 대역폭]], [[적시 컨텍스트 로딩 (Just-in-Time Context Loading)]], [[검색자로서의 에이전트 (Agent-as-retriever)]], [[에이전트 경험 (Agent Experience, AX)]], [[에이전트 여정 지도 (Agent Journey Map)]], [[개인 AI 에이전트 구축]], [[에이전트 시스템 3계층]], [[넷플릭스 사전 캐싱 아키텍처]], [[시니어 엔지니어의 기술 이메일 작성법]], [[세컨드 브레인의 기록 병목 현상]], [[LM Studio Link]], [[DGX Spark]], [[동기부여보다 마찰을 줄여라 (Reduce Friction over Motivation)]], [[1.58-bit 삼진 양자화 (1.58-bit Ternary Quantization)]], [[손실 회피와 스트릭 - 듀오링고의 강압적 디자인 (Coercive Design in Duolingo)]], [[토큰 차익 거래 (Token Arbitrage)]]
+- 수정: [[Claude Design]], [[Claude_Code_Figma_활용_가이드]], [[Hermes Agent]], [[AI Slop]], [[Moonchild AI]], [[AI 세컨드 브레인]]
+- index 업데이트: 완료
+- 남은 검토: 없음
 
 ## 2026-07-31
 

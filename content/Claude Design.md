@@ -59,6 +59,7 @@ updated: 2026-07-10
 Claude Design은 Anthropic이 발표한 Opus 4.7 기반의 디자인 생성 및 편집 도구로, 디자이너가 아닌 비전문가도 템플릿 형태로 프로토타입, 슬라이드, 원페이저를 쉽게 제작할 수 있게 돕는 시스템이다.
 
 ## 핵심 요지
+- **확장된 활용성**: 단순 UI 디자인 시안 생성을 넘어 이력서(Resume), 인터랙티브 다이어그램, 브랜드 맞춤형 HTML 이메일 템플릿 등 광범위한 디자인 작업에 활용할 수 있다. (출처: raw/Beyond UI Design. 3 Things You Can Create with Claude Design.md)
 - **Stitch와의 유사성**: 앤트로픽(Anthropic)이 2026년 6월 프로덕션 환경에 정식 배포한 Claude Design은 내부적으로 `.jsx`(React) 코드를 생성하며, 과거 구글이 발표한 [[Google Stitch]]의 디자인 생성 패러다임과 유사하다.
 - **평균적인 품질 (Average+)**: AI가 학습한 검증된 데이터베이스를 바탕으로 시각적으로 평범하고 깔끔한 수준(Average+)의 결과물을 무난하게 도출해 주어 디자인 하한선을 높인다.
 - **80% 인간 디자이너 상회**: OpenAI의 UI 특화 이미지 생성 모델 등과 결합하면서 AI 결과물의 품질은 이미 현업 디자이너 약 80%가 직접 작업하는 평균치보다 우수하며, 향후 90% 선까지 근접할 것으로 전망된다 (출처: raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md).
@@ -97,6 +98,10 @@ Claude Design이 선보인 3D Globe 데모는 언뜻 화려해 보이나, 세부
 ## 예시
 
 - **3D 지구본 데모**: 각 지역을 연결한 3D 지구본 회전 애니메이션 데모가 대표적이나, 전문 디자이너가 분석했을 때 선들은 표면에 납작하게 붙은 평면 텍스처 형태에 불과해 가독성과 대비가 다소 떨어졌다.
+- **다목적 디자인 생성 (UI 외 활용)**:
+  1. **이력서 (Resume)**: 사용자가 내용만 텍스트로 제공하고 Roxy Design System(IBM Carbon 변형) 등 사용자 정의 디자인 시스템을 임포트하면, 시각적 계층 구조가 개선된 이력서를 PDF, PPT, HTML 형식으로 즉시 생성할 수 있다.
+  2. **인터랙티브 다이어그램**: 복잡한 개념도나 관계도를 그릴 때, 정보가 부족하면 AI가 질문을 통해 공백을 메운 뒤 동적 인터랙션이 포함된 다이어그램을 완성해 낸다.
+  3. **HTML 이메일 템플릿**: 회사의 브랜드 정체성(색상, 타이포그래피)을 고스란히 반영한 맞춤형 HTML 이메일 템플릿을 코딩해 준다.
 - **Opus 4.7 Claude Code 비교**: 일반 Opus 4.7 Claude Code에 동일한 수준의 디자인 프롬프트를 넣었을 때 오히려 애니메이션이 실제로 적용된 3D 구조를 구현해 내는 등, 굳이 Claude Design 템플릿이 아니더라도 일반 [[코딩 에이전트]]로 유사하거나 더 나은 품질의 UI 생성이 가능함이 확인되었다.
 
 #### Dribbble 복제 템플릿 한계 예시
@@ -117,6 +122,7 @@ Claude Design이 선보인 3D Globe 데모는 언뜻 화려해 보이나, 세부
 
 ## 출처
 - Claude Design이 디자이너를 대체할 것인가
+- raw/Beyond UI Design. 3 Things You Can Create with Claude Design.md
 - [Google Stitch vs Human Design Comparison](https://michalmalewicz.medium.com/human-designer-vs-google-s-vibe-design-tool-36d33cc372ce)
 - raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md
 - [클로드 디자인은 과연 디자이너를 대체할까](file:///Users/railscraft/Obsidian/raw/%ED%81%B4%EB%A1%9C%EB%93%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EA%B3%BC%EC%97%B0%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%EA%B9%8C.md)

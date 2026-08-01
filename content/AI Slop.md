@@ -10,6 +10,7 @@ aliases:
 - AI-Slop
 sources:
 - raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md
+- raw/How I Design UI with Help of AI Tool, Without Ending up With Slop.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
@@ -27,6 +28,8 @@ AI가 생성한 프런트엔드 UI/UX 디자인에서 흔히 나타나는, 훈�
 
 [[LLM]]은 본질적으로 학습 데이터의 확률적 평균을 추구하는 특성이 있기 때문에, AI [[코딩 에이전트]](예: Claude Code)에게 프런트엔드 UI를 요청하면 디자인의 엣지(edge)나 고유한 아이덴티티가 거세된 가장 무난하고 흔한 디자인을 내놓게 된다. Anthropic의 엔지니어들은 이를 "AI slop" 미학이라고 명명했으며, [문서](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%AC%B8%EC%84%9C.%20%EB%8B%A8%2030%EC%A4%84%EC%A7%9C%EB%A6%AC%EC%98%80%EB%8B%A4.%20Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%20%EB%91%90%20%EB%AA%85%EC%9D%B4%20%EC%8D%BC%EB%8B%A4.%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%80%20%EC%95%84%EC%A7%81%20%EC%9D%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4-ko.md#L65)에서 문제 자체를 공식적으로 인정했다. 이를 극복하기 위해 만든 30줄짜리 `SKILL.md`는 "절대 평범한 선택으로 수렴하지 말라(NEVER converge on common choices)"고 지시하며 AI 디자인의 다양성을 강제한다.
 
+또한, 이러한 획일성을 근본적으로 타파하기 위해서는 AI 도구에게 '시스템 우선(System-first)' 방식을 적용해야 한다. 즉, 빈 화면에서 바로 UI 생성을 요구하지 말고, 사전에 타이포그래피, 간격, 컴포넌트 규칙 등이 정의된 '디자인 시스템'을 쥐여주어 빈틈을 주지 않아야 AI가 독단적으로 얄팍한 기성품 디자인을 남발하는 것을 막을 수 있다. (예: [[Moonchild AI]]와 Google Antigravity 연동)
+
 ## 예시
 
 - **금지 대상 패턴**: Inter, Roboto, Arial 폰트, 시스템 폰트, 흰 배경 위 보라색 그라데이션, 예측 가능한 3단 카드 레이아웃 등.
@@ -42,5 +45,5 @@ AI가 생성한 프런트엔드 UI/UX 디자인에서 흔히 나타나는, 훈�
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-
 - [raw/2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko.md](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%AC%B8%EC%84%9C.%20%EB%8B%A8%2030%EC%A4%84%EC%A7%9C%EB%A6%AC%EC%98%80%EB%8B%A4.%20Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%20%EB%91%90%20%EB%AA%85%EC%9D%B4%20%EC%8D%BC%EB%8B%A4.%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%80%20%EC%95%84%EC%A7%81%20%EC%9D%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4-ko.md)
+- [raw/How I Design UI with Help of AI Tool, Without Ending up With Slop.md](file:///Users/railscraft/Obsidian/raw/How%20I%20Design%20UI%20with%20Help%20of%20AI%20Tool%2C%20Without%20Ending%20up%20With%20Slop.md)

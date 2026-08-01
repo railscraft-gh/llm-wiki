@@ -179,6 +179,7 @@ tags:
 aliases: [Hermes Agent]
 sources:
   - raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md
+  - raw/Do These 5 Things First After Installing Hermes Agent.md
 created: 2026-07-21
 updated: 2026-07-21
 ---
@@ -199,9 +200,17 @@ updated: 2026-07-21
 - **기술 학습:** "Docker로 서비스 배포"를 수행하면 Hermes가 단계를 기술로 저장하고 다음번에 더 빠르게 수행합니다.
 - **메모리 복구:** "지난주 Nginx 설정 기억나?"라고 물으면 세션 검색을 통해 과거 맥락을 복구하여 답변합니다.
 
+### 성공적인 온보딩을 위한 5원칙
+1. **모델 분리**: 모든 작업에 비싼 모델을 쓰지 말고, 요약(저렴한 모델)과 추론(강력한 모델)을 분리합니다.
+2. **기억 경계 설정**: 임시 아이디어나 금융 정보 등은 무시하고, 반복 업무와 승인된 취향만 기억하도록 규칙을 부여합니다.
+3. **단일 도구 시작**: 처음부터 이메일, 캘린더 등 모든 것을 연동하지 말고 메모 앱(예: Hermes Inbox) 단 하나만 연결하여 안정성을 확인합니다.
+4. **일일 대시보드 구축**: 어제 요약, 차단 요인, 미루고 있는 일 등을 한눈에 보여주는 단순한 대시보드를 생성하게 합니다.
+5. **점진적 권한 위임**: 초안 작성, 준비 단계 등에서 먼저 유용성을 검증한 후 자동화 권한을 허용합니다.
+
 ## 관련 노트
 - [[에이전틱 AI 엔지니어 실무 로드맵]]
 - AI Agent Best Practices. Production-Ready [[Harness Engineering]]
 
 ## 출처
 - [raw/Hermes 에이전트 + Ollama. 로컬에 설치하는 가장 빠른 방법-ko.md](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20+%20Ollama.%20%EB%A1%9C%EC%BB%AC%EC%97%90%20%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EB%B9%A0%EB%A5%B8%20%EB%B0%A9%EB%B2%95-ko.md)
+- [raw/Do These 5 Things First After Installing Hermes Agent.md](file:///Users/railscraft/Obsidian/raw/Do%20These%205%20Things%20First%20After%20Installing%20Hermes%20Agent.md)
