@@ -18,10 +18,10 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-# Claude Code 세션 운영 명령어
+# [[Claude Code]] 세션 운영 명령어
 
 ## 한 줄 정의
-Claude Code 세션 운영 명령어는 세션 설정, context 유지, 셸 실행, 모델 전환, 장애 복구를 slash command로 표준화해 Claude Code를 자동완성 도구가 아니라 작업 파트너로 쓰게 만드는 workflow다.
+[[Claude Code]] 세션 운영 명령어는 세션 설정, context 유지, 셸 실행, 모델 전환, 장애 복구를 slash command로 표준화해 [[Claude Code]]를 자동완성 도구가 아니라 작업 파트너로 쓰게 만드는 workflow다.
 
 ## 핵심 요지
 - 명령어는 단축키가 아니라 세션 상태를 관리하는 운영 인터페이스다.
@@ -32,7 +32,7 @@ Claude Code 세션 운영 명령어는 세션 설정, context 유지, 셸 실행
 
 ## 상세
 
-많은 사용자가 Claude Code를 "자연어 프롬프트를 입력하고 결과를 기다리는 일반 채팅창"으로 오해한다. 그러나 실제 생산성의 도약은 세션 상태, 컨텍스트 용량, 런타임 환경을 능동적으로 다루는 **14대 핵심 명령어**를 자유자재로 조율할 때 일어난다.
+많은 사용자가 [[Claude Code]]를 "자연어 프롬프트를 입력하고 결과를 기다리는 일반 채팅창"으로 오해한다. 그러나 실제 생산성의 도약은 세션 상태, 컨텍스트 용량, 런타임 환경을 능동적으로 다루는 **14대 핵심 명령어**를 자유자재로 조율할 때 일어난다.
 
 ### 14대 핵심 세션 운영 명령어 체계
 
@@ -63,7 +63,7 @@ Claude Code 세션 운영 명령어는 세션 설정, context 유지, 셸 실행
   - `claude --permission-mode plan` (분석 전용 계획 모드로 진입)
   - `claude -p --max-budget-usd 1.00 "태스크"` (태스크당 비용 상한선 지정 강제)
   - `claude --continue` (가장 최근 세션 이어서 재개)
-  - `claude --resume [세션명]` (이름으로 저장해 둔 특정 세션 복원)
+  - `claude --resume [세션명]` (이름으로 저장해 둔 특정 [[세션 복원]])
 - **진단 및 업데이트**:
   - `claude doctor` (설치 타입, 버전, 디렉토리 권한, 환경 상태 종합 진단)
   - `claude update` (최신 안정 버전 수동 강제 업데이트)
@@ -97,6 +97,6 @@ crontab -e
 - [[병렬 에이전트 세션 운영]]
 
 ## 출처
-- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
-- [cc101_axwith_ko](file:///Users/railscraft/Obsidian/raw/cc101_axwith_ko.md)
+- [[Claude Code]]를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- [cc101_axwith_ko](file:///Users/railscraft/[[Obsidian]]/raw/cc101_axwith_ko.md)
 

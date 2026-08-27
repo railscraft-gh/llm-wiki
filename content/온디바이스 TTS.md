@@ -44,7 +44,7 @@ updated: 2026-07-10
 Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델로, 다음과 같은 혁신적 기술들을 특징으로 한다:
 
 - **Flow-matching Latent Diffusion over Autoencoder**: 텍스트 인코더가 생성한 표현을 오토인코더 Latent 공간 상에서 흐름 매칭 잠재 확산을 통해 고음질 파형으로 복원한다.
-- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 임베딩 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
+- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 [[임베딩]] 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
 - **Noisy Labels Self-Purification**: 데이터셋 노이즈 자가 정제 필터링 기술을 활용해 소량의 데이터 및 저품질 녹음 데이터 환경에서도 깨끗한 고품질 코퍼스를 추출하여 학습했다.
 - **라이선스**: 프로젝트는 오픈소스로 배포되며, 상업적 사용 권리를 규정하는 OpenRAIL-M 라이선스를 따른다.
 
@@ -57,7 +57,7 @@ Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델
 Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델로, 다음과 같은 혁신적 기술들을 특징으로 한다:
 
 - **Flow-matching Latent Diffusion over Autoencoder**: 텍스트 인코더가 생성한 표현을 오토인코더 Latent 공간 상에서 흐름 매칭 잠재 확산을 통해 고음질 파형으로 복원한다.
-- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 임베딩 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
+- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 [[임베딩]] 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
 - **Noisy Labels Self-Purification**: 데이터셋 노이즈 자가 정제 필터링 기술을 활용해 소량의 데이터 및 저품질 녹음 데이터 환경에서도 깨끗한 고품질 코퍼스를 추출하여 학습했다.
 - **라이선스**: 프로젝트는 오픈소스로 배포되며, 상업적 사용 권리를 규정하는 OpenRAIL-M 라이선스를 따른다.
 
@@ -70,7 +70,7 @@ Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델
 Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델로, 다음과 같은 혁신적 기술들을 특징으로 한다:
 
 - **Flow-matching Latent Diffusion over Autoencoder**: 텍스트 인코더가 생성한 표현을 오토인코더 Latent 공간 상에서 흐름 매칭 잠재 확산을 통해 고음질 파형으로 복원한다.
-- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 임베딩 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
+- **LARoPE (Linear Alignment with Rotary Position Embedding)**: 위치 [[임베딩]] 보정을 통해 모델이 인지하는 텍스트 한계를 없애 무제한 시퀀스 길이에 대한 안정적인 합성을 보장한다.
 - **Noisy Labels Self-Purification**: 데이터셋 노이즈 자가 정제 필터링 기술을 활용해 소량의 데이터 및 저품질 녹음 데이터 환경에서도 깨끗한 고품질 코퍼스를 추출하여 학습했다.
 - **라이선스**: 프로젝트는 오픈소스로 배포되며, 상업적 사용 권리를 규정하는 OpenRAIL-M 라이선스를 따른다.
 
@@ -84,11 +84,11 @@ Supertonic 3 모델은 99M 파라미터 크기의 초경량 음성 합성 모델
 - 사내 도구: character billing 없이 반복적인 TTS를 붙인다.
 - offline 앱: e-reader나 현장용 앱에서 airplane mode로 음성을 제공한다.
 
-- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 워크플로우.
+- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 [[워크플로]]우.
 
-- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 워크플로우.
+- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 [[워크플로]]우.
 
-- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 워크플로우.
+- **ONNX 로컬 모델 추론 실행**: Supertonic 3 ONNX 런타임을 로컬 디바이스(Mac Mini M4 또는 Raspberry Pi 5)에 빌드하여, `python run_tts.py --text "안녕하세요" --model supertonic3.onnx`와 같은 형태로 지연 시간 1.5초 이내에 다국어 음성을 로컬 렌더링하는 [[워크플로]]우.
 
 ## 충돌
 - 2026-05-26 확인: 모델 스펙, benchmark, 지원 언어 수, 라이선스 조건은 빠르게 바뀔 수 있다. 실제 도입 전에는 공식 저장소와 라이선스를 재확인해야 한다.

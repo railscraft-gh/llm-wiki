@@ -74,7 +74,7 @@ Hermes를 안전하게 오래 돌릴 수 있으면, 에이전트는 더 이상 "
 - **Brain (Main Model)**: 실제 대화, 장기 계획, 다단계 추론, 최종 판단 (비싸고 강력한 프론티어 모델 사용).
 - **Workers (Auxiliary Models)**: 컨텍스트 압축, 웹페이지 데이터 추출, 비전 분석, MCP 라우팅, 위험도 점수 평가 (저렴하고 빠른 로컬/클라우드 모델로 오버라이드하여 24/7 운영비 절감).
 
-### 3단계 컨텍스트 압축 파이프라인
+### [[3단계 컨텍스트 압축]] 파이프라인
 1. 거대한 툴 출력 텍스트를 식별하여 placeholder로 대체.
 2. 시스템 프롬프트, 최초의 골 메시지, 최근 20개 대화는 무조건 압축 대상에서 보호.
 3. 중간 단계의 긴 내용은 요약 전용 모델이 goals, constraints, completed tasks, commands만 추출하여 템플릿화.
@@ -129,15 +129,15 @@ allowed_user_ids: ["자신의_텔레그램_ID"]  # 메신저 게이트웨이 보
 ## 출처
 - [[Hermes Agent]] Is Cool. Running It Safely 24_7 Is the Real Trick.
 - I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.
-- [After Claude Code. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/Obsidian/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
-- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/Obsidian/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
-- [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
-- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/Obsidian/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
-- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
-- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/Obsidian/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
-- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/Obsidian/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
-- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
-- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
-- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
-- [How to write a DESIGN.md file Claude can actually use-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md)
+- [After [[Claude Code]]. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/[[Obsidian]]/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
+- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
+- [How to Build the Knowledge System [[Andrej Karpathy]] Uses (And What It’s Actually](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
+- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/[[Obsidian]]/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
+- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
+- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/[[Obsidian]]/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
+- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
+- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/[[Obsidian]]/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
+- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
+- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
+- [How to write a [[DESIGN.md]] file Claude can actually use-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20write%20a%20[[DESIGN.md]]%20file%20Claude%20can%20actually%20use-ko.md)
 

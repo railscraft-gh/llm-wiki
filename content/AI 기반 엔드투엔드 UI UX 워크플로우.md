@@ -15,18 +15,18 @@ sources:
 created: 2026-07-21
 updated: 2026-07-30
 ---
-# AI 기반 엔드투엔드 UI UX 워크플로우
+# AI 기반 엔드투엔드 UI UX [[워크플로]]우
 
 ## 한 줄 정의
 단일 AI 도구에 의존하지 않고 리서치, 와이어프레이밍, 에셋 생성, 인터랙티브 프로토타이핑, 코드 생성, 유저 행동 분석의 5개 단계별 특화 AI 도구 10종을 매끄럽게 연결한 고효율 제품 개발 파이프라인이다.
 
 ## 핵심 요지
-- **도구 만능주의 탈피**: 단순히 "10배 빠른 도구"를 쫓는 대신, 실제 문제 해결 관점에서 리서치부터 배포·테스트까지 단계별 모듈화 워크플로우를 구축한다.
+- **도구 만능주의 탈피**: 단순히 "10배 빠른 도구"를 쫓는 대신, 실제 문제 해결 관점에서 리서치부터 배포·테스트까지 단계별 모듈화 [[워크플로]]우를 구축한다.
 - **디자인 구조 보존(Auto Layout Export)**: Flowstep AI로 초도 UI 구조와 코드를 생성하고, Figma로 내보낼 때 오토 레이아웃을 100% 유지하여 편집 마찰을 최소화한다.
-- **AI 딜리버리 및 관찰성 융합**: 코딩 지식이 부족해도 Google Antigravity 기반 빌드, Vercel/GitHub 배포, Microsoft Clarity 히트맵/세션 녹화 분석으로 실데이터 기반 디자인 피드백 루프를 완성한다.
+- **AI 딜리버리 및 관찰성 융합**: 코딩 지식이 부족해도 Google [[Antigravity]] 기반 빌드, Vercel/GitHub 배포, Microsoft Clarity 히트맵/세션 녹화 분석으로 실데이터 기반 디자인 피드백 루프를 완성한다.
 
 ## 상세
-본 워크플로우는 제품 기획부터 론칭까지 다음과 같은 10가지 도구의 상호보완적 역할 분담으로 구성된다:
+본 [[워크플로]]우는 제품 기획부터 론칭까지 다음과 같은 10가지 도구의 상호보완적 역할 분담으로 구성된다:
 
 1. **리서치 & 문서화**: 
    - **Claude**: 문제 정의 및 인터뷰 구조화, 기획안 허점 검증 파트너.
@@ -35,12 +35,12 @@ updated: 2026-07-30
 2. **디자인 & 에셋 생성**:
    - **Flowstep AI**: 리서치 맥락 기반 초기 UI 레이아웃 및 고품질 코드 생성.
    - **Figma AI**: 레이어 정리(`Rename layers`), 마이크로카피 재작성(`Rewrite this`), 에셋 일괄 교체 (`Replace content`).
-   - **[[Moonchild AI]]**: 디자인 시스템 사전 정의 및 글로벌 라이브러리 연동 기반의 일관성 있는 프로덕션급 UI 및 프로토타입 설계. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
+   - **[[Moonchild AI]]**: [[디자인 시스템]] 사전 정의 및 글로벌 라이브러리 연동 기반의 일관성 있는 프로덕션급 UI 및 프로토타입 설계. (raw/Designing Production-Ready UIs with Your Design System Using [[Moonchild AI]].md)
    - **Gemini**: 이미지 에셋 및 로고 베리에이션 대량 생성.
    - **Jitter AI**: 스플래시 화면 및 로딩 모션 애니메이션 신속 생성.
 3. **프로토타이핑 & 구현 & 테스트**:
    - **Figma Make**: Figma 디자인 에셋과의 100% 연동 프로토타이핑.
-   - **Google Antigravity**: 자연어 기반 프로토타입의 라이브 웹 앱 파이프라인 구현.
+   - **Google [[Antigravity]]**: 자연어 기반 프로토타입의 라이브 웹 앱 파이프라인 구현.
    - **Microsoft Clarity**: `<head>` 내 추락 코드로 히트맵, 클릭 추적, 세션 녹화를 분석하여 실제 유저 마찰 지점 추출.
 
 ## 예시
@@ -56,6 +56,6 @@ updated: 2026-07-30
 - [[AI 디자인 팀 운영]]
 
 ## 출처
-- 디자인 단계 AI 도구 (Flowstep, Figma AI, Gemini, Jitter, Figma Make): [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md#L18-L184](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L18-L184)
-- 개발, 배포 및 Clarity 라이브 테스트: [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md#L186-L254](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L186-L254)
-- 사전 리서치 및 기획 (Claude, Notion AI, FigJam): [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md#L256-L360](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L256-L360)
+- 디자인 단계 AI 도구 (Flowstep, Figma AI, Gemini, Jitter, Figma Make): [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX [[워크플로]]우를 10배 개선한 방법-ko.md#L18-L184](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L18-L184)
+- 개발, 배포 및 Clarity 라이브 테스트: [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX [[워크플로]]우를 10배 개선한 방법-ko.md#L186-L254](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L186-L254)
+- 사전 리서치 및 기획 (Claude, Notion AI, FigJam): [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX [[워크플로]]우를 10배 개선한 방법-ko.md#L256-L360](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L256-L360)

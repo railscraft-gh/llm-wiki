@@ -19,16 +19,16 @@ sources:
 created: 2026-06-19
 updated: 2026-06-30
 ---
-# Cursor Superpowers 플러그인
+# [[Cursor]] Superpowers 플러그인
 
 ## 한 줄 정의
 
-Cursor Superpowers 플러그인은 AI 에이전트에게 스킬(skill)을 붙여 계획 수립, 디버깅, 테스트, 검증 같은 절차를 자동으로 따르게 만드는 행동 제어 레이어다.
+[[Cursor]] Superpowers 플러그인은 AI 에이전트에게 스킬(skill)을 붙여 계획 수립, 디버깅, 테스트, 검증 같은 절차를 자동으로 따르게 만드는 행동 제어 레이어다.
 
 ## 핵심 요지
 
 - Superpowers의 핵심은 “에이전트를 더 똑똑하게” 만드는 게 아니라, 에이전트가 자주 저지르는 실수를 줄이도록 절차를 강제하는 데 있다.
-- Cursor에서는 `/add-plugin superpowers`로 설치하여 구동한다.
+- [[Cursor]]에서는 `/add-plugin superpowers`로 설치하여 구동한다.
 - 에이전트가 대화 맥락을 보고 상황을 분류한 뒤, 맞는 스킬을 읽고 그 절차를 따른다.
 - 사용자가 직접 지시한 내용이 최우선이고, 그다음이 Superpowers 스킬, 마지막이 시스템 프롬프트다.
 - 스킬은 크게 Rigid와 Flexible로 나뉘며, 전자는 절차 준수가 핵심이고 후자는 원칙 적용이 핵심이다.
@@ -45,19 +45,19 @@ AI 에이전트는 편하지만, 가만두면 쉽게 다음처럼 흘러간다.
 
 Superpowers는 이런 흐름을 막기 위해 에이전트에 스킬을 붙여서 행동 규칙을 주입한다. 즉, 단순한 프롬프트 팁이 아니라 하네스(harness) 성격의 제어층이다.
 
-이 관점은 [[Harness Engineering]]과 맞닿아 있다. 모델의 출력을 직접 믿는 대신, 모델 바깥의 규칙과 검증 루프로 에이전트를 묶어두는 방식이기 때문이다.
+이 관점은 [[Harness Engineering]]과 맞닿아 있다. 모델의 출력을 직접 믿는 대신, 모델 바깥의 규칙과 [[검증 루프]]로 에이전트를 묶어두는 방식이기 때문이다.
 
-### 2. Cursor에서 설치 및 실행 방법
+### 2. [[Cursor]]에서 설치 및 실행 방법
 
 #### 설치 및 로드
-Cursor 에이전트 환경에서 플러그인을 설치하려면 아래 명령어를 입력한다.
+[[Cursor]] 에이전트 환경에서 플러그인을 설치하려면 아래 명령어를 입력한다.
 ```bash
 /add-plugin superpowers
 ```
 
 #### 키스트로크 및 실행
 설치 후에는 에이전트가 대화 내용을 보고 적절한 스킬을 스스로 읽어온다. 특정 상황에서 수동으로 스킬을 지정하여 강제 실행하고 싶을 때는 다음 방식을 사용한다.
-- **`@` 멘션 기능 활용**: Cursor Chat(`Cmd+L` / `Ctrl+L`) 또는 Composer(`Cmd+I` / `Ctrl+I`) 입력창에서 `@` 키를 누르고, 불러오고자 하는 특정 스킬의 `SKILL.md` 파일(예: `@test-driven-development` 또는 `@systematic-debugging`)을 선택해 컨텍스트에 직접 주입한다.
+- **`@` 멘션 기능 활용**: [[Cursor]] Chat(`Cmd+L` / `Ctrl+L`) 또는 Composer(`Cmd+I` / `Ctrl+I`) 입력창에서 `@` 키를 누르고, 불러오고자 하는 특정 스킬의 `SKILL.md` 파일(예: `@test-driven-development` 또는 `@systematic-debugging`)을 선택해 컨텍스트에 직접 주입한다.
 - **경로 지정**: 스킬이 위치한 로컬 디렉터리 경로(예: `.gemini/config/plugins/superpowers/skills/brainstorming/SKILL.md`)를 파일 참조 형태로 직접 Composer 창이나 Chat 창에 드래그 앤 드롭하거나 주입한다.
 
 ### 3. 스킬 우선순위 및 Custom Prompt 설정
@@ -190,15 +190,15 @@ Superpowers 각 스킬은 에이전트에게 강제할 행동 지침을 담고 �
 #### Compound Engineering
 - Plan → Work → Review → Compound 루프를 강조한다.
 - 작업을 끝내고 끝내는 게 아니라, 다음 작업에 학습을 축적하는 방식이다.
-- Cursor에서는 `.cursorrules`에 수동으로 넣어야 한다고 적는다.
+- [[Cursor]]에서는 `.cursorrules`에 수동으로 넣어야 한다고 적는다.
 
 #### MCP Environment Configs
-- Cursor에서 MCP 환경 설정은 `Cursor Settings` -> `Features` -> `MCP` 메뉴를 통해 수행한다.
+- [[Cursor]]에서 MCP 환경 설정은 `Cursor Settings` -> `Features` -> `MCP` 메뉴를 통해 수행한다.
 - 여러 MCP 서버를 등록하면 에이전트 구동 시 비대한 JSON 스키마 로딩으로 인해 `Context Tax`가 발생하므로, 핵심 로컬 도구 위주로만 연동 설정을 유지할 것을 권장한다.
 
 ## 실전 해석
 
-이 글을 위키 관점에서 보면 Superpowers는 단순한 Cursor 플러그인이 아니라, 에이전트에게 “언제 설계하고, 언제 멈추고, 언제 검증할지”를 주입하는 workflow layer다.
+이 글을 위키 관점에서 보면 Superpowers는 단순한 [[Cursor]] 플러그인이 아니라, 에이전트에게 “언제 설계하고, 언제 멈추고, 언제 검증할지”를 주입하는 workflow layer다.
 
 즉, 핵심은 스킬의 개수 자체가 아니라 다음 세 가지다.
 
@@ -210,8 +210,8 @@ Superpowers 각 스킬은 에이전트에게 강제할 행동 지침을 담고 �
 
 ## 충돌
 
-- **단일 출처 기반**: 이 노트는 블로그 글 하나를 바탕으로 정리한 것이다. Cursor의 플러그인 동작, 스킬 목록, 설치 명령, RTK/Compound Engineering 연계는 버전이나 생태계 변화에 따라 달라질 수 있어 재검증이 필요하다.
-- **스킬 우선순위 해석**: “사용자 지시 > Superpowers > 시스템 프롬프트”는 작성자의 설명을 요약한 것이므로, 실제 Cursor 환경의 세부 우선순위와 완전히 동일한지 확인이 필요하다.
+- **단일 출처 기반**: 이 노트는 블로그 글 하나를 바탕으로 정리한 것이다. [[Cursor]]의 플러그인 동작, 스킬 목록, 설치 명령, RTK/Compound Engineering 연계는 버전이나 생태계 변화에 따라 달라질 수 있어 재검증이 필요하다.
+- **스킬 우선순위 해석**: “사용자 지시 > Superpowers > 시스템 프롬프트”는 작성자의 설명을 요약한 것이므로, 실제 [[Cursor]] 환경의 세부 우선순위와 완전히 동일한지 확인이 필요하다.
 
 ## 관련 노트
 

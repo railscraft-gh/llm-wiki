@@ -17,7 +17,7 @@ updated: 2026-07-10
 
 ## 한 줄 정의
 
-클로드와 ChatGPT 프롬프트 설계 차이는 각 모델의 명령 추종 능력과 인지 편향에 맞춤화하여, 클로드에는 엄격한 페르소나와 부정적 금지 조건을 부여하고 ChatGPT에는 단계별 추론(CoT) 및 상세 불릿 결과 템플릿을 명시해 AI 슬롭을 예방하는 최적화 기법이다.
+클로드와 ChatGPT 프롬프트 설계 차이는 각 모델의 명령 추종 능력과 인지 편향에 맞춤화하여, 클로드에는 엄격한 페르소나와 부정적 금지 조건을 부여하고 ChatGPT에는 단계별 추론(CoT) 및 상세 불릿 결과 템플릿을 명시해 [[AI 슬롭]]을 예방하는 최적화 기법이다.
 
 ## 핵심 요지
 - 클로드(Claude)는 주어진 역할(Persona)과 제약 조건에 대한 밀착 준수력이 뛰어나며, 'never hypey' 등 강력한 제약 묘사에 정밀하게 반응한다.
@@ -58,5 +58,5 @@ Rules: contractions, varied sentence length, no em-dash overuse, no generic tran
 - [[Claude.md 운영 원칙]]
 
 ## 출처
-- [내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능)](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%EA%B0%80%20%EB%A7%A4%EC%A3%BC%20%EC%93%B0%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%EC%99%80%20%EC%B1%97GPT%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%2010%EC%84%A0%20%28%EC%A6%89%EC%8B%9C%20%EB%B3%B5%EC%82%AC%ED%95%98%EC%97%AC%20%EC%82%AC%EC%9A%A9%20%EA%B0%80%EB%8A%A5%29.md)
+- [내가 매주 쓰는 클로드와 챗GPT 프롬프트 10선 (즉시 복사하여 사용 가능)](file:///Users/railscraft/[[Obsidian]]/raw/%EB%82%B4%EA%B0%80%20%EB%A7%A4%EC%A3%BC%20%EC%93%B0%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%EC%99%80%20%EC%B1%97GPT%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%2010%EC%84%A0%20%28%EC%A6%89%EC%8B%9C%20%EB%B3%B5%EC%82%AC%ED%95%98%EC%97%AC%20%EC%82%AC%EC%9A%A9%20%EA%B0%80%EB%8A%A5%29.md)
 

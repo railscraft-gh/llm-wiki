@@ -108,34 +108,34 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 
 ## 핵심 요지
 - **실행 환경의 주권**: 좋은 에이전트와 데모형 챗봇의 차이는 모델 자체보다 에이전트의 제어 루프를 통제하고 보호하는 외부 하네스 설계에서 결정된다.
-- **제어 문제 해결**: [[RAG]](지식 접근 문제)나 결정론적 워크플로(프로세스 문제)와 달리, 에이전트는 목표와 도구를 쥐고 최적의 경로를 탐색하는 **제어 문제**를 풀며, 하네스는 이 탐색 루프(`Thought -> Action -> Observation -> State Update`)를 중재한다.
+- **제어 문제 해결**: [[RAG]](지식 접근 문제)나 결정론적 [[워크플로]](프로세스 문제)와 달리, 에이전트는 목표와 도구를 쥐고 최적의 경로를 탐색하는 **제어 문제**를 풀며, 하네스는 이 탐색 루프(`Thought -> Action -> Observation -> State Update`)를 중재한다.
 - **하네스의 모델 내재화 (Harness Absorption)**: 빅테크 모델(Anthropic Opus 4.8 등)이 사후 학습 및 테스트 시점 추론(CoT) 레이어를 통해 예외 처리, 자가 교정, 툴 호출 제어 등의 상당 부분을 모델 내부로 흡수(Absorb)하고 있다.
 - **외부 하네스의 역할 재정립**: 모델이 똑똑해질수록 복잡한 프롬프트 가드라인이나 파이프라인 코드는 모델에 통합되며, 개발자는 금융 예산 통제(Budget Governor), 물리적 샌드박싱, 인간 최종 승인 게이트(HITL) 등 모델 내부로 우회할 수 없는 '물리적 통제선' 구축에 집중해야 한다.
-- **하네스 엔지니어링의 기원**: Terraform의 창시자인 **Mitchell Hashimoto가 2026년 초 제창한 개념**으로, 에이전트가 실수할 때마다 채팅 창에서 일회성으로 프롬프트를 고쳐주는 대신, 동일한 실수가 다신 발생하지 않도록 모델 바깥의 실행 환경/설정(Harness)을 영구적으로 수정해주는 규율을 의미한다.
+- **[[하네스 엔지니어링]]의 기원**: Terraform의 창시자인 **Mitchell Hashimoto가 2026년 초 제창한 개념**으로, 에이전트가 실수할 때마다 채팅 창에서 일회성으로 프롬프트를 고쳐주는 대신, 동일한 실수가 다신 발생하지 않도록 모델 바깥의 실행 환경/설정(Harness)을 영구적으로 수정해주는 규율을 의미한다.
 - AI 에이전트의 4대 실전 규격: 단일 프롬프트를 넘어서는 명시적이고 구조화된 state schema(메모리) 유지, state 기반 행동 자율 선택(policy engine/router), 제한된 예산(max_steps, timeouts, cost, retries cap) 운영, durable checkpoints 및 idempotency 기반 crash 안전 복구가 필수 조건이다.
 - pydantic-ai 및 logfire의 통합: prompt 내부에 메모리를 섞는 대신 type-safe dependency injection과 pydantic schema 검증 및 Logfire 자동 tracing 스패닝을 통해 에이전트의 오작동을 기계적으로 차단한다.
-- 규칙 선언의 한계 극복: CLAUDE.md나 AGENTS.md와 같은 프롬프트 기반 계약은 강제력이 없고 세션 간 문맥이 단절된다. Harness는 Memory(진행 스냅샷 복원), Skill(워크플로우 제어), Hook(포맷팅 및 보안 감지), Feedback(기계적 검증)을 통합하여 나쁜 출력이 나오기 어려운 구조를 설계한다.
-- 컨텍스트 계층화(Layering) 전략: 프롬프트 캐싱 비용을 극단적으로 아끼기 위해 안정성에 따라 컨텍스트를 층으로 나누어 캐싱을 활성화한다 (Layer 0: System policies, Layer 1: Agent skill definitions, Layer 2: User session instructions, Layer 3: JIT-retrieved fresh outputs).
+- 규칙 선언의 한계 극복: [[CLAUDE.md]]나 AGENTS.md와 같은 프롬프트 기반 계약은 강제력이 없고 세션 간 문맥이 단절된다. Harness는 Memory(진행 스냅샷 복원), Skill([[워크플로]]우 제어), Hook(포맷팅 및 보안 감지), Feedback(기계적 검증)을 통합하여 나쁜 출력이 나오기 어려운 구조를 설계한다.
+- [[컨텍스트 계층화]](Layering) 전략: [[프롬프트 캐싱]] 비용을 극단적으로 아끼기 위해 안정성에 따라 컨텍스트를 층으로 나누어 캐싱을 활성화한다 (Layer 0: System policies, Layer 1: Agent skill definitions, Layer 2: User session instructions, Layer 3: JIT-retrieved fresh outputs).
 - Anthropic Opus 4.8 출시(2026년 5월)는 검증(L4), 실행(L3), 제약(L1) 레이어가 모델 자체 가중치 및 오케스트레이션 내부로 흡수(Harness Absorption)되는 티핑 포인트다.
-- Opus 4.8은 자화자찬식 코드 결함 방관 확률을 4배 감소시켰으며, 750,000줄 Rust 코드베이스를 11일 만에 마이그레이션(테스트 통과율 99.8%)하는 동적 워크플로를 플랫폼 내재화했다.
+- Opus 4.8은 자화자찬식 코드 결함 방관 확률을 4배 감소시켰으며, 750,000줄 Rust 코드베이스를 11일 만에 마이그레이션(테스트 통과율 99.8%)하는 [[동적 워크플로]]를 플랫폼 내재화했다.
 - 100만 토큰의 컨텍스트 창에서 장기 검색 성공률은 기존 40.3%에서 68.1%로 상승했다.
 - 독자적 해자는 이제 제약/실행/검증 인프라에서 기업 고유의 L2. 컨텍스트(Context) 및 L5. 라이프사이클(Lifecycle, Evals) 영역으로 이동한다.
 - 개인용 PC의 오염/안전 리스크 격리를 위해 저전력, 상시 기동이 가능한 라즈베리 파이 4(RPi 4) 환경을 하네스 인프라로 채택. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
-- 에이전트 자율성에 따른 잘못된 연쇄 결정(비정상적 무한 루프 등)을 억제하기 위해 Obsidian 지식 베이스 및 CLAUDE.md를 활용해 세션 컨텍스트를 제한하고 장기 작업을 조율. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
-- 장기 실행 에이전트의 지속성(Durability)은 모델의 지능이 아닌 Temporal과 같은 외부 durable execution 플랫폼 백본을 통한 엔지니어링의 영역이다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
+- 에이전트 자율성에 따른 잘못된 연쇄 결정(비정상적 무한 루프 등)을 억제하기 위해 [[Obsidian]] 지식 베이스 및 [[CLAUDE.md]]를 활용해 세션 컨텍스트를 제한하고 장기 작업을 조율. [출처: 라즈베리 파이 에이전트 하네스 구동 후기]
+- 장기 실행 에이전트의 지속성(Durability)은 모델의 지능이 아닌 [[Temporal]]과 같은 외부 durable execution 플랫폼 백본을 통한 엔지니어링의 영역이다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
 - 에이전트 제어권을 잃지 않기 위해 실제 상태(Real state)는 Git 리포지토리와 물리적인 정형 상태 파일(체크리스트, 의사결정 로그) 형태로 컨텍스트 윈도우 바깥에 보존되어야 한다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
 - 에이전트가 예산 한도를 초과해 요금을 폭주시키지 않도록 사이클 실행 전 비용 가버너(Budget Governor)를 통해 예산 잔액을 검증해야 하며, Fareed Khan의 'lra' 패키지 실무 미션에서는 400달러 ceiling 중 178.60달러만을 사용하는 비용 가버너를 적용했다. [출처: raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md]
 - Terminal Bench 2.0 성능 격차: 모델 가중치는 그대로 두고 하네스 인프라(오케스트레이션 루프, 컨텍스트 관리, 검증 미들웨어 등)만 튜닝하여 점수를 52.8%에서 66.5%로 (+13.7포인트) 향상시켰으며, 메타 하네스로 최적화 시 76.4%를 달성함.
 - Vercel SQL 에이전트 도구 축소: 15개 이상의 마이크로 툴 중 80%를 제거하고 bash execution 1개만 남겼을 때 성공률이 80%에서 100%로 상승하고, 속도는 3.5배 빨라졌으며 토큰은 37% 절감됨.
 - 연쇄 실패의 수학 (Step Reliability): 개별 도구 호출의 신뢰도가 99%여도 10단계에서 90.4%, 50단계에 다다르면 최종 성공률이 60.5%로 수렴하여 하네스의 에러 복원력이 필수가 됨.
-- Claude Code 유출 규모: 2026년 3월 유출본 기준 1,906개 파일, 513,000줄(51.3만 줄)의 TypeScript 코드로 구성되어 있었으며, 모델 가중치 없이 오직 주변 인프라(Harness)로만 경쟁력을 형성함.
-- 자가 검증 루프(Verification Loops): 에이전트에게 자체 테스트 팩을 수행하고 실패 결과를 피드백하여 교정할 기회를 주면 최종 아웃풋 품질이 2~3배 상승함 (Boris Cherny 실무 검증).
+- [[Claude Code]] 유출 규모: 2026년 3월 유출본 기준 1,906개 파일, 513,000줄(51.3만 줄)의 TypeScript 코드로 구성되어 있었으며, 모델 가중치 없이 오직 주변 인프라(Harness)로만 경쟁력을 형성함.
+- 자가 [[검증 루프]](Verification Loops): 에이전트에게 자체 테스트 팩을 수행하고 실패 결과를 피드백하여 교정할 기회를 주면 최종 아웃풋 품질이 2~3배 상승함 (Boris Cherny 실무 검증).
 
 ## 상세
 
 ### 1. 에이전트 하네스의 11대 아키텍처 구성 요소 (11 Components)
 프로덕션 환경의 에이전트는 다음 11가지의 유기적으로 연결된 모듈을 통해 상태와 제어권을 통제받는다.
-1. **오케스트레이션 루프 (Orchestration Loop)**: `Thought ➡️ Action ➡️ Observation`으로 순환하는 ReAct 루프를 구동하고, 루프가 탈선하지 않도록 종료 조건을 모델이 아닌 하네스 엔진 수준에서 하드 가이드한다.
+1. **오케스트레이션 루프 (Orchestration Loop)**: `Thought ➡️ Action ➡️ Observation`으로 순환하는 [[ReAct 루프]]를 구동하고, 루프가 탈선하지 않도록 종료 조건을 모델이 아닌 하네스 엔진 수준에서 하드 가이드한다.
 2. **도구 레이어 (Tool Layer)**: 도구 등록, 스키마 유효성 검증, 샌드박스 실행 및 결과 포맷팅을 처리한다. 호출 전후에 승인과 감사를 실행할 수 있는 `Pre/Post-tool hooks`를 장착한다.
 3. **메모리 시스템 (Memory Systems)**: 컨텍스트 윈도우 내 단기 기억(Short-term), Vector DB나 지식 그래프 기반 장기 기억(Long-term), 성공/실패했던 문제 접근법을 기록하는 에피소드 기억(Episodic)을 계층화하여 서빙한다.
 4. **컨텍스트 관리 (Context Management)**: 입력 길이에 따른 지능 저하를 막기 위해 대화 압축(Compaction), 오래된 결과 마스킹(Observation Masking), JIT 검색(JIT Retrieval), 서브 에이전트 위임(Sub-agent Delegation) 등의 요약 룰을 작동한다.
@@ -144,7 +144,7 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 7. **상태 관리 (State Management)**: 장기 가동 중 런타임이 붕괴해도 재개할 수 있도록 각 단계 완료 시점마다 직렬화 상태를 저장하는 **Durable Checkpoints**를 보존한다.
 8. **오류 처리 (Error Handling)**: 실패율을 차단하기 위해 도구 오용 시 Validation 피드백, API 오류 시 지수 백오프(Exponential Backoff), 통제 불가 시 서킷 브레이커(Circuit Breaker)를 탑재한다.
 9. **가드레일 & 보안 (Guardrails & Safety)**: 민감 데이터, 시스템 파일, 외부 통신망의 3대 치명 권한이 겹쳐 터지지 않게 분리 통제하며, 파괴적인 액션 직전에는 **HITL(Human-In-The-Loop) 게이트**를 거치게 설계한다.
-10. **검증 루프 (Verification Loops)**: 작성된 코드를 테스트 팩(pytest, jest 등) 및 정적 분석기(Ruff, ESLint)로 기계적 검증하여 자가 교정을 시도하는 루프를 중재한다.
+10. **[[검증 루프]] (Verification Loops)**: 작성된 코드를 테스트 팩(pytest, jest 등) 및 정적 분석기(Ruff, ESLint)로 기계적 검증하여 자가 교정을 시도하는 루프를 중재한다.
 11. **서브 에이전트 조율 (Subagent Orchestration)**: 대규모 프로젝트 시 특정 역할(기획, 코딩, 리뷰)을 쪼개어 독립된 에이전트 런타임에 이관하고 결과 요약만 공유해 메인 컨텍스트를 보호한다.
 
 ### 2. 에이전트의 5대 실패(Crash) 모드와 하네스 방어선
@@ -154,12 +154,12 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 - **비영속성 실행(Non-durable execution)**: 런타임 크래시 시 모든 진행 상황이 유실되는 모드. 각 도구 호출 완료 단계마다 상태를 직렬화해 Checkpoint DB에 백업한다.
 - **프롬프트 주입(Prompt injection)**: 악성 외부 입력을 실행해 시스템을 파괴하는 모드. 도구 허용 목록(Allowlist), 실행 전 입력 검사 필터링, 그리고 파괴적 명령어 실행 시 사람의 직접 승인을 강제하는 human-in-the-loop gate를 둔다.
 
-### 3. 하네스 엔지니어링의 핵심 지표 및 실무 검증 사례
+### 3. [[하네스 엔지니어링]]의 핵심 지표 및 실무 검증 사례
 - **Terminal Bench 2.0 성능 격차**: LangChain 연구팀이 모델 가중치를 전혀 손대지 않고, 오케스트레이션 루프, 컨텍스트 매니지먼트, reasoning budget 등 하네스 인프라만 튜닝했더니 벤치마크 점수가 **52.8%에서 66.5%로 (+13.7포인트) 상승**하여 리더보드 Top 5에 진입했다. 하네스 구성을 최적화하는 메타 하네스([[Meta-Harness]]) 활용 시 **76.4%**까지 상승했다.
 - **Vercel SQL 에이전트 도구 축소 사례**: 당초 15개가 넘는 세분화된 도구를 가졌으나, 이를 단 1개의 bash 실행 도구로 통폐합했더니 성공률이 **80%에서 100%로 상승**하고 속도는 3.5배 빨라졌으며 토큰 소모량은 37% 감소했다. 모델에 좁고 자잘한 도구를 쥐여주는 것은 오히려 추론의 성능을 저해한다.
 - **연쇄 실패의 수학 (Step Reliability)**: 개별 툴 콜의 신뢰도가 **99%**로 매우 높더라도, 10단계 태스크의 성공률은 **90.4%**로 떨어지며, 프로덕션에서 흔한 50단계가 되면 성공률은 **60.5%**까지 급감한다. 이 때문에 단 한 번의 에러로 전체 흐름이 깨지지 않게 실패를 복원하는 하네스의 내충격성(Fault-tolerance)이 필수다.
 - **Lost in the Middle (Stanford 연구)**: Stanford 대학 연구팀에 따르면 모델의 컨텍스트 윈도우 한계에 닿기 훨씬 전부터, 본문 중간에 배치된 지식을 추론하고 인출하는 정확도가 **30% 이상 급감**한다 (Context Rot 현상). 따라서 Position-aware 컨텍스트 설계와 요약 압축은 필수적이다.
-- **Surrounding Engineering의 부피**: 2026년 3월 유출된 Claude Code의 소스코드는 무려 1,906개 파일, 513,000줄에 달하는 TypeScript로 이루어져 있었는데, 여기에는 단 한 줄의 모델 가중치도 포함되어 있지 않았다. 에이전트의 실무 경쟁력은 모델 그 자체보다 51만 줄에 달하는 하네스 코드에서 결정됨을 뜻한다.
+- **Surrounding Engineering의 부피**: 2026년 3월 유출된 [[Claude Code]]의 소스코드는 무려 1,906개 파일, 513,000줄에 달하는 TypeScript로 이루어져 있었는데, 여기에는 단 한 줄의 모델 가중치도 포함되어 있지 않았다. 에이전트의 실무 경쟁력은 모델 그 자체보다 51만 줄에 달하는 하네스 코드에서 결정됨을 뜻한다.
 
 ### 3. 모델 수준의 하네스 흡수 (Harness Absorption by Models)
 - **추론 모델의 제어권 내재화**: Anthropic의 Opus 4.8이나 OpenAI O1/O3 계열과 같이 강화 학습(RL)과 생각의 사슬(CoT) 연산을 사후 학습에 고밀도로 탑재한 모델들은, 도구 호출 시 인자 포맷팅 결함이나 예외 발생 시 외부 코드가 개입하지 않아도 모델 내부 추론 루프에서 스스로 에러를 인지하고 교정하여 재시도한다.
@@ -168,23 +168,23 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 
 ### 4. 멀티 에이전트 분할 (Multi-Agent Decomposition) 설계
 (이하 기존과 동일)
-- **역할 분할 및 상태 연동**: 실라버스 설계, 본문 작성, 퀴즈 설계 등 단계를 쪼개어 각각 독립된 에이전트가 이를 담당하게 하고, 중앙의 상태 스키마(State Object)를 거쳐 데이터를 연속적으로 이행(LangGraph 등 활용)한다.
+- **역할 분할 및 상태 연동**: 실라버스 설계, 본문 작성, 퀴즈 설계 등 단계를 쪼개어 각각 독립된 에이전트가 이를 담당하게 하고, 중앙의 상태 스키마(State Object)를 거쳐 데이터를 연속적으로 이행([[LangGraph]] 등 활용)한다.
 - **최적 모델 및 도구 매칭**: 무거운 논리 구조를 짤 때는 Reasoning 모델을, 본문 작성에는 저렴하고 신속한 모델을, 최종 문서/슬라이드 렌더링 단계에는 확정적 규칙 코드를 배치하여 효율성을 극대화한다.
-- **안티 슬롭(Anti-slop) 검토기 및 휴먼 인 더 루프**: 각 에이전트의 중간 출력물 전환 시점에 [[AI Slop]](기계적인 반복 어구, 상투적 서사)을 걸러내는 자동 검토 필터를 배치하고, 핵심 기획안 수립 직후 사람의 수정과 승인을 거치는 휴먼 승인 게이트(Human Approval Gate)를 하네스 수준에서 제어한다.
+- **안티 슬롭(Anti-slop) 검토기 및 휴먼 인 더 루프**: 각 에이전트의 중간 출력물 전환 시점에 [[AI Slop]](기계적인 반복 어구, 상투적 서사)을 걸러내는 자동 검토 필터를 배치하고, 핵심 기획안 수립 직후 사람의 수정과 승인을 거치는 [[휴먼 승인 게이트]](Human Approval Gate)를 하네스 수준에서 제어한다.
 
 ### 5. 지속성 실행 백본 (Durable Execution Backbone)
 (이하 기존과 동일)
-일주일 단위의 장기 작업을 중단 없이 실행하기 위해, 에이전트 루프는 단순 파이썬 프로세스를 넘어 **Temporal**과 같은 지속성 실행(Durable Execution) 플랫폼을 백본으로 삼아 구동된다.
-- **Workflow와 Activity의 격리**: 전체 제어 흐름을 결정론적인 '워크플로우(Workflow)'와 비결정론적인 '액티비티(Activity)'로 이분화한다. 워크플로우 코드는 일체의 외부 API 호출이나 무작위 연산을 배제하고 순수 상태 전이만 처리하여, 시스템 크래시 시 과거 히스토리 저널링(Journaling) 데이터를 바탕으로 리플레이(Replay)해 이전과 100% 동일한 상태로 메모리를 복원한다. 파일 쓰기, 네트워크 통신 등 불확실한 실무는 모두 액티비티로 위임하며, 성공한 액티비티 결과는 캐시에 저장되어 리플레이 시 토큰 낭비나 중복 작업 없이 즉시 복원된다.
-- **지속성 있는 대기 (Durable Sleep)**: 대기 상태(예: 야간 비기동 또는 수동 승인 대기) 진입 시 클라우드 분산 타이머로 워크플로우를 잠재운다. 서버 리소스를 소모하지 않아 비용이 발생하지 않으며, 서버 재부팅 시에도 정확히 지정된 시간에 기상하여 재개된다.
-- **신규 실행 계속 (Continue-As-New)**: 장기 가동에 따른 수만 건의 이벤트 로그 누적으로 메모리가 고갈되는 문제를 막기 위해, 주기적으로 중간 진척도를 압축하고 최소한의 상태 스냅샷만 쥔 채 워크플로우를 새로 시작(`continue_as_new`)한다.
-- **클레임 체크 (Claim-Check) 패턴**: [[LLM]] 출력 본문이나 대용량 테스트 로그를 그대로 이벤트 저장소에 넣으면 데이터베이스가 붕괴한다. 대형 페이로드는 외부 오브젝트 스토리지에 봉인하고, 워크플로우 내에는 조회용 키값(영수증)만 기록하는 아키텍처를 채택한다.
+일주일 단위의 장기 작업을 중단 없이 실행하기 위해, 에이전트 루프는 단순 파이썬 프로세스를 넘어 **[[Temporal]]**과 같은 지속성 실행(Durable Execution) 플랫폼을 백본으로 삼아 구동된다.
+- **Workflow와 Activity의 격리**: 전체 제어 흐름을 결정론적인 '[[워크플로]]우(Workflow)'와 비결정론적인 '액티비티(Activity)'로 이분화한다. [[워크플로]]우 코드는 일체의 외부 API 호출이나 무작위 연산을 배제하고 순수 상태 전이만 처리하여, 시스템 크래시 시 과거 히스토리 저널링(Journaling) 데이터를 바탕으로 리플레이(Replay)해 이전과 100% 동일한 상태로 메모리를 복원한다. 파일 쓰기, 네트워크 통신 등 불확실한 실무는 모두 액티비티로 위임하며, 성공한 액티비티 결과는 캐시에 저장되어 리플레이 시 토큰 낭비나 중복 작업 없이 즉시 복원된다.
+- **지속성 있는 대기 (Durable Sleep)**: 대기 상태(예: 야간 비기동 또는 수동 승인 대기) 진입 시 클라우드 분산 타이머로 [[워크플로]]우를 잠재운다. 서버 리소스를 소모하지 않아 비용이 발생하지 않으며, 서버 재부팅 시에도 정확히 지정된 시간에 기상하여 재개된다.
+- **신규 실행 계속 (Continue-As-New)**: 장기 가동에 따른 수만 건의 이벤트 로그 누적으로 메모리가 고갈되는 문제를 막기 위해, 주기적으로 중간 진척도를 압축하고 최소한의 상태 스냅샷만 쥔 채 [[워크플로]]우를 새로 시작(`continue_as_new`)한다.
+- **클레임 체크 (Claim-Check) 패턴**: [[LLM]] 출력 본문이나 대용량 테스트 로그를 그대로 이벤트 저장소에 넣으면 데이터베이스가 붕괴한다. 대형 페이로드는 외부 오브젝트 스토리지에 봉인하고, [[워크플로]]우 내에는 조회용 키값(영수증)만 기록하는 아키텍처를 채택한다.
 
 ### 6. 안전 및 금융 가드레일 (Safety & Financial Guardrails)
 에이전트가 통제를 벗어나 무제한 요금을 청구하거나 시스템에 치명적인 파괴 행위를 하는 것을 방지하기 위해, 하네스는 프롬프트가 아닌 코드 레이어에서 강제되는 보안 정책을 적용한다.
 - **비용 가버너 (Budget Governor)**: 매 사이클 실행 직전 `authorize_next` 게이트를 통해 요금을 검증한다. 이전의 사이클당 평균 비용 소모를 기준으로 차기 예상 비용을 산정하고, 설정된 예산 한도(Ceiling)를 초과할 가능성이 감지되면 allow를 차단하고 루프를 기동 취소 및 셧다운한다.
 - **무한 루프 탐지기 (Loop Detector)**: 에이전트가 버그에 막혀 제자리걸음을 하는 현상을 차단한다. 이전 사이클의 코드 수정 내용(`action`)과 그 시점의 상태(`state`) 정보의 해시값(지문 시그니처)을 매핑하고, 동일 행위가 임계치(예: 4회)를 넘어 기계적으로 무한 반복되면 즉시 차단기(Trip)를 올린 뒤, 주 에이전트를 대기시키고 리뷰어 에이전트를 긴급 소환하는 구조 요청(Escalation)을 보낸다.
-- **2인 통제 규칙 (The Rule of Two) 기반 보안**: 메타(Meta) 보안 엔지니어링 팀의 설계 사상에 입각하여 소프트웨어 보안의 3대 치명 권한을 격리 통제한다:
+- **2인 통제 규칙 (The [[Rule of Two]]) 기반 보안**: 메타(Meta) 보안 엔지니어링 팀의 설계 사상에 입각하여 소프트웨어 보안의 3대 치명 권한을 격리 통제한다:
   1. *검증되지 않은 외부 입력 (Untrusted content)*
   2. *기밀 정보 조회 (Private data)*
   3. *외부 인터넷망 데이터 송출 (External comms)*
@@ -194,7 +194,7 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 1. **명시적 State Schema**: 채팅 히스토리 문자열 단순 전달이 아닌 전체 목표, 마지막 도구 결과, scratchpad, 중간 데이터를 구조화하여 추적하는 state object를 쥐어주어 진행 상황을 추론하게 한다.
 2. **Policy Engine 기반 행동 선택**: 모델이 텍스트 생성이 아닌 router로 기능하도록 하여 `도구 호출 / 질문 요청 / state 갱신 / 작업 종료` 분기를 자율 제어한다.
 3. **예산 가이드라인 (Budgets)**: 무한 루프 탈선 시 비용 폭주를 차단하기 위해 `max_steps` 하드 리밋(예: 10 steps), timeout 시간 제한, 비용 상한선, 도구별 retry limit을 강제 제어한다.
-4. **지속성 및 멱등성 (Durable & Idempotent)**: 런타임 pod 재시작 시 정보 유실을 방지하기 위해 Postgres/Redis에 각 단계별 상태를 저장(durable checkpoints)하며, 이메일 재발송 등 중복 행동이 없도록 도구 호출 멱등성을 하네스 단에서 보장한다.
+4. **지속성 및 [[멱등성]] (Durable & Idempotent)**: 런타임 pod 재시작 시 정보 유실을 방지하기 위해 Postgres/Redis에 각 단계별 상태를 저장(durable checkpoints)하며, 이메일 재발송 등 중복 행동이 없도록 도구 호출 [[멱등성]]을 하네스 단에서 보장한다.
 
 ### 하네스 도입 프로세스 (Map-Identify-Blueprint-Implement-Launch)
 1. **Map**: 도메인 식별, 자율성 수준(Level 0~4), 위험 분류(read_only, draft, external_write), 외부 시스템 맵핑.
@@ -205,28 +205,28 @@ Agent Harness는 stateless [[LLM]]을 multi-step task를 수행하는 agent로 �
 
 ### Opus 4.8의 하네스 기능 내재화
 - **정직성(L4 검증)**: 모델 스스로 코드 오류를 감지해내는 자가 크리틱 가중치가 이전 4.7 대비 4배 향상.
-- **동적 워크플로(L3 실행)**: 계획-디스패치-검증-보고의 병렬 서브에이전트 제어를 Claude Code 런타임 및 API 수준에서 일괄 처리.
-- **노력 제어(L1 제약)**: `effort control`(low, high, extra, max 4단계, 기본 high)을 통해 모델 라우팅 및 비용 제어를 단순화. 빠른 모드(/fast)는 속도 2.5배 향상, 비용 3배 절감.
+- **[[동적 워크플로]](L3 실행)**: 계획-디스패치-검증-보고의 병렬 서브에이전트 제어를 [[Claude Code]] 런타임 및 API 수준에서 일괄 처리.
+- **[[노력 제어]](L1 제약)**: `effort control`(low, high, extra, max 4단계, 기본 high)을 통해 모델 라우팅 및 비용 제어를 단순화. 빠른 모드(/fast)는 속도 2.5배 향상, 비용 3배 절감.
 - **해자의 이동**: 배관 인프라가 범용화(commodity)됨에 따라, 벤더가 탈취할 수 없는 보안 데이터, 지능형 메모리 설계(L2), 그리고 비즈니스 정의 기반 Evals/관제 파이프라인(L5)이 차별점의 핵심 보루가 된다.
 
 ### 라즈베리 파이 4 기반 하네스 환경 구축 실무
 - **물리적 격리**: 터미널 및 브라우저 자동화 등 에이전트 자율 권한을 24시간 가동할 때 호스트 시스템 보호를 위해 RPi 4를 Ephemeral Sandbox 대안으로 사용. 마이크로 SD 카드를 분리 운영하여 유사시 즉각 포맷 리셋하도록 구성.
 - **주요 도구 비교**:
-  - **Claude Code**: 컨텍스트 관리가 직관적이며, 로컬 Obsidian 볼트 연동과 CLAUDE.md 스킬 제어 적합.
+  - **[[Claude Code]]**: 컨텍스트 관리가 직관적이며, 로컬 [[Obsidian]] 볼트 연동과 [[CLAUDE.md]] 스킬 제어 적합.
   - **[[OpenClaw]] / Hermes**: 터미널/파일시스템/메시징 권한 오케스트레이션 수행. Hermes가 상대적으로 더 안정적인 기동과 구성을 보여줌.
 
-### Temporal 기반 Durable Execution 백본
-일주일 이상 지속 기동되는 장기 실행 에이전트를 안정적으로 구축하려면, 에이전트 제어 루프를 Temporal 백본으로 설계하여 지속성 실행을 실현해야 합니다.
-- **워크플로우와 액티비티 격리**: 순수 비즈니스 상태 전이만을 처리하고 비결정론적 행위를 배제한 '워크플로우(Workflow)'와, 실제 파일 쓰기나 모델 API 호출 등의 불확실성을 담당하는 '액티비티(Activity)'로 코드를 격리합니다. 워크플로우의 실행 이력은 저널링(Journaling)되어 크래시 발생 시 리플레이(Replay)를 통해 100% 이전 메모리 상태로 자동 복원됩니다.
+### [[Temporal]] 기반 Durable Execution 백본
+일주일 이상 지속 기동되는 장기 실행 에이전트를 안정적으로 구축하려면, 에이전트 제어 루프를 [[Temporal]] 백본으로 설계하여 지속성 실행을 실현해야 합니다.
+- **[[워크플로]]우와 액티비티 격리**: 순수 비즈니스 상태 전이만을 처리하고 비결정론적 행위를 배제한 '[[워크플로]]우(Workflow)'와, 실제 파일 쓰기나 모델 API 호출 등의 불확실성을 담당하는 '액티비티(Activity)'로 코드를 격리합니다. [[워크플로]]우의 실행 이력은 저널링(Journaling)되어 크래시 발생 시 리플레이(Replay)를 통해 100% 이전 메모리 상태로 자동 복원됩니다.
 - **지속성 있는 대기 (Durable Sleep)**: 태스크가 없거나 인간의 승인을 기다려야 하는 대기 시 분산 타이머를 작동시켜 프로세스 리소스를 0으로 유지하면서도, 가상 서버가 재부팅되어도 정확한 기상 시간을 기억해 복귀합니다.
-- **신규 실행 계속 (Continue-As-New)**: 수만 건의 이벤트 로그가 한 파일에 쌓여 메모리가 터지는 것을 막기 위해, 주기적으로 중간 요약본만 쥔 채 완전히 새 워크플로우로 리기동 (`continue_as_new`)합니다.
-- **클레임 체크 코덱 (Claim-Check Codec)**: 거대한 파일 페이로드나 상세 실행 로그는 외부 오브젝트 스토리지에 저장하고, 워크플로우 이벤트 저장소에는 영수증(조회용 키값)만 기록하여 DB 붕괴를 예방합니다.
+- **신규 실행 계속 (Continue-As-New)**: 수만 건의 이벤트 로그가 한 파일에 쌓여 메모리가 터지는 것을 막기 위해, 주기적으로 중간 요약본만 쥔 채 완전히 새 [[워크플로]]우로 리기동 (`continue_as_new`)합니다.
+- **클레임 체크 코덱 (Claim-Check Codec)**: 거대한 파일 페이로드나 상세 실행 로그는 외부 오브젝트 스토리지에 저장하고, [[워크플로]]우 이벤트 저장소에는 영수증(조회용 키값)만 기록하여 DB 붕괴를 예방합니다.
 - **사가(Saga) 패턴**: 에이전트 작업 실패 시, 이전에 성공했던 이메일 발송 등 외부 쓰기 작업을 롤백하거나 취소하기 위해 보상 트랜잭션(Compensating Transactions)을 자동으로 실행하는 사가 엔진을 장착합니다.
 
 ### 1. 하네스 인프라의 파괴력 입증 지표
 - **LangChain Terminal Bench 2.0 실험**: 모델의 성능 개량 없이 오케스트레이션, [[검증 레이어]], 예산 통제를 담당하는 하네스 튜닝만으로 리더보드 순위가 30위 밖(52.8%)에서 Top 5(66.5%)로 껑충 뛰어올랐다.
 - **Vercel SQL 에이전트의 툴 다이어트**: 자잘한 도구를 늘리는 것은 모델의 추론 검색 공간을 늘려 오작동을 야기한다. 툴의 80%를 도려내고 범용 bash 툴로 대체하여 성공률 100%와 3.5배 속도 향상을 이루어 냈다.
-- **Claude Code 51만 줄 TypeScript**: 2026년 3월 유출본 분석 결과, 에이전트의 압도적 프로덕션 성능은 모델 가중치가 아니라 51.3만 줄에 달하는 정교한 하네스 인프라(상태 제어, 린터 통합, git diff 추적 등)에서 기인한다.
+- **[[Claude Code]] 51만 줄 TypeScript**: 2026년 3월 유출본 분석 결과, 에이전트의 압도적 프로덕션 성능은 모델 가중치가 아니라 51.3만 줄에 달하는 정교한 하네스 인프라(상태 제어, 린터 통합, git diff 추적 등)에서 기인한다.
 
 ### 2. 컨텍스트의 감쇠와 Lost in the Middle
 Chroma 및 Stanford 대학의 연구에 따르면, 컨텍스트가 길어질수록 윈도우 중간에 위치한 정보 활용 신뢰도가 30% 이상 붕괴하는 현상(Context Rot)이 규명되었다. 하네스는 이를 방어하기 위해 JIT 검색, sliding-window compaction, position-aware context injection을 강제해야 한다.
@@ -240,9 +240,9 @@ Chroma 및 Stanford 대학의 연구에 따르면, 컨텍스트가 길어질수�
 ## 예시
 - **pydantic-ai 기반 가드레일 에이전트 구축**: `TripContext`를 메모리 의존성(deps)으로 주입하고, [[LLM]] 출력을 `TripItinerary` Pydantic 클래스 형식으로 자동 강제 검증하며, Logfire tracing 연동 및 validation error 발생 시 자동 retry(최대 2회)를 탑재한 파이썬 에이전트 빌드 코드 구현.
 
-### CLAUDE.md 단독 사용과 Harness 비교
-- **CLAUDE.md 단독 (Before)**: '사용자 인증 API 구현' 지시 시, NextAuth.js 기존 정책 무시, 비밀번호 평문 로그 출력(보안 위반), 에러 응답 불일치, 테스트 없음 등 세션마다 품질이 크게 흔들림.
-- **Harness 환경 (After)**: `progress.md` 메모리로 이전 결정을 복원하고, `/add-feature` 스킬로 테스트를 강제하며, Biome 포맷터 및 console.log 감지 훅이 즉각 개입하여 typecheck 및 tests 통과 시점에만 머지함.
+### [[CLAUDE.md]] 단독 사용과 Harness 비교
+- **[[CLAUDE.md]] 단독 (Before)**: '사용자 인증 API 구현' 지시 시, NextAuth.js 기존 정책 무시, 비밀번호 평문 로그 출력(보안 위반), 에러 응답 불일치, 테스트 없음 등 세션마다 품질이 크게 흔들림.
+- **Harness 환경 (After)**: `progress.md` 메모리로 이전 결정을 복원하고, `/add-feature` 스킬로 테스트를 강제하며, [[Biome]] 포맷터 및 console.log 감지 훅이 즉각 개입하여 typecheck 및 tests 통과 시점에만 머지함.
 
 ### Canonical Agentic Loop 의사코드
 ```python
@@ -276,7 +276,7 @@ while not budgets.exhausted():
 
 ### L1/L3/L4 레이어의 리팩터링 및 걷어내기 가이드
 - **L4 검증**: 불완전 코드를 필터링하기 위해 별도로 띄웠던 크리틱 모델 게이트를 제거하고 Opus 4.8의 자체 교정 가중치를 우선 이용.
-- **L3 실행**: 직접 짠 fan-out/planner 배관 대신 플랫폼이 제공하는 동적 워크플로 위임을 검토하여 Undifferentiated heavy lifting을 차단.
+- **L3 실행**: 직접 짠 fan-out/planner 배관 대신 플랫폼이 제공하는 [[동적 워크플로]] 위임을 검토하여 Undifferentiated heavy lifting을 차단.
 - **L1 제약**: 복잡한 라우터 코드 대신 `/fast` 스위치 및 `effort control` 옵션 활용.
 
 ### 라즈베리 파이 하네스 초기 환경 설정 명령어
@@ -371,84 +371,84 @@ while not budgets.exhausted():
 - Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course
 - raw/일주일 동안 지속 실행되는 에이전틱 시스템 구축하기.md
 - raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md
-- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/Obsidian/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95)
-- [하네스 엔지니어링](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.%20%EB%8B%A4%EC%9D%8C%20%EB%AA%A8%EB%8D%B8%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%EC%BD%94%EB%94%A9%20%EC%8A%A4%ED%82%AC)
-- [2026년의 AI 에이전트 실전 가이드](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%A4%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C)
-- [What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness](file:///Users/railscraft/Obsidian/raw/What%20Anthropic%20Didn%E2%80%99t%20Say%20About%20Opus%204.8.%20It%E2%80%99s%20Anthropic%20Absorbing%20Your%20Harness.md)
-- [좋은 삶을 만드는 것에 대한 지루한 진실](file:///Users/railscraft/Obsidian/raw/%EC%A2%8B%EC%9D%80%20%EC%82%B6%EC%9D%84%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%A7%84%EC%8B%A4.md)
-- [Claude Code를 위한 Figma 스킬 완벽 가이드](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Figma%20%EC%8A%A4%ED%82%AC%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [내가 Obsidian을 정리하는 방법 - 다니엘 프린디](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%EA%B0%80%20Obsidian%EC%9D%84%20%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20-%20%EB%8B%A4%EB%8B%88%EC%97%98%20%ED%94%84%EB%A6%B0%EB%94%94.md)
-- [지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EA%B8%88%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4%20%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20GitHub%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2015%EC%84%A0%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [im-not-ai](file:///Users/railscraft/Obsidian/raw/im-not-ai.md)
-- [40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍](file:///Users/railscraft/Obsidian/raw/40%EC%96%B5%20%EB%8B%AC%EB%9F%AC%20%EB%8C%80%EA%B8%B0%EC%97%85%EC%9D%B4%20%EA%B9%A8%EB%9C%A8%EB%A6%B0%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%99%80%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%ED%98%91%EB%B0%95%EC%9D%98%20%EC%97%AD%ED%92%8D.md)
-- [하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.%20%EB%8B%A4%EC%9D%8C%20%EB%AA%A8%EB%8D%B8%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%EC%BD%94%EB%94%A9%20%EC%8A%A4%ED%82%AC.md)
-- [AI 디자인 시스템에 윤리, 접근성, 그리고 기억을 부여한 방법](file:///Users/railscraft/Obsidian/raw/AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%20%EC%9C%A4%EB%A6%AC%2C%20%EC%A0%91%EA%B7%BC%EC%84%B1%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EA%B8%B0%EC%96%B5%EC%9D%84%20%EB%B6%80%EC%97%AC%ED%95%9C%20%EB%B0%A9%EB%B2%95.md)
-- [AI 겨울이 시작됐다-ko](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md)
-- [60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴](file:///Users/railscraft/Obsidian/raw/60%EC%9D%BC%EA%B0%84%2011%EB%B2%88%EC%9D%98%20%EA%B8%B0%EC%88%A0%20%EC%9D%B8%ED%84%B0%EB%B7%B0%EB%A5%BC%20%EC%B9%98%EB%A5%B4%EB%A9%B0%20%EA%B9%A8%EB%8B%AC%EC%9D%80%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%B4%EC%A3%BC%EC%A7%80%20%EC%95%8A%EB%8A%94%20%ED%8C%A8%ED%84%B4.md)
-- [만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다](file:///Users/railscraft/Obsidian/raw/%EB%A7%8C%EC%95%BD%20%EB%8B%A8%205%ED%8E%B8%EC%9D%98%20AI%20%EB%85%BC%EB%AC%B8%EB%A7%8C%20%EC%9D%BD%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%B0%94%EB%A1%9C%20%EC%9D%B4%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.md)
-- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/Obsidian/raw/[[RAG]]%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
-- [AI와 디자인 시스템 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko](file:///Users/railscraft/Obsidian/raw/%ED%95%9C%20%EB%AC%B8%EC%9E%A5%EC%9D%84%20500%EB%8B%AC%EB%9F%AC%EC%A7%9C%EB%A6%AC%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%EC%BD%94%EC%8A%A4%EB%A1%9C%20%EB%B0%94%EA%BE%B8%EB%8A%94%20%EB%A9%80%ED%8B%B0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-ko.md)
-- [frontend-design-skill](file:///Users/railscraft/Obsidian/raw/frontend-design-skill.md)
-- [디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요](file:///Users/railscraft/Obsidian/raw/%EB%94%94%EC%A7%80%ED%84%B8%20%EC%A0%9C%ED%92%88%20%EC%A0%9C%EC%9E%91%EC%9D%80%20%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94.%20%EB%8C%80%EC%8B%A0%20%EC%9D%B4%EA%B2%83%EC%97%90%20%EC%A7%91%EC%A4%91%ED%95%98%EC%84%B8%EC%9A%94.md)
-- [GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라](file:///Users/railscraft/Obsidian/raw/[[GBrain]]%20-%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EC%9E%A5%EA%B8%B0%20%EA%B8%B0%EC%96%B5%20%EB%B0%8F%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B8%ED%94%84%EB%9D%BC.md)
-- [2026년 AI 보조 코딩은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EB%B3%B4%EC%A1%B0%20%EC%BD%94%EB%94%A9%EC%9D%80%20%ED%95%98%EB%82%98%EC%9D%98%20%EA%B8%B0%EC%88%A0%EC%9D%B4%EB%8B%A4.%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%EC%9D%B4%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
-- [Structuring Agents, Skills, and MCPs 🤖🧩](file:///Users/railscraft/Obsidian/raw/Structuring%20Agents%2C%20Skills%2C%20and%20MCPs%20%F0%9F%A4%96%F0%9F%A7%A9.md)
-- [Claude Code를 밑바닥부터 직접 구현해 보았다](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84%ED%95%B4%20%EB%B3%B4%EC%95%98%EB%8B%A4.md)
-- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/Obsidian/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95.md)
-- [하네스를 내 것으로 만들기 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [The Best Way to Make AI Write Like You-ko](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md)
-- [These 3 ETFs Created More Millionaires Than Any Stock](file:///Users/railscraft/Obsidian/raw/These%203%20ETFs%20Created%20More%20Millionaires%20Than%20Any%20Stock.md)
-- [Skills, MCP, Tool Calling. 에이전트 확장의 세 층](file:///Users/railscraft/Obsidian/raw/Skills%2C%20MCP%2C%20Tool%20Calling.%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%99%95%EC%9E%A5%EC%9D%98%20%EC%84%B8%20%EC%B8%B5.md)
-- [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md)
-- [Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko](file:///Users/railscraft/Obsidian/raw/Build%20a%20Real-Time%20Voice%20Agent%20in%2030%20Minutes%20%28With%20Interruption%20Handling%29-ko.md)
-- [16GB Mac mini에서 [[Qwen 3.5]] 122B [[LLM]] 실행하기 - [[TurboQuant]]-MLX를 활용한 MoE 전문가 스트리밍](file:///Users/railscraft/Obsidian/raw/16GB%20Mac%20mini%EC%97%90%EC%84%9C%20Qwen%203.5%20122B%20[[LLM]]%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20[[TurboQuant]]-MLX%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20MoE%20%EC%A0%84%EB%AC%B8%EA%B0%80%20%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D.md)
-- [Building an MCP Ecosystem at Pinterest-ko](file:///Users/railscraft/Obsidian/raw/Building%20an%20MCP%20Ecosystem%20at%20Pinterest-ko.md)
-- [5개의 새로운 플러그인으로 옵시디언 워크플로우 재구축하기 (2026년 설정)](file:///Users/railscraft/Obsidian/raw/5%EA%B0%9C%EC%9D%98%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%EC%9E%AC%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0%20%282026%EB%85%84%20%EC%84%A4%EC%A0%95%29.md)
-- [AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식)](file:///Users/railscraft/Obsidian/raw/AI%20%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9D%84%20%EA%B5%AC%EC%B6%95%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20%282026%EB%85%84%20%EB%B0%A9%EC%8B%9D%29.md)
-- [오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라](file:///Users/railscraft/Obsidian/raw/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%AA%A8%EB%8D%B8%EB%A1%9C%EB%8F%84%20%EC%B6%A9%EB%B6%84%ED%95%98%EB%8B%A4.%20%ED%95%84%EC%9A%94%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EC%A7%80%EB%8A%A5%EC%97%90%20%EB%B9%84%EC%9A%A9%EC%9D%84%20%EA%B3%BC%EB%8B%A4%ED%95%98%EA%B2%8C%20%EC%A7%80%EC%B6%9C%ED%95%98%EC%A7%80%20%EB%A7%88%EB%9D%BC.md)
-- [AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다](file:///Users/railscraft/Obsidian/raw/AI%EB%8A%94%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%9D%BC%20%EB%8D%94%20%EC%8B%AC%EA%B0%81%ED%95%9C%20%EC%9D%BC%EC%9D%84%20%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.md)
-- [옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드](file:///Users/railscraft/Obsidian/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0%20-%20%EB%85%B8%ED%8A%B8%EB%A5%BC%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [AI로 몰래 쓴 글을 가려내는 명백한 방법들](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EB%AA%B0%EB%9E%98%20%EC%93%B4%20%EA%B8%80%EC%9D%84%20%EA%B0%80%EB%A0%A4%EB%82%B4%EB%8A%94%20%EB%AA%85%EB%B0%B1%ED%95%9C%20%EB%B0%A9%EB%B2%95%EB%93%A4.md)
-- [cc101_axwith_ko](file:///Users/railscraft/Obsidian/raw/cc101_axwith_ko.html)
-- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/Obsidian/raw/CLAUDE.md%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
-- [AI Agents. Complete Course](file:///Users/railscraft/Obsidian/raw/AI%20Agents.%20Complete%20Course.md)
-- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/Obsidian/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
-- [Why senior UX designers are struggling in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md)
-- [10 Things Every Investor Should Know (but most learn too late)](file:///Users/railscraft/Obsidian/raw/10%20Things%20Every%20Investor%20Should%20Know%20%28but%20most%20learn%20too%20late%29.md)
-- [Claude Code 프로젝트를 위한 MEMORY.md](file:///Users/railscraft/Obsidian/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20MEMORY.md.md)
-- [BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk.](file:///Users/railscraft/Obsidian/raw/BofA%E2%80%99s%20May%20Survey%20Says%20Investors%20Are%20Back%20in%20Stocks.%20The%2030-Year%20Is%20the%20Risk..md)
-- [내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화](file:///Users/railscraft/Obsidian/raw/%EB%82%B4%20%EC%A3%BC%EC%9D%98%20%EC%A7%91%EC%A4%91%20%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%90%98%EB%8F%8C%EB%A0%A4%EC%A4%80%2011%EA%B0%80%EC%A7%80%20%EC%82%AC%EC%86%8C%ED%95%9C%20%EC%83%9D%ED%99%9C%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%EB%B3%80%ED%99%94.md)
-- [Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20-%20%EC%9E%90%EA%B0%80%20%EA%B0%9C%EC%84%A0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
-- [2026년을 위한 웹 디자인 및 빌드 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9B%B9%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%B0%8F%20%EB%B9%8C%EB%93%9C%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
-- [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
-- [Run a Useful Local [[LLM]] in 30 Minutes (Coding, [[RAG]], Voice)](file:///Users/railscraft/Obsidian/raw/Run%20a%20Useful%20Local%20[[LLM]]%20in%2030%20Minutes%20%28Coding%2C%20[[RAG]]%2C%20Voice%29.md)
-- [gajae-code_AI_코딩_하네스_분석](file:///Users/railscraft/Obsidian/raw/gajae-code_AI_%EC%BD%94%EB%94%A9_%ED%95%98%EB%84%A4%EC%8A%A4_%EB%B6%84%EC%84%9D.md)
-- [AI [[코딩 에이전트]]와 함께하는 명세 기반 개발 결정판 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/Obsidian/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
-- [테일윈드의 고군분투는 무너지는 사상누각의 징조다](file:///Users/railscraft/Obsidian/raw/%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C%EC%9D%98%20%EA%B3%A0%EA%B5%B0%EB%B6%84%ED%88%AC%EB%8A%94%20%EB%AC%B4%EB%84%88%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%83%81%EB%88%84%EA%B0%81%EC%9D%98%20%EC%A7%95%EC%A1%B0%EB%8B%A4.md)
-- [AI가 내 글쓰기 커리어를 죽였다. AI 만세](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md)
-- [I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max](file:///Users/railscraft/Obsidian/raw/I%20Cancelled%20ChatGPT%2C%20Cursor%2C%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max)
-- [2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%AC%B8%EC%84%9C.%20%EB%8B%A8%2030%EC%A4%84%EC%A7%9C%EB%A6%AC%EC%98%80%EB%8B%A4.%20Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%20%EB%91%90%20%EB%AA%85%EC%9D%B4%20%EC%8D%BC%EB%8B%A4.%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%80%20%EC%95%84%EC%A7%81%20%EC%9D%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4-ko.md)
-- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
-- [모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 LangGraph 개념](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20AI%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%2010%EA%B0%80%EC%A7%80%20LangChain%20%EB%B0%8F%20LangGraph%20%EA%B0%9C%EB%85%90.md)
-- [마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실](file:///Users/railscraft/Obsidian/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8%EB%8A%94%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%93%A4%EC%97%90%EA%B2%8C%20AI%20%EC%82%AC%EC%9A%A9%20%EC%A4%91%EB%8B%A8%EC%9D%84%20%EC%A7%80%EC%8B%9C%ED%96%88%EA%B3%A0%2C%20%EC%9A%B0%EB%B2%84%EB%8A%94%204%EA%B0%9C%EC%9B%94%20%EB%A7%8C%EC%97%90%20%EC%97%B0%EA%B0%84%20AI%20%EC%98%88%EC%82%B0%EC%9D%84%20%EB%AA%A8%EB%91%90%20%ED%83%95%EC%A7%84%ED%96%88%EB%8B%A4.%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%A7%84%EC%8B%A4.md)
-- [How to Do Hard Things When You Have Zero Motivation](file:///Users/railscraft/Obsidian/raw/How%20to%20Do%20Hard%20Things%20When%20You%20Have%20Zero%20Motivation.md)
-- [Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic](file:///Users/railscraft/Obsidian/raw/Anthropic%EC%9D%B4%20Opus%204.8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EA%B2%83%20-%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%ED%9D%A1%EC%88%98%ED%95%98%EB%8A%94%20Anthropic.md)
-- [AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 [[Context Engineering]]이다](file:///Users/railscraft/Obsidian/raw/AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C%20Prompt%20Engineering%EC%9D%80%20%EC%A3%BD%EC%97%88%EB%8B%A4.%20%EC%9D%B4%EC%A0%9C%20%EC%A7%84%EC%A7%9C%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%80%20Context%20Engineering%EC%9D%B4%EB%8B%A4.md)
-- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
-- [Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻](file:///Users/railscraft/Obsidian/raw/Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%84%20%EB%B2%84%EB%A6%AC%EB%9D%BC%EA%B3%A0%20%EB%A7%90%ED%96%88%EB%8B%A4.%20%EA%B7%B8%20%EB%A7%90%EC%9D%98%20%EC%A7%84%EC%A7%9C%20%EB%9C%BB.md)
-- [Give Your AI Agent 36 Superpowers](file:///Users/railscraft/Obsidian/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open)
-- [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko](file:///Users/railscraft/Obsidian/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md)
-- [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch](file:///Users/railscraft/Obsidian/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch)
-- [Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko](file:///Users/railscraft/Obsidian/raw/Claude%20900%EB%8B%AC%EB%9F%AC%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%2010%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
-- [마이크로서비스 대신 [[모듈러 모놀리스]] — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들](file:///Users/railscraft/Obsidian/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%8C%80%EC%8B%A0%20%EB%AA%A8%EB%93%88%EB%9F%AC%20%EB%AA%A8%EB%86%80%EB%A6%AC%EC%8A%A4%20%E2%80%94%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EA%B0%80%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%9D%BD%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%96%88%EC%9D%84%20%EB%95%8C%20%EB%B0%94%EB%80%90%20%EA%B2%83%EB%93%A4.md)
-- [Hermes, [[OpenClaw]], ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리](file:///Users/railscraft/Obsidian/raw/Hermes%2C%20[[OpenClaw]]%2C%20ChatGPT%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EB%B0%8F%20%EB%AF%B8%EB%9E%98%20AI%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98%20%EC%8B%A4%EC%A0%9C%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
-- [2026년의 AI 에이전트 실전 가이드-ko](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%9D%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%A4%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C-ko.md)
-- [The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks](file:///Users/railscraft/Obsidian/raw/The%20S%26P%20500%20Illusion.%20Why%20Your%20%E2%80%9CDiversified%E2%80%9D%20Index%20Is%20Really%20a%20Bet%20on%2010%20Stocks.md)
-- [Your Wandering Mind Is Not the Enemy of Focus](file:///Users/railscraft/Obsidian/raw/Your%20Wandering%20Mind%20Is%20Not%20the%20Enemy%20of%20Focus.md)
-- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
-- [거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko](file:///Users/railscraft/Obsidian/raw/%EA%B1%B0%EC%9D%98%20%EB%AA%A8%EB%93%A0%20%EB%82%98%EC%81%9C%20%EA%B2%B0%EC%A0%95%EC%9D%84%20%EB%A9%88%EC%B6%94%EB%8A%94%20%EB%8B%A8%20%ED%95%98%EB%82%98%EC%9D%98%20%EC%A7%88%EB%AC%B8-ko.md)
-- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/Obsidian/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
-- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/Obsidian/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
+- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/[[Obsidian]]/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95)
+- [하네스 엔지니어링](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.%20%EB%8B%A4%EC%9D%8C%20%EB%AA%A8%EB%8D%B8%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%EC%BD%94%EB%94%A9%20%EC%8A%A4%ED%82%AC)
+- [2026년의 AI 에이전트 실전 가이드](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%9D%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%A4%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C)
+- [What Anthropic Didn’t Say About Opus 4.8. It’s Anthropic Absorbing Your Harness](file:///Users/railscraft/[[Obsidian]]/raw/What%20Anthropic%20Didn%E2%80%99t%20Say%20About%20Opus%204.8.%20It%E2%80%99s%20Anthropic%20Absorbing%20Your%20Harness.md)
+- [좋은 삶을 만드는 것에 대한 지루한 진실](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A2%8B%EC%9D%80%20%EC%82%B6%EC%9D%84%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%A7%84%EC%8B%A4.md)
+- [Claude Code를 위한 Figma 스킬 완벽 가이드](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Figma%20%EC%8A%A4%ED%82%AC%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [내가 [[Obsidian]]을 정리하는 방법 - 다니엘 프린디](file:///Users/railscraft/[[Obsidian]]/raw/%EB%82%B4%EA%B0%80%20[[Obsidian]]%EC%9D%84%20%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20-%20%EB%8B%A4%EB%8B%88%EC%97%98%20%ED%94%84%EB%A6%B0%EB%94%94.md)
+- [지금 개발자들이 주목하는 오픈소스 GitHub 프로젝트 15선 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EA%B8%88%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4%20%EC%A3%BC%EB%AA%A9%ED%95%98%EB%8A%94%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20GitHub%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2015%EC%84%A0%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [im-not-ai](file:///Users/railscraft/[[Obsidian]]/raw/im-not-ai.md)
+- [40억 달러 대기업이 깨뜨린 오픈소스와 개발자 협박의 역풍](file:///Users/railscraft/[[Obsidian]]/raw/40%EC%96%B5%20%EB%8B%AC%EB%9F%AC%20%EB%8C%80%EA%B8%B0%EC%97%85%EC%9D%B4%20%EA%B9%A8%EB%9C%A8%EB%A6%B0%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%99%80%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%ED%98%91%EB%B0%95%EC%9D%98%20%EC%97%AD%ED%92%8D.md)
+- [하네스 엔지니어링. 다음 모델보다 더 중요한 조용한 코딩 스킬](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.%20%EB%8B%A4%EC%9D%8C%20%EB%AA%A8%EB%8D%B8%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%EC%BD%94%EB%94%A9%20%EC%8A%A4%ED%82%AC.md)
+- [AI [[디자인 시스템]]에 윤리, 접근성, 그리고 기억을 부여한 방법](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%97%90%20%EC%9C%A4%EB%A6%AC%2C%20%EC%A0%91%EA%B7%BC%EC%84%B1%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EA%B8%B0%EC%96%B5%EC%9D%84%20%EB%B6%80%EC%97%AC%ED%95%9C%20%EB%B0%A9%EB%B2%95.md)
+- [AI 겨울이 시작됐다-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EA%B2%A8%EC%9A%B8%EC%9D%B4%20%EC%8B%9C%EC%9E%91%EB%90%90%EB%8B%A4-ko.md)
+- [60일간 11번의 기술 인터뷰를 치르며 깨달은 아무도 말해주지 않는 패턴](file:///Users/railscraft/[[Obsidian]]/raw/60%EC%9D%BC%EA%B0%84%2011%EB%B2%88%EC%9D%98%20%EA%B8%B0%EC%88%A0%20%EC%9D%B8%ED%84%B0%EB%B7%B0%EB%A5%BC%20%EC%B9%98%EB%A5%B4%EB%A9%B0%20%EA%B9%A8%EB%8B%AC%EC%9D%80%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%B4%EC%A3%BC%EC%A7%80%20%EC%95%8A%EB%8A%94%20%ED%8C%A8%ED%84%B4.md)
+- [만약 단 5편의 AI 논문만 읽어야 한다면 바로 이것입니다](file:///Users/railscraft/[[Obsidian]]/raw/%EB%A7%8C%EC%95%BD%20%EB%8B%A8%205%ED%8E%B8%EC%9D%98%20AI%20%EB%85%BC%EB%AC%B8%EB%A7%8C%20%EC%9D%BD%EC%96%B4%EC%95%BC%20%ED%95%9C%EB%8B%A4%EB%A9%B4%20%EB%B0%94%EB%A1%9C%20%EC%9D%B4%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4.md)
+- [RAG 시스템 초보자부터 전문가까지의 완전 가이드 (2026년 에디션)](file:///Users/railscraft/[[Obsidian]]/raw/[[RAG]]%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%B4%88%EB%B3%B4%EC%9E%90%EB%B6%80%ED%84%B0%20%EC%A0%84%EB%AC%B8%EA%B0%80%EA%B9%8C%EC%A7%80%EC%9D%98%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%282026%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%29.md)
+- [AI와 [[디자인 시스템]] - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/AI%EC%99%80%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [한 문장을 500달러짜리 온라인 코스로 바꾸는 멀티 에이전트 시스템 구축하기-ko](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%9C%20%EB%AC%B8%EC%9E%A5%EC%9D%84%20500%EB%8B%AC%EB%9F%AC%EC%A7%9C%EB%A6%AC%20%EC%98%A8%EB%9D%BC%EC%9D%B8%20%EC%BD%94%EC%8A%A4%EB%A1%9C%20%EB%B0%94%EA%BE%B8%EB%8A%94%20%EB%A9%80%ED%8B%B0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-ko.md)
+- [frontend-design-skill](file:///Users/railscraft/[[Obsidian]]/raw/frontend-design-skill.md)
+- [디지털 제품 제작은 잊으세요. 대신 이것에 집중하세요](file:///Users/railscraft/[[Obsidian]]/raw/%EB%94%94%EC%A7%80%ED%84%B8%20%EC%A0%9C%ED%92%88%20%EC%A0%9C%EC%9E%91%EC%9D%80%20%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94.%20%EB%8C%80%EC%8B%A0%20%EC%9D%B4%EA%B2%83%EC%97%90%20%EC%A7%91%EC%A4%91%ED%95%98%EC%84%B8%EC%9A%94.md)
+- [GBrain - 에이전트를 위한 오픈소스 장기 기억 및 지식 그래프 인프라](file:///Users/railscraft/[[Obsidian]]/raw/[[GBrain]]%20-%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EC%9E%A5%EA%B8%B0%20%EA%B8%B0%EC%96%B5%20%EB%B0%8F%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B8%ED%94%84%EB%9D%BC.md)
+- [2026년 [[AI 보조 코딩]]은 하나의 기술이다. 실제로 이 기술을 마스터하는 방법](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%20AI%20%EB%B3%B4%EC%A1%B0%20%EC%BD%94%EB%94%A9%EC%9D%80%20%ED%95%98%EB%82%98%EC%9D%98%20%EA%B8%B0%EC%88%A0%EC%9D%B4%EB%8B%A4.%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%EC%9D%B4%20%EA%B8%B0%EC%88%A0%EC%9D%84%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [Structuring Agents, Skills, and MCPs 🤖🧩](file:///Users/railscraft/[[Obsidian]]/raw/Structuring%20Agents%2C%20Skills%2C%20and%20MCPs%20%F0%9F%A4%96%F0%9F%A7%A9.md)
+- [Claude Code를 밑바닥부터 직접 구현해 보았다](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%EB%A5%BC%20%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84%ED%95%B4%20%EB%B3%B4%EC%95%98%EB%8B%A4.md)
+- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/[[Obsidian]]/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95.md)
+- [하네스를 내 것으로 만들기 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EB%82%B4%20%EA%B2%83%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [The Best Way to Make AI Write Like You-ko](file:///Users/railscraft/[[Obsidian]]/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md)
+- [These 3 ETFs Created More Millionaires Than Any Stock](file:///Users/railscraft/[[Obsidian]]/raw/These%203%20ETFs%20Created%20More%20Millionaires%20Than%20Any%20Stock.md)
+- [Skills, MCP, Tool Calling. 에이전트 확장의 세 층](file:///Users/railscraft/[[Obsidian]]/raw/Skills%2C%20MCP%2C%20Tool%20Calling.%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%99%95%EC%9E%A5%EC%9D%98%20%EC%84%B8%20%EC%B8%B5.md)
+- [AI가 당신처럼 글을 쓰게 만드는 가장 좋은 방법-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EB%8B%B9%EC%8B%A0%EC%B2%98%EB%9F%BC%20%EA%B8%80%EC%9D%84%20%EC%93%B0%EA%B2%8C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EA%B0%80%EC%9E%A5%20%EC%A2%8B%EC%9D%80%20%EB%B0%A9%EB%B2%95-ko.md)
+- [Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko](file:///Users/railscraft/[[Obsidian]]/raw/Build%20a%20Real-Time%20Voice%20Agent%20in%2030%20Minutes%20%28With%20Interruption%20Handling%29-ko.md)
+- [16GB Mac mini에서 [[Qwen 3.5]] 122B [[LLM]] 실행하기 - [[TurboQuant]]-[[MLX]]를 활용한 MoE 전문가 스트리밍](file:///Users/railscraft/[[Obsidian]]/raw/16GB%20Mac%20mini%EC%97%90%EC%84%9C%20Qwen%203.5%20122B%20[[LLM]]%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20[[TurboQuant]]-[[MLX]]%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20MoE%20%EC%A0%84%EB%AC%B8%EA%B0%80%20%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D.md)
+- [Building an MCP Ecosystem at Pinterest-ko](file:///Users/railscraft/[[Obsidian]]/raw/Building%20an%20MCP%20Ecosystem%20at%20Pinterest-ko.md)
+- [5개의 새로운 플러그인으로 [[옵시디언]] [[워크플로]]우 재구축하기 (2026년 설정)](file:///Users/railscraft/[[Obsidian]]/raw/5%EA%B0%9C%EC%9D%98%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%EC%9E%AC%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0%20%282026%EB%85%84%20%EC%84%A4%EC%A0%95%29.md)
+- [AI 네이티브 세컨드 브레인을 구축하는 방법 (2026년 방식)](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9D%84%20%EA%B5%AC%EC%B6%95%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%20%282026%EB%85%84%20%EB%B0%A9%EC%8B%9D%29.md)
+- [오픈소스 모델로도 충분하다. 필요하지 않은 지능에 비용을 과다하게 지출하지 마라](file:///Users/railscraft/[[Obsidian]]/raw/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%AA%A8%EB%8D%B8%EB%A1%9C%EB%8F%84%20%EC%B6%A9%EB%B6%84%ED%95%98%EB%8B%A4.%20%ED%95%84%EC%9A%94%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EC%A7%80%EB%8A%A5%EC%97%90%20%EB%B9%84%EC%9A%A9%EC%9D%84%20%EA%B3%BC%EB%8B%A4%ED%95%98%EA%B2%8C%20%EC%A7%80%EC%B6%9C%ED%95%98%EC%A7%80%20%EB%A7%88%EB%9D%BC.md)
+- [AI는 개발자를 대체하는 것이 아니라 더 심각한 일을 하고 있다](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%8A%94%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%9D%BC%20%EB%8D%94%20%EC%8B%AC%EA%B0%81%ED%95%9C%20%EC%9D%BC%EC%9D%84%20%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.md)
+- [옵시디언 마스터하기 - 노트를 세컨드 브레인으로 만드는 완벽 가이드](file:///Users/railscraft/[[Obsidian]]/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0%20-%20%EB%85%B8%ED%8A%B8%EB%A5%BC%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%99%84%EB%B2%BD%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI로 몰래 쓴 글을 가려내는 명백한 방법들](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C%20%EB%AA%B0%EB%9E%98%20%EC%93%B4%20%EA%B8%80%EC%9D%84%20%EA%B0%80%EB%A0%A4%EB%82%B4%EB%8A%94%20%EB%AA%85%EB%B0%B1%ED%95%9C%20%EB%B0%A9%EB%B2%95%EB%93%A4.md)
+- [cc101_axwith_ko](file:///Users/railscraft/[[Obsidian]]/raw/cc101_axwith_ko.html)
+- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/[[Obsidian]]/raw/[[CLAUDE.md]]%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
+- [AI Agents. Complete Course](file:///Users/railscraft/[[Obsidian]]/raw/AI%20Agents.%20Complete%20Course.md)
+- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/[[Obsidian]]/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
+- [Why senior UX designers are struggling in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md)
+- [10 Things Every Investor Should Know (but most learn too late)](file:///Users/railscraft/[[Obsidian]]/raw/10%20Things%20Every%20Investor%20Should%20Know%20%28but%20most%20learn%20too%20late%29.md)
+- [Claude Code 프로젝트를 위한 MEMORY.md](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20MEMORY.md.md)
+- [BofA’s May Survey Says Investors Are Back in Stocks. The 30-Year Is the Risk.](file:///Users/railscraft/[[Obsidian]]/raw/BofA%E2%80%99s%20May%20Survey%20Says%20Investors%20Are%20Back%20in%20Stocks.%20The%2030-Year%20Is%20the%20Risk..md)
+- [내 주의 집중 시간을 되돌려준 11가지 사소한 생활 습관의 변화](file:///Users/railscraft/[[Obsidian]]/raw/%EB%82%B4%20%EC%A3%BC%EC%9D%98%20%EC%A7%91%EC%A4%91%20%EC%8B%9C%EA%B0%84%EC%9D%84%20%EB%90%98%EB%8F%8C%EB%A0%A4%EC%A4%80%2011%EA%B0%80%EC%A7%80%20%EC%82%AC%EC%86%8C%ED%95%9C%20%EC%83%9D%ED%99%9C%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%EB%B3%80%ED%99%94.md)
+- [Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20-%20%EC%9E%90%EA%B0%80%20%EA%B0%9C%EC%84%A0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [2026년을 위한 웹 디자인 및 빌드 [[워크플로]]우](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9B%B9%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%B0%8F%20%EB%B9%8C%EB%93%9C%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
+- [Run a Useful Local [[LLM]] in 30 Minutes (Coding, [[RAG]], Voice)](file:///Users/railscraft/[[Obsidian]]/raw/Run%20a%20Useful%20Local%20[[LLM]]%20in%2030%20Minutes%20%28Coding%2C%20[[RAG]]%2C%20Voice%29.md)
+- [gajae-code_AI_코딩_하네스_분석](file:///Users/railscraft/[[Obsidian]]/raw/gajae-code_AI_%EC%BD%94%EB%94%A9_%ED%95%98%EB%84%A4%EC%8A%A4_%EB%B6%84%EC%84%9D.md)
+- [AI [[코딩 에이전트]]와 함께하는 [[명세 기반 개발]] 결정판 가이드](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C%20%EA%B2%B0%EC%A0%95%ED%8C%90%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [Skills Alone Won’t Save You in the AI Economy](file:///Users/railscraft/[[Obsidian]]/raw/Skills%20Alone%20Won%E2%80%99t%20Save%20You%20in%20the%20AI%20Economy.md)
+- [테일윈드의 고군분투는 무너지는 사상누각의 징조다](file:///Users/railscraft/[[Obsidian]]/raw/%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C%EC%9D%98%20%EA%B3%A0%EA%B5%B0%EB%B6%84%ED%88%AC%EB%8A%94%20%EB%AC%B4%EB%84%88%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%83%81%EB%88%84%EA%B0%81%EC%9D%98%20%EC%A7%95%EC%A1%B0%EB%8B%A4.md)
+- [AI가 내 글쓰기 커리어를 죽였다. AI 만세](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EB%82%B4%20%EA%B8%80%EC%93%B0%EA%B8%B0%20%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%A5%BC%20%EC%A3%BD%EC%98%80%EB%8B%A4.%20AI%20%EB%A7%8C%EC%84%B8.md)
+- [I Cancelled ChatGPT, [[Cursor]], and Midjourney This Week — My MacBook Pro M5 Max](file:///Users/railscraft/[[Obsidian]]/raw/I%20Cancelled%20ChatGPT%2C%20[[Cursor]]%2C%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max)
+- [2026년에 가장 많이 설치된 디자인 문서. 단 30줄짜리였다. Anthropic 엔지니어 두 명이 썼다. 디자이너들은 아직 읽지 않았다-ko](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EB%AC%B8%EC%84%9C.%20%EB%8B%A8%2030%EC%A4%84%EC%A7%9C%EB%A6%AC%EC%98%80%EB%8B%A4.%20Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%20%EB%91%90%20%EB%AA%85%EC%9D%B4%20%EC%8D%BC%EB%8B%A4.%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%93%A4%EC%9D%80%20%EC%95%84%EC%A7%81%20%EC%9D%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4-ko.md)
+- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/[[Obsidian]]/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
+- [모든 AI 엔지니어가 알아야 할 10가지 LangChain 및 [[LangGraph]] 개념](file:///Users/railscraft/[[Obsidian]]/raw/%EB%AA%A8%EB%93%A0%20AI%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%2010%EA%B0%80%EC%A7%80%20LangChain%20%EB%B0%8F%20[[LangGraph]]%20%EA%B0%9C%EB%85%90.md)
+- [마이크로소프트는 엔지니어들에게 AI 사용 중단을 지시했고, 우버는 4개월 만에 연간 AI 예산을 모두 탕진했다. 아무도 말하지 않는 진실](file:///Users/railscraft/[[Obsidian]]/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8%EB%8A%94%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%93%A4%EC%97%90%EA%B2%8C%20AI%20%EC%82%AC%EC%9A%A9%20%EC%A4%91%EB%8B%A8%EC%9D%84%20%EC%A7%80%EC%8B%9C%ED%96%88%EA%B3%A0%2C%20%EC%9A%B0%EB%B2%84%EB%8A%94%204%EA%B0%9C%EC%9B%94%20%EB%A7%8C%EC%97%90%20%EC%97%B0%EA%B0%84%20AI%20%EC%98%88%EC%82%B0%EC%9D%84%20%EB%AA%A8%EB%91%90%20%ED%83%95%EC%A7%84%ED%96%88%EB%8B%A4.%20%EC%95%84%EB%AC%B4%EB%8F%84%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%A7%84%EC%8B%A4.md)
+- [How to Do Hard Things When You Have Zero Motivation](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Do%20Hard%20Things%20When%20You%20Have%20Zero%20Motivation.md)
+- [Anthropic이 Opus 4.8에 대해 말하지 않은 것 - 하네스를 흡수하는 Anthropic](file:///Users/railscraft/[[Obsidian]]/raw/Anthropic%EC%9D%B4%20Opus%204.8%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%A7%90%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EA%B2%83%20-%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%ED%9D%A1%EC%88%98%ED%95%98%EB%8A%94%20Anthropic.md)
+- [AI 에이전트에게 Prompt Engineering은 죽었다. 이제 진짜 중요한 것은 [[Context Engineering]]이다](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C%20Prompt%20Engineering%EC%9D%80%20%EC%A3%BD%EC%97%88%EB%8B%A4.%20%EC%9D%B4%EC%A0%9C%20%EC%A7%84%EC%A7%9C%20%EC%A4%91%EC%9A%94%ED%95%9C%20%EA%B2%83%EC%9D%80%20Context%20Engineering%EC%9D%B4%EB%8B%A4.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/[[Obsidian]]/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻](file:///Users/railscraft/[[Obsidian]]/raw/Anthropic%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9D%84%20%EB%B2%84%EB%A6%AC%EB%9D%BC%EA%B3%A0%20%EB%A7%90%ED%96%88%EB%8B%A4.%20%EA%B7%B8%20%EB%A7%90%EC%9D%98%20%EC%A7%84%EC%A7%9C%20%EB%9C%BB.md)
+- [Give Your AI Agent 36 Superpowers](file:///Users/railscraft/[[Obsidian]]/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open)
+- [UX는 죽지 않았다. 그저 화면에 대한 이야기를 멈췄을 뿐이다-ko](file:///Users/railscraft/[[Obsidian]]/raw/UX%EB%8A%94%20%EC%A3%BD%EC%A7%80%20%EC%95%8A%EC%95%98%EB%8B%A4.%20%EA%B7%B8%EC%A0%80%20%ED%99%94%EB%A9%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%A5%BC%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%BF%90%EC%9D%B4%EB%8B%A4-ko.md)
+- [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch](file:///Users/railscraft/[[Obsidian]]/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch)
+- [Claude 900달러 컨설턴트를 대체하는 10가지 프롬프트-ko](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20900%EB%8B%AC%EB%9F%AC%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94%2010%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
+- [마이크로서비스 대신 [[모듈러 모놀리스]] — AI 에이전트가 코드를 읽기 시작했을 때 바뀐 것들](file:///Users/railscraft/[[Obsidian]]/raw/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%8C%80%EC%8B%A0%20%EB%AA%A8%EB%93%88%EB%9F%AC%20%EB%AA%A8%EB%86%80%EB%A6%AC%EC%8A%A4%20%E2%80%94%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EA%B0%80%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%9D%BD%EA%B8%B0%20%EC%8B%9C%EC%9E%91%ED%96%88%EC%9D%84%20%EB%95%8C%20%EB%B0%94%EB%80%90%20%EA%B2%83%EB%93%A4.md)
+- [Hermes, [[OpenClaw]], ChatGPT 에이전트 및 미래 AI 시스템의 실제 작동 원리](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%2C%20[[OpenClaw]]%2C%20ChatGPT%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EB%B0%8F%20%EB%AF%B8%EB%9E%98%20AI%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98%20%EC%8B%A4%EC%A0%9C%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [2026년의 AI 에이전트 실전 가이드-ko](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%9D%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%8B%A4%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C-ko.md)
+- [The S&P 500 Illusion. Why Your “Diversified” Index Is Really a Bet on 10 Stocks](file:///Users/railscraft/[[Obsidian]]/raw/The%20S%26P%20500%20Illusion.%20Why%20Your%20%E2%80%9CDiversified%E2%80%9D%20Index%20Is%20Really%20a%20Bet%20on%2010%20Stocks.md)
+- [Your Wandering Mind Is Not the Enemy of Focus](file:///Users/railscraft/[[Obsidian]]/raw/Your%20Wandering%20Mind%20Is%20Not%20the%20Enemy%20of%20Focus.md)
+- [LLM에게 [[옵시디언]] 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/[[Obsidian]]/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
+- [거의 모든 나쁜 결정을 멈추는 단 하나의 질문-ko](file:///Users/railscraft/[[Obsidian]]/raw/%EA%B1%B0%EC%9D%98%20%EB%AA%A8%EB%93%A0%20%EB%82%98%EC%81%9C%20%EA%B2%B0%EC%A0%95%EC%9D%84%20%EB%A9%88%EC%B6%94%EB%8A%94%20%EB%8B%A8%20%ED%95%98%EB%82%98%EC%9D%98%20%EC%A7%88%EB%AC%B8-ko.md)
+- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
+- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/[[Obsidian]]/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
 

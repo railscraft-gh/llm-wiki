@@ -15,7 +15,7 @@ created: 2026-07-24
 updated: 2026-07-24
 ---
 
-# Claude Code(클로드 코드)
+# [[Claude Code]](클로드 코드)
 
 ## 한 줄 정의
 

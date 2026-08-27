@@ -29,7 +29,7 @@ LangGraph가 등장하기 전 개발자들은 단순한 `while` 루프나 조건
 LangGraph는 모든 에이전트 실행 상태를 전역 상태 딕셔너리로 추적하고, 노드가 리턴하는 값에 따라 상태가 자동 머지되며, 조건부 에지(`conditional_edge`)를 통해 확률적 분기를 코딩 수준에서 제어하도록 설계되었다. 이로써 에이전트의 런타임 제어권이 난해한 자연어 프롬프트가 아닌 엄격한 아키텍처적 위상(Topology) 안에서 작동한다.
 
 ## 예시
-* **메이커-체커 워크플로우**:
+* **메이커-체커 [[워크플로]]우**:
   1. `Maker` 노드가 글 초안을 작성하여 상태의 `draft` 필드를 채운다.
   2. `Checker` 노드로 에지가 이동하여 품질을 평가하고 검증 점수를 `score`로 남긴다.
   3. 조건부 에지가 `score`를 확인하여 80점 미만이면 `Maker` 노드로 순환(Re-entry)시키고, 80점 이상이면 종료 노드로 방출한다.
@@ -40,4 +40,4 @@ LangGraph는 모든 에이전트 실행 상태를 전역 상태 딕셔너리로 
 * [[검증 레이어]]
 
 ## 출처
-- [FORGET Loop Engineering. Graph Engineering is about THIS.md](file:///Users/railscraft/Obsidian/raw/FORGET%20Loop%20Engineering.%20Graph%20Engineering%20is%20about%20THIS.md)
+- [FORGET Loop Engineering. Graph Engineering is about THIS.md](file:///Users/railscraft/[[Obsidian]]/raw/FORGET%20Loop%20Engineering.%20Graph%20Engineering%20is%20about%20THIS.md)

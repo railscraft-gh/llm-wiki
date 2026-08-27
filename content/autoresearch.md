@@ -17,7 +17,7 @@ updated: 2026-07-30
 # autoresearch
 
 ## 한 줄 정의
-autoresearch는 안드레이 카파시(Andrej Karpathy)가 공개한 오픈소스 단일 GPU 자율 연구 하네스 에이전트로, AI 에이전트에게 실제 LLM 학습 코드와 터미널 실행 권한을 부여하여 신경망 아키텍처 및 하이퍼파라미터를 스스로 개선하고 최적의 학습 가중치를 찾아내도록 설계된 연구 자동화 에이전트 툴이다.
+autoresearch는 안드레이 카파시([[Andrej Karpathy]])가 공개한 오픈소스 단일 GPU 자율 연구 하네스 에이전트로, AI 에이전트에게 실제 [[LLM]] 학습 코드와 터미널 실행 권한을 부여하여 신경망 아키텍처 및 하이퍼파라미터를 스스로 개선하고 최적의 학습 가중치를 찾아내도록 설계된 연구 자동화 에이전트 툴이다.
 
 ## 핵심 요지
 * **시간 고정 실험 루프**: 하드웨어 가속도 차이로 인한 변수를 통제하기 위해 각 학습 실험의 실행 시간을 대략 5분으로 한정(Hard-capped)하여 순수한 모델 성능 변이율을 대조한다.
@@ -41,4 +41,4 @@ autoresearch는 안드레이 카파시(Andrej Karpathy)가 공개한 오픈소�
 * [[그래프 엔지니어링]]
 
 ## 출처
-- [Getting Started with Andrej Karpathy’s “autoresearch” — Full Guide.md](file:///Users/railscraft/Obsidian/raw/Getting%20Started%20with%20Andrej%20Karpathy%E2%80%99s%20%E2%80%9Cautoresearch%E2%80%9D%20%E2%80%94%20Full%20Guide.md)
+- [Getting Started with [[Andrej Karpathy]]’s “autoresearch” — Full Guide.md](file:///Users/railscraft/[[Obsidian]]/raw/Getting%20Started%20with%20Andrej%20Karpathy%E2%80%99s%20%E2%80%9Cautoresearch%E2%80%9D%20%E2%80%94%20Full%20Guide.md)

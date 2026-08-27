@@ -22,8 +22,8 @@ updated: 2026-07-21
 HTML 웹 문서 레이아웃의 두 가지 기본 박스 모델 범주로, 새 줄을 생성하고 전체 너비를 occupy하는 블록 레벨(Block-level, 예: `<div>`) 요소와, 줄바꿈 없이 콘텐츠 크기만큼만 공간을 차지하는 인라인(Inline, 예: `<span>`) 요소의 구분을 말한다.
 
 ## 핵심 요지
-- **줄바꿈 및 너비 점유 차이**: 블록 레벨 요소는 앞뒤로 자동 줄바꿈을 일으키며 부모 요소 너비의 100%를 차지하는 반면, 인라인 요소는 줄바꿈 없이 내부 콘텐츠 영역 크기만큼만 스페이스를 차지한다. [raw/Block-Level and Inline Elements. The difference between div and span.md#L9-L18](file:///Users/railscraft/Obsidian/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L9-L18)
-- **컨테이너 용도 분리**: `<div>`는 기본 스타일이 없이 다른 HTML 구성을 그룹화하고 영역을 분리하는 구조적 컨테이너로 쓰이고, `<span>`은 긴 문장/텍스트 흐름 내부에서 국소적 스타일을 입히기 위한 인라인 컨테이너로 쓰인다. [raw/Block-Level and Inline Elements. The difference between div and span.md#L33-L40](file:///Users/railscraft/Obsidian/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L33-L40)
+- **줄바꿈 및 너비 점유 차이**: 블록 레벨 요소는 앞뒤로 자동 줄바꿈을 일으키며 부모 요소 너비의 100%를 차지하는 반면, 인라인 요소는 줄바꿈 없이 내부 콘텐츠 영역 크기만큼만 스페이스를 차지한다. [raw/Block-Level and Inline Elements. The difference between div and span.md#L9-L18](file:///Users/railscraft/[[Obsidian]]/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L9-L18)
+- **컨테이너 용도 분리**: `<div>`는 기본 스타일이 없이 다른 HTML 구성을 그룹화하고 영역을 분리하는 구조적 컨테이너로 쓰이고, `<span>`은 긴 문장/텍스트 흐름 내부에서 국소적 스타일을 입히기 위한 인라인 컨테이너로 쓰인다. [raw/Block-Level and Inline Elements. The difference between div and span.md#L33-L40](file:///Users/railscraft/[[Obsidian]]/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L33-L40)
 
 ## 상세
 
@@ -53,4 +53,4 @@ HTML 웹 문서 레이아웃의 두 가지 기본 박스 모델 범주로, 새 �
 - [[shadcn-ui]]
 
 ## 출처
-- [raw/Block-Level and Inline Elements. The difference between div and span.md](file:///Users/railscraft/Obsidian/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md)
+- [raw/Block-Level and Inline Elements. The difference between div and span.md](file:///Users/railscraft/[[Obsidian]]/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md)

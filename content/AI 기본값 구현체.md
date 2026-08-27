@@ -51,7 +51,7 @@ AI 기본값 구현체는 개별 팀이 의식적으로 선택하지 않아도, 
 
 ## 상세
 
-원문 두 개는 서로 다른 층을 다루지만 같은 구조를 보여준다. [[shadcn-ui]]는 디자이너가 Figma에서 선택하지 않았더라도, Claude·Cursor·v0·Lovable 같은 생성형 UI 도구가 반복 학습하고 scaffold로 삼으면서 기본 UI foundation처럼 굳어졌다. [[OpenClaw]]는 반대로 personal agent runtime 쪽에서 self-hosted, multi-channel, tool-executing agent라는 작업 표면을 빠르게 대표하게 된 사례다.
+원문 두 개는 서로 다른 층을 다루지만 같은 구조를 보여준다. [[shadcn-ui]]는 디자이너가 Figma에서 선택하지 않았더라도, Claude·[[Cursor]]·v0·Lovable 같은 생성형 UI 도구가 반복 학습하고 scaffold로 삼으면서 기본 UI foundation처럼 굳어졌다. [[OpenClaw]]는 반대로 personal agent runtime 쪽에서 self-hosted, multi-channel, tool-executing agent라는 작업 표면을 빠르게 대표하게 된 사례다.
 
 이 둘의 공통점은 "선택 이전에 먼저 도착한다"는 점이다. 많이 쓰이고, 많이 복제되고, 프로토콜이나 marketplace와 연결되며, 새 사용자가 별 고민 없이 그 위에서 시작하게 된다. 그래서 기본값 구현체를 이해한다는 것은 단순히 도구 하나를 안다는 뜻이 아니다. 어떤 제약과 편향이 이미 내 workflow 안으로 들어왔는지를 아는 일이다.
 

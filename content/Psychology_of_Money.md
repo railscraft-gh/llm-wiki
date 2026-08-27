@@ -34,4 +34,4 @@ updated: 2026-07-21
 - [[AI_Second_Brain]]
 
 ## 출처
-- [raw/[[돈의 심리학]].pdf_by_PaddleOCR-VL-1.6.md](file:///Users/railscraft/Obsidian/raw/%EB%8F%88%EC%9D%98%20%EC%8B%AC%EB%A6%AC%ED%95%99.pdf_by_PaddleOCR-VL-1.6.md)
+- [raw/[[돈의 심리학]].pdf_by_PaddleOCR-VL-1.6.md](file:///Users/railscraft/[[Obsidian]]/raw/%EB%8F%88%EC%9D%98%20%EC%8B%AC%EB%A6%AC%ED%95%99.pdf_by_PaddleOCR-VL-1.6.md)

@@ -38,7 +38,7 @@ AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·�
 - 좋은 사용법은 AI가 답을 대신 내는 것이 아니라, 연구 질문을 정리하고 근거를 압축하고 선택지를 넓게 만드는 것이다.
 - 2026년 기준 AI 전사/기록 도구는 음성-텍스트 변환 정확도 95~98%, 테마 추출 일치도 80~85% 수준을 달성하며, 인간 연구자는 기계적인 정리 작업을 AI에 위임하고 15~20%의 미세 오류 교정 및 최종 비즈니스 타당성 해석에 집중한다. (출처: raw/AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기.md)
 - NN/g의 UX Reckoning: 2025년 닐슨 노먼 그룹이 선언한 것처럼, UX 직군이 지엽적인 디자인 툴 사용에서 탈피해 실제 사용자 가치와 맥락 주입에 AI를 통합하는 체계적 전술 재점검이 필요하다.
-- CLI 파워 레이어의 커밋 비중: 2026년 3월 기준, 전 세계 공개 GitHub 커밋의 약 4%를 Claude Code가 작성하는 등 터미널 기반 에이전트 도구가 소프트웨어 구현 흐름을 실시간 지배하고 있다.
+- CLI 파워 레이어의 커밋 비중: 2026년 3월 기준, 전 세계 공개 GitHub 커밋의 약 4%를 [[Claude Code]]가 작성하는 등 터미널 기반 에이전트 도구가 소프트웨어 구현 흐름을 실시간 지배하고 있다.
 
 ## 상세
 
@@ -55,7 +55,7 @@ AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·�
 
 이 관점은 UX를 위한 AI를 "새로운 마법 도구"로 보지 않게 만든다. 오히려 기존 UX 역량—판단, 우선순위, 사용자 맥락 이해—을 더 빠르게 작동시키는 보조 계층으로 만든다.
 
-### 4. 3단계 리서치 데이터 통합(Synthesis) 워크플로우
+### 4. 3단계 리서치 데이터 통합(Synthesis) [[워크플로]]우
 대량의 인터뷰 전사본(Transcript)을 기계적으로 요약해 얕은 헛소리를 낳는 실패 모드를 우회하는 체계적 방법론이다.
 1. **1단계 - transcript 정규화**: 발화자 레이블을 `M: (moderator) / P: (participant)`로 통일하고, Filler word(um, uh, like 등)는 제거하되 본문 내용은 보존. 오독된 문맥은 `[대괄호]` 표시로 격리한다.
 2. **2단계 - 개별 테마 코딩**: 인터뷰별로 `tag(3~5단어)`, `quote(정확한 문맥)`, `timestamp`, 그리고 신뢰도를 구분하는 `confidence note (high/medium/low)`를 표로 추출. (특히 low confidence 태그를 통해 AI의 임의 해석 구역을 선제 필터링한다)
@@ -76,17 +76,17 @@ AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·�
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
 2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
-3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+3. **파워 레이어 (CLI & Agentic Tools - [[Claude Code]], [[Cursor]], Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
 2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
-3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+3. **파워 레이어 (CLI & Agentic Tools - [[Claude Code]], [[Cursor]], Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ### AI UX 도구 체인의 3대 기능적 레이어
 1. **대화형 레이어 (Chat Interface - ChatGPT, Claude, Gemini 등)**: 가장 유연하고 대화 지향적인 사고의 공간으로, 아이디어 브레인스토밍, 리서치 계획 초안 작성, 라이팅 톤앤매너 다듬기에 스위스 아미 나이프처럼 활용된다.
 2. **특화 레이어 (Specialized UX Tools - Figma Make, [[Claude Design]], Dovetail, Looppanel 등)**: 리서치 전사, 컴포넌트 생성, 휴리스틱 감사 등 정해진 UX 실무 규칙을 내장하여 최소한의 수공으로 빠르게 특정 작업을 처리한다.
-3. **파워 레이어 (CLI & Agentic Tools - Claude Code, Cursor, Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
+3. **파워 레이어 (CLI & Agentic Tools - [[Claude Code]], [[Cursor]], Copilot 등)**: 로컬 파일 및 코드베이스 직접 수정 권한을 지닌 에이전트로, 디자이너가 구현 부서로 직접 진입하여 접근성(WCAG 대비) 문제를 일괄 검색/수정하고 실제 구동 가능한 사용성 테스트용 HTML 프로토타입을 빌드할 수 있게 함으로써 기획-구현의 중간 장벽을 허문다.
 
 ## 예시
 
@@ -102,19 +102,19 @@ AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·�
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
 - **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
-- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 [[Claude Code]]를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ### 단계별 도입 프레임워크 (12주 로드맵)
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
 - **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
-- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 [[Claude Code]]를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ### 단계별 도입 프레임워크 (12주 로드맵)
 - **1주 차 (채팅 단련)**: Claude나 ChatGPT 중 하나를 골라 메일 초안, 플레이스홀더 카피 작성 등 일상 작업에 사용해 구체적 맥락(Context)을 지시하는 습관 형성.
 - **2~3주 차 (Preferences 고정)**: AI 설정(Projects, Custom Instructions 등)에 디자이너의 고유 역할과 톤앤매너 룰을 각인해 세션 마찰 제거.
 - **4~6주 차 (특화 도구 결합)**: 연구 전사에 Dovetail을 쓰거나 비주얼 피치에 [[Claude Design]]을 접목.
-- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 Claude Code를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
+- **2~3개월 차 (터미널 온보딩)**: 로컬 터미널에서 [[Claude Code]]를 기동해 `standup_server.py` 같은 자동화 스크립트를 빌드하거나 코드베이스의 UX 결함을 감사 실행.
 
 ## 충돌
 - AI는 UX 작업을 빠르게 만들 수 있지만, 사용자 해석과 제품 판단을 대체하지는 않는다.
@@ -130,7 +130,7 @@ AI를 UX에 쓰는 법은 [[LLM]]의 작동 원리, 지속 설정, 리서치·�
 - UX를 위해 먼저 읽었어야 할 AI 가이드 - 출판형 다듬기
 - AI를 UX에 쓰는 법 2: 프롬프트, 프리퍼런스, 설정 - 출판형 다듬기
 - AI를 UX에 쓰는 법 3: 리서치와 디스커버리 - 출판형 다듬기
-- [효과적인 리더십을 위한 [[전략적 사고]]를 키우는 법 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8%20%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A0%84%EB%9E%B5%EC%A0%81%20%EC%82%AC%EA%B3%A0%EB%A5%BC%20%ED%82%A4%EC%9A%B0%EB%8A%94%20%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95)
-- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [효과적인 리더십을 위한 [[전략적 사고]]를 키우는 법 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8%20%EB%A6%AC%EB%8D%94%EC%8B%AD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A0%84%EB%9E%B5%EC%A0%81%20%EC%82%AC%EA%B3%A0%EB%A5%BC%20%ED%82%A4%EC%9A%B0%EB%8A%94%20%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형](file:///Users/railscraft/[[Obsidian]]/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95)
+- [Graph[[RAG]] 대 Vectorless [[RAG]] 대 Vector [[RAG]] - 2026 고급 [[Context Engineering]] 가이드 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/[[GraphRAG]]%20%EB%8C%80%20Vectorless%20[[RAG]]%20%EB%8C%80%20Vector%20[[RAG]]%20-%202026%20%EA%B3%A0%EA%B8%89%20Context%20Engineering%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
 

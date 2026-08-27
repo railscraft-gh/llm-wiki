@@ -46,7 +46,7 @@ Agentic 패턴 진화는 2022년부터 2026년까지 AI 코딩 개발 패러다�
 
 **[[Context Engineering]] (2025)** — "어떤 정보를 넣어야 하나?" 2025년 6월 셋째 주, Shopify CEO Tobi Lütke의 X 포스트로 불이 붙었고 일주일 안에 Karpathy, Andrew Ng를 포함한 수백 명이 합류했다. 깨달음은 정보를 많이 넣는 게 아니라 컨텍스트가 "풍부한 상태 시스템 위의 compiled view"라는 것(Google ADK). Manus 팀은 에이전트 프레임워크를 네 번 갈아엎은 뒤 진짜 병목이 컨텍스트 관리, 그 중에서도 **KV-cache hit rate**라는 결론에 도달했다. Claude Sonnet 기준 캐시 히트 시 비용이 1/10로 줄어든다. 프롬프트 접두어 토큰 하나만 바뀌어도 캐시가 무효화된다. 그래서 프롬프트의 "품질"보다 "안정성"이 더 중요해졌다.
 
-**[[Harness Engineering]] (2026)** — "어떤 시스템을 만들어야 하나?" Martin Fowler/Birgitta Böckeler, Philipp Schmid, Ethan Mollick이 2026년 초부터 동시에 같은 용어를 사용했다. 하네스는 에이전트를 감싸는 도구, 권한, 검증 루프, 메모리, 컨텍스트 압축 전체 시스템이다. [[Harness Engineering]]에서 다루듯 좋은 CLAUDE.md 하나와 pre-commit 훅이 복잡한 미들웨어보다 큰 ROI를 낼 수 있다. 핵심 보안 프레임은 [[Lethal Trifecta]]와 Rule of Two다.
+**[[Harness Engineering]] (2026)** — "어떤 시스템을 만들어야 하나?" Martin Fowler/Birgitta Böckeler, Philipp Schmid, Ethan Mollick이 2026년 초부터 동시에 같은 용어를 사용했다. 하네스는 에이전트를 감싸는 도구, 권한, [[검증 루프]], 메모리, 컨텍스트 압축 전체 시스템이다. [[Harness Engineering]]에서 다루듯 좋은 [[CLAUDE.md]] 하나와 pre-commit 훅이 복잡한 미들웨어보다 큰 ROI를 낼 수 있다. 핵심 보안 프레임은 [[Lethal Trifecta]]와 [[Rule of Two]]다.
 
 세 시대를 한 줄로 정리하면 [Epsilla의 메타포](https://www.epsilla.com/blogs/harness-engineering-evolution-prompt-context-autonomous-agents)가 정확하다. "2022년에는 완벽한 이메일 작성법을 연구했다. 2025년에는 받은편지함 관리를 배웠다. 2026년에는 이메일 시스템 자체를 설계하고 있다."
 
@@ -55,7 +55,7 @@ Agentic 패턴 진화는 2022년부터 2026년까지 AI 코딩 개발 패러다�
 ## 예시
 
 - GitHub Copilot 자체가 세 시대 축소판이다. 2022.06 자동완성(프롬프트) → 2023.11 Chat(컨텍스트로 전환 시작) → 2025.02 Agent Mode(멀티파일 편집 + 린트-수정 루프, 하네스) → 2025.05 Coding Agent(Issue 할당부터 PR 생성까지 완전 자율).
-- Andrew Ng가 2024년 3월 발표한 "GPT-3.5에 에이전틱 워크플로우를 씌우면 GPT-4 제로샷보다 낫다"는 결과는 [[Harness Engineering]]이 모델 성능을 뛰어넘을 수 있다는 첫 증거였다.
+- Andrew Ng가 2024년 3월 발표한 "GPT-3.5에 [[에이전틱 [[워크플로]]우]]를 씌우면 GPT-4 제로샷보다 낫다"는 결과는 [[Harness Engineering]]이 모델 성능을 뛰어넘을 수 있다는 첫 증거였다.
 
 ## 충돌
 

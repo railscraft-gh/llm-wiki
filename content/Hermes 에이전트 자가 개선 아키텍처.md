@@ -19,7 +19,7 @@ updated: 2026-07-10
 
 ## 한 줄 정의
 
-Hermes 에이전트 자가 개선 아키텍처는 에이전트가 실무 구동 과정에서 스스로 성공한 워크플로우를 분석하여 재사용 가능한 독립 스킬(Skill) 코드를 자동 생성 및 미세 조정(patch)하며 진화해나가는 자율 학습 시스템 아키텍처이다.
+Hermes 에이전트 자가 개선 아키텍처는 에이전트가 실무 구동 과정에서 스스로 성공한 [[워크플로]]우를 분석하여 재사용 가능한 독립 스킬(Skill) 코드를 자동 생성 및 미세 조정(patch)하며 진화해나가는 자율 학습 시스템 아키텍처이다.
 
 ## 핵심 요지
 - 정기 넛지(Periodic nudge) 메커니즘을 통해 에이전트 스스로 세션 내 핵심 정보를 선별하여 상주 메모리에 영구 기록한다.
@@ -43,7 +43,7 @@ Hermes 에이전트 자가 개선 아키텍처는 에이전트가 실무 구동 
 - **4단계 (혼초/Honcho 레이어)**: 12개 아이덴티티 레이어를 분석해 사용자의 선호도와 톤앤매너, 지식 수준을 패시브 프로파일링하는 선택형 독립 모듈이다.
 
 ### 3. 에이전트 루프 및 턴 라이프사이클
-`run_agent.py` 오케스트레이션 엔진이 턴별 태스크 ID 발급, 프리플라이트 압축 검사(Pre-flight compression check), Sentinel 프로세스를 통한 에피소드 압축 및 계보(Lineage) 보존, 프롬프트 캐싱(Stable prefix 최상단 배치), API 장애 시 Failover(Fall through)를 조율한다.
+`run_agent.py` 오케스트레이션 엔진이 턴별 태스크 ID 발급, 프리플라이트 압축 검사(Pre-flight compression check), Sentinel 프로세스를 통한 에피소드 압축 및 계보(Lineage) 보존, [[프롬프트 캐싱]](Stable prefix 최상단 배치), API 장애 시 Failover(Fall through)를 조율한다.
 
 ### 4. 6대 물리 실행 환경 (Terminal Backends)
 에이전트 동작의 격리와 권한을 제어하는 하네스 장치다.
@@ -74,5 +74,5 @@ hermes model
 - [[AI 에이전트 아키텍처 완전 가이드]]
 
 ## 출처
-- [Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20-%20%EC%9E%90%EA%B0%80%20%EA%B0%9C%EC%84%A0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
+- [Hermes 에이전트의 내부 구조 - 자가 개선 에이전트의 작동 원리](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20-%20%EC%9E%90%EA%B0%80%20%EA%B0%9C%EC%84%A0%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC.md)
 

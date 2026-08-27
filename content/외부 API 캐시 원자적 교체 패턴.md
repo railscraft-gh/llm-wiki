@@ -53,7 +53,7 @@ updated: 2026-07-21
 - [[API Key 관리 원칙]]
 
 ## 출처
-- 데이터 모델 및 레퍼런스 아키텍처: [raw/korean-public-holiday-feature-guide.md#L33-L79](file:///Users/railscraft/Obsidian/raw/korean-public-holiday-feature-guide.md#L33-L79)
-- 원자적 동기화 및 Lease/Fencing 로직: [raw/korean-public-holiday-feature-guide.md#L151-L173](file:///Users/railscraft/Obsidian/raw/korean-public-holiday-feature-guide.md#L151-L173)
-- 미발행 미래 연도 처리 방안: [raw/korean-public-holiday-feature-guide.md#L177-L187](file:///Users/railscraft/Obsidian/raw/korean-public-holiday-feature-guide.md#L177-L187)
-- 프로덕션 실행 수치 지표: [raw/korean-public-holiday-feature-guide.md#L457-L469](file:///Users/railscraft/Obsidian/raw/korean-public-holiday-feature-guide.md#L457-L469)
+- 데이터 모델 및 레퍼런스 아키텍처: [raw/korean-public-holiday-feature-guide.md#L33-L79](file:///Users/railscraft/[[Obsidian]]/raw/korean-public-holiday-feature-guide.md#L33-L79)
+- 원자적 동기화 및 Lease/Fencing 로직: [raw/korean-public-holiday-feature-guide.md#L151-L173](file:///Users/railscraft/[[Obsidian]]/raw/korean-public-holiday-feature-guide.md#L151-L173)
+- 미발행 미래 연도 처리 방안: [raw/korean-public-holiday-feature-guide.md#L177-L187](file:///Users/railscraft/[[Obsidian]]/raw/korean-public-holiday-feature-guide.md#L177-L187)
+- 프로덕션 실행 수치 지표: [raw/korean-public-holiday-feature-guide.md#L457-L469](file:///Users/railscraft/[[Obsidian]]/raw/korean-public-holiday-feature-guide.md#L457-L469)

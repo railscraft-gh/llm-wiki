@@ -42,7 +42,7 @@ AI 에이전트가 목표를 달성할 때까지 인간의 수동 피드백 없�
    - **성공 시**: 검증이 완수되면 루프를 안전하게 멈추고 대화창의 통제권을 사용자에게 반환한다.
    - **실패 시**: 평가기는 발생한 에러 로그와 실패 원인을 수집하여 에이전트에게 전달하고, 에이전트는 사용자의 개입 없이 즉시 2차 수정 연산에 돌입한다.
 
-### 성공적인 목표 설정을 위한 5대 요소 (Codex/Claude Code 템플릿)
+### 성공적인 목표 설정을 위한 5대 요소 (Codex/[[Claude Code]] 템플릿)
 평가기가 올바르게 작동하려면 다음의 5가지 축이 갖춰져야 한다.
 
 ```
@@ -59,7 +59,7 @@ If blocked by <condition>, stop and report evidence.
 
 ## 예시
 
-- **Claude Code v2.1.139+ 목표 모드 연동**
+- **[[Claude Code]] v2.1.139+ 목표 모드 연동**
   개발자가 터미널 창에 다음과 같이 입력한다.
   ```bash
   /goal Make tests/auth/test_login.py pass on the current branch, verified by running pytest tests/auth/test_login.py with exit code 0. Preserve the existing public API. Only modify files under src/auth. If locally unavailable credentials block it, stop and report.

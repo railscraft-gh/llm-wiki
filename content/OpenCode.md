@@ -29,7 +29,7 @@ updated: 2026-07-10
 OpenCode는 터미널에서 provider, model, agent, skill, MCP 설정을 조합해 코딩 작업을 수행하는 오픈소스 AI coding agent다.
 
 ## 핵심 요지
-- OpenCode는 Claude Code류 터미널 agent workflow를 여러 [[LLM]] provider와 모델 선택 위에서 구현한다.
+- OpenCode는 [[Claude Code]]류 터미널 agent workflow를 여러 [[LLM]] provider와 모델 선택 위에서 구현한다.
 - Plan agent와 Build agent를 분리하면 [[Plan Mode 기반 AI 작업]]과 구현 권한을 도구 설정으로 나눌 수 있다.
 - `AGENTS.md`, skill, subagent, MCP는 반복 지시와 외부 도구 연결을 repo 안에 고정하는 장치다.
 - 모델, 무료 gateway, provider, keybinding, config schema는 빠르게 바뀌므로 실무 적용 전 공식 문서를 확인한다.
@@ -41,7 +41,7 @@ OpenCode는 터미널에서 provider, model, agent, skill, MCP 설정을 조합�
 
 OpenCode 공식 문서는 built-in primary agent로 Build와 Plan을 설명한다. Build는 개발 작업을 위한 기본 agent이고, Plan은 기본적으로 file edit와 bash 실행이 `ask`로 제한되어 분석과 계획에 적합하다. Subagent는 특정 작업을 위임받는 보조 agent이며 `@` mention이나 primary agent의 자동 호출로 사용할 수 있다.
 
-프로젝트 지시는 `AGENTS.md`에 둔다. OpenCode의 `/init`은 repo를 스캔해 build, lint, test command, 구조, convention, 운영상 주의점을 담은 `AGENTS.md`를 만들거나 갱신한다. Claude Code에서 넘어온 팀을 위해 프로젝트 `CLAUDE.md`도 fallback으로 읽을 수 있다.
+프로젝트 지시는 `AGENTS.md`에 둔다. OpenCode의 `/init`은 repo를 스캔해 build, lint, test command, 구조, convention, 운영상 주의점을 담은 `AGENTS.md`를 만들거나 갱신한다. [[Claude Code]]에서 넘어온 팀을 위해 프로젝트 `CLAUDE.md`도 fallback으로 읽을 수 있다.
 
 Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skills/<name>/SKILL.md`, `~/.config/opencode/skills/<name>/SKILL.md`뿐 아니라 `.agents/skills/<name>/SKILL.md`, `.claude/skills/<name>/SKILL.md`도 탐색 위치로 설명한다. 따라서 raw 영상의 `.agents/skills/` 방식은 호환 경로로 볼 수 있지만, 새 프로젝트에서는 `.opencode/` 구조와 함께 검토하는 편이 안전하다.
 이 구조는 [[에이전트 확장 3계층]]으로 요약할 수 있다. OpenCode는 Skill로 절차를, MCP로 외부 접근을, built-in tool로 로컬 실행을 조합하는 쪽에 가깝다.
@@ -85,8 +85,8 @@ Skill은 반복 가능한 지시 묶음이다. 공식 문서는 `.opencode/skill
 - https://opencode.ai/docs/skills/
 - https://opencode.ai/docs/models/
 - https://opencode.ai/docs/config/
-- [pi-coding-agent-overview](file:///Users/railscraft/Obsidian/raw/pi-coding-agent-overview.md)
-- [Quartz-GitHub-Pages-Complete-Guide](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md)
-- [Infisical_SSH_헤드리스_인증_가이드](file:///Users/railscraft/Obsidian/raw/Infisical_SSH_%ED%97%A4%EB%93%9C%EB%A6%AC%EC%8A%A4_%EC%9D%B8%EC%A6%9D_%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [Quartz-Deploy-Guide](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-Deploy-Guide.md)
+- [pi-coding-agent-overview](file:///Users/railscraft/[[Obsidian]]/raw/pi-coding-agent-overview.md)
+- [Quartz-GitHub-Pages-Complete-Guide](file:///Users/railscraft/[[Obsidian]]/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md)
+- [Infisical_SSH_헤드리스_인증_가이드](file:///Users/railscraft/[[Obsidian]]/raw/[[Infisical]]_SSH_%ED%97%A4%EB%93%9C%EB%A6%AC%EC%8A%A4_%EC%9D%B8%EC%A6%9D_%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [Quartz-Deploy-Guide](file:///Users/railscraft/[[Obsidian]]/raw/[[Quartz]]-Deploy-Guide.md)
 

@@ -52,7 +52,7 @@ updated: 2026-07-21
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-- 환각 원인 및 Unknown 파인튜닝 위험성: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L13-L44](file:///Users/railscraft/Obsidian/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L13-L44)
-- SAFE 평가 및 FActScore / FacTool 수치: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L63-L103](file:///Users/railscraft/Obsidian/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L63-L103)
-- TruthfulQA, SelfAware, Calibration: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L114-L175](file:///Users/railscraft/Obsidian/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L114-L175)
-- CoVe 및 Self-[[RAG]] / FLAME: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L234-L325](file:///Users/railscraft/Obsidian/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L234-L325)
+- 환각 원인 및 Unknown 파인튜닝 위험성: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L13-L44](file:///Users/railscraft/[[Obsidian]]/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L13-L44)
+- SAFE 평가 및 FActScore / FacTool 수치: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L63-L103](file:///Users/railscraft/[[Obsidian]]/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L63-L103)
+- TruthfulQA, SelfAware, Calibration: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L114-L175](file:///Users/railscraft/[[Obsidian]]/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L114-L175)
+- CoVe 및 Self-[[RAG]] / FLAME: [raw/Extrinsic Hallucinations in [[LLM]]s.md#L234-L325](file:///Users/railscraft/[[Obsidian]]/raw/Extrinsic%20Hallucinations%20in%20[[LLM]]s.md#L234-L325)

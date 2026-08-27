@@ -35,4 +35,4 @@ updated: 2026-07-21
 - [[Loop_Design]]
 
 ## 출처
-- [raw/13 Tiny Bash Scripts That Save Me Time Every Day.md](file:///Users/railscraft/Obsidian/raw/13%20Tiny%20Bash%20Scripts%20That%20Save%20Me%20Time%20Every%20Day.md)
+- [raw/13 Tiny Bash Scripts That Save Me Time Every Day.md](file:///Users/railscraft/[[Obsidian]]/raw/13%20Tiny%20Bash%20Scripts%20That%20Save%20Me%20Time%20Every%20Day.md)

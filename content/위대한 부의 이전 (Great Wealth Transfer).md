@@ -47,5 +47,5 @@ updated: 2026-07-10
 - [[ETF 3종 투자 원칙]]
 
 ## 출처
-- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
+- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
 

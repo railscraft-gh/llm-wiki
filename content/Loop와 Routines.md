@@ -25,7 +25,7 @@ updated: 2026-07-10
 # Loop와 Routines
 
 ## 한 줄 정의
-Loop와 Routines는 Cloud Code 창시자 보리스 체르니가 정의한, cron 기반 반복 에이전트 작업(Loop)과 노트북을 닫아도 서버에서 지속되는 예약 작업(Routines)을 가리키는 자동화 워크플로우다.
+Loop와 Routines는 Cloud Code 창시자 보리스 체르니가 정의한, cron 기반 반복 에이전트 작업(Loop)과 노트북을 닫아도 서버에서 지속되는 예약 작업(Routines)을 가리키는 자동화 [[워크플로]]우다.
 
 ## 핵심 요지
 - Loop는 cron 표현으로 미래 시점에 에이전트 작업을 반복 예약하는 가장 단순하면서도 보리스가 "미래"라고 강조한 기능이다.
@@ -74,8 +74,8 @@ Routines는 같은 발상의 서버 측 버전이다. 클라이언트 의존성�
 
 ## 출처
 - anthropic-boris-cherny-interview
-- [ai-era-six-pitfalls-six-prescriptions-matt-pocock](file:///Users/railscraft/Obsidian/raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md)
-- [강화학습-RL-초보자-가이드](file:///Users/railscraft/Obsidian/raw/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-RL-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [evolution-of-ai-agentic-patterns](file:///Users/railscraft/Obsidian/raw/evolution-of-ai-agentic-patterns.md)
-- [sequoia-ascent-2026-karpathy-ko](file:///Users/railscraft/Obsidian/raw/sequoia-ascent-2026-karpathy-ko.md)
+- [ai-era-six-pitfalls-six-prescriptions-matt-pocock](file:///Users/railscraft/[[Obsidian]]/raw/ai-era-six-pitfalls-six-prescriptions-matt-pocock.md)
+- [강화학습-RL-초보자-가이드](file:///Users/railscraft/[[Obsidian]]/raw/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-RL-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [evolution-of-ai-agentic-patterns](file:///Users/railscraft/[[Obsidian]]/raw/evolution-of-ai-agentic-patterns.md)
+- [sequoia-ascent-2026-karpathy-ko](file:///Users/railscraft/[[Obsidian]]/raw/sequoia-ascent-2026-karpathy-ko.md)
 

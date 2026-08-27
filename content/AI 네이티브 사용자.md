@@ -41,7 +41,7 @@ updated: '2026-06-22'
 
 ## 한 줄 정의
 
-AI 네이티브 사용자는 [[LLM]]을 단순 챗봇이나 자동완성으로 쓰지 않고, 디지털 작업을 위한 프로그래머블 레이어로 이해하며 context, macro action, MCP, 검증 루프를 조합해 도구의 레버리지를 극대화하는 사용자다.
+AI 네이티브 사용자는 [[LLM]]을 단순 챗봇이나 자동완성으로 쓰지 않고, 디지털 작업을 위한 프로그래머블 레이어로 이해하며 context, macro action, MCP, [[검증 루프]]를 조합해 도구의 레버리지를 극대화하는 사용자다.
 
 ## 핵심 요지
 
@@ -52,7 +52,7 @@ AI 네이티브 사용자는 [[LLM]]을 단순 챗봇이나 자동완성으로 �
 
 ## 상세
 
-### 1. 매크로 액션 기반의 워크플로우
+### 1. 매크로 액션 기반의 [[워크플로]]우
 - AI 네이티브 사용자는 키보드로 코드를 한 줄씩 쳐 나가는 행위를 최소화한다. 에이전트에게 다음과 같은 거시적 연산 단위를 위임하며, 자신은 오케스트레이터 역할을 수행한다.
   - "이 서브시스템 전체를 리팩터링해줘."
   - "이 외부 라이브러리를 비교 분석하고 아키텍처 계획을 제안해줘."
@@ -103,7 +103,7 @@ AI 네이티브 사용자는 [[LLM]]을 단순 챗봇이나 자동완성으로 �
 
 ## 출처
 
-- Andrej Karpathy - *[[Sequoia Ascent 2026]]: [[Software 3.0]], Agentic Engineering, and [[Jagged Intelligence]]* (2026년 4월)
+- [[Andrej Karpathy]] - *[[Sequoia Ascent 2026]]: [[Software 3.0]], Agentic Engineering, and [[Jagged Intelligence]]* (2026년 4월)
 - anthropic-boris-cherny-interview
-- Claude Code를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
+- [[Claude Code]]를 6개월 동안 잘못 썼다. 모든 걸 바꾼 14가지 명령어
 - 2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변

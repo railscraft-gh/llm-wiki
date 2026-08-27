@@ -84,33 +84,33 @@ tags:
 type: workflow
 updated: 2026-07-30
 ---
-# UI UX 디자인 AI 워크플로우
+# UI UX 디자인 AI [[워크플로]]우
 
 ## 한 줄 정의
-UI UX 디자인 AI 워크플로우는 기획안 리서치, 가설 검증, 유저 흐름 설계, UI 디자인, 프로토타이핑, 코드 개발 및 최종 사용자 테스트까지의 전 과정을 AI 도구 체인으로 연결해 생산성을 극대화하는 동시에, 최종 판단을 인간의 몫으로 남겨 일관성을 유지하는 제품 개발 프로세스다.
+UI UX 디자인 AI [[워크플로]]우는 기획안 리서치, 가설 검증, 유저 흐름 설계, UI 디자인, 프로토타이핑, 코드 개발 및 최종 사용자 테스트까지의 전 과정을 AI 도구 체인으로 연결해 생산성을 극대화하는 동시에, 최종 판단을 인간의 몫으로 남겨 일관성을 유지하는 제품 개발 프로세스다.
 
 ## 핵심 요지
-- **단순 조립의 외주화와 안목의 차별화**: 피그마 속 정형화된 디자인 컴포넌트들을 조립하는 단순 반복 작업은 AI가 완전히 대신하므로, 디자이너는 AI 도구 체인을 다루며 수십 개의 시안 중 최선의 요소를 판단·선별하는 '안목'과 '취향'으로 승부해야 한다. (현재 AI UI 생성 결과물은 현업 디자이너 평균 80% 이상의 품질을 낸다. [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L48](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%8D%BC%EC%85%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L48))
-- **판단과 실행의 분리**: AI는 다양한 옵션을 신속하게 생성(Execution)하고, 인간은 그중에서 브랜드 톤앤매너와 가치에 부합하는 결정을 최종 선택(Judgment)하는 이원화 구조가 워크플로우의 핵심이다.
-- **특화된 도구 체인의 정렬**: 하나의 만능 도구(Photoshop으로 비디오 편집하기 같은 시도)나 기존 워크플로우의 전체 전환을 요구하는 도구(Framer 에이전트, 전용 AI 디자인 툴 등)는 피하고, 각 태스크의 마찰 지점을 명확히 해결하는 특화 도구를 조화롭게 정렬한다.
-- **5시간 단축 워크플로우 입증**: 기존에 8~10시간 소요되던 에디토리얼/아티클 제작 파이프라인을 특화 AI와 인간의 판단 분할을 통해 **약 5시간**으로 단축할 수 있다. [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md#L157](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L157)
-- **성능 측정과 사후 관리의 부재 예방**: Pageformance 카탈로그 분석에 따르면 웹사이트의 **80~97%**가 배포 이후 어떠한 최적화나 사용자 조사 분석도 진행하지 않고 방치된다. [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L207](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%8D%BC%EC%85%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L207) AI 워크플로우 내에 Microsoft Clarity 같은 사용자 데이터 추적 단계를 필수 포함해야 한다.
+- **단순 조립의 외주화와 안목의 차별화**: 피그마 속 정형화된 디자인 컴포넌트들을 조립하는 단순 반복 작업은 AI가 완전히 대신하므로, 디자이너는 AI 도구 체인을 다루며 수십 개의 시안 중 최선의 요소를 판단·선별하는 '안목'과 '취향'으로 승부해야 한다. (현재 AI UI 생성 결과물은 현업 디자이너 평균 80% 이상의 품질을 낸다. [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L48](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%8D%BC%EC%85%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L48))
+- **판단과 실행의 분리**: AI는 다양한 옵션을 신속하게 생성(Execution)하고, 인간은 그중에서 브랜드 톤앤매너와 가치에 부합하는 결정을 최종 선택(Judgment)하는 이원화 구조가 [[워크플로]]우의 핵심이다.
+- **특화된 도구 체인의 정렬**: 하나의 만능 도구(Photoshop으로 비디오 편집하기 같은 시도)나 기존 [[워크플로]]우의 전체 전환을 요구하는 도구(Framer 에이전트, 전용 AI 디자인 툴 등)는 피하고, 각 태스크의 마찰 지점을 명확히 해결하는 특화 도구를 조화롭게 정렬한다.
+- **5시간 단축 [[워크플로]]우 입증**: 기존에 8~10시간 소요되던 에디토리얼/아티클 제작 파이프라인을 특화 AI와 인간의 판단 분할을 통해 **약 5시간**으로 단축할 수 있다. [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 [[워크플로]]우.md#L157](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L157)
+- **성능 측정과 사후 관리의 부재 예방**: Pageformance 카탈로그 분석에 따르면 웹사이트의 **80~97%**가 배포 이후 어떠한 최적화나 사용자 조사 분석도 진행하지 않고 방치된다. [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L207](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%8D%BC%EC%85%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L207) AI [[워크플로]]우 내에 Microsoft Clarity 같은 사용자 데이터 추적 단계를 필수 포함해야 한다.
 - **실무 기업의 가이드라인**: Meta, Faire B2B 플랫폼 등은 AI를 단순 화면 구성, 녹취 요약, 1차 티켓 분석 등 '실행 및 리서치 요약'에만 도입하고, 전략 수립 및 핵심 사용자 의도 파악은 수작업 및 철저한 인간의 판단에 맡겨 균형을 잡는다.
-- **포트폴리오의 의사결정 궤적(Decision Trail)화**: 화면 중심 포트폴리오에서 벗어나, 디자인 제약조건, 타협점, 그리고 반려한 시안을 왜 폐기(what you killed)했는지 기록하는 의사결정 이력(decision log) 중심의 워크플로우 관리가 요구된다.
-- Recraft AI 스타일 고정: 이미지 생성 시 스타일 편차가 크고 프롬프트가 복잡한 Midjourney 대신, 내 캐릭터 얼굴 사진(레퍼런스)과 손그림 에디토리얼 일러스트 스타일 및 원샷 프롬프트 세팅을 고정시킬 수 있는 Recraft AI를 결합해 시각 그래픽 시간을 2시간에서 10분으로 단축한다.
+- **포트폴리오의 의사결정 궤적(Decision Trail)화**: 화면 중심 포트폴리오에서 벗어나, 디자인 제약조건, 타협점, 그리고 반려한 시안을 왜 폐기(what you killed)했는지 기록하는 의사결정 이력(decision log) 중심의 [[워크플로]]우 관리가 요구된다.
+- [[Recraft AI]] 스타일 고정: 이미지 생성 시 스타일 편차가 크고 프롬프트가 복잡한 Midjourney 대신, 내 캐릭터 얼굴 사진(레퍼런스)과 손그림 에디토리얼 일러스트 스타일 및 원샷 프롬프트 세팅을 고정시킬 수 있는 [[Recraft AI]]를 결합해 시각 그래픽 시간을 2시간에서 10분으로 단축한다.
 - 의사결정의 이분화: AI는 옵션의 무한 생성을 담당하고 인간은 '선택과 전략(Taste & Judgment)'을 담당하여, 도구가 인지 부하(cognitive load)를 높이는 주체가 되지 않도록 통제한다.
 - Flowstep의 오토 레이아웃 보존력: [[Google Stitch]] 등의 기존 도구 체인이 Figma로 화면을 복제할 때 Auto Layout이 붕괴하는 것과 달리, Flowstep은 정갈한 레이아웃 보존과 우수한 프런트엔드 코드를 보장한다.
-- Clarity 행동 데이터 교차 검증: 배포 후 사용성 분석이 방치되는 현상을 극복하기 위해, Microsoft Clarity의 추적 코드를 `index.html` 내 `<head>` 영역에 수동 삽입하여 실시간 세션 녹화 및 히트맵을 10% 비율로 수동 검수하는 장치를 포함한다. [raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md#L73](file:///Users/railscraft/Obsidian/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md#L73)
-- 디자이너와 개발자 사이의 핸드오프 단계에서 프로젝트 50%가 좌초되는 현상을 극복하기 위해 번역 레이어를 원천 제거한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L7-L9](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L7-L9)
-- 개발자의 75%가 2026년 말까지 코드를 직접 작성하는 대신 오케스트레이션하게 됨에 따라, 디자이너도 프로토타입 코드를 직접 오케스트레이션해야 한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L42](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L42)
-- Vetidesk 프로젝트의 AI 도입 성과: 가입(signup) 전환율 2.9배(2.9x) 상승 달성. [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L118](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L118)
-- Fable 대 Opus 4.8 벤치마크 결과: Fable 적용 시 화면당 논리 오류(logical errors per screen) 30% 감소. [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L375](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L375)
+- Clarity 행동 데이터 교차 검증: 배포 후 사용성 분석이 방치되는 현상을 극복하기 위해, Microsoft Clarity의 추적 코드를 `index.html` 내 `<head>` 영역에 수동 삽입하여 실시간 세션 녹화 및 히트맵을 10% 비율로 수동 검수하는 장치를 포함한다. [raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md#L73](file:///Users/railscraft/[[Obsidian]]/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md#L73)
+- 디자이너와 개발자 사이의 핸드오프 단계에서 프로젝트 50%가 좌초되는 현상을 극복하기 위해 번역 레이어를 원천 제거한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L7-L9](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L7-L9)
+- 개발자의 75%가 2026년 말까지 코드를 직접 작성하는 대신 오케스트레이션하게 됨에 따라, 디자이너도 프로토타입 코드를 직접 오케스트레이션해야 한다. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L42](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L42)
+- Vetidesk 프로젝트의 AI 도입 성과: 가입(signup) 전환율 2.9배(2.9x) 상승 달성. [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L118](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L118)
+- Fable 대 Opus 4.8 벤치마크 결과: Fable 적용 시 화면당 논리 오류(logical errors per screen) 30% 감소. [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L375](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L375)
 
 ## 상세
 
-### 1. 실무형 5단계 AI 디자인 워크플로우
+### 1. 실무형 5단계 AI 디자인 [[워크플로]]우
 
-1. **Phase 1: 리서치 및 트렌드 스캔 (Perplexity Pro + Claude + 사내 AI 챗봇)**
+1. **Phase 1: 리서치 및 트렌드 스캔 ([[Perplexity Pro]] + Claude + 사내 AI 챗봇)**
    - **불편함(Friction)**: 업계 트렌드 탐색 및 논점 검증에 소요되는 수시간의 리서치 공수.
    - **AI의 역할**: 닐슨 노먼 그룹(NN/g), 레딧, 디자인 트위터 등 방대한 소스를 종합 분석(Synthesis)하여 다른 제품군이 놓치고 있는 공백(Gap)과 흥미로운 관점을 도출.
      *   *실무 사례 (Faire B2B 플랫폼)*: 사용자 티켓 내역과 문의를 빠르게 긁어와 애로사항을 파악하는 사내 AI 챗봇 'Fairey'를 구축하여 1차 리서치 데이터를 빠르게 필터링하고 필터링 시간을 획기적으로 줄임.
@@ -119,7 +119,7 @@ UI UX 디자인 AI 워크플로우는 기획안 리서치, 가설 검증, 유저
    - **불편함**: 빈 화면에서 구조적 뼈대를 구성해야 하는 인지적 부하.
    - **AI의 역할**: 검증된 글쓰기 가이드라인(Writing OS)을 컨텍스트로 주입하여 오프닝 훅, 문제 정의, 상세 구조 아웃라인의 정교한 초안 생성. 보안이 강화된 ChatGPT를 활용해 인터뷰 녹취 원시 데이터를 입력하고 체계적으로 정제하여 요약본 생성.
    - **인간의 역할**: 독자에게 신뢰감을 주는 고유한 개인적 경험담과 통찰을 직접 집필하여 생동감 보완.
-3. **Phase 3: 시각 콘텐츠 및 그래픽 제작 (Recraft AI)**
+3. **Phase 3: 시각 콘텐츠 및 그래픽 제작 ([[Recraft AI]])**
    - **불편함**: 포스터 및 그래픽 제작 시 메타포 구상과 레이아웃 반복 수정으로 인한 시간 허비 (기존 평균 2시간 소요).
    - **AI의 역할**: 캐릭터 레퍼런스 이미지(나 또는 특정 브랜드 자산)와 일러스트레이션 시스템(손으로 그린 에디토리얼풍)을 고정한 뒤 원샷 프롬프트로 일관성 있는 비주얼 신속 생성. (그래픽 작업을 단 3분~10분 내로 단축)
    - **인간의 역할**: 개념을 관통하는 비주얼 메타포의 개념적 기획.
@@ -127,33 +127,33 @@ UI UX 디자인 AI 워크플로우는 기획안 리서치, 가설 검증, 유저
    - **불편함**: 원본 아티클의 핵심을 소셜 타임라인에 맞추어 효과적으로 축약하는 작업의 번거로움.
    - **AI의 역할**: 본문 콘텐츠를 컨텍스트로 읽고 각기 다른 관점을 취하는 다채로운 소셜(예: LinkedIn) 포스트 톤앤매너 재구성.
    - **인간의 역할**: 어떤 인사이트가 타겟층에게 가장 잘 소구할지 판단하고 최종 발행 결정.
-5. **Phase 5: 시스템 유지 관리 및 정리 (Claude Code + Figma MCP + 자체 플러그인)**
-   - **불편함**: 파일 누적, 명명 규칙 불일치, 중복 컴포넌트 등으로 인해 발생하는 디자인 시스템의 엔트로피(Entropy).
+5. **Phase 5: 시스템 유지 관리 및 정리 ([[Claude Code]] + [[Figma MCP]] + 자체 플러그인)**
+   - **불편함**: 파일 누적, 명명 규칙 불일치, 중복 컴포넌트 등으로 인해 발생하는 [[디자인 시스템]]의 엔트로피(Entropy).
    - **AI의 역할**: 규칙 기반(Rule-based) 정리 자동화, 컴포넌트 설명 추가, 명명 규칙 일괄 변경(Batch-Rename), 마스터 인덱스 구축 등.
-     *   *실무 사례 (Tesco)*: Cursor(바이브 코딩)와 Figma MCP 서버를 활용해 자체 Figma 플러그인을 개발하여, 운영 웹사이트에서 이미지, 제품 설명, 평점 등 실데이터를 실시간 UI 컴포넌트에 한 번에 채워 넣는 작업 자동화.
+     *   *실무 사례 (Tesco)*: [[Cursor]]([[바이브 코딩]])와 [[Figma MCP]] 서버를 활용해 자체 Figma 플러그인을 개발하여, 운영 웹사이트에서 이미지, 제품 설명, 평점 등 실데이터를 실시간 UI 컴포넌트에 한 번에 채워 넣는 작업 자동화.
      *   *실무 사례 (Meta)*: 빠른 화면 구성이나 핸드오프용 코드 컴포넌트 생성을 자동화하되, 디자이너용 AI 활용 지침/플레이북(Meta Llama 기반)을 작성하여 사내 표준을 조기에 확립함.
    - **인간의 역할**: 시스템 전반에 적용할 관리 규칙 정의 및 코드 머지 결정.
 
 ### 2. 의사결정의 핵심 기준 (Decision Tree)
 
 - **많은 양과 폭넓은 범위가 필요할 때** $\rightarrow$ Perplexity (리서치), Claude (구조 초안)
-- **일관된 실행이 필요할 때** $\rightarrow$ Recraft (비주얼 스타일 고정), Claude Code (시스템 정리 작업)
+- **일관된 실행이 필요할 때** $\rightarrow$ Recraft (비주얼 스타일 고정), [[Claude Code]] (시스템 정리 작업)
 - **판단(Judgment)과 최종 선택이 필요할 때** $\rightarrow$ 오직 인간 디자이너 본인
 
 ### 3. 피해야 할 실패 도구 패턴 (Failure Modes)
 
-- **결과물을 너무 많이 생성하는 도구**: v0, Uizard 등 UI를 수십 개씩 쏟아내며 판단력보다 인지 부하만 가중하는 도구. '보기 좋은 것'과 '우리 디자인 시스템에서 실제로 적용 가능한 것' 사이의 격차(Implementation Gap)를 해결하지 못함.
-- **에디토리얼 포스터용 Midjourney**: 프롬프트 엔지니어링 리소스가 지나치게 많이 소모되고 스타일 일관성 제어가 어려움. 스타일을 고정시킬 수 있는 Recraft AI가 프로덕션에 더 적합함.
+- **결과물을 너무 많이 생성하는 도구**: v0, Uizard 등 UI를 수십 개씩 쏟아내며 판단력보다 인지 부하만 가중하는 도구. '보기 좋은 것'과 '우리 [[디자인 시스템]]에서 실제로 적용 가능한 것' 사이의 격차(Implementation Gap)를 해결하지 못함.
+- **에디토리얼 포스터용 Midjourney**: 프롬프트 엔지니어링 리소스가 지나치게 많이 소모되고 스타일 일관성 제어가 어려움. 스타일을 고정시킬 수 있는 [[Recraft AI]]가 프로덕션에 더 적합함.
 - **새로운 시스템으로의 전환을 강제하는 도구**: 기존 리포지토리 및 제작 파이프라인을 엎게 만들고 다음 분기에 생존을 장담할 수 없는 전용 플랫폼.
 - **모호한 초능력을 내세우는 도구**: 'AI 기반 디자인 씽킹' 등 해결하고자 하는 구체적 문제가 무엇인지 한 문장으로 설명하지 못하는 도구.
 - **코파일럿(부조종사)을 표방하며 주의를 분산시키는 도구**: 특정 작업의 가려운 곳을 명쾌하게 해결하기보다 항상 곁에서 불완전하게 개입하는 도구.
 
-### 인지 부하 제어와 'Flow-to-Low-Fidelity' 워크플로우
-AI를 실제 전문적인 디자인 프로세스에 도입할 때 고려해야 하는 인지적 장애 요인과 극복하는 실무 워크플로우는 다음과 같다.
+### 인지 부하 제어와 'Flow-to-Low-Fidelity' [[워크플로]]우
+AI를 실제 전문적인 디자인 프로세스에 도입할 때 고려해야 하는 인지적 장애 요인과 극복하는 실무 [[워크플로]]우는 다음과 같다.
 - **게으름의 덫(Lazy Trap)과 UX AI 부채(UX AI Debt)**: 인간은 디자인 첫 단계에서 AI가 제안한 전체 구조나 다이어그램이 충분히 완벽해 보이면(Cognitive Load 감소), 그 내부의 미세한 논리 오류나 예외 케이스 누락을 발견하지 못하고 그대로 넘어가기 쉽다. 초기 단계에서 걸러지지 못한 할루시네이션과 결함은 후반부 하이파이(High-Fidelity) 설계나 개발 단계에서 거대한 재작업과 UX 결손(UX AI Debt)으로 부메랑이 되어 돌아온다. AI의 V1 플로우 제안을 맹신해서는 안 된다.
 - **맥락(Context) 기반의 미학 극복**: 디자인은 단순 미학이 아닌 **맥락**에서 시작되어야 하므로, 모델에 클라이언트의 PRD, 의견이 달린 PRD, 스타일가이드, 타깃 사용자 목표(Goal) 문서 등을 풍부히 공급한 상태에서 시작해야 한다. 그렇지 않으면 Framer 템플릿이나 뻔한 UI 조립('[[AI Slop]]')을 양산하여 제품의 실질 매출 및 사용자 신뢰를 오히려 해친다.
-- **실무형 'Flow-to-Low-Fidelity' 워크플로우**: AI 협업을 통해 평균 **20~30%**의 디자인 시간을 아끼는 최적의 도구 체인은 다음과 같다: [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L433](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L433)
-  1. *맥락 주입 & 플로우 다이어그램*: PRD와 컨텍스트를 주입해 다이어그램(JSON) 초안을 생성한다. AI는 예외 상황(Edge-cases) 식별에 강하나 불필요한 단계를 나누거나 논리 오류가 있으므로 인간이 일일이 수동 검수하여 다이어그램을 재구성한다 (2~3일 걸리던 작업을 하루 만에 처리). [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L381](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L381)
+- **실무형 'Flow-to-Low-Fidelity' [[워크플로]]우**: AI 협업을 통해 평균 **20~30%**의 디자인 시간을 아끼는 최적의 도구 체인은 다음과 같다: [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L433](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L433)
+  1. *맥락 주입 & 플로우 다이어그램*: PRD와 컨텍스트를 주입해 다이어그램(JSON) 초안을 생성한다. AI는 예외 상황(Edge-cases) 식별에 강하나 불필요한 단계를 나누거나 논리 오류가 있으므로 인간이 일일이 수동 검수하여 다이어그램을 재구성한다 (2~3일 걸리던 작업을 하루 만에 처리). [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L381](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L381)
   2. *Lo-Fi 클릭형 프로토타입*: 검증된 JSON 다이어그램과 내부 룰북을 전송해 색상/그래픽이 없고 폼 유효성 검증(Validation) 작동이 명시된 HTML clickable 프로토타입을 빌드한다.
   3. *MCP 연동 하이파이 수작업*: HTML 프로토타입을 Sketch나 Figma로 MCP 연동해 내보낸 후, 디자이너가 직접 자산을 교체하고 세련된 패럴랙스 효과 등 오리지널 브랜드 디테일을 수동 폴리싱한다. 이 골디락스 조율 과정이 게으름의 덫을 우회하는 유일한 경로다.
 
@@ -161,7 +161,7 @@ AI를 실제 전문적인 디자인 프로세스에 도입할 때 고려해야 �
 
 AI가 단순 실행을 자동화하는 세상에서 인간은 협업의 지휘자(Orchestrator)가 되어야 한다.
 - **반려 근거의 지식화**: AI를 활용해 다채로운 시안 20가지를 생성한 후, 반려한 시안들의 구체적이고 미학적인 설계적 근거를 기록으로 작성하여 디자인 원칙(Design Principles)으로 정립한다.
-- **데이터 교차 검증 (10% 룰)**: 대량의 사용자 피드백 군집화 작업을 AI에 맡기더라도, 원시 데이터의 10%가량은 인간이 직접 대조하고 읽어 AI가 포착하지 못하는 뉘앙스와 맥락을 수동 보정한다. [raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md#L73](file:///Users/railscraft/Obsidian/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md#L73)
+- **데이터 교차 검증 (10% 룰)**: 대량의 사용자 피드백 군집화 작업을 AI에 맡기더라도, 원시 데이터의 10%가량은 인간이 직접 대조하고 읽어 AI가 포착하지 못하는 뉘앙스와 맥락을 수동 보정한다. [raw/The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer.md#L73](file:///Users/railscraft/[[Obsidian]]/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md#L73)
 - **톤앤매너 가드레일**: 마이크로카피 작성에 AI를 쓸 때 지켜야 할 일관된 톤앤매너 규칙(Tone Rules)을 정의하여 AI 시안을 통제한다.
 - **민감 영역의 격리**: 할루시네이션 및 법적/윤리적 리스크가 있는 데이터 취급 시 AI를 절대 쓰지 않는 '비활용 판단 경계'를 설계한다.
 
@@ -171,14 +171,14 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 - **의사결정 이력 (Decision log)**: 프로젝트를 좌우한 핵심 의사결정 3~5가지를 추려 기록한다.
 - **폐기한 시안 (What you killed)**: 어떤 시안을 릴리스했는가보다, 부적합한 시안을 왜 과감하게 기각했는지 제약 조건과 타협점을 설명한다.
 - **실패 분석 (Failed bet)**: 예상한 지표 개선을 달성하지 못한 실패와 이로 인해 배운 교훈을 상세 기술한다.
-- **AI 협업 루프 벤치마크**: 아티클 제작 5시간 단축과 같이 AI 활용 전후의 정량적 생산성 변화를 벤치마킹하여 협업 계획을 보완한다. [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md#L157](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L157)
+- **AI 협업 루프 벤치마크**: 아티클 제작 5시간 단축과 같이 AI 활용 전후의 정량적 생산성 변화를 벤치마킹하여 협업 계획을 보완한다. [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 [[워크플로]]우.md#L157](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L157)
 
-### 3. 실무 아티클 제작 5시간 단축 벤치마크 워크플로우
+### 3. 실무 아티클 제작 5시간 단축 벤치마크 [[워크플로]]우
 실무 시니어 디자이너가 매주 2~3편의 아티클 및 그래픽 에셋을 퍼블리싱할 때, 평균 8~10시간 소요되던 마찰들을 AI 협업 체인으로 해결해 5시간 내로 단축한 정량적 런타임 수치다.
-1. **리서치 (30분 - Perplexity Pro + Claude)**: [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md#L12](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%95%84%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L12) 닐슨 노먼 그룹, 레딧, 디자인 트위터 등 방대한 채널을 검색해, 기성 콘텐츠가 다루지 않는 공백(예: 디자인 시스템 문서화의 단순 기술보다 실제 실무 팀간의 정치적 역학 관계라는 gap)을 종합 분석해 관점 도출.
-2. **글 구조화 (20분 - Claude)**: [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우.md#L88](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L88) 나만의 고유 글쓰기 가이드라인(Writing OS)을 컨텍스트로 제공해 성공적 레이아웃 아웃라인 생성.
+1. **리서치 (30분 - [[Perplexity Pro]] + Claude)**: [raw/UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX [[워크플로]]우를 10배 개선한 방법-ko.md#L12](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%95%84%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L12) 닐슨 노먼 그룹, 레딧, 디자인 트위터 등 방대한 채널을 검색해, 기성 콘텐츠가 다루지 않는 공백(예: [[디자인 시스템]] 문서화의 단순 기술보다 실제 실무 팀간의 정치적 역학 관계라는 gap)을 종합 분석해 관점 도출.
+2. **글 구조화 (20분 - Claude)**: [raw/2026년에 실제로 효과가 있는 나의 AI 디자인 [[워크플로]]우.md#L88](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md#L88) 나만의 고유 글쓰기 가이드라인(Writing OS)을 컨텍스트로 제공해 성공적 레이아웃 아웃라인 생성.
 3. **본문 집필 (3시간 - 직접 수동 집필)**: 신뢰를 형성하는 개인적 경험담과 디테일한 뉘앙스를 수동 작성.
-4. **비주얼 그래픽 (10분 - Recraft AI)**: [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L142](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%85%A1%EC%84%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L142) 고정된 일러스트 풍과 얼굴 사진 래퍼런스를 사용한 3번의 시도 끝에 포스터 완성.
+4. **비주얼 그래픽 (10분 - [[Recraft AI]])**: [raw/AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다.md#L142](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%2080%ED%85%A1%EC%84%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md#L142) 고정된 일러스트 풍과 얼굴 사진 래퍼런스를 사용한 3번의 시도 끝에 포스터 완성.
 5. **소셜 포스트 가공 (15분 - Claude)**: 아티클 텍스트를 주입하고 역발상적(contrarian)인 인사이트를 골라 링크드인 톤으로 재가공.
 
 ### 리서치-디자인-개발 통합 10대 AI 도구 체인
@@ -190,7 +190,7 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 6. **Gemini**: 무제한 무료 크레딧을 활용한 로고 시안 및 그래픽 에셋 비유 비주얼 생성.
 7. **Jitter AI**: 로딩 애니메이션 및 스플래시 화면용 모션 디자인 신속 제작.
 8. **Figma Make**: 임시 연결 웹 주소(`ngbook.figma.site`)를 이용한 간이 인터랙티브 프로토타이핑.
-9. **Antigravity**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
+9. **[[Antigravity]]**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
 10. **Microsoft Clarity**: 실제 유저 행동 데이터(세션 녹화, 히트맵) 기반 디자인 보정 피드백 루프 가동.
 
 ### 리서치-디자인-개발 통합 10대 AI 도구 체인
@@ -202,7 +202,7 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 6. **Gemini**: 무제한 무료 크레딧을 활용한 로고 시안 및 그래픽 에셋 비유 비주얼 생성.
 7. **Jitter AI**: 로딩 애니메이션 및 스플래시 화면용 모션 디자인 신속 제작.
 8. **Figma Make**: 임시 연결 웹 주소(`ngbook.figma.site`)를 이용한 간이 인터랙티브 프로토타이핑.
-9. **Antigravity**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
+9. **[[Antigravity]]**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
 10. **Microsoft Clarity**: 실제 유저 행동 데이터(세션 녹화, 히트맵) 기반 디자인 보정 피드백 루프 가동.
 
 ### 리서치-디자인-개발 통합 10대 AI 도구 체인
@@ -214,32 +214,32 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 6. **Gemini**: 무제한 무료 크레딧을 활용한 로고 시안 및 그래픽 에셋 비유 비주얼 생성.
 7. **Jitter AI**: 로딩 애니메이션 및 스플래시 화면용 모션 디자인 신속 제작.
 8. **Figma Make**: 임시 연결 웹 주소(`ngbook.figma.site`)를 이용한 간이 인터랙티브 프로토타이핑.
-9. **Antigravity**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
+9. **[[Antigravity]]**: 비개발 디자이너의 소스 코드 생성, GitHub/Vercel 연동 배포.
 10. **Microsoft Clarity**: 실제 유저 행동 데이터(세션 녹화, 히트맵) 기반 디자인 보정 피드백 루프 가동.
 
-### 3. 피그마를 배제한 디자인-코드 융합 워크플로우
+### 3. 피그마를 배제한 디자인-코드 융합 [[워크플로]]우
 정적인 디자인 시안 전달(Figma Handoff) 대신 코드로 직접 프로토타이핑하여 에이전트를 조율하는 방식이다.
 - **핸드오프 마찰 통계 (ONSIGHT Projection Report 2026)**:
-  - 글로벌 브랜드 340개 제품 팀 대상 조사 결과, 프로젝트의 **50%**가 승인을 받지 못하거나 유실됨. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L7](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L7)
-  - 업계 전문가의 **65%**가 디자인에서 구현으로 넘어가는 인수인계 단계를 최대 문제 구간으로 지목. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L12](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L12)
+  - 글로벌 브랜드 340개 제품 팀 대상 조사 결과, 프로젝트의 **50%**가 승인을 받지 못하거나 유실됨. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L7](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L7)
+  - 업계 전문가의 **65%**가 디자인에서 구현으로 넘어가는 인수인계 단계를 최대 문제 구간으로 지목. [raw/우리가 피그마 없이 제품을 배포하는 방법.md#L12](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md#L12)
 - **Figma-less 배포 파이프라인**:
   1. *코딩 프로토타입*: HTML/CSS 및 간단한 상태(state)를 VS Code에서 Claude와 협업하며 직접 코딩.
   2. *라이브 호스팅*: GitHub 저장소에 푸시하여 GitHub Pages 등으로 실시간 검사 및 공유 가능한 라이브 URL 제공.
-  3. *에이전트 변환*: 상용화 단계에서 AI 에이전트(Claude Code 등)가 직접 프로토타입 저장소를 읽어 시각적 일치도 **100%**의 배포용 컴포넌트 생성.
+  3. *에이전트 변환*: 상용화 단계에서 AI 에이전트([[Claude Code]] 등)가 직접 프로토타입 저장소를 읽어 시각적 일치도 **100%**의 배포용 컴포넌트 생성.
 - **학술적 근거 (Prototype2Code 논문, 2024년 5월)**: 저장대학교와 알리바바 연구진이 발표한 연구로, UI 디자인 프로토타입에서 프로덕션 수준의 프론트엔드 코드를 엔드투엔드로 생성하는 기술적 근거 입증.
 - **픽셀 푸싱(Pixel-pushing)의 종말**: 제이콥 닐슨(Jakob Nielsen) 2025 UX 회고에 따르면 Figma AI, v0 등이 안착하며 정적 컴포넌트를 조정하던 픽셀 푸싱 작업은 2025년 3분기에 사실상 종말을 고함.
 
 ### Vetidesk & FX Pro 디자인 검증 사례
-- **Vetidesk**: 사용자 온보딩 경험에 AI 피드백 루프를 도입하여 가입 전환율이 2.9배 향상되었으며 [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L118](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L118), Fable 도구 사용 시 화면당 논리 오류율이 Opus 4.8 단독 사용 대비 30% 감소하였다 [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L375](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L375).
+- **Vetidesk**: 사용자 온보딩 경험에 AI 피드백 루프를 도입하여 가입 전환율이 2.9배 향상되었으며 [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L118](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L118), Fable 도구 사용 시 화면당 논리 오류율이 Opus 4.8 단독 사용 대비 30% 감소하였다 [raw/최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석.md#L375](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md#L375).
 - **FX Pro**: 시각적 복잡성이 높은 프로 트레이딩 화면에서 AI를 활용한 대비감 및 라벨 정렬 검증을 통해 레이아웃 결함을 사전에 제거하였다.
 
 ### 6. AI 실무 적용 6대 영역과 생산성 지표
-현업 디자인 팀의 65%가 인터페이스 제작 속도 향상, 가설 검증, 사용자 행동 분석에 AI를 도입했으며, UX 리서처의 80%가 연구 분석에 AI를 도입했다. [raw/6 Ways UI_UX Designers Are Using AI.md#L19-L23](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L19-L23) AI 도구 도입 시 작업 완료 시간은 40% 단축되고 품질은 18% 향상되는 등 실무의 주요 워크플로우에 결합되어 있다. [raw/6 Ways UI_UX Designers Are Using AI.md#L19-L23](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L19-L23)
-1. **와이어프레임 빌드 & 컨셉 제안**: Galileo AI (프롬프트-UI 변환), Relume (Figma/Webflow 연동 와이어프레임), Uizard (스케치-디지털 변환), v0 by Vercel (React+Tailwind 코드 생성) 등을 사용하여 초안 생성 및 탐색 루프를 가속화한다. AI 도입 에이전시의 77%는 인터페이스 디자인 시간을 36% 절감했다. [raw/6 Ways UI_UX Designers Are Using AI.md#L45](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L45)
-2. **사용자 리서치 & 데이터 종합**: Maze, Lookback, Dovetail 등을 활용해 녹음 자료 자동 녹취, 감정 점수 계산, 핵심 패턴 군집화 등을 자동화하여 데이터 분석 종합 시간을 70~90% 절약한다. [raw/6 Ways UI_UX Designers Are Using AI.md#L58](file:///Users/railscraft/Obsidian/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L58)
+현업 디자인 팀의 65%가 인터페이스 제작 속도 향상, 가설 검증, 사용자 행동 분석에 AI를 도입했으며, UX 리서처의 80%가 연구 분석에 AI를 도입했다. [raw/6 Ways UI_UX Designers Are Using AI.md#L19-L23](file:///Users/railscraft/[[Obsidian]]/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L19-L23) AI 도구 도입 시 작업 완료 시간은 40% 단축되고 품질은 18% 향상되는 등 실무의 주요 [[워크플로]]우에 결합되어 있다. [raw/6 Ways UI_UX Designers Are Using AI.md#L19-L23](file:///Users/railscraft/[[Obsidian]]/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L19-L23)
+1. **와이어프레임 빌드 & 컨셉 제안**: [[Galileo AI]] (프롬프트-UI 변환), Relume (Figma/Webflow 연동 와이어프레임), Uizard (스케치-디지털 변환), [[v0 by Vercel]] (React+Tailwind 코드 생성) 등을 사용하여 초안 생성 및 탐색 루프를 가속화한다. AI 도입 에이전시의 77%는 인터페이스 디자인 시간을 36% 절감했다. [raw/6 Ways UI_UX Designers Are Using AI.md#L45](file:///Users/railscraft/[[Obsidian]]/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L45)
+2. **사용자 리서치 & 데이터 종합**: Maze, Lookback, Dovetail 등을 활용해 녹음 자료 자동 녹취, 감정 점수 계산, 핵심 패턴 군집화 등을 자동화하여 데이터 분석 종합 시간을 70~90% 절약한다. [raw/6 Ways UI_UX Designers Are Using AI.md#L58](file:///Users/railscraft/[[Obsidian]]/raw/6%20Ways%20UI_UX%20Designers%20Are%20Using%20AI.md#L58)
 3. **UI 카피라이팅 & 마이크로카피**: 에러 상황, 빈 화면, 온보딩 등 감정이 고조되는 임계 영역에서 Claude, ChatGPT 및 Figma AI 텍스트 제안 기능으로 어조(톤앤매너)별 마이크로카피 시안을 즉시 생성해 검증한다.
 4. **접근성 감사 (Accessibility Auditing)**: 디자인 사후 검사 대신 Stark (Figma 플러그인) 등을 연동하여 색상 대비비, 터치 대상 규격, 탭 순서(Focus order)를 디자인 과정 중 실시간 감사하여 교정 비용을 절감한다.
-5. **개발 핸드오프 (Design-to-Code)**: Figma Dev Mode의 AI 주석(Annotations)이나 Locofy, Anima, Builder.io 등을 이용해 Figma 프레임에서 고품질 프론트엔드 코드를 추출하여 구현 일치율을 높인다.
+5. **개발 핸드오프 (Design-to-Code)**: Figma Dev Mode의 AI 주석(Annotations)이나 [[Locofy]], Anima, Builder.io 등을 이용해 Figma 프레임에서 고품질 프론트엔드 코드를 추출하여 구현 일치율을 높인다.
 6. **경쟁사 분석 & 디자인 리서치**: Perplexity AI나 Claude로 분석 평가용 UX 프레임워크를 먼저 도출한 뒤 경쟁사 스크린샷의 공통 디자인 패턴을 비교·식별하고 요약 보고서를 가공한다.
 
 
@@ -249,7 +249,7 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 1. **리서치 및 IA 설계**: Claude와 비정형 인터뷰 설계를 논의해 기능 목록을 뽑고, Notion AI에 문서화함. FigJam 커넥터로 유저 흐름과 정보 구조를 명확히 조감함.
 2. **시각화 및 자산 제작**: Flowstep으로 생성된 UI 화면을 오토 레이아웃 상태로 Figma에 내보낸 후 Figma AI로 다듬음. (Flowstep은 오토 레이아웃 구조가 깨지지 않게 변환하여 [[Google Stitch]] 등 기존 도구 대비 우수한 코드 품질을 보임). Gemini로 다양한 브랜드 로고 시안을 뽑고, Jitter AI로 로딩 화면에 입힐 스플래시 애니메이션을 적용함.
 3. **프로토타이핑 및 1차 검증**: Figma Make으로 임시 연결 사이트(`ngbook.figma.site`)를 개설해 타겟 사용자 2명과 인터랙션을 간이 테스트함. (이 시안들은 디바이스 시간 표시가 `9:41`로 통합되는 등 업계의 표준 형식을 따름).
-4. **개발 및 행동 데이터 교차 검증**: Antigravity를 활용하여 소스 코드를 생성한 후 GitHub과 Vercel을 연동해 라이브 사이트 배포. Microsoft Clarity에서 새 프로젝트를 만들고 Settings의 Setup 메뉴에서 수동 설치 추적 코드를 복사하여 `index.html` 내 `<head>`에 삽입. 배포 후 유저들의 세션 녹화와 클릭 마찰을 분석하여 UI 배치를 최종 보정함 [출처](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%95%84%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L248).
+4. **개발 및 행동 데이터 교차 검증**: [[Antigravity]]를 활용하여 소스 코드를 생성한 후 GitHub과 Vercel을 연동해 라이브 사이트 배포. Microsoft Clarity에서 새 프로젝트를 만들고 Settings의 Setup 메뉴에서 수동 설치 추적 코드를 복사하여 `index.html` 내 `<head>`에 삽입. 배포 후 유저들의 세션 녹화와 클릭 마찰을 분석하여 UI 배치를 최종 보정함 [출처](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%95%84%20AI%20%EB%8F%84%EA%B5%AC%2010%EC%84%A0.%20%EB%82%B4%20UI_UX%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A5%BC%2010%EB%B0%B0%20%EA%B0%9C%EC%84%A0%ED%95%9C%20%EB%B0%A9%EB%B2%95-ko.md#L248).
 
 ### 2. 5시간 아티클 런타임 벤치마크 (실제 사례)
 실제 "Why design systems fail at scale" 아티클 제작 시:
@@ -258,10 +258,10 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 *   **본문 집필**: 3시간 (직접 집필)
 *   **비주얼 포스터**: 10분 (Recraft + 3번의 시도)
 *   **링크드인 포스트**: 15분 (Claude 초안 + 직접 편집)
-*   **총 소요 시간**: 약 5시간 (도구 적용 전 8~10시간 소요 대비 40~50% 시간 단축) [출처](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md).
+*   **총 소요 시간**: 약 5시간 (도구 적용 전 8~10시간 소요 대비 40~50% 시간 단축) [출처](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md).
 
 ## 예시
-- **5시간 아티클 제작 워크플로우 벤치마크**: Perplexity 리서치(30분) -> Claude 구조 초안(20분) -> 직접 집필(3시간) -> Recraft 비주얼 생성(10분) -> LinkedIn 소셜 카피 재가공(15분)을 거쳐 정밀 편집 및 최종 릴리스 완료.
+- **5시간 아티클 제작 [[워크플로]]우 벤치마크**: Perplexity 리서치(30분) -> Claude 구조 초안(20분) -> 직접 집필(3시간) -> Recraft 비주얼 생성(10분) -> LinkedIn 소셜 카피 재가공(15분)을 거쳐 정밀 편집 및 최종 릴리스 완료.
 
 ### 캠퍼스 도서 거래 웹앱 개발 실무 런타임
 - **IA & User Flow**: FigJam 내 ChatGPT 커넥터 연동으로 반나절 만에 IA 조감.
@@ -286,15 +286,15 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 
 - **AI 디자인 검증 절차**: 시안 내보내기 ➡️ Fable/Opus 검증기 작동 ➡️ 대비 및 논리적 배치 자동 검사 ➡️ 피드백 반영 리팩토링
 
-### 3. Moonchild AI 기반 식당 관리 MVP 구축 사례
-- 인도 라우르켈라(Rourkela) 식당의 현장 조사를 토대로 3가지 웹앱 포털(고객용, 직원용, 관리자용)을 구축했다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
+### 3. [[Moonchild AI]] 기반 식당 관리 MVP 구축 사례
+- 인도 라우르켈라(Rourkela) 식당의 현장 조사를 토대로 3가지 웹앱 포털(고객용, 직원용, 관리자용)을 구축했다. (raw/Designing Production-Ready UIs with Your Design System Using [[Moonchild AI]].md)
 - **1단계: 기획 (ChatGPT)**: 사용자 흐름(User Flow)을 확정하고 예외 상황(Edge Case)을 식별한 뒤 FigJam에 가시화했다.
-- **2단계: 디자인 ([[Moonchild AI]])**: Mobbin의 음식 카테고리 레퍼런스를 참조하여 미니 디자인 시스템을 구축 및 게시한 뒤, ChatGPT가 정제한 마스터 프롬프트를 주입해 일관된 UI 화면을 도출했다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
-- **3단계: 개발 (Google Antigravity)**: 최신 Gemini 모델의 비주얼 분석 능력을 탑재한 Antigravity로 Moonchild AI가 설계한 UI 구조를 프론트엔드 코드로 변환 및 구현했다.
-- **성과**: 챗 모드 기반의 정밀 이터레이션과 에이전트 연동을 통해 MVP 개발 기간을 기존 대비 **10분의 1로 단축**하고 10배 빠르게 빌드하는 성과를 냈다. (raw/Designing Production-Ready UIs with Your Design System Using Moonchild AI.md)
+- **2단계: 디자인 ([[Moonchild AI]])**: Mobbin의 음식 카테고리 레퍼런스를 참조하여 [[미니 디자인 시스템]]을 구축 및 게시한 뒤, ChatGPT가 정제한 마스터 프롬프트를 주입해 일관된 UI 화면을 도출했다. (raw/Designing Production-Ready UIs with Your Design System Using [[Moonchild AI]].md)
+- **3단계: 개발 (Google [[Antigravity]])**: 최신 Gemini 모델의 비주얼 분석 능력을 탑재한 [[Antigravity]]로 [[Moonchild AI]]가 설계한 UI 구조를 프론트엔드 코드로 변환 및 구현했다.
+- **성과**: 챗 모드 기반의 정밀 이터레이션과 에이전트 연동을 통해 MVP 개발 기간을 기존 대비 **10분의 1로 단축**하고 10배 빠르게 빌드하는 성과를 냈다. (raw/Designing Production-Ready UIs with Your Design System Using [[Moonchild AI]].md)
 
 ## 충돌
-- **의사결정 대행 vs 판단의 독점**: '대신 생각해주겠다'는 만능 도구(Thinking AI)는 디자이너의 고유 영역인 미학적/전략적 판단(Taste & Strategy)까지 외주화하려 하므로 충돌한다. 성공적인 워크플로우는 오직 '실행'만을 AI에 아웃소싱하고 최종 결정권은 사람이 독점하는 형태다. 예컨대 AI가 3글자 이름('Ava')이 레이아웃 상 시각적 균형에 가장 예쁘다고 해서 기계적으로 추천하더라도, 실제 긴 이름을 입력했을 때 레이아웃이 깨지는 실질적인 구조 문제(Implementation details)를 판단하고 해결하는 주체는 사람이어야 한다.
+- **의사결정 대행 vs 판단의 독점**: '대신 생각해주겠다'는 만능 도구(Thinking AI)는 디자이너의 고유 영역인 미학적/전략적 판단(Taste & Strategy)까지 외주화하려 하므로 충돌한다. 성공적인 [[워크플로]]우는 오직 '실행'만을 AI에 아웃소싱하고 최종 결정권은 사람이 독점하는 형태다. 예컨대 AI가 3글자 이름('Ava')이 레이아웃 상 시각적 균형에 가장 예쁘다고 해서 기계적으로 추천하더라도, 실제 긴 이름을 입력했을 때 레이아웃이 깨지는 실질적인 구조 문제(Implementation details)를 판단하고 해결하는 주체는 사람이어야 한다.
 
 ## 관련 노트
 - [[디자인 에이전트 5종]]
@@ -308,65 +308,65 @@ AI가 만드는 겉보기에 예쁜 포트폴리오는 모방하기 쉬우므로
 - [[AI 네이티브 프로토타이핑]]
 
 ## 출처
-- [UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX 워크플로우를 10배 개선한 방법-ko.md](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9D%98%2080%ED%8D%BC%EC%84%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md)
-- [AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다](file:///Users/railscraft/Obsidian/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%97%A0%EC%A0%84%ED%8A%B8%EB%B3%B4%EB%8B%A4%2080%ED%8D%BC%EC%84%BC%ED%8A%B8%20우수하다.md)
-- [2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
-- [How top companies are using AI in their design workflows](file:///Users/railscraft/Obsidian/raw/How%20top%20companies%20are%20using%20AI%20in%20their%20design%20workflows.md) (Meta AI 플레이북, Faire 챗봇 리서치, Tesco Figma MCP 플러그인)
-- [The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer](file:///Users/railscraft/Obsidian/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md) (오케스트레이터 및 의사결정 포트폴리오)
-- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/Obsidian/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
-- [클로드 디자인은 과연 디자이너를 대체할까](file:///Users/railscraft/Obsidian/raw/%ED%81%B4%EB%A1%9C%EB%93%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EA%B3%BC%EC%97%B0%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%EA%B9%8C.md)
-- [2026년 AI 에이전트 워크플로우 핵심 패턴 분석](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%ED%95%B5%EC%8B%AC%20%ED%8C%A8%ED%84%B4%20%EB%B6%84%EC%84%9D.md)
-- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
-- [완전히 기계 읽기 가능한 디자인 시스템-ko](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EC%A0%84%ED%9E%88%20%EA%B8%B0%EA%B3%84%20%EC%9D%BD%EA%B8%B0%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C-ko.md)
-- [2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20Claude%20Code%20%EC%84%A4%EC%A0%95%EC%97%90%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%208%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%8A%A4%ED%82%AC.md)
-- [My Complete Productivity Stack in 2026](file:///Users/railscraft/Obsidian/raw/My%20Complete%20Productivity%20Stack%20in%202026.%20Every%20Tool%20I%20Actually%20Use%2C%20What%20I%20Pay%2C)
-- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #3. 벡터 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%233.%20%EB%B2%A1%ED%84%B0%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [완벽하게 기계 가독성을 갖춘 디자인 시스템](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C%20%EA%B8%B0%EA%B3%84%20%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84%20%EA%B0%96%EC%B6%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
-- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #4. 지식 그래프 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%234.%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #5. 계층형 자체 관리 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%235.%20%EA%B3%84%EC%B8%B5%ED%98%95%20%EC%9E%90%EC%B2%B4%20%EA%B4%80%EB%A6%AC%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [파이썬 AI 에이전트 프레임워크 6종 비교 분석](file:///Users/railscraft/Obsidian/raw/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%206%EC%A2%85%20%EB%B9%84%EA%B5%90%20%EB%B6%84%EC%84%9D.md)
-- [Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드](file:///Users/railscraft/Obsidian/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%9A%A8%EC%9C%A8%EC%9D%84%20%EA%B7%B9%EB%8C%80%ED%99%94%ED%95%98%EB%8A%94%20MEMORY.md%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [2026년 오픈소스 [[LLM]] 플랫폼 비교 가이드 - Ollama, OpenRouter, Groq, NVIDIA NIM](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20[[LLM]]%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20Ollama%2C%20OpenRouter%2C%20Groq%2C%20NVIDIA%20NIM.md)
-- [The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google](file:///Users/railscraft/Obsidian/raw/The%2010%20Engineering%20Papers%20Behind%20Netflix%2C%20Uber%2C%20Amazon%20%26%20Google.md)
-- [1 Aviation Rule That Will Instantly Improve Your Focus](file:///Users/railscraft/Obsidian/raw/1%20Aviation%20Rule%20That%20Will%20Instantly%20Improve%20Your%20Focus.md)
-- [AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A1%9C%20300%EA%B0%9C%20%EC%9D%B4%EC%83%81%EC%9D%98%20%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8%EB%A5%BC%20RPG%20%EA%B2%8C%EC%9E%84%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EC%9D%B4%EC%95%BC%EA%B8%B0%20-%20LennyRPG%208%EC%8B%9C%EA%B0%84%20%EA%B0%9C%EB%B0%9C%EA%B8%B0.md)
-- [우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EC%88%98%EB%B0%B1%20%EA%B0%9C%EC%9D%98%20Claude%20%ED%98%91%EC%97%85%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EB%A5%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%B4%20%EB%B4%A4%EB%8B%A4.%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%9E%91%EC%97%85%EC%9D%84%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%207%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
-- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/Obsidian/raw/CLAUDE.md%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
-- [Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번](file:///Users/railscraft/Obsidian/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88%2C%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md)
-- [UI 디자인을 위한 최고의 AI 도구 10가지와 워크플로우](file:///Users/railscraft/Obsidian/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EA%B0%80%EC%A7%80%EC%99%80%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
-- [Hermes Agent와 Ollama 로컬 설치 초고속 가이드](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%EC%99%80%20Ollama%20%EB%A1%9C%EC%BB%AC%20%EC%84%A4%EC%B9%98%20%EC%B4%88%EA%B3%A0%EC%86%8D%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기](file:///Users/railscraft/Obsidian/raw/%EC%9B%90%EC%8B%9C%EC%9D%B8%20%EB%AA%A8%EB%93%9C%EB%A1%9C%20%ED%86%A0%ED%81%B0%20%EC%95%84%EB%81%BC%EB%A0%A4%EB%8B%A4%206%EB%A7%8C%20%EC%8A%A4%ED%83%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%97%90%20PR%20%EB%B3%B4%EB%82%B8%20%EC%9D%B4%EC%95%BC%EA%B8%B0.md)
-- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/Obsidian/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
-- [AI 개발자가 반드시 알아야 할 9가지 [[RAG]] 아키텍처 - 실무 예제로 배우는 완전 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20[[RAG]]%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 [[TurboQuant]], 애플 실리콘 상륙](file:///Users/railscraft/Obsidian/raw/5%EB%B0%B0%20%EC%A0%81%EC%9D%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%A1%9C%20%EB%A7%A5%EC%97%90%EC%84%9C%2032B%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20%EA%B5%AC%EA%B8%80%20[[TurboQuant]]%2C%20%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EC%83%81%EB%A5%99.md)
-- [Claude Design이 디자이너를 대체할 것인가-ko](file:///Users/railscraft/Obsidian/raw/Claude%20Design%EC%9D%B4%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%20%EA%B2%83%EC%9D%B8%EA%B0%80-ko.md)
-- [The Signs of a Pseudo-Smart Person Are Easy To Spot](file:///Users/railscraft/Obsidian/raw/The%20Signs%20of%20a%20Pseudo-Smart%20Person%20Are%20Easy%20To%20Spot.md)
-- [느낌 코딩의 시대는 끝났다 - GitHub [[Spec Kit]]과 명세 기반 개발](file:///Users/railscraft/Obsidian/raw/%EB%8A%90%EB%82%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%8B%9C%EB%8C%80%EB%8A%94%20%EB%81%9D%EB%82%AC%EB%8B%A4%20-%20GitHub%20Spec%20Kit%EA%B3%BC%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C.md)
-- [SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다](file:///Users/railscraft/Obsidian/raw/SpaceX%EC%9D%98%20%ED%8C%8C%EA%B2%A9%EC%A0%81%EC%9D%B8%20AI%20%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%A0%84%EB%9E%B5%20-%20%EC%88%9C%EC%88%98%20C%20%EC%96%B8%EC%96%B4%EB%A1%9C%2022%EB%A7%8C%20%EB%8C%80%20GPU%EB%A5%BC%20%EC%A0%9C%EC%96%B4%ED%95%98%EB%8B%A4.md)
-- [1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법](file:///Users/railscraft/Obsidian/raw/1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80%20%EC%86%8C%EA%B7%9C%EB%AA%A8%20%ED%8C%80%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%A7%90%20%EC%99%84%EC%84%B1%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EB%B2%95.md)
-- [애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드](file:///Users/railscraft/Obsidian/raw/%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%8A%A4%ED%83%9D%3A%20%ED%95%9C%20%EC%B0%A8%EC%9B%90%20%EC%A7%84%ED%99%94%ED%95%9C%20%EC%84%B1%EB%8A%A5%EA%B3%BC%20%EC%B5%9C%EC%A0%81%EC%9D%98%20%EA%B5%AC%EC%B6%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요](file:///Users/railscraft/Obsidian/raw/Claude%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%9D%B4%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%EC%9D%84%20%EB%A7%8C%EB%93%9C%EC%84%B8%EC%9A%94.md)
-- [How to write a DESIGN.md file Claude can actually use-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md)
-- [하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
-- [지루한 업무를 자동화하는 [[클로드 코워크]] 프롬프트 7가지](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%97%85%EB%AC%B4%EB%A5%BC%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%20%EC%BD%94%EC%9B%8C%ED%81%AC%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%207%EA%B0%80%EC%A7%80.md)
-- [7 Coding Patterns I Stole From Senior Engineers](file:///Users/railscraft/Obsidian/raw/7%20Coding%20Patterns%20I%20Stole%20From%20Senior%20Engineers.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #1. 슬라이딩 윈도우 버퍼](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%231.%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EB%B2%84%ED%8D%BC.md)
-- [옵시디언 AI 제2의 뇌는 기억이 아니다](file:///Users/railscraft/Obsidian/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20AI%20%EC%A0%9C2%EC%9D%98%20%EB%87%8C%EB%8A%94%20%EA%B8%B0%EC%96%B5%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%8B%A4.md)
-- [I will never walk into a backend interview without solving these 20 questions.](file:///Users/railscraft/Obsidian/raw/I%20will%20never%20walk%20into%20a%20backend%20interview%20without%20solving%20these%2020%20questions..md)
-- [우리가 피그마 없이 제품을 배포하는 방법](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
-- [Most Developers Are Solving the Wrong Problem](file:///Users/railscraft/Obsidian/raw/Most%20Developers%20Are%20Solving%20the%20Wrong%20Problem.md)
-- [당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유](file:///Users/railscraft/Obsidian/raw/%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%EA%B0%80%20%EC%B1%97GPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
-- [DESIGN.md 워크플로우. [[Google Stitch]]와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
-- [인생의 성공을 결정하는 5가지 핵심 자질](file:///Users/railscraft/Obsidian/raw/%EC%9D%B8%EC%83%9D%EC%9D%98%20%EC%84%B1%EA%B3%B5%EC%9D%84%20%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94%205%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%9E%90%EC%A7%88.md)
-- [Design’s craft crisis. senior designers built it](file:///Users/railscraft/Obsidian/raw/Design%E2%80%99s%20craft%20crisis.%20senior%20designers%20built%20it.md)
-- [The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order](file:///Users/railscraft/Obsidian/raw/The%20Agentic%20AI%20Engineer%20Roadmap%20for%202026.%20Skills%2C%20Stack%2C%20and%20Order.md)
-- [모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
-- [Claude Code와 Obsidian으로 [[AI 세컨드 브레인]] 구축하기](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EC%99%80%20Obsidian%EC%9C%BC%EB%A1%9C%20AI%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0.md)
-- [Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지](file:///Users/railscraft/Obsidian/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A2%8B%EC%9D%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%82%B4%EB%B6%80%20%EB%8F%84%EA%B5%AC%205%EA%B0%80%EC%A7%80.md)
-- [ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko](file:///Users/railscraft/Obsidian/raw/ChatGPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%9D%B4%EA%B2%83%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EB%A9%94%ED%83%80%EB%A5%BC%20%EA%B7%B8%EB%A7%8C%EB%91%94%20AI%20%EB%8C%80%EB%B6%80%20%EC%A4%91%20%ED%95%9C%20%EB%AA%85-ko.md)
-- [DESIGN.md 워크플로 - [[Google Stitch]]와 Claude Code가 바꾼 디자인 개발 협업](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #2. 자동 요약 버퍼](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%232.%20%EC%9E%90%EB%8F%99%20%EC%9A%94%EC%95%BD%20%EB%B2%84%ED%8D%BC.md)
-- [최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석](file:///Users/railscraft/Obsidian/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md)
+- [UI 디자인을 위한 최고의 AI 도구 10선. 내 UI_UX [[워크플로]]우를 10배 개선한 방법-ko.md](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9D%98%2080%ED%8D%BC%EC%84%BC%ED%8A%B8%EB%B3%B4%EB%8B%A4%20%EC%9A%B0%EC%88%98%ED%95%98%EB%8B%A4.md)
+- [AI가 생성한 UI 디자인은 이제 인간 디자이너의 80퍼센트보다 우수하다](file:///Users/railscraft/[[Obsidian]]/raw/AI%EA%B0%80%20%EC%83%9D%EC%84%B1%ED%95%9C%20UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9D%80%20%EC%9D%B4%EC%A0%9C%20%EC%9D%B8%EA%B0%84%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%97%A0%EC%A0%84%ED%8A%B8%EB%B3%B4%EB%8B%A4%2080%ED%8D%BC%EC%84%BC%ED%8A%B8%20우수하다.md)
+- [2026년에 실제로 효과가 있는 나의 AI 디자인 [[워크플로]]우](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9E%91%EC%97%85%EC%9B%A8%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [How top companies are using AI in their design workflows](file:///Users/railscraft/[[Obsidian]]/raw/How%20top%20companies%20are%20using%20AI%20in%20their%20design%20workflows.md) (Meta AI 플레이북, Faire 챗봇 리서치, Tesco [[Figma MCP]] 플러그인)
+- [The Next 5 Years. How To Stay Relevant Between 2026–2030 As A Designer](file:///Users/railscraft/[[Obsidian]]/raw/The%20Next%205%20Years.%20How%20To%20Stay%20Relevant%20Between%202026%E2%80%932030%20As%20A%20Designer.md) (오케스트레이터 및 의사결정 포트폴리오)
+- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/[[Obsidian]]/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
+- [클로드 디자인은 과연 디자이너를 대체할까](file:///Users/railscraft/[[Obsidian]]/raw/%ED%81%B4%EB%A1%9C%EB%93%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%80%20%EA%B3%BC%EC%97%B0%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%EA%B9%8C.md)
+- [2026년 AI 에이전트 [[워크플로]]우 핵심 패턴 분석](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0%20%ED%95%B5%EC%8B%AC%20%ED%8C%A8%ED%84%B4%20%EB%B6%84%EC%84%9D.md)
+- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
+- [완전히 기계 읽기 가능한 [[디자인 시스템]]-ko](file:///Users/railscraft/[[Obsidian]]/raw/%EC%99%84%EC%A0%84%ED%9E%88%20%EA%B8%B0%EA%B3%84%20%EC%9D%BD%EA%B8%B0%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C-ko.md)
+- [2026년 [[Claude Code]] 설정에 꼭 필요한 8가지 핵심 스킬](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%20Claude%20Code%20%EC%84%A4%EC%A0%95%EC%97%90%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%208%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%8A%A4%ED%82%AC.md)
+- [My Complete Productivity Stack in 2026](file:///Users/railscraft/[[Obsidian]]/raw/My%20Complete%20Productivity%20Stack%20in%202026.%20Every%20Tool%20I%20Actually%20Use%2C%20What%20I%20Pay%2C)
+- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #3. 벡터 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%233.%20%EB%B2%A1%ED%84%B0%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [완벽하게 기계 가독성을 갖춘 디자인 시스템](file:///Users/railscraft/[[Obsidian]]/raw/%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C%20%EA%B8%B0%EA%B3%84%20%EA%B0%80%EB%8F%85%EC%84%B1%EC%9D%84%20%EA%B0%96%EC%B6%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
+- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/[[Obsidian]]/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #4. 지식 그래프 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%234.%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #5. 계층형 자체 관리 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%235.%20%EA%B3%84%EC%B8%B5%ED%98%95%20%EC%9E%90%EC%B2%B4%20%EA%B4%80%EB%A6%AC%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [파이썬 AI 에이전트 프레임워크 6종 비교 분석](file:///Users/railscraft/[[Obsidian]]/raw/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%206%EC%A2%85%20%EB%B9%84%EA%B5%90%20%EB%B6%84%EC%84%9D.md)
+- [Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%9A%A8%EC%9C%A8%EC%9D%84%20%EA%B7%B9%EB%8C%80%ED%99%94%ED%95%98%EB%8A%94%20MEMORY.md%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [2026년 오픈소스 [[LLM]] 플랫폼 비교 가이드 - [[Ollama]], [[OpenRouter]], Groq, NVIDIA NIM](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20[[LLM]]%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EB%B9%84%EA%B5%90%20%EA%B0%80%EC%9D%B4%EB%93%9C%20-%20[[Ollama]]%2C%20[[OpenRouter]]%2C%20Groq%2C%20NVIDIA%20NIM.md)
+- [The 10 Engineering Papers Behind Netflix, Uber, Amazon & Google](file:///Users/railscraft/[[Obsidian]]/raw/The%2010%20Engineering%20Papers%20Behind%20Netflix%2C%20Uber%2C%20Amazon%20%26%20Google.md)
+- [1 Aviation Rule That Will Instantly Improve Your Focus](file:///Users/railscraft/[[Obsidian]]/raw/1%20Aviation%20Rule%20That%20Will%20Instantly%20Improve%20Your%20Focus.md)
+- [AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기](file:///Users/railscraft/[[Obsidian]]/raw/AI%EC%99%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A1%9C%20300%EA%B0%9C%20%EC%9D%B4%EC%83%81%EC%9D%98%20%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8%EB%A5%BC%20RPG%20%EA%B2%8C%EC%9E%84%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EC%9D%B4%EC%95%BC%EA%B8%B0%20-%20LennyRPG%208%EC%8B%9C%EA%B0%84%20%EA%B0%9C%EB%B0%9C%EA%B8%B0.md)
+- [우리가 수백 개의 Claude 협업 프롬프트를 테스트해 봤다. 지루한 작업을 자동화하는 7가지 프롬프트-ko](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EC%88%98%EB%B0%B1%20%EA%B0%9C%EC%9D%98%20Claude%20%ED%98%91%EC%97%85%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EB%A5%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%B4%20%EB%B4%A4%EB%8B%A4.%20%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%9E%91%EC%97%85%EC%9D%84%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%207%EA%B0%80%EC%A7%80%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-ko.md)
+- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/[[Obsidian]]/raw/[[CLAUDE.md]]%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
+- [Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번](file:///Users/railscraft/[[Obsidian]]/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88%2C%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md)
+- [UI 디자인을 위한 최고의 AI 도구 10가지와 [[워크플로]]우](file:///Users/railscraft/[[Obsidian]]/raw/UI%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20AI%20%EB%8F%84%EA%B5%AC%2010%EA%B0%80%EC%A7%80%EC%99%80%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [Hermes Agent와 [[Ollama]] 로컬 설치 초고속 가이드](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20Agent%EC%99%80%20[[Ollama]]%20%EB%A1%9C%EC%BB%AC%20%EC%84%A4%EC%B9%98%20%EC%B4%88%EA%B3%A0%EC%86%8D%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [원시인 모드로 토큰 아끼려다 6만 스타 오픈소스에 PR 보낸 이야기](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9B%90%EC%8B%9C%EC%9D%B8%20%EB%AA%A8%EB%93%9C%EB%A1%9C%20%ED%86%A0%ED%81%B0%20%EC%95%84%EB%81%BC%EB%A0%A4%EB%8B%A4%206%EB%A7%8C%20%EC%8A%A4%ED%83%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EC%97%90%20PR%20%EB%B3%B4%EB%82%B8%20%EC%9D%B4%EC%95%BC%EA%B8%B0.md)
+- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/[[Obsidian]]/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
+- [AI 개발자가 반드시 알아야 할 9가지 [[RAG]] 아키텍처 - 실무 예제로 배우는 완전 가이드](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20[[RAG]]%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 [[TurboQuant]], 애플 실리콘 상륙](file:///Users/railscraft/[[Obsidian]]/raw/5%EB%B0%B0%20%EC%A0%81%EC%9D%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%A1%9C%20%EB%A7%A5%EC%97%90%EC%84%9C%2032B%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20%EA%B5%AC%EA%B8%80%20[[TurboQuant]]%2C%20%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EC%83%81%EB%A5%99.md)
+- [Claude Design이 디자이너를 대체할 것인가-ko](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Design%EC%9D%B4%20%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88%EB%A5%BC%20%EB%8C%80%EC%B2%B4%ED%95%A0%20%EA%B2%83%EC%9D%B8%EA%B0%80-ko.md)
+- [The Signs of a Pseudo-Smart Person Are Easy To Spot](file:///Users/railscraft/[[Obsidian]]/raw/The%20Signs%20of%20a%20Pseudo-Smart%20Person%20Are%20Easy%20To%20Spot.md)
+- [느낌 코딩의 시대는 끝났다 - GitHub [[Spec Kit]]과 명세 기반 개발](file:///Users/railscraft/[[Obsidian]]/raw/%EB%8A%90%EB%82%8C%20%EC%BD%94%EB%94%A9%EC%9D%98%20%EC%8B%9C%EB%8C%80%EB%8A%94%20%EB%81%9D%EB%82%AC%EB%8B%A4%20-%20GitHub%20Spec%20Kit%EA%B3%BC%20%EB%AA%85%EC%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B0%9C%EB%B0%9C.md)
+- [SpaceX의 파격적인 AI 인프라 전략 - 순수 C 언어로 22만 대 GPU를 제어하다](file:///Users/railscraft/[[Obsidian]]/raw/SpaceX%EC%9D%98%20%ED%8C%8C%EA%B2%A9%EC%A0%81%EC%9D%B8%20AI%20%EC%9D%B8%ED%94%84%EB%9D%BC%20%EC%A0%84%EB%9E%B5%20-%20%EC%88%9C%EC%88%98%20C%20%EC%96%B8%EC%96%B4%EB%A1%9C%2022%EB%A7%8C%20%EB%8C%80%20GPU%EB%A5%BC%20%EC%A0%9C%EC%96%B4%ED%95%98%EB%8B%A4.md)
+- [1인 개발자와 소규모 팀을 위한 주말 완성 [[디자인 시스템]] 구축법](file:///Users/railscraft/[[Obsidian]]/raw/1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80%20%EC%86%8C%EA%B7%9C%EB%AA%A8%20%ED%8C%80%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%A7%90%20%EC%99%84%EC%84%B1%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EB%B2%95.md)
+- [애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드](file:///Users/railscraft/[[Obsidian]]/raw/%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%8A%A4%ED%83%9D%3A%20%ED%95%9C%20%EC%B0%A8%EC%9B%90%20%EC%A7%84%ED%99%94%ED%95%9C%20%EC%84%B1%EB%8A%A5%EA%B3%BC%20%EC%B5%9C%EC%A0%81%EC%9D%98%20%EA%B5%AC%EC%B6%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [Claude를 사용하기 전에 반드시 이 마크다운 파일을 만드세요](file:///Users/railscraft/[[Obsidian]]/raw/Claude%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A0%84%EC%97%90%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%9D%B4%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%EC%9D%84%20%EB%A7%8C%EB%93%9C%EC%84%B8%EC%9A%94.md)
+- [How to write a [[DESIGN.md]] file Claude can actually use-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20write%20a%20[[DESIGN.md]]%20file%20Claude%20can%20actually%20use-ko.md)
+- [하네스 엔지니어링 - 65줄 [[CLAUDE.md]]가 최고의 스킬인 이유](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20[[CLAUDE.md]]%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
+- [지루한 업무를 자동화하는 [[클로드 코워크]] 프롬프트 7가지](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EB%A3%A8%ED%95%9C%20%EC%97%85%EB%AC%B4%EB%A5%BC%20%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94%20%ED%81%B4%EB%A1%9C%EB%93%9C%20%EC%BD%94%EC%9B%8C%ED%81%AC%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%207%EA%B0%80%EC%A7%80.md)
+- [7 Coding Patterns I Stole From Senior Engineers](file:///Users/railscraft/[[Obsidian]]/raw/7%20Coding%20Patterns%20I%20Stole%20From%20Senior%20Engineers.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #1. 슬라이딩 윈도우 버퍼](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%231.%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EB%B2%84%ED%8D%BC.md)
+- [옵시디언 AI 제2의 뇌는 기억이 아니다](file:///Users/railscraft/[[Obsidian]]/raw/%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20AI%20%EC%A0%9C2%EC%9D%98%20%EB%87%8C%EB%8A%94%20%EA%B8%B0%EC%96%B5%EC%9D%B4%20%EC%95%84%EB%8B%88%EB%8B%A4.md)
+- [I will never walk into a backend interview without solving these 20 questions.](file:///Users/railscraft/[[Obsidian]]/raw/I%20will%20never%20walk%20into%20a%20backend%20interview%20without%20solving%20these%2020%20questions..md)
+- [우리가 피그마 없이 제품을 배포하는 방법](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [Most Developers Are Solving the Wrong Problem](file:///Users/railscraft/[[Obsidian]]/raw/Most%20Developers%20Are%20Solving%20the%20Wrong%20Problem.md)
+- [당신의 고양이가 챗GPT보다 세상을 더 잘 이해하는 이유](file:///Users/railscraft/[[Obsidian]]/raw/%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%EA%B0%80%20%EC%B1%97GPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
+- [DESIGN.md [[워크플로]]우. [[Google Stitch]]와 [[Claude Code]]가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/[[Obsidian]]/raw/[[DESIGN.md]]%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
+- [인생의 성공을 결정하는 5가지 핵심 자질](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9D%B8%EC%83%9D%EC%9D%98%20%EC%84%B1%EA%B3%B5%EC%9D%84%20%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94%205%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%9E%90%EC%A7%88.md)
+- [Design’s craft crisis. senior designers built it](file:///Users/railscraft/[[Obsidian]]/raw/Design%E2%80%99s%20craft%20crisis.%20senior%20designers%20built%20it.md)
+- [The Agentic AI Engineer Roadmap for 2026. Skills, Stack, and Order](file:///Users/railscraft/[[Obsidian]]/raw/The%20Agentic%20AI%20Engineer%20Roadmap%20for%202026.%20Skills%2C%20Stack%2C%20and%20Order.md)
+- [모든 [[DESIGN.md]]에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/[[Obsidian]]/raw/%EB%AA%A8%EB%93%A0%20[[DESIGN.md]]%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
+- [Claude Code와 [[Obsidian]]으로 [[AI 세컨드 브레인]] 구축하기](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%EC%99%80%20[[Obsidian]]%EC%9C%BC%EB%A1%9C%20AI%20%EC%84%B8%EC%BB%A8%EB%93%9C%20%EB%B8%8C%EB%A0%88%EC%9D%B8%20%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0.md)
+- [Hermes 에이전트와 함께 사용하기 좋은 오픈소스 내부 도구 5가지](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20%EC%A2%8B%EC%9D%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%82%B4%EB%B6%80%20%EB%8F%84%EA%B5%AC%205%EA%B0%80%EC%A7%80.md)
+- [ChatGPT보다 세상을 더 잘 이해하는 당신의 고양이, 그리고 이것 때문에 메타를 그만둔 AI 대부 중 한 명-ko](file:///Users/railscraft/[[Obsidian]]/raw/ChatGPT%EB%B3%B4%EB%8B%A4%20%EC%84%B8%EC%83%81%EC%9D%84%20%EB%8D%94%20%EC%9E%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EB%8B%B9%EC%8B%A0%EC%9D%98%20%EA%B3%A0%EC%96%91%EC%9D%B4%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%9D%B4%EA%B2%83%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EB%A9%94%ED%83%80%EB%A5%BC%20%EA%B7%B8%EB%A7%8C%EB%91%94%20AI%20%EB%8C%80%EB%B6%80%20%EC%A4%91%20%ED%95%9C%20%EB%AA%85-ko.md)
+- [DESIGN.md [[워크플로]] - [[Google Stitch]]와 [[Claude Code]]가 바꾼 디자인 개발 협업](file:///Users/railscraft/[[Obsidian]]/raw/[[DESIGN.md]]%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #2. 자동 요약 버퍼](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%232.%20%EC%9E%90%EB%8F%99%20%EC%9A%94%EC%95%BD%20%EB%B2%84%ED%8D%BC.md)
+- [최고의 디자인 AI 도구로 진행한 실제 UXUI 디자인 검증 및 분석](file:///Users/railscraft/[[Obsidian]]/raw/%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EB%94%94%EC%9E%90%EC%9D%B8%20AI%20%EB%8F%84%EA%B5%AC%EB%A1%9C%20%EC%A7%84%ED%96%89%ED%95%9C%20%EC%8B%A4%EC%A0%9C%20UXUI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B2%80%EC%A6%9D%20%EB%B0%8F%20%EB%B6%84%EC%84%9D.md)
 

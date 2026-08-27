@@ -55,4 +55,4 @@ raw 문서는 서버 사이드 API Key를 React, Vue 같은 클라이언트 코�
 
 ## 출처
 
-- API_Key_관리_및_Infisical_도입_가이드
+- API_Key_관리_및_[[Infisical]]_도입_가이드

@@ -34,4 +34,4 @@ updated: 2026-07-21
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-- [raw/How to Get Into the Top 1% in the Next 12 Months-ko.md](file:///Users/railscraft/Obsidian/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
+- [raw/How to Get Into the Top 1% in the Next 12 Months-ko.md](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)

@@ -34,7 +34,7 @@ aliases:
 6. **Telegram Spoiler Decoder**: macOS 텔레그램 클라이언트에서 의사 점자로 표시되는 스포일러 텍스트를 해독하여 숨겨진 피싱 링크나 연락처 등을 복원하는 도구.
 7. **Eyedex**: FTP/웹 서버 등 인터넷에 노출된 대형 공개 저장소의 PDF, 텍스트, 설정 파일 등을 한 번에 조회할 수 있는 검색 엔진.
 8. **haveibeensquattəd**: 철자가 미세하게 다른 타이포스쿼팅(typosquatting) 도메인이나 가짜 로그인 페이지 등 사기 목적의 악성 변종 도메인을 탐지하는 모니터링 도구.
-9. **OSINT Investigator’s Toolkit**: 이메일, 전화번호 등의 디지털 식별자 조사와 온체인(on-chain) 암호화폐 지갑 거래 추적을 단일 워크플로로 결합한 조사 플랫폼.
+9. **OSINT Investigator’s Toolkit**: 이메일, 전화번호 등의 디지털 식별자 조사와 온체인(on-chain) 암호화폐 지갑 거래 추적을 단일 [[워크플로]]로 결합한 조사 플랫폼.
 10. **Antipublic**: 유출된 로그인 기록 데이터베이스를 기반으로 이메일이나 비밀번호가 유출되었는지 점검할 수 있는 검색 플랫폼.
 11. **DNSDumpster**: 대상 도메인의 DNS 레코드 및 서브도메인을 조회하고 이를 시각적 맵으로 표현해 주는 패시브 DNS 정찰 도구.
 12. **Website Informer**: WHOIS 정보, IP, 호스팅 서버, 트래픽 등 임의의 도메인에 대한 정보 리포트를 신속하게 제공하는 웹사이트 인텔리전스 도구.
@@ -77,4 +77,4 @@ aliases:
 - [[로컬 LLM 30분 실전 가이드]]
 
 ## 출처
-- [반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선](file:///Users/railscraft/Obsidian/raw/%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B4%90%EC%95%BC%20%ED%95%A0%20%EB%86%80%EB%9D%BC%EC%9A%B4%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20OSINT%20%EB%8F%84%EA%B5%AC%2014%EC%84%A0.md) (Abhay Parashar, cyscan.io, filmot.com, findpiclocation.com, whatsmyname.app, spoiler.soxoj.com, antipublic.net, dnsdumpster.com, github.com/apurvsinghgautam/robin, searchall.net 참조)
+- [반드시 사용해봐야 할 놀라운 오픈소스 OSINT 도구 14선](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B4%90%EC%95%BC%20%ED%95%A0%20%EB%86%80%EB%9D%BC%EC%9A%B4%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20OSINT%20%EB%8F%84%EA%B5%AC%2014%EC%84%A0.md) (Abhay Parashar, cyscan.io, filmot.com, findpiclocation.com, whatsmyname.app, spoiler.soxoj.com, antipublic.net, dnsdumpster.com, github.com/apurvsinghgautam/robin, searchall.net 참조)

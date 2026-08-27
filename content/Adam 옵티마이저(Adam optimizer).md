@@ -15,7 +15,7 @@ created: 2026-07-29
 updated: 2026-07-29
 ---
 
-# Adam 옵티마이저 (Adam Optimizer)
+# [[Adam 옵티마이저]] (Adam Optimizer)
 
 ## 한 줄 정의
 
@@ -49,7 +49,7 @@ Adam(Adaptive Moment Estimation)은 모멘텀(Momentum) 방식과 RMSProp의 장
 
 ## 예시
 
-[[안드레 카파시(Andrej Karpathy)]]가 구현한 [[microGPT]](243줄의 순수 파이썬 GPT) 내부에 포함된 Adam 옵티마이저의 업데이트 코드이다. 별도의 딥러닝 라이브러리 없이 순수 파이썬 코드로 구현되어 작동 원리가 직접적으로 드러난다.
+[[안드레 카파시(Andrej Karpathy)]]가 구현한 [[microGPT]](243줄의 순수 파이썬 GPT) 내부에 포함된 [[Adam 옵티마이저]]의 업데이트 코드이다. 별도의 딥러닝 라이브러리 없이 순수 파이썬 코드로 구현되어 작동 원리가 직접적으로 드러난다.
 
 ```python
 # p.grad: 역전파(backpropagation)를 통해 계산된 매개변수 p의 그래디언트

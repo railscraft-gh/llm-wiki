@@ -25,7 +25,7 @@ AI 에이전트와 아이디어를 브레인스토밍할 때, 말로 설명하�
 
 ## 상세
 
-[superpowers-brainstorming](file:///Users/railscraft/Obsidian/raw/superpowers-brainstorming.md#L142) 스킬의 핵심 요소 중 하나다. 에이전트가 코드를 작성하기 전, 반드시 요구사항과 설계를 검증받도록 하는 `<HARD-GATE>` 원칙을 지키기 위한 보조 수단이다. 
+[superpowers-brainstorming](file:///Users/railscraft/[[Obsidian]]/raw/superpowers-brainstorming.md#L142) 스킬의 핵심 요소 중 하나다. 에이전트가 코드를 작성하기 전, 반드시 요구사항과 설계를 검증받도록 하는 `<HARD-GATE>` 원칙을 지키기 위한 보조 수단이다. 
 과거에는 단순히 프롬프트로 "어떤 레이아웃이 좋냐"고 물었다면, Visual Companion을 수락할 경우 에이전트가 로컬 서버를 띄워(`--open`) 사용자의 웹 브라우저에 A/B/C/D 시안을 렌더링한다. 사용자는 렌더링된 화면을 직접 보며 피드백을 줄 수 있어 의사소통의 오류를 획기적으로 줄일 수 있다.
 
 ## 예시
@@ -47,4 +47,4 @@ AI 에이전트와 아이디어를 브레인스토밍할 때, 말로 설명하�
 
 ## 출처
 
-- [raw/superpowers-brainstorming.md](file:///Users/railscraft/Obsidian/raw/superpowers-brainstorming.md)
+- [raw/superpowers-brainstorming.md](file:///Users/railscraft/[[Obsidian]]/raw/superpowers-brainstorming.md)

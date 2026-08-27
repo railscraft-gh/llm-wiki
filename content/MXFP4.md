@@ -19,7 +19,7 @@ MXFP4는 대형 언어 모델([[공개 가중치 모델]])의 학습 과정에 �
 
 ## 핵심 요지
 - **학습 내장형 4비트 양자화**: 일반적인 사후 양자화(PTQ)와 달리, 모델의 사전 학습 및 배포 단계에 내장되어 사후 가중치 압축으로 인한 정보 손실과 연산 왜곡을 대폭 완화한다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
-- **초대형 모델의 압축 규격**: 매개변수가 2.8조 개에 달하는 초거대 MoE 모델인 문샷(Moonshot)의 Kimi K3에 기본 지원 포맷으로 탑재되어 배포 용량을 획기적으로 줄여준다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
+- **초대형 모델의 압축 규격**: 매개변수가 2.8조 개에 달하는 초거대 MoE 모델인 문샷(Moonshot)의 [[Kimi K3]]에 기본 지원 포맷으로 탑재되어 배포 용량을 획기적으로 줄여준다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 - **물리적 메모리 격차 완화**: FP16 정밀도 기준 5.6TB에 이르는 모델 가중치를 MXFP4를 통해 약 1.4TB 수준으로 줄여주어, 초대형 모델을 구동하기 위한 인프라 비용 부담을 경감시킨다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 - **그럼에도 불구하고 여전히 높은 로컬 구동 한계**: 4비트 압축을 거친 1.4TB의 용량조차 RTX 4090(VRAM 24GB)이나 Mac Studio(통합 메모리 최대 256GB) 등 소비자용 하드웨어의 한계를 크게 넘어서며, 실질적인 구동에는 멀티노드 클러스터와 [[텐서 병렬 처리]]가 필수적이다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 
@@ -31,8 +31,8 @@ MXFP4는 대형 언어 모델([[공개 가중치 모델]])의 학습 과정에 �
 
 MXFP4는 OCP(Open Compute Project)의 마이크로스케일링(Microscaling Formats, MX) 규격에 기반을 둔 압축 기술로서, 모델의 학습(Training) 과정에 이를 직접 내장하거나 조율하여 변환 시 생기는 양자화 노이즈를 근본적으로 억제함으로써 지능 저하를 효과적으로 완화한다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 
-### 2. Kimi K3 적용 양상과 인프라 요구 사양
-실제로 문샷의 Kimi K3 모델(매개변수 2.8조 개)은 MXFP4 포맷을 기본 지원하도록 릴리스되었다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 이 압축을 적용하면 가중치의 물리적 크기는 5.6TB에서 1.4TB로 줄어들지만, 1.4TB라는 용량은 여전히 개인이 통제 가능한 홈 서버 수준을 한참 뛰어넘는다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 
+### 2. [[Kimi K3]] 적용 양상과 인프라 요구 사양
+실제로 문샷의 [[Kimi K3]] 모델(매개변수 2.8조 개)은 MXFP4 포맷을 기본 지원하도록 릴리스되었다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 이 압축을 적용하면 가중치의 물리적 크기는 5.6TB에서 1.4TB로 줄어들지만, 1.4TB라는 용량은 여전히 개인이 통제 가능한 홈 서버 수준을 한참 뛰어넘는다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 
 
 정상적인 추론 구동과 100만 토큰 컨텍스트 창 및 KV 캐시를 온전히 확보하려면 80GB 메모리를 갖춘 H100 GPU 최소 12대 이상(혹은 8대로 이루어진 서버 노드 2~3개)과 NVLink/InfiniBand를 결합한 분산 [[텐서 병렬 처리]](Tensor Parallelism) 인프라 시스템이 강제된다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 
@@ -112,7 +112,7 @@ reconstructed_weights, mse_val = simulate_mxfp4_quantization(weights)
 
 ## 충돌
 - **압축 효율성과 로컬 구동 가능 여부의 모순**:
-  문샷(Moonshot)이 Kimi K3를 배포할 때 MXFP4를 기본 지원함으로써 "학습 내장 압축을 통해 누구나 로컬에서 실행할 수 있을 것 같은 '오픈 가중치' 이미지"를 부각시켰다. 하지만 실제 압축본조차 1.4TB에 달해 소비자용 하드웨어의 VRAM 격차를 좁히지 못하는 모순이 존재한다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 결국 개인 개발자에게 이 '오픈' 가중치는 빌려 써야 하는 비싸고 느린 API에 지나지 않는다는 실질적 장벽과의 충돌이 나타난다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
+  문샷(Moonshot)이 [[Kimi K3]]를 배포할 때 MXFP4를 기본 지원함으로써 "학습 내장 압축을 통해 누구나 로컬에서 실행할 수 있을 것 같은 '오픈 가중치' 이미지"를 부각시켰다. 하지만 실제 압축본조차 1.4TB에 달해 소비자용 하드웨어의 VRAM 격차를 좁히지 못하는 모순이 존재한다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`). 결국 개인 개발자에게 이 '오픈' 가중치는 빌려 써야 하는 비싸고 느린 API에 지나지 않는다는 실질적 장벽과의 충돌이 나타난다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 - **초대형 MoE 모델의 양자화 노이즈 왜곡 취약성**:
   기존 연구에서는 가중치를 최대한 2비트까지 깎아 저사양 장비에 올릴 수 있다고 주장하지만, MoE 모델에서는 양자화 노이즈가 라우터의 올바른 전문가 탐색(Routing Logits)을 망쳐 결과적으로 모델의 논리적 지능을 심각하게 무너뜨린다는 연구 상충점이 소스 문서에서 강하게 지적된다 (`raw/Kimi K3 Is the Biggest Open Source Model Ever. Almost No One Can Run It..md`).
 

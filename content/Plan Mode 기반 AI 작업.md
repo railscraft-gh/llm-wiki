@@ -54,7 +54,7 @@ Plan Mode 기반 AI 작업은 에이전트가 코드를 쓰기 전에 범위, �
 
 ## 상세
 
-보리스는 Claude Code를 바로 실행시키기보다 먼저 계획을 세우게 한다고 설명한다. 예를 들어 "사용자 편집 기능을 추가하려고 한다. 어떤 파일을 수정해야 하고 어떤 테스트가 필요한지, 위험 요소는 무엇인지 정리해 달라"고 요청한 뒤 사람이 API 변경 최소화, 기존 컴포넌트 재사용, 권한 없는 사용자 테스트 추가 같은 제약을 보탠다.
+보리스는 [[Claude Code]]를 바로 실행시키기보다 먼저 계획을 세우게 한다고 설명한다. 예를 들어 "사용자 편집 기능을 추가하려고 한다. 어떤 파일을 수정해야 하고 어떤 테스트가 필요한지, 위험 요소는 무엇인지 정리해 달라"고 요청한 뒤 사람이 API 변경 최소화, 기존 컴포넌트 재사용, 권한 없는 사용자 테스트 추가 같은 제약을 보탠다.
 
 카파시 자료의 [[Thinking과 Understanding 분리]]와도 맞닿아 있다. 에이전트는 thinking, 즉 처리와 세부 구현을 잘할 수 있지만 무엇을 만들지, 어떤 품질 기준으로 검증할지, 어떤 시스템 모델을 유지할지는 사람이 이해 위에서 정해야 한다.
 
@@ -138,7 +138,7 @@ Plan Mode는 [[Claude Code 권한 설계]]의 3가지 권한 모드 중 하나�
 
 ## 출처
 
-- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- [[Claude Code]] 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
 - 보리스_클로드코드_실무_사용법
 - Claude-Code-실무활용법-보리스-관점-정리
 - 안드레_카파시_인터뷰_정리
@@ -146,6 +146,6 @@ Plan Mode는 [[Claude Code 권한 설계]]의 3가지 권한 모드 중 하나�
 - opencode-masterclass-summary
 - pi-coding-agent-overview
 - cc101_axwith_ko
-- [[Ralph Loop]] - AI 코딩 자율 워크플로우 Spectrum Development 통합
+- [[Ralph Loop]] - AI 코딩 자율 [[워크플로]]우 Spectrum Development 통합
 - https://opencode.ai/docs/agents/
 - https://pi.dev/docs/latest/usage

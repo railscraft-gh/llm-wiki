@@ -23,16 +23,16 @@ AI 기술의 과도한 기대와 실질적 프로덕션 도달률의 괴리로 �
 
 ## 예시
 - 단순 자동화 봇의 88%가 유지보수 및 복잡성 문제로 운영 중단됨.
-- 단순 [[LLM]] API 호출만으로는 풀 수 없는 복잡한 워크플로우의 증가.
+- 단순 [[LLM]] API 호출만으로는 풀 수 없는 복잡한 [[워크플로]]우의 증가.
 
 ## 충돌
-- [AI 에이전트는 죽었다](file:///Users/railscraft/Obsidian/raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md)
-- [Harness Engineering](file:///Users/railscraft/Obsidian/raw/[[Harness Engineering]] for Self-Improvement.md)
+- [AI 에이전트는 죽었다](file:///Users/railscraft/[[Obsidian]]/raw/AI 에이전트는 죽었다. 88퍼센트가 프로덕션 도달 전에 실패하는 이유.md)
+- [Harness Engineering](file:///Users/railscraft/[[Obsidian]]/raw/[[Harness Engineering]] for Self-Improvement.md)
 
 ## 관련 노트
 - [[에이전트_워크플로우_패턴]]
 - [[루프 엔지니어링]]
 
 ## 출처
-- [raw/AI 겨울이 시작됐다-ko.md](file:///Users/railscraft/Obsidian/raw/AI 겨울이 시작됐다-ko.md)
+- [raw/[[AI 겨울]]이 시작됐다-ko.md](file:///Users/railscraft/[[Obsidian]]/raw/[[AI 겨울]]이 시작됐다-ko.md)
 

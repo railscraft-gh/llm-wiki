@@ -33,7 +33,7 @@ updated: 2026-07-21
   - Thundering Herd 상황: 노드는 분산되어 있으나 backend shared resource(예: WAL log, DB Single Row Key) 조율 연산에 극심한 Lock 경합 발생.
 
 ## 예시
-- URL 단축기 서비스에서 대형 슈퍼볼 광고 게시로 특정 링크가 바이럴될 때, [초당 1,000만 건의 동시 접속](file:///Users/railscraft/Obsidian/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L9)이 발생하여 데이터베이스 WAL(Write-Ahead Log) 경합 및 DB 마비 유발.
+- URL 단축기 서비스에서 대형 슈퍼볼 광고 게시로 특정 링크가 바이럴될 때, [초당 1,000만 건의 동시 접속](file:///Users/railscraft/[[Obsidian]]/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L9)이 발생하여 데이터베이스 WAL(Write-Ahead Log) 경합 및 DB 마비 유발.
 
 ## 충돌
 - **캐시 Stampede와의 연관**: 캐시 서버가 중단되거나 만료될 경우 병목 현상이 백엔드 DB로 직접 전파되는 캐시 스탬피드(Cache Stampede) 현상으로 확장될 수 있음.
@@ -43,5 +43,5 @@ updated: 2026-07-21
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-- [raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md#L39](file:///Users/railscraft/Obsidian/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L39)
-- [raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md#L43](file:///Users/railscraft/Obsidian/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L43)
+- [raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md#L39](file:///Users/railscraft/[[Obsidian]]/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L39)
+- [raw/The Day a Google L7 Engineer Tore My System Design to Shreds.md#L43](file:///Users/railscraft/[[Obsidian]]/raw/The%20Day%20a%20Google%20L7%20Engineer%20Tore%20My%20System%20Design%20to%20Shreds.md#L43)

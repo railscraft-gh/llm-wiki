@@ -28,7 +28,7 @@ updated: 2026-07-21
    - **작업 분해 (Task Decomposition)**: 복잡한 작업을 관리 가능한 하위 목표로 분해한다. CoT(Chain of Thought), Tree of Thoughts 등 프롬프트 기법을 활용한다.
    - **자기 반성 (Self-Reflection)**: ReAct, Reflexion, Chain of Hindsight와 같은 프레임워크를 통해 과거의 행동을 비판하고 실수를 개선하여 시행착오를 극복한다.
 2. **기억 (Memory)**:
-   - **단기 기억**: 인컨텍스트 학습(In-context learning)을 통한 트랜스포머 모델의 컨텍스트 윈도우.
+   - **단기 기억**: 인컨텍스트 학습(In-context learning)을 통한 [[트랜스포머]] 모델의 컨텍스트 윈도우.
    - **장기 기억**: 외부 벡터 저장소와 빠른 검색 시스템(MIPS - LSH, FAISS 등)을 활용해 무한에 가까운 정보를 장기간 보존하고 필요할 때 조회한다.
 3. **도구 사용 (Tool use)**:
    - 모델의 가중치에 포함되지 않은 최신 정보나 계산 능력을 보완하기 위해 외부 API, 코드 인터프리터, 기호 모듈 등을 호출한다. MRKL, TALM, Toolformer, HuggingGPT 등이 대표적이다.

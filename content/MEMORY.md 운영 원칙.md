@@ -75,11 +75,11 @@ updated: '2026-06-22'
 # MEMORY.md 운영 원칙
 
 ## 한 줄 정의
-AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결정 사항, 지식 자산, 제약 사항 및 시행착오(Dead Ends)를 마크다운 기반으로 정리하여 세션 로드 시 자동 반영하는 지식 보존(Knowledge Persistence) 운영 매뉴얼이다.
+AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결정 사항, 지식 자산, 제약 사항 및 시행착오(Dead Ends)를 마크다운 기반으로 정리하여 세션 로드 시 자동 반영하는 지식 보존(Knowledge Persistence) [[운영 매뉴얼]]이다.
 
 ## 핵심 요지
 1. **장기 지식 보존**: 임시 TODO나 일회성 로그를 철저히 배제하고, 여러 세션에 걸쳐 유효할 기술적 결정 배경 및 아키텍처 맥락을 집중 아카이빙한다.
-2. **지식(WHAT)과 지침(HOW)의 격리**: `CLAUDE.md`가 에이전트가 어떻게 준수해야 할지 지침(HOW)을 담는 운영 매뉴얼이라면, `MEMORY.md`는 에이전트가 무엇을 알고 있어야 할지 프로젝트 상태와 결정(WHAT)을 보존한다.
+2. **지식(WHAT)과 지침(HOW)의 격리**: `CLAUDE.md`가 에이전트가 어떻게 준수해야 할지 지침(HOW)을 담는 [[운영 매뉴얼]]이라면, `MEMORY.md`는 에이전트가 무엇을 알고 있어야 할지 프로젝트 상태와 결정(WHAT)을 보존한다.
 3. **세션 자동 로딩**: 대화가 시작될 때마다 `MEMORY.md` 파일의 앞부분 200줄 또는 25KB 용량 중 먼저 도달하는 분량을 자동으로 로드하여 에이전트의 단기 기억상실 한계를 극복하고 빠른 컨텍스트 정합성을 제공한다.
 4. **자동 메모리 설정**: `autoMemoryEnabled: true` 설정을 활용하여 AI 에이전트가 핵심 정보를 스스로 기록하도록 관리하되, 정기적인 정리(Prune)를 통해 노이즈를 걸러낸다.
 
@@ -103,8 +103,8 @@ AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결�
   }
   ```
 
-### 2. CLAUDE.md 대 MEMORY.md 역할 비교
-| 구분 | CLAUDE.md (운영 규칙) | MEMORY.md (지식 보존) |
+### 2. [[CLAUDE.md]] 대 MEMORY.md 역할 비교
+| 구분 | [[CLAUDE.md]] (운영 규칙) | MEMORY.md (지식 보존) |
 | --- | --- | --- |
 | **핵심 성격** | 에이전트가 **어떻게(HOW)** 동작해야 하는지 지시 | 에이전트가 **무엇을(WHAT)** 기억하고 있어야 하는지 보존 |
 | **주요 내용** | 기술 스택, 컴포넌트 크기 제약, 테스트 지침, 선호 도구, 출력 포맷 | 아키텍처/제품 결정 사항, 기술적 교훈, 제약 사항, 실패한 시행착오 |
@@ -113,7 +113,7 @@ AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결�
 
 ### 3. MEMORY.md 운영 모범 사례 (5대 수칙)
 1. **장기적 가치를 지닌 지식만 저장**: "한 달 후에도 이 정보가 여전히 유효할 것인가?"를 판단 기준으로 삼는다. 단기 TODO, 일회성 리팩토링 로그, 수명이 짧은 실험적 시도는 철저히 배제한다.
-2. **운영 지침(Operational Instructions) 배제**: 에이전트에게 "항상 TypeScript를 써라"와 같은 명령형 규칙은 CLAUDE.md에 선언하고, MEMORY.md에는 "Supabase 마이그레이션이 완료됨"과 같은 지식/사실적 정보를 기술한다.
+2. **운영 지침(Operational Instructions) 배제**: 에이전트에게 "항상 TypeScript를 써라"와 같은 명령형 규칙은 [[CLAUDE.md]]에 선언하고, MEMORY.md에는 "Supabase 마이그레이션이 완료됨"과 같은 지식/사실적 정보를 기술한다.
 3. **WHAT뿐 아니라 WHY(추론 과정) 설명**: 단순 "Redis로 전환함" 대신 "서버리스 콜드 스타트로 인한 메모리 리셋 세션 불안정을 피하기 위해 Redis로 전환함"과 같이 의사결정의 컨텍스트를 제공한다.
 4. **간결한 구조 유지**: AI 에이전트가 효율적으로 구문을 파싱할 수 있도록 글머리 기호(불릿), 짧고 명확한 구조화 섹션으로 작성하며, 방대한 줄글 에세이는 피한다.
 5. **시행착오(Dead Ends) 기록**: 시도했으나 모바일 연결 신뢰성 등 다양한 부작용으로 인해 취소한 설계나 실패 사례를 기록하여, 미래에 동일한 오동작이나 실패 방안을 시도하지 않도록 제약한다.
@@ -151,6 +151,6 @@ AI 에이전트의 장기적인 컨텍스트 유지를 위해, 아키텍처 결�
   - 로컬 환경의 스키마와 토큰 캐싱을 조율하는 관리 원칙.
 
 ## 출처
-- Boris Cherny, *Claude Code Best Practices and Memory management* (2026)
-- Anthropic, *Claude Code Official Reference Documentation* (autoMemoryEnabled & Memory guidelines)
+- Boris Cherny, *[[Claude Code]] Best Practices and Memory management* (2026)
+- Anthropic, *[[Claude Code]] Official Reference Documentation* (autoMemoryEnabled & Memory guidelines)
 - `raw/Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드.md`

@@ -28,7 +28,7 @@ AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니
 - 사람이 브라우저에서 읽고 탐색하고 공유해야 하면 HTML이 유리하다.
 - 다른 agent가 읽고 다음 단계로 넘겨야 하면 Markdown이 더 가볍고 parse-friendly하다.
 - 사람과 agent가 둘 다 읽는 문서는 Markdown source와 HTML artifact를 분리하는 것이 가장 안정적이다.
-- Thariq Shihipar(Claude Code 엔지니어링 리드)는 'The Unreasonable Effectiveness of HTML'을 기고하고 HTML 출력을 적극 옹호했다.
+- Thariq Shihipar([[Claude Code]] 엔지니어링 리드)는 '[[The Unreasonable Effectiveness of HTML]]'을 기고하고 HTML 출력을 적극 옹호했다.
 - 2,000단어 보고서 기준 Markdown(3,000 토큰) 대비 Lean HTML은 7,200 토큰(2.4배), Full HTML(CSS 포함)은 14,400 토큰(4.8배)의 오버헤드를 갖는다.
 - 보안(JS XSS), 접근성(WCAG 미준수), HTML diff의 극심한 소음이 Team HTML 진영이 마주하는 실무 장벽이다.
 
@@ -58,7 +58,7 @@ AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니
 - 에이전트 간 중간 산출물 -> Markdown
 - stakeholder 보고서 -> HTML
 - Git으로 추적하는 소스 -> Markdown
-- 디자인 시스템 비교 및 인터랙티브 아티팩트 -> HTML
+- [[디자인 시스템]] 비교 및 인터랙티브 아티팩트 -> HTML
 - 개인 메모, wiki 노트 -> Markdown
 
 ## 충돌
@@ -73,6 +73,6 @@ AI 산출물 포맷 결정 트리는 Markdown과 HTML을 취향 문제가 아니
 
 ## 출처
 - Anthropic 엔지니어가 마크다운을 버리라고 말했다. 그 말의 진짜 뜻
-- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/Obsidian/raw/CLAUDE.md%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
-- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/Obsidian/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95.md)
+- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/[[Obsidian]]/raw/[[CLAUDE.md]]%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
+- [99%의 사람보다 더 나은 Harness Engineer를 만드는 법](file:///Users/railscraft/[[Obsidian]]/raw/99%25%EC%9D%98%20%EC%82%AC%EB%9E%8C%EB%B3%B4%EB%8B%A4%20%EB%8D%94%20%EB%82%98%EC%9D%80%20Harness%20Engineer%EB%A5%BC%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EB%B2%95.md)
 

@@ -27,18 +27,18 @@ updated: 2026-07-10
 Meta-Harness는 대규모 언어 모델 주변의 하네스 코드를 end-to-end로 검색하고 최적화하는 외부 루프 시스템으로, 파일시스템을 통해 모든 이전 후보의 소스 코드와 실행 추적에 접근하는 에이전트 제안자를 사용한다.
 
 ## 핵심 요지
-- 기존 텍스트 최적화기는 피드백을 짧은 요약이나 스칼라 점수로 압축해 하네스 엔지니어링에 부적합하다.
+- 기존 텍스트 최적화기는 피드백을 짧은 요약이나 스칼라 점수로 압축해 [[하네스 엔지니어링]]에 부적합하다.
 - Meta-Harness는 **무손실 파일시스템 접근**을 제공해 제안자가 `grep`과 `cat`으로 이전 실패의 원인을 직접 추론할 수 있게 한다.
 - 단일 평가가 최대 1,000만 토큰의 진단 정보를 생성할 수 있으며, 이는 기존 텍스트 최적화 설정의 최대 피드백 예산보다 약 1,000배 크다.
 - 모델을 제어하는 하네스 설계의 유무 및 품질에 따라 동일 모델 벤치마크 테스트에서 최대 6배의 성능 격차가 발생할 수 있음 [raw/arxiv-2603.28052-meta-harness.md]
 
 ## 상세
 
-하네스 엔지니어링은 모델 가중치를 바꾸지 않고 모델이 보는 정보를 결정하는 코드(프롬프트 구성, 검색, 메모리, 오케스트레이션)를 개선하는 작업이다. 기존에는 인간 엔지니어가 실패를 검사하고 휴리스틱을 조정하는 수작업이었으나, Meta-Harness는 이 과정을 [[코딩 에이전트]] 제안자에게 위임한다.
+[[하네스 엔지니어링]]은 모델 가중치를 바꾸지 않고 모델이 보는 정보를 결정하는 코드(프롬프트 구성, 검색, 메모리, 오케스트레이션)를 개선하는 작업이다. 기존에는 인간 엔지니어가 실패를 검사하고 휴리스틱을 조정하는 수작업이었으나, Meta-Harness는 이 과정을 [[코딩 에이전트]] 제안자에게 위임한다.
 
 후속 raw 기준으로 보면 Meta-Harness는 [[Agent Harness]] 자체를 다시 탐색하는 상위 루프다. 즉 개별 agent의 orchestration loop, memory, context management, verification 구조를 사람이 직접 손보는 대신, 다른 agent가 하네스 후보를 생성하고 평가하는 셈이다.
 
-제안자(Claude Code 기반)는 파일시스템을 통해 이전 하네스의 소스 코드, 평가 점수, 실행 추적(프롬프트, 도구 호출, 모델 출력, 상태 업데이트)을 선택적으로 검사한다. 반복당 중간값 82개 파일을 읽으며, 하네스 소스 코드(41%)와 실행 추적(40%)에 거의 균등하게 접근한다. 이 비마코비안(non-Markovian) 접근이 압축된 피드백 최적화기와의 핵심 차이다.
+제안자([[Claude Code]] 기반)는 파일시스템을 통해 이전 하네스의 소스 코드, 평가 점수, 실행 추적(프롬프트, 도구 호출, 모델 출력, 상태 업데이트)을 선택적으로 검사한다. 반복당 중간값 82개 파일을 읽으며, 하네스 소스 코드(41%)와 실행 추적(40%)에 거의 균등하게 접근한다. 이 비마코비안(non-Markovian) 접근이 압축된 피드백 최적화기와의 핵심 차이다.
 
 **검색 루프:**
 1. 제안자가 파일시스템을 읽고 이전 후보를 검사
@@ -71,7 +71,7 @@ H^{*} = \operatorname*{arg\,max}_{H}\mathbb{E}_{x\sim\mathcal{X},\tau\sim p_M(H,
 
 ## 예시
 - 발견된 텍스트 분류 하네스: Label-Primed Query 앵커드 분류 — 유효 레이블 목록, 클래스별 대표 예제, 로컬 대조 쌍을 포함한 단일 프롬프트 구성
-- 발견된 수학 검색 하네스: 4-경로 BM25 프로그램 — 어휘 라우터가 쿼리를 조합론/기하/정수론/기본 경로에 할당
+- 발견된 수학 검색 하네스: 4-경로 [[BM25]] 프로그램 — 어휘 라우터가 쿼리를 조합론/기하/정수론/기본 경로에 할당
 - 발견된 TerminalBench-2 하네스: 환경 부트스트래핑 — 에이전트 루프 시작 전 샌드박스 환경 스냅샷을 수집해 초기 프롬프트에 주입
 
 ## 충돌
@@ -87,10 +87,10 @@ H^{*} = \operatorname*{arg\,max}_{H}\mathbb{E}_{x\sim\mathcal{X},\tau\sim p_M(H,
 
 ## 출처
 - arxiv-2603.28052-meta-harness
-- [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/Obsidian/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95)
-- [RuboCop - Ruby 정적 코드 분석기 완벽 정리](file:///Users/railscraft/Obsidian/raw/[[RuboCop]]%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md)
-- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/Obsidian/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
-- [하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
-- [GLM-5.1-vs-Kimi-K2.6-Coding-Comparison](file:///Users/railscraft/Obsidian/raw/[[GLM-5]].1-vs-Kimi-K2.6-Coding-Comparison.md)
-- [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/Obsidian/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95.md)
+- [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/[[Obsidian]]/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95)
+- [RuboCop - Ruby 정적 코드 분석기 완벽 정리](file:///Users/railscraft/[[Obsidian]]/raw/[[RuboCop]]%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md)
+- [Andrej Karpathy가 AI [[코딩 에이전트]]의 고질병을 고치는 방법. 마크다운 파일 하나](file:///Users/railscraft/[[Obsidian]]/raw/Andrej%20Karpathy%EA%B0%80%20AI%20%EC%BD%94%EB%94%A9%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98%20%EA%B3%A0%EC%A7%88%EB%B3%91%EC%9D%84%20%EA%B3%A0%EC%B9%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98.md)
+- [하네스 엔지니어링 - 65줄 [[CLAUDE.md]]가 최고의 스킬인 이유](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20[[CLAUDE.md]]%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
+- [GLM-5.1-vs-Kimi-K2.6-Coding-Comparison](file:///Users/railscraft/[[Obsidian]]/raw/[[GLM-5]].1-vs-Kimi-K2.6-Coding-Comparison.md)
+- [프로덕션 AI 에이전트를 위한 [[Agent Harness]] 구축](file:///Users/railscraft/[[Obsidian]]/raw/%ED%94%84%EB%A1%9C%EB%8D%95%EC%85%98%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20Agent%20Harness%20%EA%B5%AC%EC%B6%95.md)
 

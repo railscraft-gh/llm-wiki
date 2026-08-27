@@ -27,7 +27,7 @@ HTML의 요소들은 기본적으로 줄바꿈을 유발하고 전체 가로 너
 ## 상세
 
 ### 블록 레벨 요소 (Block-level Elements)
-- **동작 방식**: 언제나 새로운 줄(line)에서 시작하며, 부모 요소(혹은 페이지)의 전체 가로 너비(100%)를 차지한다 [raw/Block-Level and Inline Elements. The difference between div and span.md#L17](file:///Users/railscraft/Obsidian/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L17). 좌우 마진과 패딩을 완전히 지원한다.
+- **동작 방식**: 언제나 새로운 줄(line)에서 시작하며, 부모 요소(혹은 페이지)의 전체 가로 너비(100%)를 차지한다 [raw/Block-Level and Inline Elements. The difference between div and span.md#L17](file:///Users/railscraft/[[Obsidian]]/raw/Block-Level%20and%20Inline%20Elements.%20The%20difference%20between%20div%20and%20span.md#L17). 좌우 마진과 패딩을 완전히 지원한다.
 - **용도**: 다른 블록 레벨 요소 또는 인라인 요소를 내부에 포함하여 레이아웃의 구획을 짓거나 큰 틀을 구성하는 컨테이너 역할을 한다.
 - **예시**:
   - `<div>`: 기본 스타일이나 필수 속성이 없는 일반 그룹화 컨테이너.

@@ -63,6 +63,6 @@ Gartner의 2014년 조사에 따르면 기업 L&D 교육 프로그램의 **45%**
 - [[기록으로 성장하는 법]]
 
 ## 출처
-- [아무도 AI를 배우고 싶어 하지 않는다](file:///Users/railscraft/Obsidian/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4.md)
-- [아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [아무도 AI를 배우고 싶어 하지 않는다](file:///Users/railscraft/[[Obsidian]]/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4.md)
+- [아무도 AI를 배우고 싶어 하지 않는다 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/%EC%95%84%EB%AC%B4%EB%8F%84%20AI%EB%A5%BC%20%EB%B0%B0%EC%9A%B0%EA%B3%A0%20%EC%8B%B6%EC%96%B4%20%ED%95%98%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
 

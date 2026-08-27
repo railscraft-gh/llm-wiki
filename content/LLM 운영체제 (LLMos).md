@@ -32,7 +32,7 @@ updated: 2026-06-22
 | **CPU (Central Processing Unit)** | **[[LLM]] (Large Language Model)** | 텍스트와 의미 데이터를 바탕으로 의사결정을 수행하는 핵심 추론 엔진 |
 | **Bytes** | **Tokens** | 정보 표현의 최소 기본 단위 (비결정적/통계적 매칭) |
 | **RAM (Temporary Memory)** | **Context Window** | 모델이 동시에 처리하는 가용 임시 작업 메모리 영역 (한계 초과 시 크래시 및 누락 발생) |
-| **Hard Drive (Storage)** | **[[RAG]] / Vector Database** | 영구 보존용 시맨틱 데이터 및 임베딩 보조 기억 장치 |
+| **Hard Drive (Storage)** | **[[RAG]] / Vector Database** | 영구 보존용 시맨틱 데이터 및 [[임베딩]] 보조 기억 장치 |
 | **Software Interface** | **Prompts** | 모듈 간 데이터 규격, 에이전트 페르소나 및 행동 양식 지침 인터페이스 |
 
 ### 2. 단일 프롬프트 한계와 다중 에이전트 OS로의 분화
@@ -51,4 +51,4 @@ updated: 2026-06-22
 - [[RAG 아키텍처 선택]]
 
 ## 출처
-- raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md (Andrej Karpathy, Post on X about [[LLM]]os & courses)
+- raw/나만의 개인용 에이전트 시스템 개발하기: 단계별 가이드.md ([[Andrej Karpathy]], Post on X about [[LLM]]os & courses)

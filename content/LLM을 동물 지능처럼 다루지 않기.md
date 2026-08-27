@@ -66,6 +66,6 @@ updated: '2026-06-22'
 - 안드레_카파시_인터뷰_정리
 - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
 - sequoia-ascent-2026-karpathy
-- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- [[Claude Code]] 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
 - 보리스_클로드코드_실무_사용법
 - Claude-Code-실무활용법-보리스-관점-정리

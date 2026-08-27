@@ -45,7 +45,7 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 ## 핵심 요지
 - 디자인 품질은 한 번의 좋은 화면보다, 어떤 층의 결정을 누가 맡는지에서 갈린다.
 - 기본값 층은 spacing, typography, token, component behavior를 고정한다.
-- 지속 규칙 층은 DESIGN.md처럼 agent가 반복 참조할 디자인 맥락 파일을 관리한다.
+- 지속 규칙 층은 [[DESIGN.md]]처럼 agent가 반복 참조할 디자인 맥락 파일을 관리한다.
 - task layer는 [[디자인 에이전트 5종]]처럼 리서치, 문제 정의, 아이디어 발산, flow 설계를 자동화한다.
 - 아키텍처 층은 [[AI Experience Architect]]처럼 위임 경계, review gate, 권한, 조직 책임을 설계한다.
 - Four-for-One 통폐합의 압박: AI 도구 체인을 다루며 1인당 아웃풋이 극적으로 증가(속도 89% 향상, 품질 91% 향상)하자, 기업들이 과거 3~4인분의 전담 역할(Design Director, UX Researcher, Systems Designer, Product Designer)을 단일 JD와 연봉 밴드(예: 13만 달러 수준)로 압축시키는 현상이다.
@@ -72,7 +72,7 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 
 맨 위에는 [[AI Experience Architect]]가 있다. 여기서는 누가 무엇을 승인하는지, AI가 어디까지 결정하는지, 규제·감사·fallback을 어떻게 설계할지, 조직 안에서 어떤 사회적 계약을 둘지를 다룬다. 이 층은 디자인이 아니라 운영처럼 보일 수 있지만, 실제로는 제품 경험의 경계를 정하는 디자인이다.
 
-이 네 층을 한 번에 보지 않으면 흔한 오해가 생긴다. 예를 들어 task agent만 만들고 기본값 층을 비워 두면 산출 속도는 빨라져도 시각 drift가 심해진다. 반대로 DESIGN.md만 잘 써두고 문제 정의 workflow를 설계하지 않으면 보기 좋은 평균 UI만 반복 생성할 수 있다.
+이 네 층을 한 번에 보지 않으면 흔한 오해가 생긴다. 예를 들어 task agent만 만들고 기본값 층을 비워 두면 산출 속도는 빨라져도 시각 drift가 심해진다. 반대로 [[DESIGN.md]]만 잘 써두고 문제 정의 workflow를 설계하지 않으면 보기 좋은 평균 UI만 반복 생성할 수 있다.
 
 `raw/Agentic AI, design systems & Figma. a practical guide-ko.md`는 이 프레임의 가장 아래층을 더 구체화한다. Variables, component property, state, slots, auto layout, Code Connect는 모두 파일 단위에서 맞물려야 한다. 이건 Figma를 "그림 그리는 앱"이 아니라 machine-readable design contract로 쓰는 방법이다.
 
@@ -90,8 +90,8 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 ## 예시
 
 - onboarding 개편: 기본값 층에서 form spacing과 validation tone을 고정하고, task layer에서 UX flow agent로 happy path와 edge case를 설계한다.
-- B2B SaaS 재설계: DESIGN.md로 density와 table rule을 고정하고, architect layer에서 어떤 화면까지 AI가 초안 생성하고 어디서 사람이 승인할지 정한다.
-- 디자인 조직 운영: 디자이너 주니어는 기본값과 DESIGN.md를 관리하고, 시니어는 task agent prompt를 다듬고, 리드는 [[AI Experience Architect]] 관점에서 권한과 review gate를 조정한다.
+- B2B SaaS 재설계: [[DESIGN.md]]로 density와 table rule을 고정하고, architect layer에서 어떤 화면까지 AI가 초안 생성하고 어디서 사람이 승인할지 정한다.
+- 디자인 조직 운영: 디자이너 주니어는 기본값과 [[DESIGN.md]]를 관리하고, 시니어는 task agent prompt를 다듬고, 리드는 [[AI Experience Architect]] 관점에서 권한과 review gate를 조정한다.
 
 ### 비디자이너 디자인 보편화 시기의 포지셔닝
 - 경영진 92%가 기대하는 기초 픽셀 배치 및 템플릿 조립 능력은 누구나 사용할 수 있는 AI의 등장으로 한계 비용이 0에 수렴한다.
@@ -121,21 +121,21 @@ AI 디자인 역할 맵은 AI 시대 디자인 작업을 기본값, 지속 규�
 - From faster pencil to [[AI Experience Architect]]. a designer’s path
 - Good Design Doesn’t Happen By Default
 - Agentic Product Design. 오늘 바로 자동화할 수 있는 5가지 디자인 작업
-- 모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션
-- [Agentic AI, design systems & Figma](file:///Users/railscraft/Obsidian/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide)
-- [Why senior designers are doing four jobs for one salary in 2026](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026)
-- [After Claude Code. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/Obsidian/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
-- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/Obsidian/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
-- [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
-- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/Obsidian/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
-- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
-- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/Obsidian/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
-- [Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals](file:///Users/railscraft/Obsidian/raw/Code%20Is%20Not%20Cheap.%20How%20to%20Multiply%20Your%20AI%E2%80%99s%20Output%20With%20Software%20Fundamentals.md)
-- [The most important Design System in 2026 that designers missed was built by](file:///Users/railscraft/Obsidian/raw/The%20most%20important%20Design%20System%20in%202026%20that%20designers%20missed%20was%20built%20by)
-- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/Obsidian/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
-- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
-- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
-- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
-- [How to write a DESIGN.md file Claude can actually use-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md)
-- [The Complete (Honest) Guide to OpenClaw](file:///Users/railscraft/Obsidian/raw/The%20Complete%20%28Honest%29%20Guide%20to%20[[OpenClaw]].md)
+- 모든 [[DESIGN.md]]에 꼭 들어가야 할 9가지 섹션
+- [Agentic AI, design systems & Figma](file:///Users/railscraft/[[Obsidian]]/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide)
+- [Why senior designers are doing four jobs for one salary in 2026](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026)
+- [After [[Claude Code]]. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/[[Obsidian]]/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
+- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
+- [How to Build the Knowledge System [[Andrej Karpathy]] Uses (And What It’s Actually](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
+- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/[[Obsidian]]/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
+- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
+- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/[[Obsidian]]/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
+- [Code Is Not Cheap. How to Multiply Your AI’s Output With Software Fundamentals](file:///Users/railscraft/[[Obsidian]]/raw/Code%20Is%20Not%20Cheap.%20How%20to%20Multiply%20Your%20AI%E2%80%99s%20Output%20With%20Software%20Fundamentals.md)
+- [The most important Design System in 2026 that designers missed was built by](file:///Users/railscraft/[[Obsidian]]/raw/The%20most%20important%20Design%20System%20in%202026%20that%20designers%20missed%20was%20built%20by)
+- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
+- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/[[Obsidian]]/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
+- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
+- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
+- [How to write a [[DESIGN.md]] file Claude can actually use-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20write%20a%20[[DESIGN.md]]%20file%20Claude%20can%20actually%20use-ko.md)
+- [The Complete (Honest) Guide to OpenClaw](file:///Users/railscraft/[[Obsidian]]/raw/The%20Complete%20%28Honest%29%20Guide%20to%20[[OpenClaw]].md)
 

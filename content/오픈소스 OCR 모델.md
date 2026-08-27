@@ -38,16 +38,16 @@ aliases:
 
 ### 벤치마크 성능 수치
 
-- **olmOCR 벤치마크 (AllenAI 독립 측정)**: [[Chandra OCR 2]]는 [85.9% 점수를 받아 GPT-4o (69.9%)를 16%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L31-L32).
-- **90개 언어 다국어 벤치마크**: [[Chandra OCR 2]]는 [72.7% 점수를 기록해 Gemini 2.5 Flash (60.8%)를 12%p 차이로 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L47).
-- **주요 43개 언어 벤치마크**: [[Chandra OCR 2]]는 [77.8%를 기록해 GPT-5 Mini (60.5%)를 앞섰다](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55).
-- **이전 Chandra 1(9B) 대비 향상 수치**: 4B로 모델 크기를 절반 이하로 줄였음에도 처리 속도가 2배 늘어났으며, [칸나다어 +42.6%p, 말라얄람어 +46.2%p, 텔루구어 +39.1%p 성능이 향상](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55)되었다.
-- **처리 속도**: 단일 NVIDIA H100 GPU 기준 [초당 약 2페이지를 처리](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L79)한다.
+- **olmOCR 벤치마크 (AllenAI 독립 측정)**: [[Chandra OCR 2]]는 [85.9% 점수를 받아 GPT-4o (69.9%)를 16%p 차이로 앞섰다](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L31-L32).
+- **90개 언어 다국어 벤치마크**: [[Chandra OCR 2]]는 [72.7% 점수를 기록해 Gemini 2.5 Flash (60.8%)를 12%p 차이로 앞섰다](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L47).
+- **주요 43개 언어 벤치마크**: [[Chandra OCR 2]]는 [77.8%를 기록해 GPT-5 Mini (60.5%)를 앞섰다](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55).
+- **이전 Chandra 1(9B) 대비 향상 수치**: 4B로 모델 크기를 절반 이하로 줄였음에도 처리 속도가 2배 늘어났으며, [칸나다어 +42.6%p, 말라얄람어 +46.2%p, 텔루구어 +39.1%p 성능이 향상](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L55)되었다.
+- **처리 속도**: 단일 NVIDIA H100 GPU 기준 [초당 약 2페이지를 처리](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L79)한다.
 
 ### 확장 기능 및 라이선스 정책
 
 - **기능**: 중첩 헤더 표 구조 보존, 체크박스 인식, 순서도를 Mermaid 다이어그램 포맷 코드로 변환 출력.
-- **라이선스**: 소스코드는 Apache 2.0 오픈소스이나, 모델 가중치는 OpenRAIL-M 라이선스를 취한다. [연구·개인 및 연 매출 200만 달러 미만 스타트업에는 무료](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L107)이나, 대기업 상용화 시 별도 라이선스가 요구된다.
+- **라이선스**: 소스코드는 Apache 2.0 오픈소스이나, 모델 가중치는 OpenRAIL-M 라이선스를 취한다. [연구·개인 및 연 매출 200만 달러 미만 스타트업에는 무료](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md#L107)이나, 대기업 상용화 시 별도 라이선스가 요구된다.
 
 ## 예시
 
@@ -75,4 +75,4 @@ chandra input.pdf ./output
 
 ## 출처
 
-- [RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md](file:///Users/railscraft/Obsidian/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md)
+- [RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark..md](file:///Users/railscraft/[[Obsidian]]/raw/RIP%20Commercial%20OCR.%20An%20Open-Source%20Model%20Just%20Topped%20Every%20Benchmark..md)

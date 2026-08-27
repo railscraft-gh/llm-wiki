@@ -17,7 +17,7 @@ updated: 2026-07-21
 # 고급 UI 디자인을 위한 8가지 미세 정밀도 원칙
 
 ## 한 줄 정의
-디지털 제품의 만듦새를 결정짓는 요인은 거창한 트렌드가 아니라 대다수 디자이너가 간과하는 8가지 미세 디테일(시각적 위계, 여백, 일관된 라디우스, 보이지 않는 정렬, 컬러 절제, 목적성 모션, 지연 시간 설계, 요소 덜어내기)에 달렸다는 디자인 품질 원칙이다.
+디지털 제품의 만듦새를 결정짓는 요인은 거창한 트렌드가 아니라 대다수 디자이너가 간과하는 8가지 미세 디테일([[시각적 위계]], 여백, 일관된 라디우스, 보이지 않는 정렬, 컬러 절제, 목적성 모션, 지연 시간 설계, 요소 덜어내기)에 달렸다는 디자인 품질 원칙이다.
 
 ## 핵심 요지
 - **시각적 무게 차등 분배 (Visual Hierarchy)**: 모든 요소의 폰트 두께, Opacity, 여백을 동일하게 맞추면 위계가 무너진다. 보조 텍스트 Opacity 축소, 볼드체 남용 자제, 테두리 남발 억제로 강조점을 명확히 해야 한다.
@@ -50,6 +50,6 @@ updated: 2026-07-21
 - [[AI 시대 디자인 시스템]]
 
 ## 출처
-- 8가지 UI 디테일 목차 및 시각적 무게/여백: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L25-L75](file:///Users/railscraft/Obsidian/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L25-L75)
-- Border Radius, 정렬 보정, 색상 절제: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L77-L165](file:///Users/railscraft/Obsidian/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L77-L165)
-- 애니메이션, 미세 지연(Micro Delay), 덜어내기: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L167-L251](file:///Users/railscraft/Obsidian/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L167-L251)
+- 8가지 UI 디테일 목차 및 시각적 무게/여백: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L25-L75](file:///Users/railscraft/[[Obsidian]]/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L25-L75)
+- Border Radius, 정렬 보정, 색상 절제: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L77-L165](file:///Users/railscraft/[[Obsidian]]/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L77-L165)
+- 애니메이션, 미세 지연(Micro Delay), 덜어내기: [raw/8 Tiny UI Fixes Most Designers Ignore.md#L167-L251](file:///Users/railscraft/[[Obsidian]]/raw/8%20Tiny%20UI%20Fixes%20Most%20Designers%20Ignore.md#L167-L251)

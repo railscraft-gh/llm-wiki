@@ -52,5 +52,5 @@ updated: 2026-07-10
 - [[DESIGN.md 운영 원칙]]
 
 ## 출처
-- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
+- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
 

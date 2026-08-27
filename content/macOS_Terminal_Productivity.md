@@ -32,4 +32,4 @@ macOS의 기본 시스템 설정 메뉴는 사용 편의성을 위해 많은 기
 - [[Claude_Code_Skills]]
 
 ## 출처
-- [raw/17 macOS Terminal Commands I Actually Use Every Week.md](file:///Users/railscraft/Obsidian/raw/17%20macOS%20Terminal%20Commands%20I%20Actually%20Use%20Every%20Week.md)
+- [raw/17 macOS Terminal Commands I Actually Use Every Week.md](file:///Users/railscraft/[[Obsidian]]/raw/17%20macOS%20Terminal%20Commands%20I%20Actually%20Use%20Every%20Week.md)

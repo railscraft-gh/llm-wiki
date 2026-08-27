@@ -51,8 +51,8 @@ Pinterest MCP는 핀터레스트가 자율 AI 에이전트의 안전한 사내 �
    ```
    이러한 방식을 통해, MCP 서버 자체가 사내 전체 클라이언트에 노출되어 있더라도 광고나 재무 부서의 검증된 사용자만이 민감 비즈니스 도구를 호출할 수 있다.
 
-### MCP 레지스트리 거버넌스
-중앙 MCP 레지스트리는 각 MCP 서버의 소유 팀, 지원 채널, 가동 여부, 가용 도구를 시각적으로 매핑하는 웹 UI와, AI 에이전트/IDE 플러그인 등이 런타임에 동적으로 API 자격을 체크하고 도구를 바인딩할 수 있도록 돕는 API 게이트웨이를 동시에 제공한다. 보안, 법무, AI 안전성 심사를 완료한 승인된 서버만 레지스트리에 등재되어 에이전트와 결합할 수 있다.
+### [[MCP 레지스트리]] 거버넌스
+중앙 [[MCP 레지스트리]]는 각 MCP 서버의 소유 팀, 지원 채널, 가동 여부, 가용 도구를 시각적으로 매핑하는 웹 UI와, AI 에이전트/IDE 플러그인 등이 런타임에 동적으로 API 자격을 체크하고 도구를 바인딩할 수 있도록 돕는 API 게이트웨이를 동시에 제공한다. 보안, 법무, AI 안전성 심사를 완료한 승인된 서버만 레지스트리에 등재되어 에이전트와 결합할 수 있다.
 
 ### 핀터레스트의 2단계 인증 및 인가 아키텍처
 
@@ -89,15 +89,15 @@ def get_revenue_metrics(campaign_id: str):
 
 ## 출처
 - (출처: Building an MCP Ecosystem at Pinterest)
-- [Building an MCP Ecosystem at Pinterest-ko](file:///Users/railscraft/Obsidian/raw/Building%20an%20MCP%20Ecosystem%20at%20Pinterest-ko.md)
-- [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch](file:///Users/railscraft/Obsidian/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch)
-- [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
-- [im-not-ai](file:///Users/railscraft/Obsidian/raw/im-not-ai.md)
-- [I Cancelled ChatGPT, Cursor, and Midjourney This Week — My MacBook Pro M5 Max](file:///Users/railscraft/Obsidian/raw/I%20Cancelled%20ChatGPT%2C%20Cursor%2C%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max)
-- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/Obsidian/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
-- [Why senior UX designers are struggling in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md)
-- [Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko](file:///Users/railscraft/Obsidian/raw/Build%20a%20Real-Time%20Voice%20Agent%20in%2030%20Minutes%20%28With%20Interruption%20Handling%29-ko.md)
-- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/Obsidian/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
-- [The Best Way to Make AI Write Like You-ko](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md)
-- [Give Your AI Agent 36 Superpowers](file:///Users/railscraft/Obsidian/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open)
+- [Building an MCP Ecosystem at Pinterest-ko](file:///Users/railscraft/[[Obsidian]]/raw/Building%20an%20MCP%20Ecosystem%20at%20Pinterest-ko.md)
+- [I Sat in Engineering Meetings for Two Years Without Understanding What a Branch](file:///Users/railscraft/[[Obsidian]]/raw/I%20Sat%20in%20Engineering%20Meetings%20for%20Two%20Years%20Without%20Understanding%20What%20a%20Branch)
+- [How We Built an AI Second Brain for 60K Knowledge Workers-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
+- [im-not-ai](file:///Users/railscraft/[[Obsidian]]/raw/im-not-ai.md)
+- [I Cancelled ChatGPT, [[Cursor]], and Midjourney This Week — My MacBook Pro M5 Max](file:///Users/railscraft/[[Obsidian]]/raw/I%20Cancelled%20ChatGPT%2C%20[[Cursor]]%2C%20and%20Midjourney%20This%20Week%20%E2%80%94%20My%20MacBook%20Pro%20M5%20Max)
+- [Building a Multi-Agent System That Turns One Sentence Into a $500 Online Course-ko](file:///Users/railscraft/[[Obsidian]]/raw/Building%20a%20Multi-Agent%20System%20That%20Turns%20One%20Sentence%20Into%20a%20%24500%20Online%20Course-ko.md)
+- [Why senior UX designers are struggling in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20UX%20designers%20are%20struggling%20in%202026-ko.md)
+- [Build a Real-Time Voice Agent in 30 Minutes (With Interruption Handling)-ko](file:///Users/railscraft/[[Obsidian]]/raw/Build%20a%20Real-Time%20Voice%20Agent%20in%2030%20Minutes%20%28With%20Interruption%20Handling%29-ko.md)
+- [What Is MCP? Build a Custom MCP Server in Python-ko](file:///Users/railscraft/[[Obsidian]]/raw/What%20Is%20MCP%3F%20Build%20a%20Custom%20MCP%20Server%20in%20Python-ko.md)
+- [The Best Way to Make AI Write Like You-ko](file:///Users/railscraft/[[Obsidian]]/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md)
+- [Give Your AI Agent 36 Superpowers](file:///Users/railscraft/[[Obsidian]]/raw/Give%20Your%20AI%20Agent%2036%20Superpowers.%20Long%E2%80%91Term%20Memory%20in%20Minutes%20with%20[[GBrain]]%20%28Open)
 

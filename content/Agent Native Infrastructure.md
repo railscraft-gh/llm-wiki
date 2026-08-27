@@ -120,7 +120,7 @@ Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를
 
 이에 따라 **희소성의 패러다임이 이동**한다.
 - *덜 희소해지는 것 (Commodity)*: 코드 생성, API 명세 암기, 보일러플레이트 작성, 반복적 설정, 단순 데이터 변환.
-- *더 희소해지는 것 (Moat)*: 시스템에 대한 깊은 이해, 아키텍처적 취향(Taste), 평가 및 검증 설계, 보안 경계 관리, 에이전트 오케스트레이션, 도메인 특화 피드백 루프 정의.
+- *더 희소해지는 것 (Moat)*: 시스템에 대한 깊은 이해, 아키텍처적 취향(Taste), 평가 및 검증 설계, 보안 경계 관리, [[에이전트 오케스트레이션]], 도메인 특화 피드백 루프 정의.
 
 
 후속 GitHub raw는 이 인프라가 어떤 공개 작업 표면으로 구현되는지도 보여 준다. local model runtime, self-hosted UI, [[RAG]] platform, workflow builder, terminal assistant가 각각 agent-native 인프라의 다른 면을 담당한다. 이를 묶은 허브가 [[AI 오픈소스 작업대]]다.
@@ -164,7 +164,7 @@ Karpathy의 [[LLM Wiki 운영 패턴]]도 같은 범주다. raw, wiki, schema를
 - 안드레_카파시_인터뷰_정리
 - 꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!
 - sequoia-ascent-2026-karpathy
-- API_Key_관리_및_Infisical_도입_가이드
+- API_Key_관리_및_[[Infisical]]_도입_가이드
 - [[Quartz]]-Deploy-Guide
 - [[Quartz]]-GitHub-Pages-Complete-Guide
 - opencode-masterclass-summary

@@ -35,7 +35,7 @@ AI가 뻔하고 평균적인 텍스트([[AI Slop]])를 출력하는 대신 개�
   4. 클로드 전용 활용 지침 (Instructions for Claude)
 
 ## 예시
-- 30~60분의 인터뷰를 거쳐 [50~100개 질문에 기반한 voice_profile.md 구축 후 [[Claude Cowork]] 폴더 연동](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L106-L140), "AI가 초안을 잡고 인간이 다듬는" 양질의 워크플로 정립.
+- 30~60분의 인터뷰를 거쳐 [50~100개 질문에 기반한 voice_profile.md 구축 후 [[Claude Cowork]] 폴더 연동](file:///Users/railscraft/[[Obsidian]]/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L106-L140), "AI가 초안을 잡고 인간이 다듬는" 양질의 [[워크플로]] 정립.
 
 ## 충돌
 - **기계적 과적합(Overfitting)**: 프로필 내 규칙을 억지로 100% 강제하면 맥락에 맞지 않는 어색한 모방 텍스트가 만들어지므로 플랫폼 및 주제에 따라 유연성을 부여해야 함.
@@ -45,5 +45,5 @@ AI가 뻔하고 평균적인 텍스트([[AI Slop]])를 출력하는 대신 개�
 - [[Claude Cowork]]
 
 ## 출처
-- [raw/The Best Way to Make AI Write Like You-ko.md#L70](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L70)
-- [raw/The Best Way to Make AI Write Like You-ko.md#L106](file:///Users/railscraft/Obsidian/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L106)
+- [raw/The Best Way to Make AI Write Like You-ko.md#L70](file:///Users/railscraft/[[Obsidian]]/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L70)
+- [raw/The Best Way to Make AI Write Like You-ko.md#L106](file:///Users/railscraft/[[Obsidian]]/raw/The%20Best%20Way%20to%20Make%20AI%20Write%20Like%20You-ko.md#L106)

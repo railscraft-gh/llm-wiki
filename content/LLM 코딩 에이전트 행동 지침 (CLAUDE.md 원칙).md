@@ -14,16 +14,16 @@ sources:
 created: 2026-07-21
 updated: 2026-07-21
 ---
-# [[LLM]] [[코딩 에이전트]] 행동 지침 (CLAUDE.md 원칙)
+# [[LLM]] [[코딩 에이전트]] 행동 지침 ([[CLAUDE.md]] 원칙)
 
 ## 한 줄 정의
-안드레이 카파시(Andrej Karpathy) 등의 엔지니어링 실무에서 도출된 가이드라인으로, [[LLM]] [[코딩 에이전트]]의 속도보다 신중함과 검증 루프에 중점을 두어 과도한 오버엔지니어링과 불필요한 코드 수정을 억제하는 4대 행동 규범 체계이다.
+안드레이 카파시([[Andrej Karpathy]]) 등의 엔지니어링 실무에서 도출된 가이드라인으로, [[LLM]] [[코딩 에이전트]]의 속도보다 신중함과 [[검증 루프]]에 중점을 두어 과도한 오버엔지니어링과 불필요한 코드 수정을 억제하는 4대 행동 규범 체계이다.
 
 ## 핵심 요지
 - **원칙 1: 코딩 전 사고 (Think First)**: 혼란을 조용히 임의 추정하여 고르지 말고 가정을 명시하며, 여러 해석이나 불확실성이 존재할 때는 즉시 멈추고 질문한다.
 - **원칙 2: 단순함 우선 (Simplicity First / YAGNI)**: 문제를 해결하는 최단·최소 코드만 작성하며, 200줄의 코드를 50줄로 줄일 수 있다면 재작성한다. 요청받지 않은 기능·추상화·에러 처리를 전면 배제한다.
 - **원칙 3: 외과적 수정 (Surgical Edits)**: 요청받은 코드만 엄격히 수정하며, 인접 코드의 포맷팅·주석·리팩터링 등 "개선" 시도를 전면 금지하고 변경으로 생성된 고아(Orphan) 코드만 정리한다.
-- **원칙 4: 목표 중심 실행 (Goal-Oriented Execution)**: "버그 수정"을 "재현 테스트 작성 후 테스트 통과"라는 검증 가능한 목표로 치환하여 에이전트 자율 검증 루프(Self-verification loop)를 돌린다.
+- **원칙 4: 목표 중심 실행 (Goal-Oriented Execution)**: "버그 수정"을 "재현 테스트 작성 후 테스트 통과"라는 검증 가능한 목표로 치환하여 에이전트 자율 [[검증 루프]](Self-verification loop)를 돌린다.
 
 ## 상세
 [[LLM]]이 코딩 작업을 수행할 때 흔히 저지르는 대표적인 실수는 '과도한 추측(Over-assumption)', '불필요한 추상화 도입(Over-engineering)', '주변 코드 스타일 훼손(Diff Pollution)', '확인되지 않은 엉성한 완료 선언'이다.
@@ -55,8 +55,9 @@ updated: 2026-07-21
 - **신속한 구현 vs 외과적 수정/검증**: 본 지침은 즉각적인 스피드보다 코드베이스의 무결성과 신중함에 무게를 둔다. 사소한 1줄 핫픽스 작업 시에는 상황에 맞게 융통성을 발휘할 수 있다.
 
 ## 관련 노트
+- [[LLM 코딩 실패 패턴]]
 - [[Claude Code 스킬 관리]]
 - [[AI 코딩 에이전트 검증 전략]]
 
 ## 출처
-- 트레이드오프 및 4대 행동 규칙: [raw/andrej-karpathy-skills-CLAUDE-번역.md#L7-L64](file:///Users/railscraft/Obsidian/raw/andrej-karpathy-skills-CLAUDE-%EB%B2%88%EC%97%AD.md#L7-L64)
+- 트레이드오프 및 4대 행동 규칙: [raw/andrej-karpathy-skills-CLAUDE-번역.md#L7-L64](file:///Users/railscraft/[[Obsidian]]/raw/andrej-karpathy-skills-CLAUDE-%EB%B2%88%EC%97%AD.md#L7-L64)

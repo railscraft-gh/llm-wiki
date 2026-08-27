@@ -68,21 +68,21 @@ updated: 2026-07-18
 [[LLM]] Wiki 구현 선택지는 수집된 원시 데이터(Corpus)를 지식 위키로 변환하는 루프를 Programmatic 코드 패키지로 굳힐 것인지, 아니면 단일 `AGENTS.md` 지침을 통해 에이전트의 런타임 자율 협상에 맡길 것인지 결정하는 아키텍처 의사결정 기준이다.
 
 ## 핵심 요지
-- **기본 설계 패러다임**: Andrej Karpathy의 `llm-wiki.md` 구상(2026년 4월[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L12](file:///Users/railscraft/Obsidian/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L12))에 기반하여, 매 질문마다 원문(Raw source)을 매번 다시 읽는 [[RAG]]의 토큰 낭비를 줄이고 원문을 상호 연결된(Interlinked) 정형 위키로 사전 컴파일한 뒤 위키를 쿼리한다.
+- **기본 설계 패러다임**: [[Andrej Karpathy]]의 `llm-wiki.md` 구상(2026년 4월[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L12](file:///Users/railscraft/[[Obsidian]]/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L12))에 기반하여, 매 질문마다 원문(Raw source)을 매번 다시 읽는 [[RAG]]의 토큰 낭비를 줄이고 원문을 상호 연결된(Interlinked) 정형 위키로 사전 컴파일한 뒤 위키를 쿼리한다.
 - **코드로 굳히는 구현 (Programmatic Package)**: 대규모 corpus(수백~수천 개 문서) 환경에서 토큰 비용과 환각 누적을 억제하며, 입력의 재현성과 다운스트림 자동화 연동을 최적화한다.
-- **에이전트 협상 구현 (Agentic Markdown)**: 200개 이하[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L124](file:///Users/railscraft/Obsidian/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L124) 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 `AGENTS.md`와 `CLAUDE.md` 설정을 통해 에이전트를 '위키 유지관리자(Wiki Maintainer)'로 작동시킨다.
+- **에이전트 협상 구현 (Agentic Markdown)**: 200개 이하[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L124](file:///Users/railscraft/[[Obsidian]]/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L124) 소규모 개인 위키 환경에 적합하며, Python 코드나 Docker 인프라 없이 `AGENTS.md`와 `CLAUDE.md` 설정을 통해 에이전트를 '위키 유지관리자(Wiki Maintainer)'로 작동시킨다.
 - **마크다운 구조적 파싱 한계**: 에이전트의 자율 컴파일만으로는 헤더 중첩 에러, YAML 구문 파손, 깨진 링크 등 구조적 마크다운 오류를 제어하기 어렵다. 위키가 다른 자동화 시스템의 입력으로 연동된다면 전용 처리 레이어(`markdown-hero`)가 필수적이다.
-- Andrej Karpathy의 마크다운 지식 베이스 구상(`llm-wiki.md`)은 Cursor와 Obsidian, 그리고 단일 `CLAUDE.md` 명세의 조합으로 별도 코딩이나 서버 인프라 없이 단 30분 만에 완전 구동되는 로컬 지식 위키를 실현할 수 있다. (출처: [raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법.md#L7](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md#L7))
-- 옵시디언 CEO Steph Ango가 공개한 `kepano/obsidian-skills`는 에이전트가 위키링크, 콜아웃, 프런트매터 등의 옵시디언 고유 마크다운 형식을 깨뜨리지 않고 작성할 수 있게 돕는 스킬 세트다. (출처: [raw/[[LLM]]에게 옵시디언 볼트 열쇠를 주면 일어나는 일.md#L49](file:///Users/railscraft/Obsidian/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md#L49))
-- 4.9k 스타의 오픈소스 완성형 지식 베이스(nashsu/llm_wiki)[raw/완성형 [[LLM]] Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md#L22](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EC%84%B1%ED%98%95%20[[LLM]]%20Wiki%20%EC%95%B1%EC%9D%84%20%EC%B0%BE%EA%B3%A0%20%EB%82%98%EC%84%9C%20%EB%82%B4%EA%B0%80%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%95%84%EC%9A%94%ED%96%88%EB%8D%98%20%EB%8D%94%20%EC%9E%91%EC%9D%80%20%EA%B2%83%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.md#L22) 대비, 개인의 구체적인 마찰 지점을 해결하기 위한 경량화 아키텍처의 실용성을 대조한다.
-- 수동 제어와 자동 에이전틱 갱신을 분리하는 2단계[raw/완성형 [[LLM]] Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md#L100](file:///Users/railscraft/Obsidian/raw/%EC%99%84%EC%84%B1%ED%98%95%20[[LLM]]%20Wiki%20%EC%95%B1%EC%9D%84%20%EC%B0%BE%EA%B3%A0%20%EB%82%98%EC%84%9C%20%EB%82%B4%EA%B0%80%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%95%84%EC%9A%94%ED%96%88%EB%8D%98%20%EB%8D%94%20%EC%9E%91%EC%9D%80%20%EA%B2%83%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.md#L100) 인제스트(2-stage Ingestion) 프로세스가 도입된다.
+- [[Andrej Karpathy]]의 마크다운 지식 베이스 구상(`llm-wiki.md`)은 [[Cursor]]와 [[Obsidian]], 그리고 단일 `CLAUDE.md` 명세의 조합으로 별도 코딩이나 서버 인프라 없이 단 30분 만에 완전 구동되는 로컬 지식 위키를 실현할 수 있다. (출처: [raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법.md#L7](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md#L7))
+- [[옵시디언]] CEO Steph Ango가 공개한 `kepano/obsidian-skills`는 에이전트가 위키링크, 콜아웃, 프런트매터 등의 [[옵시디언]] 고유 마크다운 형식을 깨뜨리지 않고 작성할 수 있게 돕는 스킬 세트다. (출처: [raw/[[LLM]]에게 [[옵시디언]] 볼트 열쇠를 주면 일어나는 일.md#L49](file:///Users/railscraft/[[Obsidian]]/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md#L49))
+- 4.9k 스타의 오픈소스 완성형 지식 베이스(nashsu/llm_wiki)[raw/완성형 [[LLM]] Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md#L22](file:///Users/railscraft/[[Obsidian]]/raw/%EC%99%84%EC%84%B1%ED%98%95%20[[LLM]]%20Wiki%20%EC%95%B1%EC%9D%84%20%EC%B0%BE%EA%B3%A0%20%EB%82%98%EC%84%9C%20%EB%82%B4%EA%B0%80%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%95%84%EC%9A%94%ED%96%88%EB%8D%98%20%EB%8D%94%20%EC%9E%91%EC%9D%80%20%EA%B2%83%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.md#L22) 대비, 개인의 구체적인 마찰 지점을 해결하기 위한 경량화 아키텍처의 실용성을 대조한다.
+- 수동 제어와 자동 에이전틱 갱신을 분리하는 2단계[raw/완성형 [[LLM]] Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다.md#L100](file:///Users/railscraft/[[Obsidian]]/raw/%EC%99%84%EC%84%B1%ED%98%95%20[[LLM]]%20Wiki%20%EC%95%B1%EC%9D%84%20%EC%B0%BE%EA%B3%A0%20%EB%82%98%EC%84%9C%20%EB%82%B4%EA%B0%80%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%95%84%EC%9A%94%ED%96%88%EB%8D%98%20%EB%8D%94%20%EC%9E%91%EC%9D%80%20%EA%B2%83%EC%9D%84%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.md#L100) 인제스트(2-stage Ingestion) 프로세스가 도입된다.
 
 ## 상세
 
 ### 1. Programmatic Package 아키텍처 (예: Python `wiki-llm`)
 대규모 데이터나 엄밀한 데이터 무결성이 보장되어야 하는 기업형 인프라에 적합하다. 8단계 파이프라인을 기계적 코드로 고정한다.
 
-#### Karpathy의 8단계[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L30](file:///Users/railscraft/Obsidian/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L30) 파이프라인 (8-Stage Pipeline)
+#### Karpathy의 8단계[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L30](file:///Users/railscraft/[[Obsidian]]/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L30) 파이프라인 (8-Stage Pipeline)
 Karpathy가 스케치한 raw 자료의 wiki 컴파일 프로세스는 다음과 같은 8단계로 구성된다:
 1. **Source Scan & Ingest (수집)**: 신규 또는 변경된 raw 소스 파일을 감지하고 읽어들임.
 2. **Concept & Entity Extraction (추출)**: 소스 텍스트에서 핵심 개념, 인물, 도구, 주장, 용어 등의 엔티티를 추출.
@@ -95,13 +95,13 @@ Karpathy가 스케치한 raw 자료의 wiki 컴파일 프로세스는 다음과 
 
 - **Pydantic v2 계약**: 각 단계별로 타입 스키마(Typed Contract)를 엄격히 정의해 [[LLM]] 간 데이터 송수신 무결성을 보장한다.
 - **콘텐츠 주소 지정 ID (Content-addressable ID)**: 페이지 바디(stripped body)의 SHA-256 해시값을 기반으로 UUID를 생성한다. 파일 이름이나 frontmatter 메타가 바뀌어도 본문 내용이 같다면 동일 ID를 유지하므로, 다운스트림 링크 파손을 방지한다.
-- **`instructor` 기반 Multi-backend**: OpenRouter, OpenAI, Bedrock, Ollama 등을 호환하며 API 호출 실패 시 자동 재시도(Retry) 규칙을 탑재한다.
-- **LangGraph 국소 활용**: 전체를 에이전트 자율에 맡기지 않고, Lint 결과를 병렬(Fan-out) 복구하는 에러 수리 에이전트 역할에만 제한적으로 그래프 자율성을 부여한다.
-- **BM25 렉시컬 검색**: 무거운 벡터 인프라 대신 투명하고 고속 처리가 가능한 어휘 검색(Lexical Retrieval)을 기본 탑재한다.
+- **`instructor` 기반 Multi-backend**: [[OpenRouter]], OpenAI, Bedrock, [[Ollama]] 등을 호환하며 API 호출 실패 시 자동 재시도(Retry) 규칙을 탑재한다.
+- **[[LangGraph]] 국소 활용**: 전체를 에이전트 자율에 맡기지 않고, Lint 결과를 병렬(Fan-out) 복구하는 에러 수리 에이전트 역할에만 제한적으로 그래프 자율성을 부여한다.
+- **[[BM25]] 렉시컬 검색**: 무거운 벡터 인프라 대신 투명하고 고속 처리가 가능한 어휘 검색(Lexical Retrieval)을 기본 탑재한다.
 
 ### 2. Agentic Markdown 아키텍처 (단일 `AGENTS.md`)
-Claude Code, Cursor 등 에이전트 모드가 작동하는 개발 환경 자체를 주 작업장으로 사용하는 개인 및 소규모 팀에 최적화된 셋업이다.
-- **제거된 인프라**: Python 패키지 의존성, Pydantic 모델, Dockerfile, CI 워크플로, 별도의 Chat UI 등이 제거되어 즉각 시작할 수 있다.
+[[Claude Code]], [[Cursor]] 등 에이전트 모드가 작동하는 개발 환경 자체를 주 작업장으로 사용하는 개인 및 소규모 팀에 최적화된 셋업이다.
+- **제거된 인프라**: Python 패키지 의존성, Pydantic 모델, Dockerfile, CI [[워크플로]], 별도의 Chat UI 등이 제거되어 즉각 시작할 수 있다.
 - **유지된 가드레일**: `Writer -> Evaluator -> Editor` 트리플 패스 검증 룰, `\[\[wikilink\]\]` 분석 규약, 린팅 규칙 및 복구 동작 정의, 초기 런타임 환경설정용 config 블록은 파일 내 자연어로 고스란히 유지된다.
 
 ### 3. 마크다운 처리 레이어 (`markdown-hero`)의 중요성
@@ -112,22 +112,22 @@ Claude Code, Cursor 등 에이전트 모드가 작동하는 개발 환경 자체
 ### 4. 런타임 선택 기준 및 요약
 | 의사결정 요인 | Agentic Markdown (`AGENTS.md`) | Programmatic Package (`wiki-llm`) |
 | --- | --- | --- |
-| **권장 문서 규모** | 200개 이하[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L124](file:///Users/railscraft/Obsidian/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L124)의 소형 개인 위키 | 수백~수천 개 이상의 대규모 데이터셋 |
+| **권장 문서 규모** | 200개 이하[raw/Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md#L124](file:///Users/railscraft/[[Obsidian]]/raw/Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A5%BC%20%EB%91%90%20%EB%B2%88%20%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4.%20%EC%BD%94%EB%93%9C%EB%A1%9C%20%ED%95%9C%20%EB%B2%88,%20%EB%8B%A8%EC%9D%BC%20.md%EB%A1%9C%20%ED%95%9C%20%EB%B2%88.md#L124)의 소형 개인 위키 | 수백~수천 개 이상의 대규모 데이터셋 |
 | **주요 장점** | 빠른 설정 변경, 유연한 규칙 수정 | deterministic UUID 보장, 토큰 비용 최소화 |
 | **자동화 결합** | 없음 (에이전트 대화 창 내 수동 유지) | 배치(Batch) 스케줄링, Scheduled Run 지원 |
 | **감사(Audit)** | 불가능 | 모든 API Call의 Audit Trail 추적 및 로깅 |
 
-### 5. Cursor와 Obsidian을 활용한 30분[raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법.md#L7](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md#L7) 초고속 구축 워크플로우
+### 5. [[Cursor]]와 [[Obsidian]]을 활용한 30분[raw/AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법.md#L7](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md#L7) 초고속 구축 [[워크플로]]우
 balukosuri의 오픈소스 레포(`https://github.com/balukosuri/llm-wiki-karpathy`)를 기반으로 단 3번의 AI 대화(Prompt)를 통해 지식 베이스 아키텍처를 로컬에 완성한다.
-- **대화 1단계 - 명세 정의**: Cursor 에디터에 Karpathy의 `llm-wiki.md` 원본을 제공하고 사용자의 직무(예: 기술 문서 작성자 등) 도메인에 알맞은 매뉴얼 스키마 매핑 논의.
+- **대화 1단계 - 명세 정의**: [[Cursor]] 에디터에 Karpathy의 `llm-wiki.md` 원본을 제공하고 사용자의 직무(예: 기술 문서 작성자 등) 도메인에 알맞은 매뉴얼 스키마 매핑 논의.
 - **대화 2단계 - 아키텍처 자동 빌드**: 단일 명령으로 `raw/`, `wiki/` 폴더 구조화, `CLAUDE.md` 스키마 작성, 스타터 마스터 노트 4개(`index.md`, `log.md`, `overview.md`, `glossary.md`) 자동 생성.
-- **대화 3단계 - 옵시디언 샌드박스 연동**: Homebrew를 통해 Obsidian을 자동 호출 설치하고, `.obsidian/` 디렉토리 내 설정들(`app.json`, `appearance.json`, `graph.json`, `hotkeys.json` 등)을 사전에 세팅해 graph view 색상 태그 매핑, 단축키 바인딩, overview 자동 오픈 레이아웃을 완성하여 즉시 구동 가능한 Zero-config 상태 of Vault를 공급한다.
+- **대화 3단계 - [[옵시디언]] 샌드박스 연동**: Homebrew를 통해 [[Obsidian]]을 자동 호출 설치하고, `.obsidian/` 디렉토리 내 설정들(`app.json`, `appearance.json`, `graph.json`, `hotkeys.json` 등)을 사전에 세팅해 graph view 색상 태그 매핑, 단축키 바인딩, overview 자동 오픈 레이아웃을 완성하여 즉시 구동 가능한 Zero-config 상태 of Vault를 공급한다.
 
 ### 6. 노코드 기반 대안: Constella
 Karpathy식 [[LLM]] Wiki의 구축 오버헤드(터미널 제어, 스크립트 작성, 마크다운 린트 규칙 정립 등)를 해소하기 위한 노코드 클라우드 대안으로 **Constella** 서비스가 존재한다.
 - **동작 방식**: 사용자가 소스(웹 문서, 기사 등)를 드롭하여 입력하면 AI가 지식 간의 연결망을 자동으로 형성하고, 사용자는 축적된 전용 지식 베이스를 상대로 자연어 질의응답을 할 수 있어 코드 한 줄 없이 카파시 지식 시스템을 구현하게 돕는다.
 
-### Steph Ango의 `kepano/obsidian-skills` 에이전트 스킬 통합
+### Steph Ango의 `kepano/obsidian-skills` [[에이전트 스킬]] 통합
 - **배경**: AI 에이전트가 범용 마크다운 형식으로 작성 시 프런트매터 파괴, 잘못된 위키링크 대괄호 등의 오류를 유도해 볼트 구조가 손상되는 현상을 완화함.
 - **핵심 컴포넌트**:
   - `obsidian-markdown` — 위키링크, 콜아웃, 프런트매터, 양방향 링크의 엄격한 문법 검증.
@@ -150,50 +150,50 @@ Karpathy식 [[LLM]] Wiki의 구축 오버헤드(터미널 제어, 스크립트 �
 - **대형 기업 Corpus**: typed pipeline 패키지 빌드 + SHA-256 ID 부여 + `markdown-hero` 파서 연동
 
 #### 로컬 위키 유지관리 명령어
-- **Ingest**: `raw/`에 raw 문서를 던진 뒤 `Ingest raw/my-document.pdf`라고 Cursor에 지시하면, AI가 읽기 ➡️ 소스요약 작성 ➡️ 관련 노터 자동 파생 ➡️ glossary 갱신 ➡️ index/log 마스터 기록의 전 과정을 자동 수행한다.
-- **Lint**: 주기적(`10회 ingest당 1회` 권장)으로 `Lint the wiki`를 지시하여 모순 지점, 대체된 구식 정보, 백링크 누락 고아 페이지를 탐지 및 복구한다.
+- **Ingest**: `raw/`에 raw 문서를 던진 뒤 `Ingest raw/my-document.pdf`라고 [[Cursor]]에 지시하면, AI가 읽기 ➡️ 소스요약 작성 ➡️ 관련 노터 자동 파생 ➡️ glossary 갱신 ➡️ index/log 마스터 기록의 전 과정을 자동 수행한다.
+- **Lint**: 주기적(`10회 ingest당 1회` 권장)으로 `Lint the wiki`를 지시하여 모순 지점, 대체된 구식 정보, [[백링크]] 누락 고아 페이지를 탐지 및 복구한다.
 
 ### 에이전트 볼트 연동 및 설치
-- **스킬 디렉토리 통합**: `kepano/obsidian-skills` 저장소를 클론하여 에이전트의 로컬 스킬 디렉토리에 통합하면, Claude Code가 볼트 내에서 임의 규격으로 작업해 구조를 망가뜨리는 문제를 방지할 수 있음.
+- **스킬 디렉토리 통합**: `kepano/obsidian-skills` 저장소를 클론하여 에이전트의 로컬 스킬 디렉토리에 통합하면, [[Claude Code]]가 볼트 내에서 임의 규격으로 작업해 구조를 망가뜨리는 문제를 방지할 수 있음.
 
 ### llm-wiki-maintainer 스킬 설정 예시
 - `purpose.md` 의 전역 선언과 결합하여, `/ingest` 및 `/lint` 등의 전용 셸 래퍼(Wrapper) 명령어로 위키 린터를 즉시 가동하고 세션을 정제함.
 
-### 7. 5대 [[LLM]] Wiki 구현체 비교 평가 (2026년 7월 실전 테스트[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L9](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L9))
-안드레이 카파시의 [[LLM]] Wiki 발표 직후 일주일 만에 GitHub에 50개 이상의 관련 저장소가 생성되었으며, 대표적인 5개 구현체의 일주일간의 실전 테스트 결과는 다음과 같다: [raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L9](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L9)
+### 7. 5대 [[LLM]] Wiki 구현체 비교 평가 (2026년 7월 실전 테스트[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L9](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L9))
+안드레이 카파시의 [[LLM]] Wiki 발표 직후 일주일 만에 GitHub에 50개 이상의 관련 저장소가 생성되었으며, 대표적인 5개 구현체의 일주일간의 실전 테스트 결과는 다음과 같다: [raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L9](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L9)
 
-1. **engram (TypeScript CLI + Claude Code)**
+1. **engram (TypeScript CLI + [[Claude Code]])**
    - **특징**: CLI가 검증/색인/링크 빌드를 맡고, 에이전트가 추론을 담당하는 이분법적 아키텍처.
-   - **장점**: 독보적인 데이터 정합성. 10개의 소스를 수집하는 동안 깨진 링크나 고아 페이지 0건 기록[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L39](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L39).
+   - **장점**: 독보적인 데이터 정합성. 10개의 소스를 수집하는 동안 깨진 링크나 고아 페이지 0건 기록[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L39](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L39).
    - **단점**: CLI 환경 설정의 진입 장벽.
-   - **평가**: 개발자용 9/10점, 일반인용 4/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L43](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L43).
+   - **평가**: 개발자용 9/10점, 일반인용 4/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L43](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L43).
 
-2. **Tome (Claude Code + [[Quartz]])**
+2. **Tome ([[Claude Code]] + [[Quartz]])**
    - **특징**: [[Quartz]] 렌더링 레이어를 적용해 브라우저로 훑어볼 수 있는 웹 위키(디지털 가든) 생성.
-   - **장점**: 백링크와 시각적 그래프 뷰 제공으로 반복 조회 습관 형성에 유리함.
+   - **장점**: [[백링크]]와 시각적 그래프 뷰 제공으로 반복 조회 습관 형성에 유리함.
    - **단점**: engram 대비 수집(Ingest)의 정밀성이 낮아 핵심 사항 누락 가능성 존재.
-   - **평가**: 7.5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L55](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L55).
+   - **평가**: 7.5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L55](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L55).
 
-3. **obsidian-llm-wiki (Obsidian Native + Cursor)**
-   - **특징**: 카파시 아키텍처를 Obsidian 및 Cursor 에이전트 스킬로 통합.
-   - **장점**: 유튜브 영상 링크를 던지면 즉시 요약 1개와 개념 노트 4개를 상호 연결해 생성해 주는 `video2wiki` 스킬 제공[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L61](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L61).
-   - **단점**: Cursor 에이전트 스킬 의존성으로 Claude Code 사용 시 직접 포팅 필요.
-   - **평가**: 8/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L67](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L67).
+3. **obsidian-llm-wiki ([[Obsidian]] Native + [[Cursor]])**
+   - **특징**: 카파시 아키텍처를 [[Obsidian]] 및 [[Cursor]] [[에이전트 스킬]]로 통합.
+   - **장점**: 유튜브 영상 링크를 던지면 즉시 요약 1개와 개념 노트 4개를 상호 연결해 생성해 주는 `video2wiki` 스킬 제공[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L61](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L61).
+   - **단점**: [[Cursor]] [[에이전트 스킬]] 의존성으로 [[Claude Code]] 사용 시 직접 포팅 필요.
+   - **평가**: 8/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L67](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L67).
 
 4. **pm-llm-wiki (도메인 특화 PM Wiki)**
    - **특징**: 제품 관리자(PM) 직군의 업무 루틴과 의사결정/리스크/이해관계자 스키마 템플릿 최적화.
    - **장점**: 명확하게 설계된 스키마 덕분에 범용 구현체 대비 실용적이고 예리한 답변 제공.
-   - **평가**: PM 직군 기준 8.5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L79](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L79).
+   - **평가**: PM 직군 기준 8.5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L79](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L79).
 
 5. **jarvis-vault (자가 조직화 도구)**
-   - **특징**: 완전 자동 분류 및 링크 구성을 내세운 옵시디언 [[AI 세컨드 브레인]].
-   - **단점**: 에이전트에 가드레일이 없어 4일 차에 원치 않는 분류 체계 강제 및 1개 X 스레드가 3개 폴더에 중복 분산되는 등의 '자신감 넘치는 혼란' 발생[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L95](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L95). 사용 5일 차에 20분 만에 삭제됨[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L97](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L97).
-   - **평가**: 5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L99](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L99).
+   - **특징**: 완전 자동 분류 및 링크 구성을 내세운 [[옵시디언]] [[AI 세컨드 브레인]].
+   - **단점**: 에이전트에 가드레일이 없어 4일 차에 원치 않는 분류 체계 강제 및 1개 X 스레드가 3개 폴더에 중복 분산되는 등의 '자신감 넘치는 혼란' 발생[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L95](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L95). 사용 5일 차에 20분 만에 삭제됨[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L97](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L97).
+   - **평가**: 5/10점[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L99](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L99).
 
 ### 8. 핵심 실전 교훈
-- **스키마의 가치**: 엄격한 규칙을 강제하는 도구(engram, pm-llm-wiki)가 신뢰성이 높으며, 스키마 파일이 제품 가치의 80%를 결정한다[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L105](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L105).
+- **스키마의 가치**: 엄격한 규칙을 강제하는 도구(engram, pm-llm-wiki)가 신뢰성이 높으며, 스키마 파일이 제품 가치의 80%를 결정한다[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L105](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L105).
 - **수집(Ingest)의 엄격함**: 화려한 검색 기교보다 요약본 1개 생성 같은 철저한 문서화 규칙을 준수한 도구만이 복합 추론 질문에 올바르게 답변한다.
-- **API 비용 리스크**: 대량 수집 시 하루 2~4달러의 API 비용이 발생할 수 있다[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L115](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L115).
+- **API 비용 리스크**: 대량 수집 시 하루 2~4달러의 API 비용이 발생할 수 있다[raw/I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To.md#L115](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md#L115).
 
 ## 충돌
 - **에이전트의 마크다운 준수 신뢰 vs 기계적 문법 오류**:
@@ -212,43 +212,43 @@ Karpathy식 [[LLM]] Wiki의 구축 오버헤드(터미널 제어, 스크립트 �
 - Karpathy의 [[LLM]] Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번
 - 완성형 [[LLM]] Wiki 앱을 찾고 나서 내가 실제로 필요했던 더 작은 것을 만들었다
 - `raw/Karpathy의 LLM Wiki를 두 번 만들었다. 코드로 한 번, 단일 .md로 한 번.md`
-- [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually%20For%29)
-- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/Obsidian/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
-- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
-- [2026년 Claude Code 설정에 꼭 필요한 8가지 핵심 스킬](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%20Claude%20Code%20%EC%84%A4%EC%A0%95%EC%97%90%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%208%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%8A%A4%ED%82%AC.md)
-- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/Obsidian/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
-- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/Obsidian/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
-- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/Obsidian/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
-- [I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To](file:///Users/railscraft/Obsidian/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #3. 벡터 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%233.%20%EB%B2%A1%ED%84%B0%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #5. 계층형 자체 관리 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%235.%20%EA%B3%84%EC%B8%B5%ED%98%95%20%EC%9E%90%EC%B2%B4%20%EA%B4%80%EB%A6%AC%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #4. 지식 그래프 메모리](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%234.%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
-- [Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드](file:///Users/railscraft/Obsidian/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%9A%A8%EC%9C%A8%EC%9D%84%20%EA%B7%B9%EB%8C%80%ED%99%94%ED%95%98%EB%8A%94%20MEMORY.md%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기](file:///Users/railscraft/Obsidian/raw/AI%EC%99%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A1%9C%20300%EA%B0%9C%20%EC%9D%B4%EC%83%81%EC%9D%98%20%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8%EB%A5%BC%20RPG%20%EA%B2%8C%EC%9E%84%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EC%9D%B4%EC%95%BC%EA%B8%B0%20-%20LennyRPG%208%EC%8B%9C%EA%B0%84%20%EA%B0%9C%EB%B0%9C%EA%B8%B0.md)
-- [After Claude Code. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/Obsidian/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
-- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/Obsidian/raw/CLAUDE.md%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
-- [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
-- [AI 개발자가 반드시 알아야 할 9가지 [[RAG]] 아키텍처 - 실무 예제로 배우는 완전 가이드](file:///Users/railscraft/Obsidian/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20[[RAG]]%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 [[TurboQuant]], 애플 실리콘 상륙](file:///Users/railscraft/Obsidian/raw/5%EB%B0%B0%20%EC%A0%81%EC%9D%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%A1%9C%20%EB%A7%A5%EC%97%90%EC%84%9C%2032B%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20%EA%B5%AC%EA%B8%80%20[[TurboQuant]]%2C%20%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EC%83%81%EB%A5%99.md)
-- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/Obsidian/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
-- [1인 개발자와 소규모 팀을 위한 주말 완성 디자인 시스템 구축법](file:///Users/railscraft/Obsidian/raw/1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80%20%EC%86%8C%EA%B7%9C%EB%AA%A8%20%ED%8C%80%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%A7%90%20%EC%99%84%EC%84%B1%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EB%B2%95.md)
-- [애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드](file:///Users/railscraft/Obsidian/raw/%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%8A%A4%ED%83%9D%3A%20%ED%95%9C%20%EC%B0%A8%EC%9B%90%20%EC%A7%84%ED%99%94%ED%95%9C%20%EC%84%B1%EB%8A%A5%EA%B3%BC%20%EC%B5%9C%EC%A0%81%EC%9D%98%20%EA%B5%AC%EC%B6%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [How to write a DESIGN.md file Claude can actually use-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20write%20a%20DESIGN.md%20file%20Claude%20can%20actually%20use-ko.md)
-- [하네스 엔지니어링 - 65줄 CLAUDE.md가 최고의 스킬인 이유](file:///Users/railscraft/Obsidian/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20CLAUDE.md%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #1. 슬라이딩 윈도우 버퍼](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%231.%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EB%B2%84%ED%8D%BC.md)
-- [우리가 피그마 없이 제품을 배포하는 방법](file:///Users/railscraft/Obsidian/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
-- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/Obsidian/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
-- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
-- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/Obsidian/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
-- [2026년에 실제로 효과가 있는 나의 AI 디자인 워크플로우](file:///Users/railscraft/Obsidian/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
-- [DESIGN.md 워크플로우. [[Google Stitch]]와 Claude Code가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
-- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/Obsidian/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
-- [모든 DESIGN.md에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/Obsidian/raw/%EB%AA%A8%EB%93%A0%20DESIGN.md%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
-- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/Obsidian/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
-- [DESIGN.md 워크플로 - [[Google Stitch]]와 Claude Code가 바꾼 디자인 개발 협업](file:///Users/railscraft/Obsidian/raw/DESIGN.md%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
-- [밑바닥부터 만드는 [[LLM]] 메모리 #2. 자동 요약 버퍼](file:///Users/railscraft/Obsidian/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%232.%20%EC%9E%90%EB%8F%99%20%EC%9A%94%EC%95%BD%20%EB%B2%84%ED%8D%BC.md)
-- [How to Build the Knowledge System Andrej Karpathy Uses (And What It’s Actually For)-ko](file:///Users/railscraft/Obsidian/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually%20For%29-ko.md)
-- [AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md)
-- [AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법 - 출판형 다듬기](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
-- [LLM에게 옵시디언 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/Obsidian/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
+- [How to Build the Knowledge System [[Andrej Karpathy]] Uses (And What It’s Actually For)](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually%20For%29)
+- [노트북을 망가뜨리지 않으려고 라즈베리 파이에서 AI 에이전트 하네스를 구동한 후기](file:///Users/railscraft/[[Obsidian]]/raw/%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84%20%EB%A7%9D%EA%B0%80%EB%9C%A8%EB%A6%AC%EC%A7%80%20%EC%95%8A%EC%9C%BC%EB%A0%A4%EA%B3%A0%20%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%EC%97%90%EC%84%9C%20AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%ED%95%98%EB%84%A4%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%EB%8F%99%ED%95%9C%20%ED%9B%84%EA%B8%B0.md)
+- [지난번 이런 일이 있었을 때, 수많은 평범한 사람들이 백만장자가 되었다](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EB%82%9C%EB%B2%88%20%EC%9D%B4%EB%9F%B0%20%EC%9D%BC%EC%9D%B4%20%EC%9E%88%EC%97%88%EC%9D%84%20%EB%95%8C%2C%20%EC%88%98%EB%A7%8E%EC%9D%80%20%ED%8F%89%EB%B2%94%ED%95%9C%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%B4%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90%EA%B0%80%20%EB%90%98%EC%97%88%EB%8B%A4.md)
+- [2026년 [[Claude Code]] 설정에 꼭 필요한 8가지 핵심 스킬](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%20Claude%20Code%20%EC%84%A4%EC%A0%95%EC%97%90%20%EA%BC%AD%20%ED%95%84%EC%9A%94%ED%95%9C%208%EA%B0%80%EC%A7%80%20%ED%95%B5%EC%8B%AC%20%EC%8A%A4%ED%82%AC.md)
+- [AI Agent Best Practices. Production-Ready [[Harness Engineering]] (2026 Guide)-ko](file:///Users/railscraft/[[Obsidian]]/raw/AI%20Agent%20Best%20Practices.%20Production-Ready%20Harness%20Engineering%20%282026%20Guide%29-ko.md)
+- [You’re Using AI to Write Code. You’re Not Using It to Review Code.-ko](file:///Users/railscraft/[[Obsidian]]/raw/You%E2%80%99re%20Using%20AI%20to%20Write%20Code.%20You%E2%80%99re%20Not%20Using%20It%20to%20Review%20Code.-ko.md)
+- [지식 그래프, 진정한 게임 체인저... 그러나 구축과 유지가 극도로 어려운 이유](file:///Users/railscraft/[[Obsidian]]/raw/%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%A7%84%EC%A0%95%ED%95%9C%20%EA%B2%8C%EC%9E%84%20%EC%B2%B4%EC%9D%B8%EC%A0%80...%20%EA%B7%B8%EB%9F%AC%EB%82%98%20%EA%B5%AC%EC%B6%95%EA%B3%BC%20%EC%9C%A0%EC%A7%80%EA%B0%80%20%EA%B7%B9%EB%8F%84%EB%A1%9C%20%EC%96%B4%EB%A0%A4%EC%9A%B4%20%EC%9D%B4%EC%9C%A0.md)
+- [I Tested 5 ‘[[LLM]] Wiki’ Implementations So You Don’t Have To](file:///Users/railscraft/[[Obsidian]]/raw/I%20Tested%205%20%E2%80%98[[LLM]]%20Wiki%E2%80%99%20Implementations%20So%20You%20Don%E2%80%99t%20Have%20To.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #3. 벡터 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%233.%20%EB%B2%A1%ED%84%B0%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #5. 계층형 자체 관리 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%235.%20%EA%B3%84%EC%B8%B5%ED%98%95%20%EC%9E%90%EC%B2%B4%20%EA%B4%80%EB%A6%AC%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #4. 지식 그래프 메모리](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%234.%20%EC%A7%80%EC%8B%9D%20%EA%B7%B8%EB%9E%98%ED%94%84%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [Claude Code 프로젝트 효율을 극대화하는 MEMORY.md 가이드](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%9A%A8%EC%9C%A8%EC%9D%84%20%EA%B7%B9%EB%8C%80%ED%99%94%ED%95%98%EB%8A%94%20MEMORY.md%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [AI와 오픈소스로 300개 이상의 팟캐스트를 RPG 게임으로 만든 이야기 - LennyRPG 8시간 개발기](file:///Users/railscraft/[[Obsidian]]/raw/AI%EC%99%80%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A1%9C%20300%EA%B0%9C%20%EC%9D%B4%EC%83%81%EC%9D%98%20%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8%EB%A5%BC%20RPG%20%EA%B2%8C%EC%9E%84%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EC%9D%B4%EC%95%BC%EA%B8%B0%20-%20LennyRPG%208%EC%8B%9C%EA%B0%84%20%EA%B0%9C%EB%B0%9C%EA%B8%B0.md)
+- [After [[Claude Code]]. 6 Open-Source Tools You Should Know-ko](file:///Users/railscraft/[[Obsidian]]/raw/After%20Claude%20Code.%206%20Open-Source%20Tools%20You%20Should%20Know-ko.md)
+- [CLAUDE.md 파일 하나가 바이럴을 탔다. 이유는 민망할 정도로 단순하다](file:///Users/railscraft/[[Obsidian]]/raw/[[CLAUDE.md]]%20%ED%8C%8C%EC%9D%BC%20%ED%95%98%EB%82%98%EA%B0%80%20%EB%B0%94%EC%9D%B4%EB%9F%B4%EC%9D%84%20%ED%83%94%EB%8B%A4.%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AF%BC%EB%A7%9D%ED%95%A0%20%EC%A0%95%EB%8F%84%EB%A1%9C%20%EB%8B%A8%EC%88%9C%ED%95%98%EB%8B%A4.md)
+- [How to Build the Knowledge System [[Andrej Karpathy]] Uses (And What It’s Actually](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually)
+- [AI 개발자가 반드시 알아야 할 9가지 [[RAG]] 아키텍처 - 실무 예제로 배우는 완전 가이드](file:///Users/railscraft/[[Obsidian]]/raw/AI%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80%20%EB%B0%98%EB%93%9C%EC%8B%9C%20%EC%95%8C%EC%95%84%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20[[RAG]]%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%8B%A4%EB%AC%B4%20%EC%98%88%EC%A0%9C%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EC%99%84%EC%A0%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [5배 적은 메모리로 맥에서 32B 모델 실행하기 - 구글 [[TurboQuant]], 애플 실리콘 상륙](file:///Users/railscraft/[[Obsidian]]/raw/5%EB%B0%B0%20%EC%A0%81%EC%9D%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%A1%9C%20%EB%A7%A5%EC%97%90%EC%84%9C%2032B%20%EB%AA%A8%EB%8D%B8%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0%20-%20%EA%B5%AC%EA%B8%80%20[[TurboQuant]]%2C%20%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EC%83%81%EB%A5%99.md)
+- [Agentic AI, design systems & Figma. a practical guide-ko](file:///Users/railscraft/[[Obsidian]]/raw/Agentic%20AI%2C%20design%20systems%20%26%20Figma.%20a%20practical%20guide-ko.md)
+- [1인 개발자와 소규모 팀을 위한 주말 완성 [[디자인 시스템]] 구축법](file:///Users/railscraft/[[Obsidian]]/raw/1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80%20%EC%86%8C%EA%B7%9C%EB%AA%A8%20%ED%8C%80%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%A7%90%20%EC%99%84%EC%84%B1%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EB%B2%95.md)
+- [애플 실리콘을 위한 로컬 AI 스택: 한 차원 진화한 성능과 최적의 구축 가이드](file:///Users/railscraft/[[Obsidian]]/raw/%EC%95%A0%ED%94%8C%20%EC%8B%A4%EB%A6%AC%EC%BD%98%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EB%A1%9C%EC%BB%AC%20AI%20%EC%8A%A4%ED%83%9D%3A%20%ED%95%9C%20%EC%B0%A8%EC%9B%90%20%EC%A7%84%ED%99%94%ED%95%9C%20%EC%84%B1%EB%8A%A5%EA%B3%BC%20%EC%B5%9C%EC%A0%81%EC%9D%98%20%EA%B5%AC%EC%B6%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [How to write a [[DESIGN.md]] file Claude can actually use-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20write%20a%20[[DESIGN.md]]%20file%20Claude%20can%20actually%20use-ko.md)
+- [하네스 엔지니어링 - 65줄 [[CLAUDE.md]]가 최고의 스킬인 이유](file:///Users/railscraft/[[Obsidian]]/raw/%ED%95%98%EB%84%A4%EC%8A%A4%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20-%2065%EC%A4%84%20[[CLAUDE.md]]%EA%B0%80%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%EC%8A%A4%ED%82%AC%EC%9D%B8%20%EC%9D%B4%EC%9C%A0.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #1. 슬라이딩 윈도우 버퍼](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%231.%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EB%B2%84%ED%8D%BC.md)
+- [우리가 피그마 없이 제품을 배포하는 방법](file:///Users/railscraft/[[Obsidian]]/raw/%EC%9A%B0%EB%A6%AC%EA%B0%80%20%ED%94%BC%EA%B7%B8%EB%A7%88%20%EC%97%86%EC%9D%B4%20%EC%A0%9C%ED%92%88%EC%9D%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95.md)
+- [The Open-Source Agent Toolkit in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/The%20Open-Source%20Agent%20Toolkit%20in%202026-ko.md)
+- [How to Get Into the Top 1% in the Next 12 Months-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Get%20Into%20the%20Top%201%25%20in%20the%20Next%2012%20Months-ko.md)
+- [I Ran [[OpenClaw]] and Hermes on the Same Server. Today I Deleted One of Them.-ko](file:///Users/railscraft/[[Obsidian]]/raw/I%20Ran%20[[OpenClaw]]%20and%20Hermes%20on%20the%20Same%20Server.%20Today%20I%20Deleted%20One%20of%20Them.-ko.md)
+- [2026년에 실제로 효과가 있는 나의 AI 디자인 [[워크플로]]우](file:///Users/railscraft/[[Obsidian]]/raw/2026%EB%85%84%EC%97%90%20%EC%8B%A4%EC%A0%9C%EB%A1%9C%20%ED%9A%A8%EA%B3%BC%EA%B0%80%20%EC%9E%88%EB%8A%94%20%EB%82%98%EC%9D%98%20AI%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.md)
+- [DESIGN.md [[워크플로]]우. [[Google Stitch]]와 [[Claude Code]]가 디자인-코드 핸드오프를 조용히 바꾼 방법-ko](file:///Users/railscraft/[[Obsidian]]/raw/[[DESIGN.md]]%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%94%94%EC%9E%90%EC%9D%B8-%EC%BD%94%EB%93%9C%20%ED%95%B8%EB%93%9C%EC%98%A4%ED%94%84%EB%A5%BC%20%EC%A1%B0%EC%9A%A9%ED%9E%88%20%EB%B0%94%EA%BE%BC%20%EB%B0%A9%EB%B2%95-ko.md)
+- [Why senior designers are doing four jobs for one salary in 2026-ko](file:///Users/railscraft/[[Obsidian]]/raw/Why%20senior%20designers%20are%20doing%20four%20jobs%20for%20one%20salary%20in%202026-ko.md)
+- [모든 [[DESIGN.md]]에 꼭 들어가야 할 9가지 섹션](file:///Users/railscraft/[[Obsidian]]/raw/%EB%AA%A8%EB%93%A0%20[[DESIGN.md]]%EC%97%90%20%EA%BC%AD%20%EB%93%A4%EC%96%B4%EA%B0%80%EC%95%BC%20%ED%95%A0%209%EA%B0%80%EC%A7%80%20%EC%84%B9%EC%85%98.md)
+- [Hermes Agent Is Cool. Running It Safely 24_7 Is the Real Trick.-ko](file:///Users/railscraft/[[Obsidian]]/raw/Hermes%20Agent%20Is%20Cool.%20Running%20It%20Safely%2024_7%20Is%20the%20Real%20Trick.-ko.md)
+- [DESIGN.md [[워크플로]] - [[Google Stitch]]와 [[Claude Code]]가 바꾼 디자인 개발 협업](file:///Users/railscraft/[[Obsidian]]/raw/[[DESIGN.md]]%20%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%20-%20Google%20Stitch%EC%99%80%20Claude%20Code%EA%B0%80%20%EB%B0%94%EA%BE%BC%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%20%ED%98%91%EC%97%85.md)
+- [밑바닥부터 만드는 [[LLM]] 메모리 #2. 자동 요약 버퍼](file:///Users/railscraft/[[Obsidian]]/raw/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EB%A7%8C%EB%93%9C%EB%8A%94%20[[LLM]]%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%232.%20%EC%9E%90%EB%8F%99%20%EC%9A%94%EC%95%BD%20%EB%B2%84%ED%8D%BC.md)
+- [How to Build the Knowledge System [[Andrej Karpathy]] Uses (And What It’s Actually For)-ko](file:///Users/railscraft/[[Obsidian]]/raw/How%20to%20Build%20the%20Knowledge%20System%20Andrej%20Karpathy%20Uses%20%28And%20What%20It%E2%80%99s%20Actually%20For%29-ko.md)
+- [AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95.md)
+- [AI로 스스로 유지되는 지식 베이스를 Karpathy의 [[LLM]] Wiki로 만든 방법 - 출판형 다듬기](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94%20%EC%A7%80%EC%8B%9D%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC%20Karpathy%EC%9D%98%20[[LLM]]%20Wiki%EB%A1%9C%20%EB%A7%8C%EB%93%A0%20%EB%B0%A9%EB%B2%95%20-%20%EC%B6%9C%ED%8C%90%ED%98%95%20%EB%8B%A4%EB%93%AC%EA%B8%B0.md)
+- [LLM에게 [[옵시디언]] 볼트 열쇠를 주면 일어나는 일](file:///Users/railscraft/[[Obsidian]]/raw/[[LLM]]%EC%97%90%EA%B2%8C%20%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8%20%EB%B3%BC%ED%8A%B8%20%EC%97%B4%EC%87%A0%EB%A5%BC%20%EC%A3%BC%EB%A9%B4%20%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94%20%EC%9D%BC.md)
 

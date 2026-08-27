@@ -24,8 +24,8 @@ AI [[코딩 에이전트]]의 컨텍스트 윈도우를 최적화하는 MCP 서�
 - 컨텍스트 절약: 315KB → 5.4KB(98% 감소) [GitHub](https://github.com/mksglu/context-mode)
 - HN #1(570+ points), Microsoft/Google/Meta/Amazon/NVIDIA 등 다양한 기업에서 사용
 - 4가지 문제 해결: Context Saving, Session Continuity, [[Think in Code]], Output Compression
-- 14개 플랫폼 지원: Claude Code, Gemini CLI, VS Code Copilot, Cursor, [[OpenCode]] 등
-- SQLite와 FTS5를 통해 대화 히스토리 및 파일 변경 이력을 관리하며, BM25 검색 알고리즘으로 필요한 정보만 압축/복원함 [raw/context-mode-README-정리.md]
+- 14개 플랫폼 지원: [[Claude Code]], Gemini CLI, VS Code Copilot, [[Cursor]], [[OpenCode]] 등
+- SQLite와 FTS5를 통해 대화 히스토리 및 파일 변경 이력을 관리하며, [[BM25]] 검색 알고리즘으로 필요한 정보만 압축/복원함 [raw/context-mode-README-정리.md]
 - ctx_insight 도구를 통해 90개 메트릭, 37개 인사이트 패턴, 4대 종합 점수(productivity, quality, delegation, context health)를 분석하여 로컬 웹 UI로 시각화함 [raw/context-mode-README-정리.md]
 
 ## 상세
@@ -36,7 +36,7 @@ MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문�
 
 ### Session Continuity
 
-컨텍스트 압축(compaction) 시 에이전트가 작업을 잊어버리는 문제를 SQLite + FTS5로 추적한다. 파일 편집, git 작업, 태스크, 에러, 사용자 결정을 모두 기록한다. BM25 검색으로 필요한 것만 조회해 compaction 후에도 정확히 이어서 작업한다. `--continue` 없으면 이전 세션 데이터를 즉시 삭제해 깨끗한 슬레이트를 유지한다.
+컨텍스트 압축(compaction) 시 에이전트가 작업을 잊어버리는 문제를 SQLite + FTS5로 추적한다. 파일 편집, git 작업, 태스크, 에러, 사용자 결정을 모두 기록한다. [[BM25]] 검색으로 필요한 것만 조회해 compaction 후에도 정확히 이어서 작업한다. `--continue` 없으면 이전 세션 데이터를 즉시 삭제해 깨끗한 슬레이트를 유지한다.
 
 ### [[Think in Code]]
 
@@ -48,7 +48,7 @@ MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문�
 
 ### 주요 도구
 
-**Sandbox 도구(6개)**: `ctx_execute`(단일 실행), `ctx_batch_execute`(배치 실행), `ctx_execute_file`(파일 실행), `ctx_index`(지식 베이스 인덱싱), `ctx_search`(BM25 검색), `ctx_fetch_and_index`(URL fetch 및 인덱싱)
+**Sandbox 도구(6개)**: `ctx_execute`(단일 실행), `ctx_batch_execute`(배치 실행), `ctx_execute_file`(파일 실행), `ctx_index`(지식 베이스 인덱싱), `ctx_search`([[BM25]] 검색), `ctx_fetch_and_index`(URL fetch 및 인덱싱)
 
 **메타 도구(5개)**: `ctx_stats`(절약 통계), `ctx_doctor`(진단), `ctx_upgrade`(업그레이드), `ctx_purge`(지식 베이스 삭제), `ctx_insight`(90개 메트릭 분석 대시보드)
 
@@ -56,23 +56,23 @@ MCP 도구 호출 시 raw 데이터가 컨텍스트 윈도우를 채우는 문�
 
 14개 플랫폼을 지원하며 설치 복잡도에 따라 그룹화된다. Hook 가능 플랫폼은 자동 라우팅이 적용된다.
 
-**완전 자동(플러그인 마켓플레이스)**: Claude Code - `/plugin marketplace add mksglu/context-mode`로 설치
+**완전 자동(플러그인 마켓플레이스)**: [[Claude Code]] - `/plugin marketplace add mksglu/context-mode`로 설치
 
 **단일 설정 파일**: Gemini CLI, VS Code Copilot, JetBrains Copilot
 
-**대체 메커니즘 필요**: Cursor(SessionStart 훅 없음 → `.cursor/rules/context-mode.mdc` 파일로 대체), [[OpenCode]]/KiloCode(SessionStart 없음 → `system.transform`으로 대체)
+**대체 메커니즘 필요**: [[Cursor]](SessionStart 훅 없음 → `.cursor/rules/context-mode.mdc` 파일로 대체), [[OpenCode]]/KiloCode(SessionStart 없음 → `system.transform`으로 대체)
 
 **네이티브 게이트웨이 플러그인**: [[OpenClaw]]/Pi Agent - 별도 MCP 서버 없이 게이트웨이 런타임에 직접 등록, 라우팅 완전 자동
 
-**기타**: Codex CLI, Windsurf, [[Cline]], Roo Code, Augment Code, Amazon Q Developer CLI, Antigravity
+**기타**: Codex CLI, Windsurf, [[Cline]], Roo Code, Augment Code, Amazon Q Developer CLI, [[Antigravity]]
 
 ### [[OpenClaw]] 어댑터 특징
 
 [[OpenClaw]]에서는 `api.on()`(lifecycle/tool 훅)과 `api.registerHook()`(command 훅)을 구분해야 한다. 잘못 사용하면 조용히 실패한다. 예를 들어 `api.registerHook("before_tool_call", ...)`는 등록되지만 절대 실행되지 않는다. async register도 작동하지 않으므로 [[initPromise 패턴]]을 사용해야 한다. 최소 버전은 >2026.1.29(PR #9761 필요)다.
 
-### Cursor 제한
+### [[Cursor]] 제한
 
-Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다. 이로 인해 일부 라우팅 지시사항이 모델에게 전달되지 않을 수 있다.
+[[Cursor]]는 `additional_context`가 모델에 표시되지 않는 제한이 있다. 이로 인해 일부 라우팅 지시사항이 모델에게 전달되지 않을 수 있다.
 
 ### [[OpenClaw]] 어댑터 및 환경 스펙
 - **설치 및 빌드**:
@@ -90,9 +90,9 @@ Cursor는 `additional_context`가 모델에 표시되지 않는 제한이 있다
 
 **파일 분석 스크립트 실행**: `ctx_execute("javascript", "const fs = require('fs'); const files = fs.readdirSync('.'); console.log(files.length);")`
 
-**URL fetch 후 검색**: `ctx_fetch_and_index`로 문서를 가져오고 `ctx_search`로 BM25 검색
+**URL fetch 후 검색**: `ctx_fetch_and_index`로 문서를 가져오고 `ctx_search`로 [[BM25]] 검색
 
-**Claude Code 설치**: `/plugin marketplace add mksglu/context-mode` → `/plugin install context-mode@context-mode`
+**[[Claude Code]] 설치**: `/plugin marketplace add mksglu/context-mode` → `/plugin install context-mode@context-mode`
 
 **진단 실행**: `ctx doctor`로 런타임, 훅, FTS5, 플러그인 등록, 버전 확인
 
@@ -110,11 +110,11 @@ register(api): void {
 ```
 
 ### 플랫폼별 설정 파일 매핑
-- **Claude Code**: `~/.claude/settings.json` (status line)
+- **[[Claude Code]]**: `~/.claude/settings.json` (status line)
 - **Gemini CLI**: `~/.gemini/settings.json`
 - **VS Code Copilot**: `.vscode/mcp.json` + `.github/hooks/context-mode.json`
 - **JetBrains Copilot**: Settings UI + `.github/hooks/context-mode.json`
-- **Cursor**: `.cursor/mcp.json` + `.cursor/hooks.json` + `.cursor/rules/context-mode.mdc`
+- **[[Cursor]]**: `.cursor/mcp.json` + `.cursor/hooks.json` + `.cursor/rules/context-mode.mdc`
 - **[[OpenCode]]**: `opencode.json` (+ `AGENTS.md`)
 - **KiloCode**: `kilo.json` (+ `~/.config/kilo/`)
 - **[[OpenClaw]]**: `runtime.json` (자동 등록)
@@ -130,7 +130,7 @@ register(api): void {
 
 ## 충돌
 - **[[OpenClaw]]**: `api.on()`과 `api.registerHook()` 구분 실수 시 조용히 실패
-- **Cursor**: `additional_context`가 모델에 표시되지 않는 제한 존재
+- **[[Cursor]]**: `additional_context`가 모델에 표시되지 않는 제한 존재
 - **[[OpenCode]]/KiloCode**: SessionStart 훅 없음 → `system.transform`으로 대체
 
 ## 관련 노트

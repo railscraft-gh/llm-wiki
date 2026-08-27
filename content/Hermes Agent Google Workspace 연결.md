@@ -79,5 +79,5 @@ updated: 2026-07-10
 
 ## 출처
 - [[Hermes Agent]]에 구글 연결하는 초보자 매뉴얼
-- [메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분](file:///Users/railscraft/Obsidian/raw/%EB%A9%94%EC%8B%9C%EC%A7%95%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%8A%A4%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%85%B8%ED%95%98%EC%9A%B0%EC%99%80%20AI%EA%B0%80%20%EB%8D%9C%EC%96%B4%20%EC%A4%80%20%EB%B6%80%EB%B6%84.md)
+- [메시징 서버의 스트레스 테스트 노하우와 AI가 덜어 준 부분](file:///Users/railscraft/[[Obsidian]]/raw/%EB%A9%94%EC%8B%9C%EC%A7%95%20%EC%84%9C%EB%B2%84%EC%9D%98%20%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%8A%A4%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%85%B8%ED%95%98%EC%9A%B0%EC%99%80%20AI%EA%B0%80%20%EB%8D%9C%EC%96%B4%20%EC%A4%80%20%EB%B6%80%EB%B6%84.md)
 

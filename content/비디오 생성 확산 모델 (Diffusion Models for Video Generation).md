@@ -20,13 +20,13 @@ updated: 2026-07-21
 이미지 생성 확산 모델에 시간(temporal) 차원과 일관성 유지 메커니즘을 추가하여 고품질의 비디오 프레임을 합성하는 모델 아키텍처.
 
 ## 핵심 요지
-비디오 생성은 시간적 일관성을 요구하며 대규모 고품질 데이터를 구하기 어렵다는 특징이 있다. 이를 해결하기 위해 3D U-Net, Diffusion Transformer(DiT) 같은 구조가 활용되며, 기존 이미지 생성 모델에 시간축(Temporal) 레이어를 덧붙여 파인튜닝(Make-A-Video, Video LDM 등)하거나 훈련 없이 적용(Text2Video-Zero)하는 방식이 널리 쓰인다.
+비디오 생성은 시간적 일관성을 요구하며 대규모 고품질 데이터를 구하기 어렵다는 특징이 있다. 이를 해결하기 위해 3D U-Net, Diffusion Transformer(DiT) 같은 구조가 활용되며, 기존 이미지 생성 모델에 시간축([[Temporal]]) 레이어를 덧붙여 파인튜닝(Make-A-Video, Video LDM 등)하거나 훈련 없이 적용(Text2Video-Zero)하는 방식이 널리 쓰인다.
 
 ## 상세
 - **기본 파라미터화**: $\epsilon$-파라미터화의 색상 편이(color shift) 문제를 해결하기 위해 $v$-prediction 파라미터화가 주로 쓰인다.
 - **아키텍처 확장**: 
-  - 3D U-Net 기반: 공간(Spatial) 레이어와 시간(Temporal) 레이어를 번갈아 배치하여 시공간 정보를 분리 처리.
-  - DiT 기반: 비디오 데이터를 시공간 패치(spacetime patches) 시퀀스로 다뤄 트랜스포머에 입력 (예: OpenAI Sora).
+  - 3D U-Net 기반: 공간(Spatial) 레이어와 시간([[Temporal]]) 레이어를 번갈아 배치하여 시공간 정보를 분리 처리.
+  - DiT 기반: 비디오 데이터를 시공간 패치(spacetime patches) 시퀀스로 다뤄 [[트랜스포머]]에 입력 (예: OpenAI Sora).
 - **이미지 모델의 확장 (Inflation)**:
   - 텍스트-이미지 생성 능력을 유지한 채 비디오 생성을 위해 공간 레이어 사이에 템포럴 어텐션/합성곱을 추가하고 비디오 데이터로 추가 파인튜닝.
 

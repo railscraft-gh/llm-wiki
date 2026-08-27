@@ -31,4 +31,4 @@ RuboCop은 Ruby 코드의 일관성을 유지하고 잠재적 버그와 보안 �
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-- [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md](file:///Users/railscraft/Obsidian/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md)
+- [raw/RuboCop - Ruby 정적 코드 분석기 완벽 정리.md](file:///Users/railscraft/[[Obsidian]]/raw/RuboCop%20-%20Ruby%20%EC%A0%95%EC%A0%81%20%EC%BD%94%EB%93%9C%20%EB%B6%84%EC%84%9D%EA%B8%B0%20%EC%99%84%EB%B2%BD%20%EC%A0%95%EB%A6%AC.md)

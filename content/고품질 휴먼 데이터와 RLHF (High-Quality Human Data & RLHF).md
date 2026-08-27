@@ -27,11 +27,11 @@ updated: 2026-07-21
 - **학습 동역학 기반 품질 정제**: 모델 학습 과정에서 영향 함수(Influence Functions), Data Maps(Confidence & Variability), AUM(Area under the Margin), 망각(Unforgettable) 지표, NCV(Noisy Cross-Validation) 기법을 활용하여 오답 라벨을 수식적·동역학적으로 필터링합니다.
 
 ## 상세
-딥러닝 및 [[LLM]] 정렬(RLHF) 단계에서 고품질 주석 수집은 정교한 데이터 운영 절차를 요합니다. 1907년 Galton의 [Vox populi 연구](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L23) 이후 크라우드소싱 데이터 집계는 다수결이나 카파 지표를 넘어 probabilistic graph model(Zheng et al. 2017의 [17가지 진실 추론 알고리즘 비교](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L41)) 등 머신러닝 기반 정제로 발전해 왔습니다.
+딥러닝 및 [[LLM]] 정렬(RLHF) 단계에서 고품질 주석 수집은 정교한 데이터 운영 절차를 요합니다. 1907년 Galton의 [Vox populi 연구](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L23) 이후 크라우드소싱 데이터 집계는 다수결이나 카파 지표를 넘어 probabilistic graph model(Zheng et al. 2017의 [17가지 진실 추론 알고리즘 비교](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L41)) 등 머신러닝 기반 정제로 발전해 왔습니다.
 
-주관적 NLP 태스크에서는 불일치(Disagreement)가 단순 인적 오류인지 시각 차이인지 구별해야 합니다. Wang et al. (2023)의 안전성 평가 연구에 의하면 폭력·유혈 주제는 T&S 전문가와 일반 평가자 간 동의율이 [0.96](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)에 달했으나, 개인적 주제에서는 동의율이 [0.25](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)로 크게 벌어졌습니다. 이를 해결하기 위해 개별 작업자의 일관성을 묶는 Disagreement Deconvolution 및 인구통계적 특성을 조율하는 Jury Learning이 활용됩니다.
+주관적 NLP 태스크에서는 불일치(Disagreement)가 단순 인적 오류인지 시각 차이인지 구별해야 합니다. Wang et al. (2023)의 안전성 평가 연구에 의하면 폭력·유혈 주제는 T&S 전문가와 일반 평가자 간 동의율이 [0.96](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)에 달했으나, 개인적 주제에서는 동의율이 [0.25](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L61)로 크게 벌어졌습니다. 이를 해결하기 위해 개별 작업자의 일관성을 묶는 Disagreement Deconvolution 및 인구통계적 특성을 조율하는 Jury Learning이 활용됩니다.
 
-또한 라벨링 완료 후 모델의 학습 동역학(Training Dynamics)을 관측해 노이즈 라벨을 식별합니다. 의도적으로 라벨을 [1% 오염](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L84)시킬 경우 샘플들이 Data Maps의 저-자신감/고-가변성 구역으로 밀려납니다. AUM 기법은 할당 라벨 로짓과 2순위 로짓 간의 마진(margin) 텐션을 계산하고, 임계값 샘플의 상위 [99백분위수](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L93)를 기준으로 진짜 노이즈 라벨을 제거합니다.
+또한 라벨링 완료 후 모델의 학습 동역학(Training Dynamics)을 관측해 노이즈 라벨을 식별합니다. 의도적으로 라벨을 [1% 오염](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L84)시킬 경우 샘플들이 Data Maps의 저-자신감/고-가변성 구역으로 밀려납니다. AUM 기법은 할당 라벨 로짓과 2순위 로짓 간의 마진(margin) 텐션을 계산하고, 임계값 샘플의 상위 [99백분위수](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md#L93)를 기준으로 진짜 노이즈 라벨을 제거합니다.
 
 ## 예시
 - **Jury Learning 배심원 구성**: 텍스트 유해성 라벨링 시 LGBTQ, 아프리카계 미국인 등 특정 정체성 요소를 지닌 주석 작업자 집단을 배심원단으로 샘플링하여 DCN(Deep & Cross Network)으로 다각적 예측.
@@ -48,4 +48,4 @@ updated: 2026-07-21
 - [[Competence Debt]]
 
 ## 출처
-- [raw/Thinking about High-Quality Human Data.md](file:///Users/railscraft/Obsidian/raw/Thinking%20about%20High-Quality%20Human%20Data.md)
+- [raw/Thinking about High-Quality Human Data.md](file:///Users/railscraft/[[Obsidian]]/raw/Thinking%20about%20High-Quality%20Human%20Data.md)

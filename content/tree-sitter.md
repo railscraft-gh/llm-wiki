@@ -29,7 +29,7 @@ updated: 2026-07-30
 ## 상세
 `tree-sitter`는 현대적인 에이전틱 코딩 도구([[codegraph]], [[code-review-graph]] 등)의 핵심 엔진으로 활용된다. 텍스트를 단순한 행(line)들의 집합으로 다루는 `grep`과 달리, 소스 코드를 구조화된 의미체(Semantic Entities)로 파악하게 돕는다 (`raw/Andrej Karpathy’s Fix for LLM Memory Works on Code Too.md`).
 
-1. **에이전틱 지식 컴파일에서의 역할**:
+1. **에이전틱 [[지식 컴파일]]에서의 역할**:
    - **AST 파싱을 통한 그래프 노드 추출**: 파일 내의 함수 정의, 클래스 구조, 임포트 모듈을 구별하여 그래프 상의 노드(Node)로 정의한다.
    - **의존 관계 엣지 생성**: `tree-sitter`가 분석한 AST를 순회하며 함수 호출문이나 상속 관계를 추적해 SQLite에 연결선(Edge)으로 보존한다.
    - **[[코딩 에이전트]]의 context 윈도우 최적화**: 에이전트가 특정 파일의 전체 텍스트를 파싱하는 대신 `tree-sitter` 그래프를 활용해 연관 심볼만 조회하므로, OmniRoute 실험 기준 context 전송 용량을 98.7% 줄여 비용을 절감한다 (`raw/Andrej Karpathy’s Fix for LLM Memory Works on Code Too.md`).
@@ -87,7 +87,7 @@ find_function_definitions(root_node)
 ## 관련 노트
 - [[codegraph]]: tree-sitter로 파싱된 소스 구조를 SQLite에 매핑해 빠른 영향 범위 탐색을 돕는 범용 도구.
 - [[code-review-graph]]: tree-sitter 분석 결과를 기반으로 PR 단계에서 가중치 위험 점수 산정 및 테스트 맵핑을 지원하는 리뷰 특화 도구.
-- [[코드 변경 영향 범위 분석]]: tree-sitter 그래프 데이터베이스 조회를 통해 변경 파급도를 정밀 분석하는 워크플로우.
+- [[코드 변경 영향 범위 분석]]: tree-sitter 그래프 데이터베이스 조회를 통해 변경 파급도를 정밀 분석하는 [[워크플로]]우.
 - [[코드 위키]]: tree-sitter 등을 활용해 코드베이스를 구조화된 지식 노드로 컴파일하는 사상.
 
 ## 출처

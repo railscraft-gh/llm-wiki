@@ -31,4 +31,4 @@ PARA(Projects, Areas, Resources, Archives) 방법론과 MCP([[Model Context Prot
 - [[Top_1_Percent_Growth_Strategy]]
 
 ## 출처
-- [raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md](file:///Users/railscraft/Obsidian/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)
+- [raw/How We Built an AI Second Brain for 60K Knowledge Workers-ko.md](file:///Users/railscraft/[[Obsidian]]/raw/How%20We%20Built%20an%20AI%20Second%20Brain%20for%2060K%20Knowledge%20Workers-ko.md)

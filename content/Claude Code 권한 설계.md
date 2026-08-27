@@ -35,10 +35,10 @@ tags:
 type: workflow
 updated: 2026-07-10
 ---
-# Claude Code 권한 설계
+# [[Claude Code]] 권한 설계
 
 ## 한 줄 정의
-Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어봐야 하는 명령, 금지해야 하는 명령을 나눠 자동화의 피해 범위를 제한하는 방식이다.
+[[Claude Code]] 권한 설계는 에이전트가 실행해도 되는 명령, 물어봐야 하는 명령, 금지해야 하는 명령을 나눠 자동화의 피해 범위를 제한하는 방식이다.
 
 ## 핵심 요지
 - 위험한 자동 실행 모드는 편하지만 실수 하나가 프로젝트 전체 피해로 이어질 수 있다.
@@ -46,12 +46,12 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 - 권한 설계는 [[Claude.md 운영 원칙]]과 함께 저장해야 세션이 바뀌어도 같은 규칙을 유지할 수 있다.
 - 모든 권한 확인을 건너뛰는 `--dangerously-skip-permissions` 등 자동 실행 모드는 격리된 샌드박스가 아니면 절대 지양해야 한다.
 - 신입 개발자에게 권한을 주는 방식과 동일하게, 작업의 위험도에 맞춰 권한을 세분화하여 설계하는 것이 AI 안전성의 기본이다.
-- 단순 키워드 매칭(substring check) 기반의 검증은 alias나 별도 스크립트 우회 꼼수에 쉽게 무력화되므로, 내부적으로 24가지 bash 안전 기준에 의거해 명령어 위험도를 점수화하는 별도의 Sonnet 4.6 분류 모델(classifier)을 가동하여 안전을 통제한다. (출처: raw/Claude Code를 밑바닥부터 직접 구현해 보았다.md)
+- 단순 키워드 매칭(substring check) 기반의 검증은 alias나 별도 스크립트 우회 꼼수에 쉽게 무력화되므로, 내부적으로 24가지 bash 안전 기준에 의거해 명령어 위험도를 점수화하는 별도의 Sonnet 4.6 분류 모델(classifier)을 가동하여 안전을 통제한다. (출처: raw/[[Claude Code]]를 밑바닥부터 직접 구현해 보았다.md)
 - 보리스(Boris)는 모든 권한을 건너뛰는 loosely skip permission 모드는 실수 하나로 프로젝트 전체를 손상시킬 수 있어 사용을 전면 배제하며, 신입 개발자에게 권한을 세분화해 주듯 통제하는 것을 권장한다. (출처: raw/Claude-Code-실무활용법-보리스-관점-정리.md)
 
 ## 상세
 
-보리스 자료는 Claude Code의 위험한 권한 우회 모드를 조심하라고 설명한다. 테스트 실행처럼 되돌리기 쉽고 반복적인 명령은 허용하고, 패키지 설치나 커밋처럼 상태를 바꾸는 명령은 사용자 확인을 요구하며, 삭제나 프로덕션 DB 작업처럼 피해가 큰 명령은 금지하는 식이다.
+보리스 자료는 [[Claude Code]]의 위험한 권한 우회 모드를 조심하라고 설명한다. 테스트 실행처럼 되돌리기 쉽고 반복적인 명령은 허용하고, 패키지 설치나 커밋처럼 상태를 바꾸는 명령은 사용자 확인을 요구하며, 삭제나 프로덕션 DB 작업처럼 피해가 큰 명령은 금지하는 식이다.
 
 이 원칙은 에이전트를 덜 쓰자는 뜻이 아니다. 오히려 [[AI 코딩 에이전트 검증 전략]]을 안정적으로 돌리기 위해 필요한 가드레일이다. 에이전트가 똑똑할수록 더 넓은 범위를 만질 수 있으므로, 허용 범위도 명시적으로 좁혀야 한다.
 
@@ -61,7 +61,7 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 
 ### 보리스 체르니의 실무 권한 가이드라인
 
-- **허용 (Allow)**: 테스트 실행, 린팅, 타입 체크와 같이 멱등성이 보장되고 되돌리기 쉬운 읽기/검증 작업.
+- **허용 (Allow)**: 테스트 실행, 린팅, 타입 체크와 같이 [[멱등성]]이 보장되고 되돌리기 쉬운 읽기/검증 작업.
 - **확인 요청 (Ask)**: 패키지 설치, 커밋, 마이그레이션 생성 등 저장소 상태를 변화시키는 작업.
 - **금지 (Deny)**: 프로덕션 DB 제어, 위험한 시스템 파일 삭제, API Key 등 비밀값 출력 작업.
 
@@ -80,7 +80,7 @@ Claude Code 권한 설계는 에이전트가 실행해도 되는 명령, 물어�
 
 ## CC101 보강: 권한 모드 3가지
 
-Claude Code는 `Shift+Tab`으로 전환하는 3가지 권한 모드를 제공한다.
+[[Claude Code]]는 `Shift+Tab`으로 전환하는 3가지 권한 모드를 제공한다.
 
 | 모드 | 동작 방식 | 사용 시점 |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Claude Code는 `Shift+Tab`으로 전환하는 3가지 권한 모드를 제공한
 
 ### 체크포인트로 실수 복구
 
-Claude Code는 파일을 수정하기 전에 **자동으로 스냅샷**을 저장한다. 실수로 잘못 수정됐다면 `Esc` 키를 두 번 연속으로 눌러서 이전 상태로 되돌리거나, `/rewind` 명령으로 원하는 시점까지 되돌릴 수 있다.
+[[Claude Code]]는 파일을 수정하기 전에 **자동으로 스냅샷**을 저장한다. 실수로 잘못 수정됐다면 `Esc` 키를 두 번 연속으로 눌러서 이전 상태로 되돌리거나, `/rewind` 명령으로 원하는 시점까지 되돌릴 수 있다.
 
 ### `--dangerously-skip-permissions` 경고
 
@@ -98,7 +98,7 @@ Claude Code는 파일을 수정하기 전에 **자동으로 스냅샷**을 저�
 
 ### 권한 오류 시 복구 기법
 
-Claude Code는 파일 수정 전 자동으로 스냅샷을 저장하므로, 원치 않는 수정이 발생하면 `Esc` 키를 두 번 연속 누르거나 `/rewind` 명령을 통해 이전 체크포인트 상태로 안전하게 되돌릴 수 있다.
+[[Claude Code]]는 파일 수정 전 자동으로 스냅샷을 저장하므로, 원치 않는 수정이 발생하면 `Esc` 키를 두 번 연속 누르거나 `/rewind` 명령을 통해 이전 체크포인트 상태로 안전하게 되돌릴 수 있다.
 
 - **기초 키워드 필터링의 한계 예시**:
   `DESTRUCTIVE_PATTERNS = ["rm -rf", "git push --force", ...]`와 같이 위험 substring을 검사하는 수준은 우회에 취약하므로, 반드시 자율 실행 모드 가동 전 별도 분류기를 통한 가드레일을 장착해야 합니다.
@@ -116,16 +116,16 @@ Claude Code는 파일 수정 전 자동으로 스냅샷을 저장하므로, 원�
 - [[Agent Harness]]
 
 ## 출처
-- Claude Code 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
+- [[Claude Code]] 창시자 Boris의 AI 에이전트 셋업. 전부 다 까보자!
 - 보리스_클로드코드_실무_사용법
 - Claude-Code-실무활용법-보리스-관점-정리
-- API_Key_관리_및_Infisical_도입_가이드
+- API_Key_관리_및_[[Infisical]]_도입_가이드
 - cc101_axwith_ko
 - pi-coding-agent-overview
 - https://pi.dev/docs/latest/usage
-- [Quartz-GitHub-Pages-Complete-Guide](file:///Users/railscraft/Obsidian/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md)
-- [AI로_만든_제품이_안_팔리는_이유](file:///Users/railscraft/Obsidian/raw/AI%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%A0%9C%ED%92%88%EC%9D%B4_%EC%95%88_%ED%8C%94%EB%A6%AC%EB%8A%94_%EC%9D%B4%EC%9C%A0.md)
-- [꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!](file:///Users/railscraft/Obsidian/raw/%EA%BC%AD%20%EC%95%8C%EC%95%84%EC%95%BC%ED%95%A0%20%EC%95%88%EB%93%9C%EB%A0%88%20%EC%B9%B4%ED%8C%8C%EC%8B%9C%2030%EB%B6%84%20%EC%9D%B8%ED%84%B0%EB%B7%B0%20%EC%99%84%EC%A0%84%EC%A0%95%EB%A6%AC%20-%20AI%EC%8B%9C%EB%8C%80%EC%9D%98%20%ED%95%84%EC%88%98%20%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8%21.md)
-- [안드레_카파시_인터뷰_정리](file:///Users/railscraft/Obsidian/raw/%EC%95%88%EB%93%9C%EB%A0%88_%EC%B9%B4%ED%8C%8C%EC%8B%9C_%EC%9D%B8%ED%84%B0%EB%B7%B0_%EC%A0%95%EB%A6%AC.md)
-- [Claude Code를 밑바닥부터 직접 구현해 보았다](file:///Users/railscraft/Obsidian/raw/Claude%20Code%EB%A5%BC%20%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84%ED%95%B4%20%EB%B3%B4%EC%95%98%EB%8B%A4.md)
+- [Quartz-GitHub-Pages-Complete-Guide](file:///Users/railscraft/[[Obsidian]]/raw/[[Quartz]]-GitHub-Pages-Complete-Guide.md)
+- [AI로_만든_제품이_안_팔리는_이유](file:///Users/railscraft/[[Obsidian]]/raw/AI%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%A0%9C%ED%92%88%EC%9D%B4_%EC%95%88_%ED%8C%94%EB%A6%AC%EB%8A%94_%EC%9D%B4%EC%9C%A0.md)
+- [꼭 알아야할 안드레 카파시 30분 인터뷰 완전정리 - AI시대의 필수 인사이트!](file:///Users/railscraft/[[Obsidian]]/raw/%EA%BC%AD%20%EC%95%8C%EC%95%84%EC%95%BC%ED%95%A0%20%EC%95%88%EB%93%9C%EB%A0%88%20%EC%B9%B4%ED%8C%8C%EC%8B%9C%2030%EB%B6%84%20%EC%9D%B8%ED%84%B0%EB%B7%B0%20%EC%99%84%EC%A0%84%EC%A0%95%EB%A6%AC%20-%20AI%EC%8B%9C%EB%8C%80%EC%9D%98%20%ED%95%84%EC%88%98%20%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8%21.md)
+- [안드레_카파시_인터뷰_정리](file:///Users/railscraft/[[Obsidian]]/raw/%EC%95%88%EB%93%9C%EB%A0%88_%EC%B9%B4%ED%8C%8C%EC%8B%9C_%EC%9D%B8%ED%84%B0%EB%B7%B0_%EC%A0%95%EB%A6%AC.md)
+- [Claude Code를 밑바닥부터 직접 구현해 보았다](file:///Users/railscraft/[[Obsidian]]/raw/Claude%20Code%EB%A5%BC%20%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84%ED%95%B4%20%EB%B3%B4%EC%95%98%EB%8B%A4.md)
 

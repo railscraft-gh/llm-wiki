@@ -19,13 +19,13 @@ updated: 2026-07-21
 # GStack
 
 ## 한 줄 정의
-Y Combinator CEO Garry Tan이 공개한 오픈소스(MIT) 슬래시 커맨드 툴킷으로, Claude Code 등 10개 AI [[코딩 에이전트]]를 23명의 가상 전문가 및 8개 파워 도구로 이루어진 완전한 엔지니어링 조직으로 변환하는 소프트웨어 팩토리 프레임워크.
+Y Combinator CEO Garry Tan이 공개한 오픈소스(MIT) 슬래시 커맨드 툴킷으로, [[Claude Code]] 등 10개 AI [[코딩 에이전트]]를 23명의 가상 전문가 및 8개 파워 도구로 이루어진 완전한 엔지니어링 조직으로 변환하는 소프트웨어 팩토리 프레임워크.
 
 ## 핵심 요지
 - **엔지니어링 팀 프레임워크 구축**: 단순 코딩 보조(Copilot)를 넘어 `Think -> Plan -> Build -> Review -> Test -> Ship -> Reflect` 7단계 수명주기를 슬래시 커맨드로 오케스트레이션합니다.
 - **23인 전문 가상 스펙 지휘**: `/office-hours`(제품 재정의), `/plan-ceo-review`(범위 조율), `/plan-eng-review`(아키텍처 확정), `/cso`(보안 취약점 감사), `/qa`(브라우저 회귀 테스트), `/ship`(CI/배포 자동화) 등 명확한 마이그레이션 책임을 수행합니다.
-- **파격적 생산성 증대**: 제작자 Garry Tan은 YC 풀타임 근무 중 60일간 3개 프로덕션 서비스와 [40개 이상의 기능](file:///Users/railscraft/Obsidian/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L14)을 출시했으며, 논리적 코드 변경량 기준 2013년 대비 [810배 생산성(하루 14줄 -> 11,417줄)](file:///Users/railscraft/Obsidian/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L16)을 달성했습니다.
-- **에이전트 중립성 및 취향 학습**: Claude Code 외에도 Codex, [[OpenCode]], Cursor, Hermes 등 [10개 주요 코딩 에이전트](file:///Users/railscraft/Obsidian/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L143)를 지원하며, 주간 [5% 감쇠(decay)](file:///Users/railscraft/Obsidian/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L129) 알고리즘이 포함된 시각 디자인 취향 메모리를 갖추고 있습니다.
+- **파격적 생산성 증대**: 제작자 Garry Tan은 YC 풀타임 근무 중 60일간 3개 프로덕션 서비스와 [40개 이상의 기능](file:///Users/railscraft/[[Obsidian]]/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L14)을 출시했으며, 논리적 코드 변경량 기준 2013년 대비 [810배 생산성(하루 14줄 -> 11,417줄)](file:///Users/railscraft/[[Obsidian]]/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L16)을 달성했습니다.
+- **에이전트 중립성 및 취향 학습**: [[Claude Code]] 외에도 Codex, [[OpenCode]], [[Cursor]], Hermes 등 [10개 주요 코딩 에이전트](file:///Users/railscraft/[[Obsidian]]/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L143)를 지원하며, 주간 [5% 감쇠(decay)](file:///Users/railscraft/[[Obsidian]]/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md#L129) 알고리즘이 포함된 시각 디자인 취향 메모리를 갖추고 있습니다.
 
 ## 상세
 GStack은 개별 지침(prompt)의 무분별한 입력을 지양하고, 사고-기획-빌드-리뷰-출시로 이루어지는 엔지니어링 프로세스를 규격화합니다.
@@ -49,4 +49,4 @@ GStack은 개별 지침(prompt)의 무분별한 입력을 지양하고, 사고-�
 - [[Team Mode]]
 
 ## 출처
-- [raw/GStack - Claude Code 가상 엔지니어링 팀 도구.md](file:///Users/railscraft/Obsidian/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md)
+- [raw/GStack - [[Claude Code]] 가상 엔지니어링 팀 도구.md](file:///Users/railscraft/[[Obsidian]]/raw/GStack%20-%20Claude%20Code%20%EA%B0%80%EC%83%81%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20%ED%8C%80%20%EB%8F%84%EA%B5%AC.md)

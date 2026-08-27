@@ -16,7 +16,7 @@ sources:
 created: 2026-07-15
 updated: 2026-07-15
 ---
-# 혼합 주도형 상호작용 (Mixed-Initiative Interaction)
+# [[혼합 주도형 상호작용]] (Mixed-Initiative Interaction)
 
 ## 한 줄 정의
 

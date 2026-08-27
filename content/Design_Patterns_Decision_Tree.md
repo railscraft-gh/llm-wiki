@@ -22,7 +22,7 @@ updated: 2026-07-21
 - **3대 경로:** 
     1. **객체 생성(Creational):** 인스턴스 생성 과정의 복잡성 해결 (Builder, Factory 등).
     2. **객체 구조화(Structural):** 인터페이스 호환성 및 클래스 관계 정돈 (Adapter, Decorator, Facade 등).
-    3. **행동 및 흐름(Behavioral):** 비즈니스 로직 및 워크플로우의 유연한 제어 (Strategy, Chain of Responsibility 등).
+    3. **행동 및 흐름(Behavioral):** 비즈니스 로직 및 [[워크플로]]우의 유연한 제어 (Strategy, Chain of Responsibility 등).
 
 ## 상세
 디자인 패턴의 실패는 대개 패턴을 들이대지 말아야 할 시점에 적용하거나, 직면한 문제를 구체적으로 정의하지 않고 패턴을 남용할 때 발생합니다. 실무에서는 문제의 성격에 따라 질문을 던져야 합니다. 
@@ -36,4 +36,4 @@ updated: 2026-07-21
 - [[LLM Wiki 운영 패턴]]
 
 ## 출처
-- [raw/Stop Memorizing Design Patterns. Use This Decision Tree Instead.md](file:///Users/railscraft/Obsidian/raw/Stop%20Memorizing%20Design%20Patterns.%20Use%20This%20Decision%20Tree%20Instead.md)
+- [raw/Stop Memorizing Design Patterns. Use This Decision Tree Instead.md](file:///Users/railscraft/[[Obsidian]]/raw/Stop%20Memorizing%20Design%20Patterns.%20Use%20This%20Decision%20Tree%20Instead.md)

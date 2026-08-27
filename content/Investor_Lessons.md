@@ -18,7 +18,7 @@ updated: 2026-07-21
 
 ## 핵심 요지
 - **주식의 내재 가치:** 주식은 단순한 종이 조각이 아니라 기업의 지분이며, 기업 성장에 따라 가치가 동반 상승합니다.
-- **인플레이션 헤지:** 기업은 제품 가격 인상을 통해 인플레이션 환경에서도 마진을 유지하므로 주식은 좋은 헤지 수단입니다.
+- **[[인플레이션 헤지]]:** 기업은 제품 가격 인상을 통해 인플레이션 환경에서도 마진을 유지하므로 주식은 좋은 헤지 수단입니다.
 - **시장 평균의 위력:** 시장을 이기려 하기보다 장기적인 평균 수익률을 추구하는 것이 안정적입니다.
 - **예측의 불확실성:** 미래를 정확히 예측하는 사람은 없으므로, 예측에 기반한 단기 대응보다는 장기 투자를 지향해야 합니다.
 - **겁먹은 돈(Scared Money):** 당장 생계에 필요한 돈으로 투자하면 공포심에 휩싸여 합리적인 의사결정을 할 수 없습니다.
@@ -31,4 +31,4 @@ updated: 2026-07-21
 - [[Aviation_Focus_Rule]]
 
 ## 출처
-- [raw/10 Things Every Investor Should Know (but most learn too late).md](file:///Users/railscraft/Obsidian/raw/10%20Things%20Every%20Investor%20Should%20Know%20%28but%20most%20learn%20too%20late%29.md)
+- [raw/10 Things Every Investor Should Know (but most learn too late).md](file:///Users/railscraft/[[Obsidian]]/raw/10%20Things%20Every%20Investor%20Should%20Know%20%28but%20most%20learn%20too%20late%29.md)
