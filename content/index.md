@@ -260,3 +260,5 @@ aliases: []
 - [[UI_Patterns]]
 - [[macOS_Terminal_Productivity]]
 - [[연구 파트너(Research Partner)]]
+
+- [[RAGAS 평가 프레임워크]]

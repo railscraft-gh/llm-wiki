@@ -1,3 +1,15 @@
+## 2026-08-27
+
+### Ingest
+
+- 입력: `raw/2026년 실제로 나오는 생성형 AI 면접 질문 40선과 답변.md`
+- 입력: `raw/2026년 에이전틱 AI 엔지니어 로드맵. 기술, 스택, 그리고 순서.md`
+- 입력: `raw/How to Start from 0 as an Agentic AI Engineer.md`
+- 생성: [[RAGAS 평가 프레임워크]]
+- 수정: [[에이전틱 AI 엔지니어]]
+- index 업데이트: 완료
+- 남은 검토: 없음
+
 ---
 type: concept
 status: evergreen
